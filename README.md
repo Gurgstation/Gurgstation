@@ -96,4 +96,5 @@ For a basic setup, simply copy every file from config/example to config.
 
 ### SQL Setup
 
-The SQL backend for the library and stats tracking requires a MySQL server.  Your server details go in /config/dbconfig.txt, and the SQL schema is in /SQL/tgstation_schema.sql.  More detailed setup instructions arecoming soon, for now ask in our Discord.
+The SQL backend for the library and stats tracking requires a MySQL server.  Your server details go in /config/dbconfig.txt, and the SQL schema is in /SQL/tgstation_schema.sql.  
+You can easily run an sql server using mariadb and connecting to it with heidisql, set up a new user using root. something like ss13 and run the sql schema as a command using heidisql. once you've done that, input the details for the database in the dbconfig and it _should_ work. make the same db for the death tracking too in the config.
