@@ -89,6 +89,9 @@ GLOBAL_LIST_INIT(digest_modes, list())
 	B.steal_nutrition(L)
 	if(L.nutrition < 100)
 		B.absorb_living(L)
+		// Gurg ADD: Import Chomp liquid bellies
+		if(B.reagent_mode_flags & DM_FLAG_REAGENTSABSORB && B.reagents.total_volume < B.reagents.maximum_volume) //CHOMPedit: absorption reagent production
+			B.GenerateBellyReagents_absorbed() //CHOMPedit end: A bonus for pred, I know for a fact prey is usually at zero nutrition when absorption finally happens
 		return list("to_update" = TRUE)
 
 /datum/digest_mode/unabsorb

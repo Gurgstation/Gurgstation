@@ -171,6 +171,7 @@
 		"wet_loop",
 		"belly_fullscreen",
 		"disable_hud",
+		// Gurg ADD: Import Chomp liquid bellies - START
 		"reagent_mode_flags",	//CHOMP start of variables from CHOMP
 		"reagentbellymode",
 		"liquid_fullness1_messages",
@@ -194,7 +195,8 @@
 		"fullness2_messages",
 		"fullness3_messages",
 		"fullness4_messages",
-		"fullness5_messages"     //CHOMP end of variables from CHOMP
+		"fullness5_messages",     //CHOMP end of variables from CHOMP
+		// Gurg ADD: Import Chomp liquid bellies - END
 		"egg_type"
 		)
 
