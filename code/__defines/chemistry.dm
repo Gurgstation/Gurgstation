@@ -5,6 +5,8 @@
 #define CHEM_TOUCH 1
 #define CHEM_INGEST 2
 #define CHEM_BLOOD 3
+#define CHEM_VORE 4 //CHOMP vore belly interactions // Gurg ADD: Import Chomp liquid bellies
+
 
 #define MINIMUM_CHEMICAL_VOLUME 0.01
 

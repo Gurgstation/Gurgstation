@@ -307,6 +307,7 @@ var/list/all_maps = list()
 	if(flags & MAP_LEVEL_PLAYER) map.player_levels += z
 	if(flags & MAP_LEVEL_SEALED) map.sealed_levels += z
 	if(flags & MAP_LEVEL_XENOARCH_EXEMPT) map.xenoarch_exempt_levels += z
+	if(flags & MAP_LEVEL_VORESPAWN) map.vorespawn_levels += z
 	if(flags & MAP_LEVEL_PERSIST) map.persist_levels += z
 	if(flags & MAP_LEVEL_EMPTY)
 		if(!map.empty_levels) map.empty_levels = list()
