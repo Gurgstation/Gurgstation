@@ -657,7 +657,7 @@ var/global/datum/controller/occupations/job_master
 
 	//Spawn them at their preferred one
 	if(C && C.prefs.spawnpoint)
-		// Gurgs ADD: Spawnable Belees
+		// Gurgs ADD: Spawnable Belees - START
 		if(C.prefs.spawnpoint == "Vore Belly")
 			var/list/preds = list()
 			var/list/pred_names = list() //This is cringe
@@ -721,6 +721,7 @@ var/global/datum/controller/occupations/job_master
 				return
 			spawnpos = spawntypes[C.prefs.spawnpoint]
 		else
+		// Gurgs ADD: Spawnable Belees - END
 			if(!(C.prefs.spawnpoint in using_map.allowed_spawns))
 				if(fail_deadly)
 					to_chat(C, "<span class='warning'>Your chosen spawnpoint is unavailable for this map and your job requires a specific spawnpoint. Please correct your spawn point choice.</span>")
@@ -731,8 +732,8 @@ var/global/datum/controller/occupations/job_master
 			else
 				spawnpos = spawntypes[C.prefs.spawnpoint]
 
-	//We will return a list key'd by "turf" and "msg"
-	. = list("turf","msg")
+	//We will return a list key'd by "turf" and "msg" 
+	. = list("turf","msg","voreny") // Gurgs ADD: Spawnable Belees
 	if(vore_spawn_gut)
 		.["voreny"] = vore_spawn_gut
 	if(spawnpos && istype(spawnpos) && spawnpos.turfs.len)
