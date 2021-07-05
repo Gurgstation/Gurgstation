@@ -267,6 +267,8 @@
 		// Gurg ADD: Import Chomp liquid bellies
 		"liq_rec" = host.receive_reagents,
 		"liq_giv" = host.give_reagents,
+		// Gurgs ADD: Imports belches, brp~
+		"noisy_full" = host.noisy_full //Belching while full
 	)
 
 	return data
@@ -340,6 +342,12 @@
 			unsaved_changes = TRUE
 			return TRUE
 		// Gurg ADD: Import Chomp liquid bellies - END
+
+		// Gurgs ADD: Imports belches, brp~
+		if("toggle_noisy_full")
+			host.noisy_full = !host.noisy_full
+			unsaved_changes = TRUE
+			return TRUE
 
 		if("bellypick")
 			host.vore_selected = locate(params["bellypick"])
