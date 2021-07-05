@@ -2,7 +2,7 @@ import { round } from 'common/math';
 import { capitalize } from 'common/string';
 import { Fragment } from 'inferno';
 import { useBackend, useLocalState } from "../backend";
-import { Box, Button, Flex, Collapsible, Icon, LabeledList, NoticeBox, Section, Tabs } from "../components";
+import { Box, Button, ByondUi, Flex, Collapsible, Icon, LabeledList, NoticeBox, Section, Tabs } from "../components";
 import { Window } from "../layouts";
 import { classes } from 'common/react';
 
@@ -44,10 +44,135 @@ const digestModeToPreyMode = {
  *  - The Belly Selection Panel, where you can select what belly people will go into and customize the active one.
  *  - User Preferences, where you can adjust all of your vore preferences on the fly.
  */
+ 
+/**
+ * CHOMPedits specified here. Read ALL of this if conflicts happen, I can't find a way to add comments line by line.
+ *
+ * Under VoreSelectedBelly the following strings have been added to const{}: 
+ *   show_liq, liq_interacts, liq_reagent_gen, liq_reagent_type, liq_reagent_name,
+ *   liq_reagent_transfer_verb, liq_reagent_nutri_rate, liq_reagent_capacity, liq_sloshing, liq_reagent_addons,
+ *   show_liq_fullness, liq_messages, liq_msg_toggle1, liq_msg_toggle2, liq_msg_toggle3, liq_msg_toggle4,
+ *   liq_msg_toggle5, liq_msg1, liq_msg2, liq_msg3, liq_msg4, liq_msg5,
+ *
+ * To the tabs section of VoreSelectedBelly return
+ *       <Tabs.Tab selected={tabIndex === 5} onClick={() => setTabIndex(5)}>
+ *        Liquid Options
+ *      </Tabs.Tab>
+ *      <Tabs.Tab selected={tabIndex === 6} onClick={() => setTabIndex(6)}>
+ *        Liquid Messages
+ *      </Tabs.Tab>
+ *
+ * All of the content for tabIndex === 5 and tabIndex === 6
+ *
+ * Under VoreUserPreferences the following strings have been added to const{}:
+ *   liq_rec, liq_giv,
+ *
+ * To VoreUserPreferences return
+ *         <Flex.Item basis="49%">
+ *        <Button
+ *          onClick={() => act("toggle_liq_rec")}
+ *          icon={liq_rec ? "toggle-on" : "toggle-off"}
+ *          selected={liq_rec}
+ *          fluid
+ *          tooltipPosition="top"
+ *          tooltip={"This button is for allowing or preventing others from giving you liquids from their vore organs."
+ *          + (liq_rec ? " Click here to prevent receiving liquids." : " Click here to allow receiving liquids.")}
+ *          content={liq_rec ? "Receiving Liquids Allowed" : "Do Not Allow Receiving Liquids"} />
+ *      </Flex.Item>
+ *      <Flex.Item basis="49%">
+ *        <Button
+ *          onClick={() => act("toggle_liq_giv")}
+ *          icon={liq_giv ? "toggle-on" : "toggle-off"}
+ *          selected={liq_giv}
+ *          fluid
+ *          tooltipPosition="top"
+ *           tooltip={"This button is for allowing or preventing others from taking liquids from your vore organs."
+ *          + (liq_giv ? " Click here to prevent taking liquids." : " Click here to allow taking liquids.")}
+ *          content={liq_giv ? "Taking Liquids Allowed" : "Do Not Allow Taking Liquids"} />
+ *      </Flex.Item>
+ *
+ * NEW EDITS 2/25/21: COLORED BELLY OVERLAYS
+ * LINE 5:
+ *import { Box, Button, ByondUi, Flex, Collapsible, Icon, LabeledList, NoticeBox, Section, Tabs } from "../components";
+ *
+ * LINE 172 - <Window width={700} height={800} resizable>
+ *
+ * LINE 301 - belly_fullscreen_color,
+ * mapRef,
+ *
+ * LINE 604 - <Section title="Belly Fullscreens Preview and Coloring">
+ *           <Flex direction="row">
+ *             <Box backgroundColor={belly_fullscreen_color} width="20px" height="20px" />
+ *             <Button
+ *               icon="eye-dropper"
+ *               onClick={() => act("set_attribute", { attribute: "b_fullscreen_color", val: null })}>
+ *               Select Color
+ *             </Button>
+ *           </Flex>
+ *           <ByondUi
+ *             style={{
+ *               width: '200px',
+ *               height: '200px',
+ *             }}
+ *             params={{
+ *               id: mapRef,
+ *               type: 'map',
+ *             }} />
+ *         </Section>
+ *         <Section height="260px" style={{ overflow: "auto" }}>
+ *           <Section title="Vore FX">
+ *             <LabeledList>
+ *               <LabeledList.Item label="Disable Prey HUD">
+ *                 <Button
+ *                   onClick={() => act("set_attribute", { attribute: "b_disable_hud" })}
+ *                   icon={disable_hud ? "toggle-on" : "toggle-off"}
+ *                   selected={disable_hud}
+ *                   content={disable_hud ? "Yes" : "No"} />
+ *               </LabeledList.Item>
+ *             </LabeledList>
+ *           </Section>
+ *           <Section title="Belly Fullscreens Styles">
+ *             Belly styles:
+ *             <Button
+ *               fluid
+ *               selected={belly_fullscreen === "" || belly_fullscreen === null}
+ *               onClick={() => act("set_attribute", { attribute: "b_fullscreen", val: null })}>
+ *               Disabled
+ *             </Button>
+ *             {Object.keys(possible_fullscreens).map(key => (
+ *               <Button
+ *                 key={key}
+ *                 width="256px"
+ *                 height="256px"
+ *                 selected={key === belly_fullscreen}
+ *                 onClick={() => act("set_attribute", { attribute: "b_fullscreen", val: key })}>
+ *                 <Box
+ *                   className={classes([
+ *                     'vore240x240',
+ *                     key,
+ *                   ])}
+ *                   style={{
+ *                     transform: 'translate(0%, 4%)',
+ *                   }} />
+ *               </Button>
+ *             ))}
+ *           </Section>
+ *         </Section>
+ *
+ * LINE 900 - const [tabIndex, setTabIndex] = useLocalState(context, 'tabIndex', 0);
+ *
+ * return tabIndex===4 ? null : (
+ *
+ * New preference added, noisy_full
+ * noisy_full enables belching when nutrition exceeds 500, very similar to the noisy preference.
+ *
+ * That's everything so far.
+ *
+ */
 export const VorePanel = (props, context) => {
   const { act, data } = useBackend(context);
   return (
-    <Window width={700} height={660} resizable>
+    <Window width={700} height={800} resizable>
       <Window.Content scrollable>
         {data.unsaved_changes && (
           <NoticeBox danger>
@@ -147,57 +272,6 @@ const VoreBellySelectionAndCustomization = (props, context) => {
 /**
  * Subtemplate of VoreBellySelectionAndCustomization
  */
-
-/**
- * CHOMPedits specified here. Read ALL of this if conflicts happen, I can't find a way to add comments line by line.
- *
- * Under VoreSelectedBelly the following strings have been added to const{}: 
- *   show_liq, liq_interacts, liq_reagent_gen, liq_reagent_type, liq_reagent_name,
- *   liq_reagent_transfer_verb, liq_reagent_nutri_rate, liq_reagent_capacity, liq_sloshing, liq_reagent_addons,
- *   show_liq_fullness, liq_messages, liq_msg_toggle1, liq_msg_toggle2, liq_msg_toggle3, liq_msg_toggle4,
- *   liq_msg_toggle5, liq_msg1, liq_msg2, liq_msg3, liq_msg4, liq_msg5,
- *
- * To the tabs section of VoreSelectedBelly return
- *       <Tabs.Tab selected={tabIndex === 5} onClick={() => setTabIndex(5)}>
- *        Liquid Options
- *      </Tabs.Tab>
- *      <Tabs.Tab selected={tabIndex === 6} onClick={() => setTabIndex(6)}>
- *        Liquid Messages
- *      </Tabs.Tab>
- *
- * All of the content for tabIndex === 5 and tabIndex === 6
- *
- * Under VoreUserPreferences the following strings have been added to const{}:
- *   liq_rec, liq_giv,
- *
- * To VoreUserPreferences return
- *         <Flex.Item basis="49%">
- *        <Button
- *          onClick={() => act("toggle_liq_rec")}
- *          icon={liq_rec ? "toggle-on" : "toggle-off"}
- *          selected={liq_rec}
- *          fluid
- *          tooltipPosition="top"
- *          tooltip={"This button is for allowing or preventing others from giving you liquids from their vore organs."
- *          + (liq_rec ? " Click here to prevent receiving liquids." : " Click here to allow receiving liquids.")}
- *          content={liq_rec ? "Receiving Liquids Allowed" : "Do Not Allow Receiving Liquids"} />
- *      </Flex.Item>
- *      <Flex.Item basis="49%">
- *        <Button
- *          onClick={() => act("toggle_liq_giv")}
- *          icon={liq_giv ? "toggle-on" : "toggle-off"}
- *          selected={liq_giv}
- *          fluid
- *          tooltipPosition="top"
- *           tooltip={"This button is for allowing or preventing others from taking liquids from your vore organs."
- *          + (liq_giv ? " Click here to prevent taking liquids." : " Click here to allow taking liquids.")}
- *          content={liq_giv ? "Taking Liquids Allowed" : "Do Not Allow Taking Liquids"} />
- *      </Flex.Item>
- *
- * That's everything so far.
- *
- */
-
 const VoreSelectedBelly = (props, context) => {
   const { act } = useBackend(context);
 
@@ -232,6 +306,8 @@ const VoreSelectedBelly = (props, context) => {
     interacts,
     contents,
     belly_fullscreen,
+    belly_fullscreen_color,
+    mapRef,
     possible_fullscreens,
     disable_hud,
     show_liq,
@@ -256,6 +332,7 @@ const VoreSelectedBelly = (props, context) => {
     liq_msg3,
     liq_msg4,
     liq_msg5,
+    vorespawn_blacklist,
   } = belly;
 
   const [tabIndex, setTabIndex] = useLocalState(context, 'tabIndex', 0);
@@ -493,6 +570,13 @@ const VoreSelectedBelly = (props, context) => {
                   onClick={() => act("set_attribute", { attribute: "b_grow_shrink" })}
                   content={shrink_grow_size * 100 + "%"} />
               </LabeledList.Item>
+              <LabeledList.Item label="Vore Spawn Blacklist">
+                <Button
+                  onClick={() => act("set_attribute", { attribute: "b_vorespawn_blacklist" })}
+                  icon={vorespawn_blacklist ? "toggle-on" : "toggle-off"}
+                  selected={vorespawn_blacklist}
+                  content={vorespawn_blacklist ? "Yes" : "No"} />
+              </LabeledList.Item>
               <LabeledList.Item label="Idle Emotes">
                 <Button
                   onClick={() => act("set_attribute", { attribute: "b_emoteactive" })}
@@ -567,41 +651,63 @@ const VoreSelectedBelly = (props, context) => {
         </Section>
       ) || tabIndex === 4 && (
         <Fragment>
-          <Section title="Vore FX">
-            <LabeledList>
-              <LabeledList.Item label="Disable Prey HUD">
-                <Button
-                  onClick={() => act("set_attribute", { attribute: "b_disable_hud" })}
-                  icon={disable_hud ? "toggle-on" : "toggle-off"}
-                  selected={disable_hud}
-                  content={disable_hud ? "Yes" : "No"} />
-              </LabeledList.Item>
-            </LabeledList>
-          </Section>
-          <Section title="Belly Fullscreens">
-            <Button
-              fluid
-              selected={belly_fullscreen === "" || belly_fullscreen === null}
-              onClick={() => act("set_attribute", { attribute: "b_fullscreen", val: null })}>
-              Disabled
-            </Button>
-            {Object.keys(possible_fullscreens).map(key => (
+          <Section title="Belly Fullscreens Preview and Coloring">
+            <Flex direction="row">
+              <Box backgroundColor={belly_fullscreen_color} width="20px" height="20px" />
               <Button
-                key={key}
-                width="256px"
-                height="256px"
-                selected={key === belly_fullscreen}
-                onClick={() => act("set_attribute", { attribute: "b_fullscreen", val: key })}>
-                <Box
-                  className={classes([
-                    'vore240x240',
-                    key,
-                  ])}
-                  style={{
-                    transform: 'translate(0%, 4%)',
-                  }} />
+                icon="eye-dropper"
+                onClick={() => act("set_attribute", { attribute: "b_fullscreen_color", val: null })}>
+                Select Color
               </Button>
-            ))}
+            </Flex>
+            <ByondUi
+              style={{
+                width: '200px',
+                height: '200px',
+              }}
+              params={{
+                id: mapRef,
+                type: 'map',
+              }} />
+          </Section>
+          <Section height="260px" style={{ overflow: "auto" }}>
+            <Section title="Vore FX">
+              <LabeledList>
+                <LabeledList.Item label="Disable Prey HUD">
+                  <Button
+                    onClick={() => act("set_attribute", { attribute: "b_disable_hud" })}
+                    icon={disable_hud ? "toggle-on" : "toggle-off"}
+                    selected={disable_hud}
+                    content={disable_hud ? "Yes" : "No"} />
+                </LabeledList.Item>
+              </LabeledList>
+            </Section>
+            <Section title="Belly Fullscreens Styles">
+              Belly styles:
+              <Button
+                fluid
+                selected={belly_fullscreen === "" || belly_fullscreen === null}
+                onClick={() => act("set_attribute", { attribute: "b_fullscreen", val: null })}>
+                Disabled
+              </Button>
+              {Object.keys(possible_fullscreens).map(key => (
+                <Button
+                  key={key}
+                  width="256px"
+                  height="256px"
+                  selected={key === belly_fullscreen}
+                  onClick={() => act("set_attribute", { attribute: "b_fullscreen", val: key })}>
+                  <Box
+                    className={classes([
+                      'vore240x240',
+                      key,
+                    ])}
+                    style={{
+                      transform: 'translate(0%, 4%)',
+                    }} />
+                </Button>
+              ))}
+            </Section>
           </Section>
         </Fragment>
       ) || tabIndex === 5 && (
@@ -832,10 +938,12 @@ const VoreUserPreferences = (props, context) => {
     show_vore_fx,
     can_be_drop_prey,
     can_be_drop_pred,
+    latejoin_vore,
     allow_spontaneous_tf,
     step_mechanics_active,
     pickup_mechanics_active,
     noisy,
+    noisy_full,
     liq_rec,
     liq_giv,
   } = data.prefs;
@@ -844,7 +952,9 @@ const VoreUserPreferences = (props, context) => {
     show_pictures,
   } = data;
 
-  return (
+  const [tabIndex, setTabIndex] = useLocalState(context, 'tabIndex', 0);
+
+  return tabIndex===4 ? null : (
     <Section title="Preferences" buttons={
       <Button icon="eye" selected={show_pictures} onClick={() => act("show_pictures")}>
         Contents Preference: {show_pictures ? "Show Pictures" : "Show List"}
@@ -947,6 +1057,18 @@ const VoreUserPreferences = (props, context) => {
         </Flex.Item>
         <Flex.Item basis="32%">
           <Button
+            onClick={() => act("toggle_latejoin_vore")}
+            icon={latejoin_vore ? "toggle-on" : "toggle-off"}
+            selected={latejoin_vore}
+            fluid
+            tooltip={"Toggle late join vore spawnpoint. "
+            + (latejoin_vore
+              ? "Click here to turn off vorish spawnpoint."
+              : "Click here to turn on vorish spawnpoint.")}
+            content={latejoin_vore ? "Vore Spawn Enabled" : "Vore Spawn Disabled"} />
+        </Flex.Item>
+        <Flex.Item basis="32%">
+          <Button
             onClick={() => act("toggle_noisy")}
             icon={noisy ? "toggle-on" : "toggle-off"}
             selected={noisy}
@@ -956,6 +1078,18 @@ const VoreUserPreferences = (props, context) => {
               ? "Click here to turn off hunger noises."
               : "Click here to turn on hunger noises.")}
             content={noisy ? "Hunger Noises Enabled" : "Hunger Noises Disabled"} />
+        </Flex.Item>
+        <Flex.Item basis="32%">
+          <Button
+            onClick={() => act("toggle_noisy_full")}
+            icon={noisy_full ? "toggle-on" : "toggle-off"}
+            selected={noisy_full}
+            fluid
+            tooltip={"Toggle belching while full. "
+            + (noisy_full
+              ? "Click here to turn off belching when full."
+              : "Click here to turn on belching when full.")}
+            content={noisy_full ? "Belching Enabled" : "Belching Disabled"} />
         </Flex.Item>
         <Flex.Item basis="32%">
           <Button
