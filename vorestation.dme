@@ -4028,7 +4028,6 @@
 #include "gurgs_content\code\modules\living\human_life.dm"
 #include "gurgs_content\code\modules\vore\living.dm"
 #include "gurgs_content\code\modules\vore\preferences.dm"
-#include "gurgs_content\code\vore\burps\burps.dm"
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
 #include "maps\gateway_archive_vr\blackmarketpackers.dm"
