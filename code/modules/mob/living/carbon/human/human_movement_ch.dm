@@ -28,5 +28,5 @@
 		return // people flying, lying down or sitting do not slosh
 	if(!has_gravity(src) && prob(75))
 		return // Far less likely to make noise in no gravity
-	playsound(T, S, volume, FALSE, preference = /datum/client_preference/digestion_noises)
+	playsound(T, S, volume, FALSE, preference = /datum/client_preference/slosh_noises) // Gurgs EDIT: changes client pref to a new one.
 	return
