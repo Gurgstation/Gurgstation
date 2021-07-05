@@ -191,6 +191,37 @@
 			selected_list["interacts"]["digestchance"] = selected.digestchance
 
 		selected_list["disable_hud"] = selected.disable_hud
+
+		// Gurg ADD: Import Chomp liquid bellies - START
+		selected_list["show_liq"] = selected.show_liquids 
+		selected_list["liq_interacts"] = list()
+		if(selected.show_liquids)
+			selected_list["liq_interacts"]["liq_reagent_gen"] = selected.reagentbellymode
+			selected_list["liq_interacts"]["liq_reagent_type"] = selected.reagent_chosen
+			selected_list["liq_interacts"]["liq_reagent_name"] = selected.reagent_name
+			selected_list["liq_interacts"]["liq_reagent_transfer_verb"] = selected.reagent_transfer_verb
+			selected_list["liq_interacts"]["liq_reagent_nutri_rate"] = selected.gen_time
+			selected_list["liq_interacts"]["liq_reagent_capacity"] = selected.custom_max_volume
+			selected_list["liq_interacts"]["liq_sloshing"] = selected.vorefootsteps_sounds
+			selected_list["liq_interacts"]["liq_reagent_addons"] = list()
+			for(var/flag_name in selected.reagent_mode_flag_list)
+				if(selected.reagent_mode_flags & selected.reagent_mode_flag_list[flag_name])
+					selected_list["liq_interacts"]["liq_reagent_addons"].Add(flag_name)
+		selected_list["show_liq_fullness"] = selected.show_fullness_messages
+		selected_list["liq_messages"] = list()
+		if(selected.show_fullness_messages)
+			selected_list["liq_messages"]["liq_msg_toggle1"] = selected.liquid_fullness1_messages
+			selected_list["liq_messages"]["liq_msg_toggle2"] = selected.liquid_fullness2_messages
+			selected_list["liq_messages"]["liq_msg_toggle3"] = selected.liquid_fullness3_messages
+			selected_list["liq_messages"]["liq_msg_toggle4"] = selected.liquid_fullness4_messages
+			selected_list["liq_messages"]["liq_msg_toggle5"] = selected.liquid_fullness5_messages
+			selected_list["liq_messages"]["liq_msg1"] = selected.liquid_fullness1_messages
+			selected_list["liq_messages"]["liq_msg2"] = selected.liquid_fullness2_messages
+			selected_list["liq_messages"]["liq_msg3"] = selected.liquid_fullness3_messages
+			selected_list["liq_messages"]["liq_msg4"] = selected.liquid_fullness4_messages
+			selected_list["liq_messages"]["liq_msg5"] = selected.liquid_fullness5_messages 
+		// Gurg ADD: Import Chomp liquid bellies - END
+
 		selected_list["possible_fullscreens"] = icon_states('icons/mob/screen_full_vore.dmi')
 
 		var/list/selected_contents = list()
@@ -211,36 +242,6 @@
 					info["absorbed"] = TRUE
 			selected_contents.Add(list(info))
 		selected_list["contents"] = selected_contents
-
-		// Gurg ADD: Import Chomp liquid bellies - START
-		selected_list["selected"]["show_liq"] = selected.show_liquids 
-		selected_list["selected"]["liq_interacts"] = list()
-		if(selected.show_liquids)
-			selected_list["selected"]["liq_interacts"]["liq_reagent_gen"] = selected.reagentbellymode
-			selected_list["selected"]["liq_interacts"]["liq_reagent_type"] = selected.reagent_chosen
-			selected_list["selected"]["liq_interacts"]["liq_reagent_name"] = selected.reagent_name
-			selected_list["selected"]["liq_interacts"]["liq_reagent_transfer_verb"] = selected.reagent_transfer_verb
-			selected_list["selected"]["liq_interacts"]["liq_reagent_nutri_rate"] = selected.gen_time
-			selected_list["selected"]["liq_interacts"]["liq_reagent_capacity"] = selected.custom_max_volume
-			selected_list["selected"]["liq_interacts"]["liq_sloshing"] = selected.vorefootsteps_sounds
-			selected_list["selected"]["liq_interacts"]["liq_reagent_addons"] = list()
-			for(var/flag_name in selected.reagent_mode_flag_list)
-				if(selected.reagent_mode_flags & selected.reagent_mode_flag_list[flag_name])
-					selected_list["selected"]["liq_interacts"]["liq_reagent_addons"].Add(flag_name)
-		selected_list["selected"]["show_liq_fullness"] = selected.show_fullness_messages
-		selected_list["selected"]["liq_messages"] = list()
-		if(selected.show_fullness_messages)
-			selected_list["selected"]["liq_messages"]["liq_msg_toggle1"] = selected.liquid_fullness1_messages
-			selected_list["selected"]["liq_messages"]["liq_msg_toggle2"] = selected.liquid_fullness2_messages
-			selected_list["selected"]["liq_messages"]["liq_msg_toggle3"] = selected.liquid_fullness3_messages
-			selected_list["selected"]["liq_messages"]["liq_msg_toggle4"] = selected.liquid_fullness4_messages
-			selected_list["selected"]["liq_messages"]["liq_msg_toggle5"] = selected.liquid_fullness5_messages
-			selected_list["selected"]["liq_messages"]["liq_msg1"] = selected.liquid_fullness1_messages
-			selected_list["selected"]["liq_messages"]["liq_msg2"] = selected.liquid_fullness2_messages
-			selected_list["selected"]["liq_messages"]["liq_msg3"] = selected.liquid_fullness3_messages
-			selected_list["selected"]["liq_messages"]["liq_msg4"] = selected.liquid_fullness4_messages
-			selected_list["selected"]["liq_messages"]["liq_msg5"] = selected.liquid_fullness5_messages 
-		// Gurg ADD: Import Chomp liquid bellies - END
 
 	data["selected"] = selected_list
 
