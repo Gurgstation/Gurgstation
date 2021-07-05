@@ -59,6 +59,11 @@ V::::::V           V::::::VO:::::::OOO:::::::ORR:::::R     R:::::REE::::::EEEEEE
 	var/step_mechanics_pref = FALSE
 	var/pickup_pref = TRUE
 
+	// Gurg ADD: Import Chomp liquid bellies
+	var/receive_reagents = FALSE
+	var/give_reagents = FALSE
+	var/latejoin_vore = FALSE
+
 	var/list/belly_prefs = list()
 	var/vore_taste = "nothing in particular"
 	var/vore_smell = "nothing in particular"
