@@ -240,6 +240,9 @@
 	P.step_mechanics_pref = src.step_mechanics_pref
 	P.pickup_pref = src.pickup_pref
 
+	// Gurgs ADD: Spawnable Belees
+	P.latejoin_vore = src.latejoin_vore
+
 	// Gurg ADD: Import Chomp liquid bellies
 	P.receive_reagents = src.receive_reagents
 	P.give_reagents = src.give_reagents
@@ -279,6 +282,9 @@
 	allow_spontaneous_tf = P.allow_spontaneous_tf
 	step_mechanics_pref = P.step_mechanics_pref
 	pickup_pref = P.pickup_pref
+
+	// Gurgs ADD: Spawnable Belees
+	latejoin_vore = P.latejoin_vore
 
 	// Gurg ADD: Import Chomp liquid bellies
 	receive_reagents = P.receive_reagents
@@ -871,6 +877,8 @@
 	dispvoreprefs += "<b>Spontaneous vore prey:</b> [can_be_drop_prey ? "Enabled" : "Disabled"]<br>"
 	dispvoreprefs += "<b>Spontaneous vore pred:</b> [can_be_drop_pred ? "Enabled" : "Disabled"]<br>"
 	dispvoreprefs += "<b>Spontaneous transformation:</b> [allow_spontaneous_tf ? "Enabled" : "Disabled"]<br>"
+	// Gurgs ADD: Spawnable Belees
+	dispvoreprefs += "<b>Late join spawn point belly:</b> [latejoin_vore ? "Enabled" : "Disabled"]<br>" //CHOMPstation edit
 	// Gurg ADD: Import Chomp liquid bellies
 	dispvoreprefs += "<b>Receiving liquids:</b> [receive_reagents ? "Enabled" : "Disabled"]<br>" //CHOMPstation edit
 	dispvoreprefs += "<b>Giving liquids:</b> [give_reagents ? "Enabled" : "Disabled"]<br>"	//CHOMPstation edit

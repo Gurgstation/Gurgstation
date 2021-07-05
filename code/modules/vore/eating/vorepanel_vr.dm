@@ -164,6 +164,8 @@
 			"emote_time" = selected.emote_time,
 			"emote_active" = selected.emote_active,
 			"belly_fullscreen" = selected.belly_fullscreen,
+			// Gurgs ADD: Spawnable Belees
+			"vorespawn_blacklist" = selected.vorespawn_blacklist 
 		)
 
 		var/list/addons = list()
@@ -265,7 +267,8 @@
 		"step_mechanics_active" = host.step_mechanics_pref,
 		"pickup_mechanics_active" = host.pickup_pref,
 		"noisy" = host.noisy,
-
+		// Gurgs ADD: Spawnable Belees
+		"latejoin_vore" = host.latejoin_vore,
 		// Gurg ADD: Import Chomp liquid bellies
 		"liq_rec" = host.receive_reagents,
 		"liq_giv" = host.give_reagents,
@@ -421,6 +424,13 @@
 			host.can_be_drop_prey = !host.can_be_drop_prey
 			if(host.client.prefs_vr)
 				host.client.prefs_vr.can_be_drop_prey = host.can_be_drop_prey
+			unsaved_changes = TRUE
+			return TRUE
+		// Gurgs ADD: Spawnable Belees
+		if("toggle_latejoin_vore")
+			host.latejoin_vore = !host.latejoin_vore
+			if(host.client.prefs_vr)
+				host.client.prefs_vr.latejoin_vore = host.latejoin_vore
 			unsaved_changes = TRUE
 			return TRUE
 		if("toggle_allow_spontaneous_tf")
@@ -1031,7 +1041,10 @@
 			qdel(host.vore_selected)
 			host.vore_selected = host.vore_organs[1]
 			. = TRUE
-
+		// Gurgs ADD: Spawnable Belees
+		if("b_vorespawn_blacklist") //CHOMP Addition
+			host.vore_selected.vorespawn_blacklist = !host.vore_selected.vorespawn_blacklist
+			. = TRUE
 	if(.)
 		unsaved_changes = TRUE
 
