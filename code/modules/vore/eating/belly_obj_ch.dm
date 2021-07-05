@@ -14,8 +14,8 @@
 
 	var/belly_fullscreen_color = "#823232"
 
-	var/show_liquids = FALSE //Moved from vorepanel_ch to be a belly var
-	var/show_fullness_messages = FALSE //Moved from vorepanel_ch to be a belly var
+	var/show_liquids = TRUE //Moved from vorepanel_ch to be a belly var
+	var/show_fullness_messages = TRUE //Moved from vorepanel_ch to be a belly var
 
 	var/nutri_reagent_gen = FALSE					//if belly produces reagent over time using nutrition, needs to be optimized to use subsystem - Jack
 	var/list/generated_reagents = list("water" = 1) //Any number of reagents, the associated value is how many units are generated per process()

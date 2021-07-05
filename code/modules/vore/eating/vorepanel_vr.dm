@@ -137,7 +137,7 @@
 		)))
 	data["our_bellies"] = our_bellies
 
-	var/list/selected_list = null
+	var/list/selected_list = list()
 	if(host.vore_selected)
 		var/obj/belly/selected = host.vore_selected
 		selected_list = list(
@@ -204,9 +204,11 @@
 			selected_list["liq_interacts"]["liq_reagent_capacity"] = selected.custom_max_volume
 			selected_list["liq_interacts"]["liq_sloshing"] = selected.vorefootsteps_sounds
 			selected_list["liq_interacts"]["liq_reagent_addons"] = list()
+			var/list/reagent_addons = list()
 			for(var/flag_name in selected.reagent_mode_flag_list)
 				if(selected.reagent_mode_flags & selected.reagent_mode_flag_list[flag_name])
-					selected_list["liq_interacts"]["liq_reagent_addons"].Add(flag_name)
+					reagent_addons.Add(flag_name)
+			selected_list["liq_interacts"]["liq_reagent_addons"] = reagent_addons
 		selected_list["show_liq_fullness"] = selected.show_fullness_messages
 		selected_list["liq_messages"] = list()
 		if(selected.show_fullness_messages)
