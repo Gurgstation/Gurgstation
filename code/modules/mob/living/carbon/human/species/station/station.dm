@@ -75,6 +75,9 @@
 	min_age = 32
 	max_age = 260
 
+	male_scream_sound = list ('sound/effects/mob_effects/una_scream1.ogg','sound/effects/mob_effects/una_scream2.ogg')
+	female_scream_sound = list ('sound/effects/mob_effects/una_scream1.ogg','sound/effects/mob_effects/una_scream2.ogg')
+
 	economic_modifier = 7
 
 	blurb = "A heavily reptillian species, Unathi hail from the \
@@ -199,6 +202,9 @@
 	min_age = 17
 	max_age = 80
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	economic_modifier = 7
 
 	blurb = "The Tajaran are a mammalian species resembling roughly felines, hailing from Meralar in the Rarkajar system. \
@@ -304,6 +310,9 @@
 	min_age = 19
 	max_age = 130
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	economic_modifier = 12
 
 	darksight = 4
@@ -384,6 +393,9 @@
 
 	min_age = 16
 	max_age = 90
+
+	male_scream_sound = null
+	female_scream_sound = null
 
 	blurb = "The Zaddat are an Unathi client race only recently introduced to SolGov space. Having evolved on \
 	the high-pressure and post-apocalyptic world of Xohok, Zaddat require an environmental suit called a Shroud \
@@ -494,6 +506,9 @@
 	assisted_langs = list(LANGUAGE_VOX)	// Diona are weird, let's just assume they can use basically any language.
 	min_age = 1
 	max_age = 300
+
+	male_scream_sound = null
+	female_scream_sound = null
 
 	economic_modifier = 4
 

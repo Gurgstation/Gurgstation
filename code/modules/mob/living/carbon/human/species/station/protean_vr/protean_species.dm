@@ -59,6 +59,9 @@
 	siemens_coefficient =   1.5 //Very bad zappy times
 	rarity_value =          5
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	genders = list(MALE, FEMALE, PLURAL, NEUTER)
 
 	has_organ = list(
