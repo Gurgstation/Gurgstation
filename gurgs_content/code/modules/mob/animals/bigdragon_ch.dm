@@ -375,7 +375,7 @@ I think I covered everything.
 		eyes = pick(eye_styles)
 		overlay_colors["Eyes"] = "#[get_random_colour(1)]"
 
-	var/image/I = image(icon, "dragon_under[under][resting? "-rest" : (vore_fullness? "-[vore_fullness]" : null)]", pixel_x = -48)
+	var/image/I = image(icon, "dragon_under[under][resting? "-rest" : (vore_fullness? "-[vore_fullness]" : null)]", x = -48)
 	I.color = overlay_colors["Underbelly"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = MOB_PLANE
@@ -444,7 +444,7 @@ I think I covered everything.
 		if("Underbelly")
 			options = underbelly_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_under[option]", dir = 4, pixel_x = -48)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_under[option]", dir = 4, x = -48)
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -457,7 +457,7 @@ I think I covered everything.
 		if("Body")
 			options = body_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_body[option]", dir = 4, pixel_x = -48)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_body[option]", dir = 4, x = -48)
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -470,7 +470,7 @@ I think I covered everything.
 		if("Ears")
 			options = ear_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_ears[option]", dir = 4, pixel_x = -76, pixel_y = -50)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_ears[option]", dir = 4, x = -76, y = -50)
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -979,7 +979,7 @@ I think I covered everything.
 	holder.a_intent = I_HURT
 	return 1
 
-/datum/ai_holder/simple_mob/healbelly/retaliate/dragon/can_attack(atom/movable/the_target)
+/datum/ai_holder/simple_mob/healbelly/retaliate/dragon/can_attack(atom/movable/the_target, var/vision_required = TRUE)
 	if(istype(holder,/mob/living/simple_mob/vore/bigdragon))
 		var/mob/living/simple_mob/vore/bigdragon/BG = holder
 		if(holder.IIsAlly(the_target))
