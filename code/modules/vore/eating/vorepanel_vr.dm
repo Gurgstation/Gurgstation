@@ -137,7 +137,7 @@
 		)))
 	data["our_bellies"] = our_bellies
 
-	var/list/selected_list = null
+	var/list/selected_list = list()
 	if(host.vore_selected)
 		var/obj/belly/selected = host.vore_selected
 		selected_list = list(
@@ -164,6 +164,8 @@
 			"emote_time" = selected.emote_time,
 			"emote_active" = selected.emote_active,
 			"belly_fullscreen" = selected.belly_fullscreen,
+			// Gurgs ADD: Spawnable Belees
+			"vorespawn_blacklist" = selected.vorespawn_blacklist 
 		)
 
 		var/list/addons = list()
@@ -191,6 +193,39 @@
 			selected_list["interacts"]["digestchance"] = selected.digestchance
 
 		selected_list["disable_hud"] = selected.disable_hud
+
+		// Gurg ADD: Import Chomp liquid bellies - START
+		selected_list["show_liq"] = selected.show_liquids 
+		selected_list["liq_interacts"] = list()
+		if(selected.show_liquids)
+			selected_list["liq_interacts"]["liq_reagent_gen"] = selected.reagentbellymode
+			selected_list["liq_interacts"]["liq_reagent_type"] = selected.reagent_chosen
+			selected_list["liq_interacts"]["liq_reagent_name"] = selected.reagent_name
+			selected_list["liq_interacts"]["liq_reagent_transfer_verb"] = selected.reagent_transfer_verb
+			selected_list["liq_interacts"]["liq_reagent_nutri_rate"] = selected.gen_time
+			selected_list["liq_interacts"]["liq_reagent_capacity"] = selected.custom_max_volume
+			selected_list["liq_interacts"]["liq_sloshing"] = selected.vorefootsteps_sounds
+			selected_list["liq_interacts"]["liq_reagent_addons"] = list()
+			var/list/reagent_addons = list()
+			for(var/flag_name in selected.reagent_mode_flag_list)
+				if(selected.reagent_mode_flags & selected.reagent_mode_flag_list[flag_name])
+					reagent_addons.Add(flag_name)
+			selected_list["liq_interacts"]["liq_reagent_addons"] = reagent_addons
+		selected_list["show_liq_fullness"] = selected.show_fullness_messages
+		selected_list["liq_messages"] = list()
+		if(selected.show_fullness_messages)
+			selected_list["liq_messages"]["liq_msg_toggle1"] = selected.liquid_fullness1_messages
+			selected_list["liq_messages"]["liq_msg_toggle2"] = selected.liquid_fullness2_messages
+			selected_list["liq_messages"]["liq_msg_toggle3"] = selected.liquid_fullness3_messages
+			selected_list["liq_messages"]["liq_msg_toggle4"] = selected.liquid_fullness4_messages
+			selected_list["liq_messages"]["liq_msg_toggle5"] = selected.liquid_fullness5_messages
+			selected_list["liq_messages"]["liq_msg1"] = selected.liquid_fullness1_messages
+			selected_list["liq_messages"]["liq_msg2"] = selected.liquid_fullness2_messages
+			selected_list["liq_messages"]["liq_msg3"] = selected.liquid_fullness3_messages
+			selected_list["liq_messages"]["liq_msg4"] = selected.liquid_fullness4_messages
+			selected_list["liq_messages"]["liq_msg5"] = selected.liquid_fullness5_messages 
+		// Gurg ADD: Import Chomp liquid bellies - END
+
 		selected_list["possible_fullscreens"] = icon_states('icons/mob/screen_full_vore.dmi')
 
 		var/list/selected_contents = list()
@@ -213,6 +248,9 @@
 		selected_list["contents"] = selected_contents
 
 	data["selected"] = selected_list
+
+
+
 	data["prefs"] = list(
 		"digestable" = host.digestable,
 		"devourable" = host.devourable,
@@ -229,6 +267,13 @@
 		"step_mechanics_active" = host.step_mechanics_pref,
 		"pickup_mechanics_active" = host.pickup_pref,
 		"noisy" = host.noisy,
+		// Gurgs ADD: Spawnable Belees
+		"latejoin_vore" = host.latejoin_vore,
+		// Gurg ADD: Import Chomp liquid bellies
+		"liq_rec" = host.receive_reagents,
+		"liq_giv" = host.give_reagents,
+		// Gurgs ADD: Imports belches, brp~
+		"noisy_full" = host.noisy_full //Belching while full
 	)
 
 	return data
@@ -281,6 +326,31 @@
 			var/obj/belly/NB = new(host)
 			NB.name = new_name
 			host.vore_selected = NB
+			unsaved_changes = TRUE
+			return TRUE
+
+		// Gurg ADD: Import Chomp liquid bellies - START
+		if("liq_set_attribute")
+			return liq_set_attr(usr, params)
+		if("liq_set_messages")
+			return liq_set_msg(usr, params)
+		if("toggle_liq_rec")
+			host.receive_reagents = !host.receive_reagents
+			if(host.client.prefs_vr)
+				host.client.prefs_vr.receive_reagents = host.receive_reagents
+			unsaved_changes = TRUE
+			return TRUE
+		if("toggle_liq_giv")
+			host.give_reagents = !host.give_reagents
+			if(host.client.prefs_vr)
+				host.client.prefs_vr.give_reagents = host.give_reagents
+			unsaved_changes = TRUE
+			return TRUE
+		// Gurg ADD: Import Chomp liquid bellies - END
+
+		// Gurgs ADD: Imports belches, brp~
+		if("toggle_noisy_full")
+			host.noisy_full = !host.noisy_full
 			unsaved_changes = TRUE
 			return TRUE
 
@@ -354,6 +424,13 @@
 			host.can_be_drop_prey = !host.can_be_drop_prey
 			if(host.client.prefs_vr)
 				host.client.prefs_vr.can_be_drop_prey = host.can_be_drop_prey
+			unsaved_changes = TRUE
+			return TRUE
+		// Gurgs ADD: Spawnable Belees
+		if("toggle_latejoin_vore")
+			host.latejoin_vore = !host.latejoin_vore
+			if(host.client.prefs_vr)
+				host.client.prefs_vr.latejoin_vore = host.latejoin_vore
 			unsaved_changes = TRUE
 			return TRUE
 		if("toggle_allow_spontaneous_tf")
@@ -964,6 +1041,182 @@
 			qdel(host.vore_selected)
 			host.vore_selected = host.vore_organs[1]
 			. = TRUE
-
+		// Gurgs ADD: Spawnable Belees
+		if("b_vorespawn_blacklist") //CHOMP Addition
+			host.vore_selected.vorespawn_blacklist = !host.vore_selected.vorespawn_blacklist
+			. = TRUE
 	if(.)
 		unsaved_changes = TRUE
+
+// Gurg ADD: Import Chomp liquid bellies - START
+/datum/vore_look/proc/liq_set_attr(mob/user, params)
+	if(!host.vore_selected)
+		alert("No belly selected to modify.")
+		return FALSE
+
+	var/attr = params["liq_attribute"]
+	switch(attr)
+		if("b_show_liq")
+			if(!host.vore_selected.show_liquids) 
+				host.vore_selected.show_liquids = 1
+				to_chat(usr,"<span class='warning'>Your [lowertext(host.vore_selected.name)] now has liquid options.</span>")
+			else
+				host.vore_selected.show_liquids = 0
+				to_chat(usr,"<span class='warning'>Your [lowertext(host.vore_selected.name)] elected.name)] no longer has liquid options.</span>")
+			. = TRUE
+		if("b_liq_reagent_gen")
+			if(!host.vore_selected.reagentbellymode) //liquid container adjustments and interactions.
+				host.vore_selected.reagentbellymode = 1
+				to_chat(usr,"<span class='warning'>Your [lowertext(host.vore_selected.name)] now has interactions which can produce liquids.</span>")
+			else //Doesnt produce liquids
+				host.vore_selected.reagentbellymode = 0
+				to_chat(usr,"<span class='warning'>Your [lowertext(host.vore_selected.name)] wont produce liquids, liquids already in your [lowertext(host.vore_selected.name)] must be emptied out or removed with purge.</span>")
+			. = TRUE
+		if("b_liq_reagent_type")
+			var/list/menu_list = host.vore_selected.reagent_choices.Copy() //Useful if we want to make certain races, synths, borgs, and other things result in additional reagents to produce - Jack
+			var/new_reagent = input("Choose Reagent (currently [host.vore_selected.reagent_chosen])") as null|anything in menu_list
+			if(!new_reagent)
+				return FALSE
+
+			host.vore_selected.reagent_chosen = new_reagent
+			host.vore_selected.ReagentSwitch() // For changing variables when a new reagent is chosen
+			. = TRUE
+		if("b_liq_reagent_name")
+			var/new_name = html_encode(input(usr,"New name for liquid shown when transfering and dumping on floor (The actual liquid's name is still the same):","New Name") as text|null)
+
+			if(length(new_name) > BELLIES_NAME_MAX || length(new_name) < BELLIES_NAME_MIN)
+				alert("Entered name length invalid (must be longer than [BELLIES_NAME_MIN], no longer than [BELLIES_NAME_MAX]).","Error")
+				return FALSE
+
+			host.vore_selected.reagent_name = new_name
+			. = TRUE
+		if("b_liq_reagent_transfer_verb")
+			var/new_verb = html_encode(input(usr,"New verb when liquid is transfered from this belly (infinitive tense, e.g. pump or inject):","New Verb") as text|null)
+
+			if(length(new_verb) > BELLIES_NAME_MAX || length(new_verb) < BELLIES_NAME_MIN)
+				alert("Entered verb length invalid (must be longer than [BELLIES_NAME_MIN], no longer than [BELLIES_NAME_MAX]).","Error")
+				return FALSE
+
+			host.vore_selected.reagent_transfer_verb = new_verb
+			. = TRUE
+		if("b_liq_reagent_nutri_rate")
+			host.vore_selected.gen_time_display = input(user, "Choose the time it takes to fill the belly from empty state using nutrition.", "Set Liquid Production Time.")  in list("10 minutes","30 minutes","1 hour","3 hours","6 hours","12 hours","24 hours")|null
+			switch(host.vore_selected.gen_time_display)
+				if("10 minutes")
+					host.vore_selected.gen_time = 0
+				if("30 minutes")
+					host.vore_selected.gen_time = 2
+				if("1 hour")
+					host.vore_selected.gen_time = 5
+				if("3 hours")
+					host.vore_selected.gen_time = 17
+				if("6 hours")
+					host.vore_selected.gen_time = 35
+				if("12 hours")
+					host.vore_selected.gen_time = 71
+				if("24 hours")
+					host.vore_selected.gen_time = 143
+				if(null)
+					return FALSE
+			. = TRUE
+		if("b_liq_reagent_capacity")
+			var/new_custom_vol = input(user, "Choose the amount of liquid the belly can contain at most. Ranges from 0 to 100.", "Set Custom Belly Capacity.", host.vore_selected.custom_max_volume) as num|null
+			if(new_custom_vol == null)
+				return FALSE
+			var/new_new_custom_vol = CLAMP(new_custom_vol, 10, 100)
+			host.vore_selected.custom_max_volume = new_new_custom_vol
+			. = TRUE
+		if("b_liq_sloshing")
+			if(!host.vore_selected.vorefootsteps_sounds)
+				host.vore_selected.vorefootsteps_sounds = 1
+				to_chat(usr,"<span class='warning'>Your [lowertext(host.vore_selected.name)] can now make sounds when you walk around depending on how full you are.</span>")
+			else
+				host.vore_selected.vorefootsteps_sounds = 0
+				to_chat(usr,"<span class='warning'>Your [lowertext(host.vore_selected.name)] wont make any liquid sounds no matter how full it is.</span>")
+			. = TRUE
+		if("b_liq_reagent_addons")
+			var/list/menu_list = host.vore_selected.reagent_mode_flag_list.Copy()
+			var/reagent_toggle_addon = input("Toggle Addon") as null|anything in menu_list
+			if(!reagent_toggle_addon)
+				return FALSE
+			host.vore_selected.reagent_mode_flags ^= host.vore_selected.reagent_mode_flag_list[reagent_toggle_addon]
+			. = TRUE
+		if("b_liq_purge")
+			var/alert = alert("Are you sure you want to delete the liquids in your [lowertext(host.vore_selected.name)]?","Confirmation","Delete","Cancel")
+			if(!(alert == "Delete"))
+				return FALSE
+			else
+				host.vore_selected.reagents.clear_reagents()
+			. = TRUE
+
+/datum/vore_look/proc/liq_set_msg(mob/user, params)
+	if(!host.vore_selected)
+		alert("No belly selected to modify.")
+		return FALSE
+
+	var/attr = params["liq_messages"]
+	switch(attr)
+		if("b_show_liq_fullness")
+			if(!host.vore_selected.show_fullness_messages) 
+				host.vore_selected.show_fullness_messages = 1
+				to_chat(usr,"<span class='warning'>Your [lowertext(host.vore_selected.name)] now has liquid examination options.</span>")
+			else
+				host.vore_selected.show_fullness_messages = 0
+				to_chat(usr,"<span class='warning'>Your [lowertext(host.vore_selected.name)] no longer has liquid examination options.</span>")
+			. = TRUE
+		if("b_liq_msg_toggle1")
+			host.vore_selected.liquid_fullness1_messages = !host.vore_selected.liquid_fullness1_messages
+			. = TRUE
+		if("b_liq_msg_toggle2")
+			host.vore_selected.liquid_fullness2_messages = !host.vore_selected.liquid_fullness2_messages
+			. = TRUE
+		if("b_liq_msg_toggle3")
+			host.vore_selected.liquid_fullness3_messages = !host.vore_selected.liquid_fullness3_messages
+			. = TRUE
+		if("b_liq_msg_toggle4")
+			host.vore_selected.liquid_fullness4_messages = !host.vore_selected.liquid_fullness4_messages
+			. = TRUE
+		if("b_liq_msg_toggle5")
+			host.vore_selected.liquid_fullness5_messages = !host.vore_selected.liquid_fullness5_messages
+			. = TRUE
+		if("b_liq_msg1")
+			alert(user,"Setting abusive or deceptive messages will result in a ban. Consider this your warning. Max 150 characters per message, max 10 messages per topic.","Really, don't.")
+			var/help = " Press enter twice to separate messages. '%pred' will be replaced with your name. '%prey' will be replaced with the prey's name. '%belly' will be replaced with your belly's name."
+
+			var/new_message = input(user,"These are sent to people who examine you when this belly is 0 to 20% full. Write them in 3rd person ('Their %belly is bulging')."+help,"Liquid Examine Message (0 - 20%)",host.vore_selected.get_reagent_messages("full1")) as message
+			if(new_message)
+				host.vore_selected.set_reagent_messages(new_message,"full1")
+			. = TRUE
+		if("b_liq_msg2")
+			alert(user,"Setting abusive or deceptive messages will result in a ban. Consider this your warning. Max 150 characters per message, max 10 messages per topic.","Really, don't.")
+			var/help = " Press enter twice to separate messages. '%pred' will be replaced with your name. '%prey' will be replaced with the prey's name. '%belly' will be replaced with your belly's name."
+
+			var/new_message = input(user,"These are sent to people who examine you when this belly is 20 to 40% full. Write them in 3rd person ('Their %belly is bulging')."+help,"Liquid Examine Message (20 - 40%)",host.vore_selected.get_reagent_messages("full2")) as message
+			if(new_message)
+				host.vore_selected.set_reagent_messages(new_message,"full2")
+			. = TRUE
+		if("b_liq_msg3")
+			alert(user,"Setting abusive or deceptive messages will result in a ban. Consider this your warning. Max 150 characters per message, max 10 messages per topic.","Really, don't.")
+			var/help = " Press enter twice to separate messages. '%pred' will be replaced with your name. '%prey' will be replaced with the prey's name. '%belly' will be replaced with your belly's name."
+
+			var/new_message = input(user,"These are sent to people who examine you when this belly is 40 to 60% full. Write them in 3rd person ('Their %belly is bulging')."+help,"Liquid Examine Message (40 - 60%)",host.vore_selected.get_reagent_messages("full3")) as message
+			if(new_message)
+				host.vore_selected.set_reagent_messages(new_message,"full3")
+			. = TRUE
+		if("b_liq_msg4")
+			alert(user,"Setting abusive or deceptive messages will result in a ban. Consider this your warning. Max 150 characters per message, max 10 messages per topic.","Really, don't.")
+			var/help = " Press enter twice to separate messages. '%pred' will be replaced with your name. '%prey' will be replaced with the prey's name. '%belly' will be replaced with your belly's name."
+
+			var/new_message = input(user,"These are sent to people who examine you when this belly is 60 to 80% full. Write them in 3rd person ('Their %belly is bulging')."+help,"Liquid Examine Message (60 - 80%)",host.vore_selected.get_reagent_messages("full4")) as message
+			if(new_message)
+				host.vore_selected.set_reagent_messages(new_message,"full4")
+			. = TRUE
+		if("b_liq_msg5")
+			alert(user,"Setting abusive or deceptive messages will result in a ban. Consider this your warning. Max 150 characters per message, max 10 messages per topic.","Really, don't.")
+			var/help = " Press enter twice to separate messages. '%pred' will be replaced with your name. '%prey' will be replaced with the prey's name. '%belly' will be replaced with your belly's name."
+
+			var/new_message = input(user,"These are sent to people who examine you when this belly is 80 to 100% full. Write them in 3rd person ('Their %belly is bulging')."+help,"Liquid Examine Message (80 - 100%)",host.vore_selected.get_reagent_messages("full5")) as message
+			if(new_message)
+				host.vore_selected.set_reagent_messages(new_message,"full5")
+			. = TRUE
+// Gurg ADD: Import Chomp liquid bellies - END

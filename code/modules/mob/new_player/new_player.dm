@@ -472,6 +472,11 @@
 		data_core.manifest_inject(character)
 		ticker.minds += character.mind//Cyborgs and AIs handle this in the transform proc.	//TODO!!!!! ~Carn
 
+	// Gurgs ADD: Spawnable Belees
+	var/gut = join_props["voreny"]
+	if(gut)
+		character.forceMove(gut)
+
 	qdel(src) // Delete new_player mob
 
 /mob/new_player/proc/AnnounceCyborg(var/mob/living/character, var/rank, var/join_message, var/channel, var/zlevel)

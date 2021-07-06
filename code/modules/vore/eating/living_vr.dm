@@ -48,6 +48,8 @@
 		return TRUE
 	M.vorePanel = new(M)
 	M.verbs += /mob/living/proc/insidePanel
+	// Gurg ADD: Import Chomp liquid bellies
+	M.verbs += /mob/living/proc/vore_transfer_reagents //CHOMP If mob doesnt have bellies it cant use this verb for anything
 
 	//Tries to load prefs if a client is present otherwise gives freebie stomach
 	spawn(2 SECONDS)
@@ -238,6 +240,13 @@
 	P.step_mechanics_pref = src.step_mechanics_pref
 	P.pickup_pref = src.pickup_pref
 
+	// Gurgs ADD: Spawnable Belees
+	P.latejoin_vore = src.latejoin_vore
+
+	// Gurg ADD: Import Chomp liquid bellies
+	P.receive_reagents = src.receive_reagents
+	P.give_reagents = src.give_reagents
+
 	var/list/serialized = list()
 	for(var/belly in src.vore_organs)
 		var/obj/belly/B = belly
@@ -273,6 +282,13 @@
 	allow_spontaneous_tf = P.allow_spontaneous_tf
 	step_mechanics_pref = P.step_mechanics_pref
 	pickup_pref = P.pickup_pref
+
+	// Gurgs ADD: Spawnable Belees
+	latejoin_vore = P.latejoin_vore
+
+	// Gurg ADD: Import Chomp liquid bellies
+	receive_reagents = P.receive_reagents
+	give_reagents = P.give_reagents
 
 	if(bellies)
 		release_vore_contents(silent = TRUE)
@@ -861,6 +877,11 @@
 	dispvoreprefs += "<b>Spontaneous vore prey:</b> [can_be_drop_prey ? "Enabled" : "Disabled"]<br>"
 	dispvoreprefs += "<b>Spontaneous vore pred:</b> [can_be_drop_pred ? "Enabled" : "Disabled"]<br>"
 	dispvoreprefs += "<b>Spontaneous transformation:</b> [allow_spontaneous_tf ? "Enabled" : "Disabled"]<br>"
+	// Gurgs ADD: Spawnable Belees
+	dispvoreprefs += "<b>Late join spawn point belly:</b> [latejoin_vore ? "Enabled" : "Disabled"]<br>" //CHOMPstation edit
+	// Gurg ADD: Import Chomp liquid bellies
+	dispvoreprefs += "<b>Receiving liquids:</b> [receive_reagents ? "Enabled" : "Disabled"]<br>" //CHOMPstation edit
+	dispvoreprefs += "<b>Giving liquids:</b> [give_reagents ? "Enabled" : "Disabled"]<br>"	//CHOMPstation edit
 	dispvoreprefs += "<b>Can be stepped on/over:</b> [step_mechanics_pref ? "Allowed" : "Disallowed"]<br>"
 	dispvoreprefs += "<b>Can be picked up:</b> [pickup_pref ? "Allowed" : "Disallowed"]<br>"
 	user << browse("<html><head><title>Vore prefs: [src]</title></head><body><center>[dispvoreprefs]</center></body></html>", "window=[name]mvp;size=200x300;can_resize=0;can_minimize=0")

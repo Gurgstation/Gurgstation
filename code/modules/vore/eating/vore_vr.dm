@@ -59,6 +59,10 @@ V::::::V           V::::::VO:::::::OOO:::::::ORR:::::R     R:::::REE::::::EEEEEE
 	var/step_mechanics_pref = FALSE
 	var/pickup_pref = TRUE
 
+	// Gurg ADD: Import Chomp liquid bellies
+	var/receive_reagents = FALSE
+	var/give_reagents = FALSE
+
 	var/list/belly_prefs = list()
 	var/vore_taste = "nothing in particular"
 	var/vore_smell = "nothing in particular"
@@ -142,6 +146,13 @@ V::::::V           V::::::VO:::::::OOO:::::::ORR:::::R     R:::::REE::::::EEEEEE
 	pickup_pref = json_from_file["pickup_pref"]
 	belly_prefs = json_from_file["belly_prefs"]
 
+	// Gurgs ADD: Spawnable Belees
+	latejoin_vore = json_from_file["latejoin_vore"]
+
+	// Gurg ADD: Import Chomp liquid bellies
+	receive_reagents = json_from_file["receive_reagents"]
+	give_reagents = json_from_file["give_reagents"]
+
 	//Quick sanitize
 	if(isnull(digestable))
 		digestable = TRUE
@@ -174,6 +185,16 @@ V::::::V           V::::::VO:::::::OOO:::::::ORR:::::R     R:::::REE::::::EEEEEE
 	if(isnull(belly_prefs))
 		belly_prefs = list()
 
+	// Gurgs ADD: Spawnable Belees
+	if(isnull(latejoin_vore))
+		latejoin_vore = FALSE
+
+	// Gurg ADD: Import Chomp liquid bellies
+	if(isnull(receive_reagents))
+		receive_reagents = FALSE
+	if(isnull(give_reagents))
+		give_reagents = FALSE
+
 	return TRUE
 
 /datum/vore_preferences/proc/save_vore()
@@ -200,6 +221,13 @@ V::::::V           V::::::VO:::::::OOO:::::::ORR:::::R     R:::::REE::::::EEEEEE
 			"step_mechanics_pref"	= step_mechanics_pref,
 			"pickup_pref"			= pickup_pref,
 			"belly_prefs"			= belly_prefs,
+			// Gurgs ADD: Spawnable Belees
+			"latejoin_vore"			= latejoin_vore,
+			// Gurg ADD: Import Chomp liquid bellies
+			"receive_reagents"		= receive_reagents,
+			"give_reagents"			= give_reagents,
+
+
 		)
 
 	//List to JSON
