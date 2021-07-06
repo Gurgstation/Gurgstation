@@ -305,7 +305,7 @@
 	name = "vore"
 
 /datum/asset/spritesheet/vore/register()
-	var/icon/downscaled = icon('icons/mob/screen_full_vore.dmi')
+	var/icon/downscaled = icon('gurgs_content/icons/mob/screen_full_vore.dmi') // Gurgs ADD: More belly varients!~
 	downscaled.Scale(240, 240)
 	InsertAll("", downscaled)
 	..()

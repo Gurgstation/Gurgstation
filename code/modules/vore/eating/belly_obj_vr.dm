@@ -171,6 +171,7 @@
 		"wet_loop",
 		"belly_fullscreen",
 		"disable_hud",
+		"belly_fullscreen_color", // Gurgs ADD: Colorable bellies!
 		// Gurg ADD: Import Chomp liquid bellies - START
 		"reagent_mode_flags",	//CHOMP start of variables from CHOMP
 		"reagentbellymode",
@@ -273,7 +274,7 @@
 	if(belly_fullscreen)
 		var/obj/screen/fullscreen/F = L.overlay_fullscreen("belly", /obj/screen/fullscreen/belly)
 		F.icon_state = belly_fullscreen
-		// F.color = belly_fullscreen_color
+		F.color = belly_fullscreen_color // Gurgs ADD: Colorable bellies!
 	else
 		L.clear_fullscreen("belly")
 
@@ -853,6 +854,7 @@
 	dupe.fancy_vore = fancy_vore
 	dupe.is_wet = is_wet
 	dupe.wet_loop = wet_loop
+	dupe.belly_fullscreen_color = belly_fullscreen_color // Gurgs ADD: Colorable bellies!
 	// Gurg ADD: Import Chomp liquid bellies - START
 	dupe.reagent_mode_flags = reagent_mode_flags	//CHOMP start of variables from CHOMP
 	dupe.reagentbellymode = reagentbellymode
