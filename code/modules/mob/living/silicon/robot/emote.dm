@@ -25,8 +25,9 @@ var/list/_robot_default_emotes = list(
 	/decl/emote/audible/synth/security/halt,
 	//VOREStation Add
 	/decl/emote/visible/mlem,
-	/decl/emote/visible/blep
+	/decl/emote/visible/blep,
 	//VOREStation Add End
+	/decl/emote/audible/belch // Gurgs ADD: On demand belches~
 )
 
 /mob/living/silicon/robot/get_available_emotes()
