@@ -4029,6 +4029,7 @@
 #include "code\ZAS\Turf.dm"
 #include "code\ZAS\Variable Settings.dm"
 #include "code\ZAS\Zone.dm"
+#include "gurgs_content\code\tgs_commands.dm"
 #include "gurgs_content\code\modules\maps.dm"
 #include "gurgs_content\code\modules\misc.dm"
 #include "gurgs_content\code\modules\client\setting_datums.dm"
