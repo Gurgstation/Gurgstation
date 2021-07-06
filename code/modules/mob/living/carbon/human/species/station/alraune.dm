@@ -45,6 +45,9 @@
 	flags = NO_SCAN | IS_PLANT | NO_MINOR_CUT
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	inherent_verbs = list(
 		/mob/living/carbon/human/proc/alraune_fruit_select) //Give them the voremodes related to wrapping people in vines and sapping their fluids
 

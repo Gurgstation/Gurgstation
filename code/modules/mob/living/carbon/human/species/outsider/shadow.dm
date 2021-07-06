@@ -27,6 +27,9 @@
 
 	assisted_langs = list()
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 /datum/species/shadow/handle_death(var/mob/living/carbon/human/H)
 	spawn(1)
 		new /obj/effect/decal/cleanable/ash(H.loc)
