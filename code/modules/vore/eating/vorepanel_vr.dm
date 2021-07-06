@@ -165,7 +165,9 @@
 			"emote_active" = selected.emote_active,
 			"belly_fullscreen" = selected.belly_fullscreen,
 			// Gurgs ADD: Spawnable Belees
-			"vorespawn_blacklist" = selected.vorespawn_blacklist 
+			"vorespawn_blacklist" = selected.vorespawn_blacklist,
+			"belly_fullscreen_color" = selected.belly_fullscreen_color,	// Gurgs ADD: Colorable bellies!
+			"mapRef" = map_name	//CHOMPEdit
 		)
 
 		var/list/addons = list()
@@ -226,7 +228,7 @@
 			selected_list["liq_messages"]["liq_msg5"] = selected.liquid_fullness5_messages 
 		// Gurg ADD: Import Chomp liquid bellies - END
 
-		selected_list["possible_fullscreens"] = icon_states('icons/mob/screen_full_vore.dmi')
+		selected_list["possible_fullscreens"] = icon_states('gurgs_content/icons/mob/screen_full_vore.dmi') // Gurg ADD: More belly overlays!~
 
 		var/list/selected_contents = list()
 		for(var/O in selected)
@@ -1008,7 +1010,16 @@
 			. = TRUE
 		if("b_fullscreen")
 			host.vore_selected.belly_fullscreen = params["val"]
+			update_preview_icon()	//CHOMPEdit Begin
 			. = TRUE
+		// Gurgs ADD: Colorable Bellies!
+		if("b_fullscreen_color")
+			var/newcolor = input(usr, "Choose a color.", "", host.vore_selected.belly_fullscreen_color) as color|null
+			if(newcolor)
+				host.vore_selected.belly_fullscreen_color = newcolor
+			update_preview_icon()
+			. = TRUE 				//CHOMPEdit End
+
 		if("b_disable_hud")
 			host.vore_selected.disable_hud = !host.vore_selected.disable_hud
 			. = TRUE

@@ -642,15 +642,6 @@ const VoreSelectedBelly = (props, context) => {
                 Select Color
               </Button>
             </Flex>
-            <ByondUi
-              style={{
-                width: '200px',
-                height: '200px',
-              }}
-              params={{
-                id: mapRef,
-                type: 'map',
-              }} />
           </Section>
           <Section height="260px" style={{ overflow: "auto" }}>
             <Section title="Vore FX">
