@@ -14,6 +14,9 @@
 	dir = SOUTH
 	organ_tag = "limb"
 
+	// Gurgs ADD: Chompers traits
+	var/brokenpain = 50
+
 	// Strings
 	var/broken_description             // fracture string if any.
 	var/damage_state = "00"            // Modifier used for generating the on-mob damage overlay for this limb.
@@ -1064,10 +1067,10 @@ Note that amputating the affected organ does in fact remove the infection from t
 		return
 
 	if(owner)
-		owner.visible_message(\
+		owner.custom_pain(pick(\
 			"<span class='danger'>You hear a loud cracking sound coming from \the [owner].</span>",\
 			"<span class='danger'>Something feels like it shattered in your [name]!</span>",\
-			"<span class='danger'>You hear a sickening crack.</span>")
+			"<span class='danger'>You hear a sickening crack.</span>"),brokenpain) // Gurgs ADD: Chompers traits
 		jostle_bone()
 		if(organ_can_feel_pain() && !isbelly(owner.loc))
 			owner.emote("scream")
