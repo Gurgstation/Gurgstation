@@ -11,6 +11,7 @@
 			possibleSpawnspots += L
 	if(possibleSpawnspots.len)
 		spawnspot = pick(possibleSpawnspots)
+		log_debug("Maint Pred spawned at ([spawnspot.x],[spawnspot.y],[spawnspot.z]) (x,y,z)") // Gurgs ADD: Logging for maint pred
 	else
 		kill()		// To prevent fake announcements
 		return
