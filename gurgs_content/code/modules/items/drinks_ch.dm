@@ -2,7 +2,7 @@
 
 /datum/reagent/ethanol/cloverclub
 	glass_icon_state = "cloverclub"
-	glass_icon_source = 'gurgs_content/icons/obj/drinks_ch.dmi'
+	glass_icon_file = 'gurgs_content/icons/obj/drinks_ch.dmi'
 	glass_center_of_mass = list("x"=16, "y"=8)
 
 /datum/reagent/ethanol/spiderdrink
