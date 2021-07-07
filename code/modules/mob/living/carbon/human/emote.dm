@@ -131,8 +131,10 @@ var/list/_human_default_emotes = list(
 	/decl/emote/visible/blep,
 	
 	/decl/emote/helper/vwag,
-	/decl/emote/helper/vflap
+	/decl/emote/helper/vflap,
 	//VOREStation Add End
+
+	/decl/emote/audible/belch // Gurgs ADD: On demand belches~
 )
 
 /mob/living/carbon/human/get_available_emotes()
