@@ -21,6 +21,9 @@
 
 	virus_immune = 1
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	has_organ = list(
 		"brain" = /obj/item/organ/internal/brain/golem
 		)

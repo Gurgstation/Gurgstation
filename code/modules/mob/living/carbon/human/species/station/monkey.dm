@@ -32,6 +32,9 @@
 	brute_mod = 1.5
 	burn_mod = 1.5
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	spawn_flags = SPECIES_IS_RESTRICTED
 
 	bump_flag = MONKEY

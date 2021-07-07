@@ -25,6 +25,9 @@
 
 	genders = list(MALE, FEMALE, PLURAL, NEUTER)
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_SKIN_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR
 

@@ -19,6 +19,9 @@
 	min_age = 18
 	max_age = 80
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	blurb = "There are two subspecies of Sergal; Southern and Northern. Northern sergals are a highly aggressive race \
 	that lives in the plains and tundra of their homeworld. They are characterized by long, fluffy fur bodies with cold colors; \
 	usually with white abdomens, somewhat short ears, and thick faces. Southern sergals are much more docile and live in the \
@@ -84,6 +87,9 @@
 	min_age = 18
 	max_age = 80
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	blurb = "The Akula are a species of amphibious humanoids like the Skrell, but have an appearance very similar to that of a shark. \
 	They were first discovered as a primitive race of underwater dwelling tribal creatures by the Skrell. At first they were not believed \
 	to be noteworthy, but the Akula proved to be such swift and clever learners that the Skrell reclassified them as sentients. Allegedly, \
@@ -132,6 +138,9 @@
 	min_age = 18
 	max_age = 80
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	blurb = "Nevreans are a race of avian and dinosaur-like creatures living on Tal. They belong to a group of races that hails from Eltus, \
 	in the Vilous system. Unlike sergals whom they share a star system with, their species is a very peaceful one. They possess remarkable \
 	intelligence and very skillful hands that are put use for constructing precision instruments, but tire-out fast when repeatedly working \
@@ -173,6 +182,9 @@
 
 	min_age = 18
 	max_age = 80
+
+	male_scream_sound = null
+	female_scream_sound = null
 
 	blurb = "The fox-like Zorren are native to Virgo-Prime, however there are two distinct varieties of Zorren one with large ears and shorter fur, \
 	and the other with longer fur that is a bit more vibrant. The long-eared, short-furred Zorren have come to be known as Flatland Zorren as that \
@@ -221,6 +233,9 @@
 	num_alternate_languages = 3
 	color_mult = 1
 	inherent_verbs = list(/mob/living/carbon/human/proc/lick_wounds)
+
+	male_scream_sound = null
+	female_scream_sound = null
 
 	blurb = "Vulpkanin are a species of sharp-witted canine-pideds residing on the planet Altam just barely within the \
 	dual-star Vazzend system. Their politically de-centralized society and independent natures have led them to become a species and \
@@ -354,6 +369,9 @@
 	min_age = 18
 	max_age = 80
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	base_color = "#EECEB3"
 
 	blurb = "An Avian species, coming from a distant planet, the Rapalas are the very proud race.\
@@ -440,6 +458,8 @@
 	female_cough_sounds = null
 	male_sneeze_sound = null
 	female_sneeze_sound = null
+	male_scream_sound = null
+	female_scream_sound = null
 
 	speech_bubble_appearance = "ghost"
 
@@ -500,6 +520,9 @@
 
 	min_age = 18
 	max_age = 80
+	
+	male_scream_sound = null
+	female_scream_sound = null
 
 	//primitive_form = "" //We don't have fennec-monkey sprites.
 	spawn_flags = SPECIES_IS_RESTRICTED
@@ -532,6 +555,9 @@
 
 	min_age = 18
 	max_age = 80
+
+	male_scream_sound = list('sound/effects/mob_effects/x_scream1.ogg','sound/effects/mob_effects/x_scream2.ogg','sound/effects/mob_effects/x_scream3.ogg')
+	female_scream_sound = list('sound/effects/mob_effects/x_scream1.ogg','sound/effects/mob_effects/x_scream2.ogg','sound/effects/mob_effects/x_scream3.ogg')
 
 	blurb = "Xenomorphs hybrids are a mixture of xenomorph DNA and some other humanoid species. \
 	Xenomorph hyrids mostly have had had their natural aggression removed due to the gene modification process \
