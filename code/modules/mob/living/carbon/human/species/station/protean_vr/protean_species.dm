@@ -59,6 +59,9 @@
 	siemens_coefficient =   1.5 //Very bad zappy times
 	rarity_value =          5
 
+	male_scream_sound = null
+	female_scream_sound = null
+
 	genders = list(MALE, FEMALE, PLURAL, NEUTER)
 
 	has_organ = list(
@@ -231,7 +234,7 @@
 /datum/modifier/protean
 	stacks = MODIFIER_STACK_FORBID
 	var/material_use = METAL_PER_TICK
-	var/material_name = DEFAULT_WALL_MATERIAL
+	var/material_name = MAT_STEEL
 
 /datum/modifier/protean/on_applied()
 	. = ..()

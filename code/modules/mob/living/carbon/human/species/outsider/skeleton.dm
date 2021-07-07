@@ -51,3 +51,6 @@
 	heat_level_3 = 4000
 
 	body_temperature = T20C
+
+	male_scream_sound = null
+	female_scream_sound = null
