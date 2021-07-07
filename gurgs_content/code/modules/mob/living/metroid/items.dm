@@ -264,11 +264,11 @@
 	unacidable = 1
 	layer = TURF_LAYER
 
-	New()
+/obj/effect/golemrune/New()
 		..()
 		START_PROCESSING(SSobj, src)
 
-	process()
+/obj/effect/golemrune/process()
 		var/mob/observer/dead/ghost
 		for(var/mob/observer/dead/O in src.loc)
 			if(!O.client)	continue
@@ -280,7 +280,7 @@
 		else
 			icon_state = "golem"
 
-	attack_hand(mob/living/user as mob)
+/obj/effect/golemrune/attack_hand(mob/living/user as mob)
 		var/mob/observer/dead/ghost
 		for(var/mob/observer/dead/O in src.loc)
 			if(!O.client)	continue
@@ -297,7 +297,7 @@
 		qdel(src)
 
 
-	proc/announce_to_ghosts()
+/obj/effect/golemrune/proc/announce_to_ghosts()
 		for(var/mob/observer/dead/G in player_list)
 			if(G.client)
 				var/area/A = get_area(src)
