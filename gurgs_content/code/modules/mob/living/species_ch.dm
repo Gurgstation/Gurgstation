@@ -39,6 +39,7 @@
 			H.ai_holder.manage_processing(AI_PROCESSING) // Safety net to make sure it processes.
 
 // EXAMPLE CODE OF HOW TO USE THIS
+/*
 /datum/say_list/monke
 	emote_hear = list("whoops","gibbers","chatters","screeches")
 	emote_see = list("scratches its head", "jumps", "rolls around")
@@ -54,3 +55,4 @@
 			H.resting = FALSE
 			H.update_canmove()
 	return
+*/
