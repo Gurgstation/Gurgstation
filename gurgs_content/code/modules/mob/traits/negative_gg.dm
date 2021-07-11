@@ -1,7 +1,7 @@
 /datum/trait/negative/deafness
 	name = "Permanently deaf"
 	desc = "You are deaf."
-	cost = -5
+	cost = -6 //gurgs change, -6 because your department radio is rendered useless. and strictly relying on line of sight for sign language
 	special_env = TRUE
 
 /datum/trait/negative/deafness/handle_environment_special(var/mob/living/carbon/human/H)
