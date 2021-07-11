@@ -97,7 +97,7 @@ GLOBAL_LIST_INIT(digest_modes, list())
 /datum/digest_mode/unabsorb
 	id = DM_UNABSORB
 
-/datum/digest_mode/unabsorb/process_mob(obj/belly/B, mob/living/L)
+/datum/digest_mode/unabsorb/process_mob(obj/belly/B, mob/living/L) // Gurgs OVERRIDDEN: Shapeshift.dm
 	if(L.absorbed && B.owner.nutrition >= 100)
 		L.absorbed = FALSE
 		to_chat(L, "<span class='notice'>You suddenly feel solid again.</span>")
