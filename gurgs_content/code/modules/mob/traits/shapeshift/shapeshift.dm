@@ -4,6 +4,35 @@
 // This also can work with digested prey but more permanent absorbed DNA.
 // It's not intended to be persistent, do not try to make it persistent or suffer with gamebreaking issues. 
 
+//
+// Big brain definitions before we get to the half-meaty bit of code
+//
+
+/datum/vore_preferences
+	var/can_be_transformed = FALSE
+
+/mob/living/
+	var/can_be_transformed = FALSE
+	var/list/datum/absorbed_dna/absorbedPreys = list() // Why not use this? It's got everything I need.
+
+/mob/living/proc/GetAbsorbedDNA(var/dna_owner)
+	for(var/datum/absorbed_dna/DNA in absorbedPreys)
+		if(dna_owner == DNA.name)
+			return DNA
+
+/mob/living/proc/AbsorbPreyDNA(mob/living/M)
+	if(M.can_be_transformed)
+		if(ishuman(M))
+			var/mob/living/carbon/human/H = M
+			var/datum/absorbed_dna/newDNA = new(H.real_name, H.dna, H.species.name, H.languages, H.identifying_gender, H.flavor_texts, H.modifiers)
+
+			if(!GetAbsorbedDNA(newDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
+				absorbedPreys += newDNA
+
+//
+// Preparation for the actual stuff. This includes refactoring unabsorption, adding the prey's DNA to the player's list and also removing it on unabsorption, hence refactorising.
+//
+
 /obj/belly/proc/unabsorb_mob(mob/living/L, var/nutrientLoss = 0)
 	L.absorbed = FALSE
 	to_chat(L, "<span class='notice'>You suddenly feel solid again.</span>")
@@ -21,12 +50,13 @@
 		return list("to_update" = TRUE)
 
 /obj/belly/proc/AbsorbPreyDNA(mob/living/M)
-	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		var/datum/absorbed_dna/newDNA = new(H.real_name, H.dna, H.species.name, H.languages, H.identifying_gender, H.flavor_texts, H.modifiers)
+	if(M.can_be_transformed)
+		if(ishuman(M))
+			var/mob/living/carbon/human/H = M
+			var/datum/absorbed_dna/newDNA = new(H.real_name, H.dna, H.species.name, H.languages, H.identifying_gender, H.flavor_texts, H.modifiers)
 
-		if(!owner.GetAbsorbedDNA(newDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
-			owner.absorbedPreys += newDNA
+			if(!owner.GetAbsorbedDNA(newDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
+				owner.absorbedPreys += newDNA
 
 /obj/belly/absorb_living(mob/living/M)
 	..()
@@ -36,33 +66,30 @@
 	AbsorbPreyDNA(M)
 	..()
 
-/*
-//Change our DNA to that of somebody we've absorbed.
-/mob/proc/changeling_transform()
-	set category = "Changeling"
-	set name = "Transform (5)"
 
-	var/datum/changeling/changeling = changeling_power(5,1,0)
-	if(!changeling)	return
+//
+// The meaty bit~
+//
 
-	if(!isturf(loc))
-		to_chat(src, "<span class='warning'>Transforming here would be a bad idea.</span>")
-		return 0
+/mob/living/proc/prey_transform()
+	set category = "Abilities"
+	set name = "Shapeshift into Prey"
+
+
+	var/size_mult = size_multiplier // Fixes random issue of size_multiplier going to 0.
 
 	var/list/names = list()
-	for(var/datum/absorbed_dna/DNA in changeling.absorbed_dna)
+	for(var/datum/absorbed_dna/DNA in absorbedPreys)
 		names += "[DNA.name]"
 
-	var/S = tgui_input_list(src, "Select the target DNA:", "Target DNA", names)
+	var/S = tgui_input_list(src, "Select the prey:", "Pick which Prey", names)
 	if(!S)	return
 
-	var/datum/absorbed_dna/chosen_dna = changeling.GetDNA(S)
+	var/datum/absorbed_dna/chosen_dna = GetAbsorbedDNA(S)
 	if(!chosen_dna)
 		return
 
-	changeling.chem_charges -= 5
 	src.visible_message("<span class='warning'>[src] transforms!</span>")
-	changeling.geneticdamage = 5
 
 	if(ishuman(src))
 		var/mob/living/carbon/human/H = src
@@ -71,6 +98,7 @@
 
 	src.dna = chosen_dna.dna.Clone()
 	src.dna.b_type = "AB+" //This is needed to avoid blood rejection bugs.  The fact that the blood type might not match up w/ records could be a *FEATURE* too.
+
 	if(ishuman(src))
 		var/mob/living/carbon/human/H = src
 		H.b_type = "AB+" //For some reason we have two blood types on the mob.
@@ -79,7 +107,7 @@
 	src.real_name = chosen_dna.name
 	src.UpdateAppearance()
 	domutcheck(src, null)
-	changeling_update_languages(changeling.absorbed_languages)
+//	changeling_update_languages(changeling.absorbed_languages)
 	if(chosen_dna.genMods)
 		var/mob/living/carbon/human/self = src
 		for(var/datum/modifier/mod in self.modifiers)
@@ -88,11 +116,31 @@
 		for(var/datum/modifier/mod in chosen_dna.genMods)
 			self.modifiers.Add(mod.type)
 
-	src.verbs -= /mob/proc/changeling_transform
+	// Ooooh! That's a clever way to do a cooldown!
+	src.verbs -= /mob/living/proc/prey_transform
 	spawn(10)
-		src.verbs += /mob/proc/changeling_transform
+		src.verbs += /mob/living/proc/prey_transform
 		src.regenerate_icons()
 
-	feedback_add_details("changeling_powers","TR")
+	src.resize(size_mult) // Fixes random issue of size_multiplier going to 0.
 	return 1
-*/
+
+// Forget Prey you wish you forget.
+/mob/living/proc/remove_prey_transform()
+	set category = "Abilities"
+	set name = "Forget Prey"
+
+	var/list/names = list()
+	for(var/datum/absorbed_dna/DNA in absorbedPreys)
+		names += "[DNA.name]"
+
+	var/S = tgui_input_list(src, "Select the prey to forget:", "Prey-B-Gone", names)
+	if(!S)	return
+
+	var/datum/absorbed_dna/chosen_dna = GetAbsorbedDNA(S)
+	if(chosen_dna)
+		absorbedPreys -= chosen_dna
+		return 1
+	return 0
+
+

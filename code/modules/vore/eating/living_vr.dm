@@ -247,6 +247,9 @@
 	P.receive_reagents = src.receive_reagents
 	P.give_reagents = src.give_reagents
 
+	// Gurg ADD: Shapeshift preds
+	P.can_be_transformed = src.can_be_transformed
+
 	var/list/serialized = list()
 	for(var/belly in src.vore_organs)
 		var/obj/belly/B = belly
@@ -289,6 +292,10 @@
 	// Gurg ADD: Import Chomp liquid bellies
 	receive_reagents = P.receive_reagents
 	give_reagents = P.give_reagents
+
+	// Gurg ADD: Shapeshift preds
+	can_be_transformed = P.can_be_transformed
+
 
 	if(bellies)
 		release_vore_contents(silent = TRUE)

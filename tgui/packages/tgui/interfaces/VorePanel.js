@@ -919,6 +919,7 @@ const VoreUserPreferences = (props, context) => {
     noisy_full,
     liq_rec,
     liq_giv,
+    can_be_transformed,
   } = data.prefs;
 
   const {
@@ -1142,6 +1143,19 @@ const VoreUserPreferences = (props, context) => {
               ? "Click here to allow being spontaneously transformed."
               : "Click here to disable being spontaneously transformed.")}
             content={allow_spontaneous_tf ? "Spontaneous TF Enabled" : "Spontaneous TF Disabled"} />
+        </Flex.Item>
+        <Flex.Item basis="32%">
+          <Button
+            onClick={() => act("toggle_can_be_transformed")}
+            icon={can_be_transformed ? "toggle-on" : "toggle-off"}
+            selected={can_be_transformed}
+            fluid
+            tooltip={"This toggle is for allowing predators to"
+            + " transform as you after you are digested or absorbed. "
+            + (can_be_transformed
+              ? "Click here to allow being transformed into."
+              : "Click here to disable being transformed into.")}
+            content={can_be_transformed ? "Transformed into Enabled" : "Transformed into Disabled"} />
         </Flex.Item>
         <Flex.Item basis="49%">
           <Button
