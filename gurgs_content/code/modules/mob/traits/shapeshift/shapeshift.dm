@@ -139,8 +139,9 @@
 
 	var/datum/absorbed_dna/chosen_dna = GetAbsorbedDNA(S)
 	if(chosen_dna)
-		absorbedPreys -= chosen_dna
-		return 1
+		if(tgui_alert(src, "Are you sure you want to forget this? You won't remember it unless you reabsorb or digest them again!", "Forget Prey",list("No","Yes")) == "Yes")
+			absorbedPreys -= chosen_dna
+			return 1
 	return 0
 
 
