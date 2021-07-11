@@ -7,7 +7,7 @@ var/datum/controller/transfer_controller/transfer_controller
 	var/shift_last_vote = 0 //VOREStation Edit
 /datum/controller/transfer_controller/New()
 	timerbuffer = config.vote_autotransfer_initial
-	shift_hard_end = config.vote_autotransfer_initial + (config.vote_autotransfer_interval * 2) //Gurgs Edit // set to 2 for 8 hour rounds
+	shift_hard_end = config.vote_autotransfer_initial + (config.vote_autotransfer_interval * 4) //Gurgs Edit // set to 2 for 8 hour rounds
 	shift_last_vote = shift_hard_end - config.vote_autotransfer_interval //VOREStation Edit
 	START_PROCESSING(SSprocessing, src)
 
