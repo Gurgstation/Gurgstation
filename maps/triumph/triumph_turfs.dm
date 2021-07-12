@@ -9,98 +9,6 @@
 
 /turf/simulated/floor/triumph_indoors
 	TRIUMPH_SET_ATMOS
-	allow_gas_overlays = FALSE
-
-/turf/simulated/floor/outdoors/grass/sif
-	turf_layers = list(
-		/turf/simulated/floor/outdoors/rocks/triumph,
-		/turf/simulated/floor/outdoors/dirt/triumph
-		)
-
-// Overriding these for the sake of submaps that use them on other planets.
-// This means that mining on tether base and space is oxygen-generating, but solars and mining should use the triumph subtype
-/turf/simulated/mineral
-	initial_gas_mix = GAS_STRING_STP
-
-/turf/simulated/floor/outdoors
-	initial_gas_mix = GAS_STRING_STP
-
-/turf/simulated/floor/water
-	initial_gas_mix = GAS_STRING_STP
-
-/turf/simulated/mineral/vacuum
-	initial_gas_mix = GAS_STRING_VACUUM
-
-/turf/simulated/mineral/floor/vacuum
-	initial_gas_mix = GAS_STRING_VACUUM
-
-	//This proc is responsible for ore generation on surface turfs
-/turf/simulated/mineral/make_ore(var/rare_ore)
-	if(mineral || ignore_mapgen)
-		return
-	var/mineral_name
-	outdoors = TRUE
-	if(rare_ore)
-		mineral_name = pickweight(list(
-			"marble" = 3,
-			"uranium" = 10,
-			"platinum" = 10,
-			"hematite" = 20,
-			"carbon" = 20,
-			"diamond" = 1,
-			"gold" = 8,
-			"silver" = 8,
-			"phoron" = 18,
-			"lead" = 2,
-			"verdantium" = 1))
-	else
-		mineral_name = pickweight(list(
-			"marble" = 2,
-			"uranium" = 5,
-			"platinum" = 5,
-			"hematite" = 35,
-			"carbon" = 35,
-			"gold" = 3,
-			"silver" = 3,
-			"phoron" = 25,
-			"lead" = 1))
-	if(mineral_name && (mineral_name in GLOB.ore_data))
-		mineral = GLOB.ore_data[mineral_name]
-		if(flags & INITIALIZED)
-			UpdateMineral()
-
-/turf/simulated/mineral/rich/make_ore(var/rare_ore)
-	if(mineral || ignore_mapgen)
-		return
-	var/mineral_name
-	if(rare_ore)
-		mineral_name = pickweight(list(
-			"marble" = 7,
-			"uranium" = 10,
-			"platinum" = 10,
-			"hematite" = 10,
-			"carbon" = 10,
-			"diamond" = 4,
-			"gold" = 15,
-			"silver" = 15,
-			"lead" = 5,
-			"verdantium" = 2))
-	else
-		mineral_name = pickweight(list(
-			"marble" = 5,
-			"uranium" = 7,
-			"platinum" = 7,
-			"hematite" = 28,
-			"carbon" = 28,
-			"diamond" = 2,
-			"gold" = 7,
-			"silver" = 7,
-			"lead" = 4,
-			"verdantium" = 1))
-	if(mineral_name && (mineral_name in GLOB.ore_data))
-		mineral = GLOB.ore_data[mineral_name]
-		if(flags & INITIALIZED)
-			UpdateMineral()
 
 //Unsimulated
 /turf/unsimulated/wall/planetary/triumph
@@ -197,3 +105,110 @@
 	dir = EAST
 /turf/simulated/sky/triumph/moving/west
 	dir = WEST
+
+
+/area/turbolift/t_ship/level1
+	name = "Deck 1"
+	lift_floor_label = "Deck 1"
+	lift_floor_name = "Engineering, Reactor, Telecomms, Trash Pit, Atmospherics"
+	lift_announce_str = "Arriving at Deck 1."
+	base_turf = /turf/simulated/floor/plating
+
+
+/area/turbolift/t_ship/level2
+	name = "Deck 2"
+	lift_floor_label = "Deck 2"
+	lift_floor_name = "Dorms, Cargo, Mining, Bar, Cafe, Solars, Shops"
+	lift_announce_str = "Arriving at Deck 2."
+
+/area/turbolift/t_ship/level3
+	name = "Deck 3"
+	lift_floor_label = "Deck 3"
+	lift_floor_name = "Medical, Science, Holo Deck, Teleporter"
+	lift_announce_str = "Arriving at Deck 3."
+
+/area/turbolift/t_ship/level4
+	name = "Deck 4"
+	lift_floor_label = "Deck 4"
+	lift_floor_name = "Exploration, Arrivals & Departures, Security, Command, Chapel, Sauna, Docking Arm, Library, Garden, Tool Storage"
+	lift_announce_str = "Arriving at Deck 4."
+
+
+/area/holodeck/holodorm/source_basic
+	name = "\improper Holodeck Source"
+	flags = RAD_SHIELDED | BLUE_SHIELDED
+	soundproofed = TRUE
+	limit_mob_size = FALSE
+	block_suit_sensors = TRUE
+
+/area/holodeck/holodorm/source_desert
+	name = "\improper Holodeck Source"
+	flags = RAD_SHIELDED | BLUE_SHIELDED
+	soundproofed = TRUE
+	limit_mob_size = FALSE
+	block_suit_sensors = TRUE
+
+/area/holodeck/holodorm/source_seating
+	name = "\improper Holodeck Source"
+	flags = RAD_SHIELDED | BLUE_SHIELDED
+	soundproofed = TRUE
+	limit_mob_size = FALSE
+	block_suit_sensors = TRUE
+
+/area/holodeck/holodorm/source_beach
+	name = "\improper Holodeck Source"
+	flags = RAD_SHIELDED | BLUE_SHIELDED
+	soundproofed = TRUE
+	limit_mob_size = FALSE
+	block_suit_sensors = TRUE
+
+/area/holodeck/holodorm/source_garden
+	name = "\improper Holodeck Source"
+	flags = RAD_SHIELDED | BLUE_SHIELDED
+	soundproofed = TRUE
+	limit_mob_size = FALSE
+	block_suit_sensors = TRUE
+
+/area/holodeck/holodorm/source_boxing
+	name = "\improper Holodeck Source"
+	flags = RAD_SHIELDED | BLUE_SHIELDED
+	soundproofed = TRUE
+	limit_mob_size = FALSE
+	block_suit_sensors = TRUE
+
+/area/holodeck/holodorm/source_snow
+	name = "\improper Holodeck Source"
+	flags = RAD_SHIELDED | BLUE_SHIELDED
+	soundproofed = TRUE
+	limit_mob_size = FALSE
+	block_suit_sensors = TRUE
+
+/area/holodeck/holodorm/source_space
+	name = "\improper Holodeck Source"
+	flags = RAD_SHIELDED | BLUE_SHIELDED
+	soundproofed = TRUE
+	limit_mob_size = FALSE
+	block_suit_sensors = TRUE
+
+/area/holodeck/holodorm/source_off
+	name = "\improper Holodeck Source"
+	flags = RAD_SHIELDED | BLUE_SHIELDED
+	soundproofed = TRUE
+	limit_mob_size = FALSE
+	block_suit_sensors = TRUE
+
+/area/crew_quarters/sleep/Dorm_1/holo
+	name = "\improper Dorm 1 Holodeck"
+	icon_state = "dk_yellow"
+
+/area/crew_quarters/sleep/Dorm_3/holo
+	name = "\improper Dorm 3 Holodeck"
+	icon_state = "dk_yellow"
+
+/area/crew_quarters/sleep/Dorm_5/holo
+	name = "\improper Dorm 5 Holodeck"
+	icon_state = "dk_yellow"
+
+/area/crew_quarters/sleep/Dorm_7/holo
+	name = "\improper Dorm 7 Holodeck"
+	icon_state = "dk_yellow"

@@ -28,7 +28,7 @@
 ////////////////////////////
 
 /obj/effect/step_trigger/lost_in_space
-	var/deathmessage = "You drift off into space, floating alone in the void until your life support runs out."
+	deathmessage = "You drift off into space, floating alone in the void until your life support runs out."
 
 /obj/effect/step_trigger/lost_in_space/Trigger(var/atom/movable/A) //replacement for shuttle dump zones because there's no empty space levels to dump to
 	if(ismob(A))
@@ -37,14 +37,14 @@
 
 /obj/effect/step_trigger/lost_in_space/bluespace
 	deathmessage = "Everything goes blue as your component particles are scattered throughout the known and unknown universe."
-	var/last_sound = 0
+	last_sound = 0
 
 /obj/effect/step_trigger/lost_in_space/bluespace/Trigger(A)
 	if(world.time - last_sound > 5 SECONDS)
 		last_sound = world.time
 		playsound(get_turf(src), 'sound/effects/supermatter.ogg', 75, 1)
 	if(ismob(A) && prob(5))//lucky day
-		var/destturf = locate(rand(5,world.maxx-5),rand(5,world.maxy-5),pick(GLOB.using_map.station_levels))
+		var/destturf = locate(rand(5,world.maxx-5),rand(5,world.maxy-5),pick(using_map.station_levels))
 		new /datum/teleport/instant(A, destturf, 0, 1, null, null, null, 'sound/effects/phasein.ogg')
 	else
 		return ..()
@@ -61,12 +61,6 @@
 /obj/effect/ceiling/CheckExit(atom/movable/O as mob|obj, turf/target as turf)
 	if(target && target.z > src.z)
 		return FALSE // Block exit from our turf to above
-	return TRUE
-
-/obj/effect/ceiling/CanAllowThrough(atom/movable/mover, turf/target, height=0, air_group=0)
-	. = ..()
-	if(mover && mover.z > src.z)
-		return FALSE // Block entry from above to our turf
 	return TRUE
 
 //
@@ -86,7 +80,7 @@
 /obj/machinery/smartfridge/chemistry/chemvator
 	name = "\improper Smart Chemavator - Upper"
 	desc = "A refrigerated storage unit for medicine and chemical storage. Now sporting a fancy system of pulleys to lift bottles up and down."
-	var/obj/machinery/smartfridge/chemistry/chemvator/attached
+	obj/machinery/smartfridge/chemistry/chemvator/attached
 
 /obj/machinery/smartfridge/chemistry/chemvator/down/Destroy()
 	attached = null
@@ -123,7 +117,7 @@
 	spawnpoint_type = /datum/spawnpoint/shuttle
 
 /obj/machinery/cryopod/robot/door/shuttle/process(delta_time)
-	if(SSemergencyshuttle.online() || SSemergencyshuttle.returned())
+	if(emergency_shuttle.online() || emergency_shuttle.returned())
 		// Transform into a door!  But first despawn anyone inside
 		time_till_despawn = 0
 		..()
@@ -205,16 +199,17 @@ var/global/list/latejoin_shuttle   = list()
 	projection_area = /area/crew_quarters/sleep/Dorm_7/holo
 
 // Small Ship Holodeck
+/*
 /obj/machinery/computer/HolodeckControl/houseboat
-	projection_area = /area/houseboat/holodeck_area
+	projection_area = /area/holodeck_area
 	powerdown_program = "Turn Off"
 	default_program = "Empty Court"
 
 	supported_programs = list(
-	"Basketball" 		= new/datum/holodeck_program(/area/houseboat/holodeck/basketball),
-	"Thunderdome"		= new/datum/holodeck_program(/area/houseboat/holodeck/thunderdome, list('sound/music/THUNDERDOME.ogg')),
-	"Beach" 			= new/datum/holodeck_program(/area/houseboat/holodeck/beach),
-	"Desert" 			= new/datum/holodeck_program(/area/houseboat/holodeck/desert,
+	"Basketball" 		= new/datum/holodeck_program(/area/holodeck/basketball),
+	"Thunderdome"		= new/datum/holodeck_program(/area/holodeck/thunderdome, list('sound/music/THUNDERDOME.ogg')),
+	"Beach" 			= new/datum/holodeck_program(/area/holodeck/beach),
+	"Desert" 			= new/datum/holodeck_program(/area/holodeck/desert,
 													list(
 														'sound/effects/weather/wind/wind_2_1.ogg',
 											 			'sound/effects/weather/wind/wind_2_2.ogg',
@@ -224,7 +219,7 @@ var/global/list/latejoin_shuttle   = list()
 											 			'sound/effects/weather/wind/wind_5_1.ogg'
 												 		)
 		 											),
-	"Snowfield" 		= new/datum/holodeck_program(/area/houseboat/holodeck/snow,
+	"Snowfield" 		= new/datum/holodeck_program(/area/holodeck/snow,
 													list(
 														'sound/effects/weather/wind/wind_2_1.ogg',
 											 			'sound/effects/weather/wind/wind_2_2.ogg',
@@ -234,7 +229,7 @@ var/global/list/latejoin_shuttle   = list()
 											 			'sound/effects/weather/wind/wind_5_1.ogg'
 												 		)
 		 											),
-	"Space" 			= new/datum/holodeck_program(/area/houseboat/holodeck/space,
+	"Space" 			= new/datum/holodeck_program(/area/holodeck/space,
 													list(
 														'sound/ambience/ambispace.ogg',
 														'sound/music/main.ogg',
@@ -242,11 +237,13 @@ var/global/list/latejoin_shuttle   = list()
 														'sound/music/traitor.ogg',
 														)
 													),
-	"Picnic Area" 		= new/datum/holodeck_program(/area/houseboat/holodeck/picnic, list('sound/music/title2.ogg')),
-	"Gaming" 			= new/datum/holodeck_program(/area/houseboat/holodeck/gaming, list('sound/music/traitor.ogg')),
-	"Bunking"			= new/datum/holodeck_program(/area/houseboat/holodeck/bunking, list()),
-	"Turn Off" 			= new/datum/holodeck_program(/area/houseboat/holodeck/off, list())
+	"Picnic Area" 		= new/datum/holodeck_program(/area/holodeck/picnic, list('sound/music/title2.ogg')),
+	"Gaming" 			= new/datum/holodeck_program(/area/holodeck/gaming, list('sound/music/traitor.ogg')),
+	"Bunking"			= new/datum/holodeck_program(/area/holodeck/bunking, list()),
+	"Turn Off" 			= new/datum/holodeck_program(/area/holodeck/off, list())
 	)
+*/
+
 
 // Our map is small, if the supermatter is ejected lets not have it just blow up somewhere else
 /obj/machinery/power/supermatter/touch_map_edge()
@@ -257,10 +254,10 @@ var/global/list/latejoin_shuttle   = list()
 	name = "Airlock NanoMed"
 	desc = "Wall-mounted Medical Equipment dispenser. This limited-use version dispenses antitoxins with mild painkillers for surface EVAs."
 	icon_state = "wallmed"
-	icon_deny = "wallmed-deny"
+	// icon_deny = "wallmed-deny"
 	density = 0 //It is wall-mounted, and thus, not dense. --Superxpdude
-	products = list(/obj/item/reagent_containers/pill/airlock = 10,/obj/item/healthanalyzer = 1)
-	contraband = list(/obj/item/reagent_containers/pill/tox = 2)
+	products = list(/obj/item/reagent_containers/pill/airlock = 10,/obj/item/device/healthanalyzer = 1)
+	contraband = list(/obj/item/weapon/reagent_containers/pill/tox = 2)
 	req_log_access = access_cmo
 	has_logs = 1
 
@@ -288,12 +285,7 @@ var/global/list/latejoin_shuttle   = list()
 /obj/structure/closet/secure_closet/guncabinet/excursion
 	name = "expedition weaponry cabinet"
 	req_one_access = list(access_explorer,access_armory)
-
-/obj/structure/closet/secure_closet/guncabinet/excursion/PopulateContents()
-	for(var/i = 1 to 4)
-		new /obj/item/gun/energy/frontier/locked(src)
-	for(var/i = 1 to 4)
-		new /obj/item/gun/energy/frontier/locked/holdout(src)
+	starts_with = list(/obj/item/weapon/gun/energy/locked/frontier = 3,/obj/item/weapon/gun/energy/locked/frontier/holdout,3)
 
 // Used at centcomm for the elevator
 /obj/machinery/cryopod/robot/door/dorms
@@ -352,24 +344,6 @@ var/global/list/latejoin_shuttle   = list()
 	)
 */
 
-/obj/machinery/camera/network/research/xenobio
-	network = list(NETWORK_RESEARCH, NETWORK_XENOBIO)
-
-//Camera monitors
-/obj/machinery/computer/security/xenobio
-	name = "xenobiology camera monitor"
-	desc = "Used to access the xenobiology cell cameras."
-	icon_keyboard = "mining_key"
-	icon_screen = "mining"
-	network = list(NETWORK_XENOBIO)
-	circuit = /obj/item/circuitboard/security/xenobio
-	light_color = "#F9BBFC"
-
-/obj/item/circuitboard/security/xenobio
-	name = T_BOARD("xenobiology camera monitor")
-	build_path = /obj/machinery/computer/security/xenobio
-	network = list(NETWORK_XENOBIO)
-	req_access = list()
 // Used at centcomm for the elevator
 /obj/machinery/cryopod/robot/door/dorms
 	spawnpoint_type = /datum/spawnpoint/shuttle
