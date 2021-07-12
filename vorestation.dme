@@ -4114,5 +4114,11 @@
 #include "maps\submaps\surface_submaps\wilderness\wilderness.dm"
 #include "maps\submaps\surface_submaps\wilderness\wilderness_areas.dm"
 #include "maps\tether\tether.dm"
+#include "maps\triumph\triumph_defines.dm"
+#include "maps\triumph\triumph_overmap.dm"
+#include "maps\triumph\triumph_shuttle_defs.dm"
+#include "maps\triumph\triumph_telecomms.dm"
+#include "maps\triumph\triumph_things.dm"
+#include "maps\triumph\triumph_turfs.dm"
 #include "maps\~map_system\maps.dm"
 // END_INCLUDE
