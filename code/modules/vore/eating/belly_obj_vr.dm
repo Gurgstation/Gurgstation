@@ -347,7 +347,8 @@
 		if(ML.muffled)
 			ML.muffled = 0
 		if(ML.absorbed)
-			ML.absorbed = FALSE
+			// ML.absorbed = FALSE // Gurgs EDIT: Refactoring absorbtion
+			unabsorb_mob(ML) // Gurgs EDIT end
 			if(ishuman(M) && ishuman(OW))
 				var/mob/living/carbon/human/Prey = M
 				var/mob/living/carbon/human/Pred = OW

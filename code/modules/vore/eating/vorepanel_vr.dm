@@ -275,7 +275,10 @@
 		"liq_rec" = host.receive_reagents,
 		"liq_giv" = host.give_reagents,
 		// Gurgs ADD: Imports belches, brp~
-		"noisy_full" = host.noisy_full //Belching while full
+		"noisy_full" = host.noisy_full, //Belching while full
+		// Gurg ADD: Shapeshift preds
+		"can_be_transformed" = host.can_be_transformed,
+
 	)
 
 	return data
@@ -426,6 +429,13 @@
 			host.can_be_drop_prey = !host.can_be_drop_prey
 			if(host.client.prefs_vr)
 				host.client.prefs_vr.can_be_drop_prey = host.can_be_drop_prey
+			unsaved_changes = TRUE
+			return TRUE
+		// Gurg ADD: Shapeshift preds
+		if("toggle_can_be_transformed")
+			host.can_be_transformed = !host.can_be_transformed
+			if(host.client.prefs_vr)
+				host.client.prefs_vr.can_be_transformed = host.can_be_transformed
 			unsaved_changes = TRUE
 			return TRUE
 		// Gurgs ADD: Spawnable Belees

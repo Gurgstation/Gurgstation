@@ -114,7 +114,8 @@
 
 			else if(prob(1))
 				playsound(M, 'sound/vore/schlorp.ogg', 50, 1)
-				P.absorbed = 0
+				//P.absorbed = 0 // Gurgs EDIT: Refactoring absorbtion
+				B.unabsorb_mob(P) // Gurgs EDIT end
 				M.visible_message("<font color='green'><b>Something spills into [M]'s [lowertext(B.name)]!</b></font>")
 
 ////////////////////////// TF Drugs //////////////////////////
