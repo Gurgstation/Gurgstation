@@ -1303,6 +1303,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Vacant Site"
 	icon_state = "vacant_site"
 
+/area/vacant/vacant_office
+	name = "\improper Vacant Office"
+	icon_state = "vacant_site"
+
 /area/vacant/vacant_site2
 	name = "\improper Abandoned Locker Room"
 	icon_state = "vacant_site"
