@@ -29,9 +29,9 @@
 /obj/structure/alien/egg/process()
 	progress++
 	if(progress >= MAX_PROGRESS)
-		for(var/mob/observer/dead/O)
+		for(var/mob/observer/dead/O in observer_mob_list)
 			if(O.client)
-				to_chat(O, "<span class='notice'>An alien is ready to hatch! (<a href='byond://?src=\ref[src];spawn=1'>spawn</a>)</span>")
+				to_chat(O, "<span class='notice'>An alien is ready to hatch at [get_area(src.loc)]! (<a href='byond://?src=\ref[src];spawn=1'>spawn</a>)</span>")
 		STOP_PROCESSING(SSobj, src)
 		update_icon()
 
@@ -55,7 +55,7 @@
 		return
 
 	// Check for bans properly.
-	if(jobban_isbanned(user, MODE_XENOMORPH))
+	if(jobban_isbanned(user, "Xenomorph"))
 		to_chat(user, "<span class='danger'>You are banned from playing a Xenomorph.</span>")
 		return
 
