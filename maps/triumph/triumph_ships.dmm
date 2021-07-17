@@ -91,7 +91,7 @@
 /area/space)
 "aH" = (
 /obj/structure/table/standard,
-/obj/item/weapon/storage/box/glasses/square,
+/obj/item/storage/box/glasses/square,
 /turf/simulated/floor/carpet,
 /area/space)
 "aJ" = (
@@ -102,11 +102,11 @@
 /area/space)
 "aL" = (
 /obj/structure/table/woodentable,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 8
 	},
-/obj/item/weapon/pen{
+/obj/item/pen{
 	pixel_y = 4
 	},
 /turf/simulated/floor/carpet,
@@ -234,10 +234,10 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/item/device/kit/paint/ripley/death,
-/obj/item/device/kit/paint/ripley/flames_blue,
-/obj/item/device/kit/paint/ripley/flames_red,
-/obj/item/device/kit/paint/ripley,
+/obj/item/kit/paint/ripley/death,
+/obj/item/kit/paint/ripley/flames_blue,
+/obj/item/kit/paint/ripley/flames_red,
+/obj/item/kit/paint/ripley,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "cD" = (
@@ -485,7 +485,7 @@
 /area/space)
 "eC" = (
 /turf/simulated/floor/holofloor/beach/sand,
-/area/holodeck/source_beach)
+/area/houseboat/holodeck/beach)
 "eD" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -498,17 +498,17 @@
 "eE" = (
 /obj/structure/flora/grass/both,
 /turf/simulated/floor/holofloor/snow,
-/area/holodeck/source_snowfield)
+/area/houseboat/holodeck/snow)
 "eF" = (
 /turf/simulated/floor/holofloor/snow,
-/area/holodeck/source_snowfield)
+/area/houseboat/holodeck/snow)
 "eG" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/holofloor/desert,
-/area/holodeck/source_desert)
+/area/houseboat/holodeck/desert)
 "eH" = (
 /turf/simulated/floor/holofloor/desert,
-/area/holodeck/source_desert)
+/area/houseboat/holodeck/desert)
 "eI" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -531,20 +531,20 @@
 "eP" = (
 /obj/effect/overlay/palmtree_r,
 /turf/simulated/floor/holofloor/beach/sand,
-/area/holodeck/source_beach)
+/area/houseboat/holodeck/beach)
 "eQ" = (
-/obj/item/weapon/beach_ball,
+/obj/item/beach_ball,
 /turf/simulated/floor/holofloor/beach/sand,
-/area/holodeck/source_beach)
+/area/houseboat/holodeck/beach)
 "eR" = (
 /obj/effect/overlay/palmtree_l,
 /obj/effect/overlay/coconut,
 /turf/simulated/floor/holofloor/beach/sand,
-/area/holodeck/source_beach)
+/area/houseboat/holodeck/beach)
 "eS" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/holofloor/desert,
-/area/holodeck/source_desert)
+/area/houseboat/holodeck/desert)
 "fb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan{
 	dir = 5
@@ -559,15 +559,15 @@
 /turf/unsimulated/beach/sand{
 	icon_state = "beach"
 	},
-/area/holodeck/source_beach)
+/area/houseboat/holodeck/beach)
 "fe" = (
 /obj/structure/flora/tree/dead,
 /turf/simulated/floor/holofloor/snow,
-/area/holodeck/source_snowfield)
+/area/houseboat/holodeck/snow)
 "ff" = (
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/holofloor/snow,
-/area/holodeck/source_snowfield)
+/area/houseboat/holodeck/snow)
 "fs" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
 	frequency = 1380;
@@ -607,11 +607,11 @@
 /area/space)
 "fw" = (
 /turf/simulated/floor/holofloor/beach/water,
-/area/holodeck/source_beach)
+/area/houseboat/holodeck/beach)
 "fx" = (
 /obj/structure/flora/grass/green,
 /turf/simulated/floor/holofloor/snow,
-/area/holodeck/source_snowfield)
+/area/houseboat/holodeck/snow)
 "fC" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 8
@@ -658,65 +658,68 @@
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/floor_decal/spline/fancy/wood/corner,
 /turf/simulated/floor/holofloor/grass,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "fT" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 6
 	},
 /turf/simulated/floor/holofloor/grass,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "fU" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/holofloor/desert,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "fV" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
 	},
 /turf/simulated/floor/holofloor/grass,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "fW" = (
 /turf/simulated/floor/holofloor/space,
-/area/holodeck/source_space)
+/area/houseboat/holodeck/space)
 "fX" = (
 /obj/structure/bed/holobed,
 /turf/simulated/floor/holofloor/wood,
-/area/space)
+/area/houseboat/holodeck/bunking)
+"fY" = (
+/turf/simulated/floor/holofloor/wood,
+/area/houseboat/holodeck/bunking)
 "fZ" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
 	},
 /turf/simulated/floor/holofloor/grass,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "ga" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/holostool,
 /turf/simulated/floor/holofloor/desert,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "gc" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 4
 	},
 /turf/simulated/floor/holofloor/grass,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "gd" = (
 /obj/structure/table/woodentable/holotable,
 /turf/simulated/floor/holofloor/desert,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "ge" = (
 /turf/simulated/floor/holofloor/desert,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "gf" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
 	},
 /turf/simulated/floor/holofloor/grass,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "gg" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/action_figure,
@@ -730,7 +733,7 @@
 "gh" = (
 /obj/structure/holostool,
 /turf/simulated/floor/holofloor/wood,
-/area/space)
+/area/houseboat/holodeck/bunking)
 "gi" = (
 /obj/structure/table/standard,
 /obj/machinery/chemical_dispenser/bar_alc/full,
@@ -742,28 +745,32 @@
 	dir = 1
 	},
 /turf/simulated/floor/holofloor/grass,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "gk" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
 	},
 /turf/simulated/floor/holofloor/grass,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "gl" = (
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
 	},
 /turf/simulated/floor/holofloor/grass,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
 "gm" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/floor_decal/spline/fancy/wood/corner{
 	dir = 4
 	},
 /turf/simulated/floor/holofloor/grass,
-/area/holodeck/source_picnicarea)
+/area/houseboat/holodeck/picnic)
+"gn" = (
+/obj/structure/table/woodentable/holotable,
+/turf/simulated/floor/holofloor/wood,
+/area/houseboat/holodeck/bunking)
 "go" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -773,95 +780,95 @@
 /area/space)
 "gp" = (
 /turf/simulated/floor/holofloor/wood,
-/area/space)
+/area/houseboat/holodeck/gaming)
 "gq" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gr" = (
 /obj/effect/floor_decal/corner/red/full{
 	dir = 8
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gs" = (
 /obj/structure/holohoop,
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gt" = (
 /obj/effect/floor_decal/corner/red/full{
 	dir = 1
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gu" = (
 /obj/structure/table/holotable,
 /obj/item/clothing/head/helmet/thunderdome,
 /obj/item/clothing/suit/armor/tdome/red,
 /obj/item/clothing/under/color/red,
-/obj/item/weapon/holo/esword/red,
+/obj/item/holo/esword/red,
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_thunderdomecourt)
+/area/houseboat/holodeck/thunderdome)
 "gv" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_thunderdomecourt)
+/area/houseboat/holodeck/thunderdome)
 "gw" = (
 /obj/structure/bed/chair/holochair,
 /turf/simulated/floor/holofloor/wood,
-/area/space)
+/area/houseboat/holodeck/gaming)
 "gx" = (
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gy" = (
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_thunderdomecourt)
+/area/houseboat/holodeck/thunderdome)
 "gz" = (
 /obj/structure/table/woodentable/holotable,
 /turf/simulated/floor/holofloor/wood,
-/area/space)
+/area/houseboat/holodeck/gaming)
 "gA" = (
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gB" = (
-/obj/item/weapon/beach_ball/holoball,
+/obj/item/beach_ball/holoball,
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gC" = (
 /obj/structure/bed/chair/holochair{
 	dir = 1
 	},
 /turf/simulated/floor/holofloor/wood,
-/area/space)
+/area/houseboat/holodeck/gaming)
 "gD" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 5
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gE" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 10
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gF" = (
 /obj/effect/floor_decal/corner/green/full,
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gG" = (
 /obj/structure/holohoop{
 	dir = 1
@@ -870,30 +877,30 @@
 	dir = 10
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gH" = (
 /obj/effect/floor_decal/corner/green/full{
 	dir = 4
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_basketball)
+/area/houseboat/holodeck/basketball)
 "gI" = (
 /obj/structure/table/holotable,
 /obj/item/clothing/head/helmet/thunderdome,
 /obj/item/clothing/suit/armor/tdome/green,
 /obj/item/clothing/under/color/green,
-/obj/item/weapon/holo/esword/green,
+/obj/item/holo/esword/green,
 /obj/effect/floor_decal/corner/green{
 	dir = 10
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_thunderdomecourt)
+/area/houseboat/holodeck/thunderdome)
 "gJ" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 10
 	},
 /turf/simulated/floor/holofloor/tiled,
-/area/holodeck/source_thunderdomecourt)
+/area/houseboat/holodeck/thunderdome)
 "gK" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -908,7 +915,7 @@
 /area/space)
 "gM" = (
 /turf/simulated/floor/holofloor/reinforced,
-/area/holodeck/source_plating)
+/area/houseboat/holodeck/off)
 "gN" = (
 /obj/machinery/light{
 	dir = 1
@@ -1006,7 +1013,7 @@
 /obj/machinery/computer/ship/helm{
 	dir = 8
 	},
-/obj/item/device/gps/internal/base{
+/obj/item/gps/internal/base{
 	desc = "A tracking beacon embedded in the shuttle systems, to help explorers find where they landed.";
 	gps_tag = "EMT";
 	name = "shuttle beacon"
@@ -1038,11 +1045,11 @@
 /turf/simulated/floor/reinforced,
 /area/space)
 "hE" = (
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 8
 	},
-/obj/item/weapon/pen{
+/obj/item/pen{
 	pixel_y = 4
 	},
 /obj/machinery/light,
@@ -1102,7 +1109,7 @@
 /area/space)
 "hT" = (
 /obj/structure/bed/padded,
-/obj/item/weapon/bedsheet/hos,
+/obj/item/bedsheet/hos,
 /obj/structure/sign/poster{
 	pixel_y = -32
 	},
@@ -1202,11 +1209,11 @@
 /area/space)
 "jp" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/weapon/paper_bin{
+/obj/item/paper_bin{
 	pixel_x = -3;
 	pixel_y = 8
 	},
-/obj/item/weapon/pen{
+/obj/item/pen{
 	pixel_y = 4
 	},
 /turf/simulated/shuttle/floor/black,
@@ -1263,7 +1270,7 @@
 /obj/random/tech_supply,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
-/obj/item/weapon/weldpack,
+/obj/item/weldpack,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "jR" = (
@@ -1609,7 +1616,8 @@
 /obj/structure/closet/hydrant{
 	pixel_y = 30
 	},
-/obj/item/weapon/storage/box/flashshells,
+/obj/item/gun/projectile/shotgun/flare,
+/obj/item/storage/box/flashshells,
 /turf/simulated/floor/airless,
 /area/space)
 "oX" = (
@@ -1672,7 +1680,7 @@
 /area/space)
 "pU" = (
 /obj/structure/table/standard,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/item/storage/box/donkpockets,
 /turf/simulated/floor/carpet,
 /area/space)
 "pW" = (
@@ -1723,7 +1731,7 @@
 /obj/machinery/computer/ship/helm{
 	dir = 4
 	},
-/obj/item/device/gps/internal/base{
+/obj/item/gps/internal/base{
 	desc = "A tracking beacon embedded in the shuttle systems, to help explorers find where they landed.";
 	gps_tag = "SHUTTLE";
 	name = "shuttle beacon"
@@ -1777,7 +1785,7 @@
 /area/space)
 "rx" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/weapon/inflatable_duck,
+/obj/item/inflatable_duck,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "ry" = (
@@ -1917,11 +1925,11 @@
 	dir = 1
 	},
 /obj/structure/table/steel_reinforced,
-/obj/item/poster,
-/obj/item/poster,
-/obj/item/poster,
-/obj/item/poster,
-/obj/item/poster,
+/obj/item/contraband/poster,
+/obj/item/contraband/poster,
+/obj/item/contraband/poster,
+/obj/item/contraband/poster,
+/obj/item/contraband/poster,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "ts" = (
@@ -1978,7 +1986,7 @@
 /area/space)
 "uq" = (
 /obj/structure/table/standard,
-/obj/item/weapon/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "ux" = (
@@ -2183,20 +2191,20 @@
 "wn" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/warning,
-/obj/item/device/kit/paint/gygax/darkgygax,
-/obj/item/device/kit/paint/gygax/recitence,
-/obj/item/device/kit/paint/durand,
-/obj/item/device/kit/paint/durand/phazon,
-/obj/item/device/kit/paint/durand/seraph,
+/obj/item/kit/paint/gygax/darkgygax,
+/obj/item/kit/paint/gygax/recitence,
+/obj/item/kit/paint/durand,
+/obj/item/kit/paint/durand/phazon,
+/obj/item/kit/paint/durand/seraph,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "wp" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/weapon/lipstick/black,
-/obj/item/weapon/lipstick/jade,
-/obj/item/weapon/lipstick/purple,
-/obj/item/weapon/lipstick,
-/obj/item/weapon/lipstick/random,
+/obj/item/lipstick/black,
+/obj/item/lipstick/jade,
+/obj/item/lipstick/purple,
+/obj/item/lipstick,
+/obj/item/lipstick/random,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "ww" = (
@@ -2329,8 +2337,8 @@
 /area/space)
 "xt" = (
 /obj/structure/table/standard,
-/obj/item/weapon/soap/nanotrasen,
-/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone{
+/obj/item/soap/nanotrasen,
+/obj/item/reagent_containers/glass/beaker/cryoxadone{
 	pixel_x = -4
 	},
 /obj/random/medical/lite,
@@ -2349,11 +2357,11 @@
 /obj/structure/closet/walllocker{
 	pixel_y = 32
 	},
-/obj/item/weapon/pickaxe/silver,
-/obj/item/weapon/pickaxe/silver,
+/obj/item/pickaxe/silver,
+/obj/item/pickaxe/silver,
 /obj/item/clothing/head/helmet/space/void/mining,
 /obj/item/clothing/suit/space/void/mining,
-/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/item/tank/emergency/oxygen/double,
 /turf/simulated/floor/tiled/steel,
 /area/space)
 "xA" = (
@@ -2364,26 +2372,26 @@
 /obj/structure/table/standard,
 /obj/item/clothing/gloves/sterile/latex,
 /obj/item/clothing/mask/surgical,
-/obj/item/weapon/surgical/retractor{
+/obj/item/surgical/retractor{
 	pixel_y = 6
 	},
-/obj/item/weapon/surgical/scalpel,
-/obj/item/weapon/surgical/surgicaldrill,
-/obj/item/weapon/surgical/circular_saw,
+/obj/item/surgical/scalpel,
+/obj/item/surgical/surgicaldrill,
+/obj/item/surgical/circular_saw,
 /obj/item/stack/nanopaste,
-/obj/item/weapon/surgical/hemostat{
+/obj/item/surgical/hemostat{
 	pixel_y = 4
 	},
-/obj/item/weapon/surgical/cautery{
+/obj/item/surgical/cautery{
 	pixel_y = 4
 	},
-/obj/item/weapon/surgical/FixOVein{
+/obj/item/surgical/FixOVein{
 	pixel_x = -6;
 	pixel_y = 1
 	},
 /obj/item/stack/medical/advanced/bruise_pack,
-/obj/item/weapon/surgical/bonesetter,
-/obj/item/weapon/surgical/bonegel{
+/obj/item/surgical/bonesetter,
+/obj/item/surgical/bonegel{
 	pixel_x = 4;
 	pixel_y = 3
 	},
@@ -2435,11 +2443,11 @@
 /area/space)
 "yd" = (
 /obj/structure/closet/crate/medical,
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/storage/firstaid/regular{
 	pixel_x = -2;
 	pixel_y = 4
 	},
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/storage/firstaid/regular{
 	pixel_x = -2;
 	pixel_y = 4
 	},
@@ -2449,40 +2457,40 @@
 /obj/item/bodybag/cryobag{
 	pixel_x = 5
 	},
-/obj/item/weapon/storage/firstaid/o2{
+/obj/item/storage/firstaid/o2{
 	layer = 2.8;
 	pixel_x = 4;
 	pixel_y = 6
 	},
-/obj/item/weapon/storage/box/masks,
-/obj/item/weapon/storage/box/gloves{
+/obj/item/storage/box/masks,
+/obj/item/storage/box/gloves{
 	pixel_x = 3;
 	pixel_y = 4
 	},
-/obj/item/weapon/storage/firstaid/toxin,
-/obj/item/weapon/storage/firstaid/fire{
+/obj/item/storage/firstaid/toxin,
+/obj/item/storage/firstaid/fire{
 	layer = 2.9;
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/firstaid/adv{
+/obj/item/storage/firstaid/adv{
 	pixel_x = -2
 	},
-/obj/item/weapon/reagent_containers/blood/empty,
-/obj/item/weapon/reagent_containers/blood/empty,
-/obj/item/weapon/reagent_containers/blood/empty,
-/obj/item/weapon/reagent_containers/blood/empty,
-/obj/item/weapon/reagent_containers/blood/empty,
-/obj/item/device/defib_kit/loaded,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/defib_kit/loaded,
 /turf/simulated/floor/tiled/white,
 /area/space)
 "yj" = (
 /obj/structure/table/standard,
-/obj/item/weapon/storage/box/freezer{
+/obj/item/storage/box/freezer{
 	pixel_x = 5;
 	pixel_y = 2
 	},
-/obj/item/weapon/storage/box/freezer,
+/obj/item/storage/box/freezer,
 /obj/machinery/power/apc{
 	name = "south bump";
 	pixel_y = -32
@@ -2600,7 +2608,7 @@
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "zM" = (
-/obj/item/device/gps/internal/base{
+/obj/item/gps/internal/base{
 	desc = "A tracking beacon embedded in the shuttle systems, to help explorers find where they landed.";
 	gps_tag = "SHUTTLE";
 	name = "shuttle beacon"
@@ -2657,7 +2665,7 @@
 /area/space)
 "Aj" = (
 /obj/structure/bed/padded,
-/obj/item/weapon/bedsheet/captain,
+/obj/item/bedsheet/captain,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "Am" = (
@@ -2758,7 +2766,7 @@
 /area/space)
 "Bg" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/weapon/rig/internalaffairs,
+/obj/item/rig/internalaffairs,
 /obj/item/clothing/head/helmet/space/void/wizard,
 /obj/item/clothing/suit/space/void/wizard,
 /turf/simulated/shuttle/floor/black,
@@ -3047,9 +3055,9 @@
 /obj/structure/closet{
 	name = "custodial"
 	},
-/obj/item/weapon/reagent_containers/spray/cleaner,
-/obj/item/weapon/reagent_containers/glass/bucket,
-/obj/item/weapon/mop,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/item/reagent_containers/glass/bucket,
+/obj/item/mop,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "Ft" = (
@@ -3060,8 +3068,8 @@
 "FH" = (
 /obj/machinery/light,
 /obj/structure/table/standard,
-/obj/item/weapon/soap,
-/obj/item/weapon/towel{
+/obj/item/soap,
+/obj/item/towel{
 	color = "#0000FF"
 	},
 /turf/simulated/shuttle/floor/black,
@@ -3075,11 +3083,11 @@
 /turf/simulated/floor/tiled,
 /area/space)
 "FP" = (
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/storage/firstaid/regular{
 	pixel_x = -2;
 	pixel_y = 4
 	},
-/obj/item/weapon/storage/firstaid/regular{
+/obj/item/storage/firstaid/regular{
 	pixel_x = -2;
 	pixel_y = 4
 	},
@@ -3089,30 +3097,30 @@
 /obj/item/bodybag/cryobag{
 	pixel_x = 5
 	},
-/obj/item/weapon/storage/firstaid/o2{
+/obj/item/storage/firstaid/o2{
 	layer = 2.8;
 	pixel_x = 4;
 	pixel_y = 6
 	},
-/obj/item/weapon/storage/box/masks,
-/obj/item/weapon/storage/box/gloves{
+/obj/item/storage/box/masks,
+/obj/item/storage/box/gloves{
 	pixel_x = 3;
 	pixel_y = 4
 	},
-/obj/item/weapon/storage/firstaid/toxin,
-/obj/item/weapon/storage/firstaid/fire{
+/obj/item/storage/firstaid/toxin,
+/obj/item/storage/firstaid/fire{
 	layer = 2.9;
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/item/weapon/storage/firstaid/adv{
+/obj/item/storage/firstaid/adv{
 	pixel_x = -2
 	},
-/obj/item/weapon/reagent_containers/blood/empty,
-/obj/item/weapon/reagent_containers/blood/OMinus,
-/obj/item/weapon/reagent_containers/blood/OMinus,
-/obj/item/weapon/reagent_containers/blood/OMinus,
-/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/empty,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
 /obj/structure/closet/medical_wall{
 	pixel_y = 32
 	},
@@ -3163,7 +3171,7 @@
 /obj/random/contraband,
 /obj/random/contraband,
 /obj/random/contraband,
-/obj/item/weapon/bikehorn,
+/obj/item/bikehorn,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "Hb" = (
@@ -3438,7 +3446,7 @@
 /turf/space/sandyscroll,
 /area/space)
 "KD" = (
-/obj/item/device/gps/internal/base{
+/obj/item/gps/internal/base{
 	desc = "A tracking beacon embedded in the shuttle systems, to help explorers find where they landed.";
 	gps_tag = "CIVVIE";
 	name = "civilian transport beacon"
@@ -3675,7 +3683,7 @@
 /area/space)
 "NR" = (
 /obj/structure/bed/padded,
-/obj/item/weapon/bedsheet/rd,
+/obj/item/bedsheet/rd,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "Od" = (
@@ -4179,10 +4187,10 @@
 /area/space)
 "TA" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/weapon/cell/high,
-/obj/item/weapon/cell/high,
-/obj/item/weapon/cell/hyper,
-/obj/item/weapon/cell/potato,
+/obj/item/cell/high,
+/obj/item/cell/high,
+/obj/item/cell/hyper,
+/obj/item/cell/potato,
 /obj/structure/window/reinforced,
 /turf/simulated/shuttle/floor/black,
 /area/space)
@@ -4463,13 +4471,13 @@
 /area/space)
 "Yi" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/weapon/coin/uranium,
-/obj/item/weapon/coin/silver,
-/obj/item/weapon/coin/platinum,
-/obj/item/weapon/coin/phoron,
-/obj/item/weapon/coin/iron,
-/obj/item/weapon/coin/gold,
-/obj/item/weapon/coin/diamond,
+/obj/item/coin/uranium,
+/obj/item/coin/silver,
+/obj/item/coin/platinum,
+/obj/item/coin/phoron,
+/obj/item/coin/iron,
+/obj/item/coin/gold,
+/obj/item/coin/diamond,
 /obj/structure/window/reinforced,
 /turf/simulated/shuttle/floor/black,
 /area/space)
@@ -6911,11 +6919,11 @@ eS
 eH
 eH
 fL
-gp
-gp
-gp
-gp
-gp
+fY
+fY
+fY
+fY
+fY
 gK
 aa
 aa
@@ -7053,11 +7061,11 @@ eH
 eH
 eH
 fL
-gp
-gp
-gp
+fY
+fY
+fY
 gh
-gz
+gn
 gK
 aa
 aa
@@ -7195,11 +7203,11 @@ eH
 eH
 eH
 fL
-gp
-gp
-gp
+fY
+fY
+fY
 gh
-gz
+gn
 gK
 aa
 aa
@@ -7337,11 +7345,11 @@ eH
 eH
 eG
 fL
-gp
-gp
-gp
-gp
-gp
+fY
+fY
+fY
+fY
+fY
 gK
 aa
 aa

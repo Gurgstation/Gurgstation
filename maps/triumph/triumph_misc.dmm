@@ -958,7 +958,7 @@
 /obj/item/clothing/head/helmet/thunderdome,
 /obj/item/clothing/suit/armor/tdome/red,
 /obj/item/clothing/under/color/red,
-/obj/item/weapon/holo/esword/red,
+/obj/item/holo/esword/red,
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
@@ -1119,7 +1119,7 @@
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_meetinghall)
 "eM" = (
-/obj/item/weapon/beach_ball,
+/obj/item/beach_ball,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_beach)
 "eN" = (
@@ -1212,7 +1212,7 @@
 /turf/simulated/floor/holofloor/tiled,
 /area/holodeck/source_basketball)
 "fa" = (
-/obj/item/weapon/beach_ball/holoball,
+/obj/item/beach_ball/holoball,
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
@@ -1225,7 +1225,7 @@
 /turf/simulated/floor/holofloor/tiled,
 /area/holodeck/source_basketball)
 "fc" = (
-/obj/item/weapon/inflatable_duck,
+/obj/item/inflatable_duck,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_beach)
 "fd" = (
@@ -1492,7 +1492,7 @@
 /obj/item/clothing/head/helmet/thunderdome,
 /obj/item/clothing/suit/armor/tdome/green,
 /obj/item/clothing/under/color/green,
-/obj/item/weapon/holo/esword/green,
+/obj/item/holo/esword/green,
 /obj/effect/floor_decal/corner/green{
 	dir = 10
 	},
@@ -1787,7 +1787,7 @@
 	},
 /area/centcom/suppy)
 "ug" = (
-/obj/item/weapon/paper{
+/obj/item/paper{
 	info = "You're not supposed to be here.";
 	name = "unnerving letter"
 	},
