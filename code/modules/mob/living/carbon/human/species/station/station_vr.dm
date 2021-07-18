@@ -15,6 +15,7 @@
 	secondary_langs = list(LANGUAGE_SAGARU)
 	name_language = LANGUAGE_SAGARU
 	color_mult = 1
+	inherent_verbs = list(/mob/living/carbon/human/proc/tie_hair)
 
 	min_age = 18
 	max_age = 80
@@ -83,7 +84,7 @@
 	name_language = LANGUAGE_SKRELLIAN
 	color_mult = 1
 	assisted_langs = list(LANGUAGE_EAL, LANGUAGE_ROOTLOCAL, LANGUAGE_ROOTGLOBAL, LANGUAGE_VOX)
-
+	inherent_verbs = list(/mob/living/carbon/human/proc/tie_hair)
 	min_age = 18
 	max_age = 80
 
@@ -133,8 +134,9 @@
 	secondary_langs = list(LANGUAGE_BIRDSONG)
 	name_language = LANGUAGE_BIRDSONG
 	color_mult = 1
-	inherent_verbs = list(/mob/living/proc/flying_toggle,/mob/living/proc/start_wings_hovering)
-
+	inherent_verbs = list(/mob/living/proc/flying_toggle,
+		/mob/living/proc/start_wings_hovering,
+		/mob/living/carbon/human/proc/tie_hair)
 	min_age = 18
 	max_age = 80
 
@@ -178,7 +180,9 @@
 	num_alternate_languages = 3
 	secondary_langs = list(LANGUAGE_TERMINUS)
 	name_language = LANGUAGE_TERMINUS
-	inherent_verbs = list(/mob/living/carbon/human/proc/lick_wounds)
+	inherent_verbs = list(/mob/living/carbon/human/proc/lick_wounds,
+		/mob/living/proc/shred_limb,
+		/mob/living/carbon/human/proc/tie_hair)
 
 	min_age = 18
 	max_age = 80
@@ -213,7 +217,6 @@
 		"You feel uncomfortably warm.",
 		"Your overheated skin itches."
 		)
-	inherent_verbs = list(/mob/living/proc/shred_limb)
 
 /datum/species/vulpkanin
 	name = SPECIES_VULPKANIN
@@ -232,7 +235,8 @@
 //	gluttonous = 1
 	num_alternate_languages = 3
 	color_mult = 1
-	inherent_verbs = list(/mob/living/carbon/human/proc/lick_wounds)
+	inherent_verbs = list(/mob/living/carbon/human/proc/lick_wounds,
+		/mob/living/carbon/human/proc/tie_hair)
 
 	male_scream_sound = null
 	female_scream_sound = null
@@ -268,6 +272,7 @@
 	tail_animation = 'icons/mob/species/unathi/tail_vr.dmi'
 	color_mult = 1
 	min_age = 18
+	inherent_verbs = list(/mob/living/carbon/human/proc/tie_hair)
 	gluttonous = 0
 	genders = list(MALE, FEMALE, PLURAL, NEUTER)
 	descriptors = list()
@@ -280,6 +285,7 @@
 	tail_animation = 'icons/mob/species/tajaran/tail_vr.dmi'
 	color_mult = 1
 	min_age = 18
+	inherent_verbs = list(/mob/living/carbon/human/proc/tie_hair)
 	allergens = null
 	gluttonous = 0 //Moving this here so I don't have to fix this conflict every time polaris glances at station.dm
 	inherent_verbs = list(/mob/living/carbon/human/proc/lick_wounds)
@@ -294,6 +300,7 @@
 	deform = 'icons/mob/human_races/r_def_skrell_vr.dmi'
 	color_mult = 1
 	min_age = 18
+	inherent_verbs = list(/mob/living/carbon/human/proc/tie_hair)
 	reagent_tag = null
 	allergens = null
 	assisted_langs = list(LANGUAGE_EAL, LANGUAGE_ROOTLOCAL, LANGUAGE_ROOTGLOBAL, LANGUAGE_VOX)
@@ -303,6 +310,7 @@
 /datum/species/zaddat
 	spawn_flags = SPECIES_CAN_JOIN
 	min_age = 18
+	inherent_verbs = list(/mob/living/carbon/human/proc/tie_hair) //I don't even know if Zaddat can HAVE hair, but here we are, I suppose 
 	gluttonous = 0
 	genders = list(MALE, FEMALE, PLURAL, NEUTER)
 	descriptors = list()
@@ -343,7 +351,8 @@
 /datum/species/vox
 	gluttonous = 0
 	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED | SPECIES_WHITELIST_SELECTABLE
-	min_age = 18
+	min_age = 18	
+	inherent_verbs = list(/mob/living/carbon/human/proc/tie_hair) //Get ya quills done did
 	icobase = 'icons/mob/human_races/r_vox_old.dmi'
 	deform = 'icons/mob/human_races/r_def_vox_old.dmi'
 	descriptors = list(
@@ -364,7 +373,7 @@
 	name_language = null
 	color_mult = 1
 	genders = list(MALE, FEMALE, PLURAL, NEUTER)
-	inherent_verbs = list(/mob/living/proc/flying_toggle,/mob/living/proc/start_wings_hovering)
+	inherent_verbs = list(/mob/living/proc/flying_toggle,/mob/living/proc/start_wings_hovering,/mob/living/carbon/human/proc/tie_hair)
 
 	min_age = 18
 	max_age = 80
@@ -516,7 +525,7 @@
 	num_alternate_languages = 3
 	secondary_langs = list(LANGUAGE_TERMINUS)
 	name_language = LANGUAGE_TERMINUS
-	inherent_verbs = list(/mob/living/carbon/human/proc/lick_wounds)
+	inherent_verbs = list(/mob/living/carbon/human/proc/lick_wounds,/mob/living/proc/shred_limb,/mob/living/carbon/human/proc/tie_hair)
 
 	min_age = 18
 	max_age = 80
@@ -533,7 +542,6 @@
 	base_color = "#333333"
 	blood_color = "#240bc4"
 	color_mult = 1
-	inherent_verbs = list(/mob/living/proc/shred_limb)
 
 	heat_discomfort_strings = list(
 		"Your fur prickles in the heat.",
