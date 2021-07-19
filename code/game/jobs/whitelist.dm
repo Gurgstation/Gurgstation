@@ -47,9 +47,10 @@ var/list/whitelist = list()
 	if(alien_whitelist)
 		for (var/s in alien_whitelist)
 			if(findtext(s,"[M.ckey] - [species.name]"))
-				return 1
+				return 0
 			if(findtext(s,"[M.ckey] - All"))
-				return 1
+				return 0
+		return 1
 
 /proc/is_lang_whitelisted(mob/M, var/datum/language/language)
 	//They are admin or the whitelist isn't in use
@@ -68,9 +69,10 @@ var/list/whitelist = list()
 	if(alien_whitelist)
 		for (var/s in alien_whitelist)
 			if(findtext(s,"[M.ckey] - [language.name]"))
-				return 1
+				return 0
 			if(findtext(s,"[M.ckey] - All"))
-				return 1
+				return 0
+		return 1
 
 /proc/whitelist_overrides(mob/M)
 	if(!config.usealienwhitelist)
