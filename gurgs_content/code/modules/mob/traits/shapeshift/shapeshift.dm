@@ -71,6 +71,8 @@
 // The meaty bit~
 //
 
+// gamer
+
 /mob/living/proc/prey_transform()
 	set category = "Abilities"
 	set name = "Shapeshift into Prey"
