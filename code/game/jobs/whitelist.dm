@@ -50,8 +50,12 @@ var/list/whitelist = list()
 				return 0
 			if(findtext(s,"[M.ckey] - All"))
 				return 0
+			if(species.name == SPECIES_SHADEKIN)
+				if(findtext(s,"[M.ckey] - [SPECIES_SHADEKIN]"))
+					return 1
+				else
+					return 0
 		return 1
-
 /proc/is_lang_whitelisted(mob/M, var/datum/language/language)
 	//They are admin or the whitelist isn't in use
 	if(whitelist_overrides(M))
