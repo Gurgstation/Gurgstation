@@ -477,7 +477,7 @@
 	breath_type = null
 	poison_type = null
 
-	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_SKIN_COLOR | HAS_UNDERWEAR
+	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_SKIN_COLOR | HAS_UNDERWEAR | HAS_EYE_COLOR
 
 	move_trail = /obj/effect/decal/cleanable/blood/tracks/paw
 
