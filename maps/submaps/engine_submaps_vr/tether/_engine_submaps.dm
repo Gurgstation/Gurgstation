@@ -29,7 +29,8 @@
 	desc = "Old Faithful Supermatter"
 	mappath = 'maps/submaps/engine_submaps_vr/tether/engine_sme.dmm'
 
-/datum/map_template/engine/tesla
+/*/datum/map_template/engine/tesla
 	name = "Edison's Bane"
 	desc = "The Telsa Engine"
 	mappath = 'maps/submaps/engine_submaps_vr/tether/engine_tesla.dmm'
+	*/
