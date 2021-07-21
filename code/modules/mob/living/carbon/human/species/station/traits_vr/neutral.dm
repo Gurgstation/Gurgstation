@@ -144,7 +144,7 @@
 	cost = 0
 	custom_only = FALSE
 	can_take = SYNTHETICS
-	var_changes = list("organic_food_coeff" = 0, "synthetic_food_coeff" = 0.25)
+	var_changes = list("organic_food_coeff" = 0.6, "synthetic_food_coeff" = 0.8) //GURGEdit: Makes biofuel processor worth using over trash can eating.
 
 /datum/trait/neutral/glowing_eyes
 	name = "Glowing Eyes"
