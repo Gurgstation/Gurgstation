@@ -43,6 +43,12 @@ var/list/whitelist = list()
 	if(!(species.spawn_flags & SPECIES_IS_WHITELISTED))
 		return 1
 
+	if(species.name == SPECIES_SHADEKIN)
+		if(alien_whitelist)
+			for(var/s in alien_whitelist)
+				if(findtext(s,"[M.ckey] - Shadekin"))
+					return 1
+		return 0
 	//If we have a loaded file, search it
 	if(alien_whitelist)
 		for (var/s in alien_whitelist)
@@ -50,11 +56,7 @@ var/list/whitelist = list()
 				return 0
 			if(findtext(s,"[M.ckey] - All"))
 				return 0
-			if(species.name == SPECIES_SHADEKIN)
-				if(findtext(s,"[M.ckey] - [SPECIES_SHADEKIN]"))
-					return 1
-				else
-					return 0
+
 		return 1
 /proc/is_lang_whitelisted(mob/M, var/datum/language/language)
 	//They are admin or the whitelist isn't in use
