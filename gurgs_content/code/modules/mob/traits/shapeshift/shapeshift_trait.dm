@@ -22,4 +22,5 @@
 
 	H.verbs |= /mob/living/proc/remove_prey_transform
 	H.verbs |= /mob/living/proc/prey_transform
+	H.verbs |= /mob/living/proc/remove_markings
 
