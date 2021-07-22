@@ -43,10 +43,6 @@
 /mob/living/carbon/alien/u_equip(obj/item/W as obj)
 	return
 
-/*/mob/living/carbon/alien/Stat()
-	..()
-	stat(null, "Progress: [amount_grown]/[max_grown]")*/ //Commented out progression stat, moved to Diona and Larva. No clue why it doesn't work right here.
-
 /mob/living/carbon/alien/restrained()
 	return 0
 
