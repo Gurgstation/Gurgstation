@@ -8,6 +8,9 @@
 // Big brain definitions before we get to the half-meaty bit of code
 //
 
+/datum/absorbed_dna
+	var/size_multiplier
+
 /datum/vore_preferences
 	var/can_be_transformed = FALSE
 
@@ -25,6 +28,8 @@
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
 			var/datum/absorbed_dna/newDNA = new(H.real_name, H.dna, H.species.name, H.languages, H.identifying_gender, H.flavor_texts, H.modifiers)
+
+			newDNA.SetupExtras(M, newDNA)
 
 			if(!GetAbsorbedDNA(newDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
 				absorbedPreys += newDNA
@@ -55,6 +60,8 @@
 			var/mob/living/carbon/human/H = M
 			var/datum/absorbed_dna/newDNA = new(H.real_name, H.dna, H.species.name, H.languages, H.identifying_gender, H.flavor_texts, H.modifiers)
 
+			newDNA.SetupExtras(H, newDNA)
+
 			if(!owner.GetAbsorbedDNA(newDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
 				owner.absorbedPreys += newDNA
 
@@ -66,6 +73,11 @@
 	AbsorbPreyDNA(M)
 	..()
 
+/datum/absorbed_dna/proc/SetupExtras(var/mob/living/M, var/datum/absorbed_dna/new_dna)
+	new_dna.size_multiplier = M.size_multiplier
+	
+
+
 
 //
 // The meaty bit~
@@ -74,9 +86,6 @@
 /mob/living/proc/prey_transform()
 	set category = "Abilities"
 	set name = "Shapeshift into Prey"
-
-
-	var/size_mult = size_multiplier // Fixes random issue of size_multiplier going to 0.
 
 	var/list/names = list()
 	for(var/datum/absorbed_dna/DNA in absorbedPreys)
@@ -89,41 +98,258 @@
 	if(!chosen_dna)
 		return
 
-	src.visible_message("<span class='warning'>[src] transforms!</span>")
-
-	if(ishuman(src))
-		var/mob/living/carbon/human/H = src
-		var/newSpecies = chosen_dna.speciesName
-		H.set_species(newSpecies,1)
-
-	src.dna = chosen_dna.dna.Clone()
-	src.dna.b_type = "AB+" //This is needed to avoid blood rejection bugs.  The fact that the blood type might not match up w/ records could be a *FEATURE* too.
-
-	if(ishuman(src))
-		var/mob/living/carbon/human/H = src
-		H.b_type = "AB+" //For some reason we have two blood types on the mob.
-		H.identifying_gender = chosen_dna.identifying_gender
-		H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
-	src.real_name = chosen_dna.name
-	src.UpdateAppearance()
-	domutcheck(src, null)
-//	changeling_update_languages(changeling.absorbed_languages)
-	if(chosen_dna.genMods)
-		var/mob/living/carbon/human/self = src
-		for(var/datum/modifier/mod in self.modifiers)
-			self.modifiers.Remove(mod.type)
-
-		for(var/datum/modifier/mod in chosen_dna.genMods)
-			self.modifiers.Add(mod.type)
-
+	var/list/partlist = list("ears", "ears color","hair", "hair color", "face", "facial hair", "facial hair color", "body color", "species", "wings", "wings color", "tail", "tail color", "gender", "markings", "size", "all")
+	var/chosenPart = tgui_input_list(usr, "Select part:", "Poggers", partlist)
+	
+	if(chosenPart)
+		src.transform_part(chosenPart, chosen_dna)
+	
 	// Ooooh! That's a clever way to do a cooldown!
 	src.verbs -= /mob/living/proc/prey_transform
 	spawn(10)
 		src.verbs += /mob/living/proc/prey_transform
 		src.regenerate_icons()
 
-	src.resize(size_mult) // Fixes random issue of size_multiplier going to 0.
 	return 1
+
+/mob/living/proc/transform_part(var/part, var/datum/absorbed_dna/chosen_dna)
+	if(!part)	return
+	if(!ishuman(src))	return
+
+	var/mob/living/carbon/human/H = src
+
+	src.visible_message("<span class='warning'>[src] transforms!</span>")
+
+	var/sizeMult = H.size_multiplier
+
+	switch(part)
+		if("ears")
+			var/ears = chosen_dna.dna.GetUIValueRange(DNA_UI_EAR_STYLE, ear_styles_list.len + 1) - 1
+			if((0 < ears) && (ears <= ear_styles_list.len))
+				H.dna.SetUIValueRange(DNA_UI_EAR_STYLE,	ears + 1,    ear_styles_list.len + 1,  1)
+				H.ear_style = ear_styles_list[ear_styles_list[ears]]
+		
+		if("ears color") // Reeee Why not just store a hex string instead of 3 seperate colors- i mean, I understand you want to be able to change hair colors individually but REEE
+			var/rEars = chosen_dna.dna.GetUIValueRange(DNA_UI_EARS_R,    255)
+			var/gEars = chosen_dna.dna.GetUIValueRange(DNA_UI_EARS_G,    255)
+			var/bEars = chosen_dna.dna.GetUIValueRange(DNA_UI_EARS_B,    255)
+			var/rEars2 = chosen_dna.dna.GetUIValueRange(DNA_UI_EARS2_R,    255)
+			var/gEars2 = chosen_dna.dna.GetUIValueRange(DNA_UI_EARS2_G,    255)
+			var/bEars2 = chosen_dna.dna.GetUIValueRange(DNA_UI_EARS2_B,    255)
+			var/rEars3 = chosen_dna.dna.GetUIValueRange(DNA_UI_EARS3_R,    255)
+			var/gEars3 = chosen_dna.dna.GetUIValueRange(DNA_UI_EARS3_G,    255)
+			var/bEars3 = chosen_dna.dna.GetUIValueRange(DNA_UI_EARS3_B,    255)
+			
+			H.dna.SetUIValueRange(DNA_UI_EARS_R,    rEars,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_EARS_G,    gEars,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_EARS_B,    bEars,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_EARS2_R,   rEars2,   255,    1)
+			H.dna.SetUIValueRange(DNA_UI_EARS2_G,   gEars2,   255,    1)
+			H.dna.SetUIValueRange(DNA_UI_EARS2_B,   bEars2,   255,    1)
+			H.dna.SetUIValueRange(DNA_UI_EARS3_R,   rEars3,   255,    1)
+			H.dna.SetUIValueRange(DNA_UI_EARS3_G,   gEars3,   255,    1)
+			H.dna.SetUIValueRange(DNA_UI_EARS3_B,   bEars3,   255,    1)
+
+			H.r_ears = rEars
+			H.g_ears = gEars
+			H.b_ears = bEars
+			H.r_ears2 = rEars2
+			H.g_ears2 = gEars2
+			H.b_ears2 = bEars2
+			H.r_ears3 = rEars3
+			H.g_ears3 = gEars3
+			H.b_ears3 = bEars3
+
+		if("hair")
+			var/hair = chosen_dna.dna.GetUIValueRange(DNA_UI_HAIR_STYLE,hair_styles_list.len)
+			if((0 < hair) && (hair <= hair_styles_list.len))
+				H.dna.SetUIValueRange(DNA_UI_HAIR_STYLE,	hair,    hair_styles_list.len,  1)
+				H.h_style = hair_styles_list[hair]
+		if("hair color")
+			var/rHair = chosen_dna.dna.GetUIValueRange(DNA_UI_HAIR_R,    255)
+			var/gHair = chosen_dna.dna.GetUIValueRange(DNA_UI_HAIR_G,    255)
+			var/bHair = chosen_dna.dna.GetUIValueRange(DNA_UI_HAIR_B,    255)
+
+			H.dna.SetUIValueRange(DNA_UI_HAIR_R,    rHair,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_HAIR_G,    gHair,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_HAIR_B,    bHair,    255,    1)
+
+			H.r_hair = rHair
+			H.g_hair = gHair
+			H.b_hair = bHair
+
+		if("face")
+			
+			H.real_name = chosen_dna.name
+			H.custom_say = chosen_dna.dna.custom_say
+			H.custom_ask = chosen_dna.dna.custom_ask
+			H.custom_whisper = chosen_dna.dna.custom_whisper
+			H.custom_exclaim = chosen_dna.dna.custom_exclaim
+
+			H.dna.custom_say = chosen_dna.dna.custom_say
+			H.dna.custom_ask = chosen_dna.dna.custom_ask
+			H.dna.custom_whisper = chosen_dna.dna.custom_whisper
+			H.dna.custom_exclaim = chosen_dna.dna.custom_exclaim
+
+		if("facial hair")
+			var/beard = chosen_dna.dna.GetUIValueRange(DNA_UI_BEARD_STYLE,facial_hair_styles_list.len)
+			if((0 < beard) && (beard <= facial_hair_styles_list.len))
+				H.dna.SetUIValueRange(DNA_UI_BEARD_STYLE,	beard,    facial_hair_styles_list.len,  1)
+				H.f_style = facial_hair_styles_list[beard]
+
+		if("facial hair color")
+
+			var/rFHair = chosen_dna.dna.GetUIValueRange(DNA_UI_BEARD_R,    255)
+			var/gFHair = chosen_dna.dna.GetUIValueRange(DNA_UI_BEARD_G,    255)
+			var/bFHair = chosen_dna.dna.GetUIValueRange(DNA_UI_BEARD_B,    255)
+
+			H.dna.SetUIValueRange(DNA_UI_BEARD_R,    rFHair,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_BEARD_G,    gFHair,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_BEARD_B,    bFHair,    255,    1)
+
+			H.r_facial = rFHair
+			H.g_facial = gFHair
+			H.b_facial = bFHair
+
+		if("body color")	
+		
+			var/rSkin = chosen_dna.dna.GetUIValueRange(DNA_UI_SKIN_R,    255)
+			var/gSkin = chosen_dna.dna.GetUIValueRange(DNA_UI_SKIN_G,    255)
+			var/bSkin = chosen_dna.dna.GetUIValueRange(DNA_UI_SKIN_B,    255)
+
+			H.dna.SetUIValueRange(DNA_UI_SKIN_R,    rSkin,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_SKIN_G,    gSkin,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_SKIN_B,    bSkin,    255,    1)
+
+			H.r_skin   = rSkin
+			H.g_skin   = gSkin
+			H.b_skin   = bSkin
+
+		if("species")
+			var/newSpecies = chosen_dna.speciesName
+			H.set_species(newSpecies,1)
+		if("wings")
+			var/wing = chosen_dna.dna.GetUIValueRange(DNA_UI_WING_STYLE, wing_styles_list.len + 1) - 1
+			if((0 < wing) && (wing <= wing_styles_list.len))
+				H.dna.SetUIValueRange(DNA_UI_WING_STYLE,	wing + 1,    wing_styles_list.len + 1,  1)
+				H.wing_style = wing_styles_list[wing_styles_list[wing]]
+
+		if("wings color")
+			var/rWing   = chosen_dna.dna.GetUIValueRange(DNA_UI_WING_R,    255)
+			var/gWing   = chosen_dna.dna.GetUIValueRange(DNA_UI_WING_G,    255)
+			var/bWing   = chosen_dna.dna.GetUIValueRange(DNA_UI_WING_B,    255)
+			var/rWing2  = chosen_dna.dna.GetUIValueRange(DNA_UI_WING2_R,    255)
+			var/gWing2  = chosen_dna.dna.GetUIValueRange(DNA_UI_WING2_G,    255)
+			var/bWing2  = chosen_dna.dna.GetUIValueRange(DNA_UI_WING2_B,    255)
+			var/rWing3  = chosen_dna.dna.GetUIValueRange(DNA_UI_WING3_R,    255)
+			var/gWing3  = chosen_dna.dna.GetUIValueRange(DNA_UI_WING3_G,    255)
+			var/bWing3  = chosen_dna.dna.GetUIValueRange(DNA_UI_WING3_B,    255)
+			
+			H.dna.SetUIValueRange(DNA_UI_WING_R,    rWing,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_WING_G,    gWing,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_WING_B,    bWing,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_WING2_R,    rWing2,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_WING2_G,    gWing2,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_WING2_B,    bWing2,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_WING3_R,    rWing3,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_WING3_G,    gWing3,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_WING3_B,    bWing3,    255,    1)
+
+			H.r_wing = rWing
+			H.g_wing = gWing
+			H.b_wing = bWing
+			H.r_wing2 = rWing2
+			H.g_wing2 = gWing2
+			H.b_wing2 = bWing2
+			H.r_wing3 = rWing3
+			H.g_wing3 = gWing3
+			H.b_wing3 = bWing3
+
+		if("tail")
+			var/tail = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL_STYLE, tail_styles_list.len + 1) - 1
+			if((0 < tail) && (tail <= tail_styles_list.len))
+				H.dna.SetUIValueRange(DNA_UI_TAIL_STYLE,	tail + 1,    tail_styles_list.len + 1,  1)
+				H.tail_style = tail_styles_list[tail_styles_list[tail]]
+
+		if("tail color")
+			var/rTail   = dna.GetUIValueRange(DNA_UI_TAIL_R,    255)
+			var/gTail   = dna.GetUIValueRange(DNA_UI_TAIL_G,    255)
+			var/bTail   = dna.GetUIValueRange(DNA_UI_TAIL_B,    255)
+			var/rTail2  = dna.GetUIValueRange(DNA_UI_TAIL2_R,   255)
+			var/gTail2  = dna.GetUIValueRange(DNA_UI_TAIL2_G,   255)
+			var/bTail2  = dna.GetUIValueRange(DNA_UI_TAIL2_B,   255)
+			var/rTail3  = dna.GetUIValueRange(DNA_UI_TAIL3_R,   255)
+			var/gTail3  = dna.GetUIValueRange(DNA_UI_TAIL3_G,   255)
+			var/bTail3  = dna.GetUIValueRange(DNA_UI_TAIL3_B,   255)
+
+			H.dna.SetUIValueRange(DNA_UI_TAIL_R,    rTail,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_TAIL_G,    gTail,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_TAIL_B,    bTail,    255,    1)
+			H.dna.SetUIValueRange(DNA_UI_TAIL2_R,   rTail2,   255,    1)
+			H.dna.SetUIValueRange(DNA_UI_TAIL2_G,   gTail2,   255,    1)
+			H.dna.SetUIValueRange(DNA_UI_TAIL2_B,   bTail2,   255,    1)
+			H.dna.SetUIValueRange(DNA_UI_TAIL3_R,   rTail3,   255,    1)
+			H.dna.SetUIValueRange(DNA_UI_TAIL3_G,   gTail3,   255,    1)
+			H.dna.SetUIValueRange(DNA_UI_TAIL3_B,   bTail3,   255,    1)
+
+			H.r_tail = rTail
+			H.g_tail = gTail
+			H.b_tail = bTail
+			H.r_tail2 = rTail2
+			H.g_tail2 = gTail2
+			H.b_tail2 = bTail2
+			H.r_tail3 = rTail3
+			H.g_tail3 = gTail3
+			H.b_tail3 = bTail3
+
+		if("gender")
+			H.identifying_gender = chosen_dna.identifying_gender
+
+		if("markings") // Experimental, not working the best, need to work out the kinks with it, gonna take some more time.
+			var/selection = tgui_input_list(H, "Select markings:", "Ass blast USA", chosen_dna.dna.body_markings + "all")
+			
+			if(selection)
+				if(selection == "all")
+					for(var/tag in dna.body_markings)
+						var/obj/item/organ/external/E = H.organs_by_name[tag]
+						if(E)
+							var/list/marklist = dna.body_markings[tag]
+							H.dna.body_markings[tag] = marklist.Copy()
+							E.markings = marklist.Copy()
+				else
+					var/obj/item/organ/external/E = H.organs_by_name[selection]
+					var/chosenMarking = tgui_input_list(H, "Select markings:", "Ass blast USA", chosen_dna.dna.body_markings[selection])
+					if(chosenMarking)
+						var/mark = chosen_dna.dna.body_markings[chosenMarking]
+						H.dna.body_markings[chosenMarking] |= mark
+						E.markings |= mark
+
+		if("size")
+			var/size = chosen_dna.dna.GetUIValueRange(DNA_UI_PLAYERSCALE, player_sizes_list.len)
+			if((0 < size) && (size <= player_sizes_list.len))
+				H.dna.SetUIValueRange(DNA_UI_PLAYERSCALE, size, player_sizes_list.len, 1)
+				H.resize(player_sizes_list[player_sizes_list[size]], FALSE, ignore_prefs = TRUE)
+				sizeMult = chosen_dna.size_multiplier
+		if("all")
+			if(ishuman(src))
+				var/newSpecies = chosen_dna.speciesName
+				H.set_species(newSpecies,1)
+
+			src.dna = chosen_dna.dna.Clone()
+			src.dna.b_type = "AB+" //This is needed to avoid blood rejection bugs.  The fact that the blood type might not match up w/ records could be a *FEATURE* too.
+
+			if(ishuman(src))
+				H.b_type = "AB+" //For some reason we have two blood types on the mob.
+				H.identifying_gender = chosen_dna.identifying_gender
+				H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
+			src.real_name = chosen_dna.name
+			
+			sizeMult = chosen_dna.size_multiplier
+			
+			domutcheck(src, null)
+
+	H.UpdateAppearance()
+	H.resize(sizeMult, animate = FALSE)
 
 // Forget Prey you wish you forget.
 /mob/living/proc/remove_prey_transform()
@@ -144,4 +370,23 @@
 			return 1
 	return 0
 
+/mob/living/proc/remove_markings()
+	set category = "Abilities"
+	set name = "Remove Markings"
 
+	if(!ishuman(src))	return
+
+	var/mob/living/carbon/human/H = src
+	var/size = H.size_multiplier
+	var/selection = tgui_input_list(H, "Select markings:", "Ass blast USA", H.dna.body_markings)
+
+	if(selection)
+		var/obj/item/organ/external/E = H.organs_by_name[selection]
+		var/chosenMarking = tgui_input_list(H, "Select markings:", "Ass blast USA", H.dna.body_markings[selection])
+		if(chosenMarking)
+			var/mark = H.dna.body_markings[chosenMarking]
+			H.dna.body_markings[chosenMarking] -= mark
+			E.markings -= mark
+
+	H.UpdateAppearance()
+	H.resize(size, FALSE)
