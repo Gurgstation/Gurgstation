@@ -8,7 +8,6 @@
 	#include "triumph_telecomms.dm"
 	#include "triumph_overmap.dm"
 	#include "triumph_areas.dm"
-	#include "triumph_overmap.dm"
 	#include "triumph_virgo3b.dm"
 
 
