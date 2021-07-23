@@ -1025,7 +1025,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/maintenance/ai
 	name = "\improper AI Maintenance"
-	sound_env = SEWER_PIPE
+//	sound_env = SEWER_PIPE
 
 
 // SUBSTATIONS (Subtype of maint, that should let them serve as shielded area during radstorm)

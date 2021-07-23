@@ -12,7 +12,6 @@
 	icon = 'icons/turf/areas.dmi'
 /area/triumph/surfacebase/outside
 	name = "Outside - Surface"
-	sound_env = MOUNTAINS
 /area/triumph/surfacebase/outside/outside1
 	icon_state = "outside1"
 /area/triumph/surfacebase/outside/outside2
@@ -67,7 +66,6 @@
 /area/triumph/surfacebase/bar_backroom
 	name = "\improper Bar Backroom"
 	icon_state = "red"
-	sound_env = SMALL_SOFTFLOOR
 /area/triumph/surfacebase/fishing_garden
 	name = "\improper Fish Pond"
 	icon_state = "blue"
@@ -155,11 +153,11 @@
 /area/shuttle/triumph/crash1
 	name = "\improper Crash Site 1"
 	icon_state = "shuttle2"
-	base_turf = /turf/simulated/floor/outdoors/dirt/triumph
+//	base_turf = /turf/simulated/floor/outdoors/dirt/triumph
 /area/shuttle/triumph/crash2
 	name = "\improper Crash Site 2"
 	icon_state = "shuttle2"
-	base_turf = /turf/simulated/floor/outdoors/dirt/triumph
+//	base_turf = /turf/simulated/floor/outdoors/dirt/triumph
 
 // Frozen planet world areas
 /area/frozen_planet
@@ -266,7 +264,7 @@
 /area/poi_h
 	name = "Mining Planet"
 	icon_state = "away"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/outdoors
 	requires_power = 0
 	dynamic_lighting = 1
 
@@ -281,36 +279,36 @@
 
 /area/shuttle/excursion/poi_h
 	name = "Shuttle Landing Point"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/outdoors
 	flags = RAD_SHIELDED
 
 /area/poi_h
 	name = "Class H World"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/outdoors
 
 /area/poi_h/POIs/WW_Town
 	name = "Ghost Town"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/outdoors
 
 /area/poi_h/POIs/landing_pad
 	name = "Prefab Homestead"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/outdoors
 
 /area/poi_h/POIs/solar_farm
 	name = "Prefab Solar Farm"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/outdoors
 
 /area/poi_h/POIs/dirt_farm
 	name = "Abandoned Farmstead"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/outdoors
 
 /area/poi_h/POIs/graveyard
 	name = "Desert Graveyard"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/outdoors
 
 /area/poi_h/POIs/goldmine
 	name = "Desert Goldmine"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/outdoors
 
 /area/poi_h/explored
 	name = "Class H World - Explored (E)"
@@ -613,7 +611,7 @@
 
 /area/shuttle/aerostat/landed
 	name = "\improper Aerostat Shuttle - Surface"
-	base_turf = /turf/simulated/floor/plating/virgo2
+//	base_turf = /turf/simulated/floor/plating/virgo2
 
 // The aerostat itself
 /area/aerostat
@@ -626,7 +624,7 @@
 /area/aerostat/inside
 	name = "\improper Away Mission - Aerostat Inside"
 	icon_state = "crew_quarters"
-	base_turf = /turf/simulated/floor/plating/virgo2
+	//base_turf = /turf/simulated/floor/plating/virgo2
 	requires_power = TRUE
 	dynamic_lighting = TRUE
 	forced_ambience = list('sound/ambience/tension/tension.ogg', 'sound/ambience/tension/argitoth.ogg', 'sound/ambience/tension/burning_terror.ogg')
@@ -634,13 +632,13 @@
 /area/aerostat/solars
 	name = "\improper Away Mission - Aerostat Solars"
 	icon_state = "crew_quarters"
-	base_turf = /turf/simulated/floor/plating/virgo2
+	//base_turf = /turf/simulated/floor/plating/virgo2
 	dynamic_lighting = TRUE
 
 /area/aerostat/surface
 	flags = RAD_SHIELDED
 	ambience = list('sound/ambience/ambimine.ogg', 'sound/ambience/song_game.ogg')
-	base_turf = /turf/simulated/mineral/floor/ignore_mapgen/virgo2
+	//base_turf = /turf/simulated/mineral/floor/ignore_mapgen/virgo2
 
 /area/aerostat/surface/explored
 	name = "Away Mission - Aerostat Surface (E)"

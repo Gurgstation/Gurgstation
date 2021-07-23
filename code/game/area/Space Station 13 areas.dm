@@ -1090,7 +1090,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/maintenance/ai
 	name = "\improper AI Maintenance"
-	sound_env = SEWER_PIPE
+//	sound_env = SEWER_PIPE
 
 
 // SUBSTATIONS (Subtype of maint, that should let them serve as shielded area during radstorm)
@@ -1964,7 +1964,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/engineering/atmos/intake
 	name = "\improper Atmospherics Intake"
 	icon_state = "atmos"
-	sound_env = MOUNTAINS
+//	sound_env = MOUNTAINS
 
 /area/engineering/atmos/hallway
 	name = "\improper Atmospherics Main Hallway"
@@ -3521,11 +3521,6 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	requires_power = 0
 	sound_env = SMALL_ENCLOSED
 
-	var/lift_floor_label = null
-	var/lift_floor_name = null
-	var/lift_announce_str = "Ding!"
-	var/arrival_sound = 'sound/machines/ding.ogg'
-	var/delay_time = 2 SECONDS
 	forced_ambience = list('sound/music/elevator.ogg')
 	dynamic_lighting = FALSE //Temporary fix for elevator lighting
 

@@ -12,7 +12,7 @@
 	icon = 'icons/turf/areas.dmi'
 /area/triumph/surfacebase/outside
 	name = "Outside - Surface"
-	sound_env = MOUNTAINS
+//	sound_env = MOUNTAINS
 /area/triumph/surfacebase/outside/outside1
 	icon_state = "outside1"
 /area/triumph/surfacebase/outside/outside2
@@ -266,7 +266,7 @@
 /area/poi_h
 	name = "Mining Planet"
 	icon_state = "away"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors
 	requires_power = 0
 	dynamic_lighting = 1
 
@@ -281,36 +281,36 @@
 
 /area/shuttle/excursion/poi_h
 	name = "Shuttle Landing Point"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors
 	flags = RAD_SHIELDED
 
 /area/poi_h
 	name = "Class H World"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors
 
 /area/poi_h/POIs/WW_Town
 	name = "Ghost Town"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors
 
 /area/poi_h/POIs/landing_pad
 	name = "Prefab Homestead"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors
 
 /area/poi_h/POIs/solar_farm
 	name = "Prefab Solar Farm"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors
 
 /area/poi_h/POIs/dirt_farm
 	name = "Abandoned Farmstead"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors
 
 /area/poi_h/POIs/graveyard
 	name = "Desert Graveyard"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors
 
 /area/poi_h/POIs/goldmine
 	name = "Desert Goldmine"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors
 
 /area/poi_h/explored
 	name = "Class H World - Explored (E)"
@@ -550,57 +550,6 @@
 	dynamic_lighting = 0
 
 
-// Lavaland
-/area/shuttle/excursion/lavaland
-	name = "Shuttle Landing Point"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
-	flags = RAD_SHIELDED
-
-/area/lavaland
-	name = "Lava Land"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
-
-/area/lavaland/horrors
-	name = "Lava Land - Horrors"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
-
-/area/lavaland/dogs
-	name = "Lava Land - Dogs"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
-
-/area/lavaland/idleruins
-	name = "Lava Land - Idle Ruins"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
-
-/area/lavaland/bosses
-	name = "Lava Land - Boss"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
-	requires_power = 0
-
-/area/lavaland
-	name = "Lava Land"
-	icon_state = "away"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
-	dynamic_lighting = 1
-
-/area/lavaland/base
-	name = "Lava Land - Mining Base"
-	icon_state = "green"
-	requires_power = 0
-
-/area/lavaland/base/common
-	name = "Lava Land - Mining Base"
-	icon_state = "blue"
-	requires_power = 1
-/area/lavaland/explored
-	name = "Lava Land - Thoroughfare"
-	icon_state = "red"
-
-/area/lavaland/unexplored
-	name = "Lava Land - Unknown"
-	icon_state = "yellow"
-
-
 // Aerostat
 /area/shuttle/excursion/away_aerostat
 	name = "\improper Excursion Shuttle - Aerostat"
@@ -613,7 +562,7 @@
 
 /area/shuttle/aerostat/landed
 	name = "\improper Aerostat Shuttle - Surface"
-	base_turf = /turf/simulated/floor/plating/virgo2
+//	base_turf = /turf/simulated/floor/plating/virgo2
 
 // The aerostat itself
 /area/aerostat
@@ -626,7 +575,7 @@
 /area/aerostat/inside
 	name = "\improper Away Mission - Aerostat Inside"
 	icon_state = "crew_quarters"
-	base_turf = /turf/simulated/floor/plating/virgo2
+//	base_turf = /turf/simulated/floor/plating/virgo2
 	requires_power = TRUE
 	dynamic_lighting = TRUE
 	forced_ambience = list('sound/ambience/tension/tension.ogg', 'sound/ambience/tension/argitoth.ogg', 'sound/ambience/tension/burning_terror.ogg')
@@ -634,13 +583,13 @@
 /area/aerostat/solars
 	name = "\improper Away Mission - Aerostat Solars"
 	icon_state = "crew_quarters"
-	base_turf = /turf/simulated/floor/plating/virgo2
+//	base_turf = /turf/simulated/floor/plating/virgo2
 	dynamic_lighting = TRUE
 
 /area/aerostat/surface
 	flags = RAD_SHIELDED
 	ambience = list('sound/ambience/ambimine.ogg', 'sound/ambience/song_game.ogg')
-	base_turf = /turf/simulated/mineral/floor/ignore_mapgen/virgo2
+//	base_turf = /turf/simulated/mineral/floor/ignore_mapgen/virgo2
 
 /area/aerostat/surface/explored
 	name = "Away Mission - Aerostat Surface (E)"

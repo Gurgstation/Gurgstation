@@ -107,6 +107,170 @@
 	dir = WEST
 
 
+//Simulated
+VIRGO3B_TURF_CREATE(/turf/simulated/open)
+/turf/simulated/open/virgo3b
+	edge_blending_priority = 0.5 //Turfs which also have e_b_p and higher than this will plop decorative edges onto this turf
+/turf/simulated/open/virgo3b/Initialize(mapload)
+	. = ..()
+	if(outdoors)
+		SSplanets.addTurf(src)
+
+VIRGO3B_TURF_CREATE(/turf/simulated/floor)
+
+/turf/simulated/floor/virgo3b_indoors
+	VIRGO3B_SET_ATMOS
+/turf/simulated/floor/virgo3b_indoors/update_graphic(list/graphic_add = null, list/graphic_remove = null)
+	return 0
+
+VIRGO3B_TURF_CREATE(/turf/simulated/floor/reinforced)
+
+VIRGO3B_TURF_CREATE(/turf/simulated/floor/tiled/steel_dirty)
+
+VIRGO3B_TURF_CREATE(/turf/simulated/floor/outdoors/dirt)
+/turf/simulated/floor/outdoors/dirt/virgo3b
+	icon = 'icons/turf/flooring/asteroid.dmi'
+	icon_state = "asteroid"
+
+VIRGO3B_TURF_CREATE(/turf/simulated/floor/outdoors/rocks)
+
+VIRGO3B_TURF_CREATE(/turf/simulated/floor/outdoors/grass/sif)
+/turf/simulated/floor/outdoors/grass/sif
+	turf_layers = list(
+		/turf/simulated/floor/outdoors/rocks/virgo3b,
+		/turf/simulated/floor/outdoors/dirt/virgo3b
+		)
+
+// Overriding these for the sake of submaps that use them on other planets.
+// This means that mining on tether base and space is oxygen-generating, but solars and mining should use the virgo3b subtype
+/turf/simulated/mineral
+	oxygen = MOLES_O2STANDARD
+	nitrogen = MOLES_N2STANDARD
+	temperature	= T20C
+/turf/simulated/floor/outdoors
+	oxygen = MOLES_O2STANDARD
+	nitrogen = MOLES_N2STANDARD
+	temperature	= T20C
+/turf/simulated/floor/water
+	oxygen = MOLES_O2STANDARD
+	nitrogen = MOLES_N2STANDARD
+	temperature	= T20C
+
+/turf/simulated/mineral/vacuum
+	oxygen = 0
+	nitrogen = 0
+	temperature	= TCMB
+/turf/simulated/mineral/floor/vacuum
+	oxygen = 0
+	nitrogen = 0
+	temperature	= TCMB
+
+VIRGO3B_TURF_CREATE(/turf/simulated/mineral)
+VIRGO3B_TURF_CREATE(/turf/simulated/mineral/floor)
+	//This proc is responsible for ore generation on surface turfs
+/turf/simulated/mineral/virgo3b/make_ore(var/rare_ore)
+	if(mineral || ignore_mapgen)
+		return
+	var/mineral_name
+	if(rare_ore)
+		mineral_name = pickweight(list(
+			"marble" = 3,
+			"uranium" = 10,
+			"platinum" = 10,
+			"hematite" = 20,
+			"copper" = 8,
+//			"tin" = 4,
+			"bauxite" = 4,
+			"rutile" = 4,
+			"carbon" = 20,
+			"diamond" = 1,
+			"gold" = 8,
+			"silver" = 8,
+			"phoron" = 18,
+			"lead" = 2,
+			"verdantium" = 1))
+	else
+		mineral_name = pickweight(list(
+			"marble" = 2,
+			"uranium" = 5,
+			"platinum" = 5,
+			"hematite" = 35,
+			"copper" = 15,
+//			"tin" = 10,
+			"bauxite" = 10,
+			"rutile" = 10,
+			"carbon" = 35,
+			"gold" = 3,
+			"silver" = 3,
+			"phoron" = 25,
+			"lead" = 1))
+	if(mineral_name && (mineral_name in GLOB.ore_data))
+		mineral = GLOB.ore_data[mineral_name]
+		UpdateMineral()
+	update_icon()
+
+/turf/simulated/mineral/virgo3b/rich/make_ore(var/rare_ore)
+	if(mineral || ignore_mapgen)
+		return
+	var/mineral_name
+	if(rare_ore)
+		mineral_name = pickweight(list(
+			"marble" = 7,
+			"uranium" = 10,
+			"platinum" = 10,
+			"hematite" = 10,
+			"carbon" = 10,
+			"diamond" = 4,
+			"gold" = 15,
+			"silver" = 15,
+			"lead" = 5,
+			"verdantium" = 2))
+	else
+		mineral_name = pickweight(list(
+			"marble" = 5,
+			"uranium" = 7,
+			"platinum" = 7,
+			"hematite" = 28,
+			"carbon" = 28,
+			"diamond" = 2,
+			"gold" = 7,
+			"silver" = 7,
+			"lead" = 4,
+			"verdantium" = 1))
+	if(mineral_name && (mineral_name in GLOB.ore_data))
+		mineral = GLOB.ore_data[mineral_name]
+		UpdateMineral()
+	update_icon()
+
+//Unsimulated
+/turf/unsimulated/mineral/virgo3b
+	blocks_air = TRUE
+
+/turf/unsimulated/floor/steel
+	icon = 'icons/turf/flooring/tiles_vr.dmi'
+	icon_state = "steel"
+
+
+/turf/unsimulated/floor/sky/virgo2_sky
+	name = "virgo 2 atmosphere"
+	desc = "Be careful where you step!"
+	color = "#eacd7c"
+	VIRGO2_SET_ATMOS
+
+/turf/unsimulated/floor/sky/virgo2_sky/Initialize()
+	skyfall_levels = list(z+1)
+	. = ..()
+
+/turf/simulated/shuttle/wall/voidcraft/green/virgo2
+	VIRGO2_SET_ATMOS
+	color = "#eacd7c"
+
+/turf/simulated/shuttle/wall/voidcraft/green/virgo2/nocol
+	color = null
+
+
+
+
 /area/turbolift/t_ship/level1
 	name = "Deck 1"
 	lift_floor_label = "Deck 1"
@@ -212,3 +376,19 @@
 /area/crew_quarters/sleep/Dorm_7/holo
 	name = "\improper Dorm 7 Holodeck"
 	icon_state = "dk_yellow"
+
+
+
+
+// Lava Land turfs
+/turf/simulated/floor/outdoors/lavaland
+	name = "ash sand"
+	desc = "Soft and ominous."
+	icon = 'icons/turf/flooring/asteroid.dmi'
+	icon_state = "asteroid"
+	outdoors = 1
+	flags = TURF_HAS_EDGES
+	edge_blending_priority = 2
+	base_icon_state = "asteroid"
+	turf_layers = list(/turf/simulated/floor/outdoors/rocks)
+//	initial_flooring = /decl/flooring/outdoors/lavaland
