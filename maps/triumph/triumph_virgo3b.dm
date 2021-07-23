@@ -1,4 +1,4 @@
-var/datum/planet/virgo3b/planet_virgo3b = null
+//var/datum/planet/virgo3b/planet_virgo3b = null
 
 /datum/time/virgo3b
 	seconds_in_day = 3 HOURS
@@ -235,7 +235,7 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 
 			if(show_message)
 				to_chat(L, pick(effect_message))
-
+/*
 	for(var/turf/simulated/floor/outdoors/snow/S in SSplanets.new_outdoor_turfs) //This didn't make any sense before SSplanets, either
 		if(S.z in holder.our_planet.expected_z_levels)
 			for(var/dir_checked in GLOB.cardinal)
@@ -243,6 +243,7 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 				if(istype(T))
 					if(istype(T, /turf/simulated/floor/outdoors) && prob(33))
 						T.chill()
+*/
 
 /datum/weather/virgo3b/blizzard
 	name = "blizzard"
@@ -278,7 +279,7 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 
 			if(show_message)
 				to_chat(L, pick(effect_message))
-
+/*
 	for(var/turf/simulated/floor/outdoors/snow/S in SSplanets.new_outdoor_turfs) //This didn't make any sense before SSplanets, either
 		if(S.z in holder.our_planet.expected_z_levels)
 			for(var/dir_checked in GLOB.cardinal)
@@ -286,6 +287,7 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 				if(istype(T))
 					if(istype(T, /turf/simulated/floor/outdoors) && prob(50))
 						T.chill()
+*/
 
 /datum/weather/virgo3b/rain
 	name = "rain"
@@ -319,14 +321,14 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 				continue // Are they indoors?
 
 			// If they have an open umbrella, it'll guard from rain
-			if(istype(L.get_active_hand(), /obj/item/melee/umbrella))
-				var/obj/item/melee/umbrella/U = L.get_active_hand()
+			if(istype(L.get_active_hand(), /obj/item/weapon/melee/umbrella))
+				var/obj/item/weapon/melee/umbrella/U = L.get_active_hand()
 				if(U.open)
 					if(show_message)
 						to_chat(L, "<span class='notice'>Rain patters softly onto your umbrella.</span>")
 					continue
-			else if(istype(L.get_inactive_hand(), /obj/item/melee/umbrella))
-				var/obj/item/melee/umbrella/U = L.get_inactive_hand()
+			else if(istype(L.get_inactive_hand(), /obj/item/weapon/melee/umbrella))
+				var/obj/item/weapon/melee/umbrella/U = L.get_inactive_hand()
 				if(U.open)
 					if(show_message)
 						to_chat(L, "<span class='notice'>Rain patters softly onto your umbrella.</span>")
@@ -347,9 +349,9 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 		"<I>Gusting winds sweep past you and carry harsher rainfall before returning to its previous intensity.</I>"
 	)
 
-	var/next_lightning_strike = 0 // world.time when lightning will strike.
-	var/min_lightning_cooldown = 5 SECONDS
-	var/max_lightning_cooldown = 1 MINUTE
+	next_lightning_strike = 0 // world.time when lightning will strike.
+	min_lightning_cooldown = 5 SECONDS
+	max_lightning_cooldown = 1 MINUTE
 	observed_message = "An intense storm pours down over the region."
 	transition_messages = list(
 		"You feel intense winds hit you as a few droplets of water spatter the ground.",
@@ -375,14 +377,14 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 
 			// Lazy wind code
 			if(prob(10))
-				if(istype(L.get_active_hand(), /obj/item/melee/umbrella))
-					var/obj/item/melee/umbrella/U = L.get_active_hand()
+				if(istype(L.get_active_hand(), /obj/item/weapon/melee/umbrella))
+					var/obj/item/weapon/melee/umbrella/U = L.get_active_hand()
 					if(U.open)
 						to_chat(L, "<span class='danger'>You struggle to keep hold of your umbrella!</span>")
 						L.Stun(20)	// This is not nearly as long as it seems
 						playsound(L, 'sound/effects/rustle1.ogg', 100, 1)	// Closest sound I've got to "Umbrella in the wind"
-				else if(istype(L.get_inactive_hand(), /obj/item/melee/umbrella))
-					var/obj/item/melee/umbrella/U = L.get_inactive_hand()
+				else if(istype(L.get_inactive_hand(), /obj/item/weapon/melee/umbrella))
+					var/obj/item/weapon/melee/umbrella/U = L.get_inactive_hand()
 					if(U.open)
 						to_chat(L, "<span class='danger'>A gust of wind yanks the umbrella from your hand!</span>")
 						playsound(L, 'sound/effects/rustle1.ogg', 100, 1)
@@ -391,14 +393,14 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 						U.throw_at(get_edge_target_turf(U, pick(GLOB.alldirs)), 8, 1, L)
 
 			// If they have an open umbrella, it'll guard from rain
-			if(istype(L.get_active_hand(), /obj/item/melee/umbrella))
-				var/obj/item/melee/umbrella/U = L.get_active_hand()
+			if(istype(L.get_active_hand(), /obj/item/weapon/melee/umbrella))
+				var/obj/item/weapon/melee/umbrella/U = L.get_active_hand()
 				if(U.open)
 					if(show_message)
 						to_chat(L, pick(effect_message))
 					continue
-			else if(istype(L.get_inactive_hand(), /obj/item/melee/umbrella))
-				var/obj/item/melee/umbrella/U = L.get_inactive_hand()
+			else if(istype(L.get_inactive_hand(), /obj/item/weapon/melee/umbrella))
+				var/obj/item/weapon/melee/umbrella/U = L.get_inactive_hand()
 				if(U.open)
 					if(show_message)
 						to_chat(L, pick(effect_message))
@@ -413,7 +415,7 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 
 // This gets called to do lightning periodically.
 // There is a seperate function to do the actual lightning strike, so that badmins can play with it.
-/datum/weather/virgo3b/storm/proc/handle_lightning()
+/datum/weather/virgo3b/storm/handle_lightning()
 	if(world.time < next_lightning_strike)
 		return // It's too soon to strike again.
 	next_lightning_strike = world.time + rand(min_lightning_cooldown, max_lightning_cooldown)
@@ -456,10 +458,10 @@ var/datum/planet/virgo3b/planet_virgo3b = null
 				continue // They're indoors, so no need to pelt them with ice.
 
 			// If they have an open umbrella, it'll guard from hail
-			var/obj/item/melee/umbrella/U
-			if(istype(H.get_active_hand(), /obj/item/melee/umbrella))
+			var/obj/item/weapon/melee/umbrella/U
+			if(istype(H.get_active_hand(), /obj/item/weapon/melee/umbrella))
 				U = H.get_active_hand()
-			else if(istype(H.get_inactive_hand(), /obj/item/melee/umbrella))
+			else if(istype(H.get_inactive_hand(), /obj/item/weapon/melee/umbrella))
 				U = H.get_inactive_hand()
 			if(U && U.open)
 				if(show_message)

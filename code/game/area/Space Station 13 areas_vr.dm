@@ -10,9 +10,9 @@
 	power_light = 0
 	power_equip = 0
 	power_environ = 0
-	var/asteroid_spawns = list()
-	var/mob_spawns = list()
-	var/shuttle_area //It would be neat if this were more dynamic, but eh.
+	asteroid_spawns = list()
+	mob_spawns = list()
+	shuttle_area //It would be neat if this were more dynamic, but eh.
 
 /area/asteroid/rogue/zone1
 	name = "Asteroid Belt Zone 1"

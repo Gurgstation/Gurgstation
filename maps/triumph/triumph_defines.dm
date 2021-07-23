@@ -1,3 +1,15 @@
+#define Z_LEVEL_SURFACE_LOW					1
+#define Z_LEVEL_SURFACE_MID					2
+#define Z_LEVEL_SURFACE_HIGH				3
+#define Z_LEVEL_TRANSIT						4
+#define Z_LEVEL_SPACE_LOW					5
+#define Z_LEVEL_SURFACE_MINE				6
+#define Z_LEVEL_SOLARS						7
+//#define Z_LEVEL_MISC						8
+#define Z_LEVEL_UNDERDARK					9
+#define Z_LEVEL_PLAINS						10
+#define Z_LEVEL_OFFMAP1						11
+
 // Normal map defs
 // Z1 is dynamic transit.
 #define Z_LEVEL_DECK_ONE				2
@@ -29,3 +41,6 @@
 #define NETWORK_OUTSIDE "Outside"
 #define NETWORK_EXPLORATION "Exploration"
 #define NETWORK_XENOBIO "Xenobiology"
+
+/datum/map/triumph
+	// a
