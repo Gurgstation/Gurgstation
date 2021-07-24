@@ -48,6 +48,8 @@
 /datum/vore_look/tgui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
+		update_preview_icon()	//CHOMPEdit
+		give_client_previews(user.client) //CHOMPEdit
 		ui = new(user, src, "VorePanel", "Vore Panel")
 		ui.open()
 
