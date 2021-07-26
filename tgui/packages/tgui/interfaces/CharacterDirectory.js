@@ -14,6 +14,8 @@ const getTagColor = tag => {
       return "blue";
     case "Switch":
       return "purple";
+    case "Observer":
+      return "green";
   }
 };
 
