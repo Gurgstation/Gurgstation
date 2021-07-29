@@ -958,7 +958,7 @@
 /obj/item/clothing/head/helmet/thunderdome,
 /obj/item/clothing/suit/armor/tdome/red,
 /obj/item/clothing/under/color/red,
-/obj/item/holo/esword/red,
+/obj/item/weapon/holo/esword/red,
 /obj/effect/floor_decal/corner/red{
 	dir = 5
 	},
@@ -1119,7 +1119,7 @@
 /turf/simulated/floor/holofloor/tiled/dark,
 /area/holodeck/source_meetinghall)
 "eM" = (
-/obj/item/beach_ball,
+/obj/item/weapon/beach_ball,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_beach)
 "eN" = (
@@ -1212,7 +1212,7 @@
 /turf/simulated/floor/holofloor/tiled,
 /area/holodeck/source_basketball)
 "fa" = (
-/obj/item/beach_ball/holoball,
+/obj/item/weapon/beach_ball/holoball,
 /obj/effect/floor_decal/corner/red{
 	dir = 10
 	},
@@ -1225,7 +1225,7 @@
 /turf/simulated/floor/holofloor/tiled,
 /area/holodeck/source_basketball)
 "fc" = (
-/obj/item/inflatable_duck,
+/obj/item/weapon/inflatable_duck,
 /turf/simulated/floor/holofloor/beach/sand,
 /area/holodeck/source_beach)
 "fd" = (
@@ -1492,7 +1492,7 @@
 /obj/item/clothing/head/helmet/thunderdome,
 /obj/item/clothing/suit/armor/tdome/green,
 /obj/item/clothing/under/color/green,
-/obj/item/holo/esword/green,
+/obj/item/weapon/holo/esword/green,
 /obj/effect/floor_decal/corner/green{
 	dir = 10
 	},
@@ -1754,10 +1754,6 @@
 "oP" = (
 /turf/space/transit/east,
 /area/space)
-"oT" = (
-/obj/effect/step_trigger/lost_in_space,
-/turf/space/transit/east,
-/area/space)
 "oW" = (
 /obj/effect/shuttle_landmark/transit{
 	base_area = /area/space;
@@ -1787,7 +1783,7 @@
 	},
 /area/centcom/suppy)
 "ug" = (
-/obj/item/paper{
+/obj/item/weapon/paper{
 	info = "You're not supposed to be here.";
 	name = "unnerving letter"
 	},
@@ -2968,15 +2964,15 @@ oP
 oP
 oP
 oP
-oT
-oT
-oT
-oT
-oT
-oT
-oT
-oT
-oT
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
 oP
 oP
 oP
@@ -3110,7 +3106,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -3118,7 +3113,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -3252,7 +3248,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -3260,7 +3255,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -3392,9 +3388,6 @@ oP
 oP
 oP
 oP
-oT
-oT
-oT
 oP
 oP
 oP
@@ -3402,9 +3395,12 @@ oP
 oP
 oP
 oP
-oT
-oT
-oT
+oP
+oP
+oP
+oP
+oP
+oP
 oP
 oP
 oP
@@ -3534,7 +3530,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -3546,7 +3541,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -3676,7 +3672,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -3688,7 +3683,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -3818,7 +3814,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -3830,7 +3825,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -3960,7 +3956,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -3972,7 +3967,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -4102,7 +4098,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -4114,7 +4109,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -4244,7 +4240,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -4256,7 +4251,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -4386,7 +4382,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -4398,7 +4393,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -4528,7 +4524,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -4540,7 +4535,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -4670,7 +4666,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -4682,7 +4677,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -4812,7 +4808,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -4824,7 +4819,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -4954,7 +4950,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -4966,7 +4961,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -5096,7 +5092,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -5108,7 +5103,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -5238,7 +5234,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -5250,7 +5245,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -5380,7 +5376,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -5392,7 +5387,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -5522,7 +5518,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -5534,7 +5529,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -5664,7 +5660,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -5676,7 +5671,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -5806,7 +5802,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -5818,7 +5813,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -5948,7 +5944,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -5960,7 +5955,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -6090,7 +6086,6 @@ oP
 oP
 oP
 oP
-oT
 oP
 oP
 oP
@@ -6102,7 +6097,8 @@ oP
 oP
 oP
 oP
-oT
+oP
+oP
 oP
 oP
 oP
@@ -6232,9 +6228,9 @@ oP
 oP
 oP
 oP
-oT
-oT
-oT
+oP
+oP
+oP
 oP
 oP
 oP
@@ -6242,9 +6238,9 @@ oW
 oP
 oP
 oP
-oT
-oT
-oT
+oP
+oP
+oP
 oP
 oP
 oP
@@ -6376,15 +6372,15 @@ oP
 oP
 oP
 oP
-oT
-oT
-oT
-oT
-oT
-oT
-oT
-oT
-oT
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
+oP
 oP
 oP
 oP

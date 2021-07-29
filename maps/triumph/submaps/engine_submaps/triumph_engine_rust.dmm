@@ -772,7 +772,7 @@
 /area/engineering/engine_room)
 "te" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/rust_engine,
+/obj/item/weapon/book/manual/rust_engine,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
