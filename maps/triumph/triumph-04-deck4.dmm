@@ -2910,16 +2910,8 @@
 /turf/simulated/floor/tiled/monotile,
 /area/security/hallway)
 "cot" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/floor_decal/steeldecal/monofloor{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/eris/steel/monofloor,
+/obj/item/stack/tile/floor/eris/steel/monofloor,
+/turf/simulated/floor/tiled,
 /area/exploration/explorer_prep)
 "cqg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -39375,7 +39367,7 @@ nIK
 sJC
 rWp
 cVO
-cot
+vcE
 cVO
 cgH
 ufH
@@ -41648,8 +41640,8 @@ nIK
 sJC
 cVO
 cVO
-cVO
-cVO
+cot
+cot
 fCb
 xwI
 iYc
@@ -41790,8 +41782,8 @@ nIK
 sJC
 cVO
 cVO
-cVO
-cVO
+cot
+cot
 fCb
 vAH
 iYc
@@ -41932,8 +41924,8 @@ nPD
 sJC
 cVO
 cVO
-cVO
-cVO
+cot
+cot
 fCb
 yhE
 ugs

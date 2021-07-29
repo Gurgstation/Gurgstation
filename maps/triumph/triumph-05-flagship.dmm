@@ -1,7 +1,4 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
-"aa" = (
-/turf/unsimulated/wall/planetary/virgo3b,
-/area/space)
 "ad" = (
 /turf/unsimulated/wall/planetary/virgo3b,
 /area/centcom/specops)
@@ -97,8 +94,8 @@
 	dir = 1
 	},
 /obj/structure/table/rack,
-/obj/item/gun/energy/ionrifle,
-/obj/item/gun/energy/ionrifle,
+/obj/item/weapon/gun/energy/ionrifle,
+/obj/item/weapon/gun/energy/ionrifle,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -113,8 +110,8 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/gun/energy/ionrifle/pistol,
-/obj/item/gun/energy/ionrifle/pistol,
+/obj/item/weapon/gun/energy/ionrifle/pistol,
+/obj/item/weapon/gun/energy/ionrifle/pistol,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -124,7 +121,7 @@
 	dir = 1
 	},
 /obj/structure/table/rack,
-/obj/item/gun/energy/netgun,
+/obj/item/weapon/gun/energy/netgun,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -135,9 +132,9 @@
 	dir = 1
 	},
 /obj/structure/table/rack,
-/obj/item/gun/energy/laser,
-/obj/item/gun/energy/laser,
-/obj/item/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/window/reinforced{
 	dir = 4
@@ -155,10 +152,10 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/gun/energy/gun,
-/obj/item/gun/energy/gun,
-/obj/item/gun/energy/gun,
-/obj/item/gun/energy/gun,
+/obj/item/weapon/gun/energy/gun,
+/obj/item/weapon/gun/energy/gun,
+/obj/item/weapon/gun/energy/gun,
+/obj/item/weapon/gun/energy/gun,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -169,10 +166,10 @@
 	},
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/gun/nuclear,
-/obj/item/gun/energy/gun/nuclear,
-/obj/item/gun/energy/gun/nuclear,
-/obj/item/gun/energy/gun/nuclear,
+/obj/item/weapon/gun/energy/gun/nuclear,
+/obj/item/weapon/gun/energy/gun/nuclear,
+/obj/item/weapon/gun/energy/gun/nuclear,
+/obj/item/weapon/gun/energy/gun/nuclear,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -194,8 +191,8 @@
 /obj/item/ammo_magazine/m545,
 /obj/item/ammo_magazine/m545,
 /obj/item/ammo_magazine/m545,
-/obj/item/gun/projectile/automatic/sts35,
-/obj/item/gun/projectile/automatic/sts35,
+/obj/item/weapon/gun/projectile/automatic/sts35,
+/obj/item/weapon/gun/projectile/automatic/sts35,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -214,8 +211,8 @@
 /obj/item/ammo_magazine/m545,
 /obj/item/ammo_magazine/m545,
 /obj/item/ammo_magazine/m545,
-/obj/item/gun/projectile/automatic/sts35,
-/obj/item/gun/projectile/automatic/sts35,
+/obj/item/weapon/gun/projectile/automatic/sts35,
+/obj/item/weapon/gun/projectile/automatic/sts35,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -226,27 +223,27 @@
 	},
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/taser,
-/obj/item/gun/energy/taser,
-/obj/item/gun/energy/taser,
-/obj/item/gun/energy/taser,
+/obj/item/weapon/gun/energy/taser,
+/obj/item/weapon/gun/energy/taser,
+/obj/item/weapon/gun/energy/taser,
+/obj/item/weapon/gun/energy/taser,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "ay" = (
 /obj/structure/table/rack,
-/obj/item/shield/energy,
-/obj/item/shield/energy,
-/obj/item/shield/energy,
-/obj/item/shield/energy,
-/obj/item/shield/energy,
+/obj/item/weapon/shield/energy,
+/obj/item/weapon/shield/energy,
+/obj/item/weapon/shield/energy,
+/obj/item/weapon/shield/energy,
+/obj/item/weapon/shield/energy,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/melee/energy/sword,
-/obj/item/melee/energy/sword,
-/obj/item/melee/energy/sword,
-/obj/item/melee/energy/sword,
-/obj/item/melee/energy/sword,
+/obj/item/weapon/melee/energy/sword,
+/obj/item/weapon/melee/energy/sword,
+/obj/item/weapon/melee/energy/sword,
+/obj/item/weapon/melee/energy/sword,
+/obj/item/weapon/melee/energy/sword,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/window/reinforced{
 	dir = 1
@@ -264,19 +261,19 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/stunrevolver,
-/obj/item/gun/energy/stunrevolver,
-/obj/item/gun/energy/stunrevolver,
-/obj/item/gun/energy/stunrevolver,
+/obj/item/weapon/gun/energy/stunrevolver,
+/obj/item/weapon/gun/energy/stunrevolver,
+/obj/item/weapon/gun/energy/stunrevolver,
+/obj/item/weapon/gun/energy/stunrevolver,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "aA" = (
 /obj/structure/table/rack,
-/obj/item/storage/box/flashbangs,
-/obj/item/storage/box/flashbangs,
-/obj/item/storage/box/emps{
+/obj/item/weapon/storage/box/flashbangs,
+/obj/item/weapon/storage/box/flashbangs,
+/obj/item/weapon/storage/box/emps{
 	pixel_x = 4;
 	pixel_y = 4
 	},
@@ -286,8 +283,8 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/storage/box/smokes,
-/obj/item/storage/box/smokes,
+/obj/item/weapon/storage/box/smokes,
+/obj/item/weapon/storage/box/smokes,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -339,10 +336,10 @@
 /obj/item/ammo_casing/rocket,
 /obj/item/ammo_casing/rocket,
 /obj/item/ammo_casing/rocket,
-/obj/item/gun/launcher/rocket,
-/obj/item/gun/launcher/rocket,
-/obj/item/gun/projectile/automatic/l6_saw,
-/obj/item/gun/projectile/automatic/l6_saw,
+/obj/item/weapon/gun/launcher/rocket,
+/obj/item/weapon/gun/launcher/rocket,
+/obj/item/weapon/gun/projectile/automatic/l6_saw,
+/obj/item/weapon/gun/projectile/automatic/l6_saw,
 /obj/item/ammo_magazine/m545saw,
 /obj/item/ammo_magazine/m545saw,
 /obj/item/ammo_magazine/m545saw,
@@ -363,13 +360,13 @@
 "aH" = (
 /obj/structure/closet/crate/medical,
 /obj/item/stack/nanopaste,
-/obj/item/tank/anesthetic,
+/obj/item/weapon/tank/anesthetic,
 /obj/item/clothing/mask/breath/medical,
 /obj/item/clothing/mask/surgical,
 /obj/item/clothing/mask/surgical,
 /obj/item/stack/nanopaste,
 /obj/item/stack/nanopaste,
-/obj/item/storage/firstaid/surgery,
+/obj/item/weapon/storage/firstaid/surgery,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -377,18 +374,18 @@
 /area/centcom/specops)
 "aI" = (
 /obj/structure/closet/crate/medical,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -396,12 +393,12 @@
 /area/centcom/specops)
 "aJ" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/hypospray,
-/obj/item/reagent_containers/hypospray,
-/obj/item/reagent_containers/hypospray,
-/obj/item/reagent_containers/hypospray,
-/obj/item/reagent_containers/hypospray,
-/obj/item/reagent_containers/hypospray,
+/obj/item/weapon/reagent_containers/hypospray,
+/obj/item/weapon/reagent_containers/hypospray,
+/obj/item/weapon/reagent_containers/hypospray,
+/obj/item/weapon/reagent_containers/hypospray,
+/obj/item/weapon/reagent_containers/hypospray,
+/obj/item/weapon/reagent_containers/hypospray,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -409,13 +406,13 @@
 /area/centcom/specops)
 "aK" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/firstaid/clotting,
-/obj/item/storage/firstaid/combat,
-/obj/item/storage/firstaid/combat,
-/obj/item/storage/pill_bottle/iron,
-/obj/item/storage/pill_bottle/iron,
-/obj/item/storage/pill_bottle/nutriment,
-/obj/item/storage/pill_bottle/nutriment,
+/obj/item/weapon/storage/firstaid/clotting,
+/obj/item/weapon/storage/firstaid/combat,
+/obj/item/weapon/storage/firstaid/combat,
+/obj/item/weapon/storage/pill_bottle/iron,
+/obj/item/weapon/storage/pill_bottle/iron,
+/obj/item/weapon/storage/pill_bottle/nutriment,
+/obj/item/weapon/storage/pill_bottle/nutriment,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -423,17 +420,17 @@
 /area/centcom/specops)
 "aL" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/autoinjectors,
-/obj/item/storage/box/beakers,
-/obj/item/storage/box/gloves,
-/obj/item/storage/box/pillbottles,
+/obj/item/weapon/storage/box/autoinjectors,
+/obj/item/weapon/storage/box/beakers,
+/obj/item/weapon/storage/box/gloves,
+/obj/item/weapon/storage/box/pillbottles,
 /obj/item/bodybag/cryobag,
 /obj/item/bodybag/cryobag,
 /obj/item/bodybag/cryobag,
 /obj/item/bodybag/cryobag,
 /obj/item/bodybag/cryobag,
 /obj/item/bodybag/cryobag,
-/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -441,7 +438,7 @@
 /area/centcom/specops)
 "aM" = (
 /obj/machinery/chemical_dispenser/ert,
-/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -456,11 +453,10 @@
 /area/centcom/specops)
 "aO" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/firstaid/regular{
+/obj/item/weapon/storage/firstaid/regular{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/storage/firstaid/regular,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -468,14 +464,14 @@
 /area/centcom/specops)
 "aP" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/defib_kit/compact/combat/loaded,
-/obj/item/defib_kit/compact/combat/loaded,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/device/defib_kit/compact/combat/loaded,
+/obj/item/device/defib_kit/compact/combat/loaded,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -522,21 +518,21 @@
 /area/shuttle/specops/centcom)
 "aV" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/pulse_rifle,
-/obj/item/gun/energy/pulse_rifle,
-/obj/item/gun/energy/pulse_rifle,
-/obj/item/gun/energy/pulse_rifle,
-/obj/item/gun/energy/pulse_rifle,
-/obj/item/gun/energy/pulse_rifle,
-/obj/item/storage/secure/briefcase/nsfw_pack,
+/obj/item/weapon/gun/energy/pulse_rifle,
+/obj/item/weapon/gun/energy/pulse_rifle,
+/obj/item/weapon/gun/energy/pulse_rifle,
+/obj/item/weapon/gun/energy/pulse_rifle,
+/obj/item/weapon/gun/energy/pulse_rifle,
+/obj/item/weapon/gun/energy/pulse_rifle,
+/obj/item/weapon/storage/secure/briefcase/nsfw_pack,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "aW" = (
 /obj/structure/table/rack,
-/obj/item/flash,
-/obj/item/flash,
+/obj/item/device/flash,
+/obj/item/device/flash,
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/clothing/accessory/storage/black_vest,
 /obj/item/clothing/accessory/storage/black_vest,
@@ -549,8 +545,8 @@
 /obj/item/clothing/accessory/storage/black_drop_pouches,
 /obj/item/clothing/accessory/storage/black_drop_pouches,
 /obj/item/clothing/accessory/storage/black_drop_pouches,
-/obj/item/gun/energy/gun/martin,
-/obj/item/gun/energy/gun/martin,
+/obj/item/weapon/gun/energy/gun/martin,
+/obj/item/weapon/gun/energy/gun/martin,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -564,9 +560,9 @@
 /area/centcom/specops)
 "aY" = (
 /obj/structure/table/rack,
-/obj/item/rig/ert/medical,
-/obj/item/rig/ert/medical,
-/obj/item/rig/ert/medical,
+/obj/item/weapon/rig/ert/medical,
+/obj/item/weapon/rig/ert/medical,
+/obj/item/weapon/rig/ert/medical,
 /obj/item/clothing/accessory/storage/white_vest,
 /obj/item/clothing/accessory/storage/white_vest,
 /obj/item/clothing/accessory/storage/white_vest,
@@ -593,8 +589,8 @@
 "ba" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced,
-/obj/item/gun/projectile/shotgun/pump/combat,
-/obj/item/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -602,11 +598,11 @@
 "bb" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced,
-/obj/item/storage/box/shotgunammo,
-/obj/item/storage/box/shotgunammo,
-/obj/item/storage/box/shotgunshells,
-/obj/item/storage/box/shotgunshells,
-/obj/item/storage/box/shotgunshells,
+/obj/item/weapon/storage/box/shotgunammo,
+/obj/item/weapon/storage/box/shotgunammo,
+/obj/item/weapon/storage/box/shotgunshells,
+/obj/item/weapon/storage/box/shotgunshells,
+/obj/item/weapon/storage/box/shotgunshells,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -614,12 +610,12 @@
 "bc" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced,
-/obj/item/storage/backpack/dufflebag/syndie/ammo,
-/obj/item/storage/backpack/dufflebag/syndie/ammo,
-/obj/item/storage/backpack/dufflebag/syndie/ammo,
-/obj/item/storage/backpack/dufflebag/syndie/ammo,
-/obj/item/storage/backpack/dufflebag/syndie/ammo,
-/obj/item/storage/backpack/dufflebag/syndie/ammo,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -627,7 +623,7 @@
 "bd" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced,
-/obj/item/gun/projectile/automatic/advanced_smg,
+/obj/item/weapon/gun/projectile/automatic/advanced_smg,
 /obj/item/ammo_magazine/m9mmR/saber,
 /obj/item/ammo_magazine/m9mmR/saber,
 /obj/item/ammo_magazine/m9mmR/saber,
@@ -639,7 +635,7 @@
 "be" = (
 /obj/structure/table/rack,
 /obj/structure/window/reinforced,
-/obj/item/gun/energy/sniperrifle,
+/obj/item/weapon/gun/energy/sniperrifle,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -650,16 +646,16 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/item/gun/projectile/revolver/detective45,
-/obj/item/gun/projectile/revolver/detective45,
+/obj/item/weapon/gun/projectile/revolver/detective45,
+/obj/item/weapon/gun/projectile/revolver/detective45,
 /obj/item/ammo_magazine/s45,
 /obj/item/ammo_magazine/s45,
 /obj/item/ammo_magazine/s45,
 /obj/item/ammo_magazine/s45,
-/obj/item/gun/projectile/p92x,
-/obj/item/gun/projectile/p92x,
-/obj/item/gun/projectile/p92x,
-/obj/item/gun/projectile/p92x,
+/obj/item/weapon/gun/projectile/p92x,
+/obj/item/weapon/gun/projectile/p92x,
+/obj/item/weapon/gun/projectile/p92x,
+/obj/item/weapon/gun/projectile/p92x,
 /obj/item/ammo_magazine/m9mm/large/preban,
 /obj/item/ammo_magazine/m9mm/large/preban,
 /obj/item/ammo_magazine/m9mm/large/preban,
@@ -674,18 +670,18 @@
 /area/centcom/specops)
 "bg" = (
 /obj/structure/table/rack,
-/obj/item/barrier_tape_roll/police,
-/obj/item/barrier_tape_roll/police,
-/obj/item/barrier_tape_roll/police,
-/obj/item/barrier_tape_roll/police,
-/obj/item/barrier_tape_roll/police,
-/obj/item/barrier_tape_roll/police,
-/obj/item/flash,
-/obj/item/flash,
-/obj/item/flash,
-/obj/item/flash,
-/obj/item/flash,
-/obj/item/flash,
+/obj/item/taperoll/police,
+/obj/item/taperoll/police,
+/obj/item/taperoll/police,
+/obj/item/taperoll/police,
+/obj/item/taperoll/police,
+/obj/item/taperoll/police,
+/obj/item/device/flash,
+/obj/item/device/flash,
+/obj/item/device/flash,
+/obj/item/device/flash,
+/obj/item/device/flash,
+/obj/item/device/flash,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -802,11 +798,10 @@
 /area/centcom/specops)
 "bl" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/syringes{
+/obj/item/weapon/storage/box/syringes{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/storage/box/syringes,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -833,10 +828,10 @@
 /area/centcom/specops)
 "bn" = (
 /obj/structure/table/reinforced,
-/obj/item/healthanalyzer/advanced,
-/obj/item/healthanalyzer/advanced,
-/obj/item/healthanalyzer/advanced,
-/obj/item/healthanalyzer/advanced,
+/obj/item/device/healthanalyzer/advanced,
+/obj/item/device/healthanalyzer/advanced,
+/obj/item/device/healthanalyzer/advanced,
+/obj/item/device/healthanalyzer/advanced,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -844,11 +839,10 @@
 /area/centcom/specops)
 "bo" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/firstaid/adv{
+/obj/item/weapon/storage/firstaid/adv{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/storage/firstaid/adv,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -856,11 +850,11 @@
 /area/centcom/specops)
 "bp" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/firstaid/toxin{
+/obj/item/weapon/storage/firstaid/toxin{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/storage/firstaid/toxin,
+/obj/item/weapon/storage/firstaid/toxin,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -876,10 +870,10 @@
 /obj/item/clothing/head/helmet/ert/medical,
 /obj/item/clothing/head/helmet/ert/medical,
 /obj/item/clothing/head/helmet/ert/medical,
-/obj/item/storage/backpack/ert/medical,
-/obj/item/storage/backpack/ert/medical,
-/obj/item/storage/backpack/ert/medical,
-/obj/item/storage/backpack/ert/medical,
+/obj/item/weapon/storage/backpack/ert/medical,
+/obj/item/weapon/storage/backpack/ert/medical,
+/obj/item/weapon/storage/backpack/ert/medical,
+/obj/item/weapon/storage/backpack/ert/medical,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -887,79 +881,79 @@
 /area/centcom/specops)
 "br" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/flashshells,
-/obj/item/storage/box/flashshells,
-/obj/item/storage/box/stunshells,
-/obj/item/storage/box/stunshells,
-/obj/item/storage/box/beanbags,
-/obj/item/storage/box/beanbags,
+/obj/item/weapon/storage/box/flashshells,
+/obj/item/weapon/storage/box/flashshells,
+/obj/item/weapon/storage/box/stunshells,
+/obj/item/weapon/storage/box/stunshells,
+/obj/item/weapon/storage/box/beanbags,
+/obj/item/weapon/storage/box/beanbags,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "bs" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/handcuffs{
+/obj/item/weapon/storage/box/handcuffs{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/storage/box/handcuffs,
+/obj/item/weapon/storage/box/handcuffs,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "bt" = (
 /obj/structure/table/reinforced,
-/obj/item/material/knife/tacknife/combatknife,
-/obj/item/material/knife/tacknife/combatknife,
-/obj/item/material/knife/tacknife/combatknife,
-/obj/item/material/knife/tacknife/combatknife,
-/obj/item/material/knife/tacknife/combatknife,
-/obj/item/material/knife/tacknife/combatknife,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/baton/loaded,
+/obj/item/weapon/material/knife/tacknife/combatknife,
+/obj/item/weapon/material/knife/tacknife/combatknife,
+/obj/item/weapon/material/knife/tacknife/combatknife,
+/obj/item/weapon/material/knife/tacknife/combatknife,
+/obj/item/weapon/material/knife/tacknife/combatknife,
+/obj/item/weapon/material/knife/tacknife/combatknife,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/melee/baton/loaded,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "bu" = (
 /obj/structure/table/reinforced,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "bv" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/belt/security/tactical,
-/obj/item/storage/belt/security/tactical,
-/obj/item/storage/belt/security/tactical,
-/obj/item/storage/belt/security/tactical,
-/obj/item/storage/belt/security/tactical,
-/obj/item/storage/belt/security/tactical,
+/obj/item/weapon/storage/belt/security/tactical,
+/obj/item/weapon/storage/belt/security/tactical,
+/obj/item/weapon/storage/belt/security/tactical,
+/obj/item/weapon/storage/belt/security/tactical,
+/obj/item/weapon/storage/belt/security/tactical,
+/obj/item/weapon/storage/belt/security/tactical,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -999,11 +993,11 @@
 /area/centcom/specops)
 "bz" = (
 /obj/structure/table/rack,
-/obj/item/rig/ert/assetprotection,
-/obj/item/rig/ert/assetprotection,
-/obj/item/rig/ert/assetprotection,
-/obj/item/rig/ert/assetprotection,
-/obj/item/rig/ert/assetprotection,
+/obj/item/weapon/rig/ert/assetprotection,
+/obj/item/weapon/rig/ert/assetprotection,
+/obj/item/weapon/rig/ert/assetprotection,
+/obj/item/weapon/rig/ert/assetprotection,
+/obj/item/weapon/rig/ert/assetprotection,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -1031,15 +1025,14 @@
 /area/centcom/specops)
 "bC" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/bodybags{
+/obj/item/weapon/storage/box/bodybags{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/storage/box/bodybags,
-/obj/item/extinguisher/mini,
-/obj/item/extinguisher/mini,
-/obj/item/extinguisher/mini,
-/obj/item/extinguisher/mini,
+/obj/item/weapon/extinguisher/mini,
+/obj/item/weapon/extinguisher/mini,
+/obj/item/weapon/extinguisher/mini,
+/obj/item/weapon/extinguisher/mini,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -1047,12 +1040,12 @@
 /area/centcom/specops)
 "bD" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/belt/medical/emt,
-/obj/item/storage/belt/medical/emt,
-/obj/item/storage/belt/medical/emt,
-/obj/item/storage/belt/medical/emt,
-/obj/item/storage/belt/medical/emt,
-/obj/item/storage/belt/medical/emt,
+/obj/item/weapon/storage/belt/medical/emt,
+/obj/item/weapon/storage/belt/medical/emt,
+/obj/item/weapon/storage/belt/medical/emt,
+/obj/item/weapon/storage/belt/medical/emt,
+/obj/item/weapon/storage/belt/medical/emt,
+/obj/item/weapon/storage/belt/medical/emt,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -1060,11 +1053,10 @@
 /area/centcom/specops)
 "bE" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/firstaid/fire{
+/obj/item/weapon/storage/firstaid/fire{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/storage/firstaid/fire,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -1072,11 +1064,10 @@
 /area/centcom/specops)
 "bF" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/firstaid/o2{
+/obj/item/weapon/storage/firstaid/o2{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/storage/firstaid/o2,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -1084,10 +1075,10 @@
 /area/centcom/specops)
 "bG" = (
 /obj/structure/table/rack,
-/obj/item/storage/backpack/dufflebag/syndie/med,
-/obj/item/storage/backpack/dufflebag/syndie/med,
-/obj/item/storage/backpack/dufflebag/syndie/med,
-/obj/item/storage/backpack/dufflebag/syndie/med,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/med,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/med,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/med,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/med,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -1103,22 +1094,22 @@
 /obj/item/clothing/head/helmet/ert/security,
 /obj/item/clothing/head/helmet/ert/security,
 /obj/item/clothing/head/helmet/ert/security,
-/obj/item/storage/backpack/ert/security,
-/obj/item/storage/backpack/ert/security,
-/obj/item/storage/backpack/ert/security,
-/obj/item/storage/backpack/ert/security,
+/obj/item/weapon/storage/backpack/ert/security,
+/obj/item/weapon/storage/backpack/ert/security,
+/obj/item/weapon/storage/backpack/ert/security,
+/obj/item/weapon/storage/backpack/ert/security,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "bI" = (
 /obj/structure/table/rack,
-/obj/item/rig/ert/security,
-/obj/item/rig/ert/security,
-/obj/item/rig/ert/security,
-/obj/item/rig/ert/security,
-/obj/item/rig/ert/security,
-/obj/item/rig/ert/security,
+/obj/item/weapon/rig/ert/security,
+/obj/item/weapon/rig/ert/security,
+/obj/item/weapon/rig/ert/security,
+/obj/item/weapon/rig/ert/security,
+/obj/item/weapon/rig/ert/security,
+/obj/item/weapon/rig/ert/security,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -1220,9 +1211,9 @@
 /area/centcom/specops)
 "bU" = (
 /obj/structure/table/reinforced,
-/obj/item/megaphone,
-/obj/item/storage/box/trackimp,
-/obj/item/storage/box/cdeathalarm_kit,
+/obj/item/device/megaphone,
+/obj/item/weapon/storage/box/trackimp,
+/obj/item/weapon/storage/box/cdeathalarm_kit,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -1232,7 +1223,7 @@
 /obj/structure/table/rack,
 /obj/item/clothing/suit/armor/vest/ert/command,
 /obj/item/clothing/head/helmet/ert/command,
-/obj/item/storage/backpack/ert/commander,
+/obj/item/weapon/storage/backpack/ert/commander,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -1240,16 +1231,6 @@
 /area/centcom/specops)
 "bW" = (
 /obj/structure/table/reinforced,
-/obj/item/ammo_casing/nsfw_batt/stun,
-/obj/item/ammo_casing/nsfw_batt/stun,
-/obj/item/ammo_casing/nsfw_batt/stun,
-/obj/item/ammo_casing/nsfw_batt,
-/obj/item/ammo_casing/nsfw_batt,
-/obj/item/ammo_casing/nsfw_batt,
-/obj/item/ammo_casing/nsfw_batt/net,
-/obj/item/ammo_casing/nsfw_batt/net,
-/obj/item/ammo_magazine/nsfw_mag,
-/obj/item/gun/projectile/nsfw,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -1275,7 +1256,7 @@
 	},
 /area/centcom/specops)
 "bZ" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -1287,9 +1268,8 @@
 /area/centcom/specops)
 "cb" = (
 /obj/structure/table/reinforced,
-/obj/item/aicard,
-/obj/item/pinpointer/advpinpointer,
-/obj/item/stamp/centcomm,
+/obj/item/weapon/pinpointer/advpinpointer,
+/obj/item/weapon/stamp/centcomm,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -1310,7 +1290,7 @@
 /obj/item/clothing/accessory/holster/hip,
 /obj/item/ammo_magazine/m44,
 /obj/item/ammo_magazine/m44,
-/obj/item/gun/projectile/deagle,
+/obj/item/weapon/gun/projectile/deagle,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -1328,7 +1308,7 @@
 /area/centcom/specops)
 "cf" = (
 /obj/structure/table/reinforced,
-/obj/item/pda/ert,
+/obj/item/device/pda/ert,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -1352,12 +1332,12 @@
 /area/centcom/specops)
 "ci" = (
 /obj/structure/table/reinforced,
-/obj/item/pda/ert,
-/obj/item/pda/ert,
-/obj/item/pda/ert,
-/obj/item/pda/ert,
-/obj/item/pda/ert,
-/obj/item/pda/ert,
+/obj/item/device/pda/ert,
+/obj/item/device/pda/ert,
+/obj/item/device/pda/ert,
+/obj/item/device/pda/ert,
+/obj/item/device/pda/ert,
+/obj/item/device/pda/ert,
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
@@ -1367,12 +1347,12 @@
 /area/centcom/specops)
 "cj" = (
 /obj/structure/table/reinforced,
-/obj/item/megaphone,
-/obj/item/megaphone,
-/obj/item/megaphone,
-/obj/item/megaphone,
-/obj/item/megaphone,
-/obj/item/megaphone,
+/obj/item/device/megaphone,
+/obj/item/device/megaphone,
+/obj/item/device/megaphone,
+/obj/item/device/megaphone,
+/obj/item/device/megaphone,
+/obj/item/device/megaphone,
 /obj/effect/floor_decal/corner/blue{
 	dir = 5
 	},
@@ -1412,14 +1392,14 @@
 /area/centcom/specops)
 "cm" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/flashbangs,
-/obj/item/handcuffs,
-/obj/item/flash,
-/obj/item/melee/baton/loaded,
-/obj/item/storage/belt/security/tactical,
-/obj/item/gun/energy/stunrevolver,
+/obj/item/weapon/storage/box/flashbangs,
+/obj/item/weapon/handcuffs,
+/obj/item/device/flash,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/storage/belt/security/tactical,
+/obj/item/weapon/gun/energy/stunrevolver,
 /obj/item/clothing/glasses/sunglasses/sechud/tactical,
-/obj/item/material/knife/tacknife/combatknife,
+/obj/item/weapon/material/knife/tacknife/combatknife,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -1427,7 +1407,7 @@
 /area/centcom/specops)
 "cn" = (
 /obj/structure/table/rack,
-/obj/item/rig/ert,
+/obj/item/weapon/rig/ert,
 /obj/item/clothing/accessory/storage/black_vest,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
@@ -1436,8 +1416,8 @@
 /area/centcom/specops)
 "co" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/energy/gun/nuclear,
-/obj/item/hand_tele,
+/obj/item/weapon/gun/energy/gun/nuclear,
+/obj/item/weapon/hand_tele,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -1469,33 +1449,33 @@
 /area/centcom/specops)
 "cr" = (
 /obj/structure/table/reinforced,
-/obj/item/tool/crowbar,
-/obj/item/tool/crowbar,
-/obj/item/tool/crowbar,
-/obj/item/tool/crowbar,
-/obj/item/tool/crowbar,
-/obj/item/tool/crowbar,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/radio/off,
-/obj/item/flashlight,
-/obj/item/flashlight,
-/obj/item/flashlight,
-/obj/item/flashlight,
-/obj/item/flashlight,
-/obj/item/flashlight,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/crowbar,
+/obj/item/device/radio/off,
+/obj/item/device/radio/off,
+/obj/item/device/radio/off,
+/obj/item/device/radio/off,
+/obj/item/device/radio/off,
+/obj/item/device/radio/off,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "cs" = (
 /obj/structure/table/reinforced,
-/obj/item/stamp/centcomm,
-/obj/item/pen,
-/obj/item/paper_bin{
+/obj/item/weapon/stamp/centcomm,
+/obj/item/weapon/pen,
+/obj/item/weapon/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
 	},
@@ -1596,19 +1576,19 @@
 /obj/item/stack/material/glass/reinforced{
 	amount = 50
 	},
-/obj/item/storage/briefcase/inflatable{
+/obj/item/weapon/storage/briefcase/inflatable{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/storage/briefcase/inflatable{
+/obj/item/weapon/storage/briefcase/inflatable{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/storage/briefcase/inflatable{
+/obj/item/weapon/storage/briefcase/inflatable{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/storage/briefcase/inflatable{
+/obj/item/weapon/storage/briefcase/inflatable{
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -1625,14 +1605,14 @@
 /area/centcom/specops)
 "cy" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/storage/box/survival/comp,
-/obj/item/storage/box/survival/comp,
-/obj/item/storage/box/survival/comp,
-/obj/item/storage/box/survival/comp,
-/obj/item/storage/box/survival/comp,
-/obj/item/storage/box/survival/comp,
-/obj/item/storage/box/survival/comp,
-/obj/item/storage/box/survival/comp,
+/obj/item/weapon/storage/box/survival/comp,
+/obj/item/weapon/storage/box/survival/comp,
+/obj/item/weapon/storage/box/survival/comp,
+/obj/item/weapon/storage/box/survival/comp,
+/obj/item/weapon/storage/box/survival/comp,
+/obj/item/weapon/storage/box/survival/comp,
+/obj/item/weapon/storage/box/survival/comp,
+/obj/item/weapon/storage/box/survival/comp,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -1695,17 +1675,17 @@
 	},
 /area/centcom/specops)
 "cH" = (
-/obj/item/circuitboard/aiupload,
-/obj/item/circuitboard/borgupload,
-/obj/item/circuitboard/smes,
-/obj/item/aiModule/nanotrasen,
-/obj/item/aiModule/reset,
-/obj/item/aiModule/freeformcore,
-/obj/item/aiModule/protectStation,
-/obj/item/aiModule/quarantine,
-/obj/item/aiModule/paladin,
-/obj/item/aiModule/robocop,
-/obj/item/aiModule/safeguard,
+/obj/item/weapon/circuitboard/aiupload,
+/obj/item/weapon/circuitboard/borgupload,
+/obj/item/weapon/circuitboard/smes,
+/obj/item/weapon/aiModule/nanotrasen,
+/obj/item/weapon/aiModule/reset,
+/obj/item/weapon/aiModule/freeformcore,
+/obj/item/weapon/aiModule/protectStation,
+/obj/item/weapon/aiModule/quarantine,
+/obj/item/weapon/aiModule/paladin,
+/obj/item/weapon/aiModule/robocop,
+/obj/item/weapon/aiModule/safeguard,
 /obj/structure/table/steel_reinforced,
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -1719,12 +1699,12 @@
 /obj/item/clothing/glasses/welding/superior,
 /obj/structure/table/steel_reinforced,
 /obj/item/clothing/glasses/welding/superior,
-/obj/item/grenade/chem_grenade/metalfoam,
-/obj/item/grenade/chem_grenade/metalfoam,
-/obj/item/grenade/chem_grenade/metalfoam,
-/obj/item/grenade/chem_grenade/metalfoam,
-/obj/item/grenade/chem_grenade/metalfoam,
-/obj/item/grenade/chem_grenade/metalfoam,
+/obj/item/weapon/grenade/chem_grenade/metalfoam,
+/obj/item/weapon/grenade/chem_grenade/metalfoam,
+/obj/item/weapon/grenade/chem_grenade/metalfoam,
+/obj/item/weapon/grenade/chem_grenade/metalfoam,
+/obj/item/weapon/grenade/chem_grenade/metalfoam,
+/obj/item/weapon/grenade/chem_grenade/metalfoam,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -1750,18 +1730,18 @@
 "cM" = (
 /obj/structure/table/reinforced,
 /obj/effect/floor_decal/industrial/outline/blue,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -1808,27 +1788,27 @@
 /obj/item/clothing/head/helmet/ert/engineer,
 /obj/item/clothing/head/helmet/ert/engineer,
 /obj/item/clothing/head/helmet/ert/engineer,
-/obj/item/storage/backpack/ert/engineer,
-/obj/item/storage/backpack/ert/engineer,
-/obj/item/storage/backpack/ert/engineer,
-/obj/item/storage/backpack/ert/engineer,
+/obj/item/weapon/storage/backpack/ert/engineer,
+/obj/item/weapon/storage/backpack/ert/engineer,
+/obj/item/weapon/storage/backpack/ert/engineer,
+/obj/item/weapon/storage/backpack/ert/engineer,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "cS" = (
 /obj/structure/table/rack,
-/obj/item/rig/ert/engineer,
-/obj/item/rig/ert/engineer,
-/obj/item/rig/ert/engineer,
+/obj/item/weapon/rig/ert/engineer,
+/obj/item/weapon/rig/ert/engineer,
+/obj/item/weapon/rig/ert/engineer,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/specops)
 "cT" = (
 /obj/structure/table/rack,
-/obj/item/flash,
-/obj/item/flash,
+/obj/item/device/flash,
+/obj/item/device/flash,
 /obj/item/clothing/accessory/storage/brown_vest,
 /obj/item/clothing/accessory/storage/brown_vest,
 /obj/item/clothing/accessory/storage/brown_vest,
@@ -1841,8 +1821,8 @@
 /obj/item/clothing/accessory/storage/brown_drop_pouches,
 /obj/item/clothing/accessory/storage/brown_drop_pouches,
 /obj/item/clothing/accessory/storage/brown_drop_pouches,
-/obj/item/gun/energy/gun/martin,
-/obj/item/gun/energy/gun/martin,
+/obj/item/weapon/gun/energy/gun/martin,
+/obj/item/weapon/gun/energy/gun/martin,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -1855,12 +1835,12 @@
 /obj/item/clothing/gloves/yellow,
 /obj/item/clothing/gloves/yellow,
 /obj/item/clothing/gloves/yellow,
-/obj/item/storage/belt/utility/full,
-/obj/item/storage/belt/utility/full,
-/obj/item/storage/belt/utility/full,
-/obj/item/storage/belt/utility/full,
-/obj/item/storage/belt/utility/full,
-/obj/item/storage/belt/utility/full,
+/obj/item/weapon/storage/belt/utility/full,
+/obj/item/weapon/storage/belt/utility/full,
+/obj/item/weapon/storage/belt/utility/full,
+/obj/item/weapon/storage/belt/utility/full,
+/obj/item/weapon/storage/belt/utility/full,
+/obj/item/weapon/storage/belt/utility/full,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -1873,12 +1853,12 @@
 /obj/item/clothing/glasses/meson,
 /obj/item/clothing/glasses/meson,
 /obj/item/clothing/glasses/meson,
-/obj/item/barrier_tape_roll/engineering,
-/obj/item/barrier_tape_roll/engineering,
-/obj/item/barrier_tape_roll/engineering,
-/obj/item/barrier_tape_roll/engineering,
-/obj/item/barrier_tape_roll/engineering,
-/obj/item/barrier_tape_roll/engineering,
+/obj/item/taperoll/engineering,
+/obj/item/taperoll/engineering,
+/obj/item/taperoll/engineering,
+/obj/item/taperoll/engineering,
+/obj/item/taperoll/engineering,
+/obj/item/taperoll/engineering,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -1918,12 +1898,12 @@
 /area/centcom/specops)
 "cZ" = (
 /obj/structure/table/reinforced,
-/obj/item/tool/crowbar,
-/obj/item/tool/screwdriver,
-/obj/item/tool/wrench,
-/obj/item/tool/crowbar,
-/obj/item/tool/screwdriver,
-/obj/item/tool/wrench,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/screwdriver,
+/obj/item/weapon/tool/wrench,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/screwdriver,
+/obj/item/weapon/tool/wrench,
 /obj/effect/floor_decal/industrial/outline/blue,
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -1968,12 +1948,12 @@
 /obj/item/clothing/shoes/magboots,
 /obj/item/clothing/shoes/magboots,
 /obj/item/clothing/shoes/magboots,
-/obj/item/storage/box,
-/obj/item/storage/box,
-/obj/item/storage/box,
-/obj/item/storage/box,
-/obj/item/storage/box,
-/obj/item/storage/box,
+/obj/item/weapon/storage/box,
+/obj/item/weapon/storage/box,
+/obj/item/weapon/storage/box,
+/obj/item/weapon/storage/box,
+/obj/item/weapon/storage/box,
+/obj/item/weapon/storage/box,
 /obj/effect/floor_decal/industrial/outline/blue,
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -2006,14 +1986,14 @@
 /area/centcom/specops)
 "dh" = (
 /obj/structure/table/rack,
-/obj/item/tank/emergency/oxygen/double,
-/obj/item/tank/emergency/oxygen/double,
-/obj/item/tank/emergency/oxygen/double,
-/obj/item/tank/emergency/oxygen/double,
-/obj/item/tank/emergency/oxygen/double,
-/obj/item/tank/emergency/oxygen/double,
-/obj/item/tank/emergency/oxygen/double,
-/obj/item/tank/emergency/oxygen/double,
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/item/weapon/tank/emergency/oxygen/double,
+/obj/item/weapon/tank/emergency/oxygen/double,
 /obj/effect/floor_decal/industrial/outline/blue,
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -2094,7 +2074,7 @@
 	},
 /area/centcom/control)
 "dv" = (
-/obj/item/gun/energy/sizegun,
+/obj/item/weapon/gun/energy/sizegun,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -2108,14 +2088,14 @@
 	},
 /area/centcom/control)
 "dx" = (
-/obj/item/storage/firstaid/combat,
+/obj/item/weapon/storage/firstaid/combat,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/control)
 "dy" = (
 /obj/structure/bed/chair,
-/obj/item/handcuffs,
+/obj/item/weapon/handcuffs,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -2131,7 +2111,7 @@
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "dA" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /obj/effect/floor_decal/corner/yellow/diagonal,
 /obj/effect/floor_decal/corner/blue/diagonal{
 	dir = 4
@@ -2139,7 +2119,7 @@
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "dB" = (
-/obj/item/reagent_containers/food/condiment/small/peppermill{
+/obj/item/weapon/reagent_containers/food/condiment/small/peppermill{
 	pixel_x = 2;
 	pixel_y = 6
 	},
@@ -2151,7 +2131,7 @@
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "dC" = (
-/obj/item/reagent_containers/food/drinks/cans/cola,
+/obj/item/weapon/reagent_containers/food/drinks/cans/cola,
 /obj/structure/table/standard,
 /obj/effect/floor_decal/corner/yellow/diagonal,
 /obj/effect/floor_decal/corner/blue/diagonal{
@@ -2160,7 +2140,7 @@
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "dD" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /obj/effect/floor_decal/corner/yellow/diagonal,
 /obj/effect/floor_decal/corner/blue/diagonal{
 	dir = 4
@@ -2170,34 +2150,13 @@
 /area/centcom/control)
 "dE" = (
 /obj/structure/table/marble,
-/obj/item/reagent_containers/food/drinks/cup{
+/obj/item/weapon/reagent_containers/food/drinks/cup{
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/food/drinks/cup{
+/obj/item/weapon/reagent_containers/food/drinks/cup{
 	pixel_x = -4;
 	pixel_y = 8
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = 3
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = -4;
-	pixel_y = -4
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = 8
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = -4
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = 8;
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = -4;
-	pixel_y = 12
 	},
 /obj/effect/floor_decal/corner/blue/diagonal{
 	dir = 4
@@ -2248,7 +2207,7 @@
 /area/centcom/control)
 "dJ" = (
 /obj/structure/table/standard,
-/obj/item/storage/belt/utility,
+/obj/item/weapon/storage/belt/utility,
 /obj/item/clothing/gloves/sterile/latex,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
@@ -2306,10 +2265,10 @@
 /area/centcom/control)
 "dN" = (
 /obj/structure/table/standard,
-/obj/item/hand_labeler,
-/obj/item/pen,
-/obj/item/packageWrap,
-/obj/item/packageWrap,
+/obj/item/weapon/hand_labeler,
+/obj/item/weapon/pen,
+/obj/item/weapon/packageWrap,
+/obj/item/weapon/packageWrap,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
 	},
@@ -2319,12 +2278,12 @@
 /turf/simulated/floor/tiled/white,
 /area/centcom/control)
 "dO" = (
-/obj/item/stock_parts/console_screen,
+/obj/item/weapon/stock_parts/console_screen,
 /obj/structure/table/standard,
-/obj/item/stock_parts/console_screen,
-/obj/item/stock_parts/console_screen,
-/obj/item/stock_parts/matter_bin,
-/obj/item/stock_parts/matter_bin,
+/obj/item/weapon/stock_parts/console_screen,
+/obj/item/weapon/stock_parts/console_screen,
+/obj/item/weapon/stock_parts/matter_bin,
+/obj/item/weapon/stock_parts/matter_bin,
 /obj/machinery/recharger,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 5
@@ -2358,7 +2317,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
-/obj/item/book/manual/robotics_cyborgs{
+/obj/item/weapon/book/manual/robotics_cyborgs{
 	pixel_x = 2;
 	pixel_y = 5
 	},
@@ -2409,10 +2368,6 @@
 	amount = 10
 	},
 /obj/machinery/camera/network/crescent,
-/turf/unsimulated/floor/steel,
-/area/centcom/control)
-"dT" = (
-/obj/machinery/pros_fabricator,
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "dU" = (
@@ -2467,12 +2422,12 @@
 /area/centcom/control)
 "eb" = (
 /obj/structure/table/standard,
-/obj/item/stock_parts/manipulator,
-/obj/item/stock_parts/capacitor,
-/obj/item/stock_parts/capacitor,
-/obj/item/stock_parts/manipulator,
-/obj/item/stock_parts/micro_laser,
-/obj/item/stock_parts/micro_laser,
+/obj/item/weapon/stock_parts/manipulator,
+/obj/item/weapon/stock_parts/capacitor,
+/obj/item/weapon/stock_parts/capacitor,
+/obj/item/weapon/stock_parts/manipulator,
+/obj/item/weapon/stock_parts/micro_laser,
+/obj/item/weapon/stock_parts/micro_laser,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 4
 	},
@@ -2514,8 +2469,8 @@
 /area/centcom/control)
 "eg" = (
 /obj/structure/table/standard,
-/obj/item/mmi/digital/posibrain,
-/obj/item/robotanalyzer,
+/obj/item/device/mmi/digital/posibrain,
+/obj/item/device/robotanalyzer,
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "eh" = (
@@ -2566,11 +2521,10 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/stock_parts/scanning_module{
+/obj/item/weapon/stock_parts/scanning_module{
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/item/stock_parts/scanning_module,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -2622,7 +2576,7 @@
 /area/tdome/tdomeadmin)
 "ev" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/captain,
+/obj/item/weapon/bedsheet/captain,
 /obj/effect/floor_decal/carpet{
 	dir = 1
 	},
@@ -2690,7 +2644,7 @@
 /area/centcom/control)
 "eB" = (
 /obj/machinery/r_n_d/circuit_imprinter,
-/obj/item/reagent_containers/glass/beaker/sulphuric,
+/obj/item/weapon/reagent_containers/glass/beaker/sulphuric,
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "eC" = (
@@ -2706,11 +2660,7 @@
 /area/centcom/control)
 "eD" = (
 /obj/structure/table/standard,
-/obj/item/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/item/pen/blue,
+/obj/item/weapon/pen/blue,
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "eE" = (
@@ -2725,19 +2675,19 @@
 /area/tdome/tdomeobserve)
 "eG" = (
 /obj/structure/table/standard,
-/obj/item/reagent_containers/food/drinks/bottle/small/beer,
-/obj/item/reagent_containers/food/drinks/bottle/small/beer,
-/obj/item/reagent_containers/food/drinks/bottle/small/beer,
-/obj/item/flame/lighter/zippo,
-/obj/item/storage/fancy/cigarettes,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/small/beer,
+/obj/item/weapon/flame/lighter/zippo,
+/obj/item/weapon/storage/fancy/cigarettes,
 /turf/unsimulated/floor{
 	icon_state = "lino"
 	},
 /area/tdome/tdomeobserve)
 "eH" = (
-/obj/item/reagent_containers/food/drinks/cans/cola,
-/obj/item/reagent_containers/food/drinks/cans/cola,
-/obj/item/reagent_containers/food/drinks/cans/cola,
+/obj/item/weapon/reagent_containers/food/drinks/cans/cola,
+/obj/item/weapon/reagent_containers/food/drinks/cans/cola,
+/obj/item/weapon/reagent_containers/food/drinks/cans/cola,
 /obj/structure/table/standard,
 /turf/unsimulated/floor{
 	icon_state = "lino"
@@ -2829,13 +2779,13 @@
 	},
 /area/centcom/control)
 "eT" = (
-/obj/item/melee/baton/cattleprod,
+/obj/item/weapon/melee/baton/cattleprod,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
 /area/centcom/control)
 "eU" = (
-/obj/item/reagent_containers/food/condiment/small/saltshaker{
+/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker{
 	pixel_x = -6
 	},
 /obj/structure/table/standard,
@@ -2879,13 +2829,13 @@
 	dir = 8;
 	layer = 2.9
 	},
-/obj/item/storage/toolbox/mechanical{
+/obj/item/weapon/storage/toolbox/mechanical{
 	pixel_x = -2;
 	pixel_y = -1
 	},
-/obj/item/tool/crowbar,
-/obj/item/storage/belt/utility,
-/obj/item/storage/toolbox/electrical{
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/storage/belt/utility,
+/obj/item/weapon/storage/toolbox/electrical{
 	pixel_x = 1;
 	pixel_y = 6
 	},
@@ -2983,13 +2933,13 @@
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "fk" = (
-/obj/item/folder/white,
+/obj/item/weapon/folder/white,
 /obj/structure/table/standard,
-/obj/item/disk/tech_disk,
-/obj/item/disk/tech_disk,
-/obj/item/disk/design_disk,
-/obj/item/disk/design_disk,
-/obj/item/reagent_containers/dropper{
+/obj/item/weapon/disk/tech_disk,
+/obj/item/weapon/disk/tech_disk,
+/obj/item/weapon/disk/design_disk,
+/obj/item/weapon/disk/design_disk,
+/obj/item/weapon/reagent_containers/dropper{
 	pixel_y = -4
 	},
 /obj/effect/floor_decal/borderfloorwhite{
@@ -3004,10 +2954,10 @@
 /area/centcom/control)
 "fl" = (
 /obj/structure/table/standard,
-/obj/item/cell/high{
+/obj/item/weapon/cell/high{
 	maxcharge = 15000
 	},
-/obj/item/cell/high{
+/obj/item/weapon/cell/high{
 	maxcharge = 15000
 	},
 /obj/machinery/cell_charger,
@@ -3023,7 +2973,7 @@
 	density = 0;
 	pixel_y = -30
 	},
-/obj/item/storage/toolbox/mechanical{
+/obj/item/weapon/storage/toolbox/mechanical{
 	pixel_x = -2;
 	pixel_y = -1
 	},
@@ -3073,9 +3023,9 @@
 /area/centcom/control)
 "fr" = (
 /obj/structure/table/standard,
-/obj/item/hand_labeler,
-/obj/item/reagent_containers/glass/beaker/large,
-/obj/item/reagent_containers/glass/beaker/sulphuric,
+/obj/item/weapon/hand_labeler,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/glass/beaker/sulphuric,
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "fs" = (
@@ -3090,19 +3040,19 @@
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "ft" = (
-/obj/item/storage/box/donkpockets{
+/obj/item/weapon/storage/box/donkpockets{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/storage/box/donkpockets{
+/obj/item/weapon/storage/box/donkpockets{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/storage/box/donkpockets{
+/obj/item/weapon/storage/box/donkpockets{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/storage/box/donkpockets{
+/obj/item/weapon/storage/box/donkpockets{
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -3131,7 +3081,7 @@
 	},
 /area/tdome/tdomeobserve)
 "fx" = (
-/obj/item/camera,
+/obj/item/device/camera,
 /turf/unsimulated/floor{
 	icon_state = "lino"
 	},
@@ -3171,62 +3121,30 @@
 "fC" = (
 /obj/structure/table/standard,
 /obj/machinery/recharger,
-/obj/item/flash,
+/obj/item/device/flash,
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "fD" = (
 /obj/structure/closet{
 	name = "robotics parts"
 	},
-/obj/item/cell/high{
-	maxcharge = 15000;
-	pixel_x = 5;
-	pixel_y = -5
-	},
-/obj/item/assembly/prox_sensor{
+/obj/item/device/assembly/prox_sensor{
 	pixel_x = -8;
 	pixel_y = 4
 	},
-/obj/item/assembly/prox_sensor{
+/obj/item/device/assembly/prox_sensor{
 	pixel_x = -8;
 	pixel_y = 4
 	},
-/obj/item/cell/high{
-	maxcharge = 15000;
-	pixel_x = 5;
-	pixel_y = -5
-	},
-/obj/item/cell/high{
-	maxcharge = 15000;
-	pixel_x = 5;
-	pixel_y = -5
-	},
-/obj/item/cell/high{
-	maxcharge = 15000;
-	pixel_x = 5;
-	pixel_y = -5
-	},
-/obj/item/storage/firstaid/regular{
-	empty = 1;
-	name = "First-Aid (empty)"
-	},
-/obj/item/storage/firstaid/regular{
-	empty = 1;
-	name = "First-Aid (empty)"
-	},
-/obj/item/storage/firstaid/regular{
-	empty = 1;
-	name = "First-Aid (empty)"
-	},
-/obj/item/healthanalyzer,
-/obj/item/healthanalyzer,
-/obj/item/healthanalyzer,
-/obj/item/flash/synthetic,
-/obj/item/flash/synthetic,
-/obj/item/flash/synthetic,
-/obj/item/flash/synthetic,
-/obj/item/flash/synthetic,
-/obj/item/flash/synthetic,
+/obj/item/device/healthanalyzer,
+/obj/item/device/healthanalyzer,
+/obj/item/device/healthanalyzer,
+/obj/item/device/flash/synthetic,
+/obj/item/device/flash/synthetic,
+/obj/item/device/flash/synthetic,
+/obj/item/device/flash/synthetic,
+/obj/item/device/flash/synthetic,
+/obj/item/device/flash/synthetic,
 /obj/item/stack/cable_coil,
 /obj/item/stack/cable_coil,
 /turf/unsimulated/floor/steel,
@@ -3339,7 +3257,7 @@
 /obj/structure/table/rack,
 /obj/item/clothing/under/color/red,
 /obj/item/clothing/shoes/brown,
-/obj/item/melee/energy/axe,
+/obj/item/weapon/melee/energy/axe,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -3356,7 +3274,7 @@
 /obj/structure/table/rack,
 /obj/item/clothing/under/color/green,
 /obj/item/clothing/shoes/brown,
-/obj/item/melee/energy/axe,
+/obj/item/weapon/melee/energy/axe,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -3492,7 +3410,7 @@
 /area/centcom/control)
 "ge" = (
 /obj/structure/closet/wardrobe/robotics_black,
-/obj/item/radio/headset/headset_sci{
+/obj/item/device/radio/headset/headset_sci{
 	pixel_x = -3
 	},
 /turf/unsimulated/floor/steel,
@@ -3532,8 +3450,8 @@
 /obj/item/clothing/shoes/brown,
 /obj/item/clothing/suit/armor/tdome/red,
 /obj/item/clothing/head/helmet/thunderdome,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/energy/sword,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/melee/energy/sword,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -3583,8 +3501,8 @@
 /obj/item/clothing/shoes/brown,
 /obj/item/clothing/suit/armor/tdome/green,
 /obj/item/clothing/head/helmet/thunderdome,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/energy/sword,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/melee/energy/sword,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -3629,10 +3547,6 @@
 /area/centcom/control)
 "gv" = (
 /obj/structure/table/standard,
-/obj/item/storage/box/bodybags{
-	pixel_x = -1;
-	pixel_y = -2
-	},
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "gw" = (
@@ -3846,7 +3760,7 @@
 /area/centcom/control)
 "gW" = (
 /obj/structure/table/standard,
-/obj/item/mmi,
+/obj/item/device/mmi,
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "gX" = (
@@ -3943,15 +3857,9 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/item/book/manual/chef_recipes,
-/obj/item/reagent_containers/food/condiment/small/saltshaker{
-	pixel_x = -3
-	},
-/obj/item/reagent_containers/food/condiment/small/peppermill{
-	pixel_x = 3
-	},
-/obj/item/material/kitchen/rollingpin,
-/obj/item/material/knife/butch,
+/obj/item/weapon/book/manual/chef_recipes,
+/obj/item/weapon/material/kitchen/rollingpin,
+/obj/item/weapon/material/knife/butch,
 /turf/simulated/floor/tiled/white,
 /area/centcom/control)
 "hm" = (
@@ -3974,12 +3882,12 @@
 /area/centcom/security)
 "hp" = (
 /obj/structure/table/standard,
-/obj/item/surgical/circular_saw,
-/obj/item/surgical/scalpel{
+/obj/item/weapon/surgical/circular_saw,
+/obj/item/weapon/surgical/scalpel{
 	pixel_y = 12
 	},
-/obj/item/surgical/hemostat,
-/obj/item/surgical/retractor,
+/obj/item/weapon/surgical/hemostat,
+/obj/item/weapon/surgical/retractor,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
@@ -4144,14 +4052,14 @@
 	pixel_x = -32;
 	req_access = list(29)
 	},
-/obj/item/tank/anesthetic,
-/obj/item/tank/anesthetic,
-/obj/item/tank/anesthetic,
+/obj/item/weapon/tank/anesthetic,
+/obj/item/weapon/tank/anesthetic,
+/obj/item/weapon/tank/anesthetic,
 /obj/item/clothing/mask/breath/medical,
 /obj/item/clothing/mask/breath/medical,
 /obj/item/clothing/mask/breath/medical,
-/obj/item/storage/box/gloves,
-/obj/item/defib_kit/jumper_kit,
+/obj/item/weapon/storage/box/gloves,
+/obj/item/device/defib_kit/jumper_kit,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
@@ -4184,8 +4092,8 @@
 	dir = 8
 	},
 /obj/machinery/computer/transhuman/resleeving,
-/obj/item/book/manual/resleeving,
-/obj/item/storage/box/backup_kit,
+/obj/item/weapon/book/manual/resleeving,
+/obj/item/weapon/storage/box/backup_kit,
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "hM" = (
@@ -4219,12 +4127,12 @@
 /area/centcom/control)
 "hR" = (
 /obj/structure/table/reinforced,
-/obj/item/pda/captain,
+/obj/item/device/pda/captain,
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "hS" = (
 /obj/structure/table/reinforced,
-/obj/item/card/id/gold/captain/spare,
+/obj/item/weapon/card/id/gold/captain/spare,
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "hT" = (
@@ -4307,7 +4215,7 @@
 "ie" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/projectile/automatic/l6_saw,
+/obj/item/weapon/gun/projectile/automatic/l6_saw,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4384,15 +4292,15 @@
 "ik" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/storage/box/shotgunammo/large,
-/obj/item/storage/box/shotgunammo/large,
-/obj/item/storage/box/shotgunammo/large,
-/obj/item/storage/box/shotgunammo/large,
-/obj/item/storage/box/shotgunammo/large,
-/obj/item/storage/box/shotgunammo/large,
-/obj/item/storage/box/shotgunammo/large,
-/obj/item/storage/box/shotgunammo/large,
-/obj/item/storage/box/shotgunammo/large,
+/obj/item/weapon/storage/box/shotgunammo/large,
+/obj/item/weapon/storage/box/shotgunammo/large,
+/obj/item/weapon/storage/box/shotgunammo/large,
+/obj/item/weapon/storage/box/shotgunammo/large,
+/obj/item/weapon/storage/box/shotgunammo/large,
+/obj/item/weapon/storage/box/shotgunammo/large,
+/obj/item/weapon/storage/box/shotgunammo/large,
+/obj/item/weapon/storage/box/shotgunammo/large,
+/obj/item/weapon/storage/box/shotgunammo/large,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4400,14 +4308,14 @@
 /area/centcom/security)
 "il" = (
 /obj/structure/table/rack,
-/obj/item/storage/box/beanbags/large,
-/obj/item/storage/box/beanbags/large,
-/obj/item/storage/box/beanbags/large,
-/obj/item/storage/box/beanbags/large,
-/obj/item/storage/box/beanbags/large,
-/obj/item/storage/box/beanbags/large,
-/obj/item/storage/box/beanbags/large,
-/obj/item/storage/box/beanbags/large,
+/obj/item/weapon/storage/box/beanbags/large,
+/obj/item/weapon/storage/box/beanbags/large,
+/obj/item/weapon/storage/box/beanbags/large,
+/obj/item/weapon/storage/box/beanbags/large,
+/obj/item/weapon/storage/box/beanbags/large,
+/obj/item/weapon/storage/box/beanbags/large,
+/obj/item/weapon/storage/box/beanbags/large,
+/obj/item/weapon/storage/box/beanbags/large,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -4416,15 +4324,15 @@
 /area/centcom/security)
 "im" = (
 /obj/structure/table/rack,
-/obj/item/storage/box/empshells/large,
-/obj/item/storage/box/empshells/large,
-/obj/item/storage/box/empshells/large,
-/obj/item/storage/box/empshells/large,
-/obj/item/storage/box/empshells/large,
-/obj/item/storage/box/empshells/large,
-/obj/item/storage/box/empshells/large,
-/obj/item/storage/box/empshells/large,
-/obj/item/storage/box/empshells/large,
+/obj/item/weapon/storage/box/empshells/large,
+/obj/item/weapon/storage/box/empshells/large,
+/obj/item/weapon/storage/box/empshells/large,
+/obj/item/weapon/storage/box/empshells/large,
+/obj/item/weapon/storage/box/empshells/large,
+/obj/item/weapon/storage/box/empshells/large,
+/obj/item/weapon/storage/box/empshells/large,
+/obj/item/weapon/storage/box/empshells/large,
+/obj/item/weapon/storage/box/empshells/large,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/camera/network/crescent,
 /turf/unsimulated/floor{
@@ -4434,14 +4342,14 @@
 /area/centcom/security)
 "in" = (
 /obj/structure/table/rack,
-/obj/item/storage/box/flashshells/large,
-/obj/item/storage/box/flashshells/large,
-/obj/item/storage/box/flashshells/large,
-/obj/item/storage/box/flashshells/large,
-/obj/item/storage/box/flashshells/large,
-/obj/item/storage/box/flashshells/large,
-/obj/item/storage/box/flashshells/large,
-/obj/item/storage/box/flashshells/large,
+/obj/item/weapon/storage/box/flashshells/large,
+/obj/item/weapon/storage/box/flashshells/large,
+/obj/item/weapon/storage/box/flashshells/large,
+/obj/item/weapon/storage/box/flashshells/large,
+/obj/item/weapon/storage/box/flashshells/large,
+/obj/item/weapon/storage/box/flashshells/large,
+/obj/item/weapon/storage/box/flashshells/large,
+/obj/item/weapon/storage/box/flashshells/large,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -4450,14 +4358,14 @@
 /area/centcom/security)
 "io" = (
 /obj/structure/table/rack,
-/obj/item/storage/box/stunshells/large,
-/obj/item/storage/box/stunshells/large,
-/obj/item/storage/box/stunshells/large,
-/obj/item/storage/box/stunshells/large,
-/obj/item/storage/box/stunshells/large,
-/obj/item/storage/box/stunshells/large,
-/obj/item/storage/box/stunshells/large,
-/obj/item/storage/box/stunshells/large,
+/obj/item/weapon/storage/box/stunshells/large,
+/obj/item/weapon/storage/box/stunshells/large,
+/obj/item/weapon/storage/box/stunshells/large,
+/obj/item/weapon/storage/box/stunshells/large,
+/obj/item/weapon/storage/box/stunshells/large,
+/obj/item/weapon/storage/box/stunshells/large,
+/obj/item/weapon/storage/box/stunshells/large,
+/obj/item/weapon/storage/box/stunshells/large,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -4466,17 +4374,17 @@
 /area/centcom/security)
 "ip" = (
 /obj/structure/table/rack,
-/obj/item/shield/energy,
-/obj/item/shield/energy,
-/obj/item/shield/energy,
-/obj/item/shield/energy,
-/obj/item/shield/energy,
+/obj/item/weapon/shield/energy,
+/obj/item/weapon/shield/energy,
+/obj/item/weapon/shield/energy,
+/obj/item/weapon/shield/energy,
+/obj/item/weapon/shield/energy,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/melee/energy/sword,
-/obj/item/melee/energy/sword,
-/obj/item/melee/energy/sword,
-/obj/item/melee/energy/sword,
-/obj/item/melee/energy/sword,
+/obj/item/weapon/melee/energy/sword,
+/obj/item/weapon/melee/energy/sword,
+/obj/item/weapon/melee/energy/sword,
+/obj/item/weapon/melee/energy/sword,
+/obj/item/weapon/melee/energy/sword,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4484,11 +4392,11 @@
 /area/centcom/security)
 "iq" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/ionrifle,
-/obj/item/gun/energy/ionrifle,
-/obj/item/gun/energy/ionrifle,
-/obj/item/gun/energy/ionrifle,
-/obj/item/gun/energy/ionrifle,
+/obj/item/weapon/gun/energy/ionrifle,
+/obj/item/weapon/gun/energy/ionrifle,
+/obj/item/weapon/gun/energy/ionrifle,
+/obj/item/weapon/gun/energy/ionrifle,
+/obj/item/weapon/gun/energy/ionrifle,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/camera/network/crescent,
 /turf/unsimulated/floor{
@@ -4498,11 +4406,11 @@
 /area/centcom/security)
 "ir" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/laser,
-/obj/item/gun/energy/laser,
-/obj/item/gun/energy/laser,
-/obj/item/gun/energy/laser,
-/obj/item/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -4512,8 +4420,8 @@
 "is" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/gun/burst,
-/obj/item/gun/energy/gun/burst,
+/obj/item/weapon/gun/energy/gun/burst,
+/obj/item/weapon/gun/energy/gun/burst,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4522,8 +4430,8 @@
 "it" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/lasercannon,
-/obj/item/gun/energy/lasercannon,
+/obj/item/weapon/gun/energy/lasercannon,
+/obj/item/weapon/gun/energy/lasercannon,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4532,8 +4440,8 @@
 "iu" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/sniperrifle,
-/obj/item/gun/energy/sniperrifle,
+/obj/item/weapon/gun/energy/sniperrifle,
+/obj/item/weapon/gun/energy/sniperrifle,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4542,7 +4450,7 @@
 "iv" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/xray,
+/obj/item/weapon/gun/energy/xray,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4551,8 +4459,8 @@
 "iw" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/ionrifle/pistol,
-/obj/item/gun/energy/ionrifle/pistol,
+/obj/item/weapon/gun/energy/ionrifle/pistol,
+/obj/item/weapon/gun/energy/ionrifle/pistol,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4615,10 +4523,10 @@
 "iD" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/storage/backpack/dufflebag/syndie/ammo,
-/obj/item/storage/backpack/dufflebag/syndie/ammo,
-/obj/item/storage/backpack/dufflebag/syndie/ammo,
-/obj/item/storage/backpack/dufflebag/syndie/ammo,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4728,7 +4636,7 @@
 /obj/item/clothing/shoes/brown,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/head/helmet/swat,
-/obj/item/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4740,7 +4648,7 @@
 /obj/item/clothing/shoes/brown,
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/head/helmet/swat,
-/obj/item/gun/energy/laser,
+/obj/item/weapon/gun/energy/laser,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4777,10 +4685,10 @@
 "iY" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/storage/box/sniperammo,
-/obj/item/storage/box/sniperammo,
-/obj/item/storage/box/sniperammo,
-/obj/item/storage/box/sniperammo,
+/obj/item/weapon/storage/box/sniperammo,
+/obj/item/weapon/storage/box/sniperammo,
+/obj/item/weapon/storage/box/sniperammo,
+/obj/item/weapon/storage/box/sniperammo,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4789,7 +4697,7 @@
 "iZ" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/projectile/heavysniper,
+/obj/item/weapon/gun/projectile/heavysniper,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4854,15 +4762,15 @@
 "jd" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/storage/box/shotgunshells/large,
-/obj/item/storage/box/shotgunshells/large,
-/obj/item/storage/box/shotgunshells/large,
-/obj/item/storage/box/shotgunshells/large,
-/obj/item/storage/box/shotgunshells/large,
-/obj/item/storage/box/shotgunshells/large,
-/obj/item/storage/box/shotgunshells/large,
-/obj/item/storage/box/shotgunshells/large,
-/obj/item/storage/box/shotgunshells/large,
+/obj/item/weapon/storage/box/shotgunshells/large,
+/obj/item/weapon/storage/box/shotgunshells/large,
+/obj/item/weapon/storage/box/shotgunshells/large,
+/obj/item/weapon/storage/box/shotgunshells/large,
+/obj/item/weapon/storage/box/shotgunshells/large,
+/obj/item/weapon/storage/box/shotgunshells/large,
+/obj/item/weapon/storage/box/shotgunshells/large,
+/obj/item/weapon/storage/box/shotgunshells/large,
+/obj/item/weapon/storage/box/shotgunshells/large,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4871,8 +4779,8 @@
 "je" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/netgun,
-/obj/item/gun/energy/netgun,
+/obj/item/weapon/gun/energy/netgun,
+/obj/item/weapon/gun/energy/netgun,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4880,7 +4788,7 @@
 /area/centcom/security)
 "jf" = (
 /obj/structure/table/rack,
-/obj/item/storage/box/frags,
+/obj/item/weapon/storage/box/frags,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -4905,13 +4813,13 @@
 "jh" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/shield/riot,
-/obj/item/shield/riot,
-/obj/item/shield/riot,
-/obj/item/shield/riot,
-/obj/item/shield/riot,
-/obj/item/shield/riot,
-/obj/item/shield/riot,
+/obj/item/weapon/shield/riot,
+/obj/item/weapon/shield/riot,
+/obj/item/weapon/shield/riot,
+/obj/item/weapon/shield/riot,
+/obj/item/weapon/shield/riot,
+/obj/item/weapon/shield/riot,
+/obj/item/weapon/shield/riot,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -4920,18 +4828,6 @@
 "ji" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/cell/device/weapon{
-	pixel_x = -2;
-	pixel_y = -2
-	},
-/obj/item/cell/device/weapon{
-	pixel_x = -2;
-	pixel_y = -2
-	},
-/obj/item/cell/device/weapon{
-	pixel_x = -2;
-	pixel_y = -2
-	},
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -5045,8 +4941,8 @@
 "jB" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/projectile/automatic/z8,
-/obj/item/gun/projectile/automatic/z8,
+/obj/item/weapon/gun/projectile/automatic/z8,
+/obj/item/weapon/gun/projectile/automatic/z8,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -5067,7 +4963,7 @@
 "jD" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/table/rack,
-/obj/item/gun/energy/gun/nuclear,
+/obj/item/weapon/gun/energy/gun/nuclear,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -5081,7 +4977,7 @@
 /obj/item/clothing/shoes/boots/tactical,
 /obj/item/clothing/suit/armor/tactical,
 /obj/item/clothing/under/tactical,
-/obj/item/storage/belt/security/tactical,
+/obj/item/weapon/storage/belt/security/tactical,
 /obj/structure/closet{
 	desc = "It's a storage unit for standard-issue attire.";
 	icon_closed = "syndicate1";
@@ -5090,8 +4986,8 @@
 	name = "tactical equipment"
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/storage/backpack/dufflebag/syndie/ammo,
-/obj/item/storage/backpack/satchel/sec,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/ammo,
+/obj/item/weapon/storage/backpack/satchel/sec,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -5105,7 +5001,7 @@
 /obj/item/clothing/shoes/boots/tactical,
 /obj/item/clothing/suit/armor/tactical,
 /obj/item/clothing/under/tactical,
-/obj/item/storage/belt/security/tactical,
+/obj/item/weapon/storage/belt/security/tactical,
 /obj/structure/closet{
 	desc = "It's a storage unit for standard-issue attire.";
 	icon_closed = "syndicate1";
@@ -5114,8 +5010,8 @@
 	name = "tactical equipment"
 	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/storage/backpack/dufflebag/syndie/med,
-/obj/item/storage/backpack/satchel/sec,
+/obj/item/weapon/storage/backpack/dufflebag/syndie/med,
+/obj/item/weapon/storage/backpack/satchel/sec,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -5124,9 +5020,9 @@
 "jG" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/gun/energy/gun,
-/obj/item/gun/energy/gun,
-/obj/item/gun/energy/gun,
+/obj/item/weapon/gun/energy/gun,
+/obj/item/weapon/gun/energy/gun,
+/obj/item/weapon/gun/energy/gun,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -5192,7 +5088,7 @@
 	},
 /area/centcom/medical)
 "jP" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
 	},
@@ -5217,7 +5113,7 @@
 /area/centcom/medical)
 "jR" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/green,
+/obj/item/weapon/bedsheet/green,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
 	},
@@ -5230,7 +5126,7 @@
 /area/centcom/medical)
 "jS" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/green,
+/obj/item/weapon/bedsheet/green,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 5
 	},
@@ -5255,11 +5151,7 @@
 	},
 /area/centcom/medical)
 "jU" = (
-/obj/item/storage/box/gloves{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/storage/box/masks,
+/obj/item/weapon/storage/box/masks,
 /obj/structure/table/glass,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
@@ -5309,12 +5201,7 @@
 	},
 /area/centcom/medical)
 "jY" = (
-/obj/item/storage/box/syringes{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/storage/box/beakers,
-/obj/item/reagent_containers/dropper,
+/obj/item/weapon/storage/box/beakers,
 /obj/structure/table/glass,
 /obj/structure/reagent_dispensers/virusfood{
 	pixel_y = 28
@@ -5366,11 +5253,11 @@
 /area/centcom/security)
 "kc" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/automatic/p90,
-/obj/item/gun/projectile/automatic/p90,
-/obj/item/gun/projectile/automatic/p90,
-/obj/item/gun/projectile/automatic/p90,
-/obj/item/gun/projectile/automatic/p90,
+/obj/item/weapon/gun/projectile/automatic/p90,
+/obj/item/weapon/gun/projectile/automatic/p90,
+/obj/item/weapon/gun/projectile/automatic/p90,
+/obj/item/weapon/gun/projectile/automatic/p90,
+/obj/item/weapon/gun/projectile/automatic/p90,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -5379,11 +5266,11 @@
 /area/centcom/security)
 "kd" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/automatic/bullpup,
-/obj/item/gun/projectile/automatic/bullpup,
-/obj/item/gun/projectile/automatic/bullpup,
-/obj/item/gun/projectile/automatic/bullpup,
-/obj/item/gun/projectile/automatic/bullpup,
+/obj/item/weapon/gun/projectile/automatic/bullpup,
+/obj/item/weapon/gun/projectile/automatic/bullpup,
+/obj/item/weapon/gun/projectile/automatic/bullpup,
+/obj/item/weapon/gun/projectile/automatic/bullpup,
+/obj/item/weapon/gun/projectile/automatic/bullpup,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -5392,11 +5279,11 @@
 /area/centcom/security)
 "ke" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/automatic/wt550/lethal,
-/obj/item/gun/projectile/automatic/wt550/lethal,
-/obj/item/gun/projectile/automatic/wt550/lethal,
-/obj/item/gun/projectile/automatic/wt550/lethal,
-/obj/item/gun/projectile/automatic/wt550/lethal,
+/obj/item/weapon/gun/projectile/automatic/wt550/lethal,
+/obj/item/weapon/gun/projectile/automatic/wt550/lethal,
+/obj/item/weapon/gun/projectile/automatic/wt550/lethal,
+/obj/item/weapon/gun/projectile/automatic/wt550/lethal,
+/obj/item/weapon/gun/projectile/automatic/wt550/lethal,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/camera/network/crescent,
 /turf/unsimulated/floor{
@@ -5406,11 +5293,11 @@
 /area/centcom/security)
 "kf" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/shotgun/pump/combat,
-/obj/item/gun/projectile/shotgun/pump/combat,
-/obj/item/gun/projectile/shotgun/pump/combat,
-/obj/item/gun/projectile/shotgun/pump/combat,
-/obj/item/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -5479,8 +5366,8 @@
 	dir = 1
 	},
 /obj/structure/table/woodentable,
-/obj/item/radio/off,
-/obj/item/megaphone,
+/obj/item/device/radio/off,
+/obj/item/device/megaphone,
 /obj/machinery/camera/network/crescent,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -5495,7 +5382,7 @@
 	dir = 1
 	},
 /obj/structure/table/woodentable,
-/obj/item/storage/box/handcuffs,
+/obj/item/weapon/storage/box/handcuffs,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -5585,15 +5472,11 @@
 /area/centcom/security)
 "kt" = (
 /obj/structure/table/rack,
-/obj/item/storage/box/seccarts{
+/obj/item/weapon/storage/box/seccarts{
 	pixel_x = 3;
 	pixel_y = 2
 	},
-/obj/item/storage/box/handcuffs,
-/obj/item/storage/box/flashbangs{
-	pixel_x = -2;
-	pixel_y = -2
-	},
+/obj/item/weapon/storage/box/handcuffs,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/radio/intercom{
 	dir = 1;
@@ -5722,11 +5605,11 @@
 /area/centcom/security)
 "kH" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/shotgun/pump/USDF,
-/obj/item/gun/projectile/shotgun/pump/USDF,
-/obj/item/gun/projectile/shotgun/pump/USDF,
-/obj/item/gun/projectile/shotgun/pump/USDF,
-/obj/item/gun/projectile/shotgun/pump/USDF,
+/obj/item/weapon/gun/projectile/shotgun/pump/USDF,
+/obj/item/weapon/gun/projectile/shotgun/pump/USDF,
+/obj/item/weapon/gun/projectile/shotgun/pump/USDF,
+/obj/item/weapon/gun/projectile/shotgun/pump/USDF,
+/obj/item/weapon/gun/projectile/shotgun/pump/USDF,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -5735,11 +5618,11 @@
 /area/centcom/security)
 "kI" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/shotgun/pump,
-/obj/item/gun/projectile/shotgun/pump,
-/obj/item/gun/projectile/shotgun/pump,
-/obj/item/gun/projectile/shotgun/pump,
-/obj/item/gun/projectile/shotgun/pump,
+/obj/item/weapon/gun/projectile/shotgun/pump,
+/obj/item/weapon/gun/projectile/shotgun/pump,
+/obj/item/weapon/gun/projectile/shotgun/pump,
+/obj/item/weapon/gun/projectile/shotgun/pump,
+/obj/item/weapon/gun/projectile/shotgun/pump,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -5853,7 +5736,7 @@
 	dir = 1
 	},
 /obj/structure/table/glass,
-/obj/item/storage/box/monkeycubes,
+/obj/item/weapon/storage/box/monkeycubes,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 5
 	},
@@ -6049,7 +5932,7 @@
 /turf/unsimulated/floor/steel,
 /area/centcom/evac)
 "lo" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
@@ -6144,9 +6027,9 @@
 /obj/structure/table/rack{
 	dir = 4
 	},
-/obj/item/suit_cooling_unit,
-/obj/item/suit_cooling_unit,
-/obj/item/suit_cooling_unit,
+/obj/item/device/suit_cooling_unit,
+/obj/item/device/suit_cooling_unit,
+/obj/item/device/suit_cooling_unit,
 /obj/item/clothing/shoes/magboots,
 /obj/item/clothing/shoes/magboots,
 /obj/item/clothing/shoes/magboots,
@@ -6164,11 +6047,11 @@
 /area/centcom/security)
 "lw" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/automatic/battlerifle,
-/obj/item/gun/projectile/automatic/battlerifle,
-/obj/item/gun/projectile/automatic/battlerifle,
-/obj/item/gun/projectile/automatic/battlerifle,
-/obj/item/gun/projectile/automatic/battlerifle,
+/obj/item/weapon/gun/projectile/automatic/battlerifle,
+/obj/item/weapon/gun/projectile/automatic/battlerifle,
+/obj/item/weapon/gun/projectile/automatic/battlerifle,
+/obj/item/weapon/gun/projectile/automatic/battlerifle,
+/obj/item/weapon/gun/projectile/automatic/battlerifle,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -6178,44 +6061,8 @@
 "lx" = (
 /obj/structure/table/standard,
 /obj/machinery/recharger,
-/obj/item/cell/device/weapon{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/cell/device/weapon{
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/item/cell/device/weapon,
-/obj/item/cell/device/weapon{
-	pixel_x = -2;
-	pixel_y = -2
-	},
+/obj/item/weapon/cell/device/weapon,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/cell/device/weapon{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/cell/device/weapon{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/cell/device/weapon{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/cell/device/weapon{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/cell/device/weapon{
-	pixel_x = -2;
-	pixel_y = -2
-	},
-/obj/item/cell/device/weapon{
-	pixel_x = -2;
-	pixel_y = -2
-	},
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -6241,7 +6088,7 @@
 /area/centcom/command)
 "lz" = (
 /obj/structure/table/woodentable,
-/obj/item/flashlight/lamp/green{
+/obj/item/device/flashlight/lamp/green{
 	pixel_x = 10;
 	pixel_y = 12
 	},
@@ -6255,7 +6102,7 @@
 /area/centcom/command)
 "lA" = (
 /obj/structure/table/woodentable,
-/obj/item/stamp/hos,
+/obj/item/weapon/stamp/hos,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -6351,7 +6198,7 @@
 /area/centcom/medical)
 "lK" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/green,
+/obj/item/weapon/bedsheet/green,
 /obj/effect/floor_decal/borderfloorwhite,
 /obj/effect/floor_decal/corner/green/border,
 /turf/unsimulated/floor/steel{
@@ -6360,7 +6207,7 @@
 /area/centcom/medical)
 "lL" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/green,
+/obj/item/weapon/bedsheet/green,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 6
 	},
@@ -6469,11 +6316,11 @@
 /area/centcom/control)
 "mb" = (
 /obj/structure/table/reinforced,
-/obj/item/paper_bin{
+/obj/item/weapon/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
 	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "mc" = (
@@ -6498,11 +6345,11 @@
 /area/centcom/security)
 "md" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/automatic/pdw,
-/obj/item/gun/projectile/automatic/pdw,
-/obj/item/gun/projectile/automatic/pdw,
-/obj/item/gun/projectile/automatic/pdw,
-/obj/item/gun/projectile/automatic/pdw,
+/obj/item/weapon/gun/projectile/automatic/pdw,
+/obj/item/weapon/gun/projectile/automatic/pdw,
+/obj/item/weapon/gun/projectile/automatic/pdw,
+/obj/item/weapon/gun/projectile/automatic/pdw,
+/obj/item/weapon/gun/projectile/automatic/pdw,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -6512,8 +6359,8 @@
 "me" = (
 /obj/structure/table/standard,
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/storage/box/teargas,
-/obj/item/storage/box/teargas,
+/obj/item/weapon/storage/box/teargas,
+/obj/item/weapon/storage/box/teargas,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -6578,12 +6425,8 @@
 	dir = 4
 	},
 /obj/structure/table/woodentable,
-/obj/item/paper_bin{
-	pixel_x = -3;
-	pixel_y = 7
-	},
-/obj/item/folder/red_hos,
-/obj/item/pen/multi,
+/obj/item/weapon/folder/red_hos,
+/obj/item/weapon/pen/multi,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -6630,8 +6473,8 @@
 /obj/item/clothing/shoes/leg_guard/riot,
 /obj/item/clothing/suit/armor/riot/alt,
 /obj/item/clothing/head/helmet/riot,
-/obj/item/shield/riot,
-/obj/item/melee/baton/loaded,
+/obj/item/weapon/shield/riot,
+/obj/item/weapon/melee/baton/loaded,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -6640,20 +6483,11 @@
 /area/centcom/security)
 "mq" = (
 /obj/structure/table/standard,
-/obj/item/storage/box/empslite{
+/obj/item/weapon/storage/box/empslite{
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/storage/box/flashbangs{
-	pixel_x = -2;
-	pixel_y = -2
-	},
 /obj/effect/floor_decal/industrial/outline/grey,
-/obj/item/storage/box/empslite,
-/obj/item/storage/box/flashbangs{
-	pixel_x = -2;
-	pixel_y = -2
-	},
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -6712,11 +6546,11 @@
 	dir = 6
 	},
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/drinks/flask/barflask{
+/obj/item/weapon/reagent_containers/food/drinks/flask/barflask{
 	pixel_x = -4;
 	pixel_y = 8
 	},
-/obj/item/tape_recorder,
+/obj/item/device/taperecorder,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -6758,16 +6592,11 @@
 /area/centcom/medical)
 "mz" = (
 /obj/structure/table/standard,
-/obj/item/reagent_containers/glass/beaker/cryoxadone{
+/obj/item/weapon/reagent_containers/glass/beaker/cryoxadone{
 	pixel_x = 5;
 	pixel_y = 5
 	},
-/obj/item/reagent_containers/glass/beaker/cryoxadone,
-/obj/item/reagent_containers/glass/beaker/cryoxadone{
-	pixel_x = 7;
-	pixel_y = 1
-	},
-/obj/item/tool/wrench,
+/obj/item/weapon/tool/wrench,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 9
 	},
@@ -6823,8 +6652,6 @@
 /area/centcom/medical)
 "mD" = (
 /obj/structure/table/steel,
-/obj/item/storage/box/bodybags,
-/obj/item/storage/box/bodybags,
 /obj/effect/floor_decal/steeldecal/steel_decals9{
 	dir = 1
 	},
@@ -6889,8 +6716,8 @@
 /obj/item/clothing/shoes/leg_guard/riot,
 /obj/item/clothing/suit/armor/riot/alt,
 /obj/item/clothing/head/helmet/riot,
-/obj/item/shield/riot,
-/obj/item/melee/baton/loaded,
+/obj/item/weapon/shield/riot,
+/obj/item/weapon/melee/baton/loaded,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -6899,15 +6726,11 @@
 /area/centcom/security)
 "mJ" = (
 /obj/structure/table/standard,
-/obj/item/storage/box/handcuffs{
-	pixel_x = 8;
-	pixel_y = 6
-	},
-/obj/item/storage/box/chemimp{
+/obj/item/weapon/storage/box/chemimp{
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/obj/item/storage/box/trackimp,
+/obj/item/weapon/storage/box/trackimp,
 /obj/effect/floor_decal/industrial/outline/grey,
 /turf/unsimulated/floor{
 	dir = 5;
@@ -7047,7 +6870,7 @@
 	},
 /area/centcom/medical)
 "nb" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -7259,9 +7082,8 @@
 /area/centcom/medical)
 "nv" = (
 /obj/structure/table/steel,
-/obj/item/autopsy_scanner,
-/obj/item/surgical/scalpel,
-/obj/item/surgical/cautery,
+/obj/item/weapon/autopsy_scanner,
+/obj/item/weapon/surgical/cautery,
 /obj/effect/floor_decal/steeldecal/steel_decals9,
 /obj/effect/floor_decal/steeldecal/steel_decals9{
 	dir = 8
@@ -7284,19 +7106,7 @@
 /area/centcom/medical)
 "nx" = (
 /obj/structure/table/steel,
-/obj/item/paper_bin{
-	pixel_y = -6
-	},
-/obj/item/camera{
-	name = "Autopsy Camera";
-	pixel_x = -2;
-	pixel_y = 7
-	},
-/obj/item/pen/red,
-/obj/item/pen/blue{
-	pixel_x = 3;
-	pixel_y = -5
-	},
+/obj/item/weapon/pen/red,
 /obj/effect/floor_decal/steeldecal/steel_decals9,
 /obj/effect/floor_decal/steeldecal/steel_decals9{
 	dir = 8
@@ -7453,8 +7263,8 @@
 /area/centcom/evac)
 "nP" = (
 /obj/structure/table/standard,
-/obj/item/surgical/hemostat,
-/obj/item/surgical/cautery,
+/obj/item/weapon/surgical/hemostat,
+/obj/item/weapon/surgical/cautery,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 9
 	},
@@ -7468,7 +7278,7 @@
 "nQ" = (
 /obj/structure/table/standard,
 /obj/item/stack/medical/advanced/bruise_pack,
-/obj/item/surgical/retractor,
+/obj/item/weapon/surgical/retractor,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
 	},
@@ -7481,10 +7291,6 @@
 /area/centcom/medical)
 "nR" = (
 /obj/structure/table/standard,
-/obj/item/surgical/circular_saw{
-	pixel_y = 8
-	},
-/obj/item/surgical/scalpel,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
 	},
@@ -7498,15 +7304,15 @@
 /area/centcom/medical)
 "nS" = (
 /obj/structure/table/standard,
-/obj/item/surgical/surgicaldrill,
-/obj/item/autopsy_scanner,
-/obj/item/reagent_containers/spray/cleaner{
+/obj/item/weapon/surgical/surgicaldrill,
+/obj/item/weapon/autopsy_scanner,
+/obj/item/weapon/reagent_containers/spray/cleaner{
 	desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back.";
 	name = "Surgery Cleaner";
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/surgical/FixOVein,
+/obj/item/weapon/surgical/FixOVein,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
 	},
@@ -7552,24 +7358,16 @@
 	dir = 1
 	},
 /obj/machinery/camera/network/crescent,
-/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
 /area/centcom/medical)
 "nW" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/glass/bottle/biomass{
+/obj/item/weapon/reagent_containers/glass/bottle/biomass{
 	pixel_x = -4;
 	pixel_y = 8
-	},
-/obj/item/reagent_containers/glass/bottle/biomass{
-	pixel_x = -3;
-	pixel_y = -2
-	},
-/obj/item/reagent_containers/glass/bottle/biomass{
-	pixel_x = 3;
-	pixel_y = 5
 	},
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 1
@@ -7723,11 +7521,7 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
-/obj/item/paper_bin{
-	pixel_x = -1;
-	pixel_y = 5
-	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /turf/unsimulated/floor/steel,
 /area/centcom/command)
 "oi" = (
@@ -7773,11 +7567,7 @@
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
-/obj/item/paper_bin{
-	pixel_x = -1;
-	pixel_y = 5
-	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /obj/machinery/camera/network/crescent,
 /turf/unsimulated/floor/steel,
 /area/centcom/command)
@@ -7926,7 +7716,7 @@
 "oD" = (
 /obj/structure/table/standard,
 /obj/machinery/chemical_dispenser/bar_soft/full,
-/obj/item/storage/box/glasses/square,
+/obj/item/weapon/storage/box/glasses/square,
 /obj/effect/floor_decal/borderfloor{
 	dir = 9
 	},
@@ -7938,7 +7728,7 @@
 "oE" = (
 /obj/structure/table/standard,
 /obj/machinery/recharger,
-/obj/item/book/codex,
+/obj/item/weapon/book/codex,
 /obj/machinery/recharger/wallcharger{
 	pixel_x = 4;
 	pixel_y = 26
@@ -7954,13 +7744,12 @@
 "oF" = (
 /obj/structure/table/standard,
 /obj/machinery/recharger,
-/obj/item/reagent_containers/spray/cleaner,
 /obj/item/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 27
 	},
-/obj/item/storage/box/donut,
+/obj/item/weapon/storage/box/donut,
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
@@ -8010,12 +7799,12 @@
 /area/centcom/security)
 "oK" = (
 /obj/structure/table/standard,
-/obj/item/tape_recorder,
-/obj/item/megaphone,
-/obj/item/packageWrap,
-/obj/item/storage/box,
-/obj/item/hand_labeler,
-/obj/item/universal_translator,
+/obj/item/device/taperecorder,
+/obj/item/device/megaphone,
+/obj/item/weapon/packageWrap,
+/obj/item/weapon/storage/box,
+/obj/item/weapon/hand_labeler,
+/obj/item/device/universal_translator,
 /obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
@@ -8052,18 +7841,18 @@
 /obj/item/radio,
 /obj/item/radio,
 /obj/item/radio,
-/obj/item/flashlight,
-/obj/item/flashlight,
-/obj/item/flashlight,
-/obj/item/flashlight,
-/obj/item/flashlight,
-/obj/item/flashlight,
-/obj/item/tool/crowbar,
-/obj/item/tool/crowbar,
-/obj/item/tool/crowbar,
-/obj/item/tool/crowbar,
-/obj/item/tool/crowbar,
-/obj/item/tool/crowbar,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
+/obj/item/device/flashlight,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/crowbar,
+/obj/item/weapon/tool/crowbar,
 /obj/machinery/recharger/wallcharger{
 	pixel_x = 4;
 	pixel_y = 26
@@ -8085,8 +7874,8 @@
 /area/centcom/evac)
 "oO" = (
 /obj/structure/table/standard,
-/obj/item/surgical/bonesetter,
-/obj/item/surgical/bonegel,
+/obj/item/weapon/surgical/bonesetter,
+/obj/item/weapon/surgical/bonegel,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 8
 	},
@@ -8269,13 +8058,9 @@
 	dir = 8
 	},
 /obj/structure/table/standard,
-/obj/item/reagent_containers/blood/OPlus{
+/obj/item/weapon/reagent_containers/blood/OPlus{
 	pixel_x = 4;
 	pixel_y = 2
-	},
-/obj/item/reagent_containers/blood/OMinus{
-	pixel_x = -5;
-	pixel_y = -1
 	},
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
@@ -8352,7 +8137,7 @@
 /area/centcom/medical)
 "pp" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
@@ -8438,19 +8223,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/folder/red_hos,
-/turf/unsimulated/floor{
-	icon_state = "carpet"
-	},
-/area/centcom/command)
-"pA" = (
-/obj/structure/table/woodentable{
-	dir = 5
-	},
-/obj/item/paper_bin{
-	pixel_x = -3;
-	pixel_y = 4
-	},
+/obj/item/weapon/folder/red_hos,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -8459,7 +8232,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -8489,7 +8262,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/folder/blue_captain,
+/obj/item/weapon/folder/blue_captain,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -8498,7 +8271,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/folder/blue_hop,
+/obj/item/weapon/folder/blue_hop,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -8507,7 +8280,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/megaphone,
+/obj/item/device/megaphone,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -8674,11 +8447,7 @@
 	dir = 1;
 	pixel_y = -16
 	},
-/obj/item/paper_bin{
-	pixel_x = -1;
-	pixel_y = 5
-	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /turf/unsimulated/floor/steel,
 /area/centcom/command)
 "qb" = (
@@ -8700,19 +8469,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/folder/white_cmo,
-/turf/unsimulated/floor{
-	icon_state = "carpet"
-	},
-/area/centcom/command)
-"qe" = (
-/obj/structure/table/woodentable{
-	dir = 5
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = -2;
-	pixel_y = 2
-	},
+/obj/item/weapon/folder/white_cmo,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -8721,7 +8478,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/folder/white_rd,
+/obj/item/weapon/folder/white_rd,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -8730,20 +8487,9 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/storage/briefcase{
+/obj/item/weapon/storage/briefcase{
 	pixel_x = 3;
 	pixel_y = 5
-	},
-/turf/unsimulated/floor{
-	icon_state = "carpet"
-	},
-/area/centcom/command)
-"qh" = (
-/obj/structure/table/woodentable{
-	dir = 5
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = 3
 	},
 /turf/unsimulated/floor{
 	icon_state = "carpet"
@@ -8753,7 +8499,7 @@
 /obj/structure/table/woodentable{
 	dir = 5
 	},
-/obj/item/folder/yellow_ce,
+/obj/item/weapon/folder/yellow_ce,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -8843,7 +8589,7 @@
 /area/centcom/security)
 "qp" = (
 /obj/structure/table/reinforced,
-/obj/item/folder/red_hos,
+/obj/item/weapon/folder/red_hos,
 /turf/unsimulated/floor/steel,
 /area/centcom/security)
 "qq" = (
@@ -8916,9 +8662,9 @@
 /area/centcom/medical)
 "qx" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 8
 	},
@@ -8931,19 +8677,19 @@
 /obj/effect/floor_decal/corner/paleblue/bordercorner2{
 	dir = 8
 	},
-/obj/item/reagent_containers/blood/OPlus{
+/obj/item/weapon/reagent_containers/blood/OPlus{
 	pixel_x = 4;
 	pixel_y = 2
 	},
-/obj/item/reagent_containers/blood/OPlus{
+/obj/item/weapon/reagent_containers/blood/OPlus{
 	pixel_x = 4;
 	pixel_y = 2
 	},
-/obj/item/reagent_containers/blood/OPlus{
+/obj/item/weapon/reagent_containers/blood/OPlus{
 	pixel_x = 4;
 	pixel_y = 2
 	},
-/obj/item/healthanalyzer/advanced,
+/obj/item/device/healthanalyzer/advanced,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
@@ -8956,12 +8702,7 @@
 	dir = 4
 	},
 /obj/structure/table/glass,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/reagent_containers/spray/cleaner{
-	desc = "Someone has crossed out the 'Space' from Space Cleaner and written in Chemistry. Scrawled on the back is, 'Okay, whoever filled this with polytrinic acid, it was only funny the first time. It was hard enough replacing the CMO's first cat!'";
-	name = "Chemistry Cleaner"
-	},
-/obj/item/reagent_containers/spray/cleaner{
+/obj/item/weapon/reagent_containers/spray/cleaner{
 	desc = "Someone has crossed out the Space from Space Cleaner and written in Surgery. 'Do not remove under punishment of death!!!' is scrawled on the back.";
 	name = "Surgery Cleaner";
 	pixel_x = 2;
@@ -9081,7 +8822,7 @@
 /area/centcom/security)
 "qJ" = (
 /obj/structure/table/reinforced,
-/obj/item/folder/red,
+/obj/item/weapon/folder/red,
 /turf/unsimulated/floor/steel,
 /area/centcom/security)
 "qK" = (
@@ -9092,8 +8833,6 @@
 /area/centcom/security)
 "qL" = (
 /obj/structure/table/glass,
-/obj/item/storage/firstaid/regular,
-/obj/item/storage/firstaid/regular,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 10
 	},
@@ -9106,8 +8845,6 @@
 /area/centcom/medical)
 "qM" = (
 /obj/structure/table/glass,
-/obj/item/storage/firstaid/adv,
-/obj/item/storage/firstaid/adv,
 /obj/effect/floor_decal/borderfloorwhite,
 /obj/effect/floor_decal/corner/paleblue/border,
 /turf/unsimulated/floor/steel{
@@ -9157,7 +8894,6 @@
 /obj/effect/floor_decal/borderfloorwhite/corner2,
 /obj/effect/floor_decal/corner/paleblue/bordercorner2,
 /obj/structure/table/glass,
-/obj/item/storage/firstaid/o2,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
@@ -9166,7 +8902,6 @@
 /obj/effect/floor_decal/borderfloorwhite,
 /obj/effect/floor_decal/corner/paleblue/border,
 /obj/structure/table/glass,
-/obj/item/storage/firstaid/fire,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
@@ -9179,7 +8914,6 @@
 	dir = 6
 	},
 /obj/structure/table/glass,
-/obj/item/storage/box/syringes,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
@@ -9228,11 +8962,7 @@
 "qZ" = (
 /obj/structure/table/standard,
 /obj/effect/floor_decal/borderfloor,
-/obj/item/paper_bin{
-	pixel_x = -1;
-	pixel_y = 5
-	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /turf/unsimulated/floor/steel,
 /area/centcom/command)
 "ra" = (
@@ -9247,34 +8977,13 @@
 /area/centcom/command)
 "rb" = (
 /obj/structure/table/marble,
-/obj/item/reagent_containers/food/drinks/cup{
+/obj/item/weapon/reagent_containers/food/drinks/cup{
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/food/drinks/cup{
+/obj/item/weapon/reagent_containers/food/drinks/cup{
 	pixel_x = -4;
 	pixel_y = 8
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = 3
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = -4;
-	pixel_y = -4
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = 8
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = -4
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = 8;
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = -4;
-	pixel_y = 12
 	},
 /turf/unsimulated/floor{
 	icon_state = "lino"
@@ -9289,27 +8998,9 @@
 /area/centcom/command)
 "rd" = (
 /obj/structure/table/marble,
-/obj/item/reagent_containers/food/drinks/glass2/square{
+/obj/item/weapon/reagent_containers/food/drinks/glass2/square{
 	pixel_x = 8;
 	pixel_y = 8
-	},
-/obj/item/reagent_containers/food/drinks/glass2/square{
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/food/drinks/glass2/square{
-	pixel_x = -8;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/food/drinks/glass2/square{
-	pixel_x = 8;
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/food/drinks/glass2/square{
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/food/drinks/glass2/square{
-	pixel_x = -8;
-	pixel_y = 4
 	},
 /turf/unsimulated/floor{
 	icon_state = "lino"
@@ -9342,7 +9033,7 @@
 /area/centcom/holding)
 "rh" = (
 /obj/structure/table/standard,
-/obj/item/healthanalyzer,
+/obj/item/device/healthanalyzer,
 /obj/item/stack/medical/bruise_pack{
 	pixel_x = -4;
 	pixel_y = 3
@@ -9360,14 +9051,7 @@
 /area/centcom/holding)
 "ri" = (
 /obj/structure/table/standard,
-/obj/item/reagent_containers/syringe/inaprovaline,
-/obj/item/reagent_containers/syringe/inaprovaline{
-	pixel_x = -2;
-	pixel_y = 5
-	},
-/obj/item/reagent_containers/syringe/inaprovaline{
-	pixel_y = 10
-	},
+/obj/item/weapon/reagent_containers/syringe/inaprovaline,
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/blue/border,
 /turf/unsimulated/floor/steel,
@@ -9376,10 +9060,6 @@
 /obj/structure/table/standard,
 /obj/item/bodybag/cryobag{
 	pixel_x = 6
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = 5;
-	pixel_y = 5
 	},
 /obj/random/firstaid,
 /obj/effect/floor_decal/borderfloor,
@@ -9397,12 +9077,12 @@
 /area/centcom/holding)
 "rl" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/security_space_law,
+/obj/item/weapon/book/manual/security_space_law,
 /turf/unsimulated/floor/steel,
 /area/centcom/security)
 "rm" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/handcuffs,
+/obj/item/weapon/storage/box/handcuffs,
 /turf/unsimulated/floor/steel,
 /area/centcom/security)
 "rn" = (
@@ -9683,7 +9363,7 @@
 	},
 /area/centcom/bathroom)
 "sb" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /turf/unsimulated/floor{
 	icon_state = "steel"
 	},
@@ -9756,16 +9436,6 @@
 	icon_state = "white"
 	},
 /area/centcom/medical)
-"sm" = (
-/obj/structure/table/glass,
-/obj/item/paper_bin{
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/turf/unsimulated/floor/steel{
-	icon_state = "white"
-	},
-/area/centcom/medical)
 "sn" = (
 /obj/structure/table/glass,
 /obj/effect/floor_decal/borderfloorwhite{
@@ -9774,7 +9444,7 @@
 /obj/effect/floor_decal/corner/paleblue/border{
 	dir = 4
 	},
-/obj/item/healthanalyzer/advanced,
+/obj/item/device/healthanalyzer/advanced,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
@@ -9798,11 +9468,7 @@
 	dir = 8;
 	pixel_x = 16
 	},
-/obj/item/paper_bin{
-	pixel_x = -1;
-	pixel_y = 5
-	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /turf/unsimulated/floor/steel,
 /area/centcom/command)
 "sr" = (
@@ -9910,13 +9576,9 @@
 /obj/effect/floor_decal/corner/paleblue/border{
 	dir = 8
 	},
-/obj/item/backup_implanter{
+/obj/item/weapon/backup_implanter{
 	pixel_y = -8
 	},
-/obj/item/backup_implanter{
-	pixel_y = 8
-	},
-/obj/item/backup_implanter,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
@@ -10079,7 +9741,7 @@
 /turf/simulated/shuttle/floor/black,
 /area/shuttle/escape)
 "sX" = (
-/obj/item/bedsheet/medical,
+/obj/item/weapon/bedsheet/medical,
 /obj/structure/bed/padded,
 /turf/simulated/shuttle/floor,
 /area/shuttle/escape)
@@ -10092,8 +9754,8 @@
 /area/shuttle/escape)
 "sZ" = (
 /obj/structure/table/glass,
-/obj/item/storage/box/cups,
-/obj/item/storage/box/cups,
+/obj/item/weapon/storage/box/cups,
+/obj/item/weapon/storage/box/cups,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 4
 	},
@@ -10235,7 +9897,7 @@
 /turf/unsimulated/floor/steel,
 /area/centcom/security)
 "ti" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
 	},
@@ -10248,11 +9910,11 @@
 /turf/unsimulated/floor/steel,
 /area/centcom/security)
 "tj" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /turf/unsimulated/floor/steel,
 /area/centcom/security)
 "tk" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = 30
 	},
@@ -10327,11 +9989,11 @@
 	req_access = list(63);
 	req_one_access = list(1)
 	},
-/obj/item/paper_bin{
+/obj/item/weapon/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
 	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
 	},
@@ -10346,7 +10008,7 @@
 /area/centcom/security)
 "tu" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/security_space_law,
+/obj/item/weapon/book/manual/security_space_law,
 /obj/effect/floor_decal/borderfloor{
 	dir = 8
 	},
@@ -10513,7 +10175,6 @@
 /area/centcom/bathroom)
 "tM" = (
 /obj/structure/table/steel,
-/obj/item/storage/firstaid/regular,
 /turf/unsimulated/floor{
 	icon_state = "steel"
 	},
@@ -10555,7 +10216,7 @@
 /area/centcom/bathroom)
 "tR" = (
 /obj/structure/table/reinforced,
-/obj/item/camera,
+/obj/item/device/camera,
 /obj/effect/floor_decal/borderfloor{
 	dir = 10
 	},
@@ -10574,15 +10235,15 @@
 /area/centcom/security)
 "tT" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/security_space_law,
-/obj/item/gun/energy/taser,
+/obj/item/weapon/book/manual/security_space_law,
+/obj/item/weapon/gun/energy/taser,
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/blue/border,
 /turf/unsimulated/floor/steel,
 /area/centcom/security)
 "tU" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/ids,
+/obj/item/weapon/storage/box/ids,
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/blue/border,
 /turf/unsimulated/floor/steel,
@@ -10616,11 +10277,11 @@
 /area/centcom/security)
 "tX" = (
 /obj/structure/table/reinforced,
-/obj/item/paper_bin{
+/obj/item/weapon/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
 	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /obj/machinery/door/window/brigdoor{
 	dir = 2
 	},
@@ -11234,11 +10895,11 @@
 	req_access = list(63);
 	req_one_access = list(1)
 	},
-/obj/item/paper_bin{
+/obj/item/weapon/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
 	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /obj/machinery/button/remote/blast_door{
 	id = "FrontlockC";
 	name = "Colony Entrance Lockdown";
@@ -11430,8 +11091,8 @@
 /obj/effect/floor_decal/carpet{
 	dir = 9
 	},
-/obj/item/flame/lighter/zippo,
-/obj/item/storage/fancy/cigarettes,
+/obj/item/weapon/flame/lighter/zippo,
+/obj/item/weapon/storage/fancy/cigarettes,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -11441,8 +11102,8 @@
 /obj/effect/floor_decal/carpet{
 	dir = 1
 	},
-/obj/item/flame/lighter/zippo,
-/obj/item/storage/fancy/cigarettes,
+/obj/item/weapon/flame/lighter/zippo,
+/obj/item/weapon/storage/fancy/cigarettes,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -11458,8 +11119,8 @@
 /obj/effect/floor_decal/carpet{
 	dir = 5
 	},
-/obj/item/flame/lighter/zippo,
-/obj/item/storage/fancy/cigarettes,
+/obj/item/weapon/flame/lighter/zippo,
+/obj/item/weapon/storage/fancy/cigarettes,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -11467,8 +11128,8 @@
 "vS" = (
 /obj/structure/table/rack,
 /obj/item/clothing/suit/armor/riot,
-/obj/item/melee/baton/loaded,
-/obj/item/shield/riot,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/shield/riot,
 /obj/item/clothing/head/helmet/riot,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 9
@@ -11484,8 +11145,8 @@
 "vT" = (
 /obj/structure/table/rack,
 /obj/item/clothing/suit/armor/riot,
-/obj/item/melee/baton/loaded,
-/obj/item/shield/riot,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/shield/riot,
 /obj/item/clothing/head/helmet/riot,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 1
@@ -11501,8 +11162,8 @@
 "vU" = (
 /obj/structure/table/rack,
 /obj/item/clothing/suit/armor/riot,
-/obj/item/melee/baton/loaded,
-/obj/item/shield/riot,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/shield/riot,
 /obj/item/clothing/head/helmet/riot,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 5
@@ -11541,9 +11202,6 @@
 	pixel_y = 30
 	},
 /obj/structure/table/reinforced,
-/obj/item/gun/projectile/shotgun/pump/combat{
-	name = "Discipline"
-	},
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 1
 	},
@@ -11578,9 +11236,9 @@
 	pixel_y = 26
 	},
 /obj/structure/table/reinforced,
-/obj/item/stamp/ward,
-/obj/item/stamp/denied,
-/obj/item/binoculars,
+/obj/item/weapon/stamp/ward,
+/obj/item/weapon/stamp/denied,
+/obj/item/device/binoculars,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 1
 	},
@@ -12015,8 +11673,8 @@
 	dir = 5
 	},
 /obj/structure/table/reinforced,
-/obj/item/camera,
-/obj/item/storage/box/ids,
+/obj/item/device/camera,
+/obj/item/weapon/storage/box/ids,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -12262,8 +11920,8 @@
 	dir = 10
 	},
 /obj/structure/table/reinforced,
-/obj/item/book/manual/security_space_law,
-/obj/item/book/manual/security_space_law,
+/obj/item/weapon/book/manual/security_space_law,
+/obj/item/weapon/book/manual/security_space_law,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -12343,7 +12001,7 @@
 /area/centcom/restaurant)
 "xk" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/fries,
+/obj/item/weapon/reagent_containers/food/snacks/fries,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -12351,11 +12009,10 @@
 /area/centcom/restaurant)
 "xl" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/cheeseburger{
+/obj/item/weapon/reagent_containers/food/snacks/cheeseburger{
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/food/snacks/cheeseburger,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -12372,7 +12029,7 @@
 /area/centcom/restaurant)
 "xn" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/grilledcheese,
+/obj/item/weapon/reagent_containers/food/snacks/grilledcheese,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -12380,7 +12037,7 @@
 /area/centcom/restaurant)
 "xo" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/meatballsoup,
+/obj/item/weapon/reagent_containers/food/snacks/meatballsoup,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -12425,7 +12082,7 @@
 "xs" = (
 /obj/effect/floor_decal/industrial/outline,
 /obj/structure/closet/secure_closet/nanotrasen_security,
-/obj/item/storage/box/handcuffs,
+/obj/item/weapon/storage/box/handcuffs,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -12577,7 +12234,7 @@
 "xB" = (
 /obj/effect/floor_decal/industrial/outline/grey,
 /obj/structure/closet/secure_closet/nanotrasen_warden,
-/obj/item/storage/box/handcuffs,
+/obj/item/weapon/storage/box/handcuffs,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -12672,11 +12329,7 @@
 /area/centcom/main_hall)
 "xJ" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/hotdog,
-/obj/item/reagent_containers/food/snacks/hotdog{
-	pixel_x = -5;
-	pixel_y = -3
-	},
+/obj/item/weapon/reagent_containers/food/snacks/hotdog,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -12684,7 +12337,7 @@
 /area/centcom/restaurant)
 "xK" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/bigbiteburger,
+/obj/item/weapon/reagent_containers/food/snacks/bigbiteburger,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -12692,7 +12345,7 @@
 /area/centcom/restaurant)
 "xL" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/roastbeef,
+/obj/item/weapon/reagent_containers/food/snacks/roastbeef,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -12700,7 +12353,7 @@
 /area/centcom/restaurant)
 "xM" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/meatsteak,
+/obj/item/weapon/reagent_containers/food/snacks/meatsteak,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -12731,7 +12384,7 @@
 /obj/effect/floor_decal/carpet{
 	dir = 8
 	},
-/obj/item/material/ashtray/glass,
+/obj/item/weapon/material/ashtray/glass,
 /obj/machinery/camera/network/crescent{
 	dir = 4
 	},
@@ -12842,7 +12495,7 @@
 /obj/effect/floor_decal/carpet{
 	dir = 8
 	},
-/obj/item/material/ashtray/glass,
+/obj/item/weapon/material/ashtray/glass,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -13036,8 +12689,6 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -13072,7 +12723,7 @@
 /area/centcom/security)
 "yn" = (
 /obj/structure/table/standard,
-/obj/item/soap,
+/obj/item/weapon/soap,
 /obj/effect/floor_decal/borderfloorwhite{
 	dir = 10
 	},
@@ -13160,9 +12811,9 @@
 	dir = 10
 	},
 /obj/structure/table/reinforced,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/baton/loaded,
-/obj/item/gun/energy/taser,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/melee/baton/loaded,
+/obj/item/weapon/gun/energy/taser,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -13172,9 +12823,9 @@
 /obj/effect/floor_decal/borderfloorblack,
 /obj/effect/floor_decal/corner/blue/border,
 /obj/structure/closet/secure_closet/nanotrasen_security,
-/obj/item/storage/box/handcuffs,
-/obj/item/gun/energy/gun,
-/obj/item/shield/riot,
+/obj/item/weapon/storage/box/handcuffs,
+/obj/item/weapon/gun/energy/gun,
+/obj/item/weapon/shield/riot,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -13190,9 +12841,9 @@
 	dir = 9
 	},
 /obj/structure/closet/secure_closet/nanotrasen_security,
-/obj/item/storage/box/handcuffs,
-/obj/item/gun/energy/gun,
-/obj/item/shield/riot,
+/obj/item/weapon/storage/box/handcuffs,
+/obj/item/weapon/gun/energy/gun,
+/obj/item/weapon/shield/riot,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -13240,8 +12891,8 @@
 	},
 /area/centcom/security)
 "yE" = (
-/obj/item/storage/box/evidence,
-/obj/item/folder/red,
+/obj/item/weapon/storage/box/evidence,
+/obj/item/weapon/folder/red,
 /obj/structure/table/reinforced,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
@@ -13256,8 +12907,7 @@
 /area/centcom/security)
 "yF" = (
 /obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/obj/item/pen,
+/obj/item/weapon/pen,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -13274,7 +12924,7 @@
 /area/centcom/restaurant)
 "yH" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/pastatomato,
+/obj/item/weapon/reagent_containers/food/snacks/pastatomato,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -13282,7 +12932,7 @@
 /area/centcom/restaurant)
 "yI" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/meatballspagetti,
+/obj/item/weapon/reagent_containers/food/snacks/meatballspagetti,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -13303,34 +12953,13 @@
 /area/centcom/restaurant)
 "yL" = (
 /obj/structure/table/marble,
-/obj/item/reagent_containers/food/drinks/cup{
+/obj/item/weapon/reagent_containers/food/drinks/cup{
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/obj/item/reagent_containers/food/drinks/cup{
+/obj/item/weapon/reagent_containers/food/drinks/cup{
 	pixel_x = -4;
 	pixel_y = 8
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = 3
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = -4;
-	pixel_y = -4
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = 8
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = -4
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = 8;
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/food/drinks/cup{
-	pixel_x = -4;
-	pixel_y = 12
 	},
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
@@ -13348,27 +12977,9 @@
 /area/centcom/restaurant)
 "yN" = (
 /obj/structure/table/marble,
-/obj/item/reagent_containers/food/drinks/glass2/square{
+/obj/item/weapon/reagent_containers/food/drinks/glass2/square{
 	pixel_x = 8;
 	pixel_y = 8
-	},
-/obj/item/reagent_containers/food/drinks/glass2/square{
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/food/drinks/glass2/square{
-	pixel_x = -8;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/food/drinks/glass2/square{
-	pixel_x = 8;
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/food/drinks/glass2/square{
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/food/drinks/glass2/square{
-	pixel_x = -8;
-	pixel_y = 4
 	},
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
@@ -13515,8 +13126,8 @@
 /area/centcom/security)
 "yX" = (
 /obj/structure/table/reinforced,
-/obj/item/material/minihoe,
-/obj/item/analyzer/plant_analyzer,
+/obj/item/weapon/material/minihoe,
+/obj/item/device/analyzer/plant_analyzer,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 1
 	},
@@ -13556,13 +13167,6 @@
 	},
 /area/centcom/security)
 "za" = (
-/obj/item/camera{
-	desc = "A one use - polaroid camera. 30 photos left.";
-	name = "detectives camera";
-	pictures_left = 30;
-	pixel_x = 2;
-	pixel_y = 3
-	},
 /obj/structure/table/reinforced,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
@@ -13615,7 +13219,7 @@
 /area/centcom/main_hall)
 "zf" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/kitsuneudon,
+/obj/item/weapon/reagent_containers/food/snacks/kitsuneudon,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -13623,7 +13227,7 @@
 /area/centcom/restaurant)
 "zg" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/lasagna,
+/obj/item/weapon/reagent_containers/food/snacks/lasagna,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -13709,7 +13313,7 @@
 	},
 /area/centcom/security)
 "zn" = (
-/obj/item/tape_recorder,
+/obj/item/device/taperecorder,
 /obj/structure/table/reinforced,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 10
@@ -13952,7 +13556,7 @@
 /area/centcom/security)
 "zH" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/orange,
+/obj/item/weapon/bedsheet/orange,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 9
 	},
@@ -13987,7 +13591,7 @@
 /area/centcom/security)
 "zJ" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/orange,
+/obj/item/weapon/bedsheet/orange,
 /obj/machinery/camera/network/crescent,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 5
@@ -14008,7 +13612,7 @@
 	},
 /area/centcom/bar)
 "zL" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -14076,7 +13680,7 @@
 /area/centcom/bar)
 "zV" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/drinks/bottle/grenadine,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/grenadine,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -14084,7 +13688,7 @@
 /area/centcom/bar)
 "zW" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/drinks/bottle/cola,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/cola,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -14100,7 +13704,7 @@
 /area/centcom/bar)
 "zY" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/drinks/bottle/space_mountain_wind,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/space_mountain_wind,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -14108,7 +13712,7 @@
 /area/centcom/bar)
 "zZ" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/toastedsandwich{
+/obj/item/weapon/reagent_containers/food/snacks/toastedsandwich{
 	pixel_y = 10
 	},
 /turf/unsimulated/floor/steel{
@@ -14145,7 +13749,7 @@
 /area/centcom/security)
 "Ae" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/energy/taser,
+/obj/item/weapon/gun/energy/taser,
 /obj/machinery/recharger/wallcharger{
 	pixel_x = 4;
 	pixel_y = 26
@@ -14171,8 +13775,6 @@
 /area/centcom/security)
 "Ah" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
 	},
@@ -14186,7 +13788,7 @@
 /area/centcom/security)
 "Ai" = (
 /obj/structure/table/reinforced,
-/obj/item/tape_recorder,
+/obj/item/device/taperecorder,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -14221,7 +13823,7 @@
 /area/centcom/security)
 "Al" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/orange,
+/obj/item/weapon/bedsheet/orange,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 10
 	},
@@ -14252,7 +13854,7 @@
 /area/centcom/security)
 "An" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/orange,
+/obj/item/weapon/bedsheet/orange,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 6
 	},
@@ -14370,9 +13972,8 @@
 /area/centcom/bar)
 "AB" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/drinks/flask/barflask,
-/obj/item/reagent_containers/glass/rag,
-/obj/item/reagent_containers/food/drinks/flask/vacuumflask,
+/obj/item/weapon/reagent_containers/glass/rag,
+/obj/item/weapon/reagent_containers/food/drinks/flask/vacuumflask,
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
 	icon_state = "wood"
@@ -14437,7 +14038,7 @@
 /area/centcom/security)
 "AJ" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/security_space_law,
+/obj/item/weapon/book/manual/security_space_law,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -14445,8 +14046,8 @@
 /area/centcom/security)
 "AK" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/pill_bottle/dice,
-/obj/item/deck/cards,
+/obj/item/weapon/storage/pill_bottle/dice,
+/obj/item/weapon/deck/cards,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -14659,11 +14260,11 @@
 	req_access = list(63);
 	req_one_access = list(1)
 	},
-/obj/item/paper_bin{
+/obj/item/weapon/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
 	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 9
 	},
@@ -14728,7 +14329,7 @@
 	},
 /area/centcom/security)
 "Bo" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /obj/effect/floor_decal/borderfloorblack,
 /obj/effect/floor_decal/corner/orange/border,
 /turf/unsimulated/floor{
@@ -14787,15 +14388,9 @@
 	dir = 4
 	},
 /obj/structure/table/marble,
-/obj/item/book/manual/chef_recipes,
-/obj/item/reagent_containers/food/condiment/small/saltshaker{
-	pixel_x = -3
-	},
-/obj/item/reagent_containers/food/condiment/small/peppermill{
-	pixel_x = 3
-	},
-/obj/item/material/kitchen/rollingpin,
-/obj/item/material/knife/butch,
+/obj/item/weapon/book/manual/chef_recipes,
+/obj/item/weapon/material/kitchen/rollingpin,
+/obj/item/weapon/material/knife/butch,
 /turf/simulated/floor/tiled/white,
 /area/centcom/bar)
 "Bt" = (
@@ -15028,8 +14623,8 @@
 /area/centcom/security)
 "BL" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/security_space_law,
-/obj/item/tape_recorder,
+/obj/item/weapon/book/manual/security_space_law,
+/obj/item/device/taperecorder,
 /obj/effect/floor_decal/borderfloorblack,
 /obj/effect/floor_decal/corner/blue/border,
 /turf/unsimulated/floor{
@@ -15039,8 +14634,8 @@
 /area/centcom/security)
 "BM" = (
 /obj/structure/table/reinforced,
-/obj/item/camera,
-/obj/item/storage/box/ids,
+/obj/item/device/camera,
+/obj/item/weapon/storage/box/ids,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 6
 	},
@@ -15060,18 +14655,6 @@
 	dir = 10
 	},
 /obj/structure/closet/secure_closet/nanotrasen_security,
-/turf/unsimulated/floor{
-	dir = 5;
-	icon_state = "vault"
-	},
-/area/centcom/security)
-"BO" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
-/obj/effect/floor_decal/borderfloorblack,
-/obj/effect/floor_decal/corner/blue/border,
 /turf/unsimulated/floor{
 	dir = 5;
 	icon_state = "vault"
@@ -15400,11 +14983,11 @@
 /area/centcom/living)
 "CA" = (
 /obj/structure/table/reinforced,
-/obj/item/paper_bin{
+/obj/item/weapon/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
 	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /obj/machinery/button/remote/blast_door{
 	id = "TelelockdownC";
 	name = "Teleporter Entrance Lockdown";
@@ -15548,7 +15131,7 @@
 	req_access = list(63);
 	req_one_access = list(1)
 	},
-/obj/item/paper_bin{
+/obj/item/weapon/paper_bin{
 	pixel_x = 1;
 	pixel_y = 9
 	},
@@ -15581,7 +15164,7 @@
 	req_access = list(63);
 	req_one_access = list(1)
 	},
-/obj/item/pen,
+/obj/item/weapon/pen,
 /turf/unsimulated/floor/steel,
 /area/centcom/command)
 "CP" = (
@@ -15602,7 +15185,7 @@
 	dir = 1
 	},
 /obj/structure/table/reinforced,
-/obj/item/storage/box/ids,
+/obj/item/weapon/storage/box/ids,
 /turf/unsimulated/floor/steel,
 /area/centcom/command)
 "CR" = (
@@ -15643,8 +15226,8 @@
 /area/centcom/command)
 "CU" = (
 /obj/structure/table/reinforced,
-/obj/item/camera,
-/obj/item/storage/box/ids,
+/obj/item/device/camera,
+/obj/item/weapon/storage/box/ids,
 /obj/effect/floor_decal/borderfloorblack{
 	dir = 8
 	},
@@ -15952,7 +15535,7 @@
 /area/centcom/security)
 "DC" = (
 /obj/structure/table/glass,
-/obj/item/healthanalyzer/advanced,
+/obj/item/device/healthanalyzer/advanced,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
@@ -15967,18 +15550,18 @@
 /area/shuttle/escape)
 "Ez" = (
 /obj/structure/table/reinforced,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
-/obj/item/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/hyper,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -16139,7 +15722,7 @@
 /area/shuttle/escape)
 "Pb" = (
 /obj/structure/table/steel,
-/obj/item/defib_kit,
+/obj/item/device/defib_kit,
 /turf/simulated/shuttle/floor,
 /area/shuttle/escape)
 "Qd" = (
@@ -16160,17 +15743,17 @@
 /area/shuttle/escape)
 "Rc" = (
 /obj/structure/table/glass,
-/obj/item/defib_kit/compact/loaded,
+/obj/item/device/defib_kit/compact/loaded,
 /turf/unsimulated/floor/steel{
 	icon_state = "white"
 	},
 /area/centcom/medical)
 "Re" = (
 /obj/structure/table/reinforced,
-/obj/item/perfect_tele,
-/obj/item/binoculars,
-/obj/item/survivalcapsule,
-/obj/item/survivalcapsule,
+/obj/item/device/perfect_tele,
+/obj/item/device/binoculars,
+/obj/item/device/survivalcapsule,
+/obj/item/device/survivalcapsule,
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -16247,10 +15830,8 @@
 /area/shuttle/escape)
 "XA" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/smes_coil,
-/obj/item/smes_coil,
-/obj/item/t_scanner/advanced,
-/obj/item/t_scanner/advanced,
+/obj/item/device/t_scanner/advanced,
+/obj/item/device/t_scanner/advanced,
 /obj/item/stack/material/phoron,
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -16259,10 +15840,9 @@
 "ZK" = (
 /obj/structure/table/steel,
 /obj/random/firstaid,
-/obj/item/storage/firstaid/adv,
-/obj/item/storage/firstaid/bonemed,
-/obj/item/storage/firstaid/clotting,
-/obj/item/storage/firstaid/clotting,
+/obj/item/weapon/storage/firstaid/bonemed,
+/obj/item/weapon/storage/firstaid/clotting,
+/obj/item/weapon/storage/firstaid/clotting,
 /turf/simulated/shuttle/floor,
 /area/shuttle/escape)
 
@@ -23859,7 +23439,7 @@ gm
 iB
 iT
 ei
-iQ
+hP
 jK
 jO
 ku
@@ -24001,7 +23581,7 @@ gm
 iB
 iT
 ei
-iQ
+hP
 jK
 jP
 kv
@@ -24143,7 +23723,7 @@ gn
 ei
 ei
 ei
-iQ
+hP
 jK
 jQ
 kv
@@ -24284,8 +23864,8 @@ fW
 fW
 fV
 ei
-iQ
-iQ
+hP
+hP
 jK
 jR
 kv
@@ -24426,8 +24006,8 @@ fW
 fW
 fW
 ei
-iQ
-iQ
+hP
+hP
 jK
 jR
 kv
@@ -24568,8 +24148,8 @@ fW
 fW
 fW
 ei
-iQ
-iQ
+hP
+hP
 jK
 jS
 kw
@@ -24710,8 +24290,8 @@ fW
 fW
 fW
 ei
-iQ
-iQ
+hP
+hP
 jK
 jK
 kx
@@ -24852,8 +24432,8 @@ fW
 fW
 fW
 ei
-iQ
-iQ
+hP
+hP
 jK
 jT
 ky
@@ -24929,52 +24509,52 @@ hP
 hP
 "}
 (62,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 cP
 cP
@@ -24994,8 +24574,8 @@ fW
 fW
 fW
 ei
-iQ
-iQ
+hP
+hP
 jK
 jU
 kv
@@ -25071,52 +24651,52 @@ hP
 hP
 "}
 (63,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dj
 dk
@@ -25136,8 +24716,8 @@ fW
 fW
 fW
 ei
-iQ
-iQ
+hP
+hP
 jK
 jV
 kv
@@ -25213,52 +24793,52 @@ hP
 hP
 "}
 (64,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -25278,8 +24858,8 @@ fW
 fW
 fW
 ei
-iQ
-iQ
+hP
+hP
 jK
 jW
 kz
@@ -25299,7 +24879,7 @@ pP
 qP
 kx
 rN
-sm
+po
 po
 kv
 kv
@@ -25355,52 +24935,52 @@ hP
 hP
 "}
 (65,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -25420,8 +25000,8 @@ fW
 fW
 fW
 ei
-iQ
-iQ
+hP
+hP
 jK
 jX
 kA
@@ -25497,52 +25077,52 @@ hP
 hP
 "}
 (66,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -25562,8 +25142,8 @@ fW
 fW
 fW
 ei
-iQ
-iQ
+hP
+hP
 jK
 jY
 kv
@@ -25639,52 +25219,52 @@ hP
 hP
 "}
 (67,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 do
 dk
@@ -25704,8 +25284,8 @@ fW
 fW
 fW
 ei
-iQ
-iQ
+hP
+hP
 jK
 jZ
 kB
@@ -25781,52 +25361,52 @@ hP
 hP
 "}
 (68,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -25846,8 +25426,8 @@ fW
 fW
 fW
 ei
-iQ
-iQ
+hP
+hP
 jK
 jK
 jK
@@ -25923,52 +25503,52 @@ hP
 hP
 "}
 (69,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -25988,14 +25568,14 @@ fW
 fW
 fW
 ei
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 jK
 mC
 mX
@@ -26036,81 +25616,81 @@ wJ
 zS
 vr
 cP
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (70,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -26130,14 +25710,14 @@ fW
 fW
 fW
 ei
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 jK
 jK
 mY
@@ -26178,81 +25758,81 @@ wI
 zS
 dk
 cP
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (71,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -26272,14 +25852,14 @@ fW
 fW
 fV
 ei
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 jK
 mD
 mZ
@@ -26320,81 +25900,81 @@ wI
 zS
 dk
 cP
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (72,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -26415,13 +25995,13 @@ gn
 ei
 ei
 ei
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 jK
 mE
 na
@@ -26462,81 +26042,81 @@ wI
 zS
 dk
 cP
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (73,1,1) = {"
-aa
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -26557,13 +26137,13 @@ go
 iB
 iU
 ei
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 jK
 mF
 nb
@@ -26604,81 +26184,81 @@ wK
 zT
 dk
 cP
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (74,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -26699,13 +26279,13 @@ go
 iB
 iU
 ei
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 jK
 mE
 na
@@ -26746,81 +26326,81 @@ xi
 dk
 Ao
 cP
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (75,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -26841,13 +26421,13 @@ go
 iB
 iU
 ei
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 jK
 mE
 na
@@ -26896,73 +26476,73 @@ zU
 zU
 zU
 zU
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (76,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -26983,13 +26563,13 @@ go
 iB
 iU
 ei
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 jK
 mG
 nc
@@ -27038,73 +26618,73 @@ zU
 Ci
 Cu
 zU
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (77,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -27125,13 +26705,13 @@ go
 iB
 iU
 ei
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 jK
 jK
 jK
@@ -27180,73 +26760,73 @@ Ca
 Cj
 Cj
 zU
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (78,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 do
 dk
@@ -27267,13 +26847,13 @@ gl
 ei
 ei
 ei
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dj
 dk
@@ -27322,73 +26902,73 @@ zU
 Ck
 Cv
 zU
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (79,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -27409,13 +26989,13 @@ ia
 ei
 iQ
 iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -27464,72 +27044,72 @@ zU
 zU
 zU
 zU
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (80,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 cP
 dk
@@ -27603,75 +27183,75 @@ Bf
 Bg
 BI
 zU
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (81,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dj
 dk
@@ -27745,75 +27325,75 @@ Bg
 Bg
 BJ
 zU
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
 ry
 ry
 ry
 ry
 ry
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (82,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dk
 dk
@@ -27887,75 +27467,75 @@ zU
 zU
 zU
 zU
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
 ry
 Da
 Dn
 Ds
 Dx
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (83,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 cP
 dj
 dk
@@ -28024,80 +27604,80 @@ vG
 vG
 Aq
 vq
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ry
 ry
 ry
 Dt
 Ds
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (84,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 ah
 dp
@@ -28166,81 +27746,81 @@ vG
 vG
 Ar
 vq
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ry
 Da
 Do
 Ds
 Ds
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (85,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 dq
 dq
@@ -28308,10 +27888,10 @@ vG
 vG
 As
 vq
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
 uJ
 uJ
 uJ
@@ -28325,64 +27905,64 @@ uJ
 uJ
 Dy
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (86,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 dq
 dq
@@ -28467,64 +28047,64 @@ Cl
 uJ
 Ds
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (87,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 dq
 dq
@@ -28609,64 +28189,64 @@ Cm
 uJ
 Ds
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (88,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 dq
 dq
@@ -28751,64 +28331,64 @@ Dp
 Du
 Ds
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (89,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 dq
 dq
@@ -28893,50 +28473,50 @@ Dq
 uJ
 ry
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (90,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 ah
 ah
@@ -28986,7 +28566,7 @@ nK
 or
 pd
 pz
-qe
+py
 qD
 oq
 ry
@@ -29035,50 +28615,50 @@ Dr
 Dv
 Ds
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (91,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aF
 aV
@@ -29127,7 +28707,7 @@ dk
 nK
 oq
 pd
-pA
+py
 py
 qD
 oq
@@ -29177,50 +28757,50 @@ Cm
 uJ
 Ds
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (92,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aG
 aG
@@ -29319,50 +28899,50 @@ Cl
 uJ
 Ds
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (93,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 ah
 ah
@@ -29461,50 +29041,50 @@ uJ
 uJ
 Dy
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (94,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aH
 aW
@@ -29591,62 +29171,62 @@ Bk
 Bu
 BK
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
 ry
 Da
 Do
 Ds
 Ds
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (95,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aI
 aX
@@ -29733,62 +29313,62 @@ ig
 ig
 BL
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
 ry
 ry
 ry
 Dw
 Ds
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (96,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aJ
 aX
@@ -29875,62 +29455,62 @@ Bl
 Bv
 BM
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
 ry
 Da
 Dn
 Ds
 Dz
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (97,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aK
 aX
@@ -30017,62 +29597,62 @@ ho
 ho
 ho
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
 ry
 ry
 ry
 ry
 ry
 DA
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (98,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aL
 aX
@@ -30122,7 +29702,7 @@ nK
 or
 pd
 pG
-qh
+py
 qD
 oq
 ry
@@ -30159,62 +29739,62 @@ wY
 Bw
 BN
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (99,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aM
 aX
@@ -30299,64 +29879,64 @@ ho
 yc
 ig
 ig
-BO
+zp
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (100,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aN
 aX
@@ -30452,53 +30032,53 @@ ho
 ho
 ho
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (101,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aO
 aX
@@ -30594,53 +30174,53 @@ ig
 ig
 ig
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (102,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aP
 aY
@@ -30736,52 +30316,52 @@ ho
 ho
 xH
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (103,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 ah
 ah
@@ -30878,52 +30458,52 @@ wh
 CU
 ig
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (104,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 ap
 aG
@@ -31020,52 +30600,52 @@ CI
 ig
 Db
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (105,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aq
 aG
@@ -31162,52 +30742,52 @@ CJ
 CV
 ig
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (106,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 ar
 aG
@@ -31304,52 +30884,52 @@ nK
 nK
 Dc
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (107,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 as
 aG
@@ -31446,52 +31026,52 @@ CK
 CW
 oX
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (108,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 au
 aG
@@ -31588,52 +31168,52 @@ CL
 oX
 Dd
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (109,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 at
 aG
@@ -31730,52 +31310,52 @@ CM
 CX
 De
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (110,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aw
 aG
@@ -31872,52 +31452,52 @@ CN
 CY
 De
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (111,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 av
 aG
@@ -32014,52 +31594,52 @@ CO
 CX
 De
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (112,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 ax
 aG
@@ -32156,52 +31736,52 @@ CP
 oX
 De
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (113,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 ay
 aG
@@ -32298,52 +31878,52 @@ CQ
 oX
 Df
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (114,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 az
 aG
@@ -32440,52 +32020,52 @@ CR
 oX
 Dg
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (115,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 aA
 aG
@@ -32582,50 +32162,50 @@ CS
 oX
 Dg
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (116,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ah
 ah
 ah
@@ -32724,50 +32304,50 @@ CT
 oX
 Dh
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (117,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 ad
 ah
@@ -32866,50 +32446,50 @@ nK
 CZ
 nK
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (118,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 ae
 ai
@@ -33001,57 +32581,57 @@ BU
 ho
 BU
 ho
-iQ
+hP
 nK
 CC
 CE
 CE
 Di
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (119,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 af
 aj
@@ -33143,57 +32723,57 @@ BV
 ho
 Cq
 ho
-iQ
+hP
 nK
 CD
 CE
 CE
 Dj
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (120,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 af
 ak
@@ -33285,57 +32865,57 @@ BW
 BW
 BW
 ho
-iQ
+hP
 nK
 CE
 CE
 CE
 Dk
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (121,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 af
 al
@@ -33427,57 +33007,57 @@ BW
 BW
 Cr
 ho
-iQ
+hP
 nK
 CF
 CE
 CE
 Dl
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (122,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 af
 al
@@ -33569,57 +33149,57 @@ BX
 BW
 BW
 ho
-iQ
+hP
 nK
 CG
 CE
 CE
 Dm
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (123,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 af
 al
@@ -33711,57 +33291,57 @@ BX
 BW
 Cs
 ho
-iQ
+hP
 nK
 nK
 nK
 nK
 nK
 nK
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (124,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 af
 al
@@ -33853,57 +33433,57 @@ ho
 Cg
 ho
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (125,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 af
 al
@@ -33995,57 +33575,57 @@ BY
 Ch
 Ct
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (126,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 af
 am
@@ -34137,57 +33717,57 @@ BW
 Ch
 BW
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (127,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 af
 an
@@ -34279,57 +33859,57 @@ BY
 Ch
 Ct
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (128,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 af
 ao
@@ -34348,7 +33928,7 @@ cE
 aG
 aG
 dm
-dT
+em
 eh
 em
 em
@@ -34421,57 +34001,57 @@ BZ
 Ch
 BW
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (129,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 ag
 af
@@ -34563,57 +34143,57 @@ BY
 Ch
 Ct
 ho
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (130,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 ad
 ad
 ad
@@ -34705,1444 +34285,1444 @@ hX
 hX
 hX
 hX
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (131,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (132,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (133,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (134,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (135,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (136,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (137,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (138,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (139,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
 (140,1,1) = {"
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
-iQ
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
+hP
 "}
