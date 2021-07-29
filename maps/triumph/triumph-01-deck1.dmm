@@ -49,7 +49,8 @@
 "ah" = (
 /obj/machinery/telecomms/hub/preset/triumph,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "ak" = (
@@ -89,7 +90,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	name = "south bump";
 	pixel_y = -32
 	},
@@ -248,7 +249,8 @@
 	use_power = 1
 	},
 /turf/simulated/floor/bluegrid{
-	initial_gas_mix = "n2=100;TEMP=80";
+	nitrogen = 100
+	temperature=80
 	name = "Mainframe Base"
 	},
 /area/tcommsat/chamber)
@@ -409,7 +411,8 @@
 "bu" = (
 /obj/machinery/telecomms/server/presets/security,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "bv" = (
@@ -492,7 +495,7 @@
 "bO" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8;
-	scrubbing_gas = list(/datum/gas/carbon_dioxide)
+	scrubbing_gas = list("carbon_dioxide")
 	},
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 6
@@ -613,7 +616,8 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
 /obj/machinery/hologram/holopad,
 /turf/simulated/floor/bluegrid{
-	initial_gas_mix = "n2=100;TEMP=80";
+	nitrogen = 100
+	temperature=80
 	name = "Mainframe Base"
 	},
 /area/tcommsat/chamber)
@@ -706,7 +710,8 @@
 "cG" = (
 /obj/machinery/telecomms/relay/preset/triumph/deck_one,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "cI" = (
@@ -828,7 +833,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/engineering)
 "dg" = (
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -913,7 +918,8 @@
 "dw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "dx" = (
@@ -931,7 +937,8 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "dC" = (
@@ -1432,7 +1439,7 @@
 "fp" = (
 /obj/structure/cable/green,
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	dir = 8;
 	name = "west bump";
 	pixel_x = -30
@@ -2228,7 +2235,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	dir = 1;
 	name = "north bump";
 	pixel_y = 28
@@ -2371,7 +2378,8 @@
 "iG" = (
 /obj/machinery/telecomms/processor/preset_one,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "iH" = (
@@ -2405,7 +2413,8 @@
 /obj/machinery/telecomms/relay/preset/triumph/deck_two,
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "iQ" = (
@@ -2829,7 +2838,8 @@
 "kb" = (
 /obj/machinery/telecomms/server/presets/command,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "kd" = (
@@ -3007,7 +3017,8 @@
 "kF" = (
 /obj/machinery/telecomms/server/presets/common,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "kI" = (
@@ -3029,7 +3040,8 @@
 "kL" = (
 /obj/machinery/telecomms/server/presets/supply,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "kM" = (
@@ -3360,7 +3372,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	dir = 8;
 	name = "west bump";
 	pixel_x = -30
@@ -3376,7 +3388,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	dir = 8;
 	name = "west bump";
 	pixel_x = -30
@@ -3478,7 +3490,8 @@
 "mG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/black,
 /turf/simulated/floor/bluegrid{
-	initial_gas_mix = "n2=100;TEMP=80";
+	nitrogen = 100
+	temperature=80
 	name = "Mainframe Base"
 	},
 /area/tcommsat/chamber)
@@ -3871,7 +3884,7 @@
 /area/engineering/hallway)
 "nR" = (
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24
@@ -4116,7 +4129,8 @@
 "oP" = (
 /obj/machinery/telecomms/server/presets/service/triumph,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "oQ" = (
@@ -4208,7 +4222,8 @@
 "pd" = (
 /obj/machinery/telecomms/broadcaster/preset_right,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "pe" = (
@@ -4735,7 +4750,7 @@
 /turf/simulated/floor/tiled,
 /area/engineering/hallway)
 "qQ" = (
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 4;
 	name = "Station Intercom (General)";
 	pixel_x = 23
@@ -4905,7 +4920,7 @@
 /obj/effect/landmark/start{
 	name = "Atmospheric Technician"
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -4957,7 +4972,8 @@
 "rH" = (
 /obj/machinery/telecomms/server/presets/unused,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "rI" = (
@@ -5326,7 +5342,8 @@
 "sS" = (
 /obj/machinery/telecomms/relay/preset/triumph/deck_three,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "sT" = (
@@ -5446,7 +5463,7 @@
 /turf/simulated/floor/tiled,
 /area/station/stairs_one)
 "tq" = (
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -5529,7 +5546,8 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "tE" = (
@@ -5900,7 +5918,7 @@
 /obj/machinery/camera/network/engineering{
 	dir = 4
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 8;
 	name = "Station Intercom (General)";
 	pixel_x = -26
@@ -6080,7 +6098,7 @@
 /area/engineering/atmos/storage)
 "vw" = (
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24
@@ -6322,7 +6340,7 @@
 /area/engineering/atmos)
 "wu" = (
 /obj/structure/closet/firecloset,
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -6430,7 +6448,8 @@
 "wK" = (
 /obj/machinery/telecomms/server/presets/science,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "wM" = (
@@ -6497,7 +6516,8 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "wR" = (
@@ -6505,7 +6525,7 @@
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 1
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -6953,7 +6973,8 @@
 "yw" = (
 /obj/machinery/telecomms/processor/preset_three,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "yx" = (
@@ -7046,7 +7067,7 @@
 	pixel_y = 22
 	},
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	dir = 8;
 	name = "west bump";
 	pixel_x = -30
@@ -7491,7 +7512,8 @@
 	pixel_x = -21
 	},
 /turf/simulated/floor/bluegrid{
-	initial_gas_mix = "n2=100;TEMP=80";
+	nitrogen = 100
+	temperature=80
 	name = "Mainframe Base"
 	},
 /area/tcommsat/chamber)
@@ -7963,7 +7985,8 @@
 "CK" = (
 /obj/machinery/telecomms/bus/preset_four,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "CN" = (
@@ -8402,7 +8425,8 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "Ep" = (
@@ -8645,7 +8669,8 @@
 "EV" = (
 /obj/machinery/pda_multicaster/prebuilt,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "EX" = (
@@ -8832,7 +8857,7 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_monitoring)
 "Fv" = (
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -9075,7 +9100,7 @@
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 1
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -9547,7 +9572,7 @@
 "HR" = (
 /obj/structure/table/reinforced,
 /obj/item/device/flashlight/lamp,
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -9824,7 +9849,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8;
-	scrubbing_gas = list(/datum/gas/carbon_dioxide)
+	scrubbing_gas = list("carbon_dioxide")
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/tcommsat/computer)
@@ -9946,7 +9971,8 @@
 "JA" = (
 /obj/machinery/telecomms/server/presets/engineering,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "JB" = (
@@ -9998,7 +10024,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -10419,7 +10445,7 @@
 /area/engineering/atmos)
 "Ln" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -10801,7 +10827,7 @@
 /area/engineering/starboardnacelle)
 "MH" = (
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	dir = 8;
 	name = "west bump";
 	pixel_x = -30
@@ -10862,7 +10888,7 @@
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 1
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -10901,7 +10927,8 @@
 "MW" = (
 /obj/machinery/telecomms/server/presets/medical,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "MX" = (
@@ -10960,7 +10987,7 @@
 /area/tcommsat/computer)
 "Nj" = (
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24
@@ -11226,7 +11253,7 @@
 "NT" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8;
-	scrubbing_gas = list(/datum/gas/carbon_dioxide)
+	scrubbing_gas = list("carbon_dioxide")
 	},
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 5
@@ -11303,7 +11330,7 @@
 /obj/effect/floor_decal/corner/paleblue/border{
 	dir = 5
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -11547,7 +11574,8 @@
 	use_power = 1
 	},
 /turf/simulated/floor/bluegrid{
-	initial_gas_mix = "n2=100;TEMP=80";
+	nitrogen = 100
+	temperature=80
 	name = "Mainframe Base"
 	},
 /area/tcommsat/chamber)
@@ -11629,7 +11657,8 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "Pn" = (
@@ -11708,7 +11737,8 @@
 /area/engineering/atmos/storage)
 "PQ" = (
 /turf/simulated/floor/bluegrid{
-	initial_gas_mix = "n2=100;TEMP=80";
+	nitrogen = 100
+	temperature=80
 	name = "Mainframe Base"
 	},
 /area/tcommsat/chamber)
@@ -11777,7 +11807,7 @@
 /turf/simulated/floor/plating,
 /area/maintenance/engi_engine)
 "Qd" = (
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -12631,7 +12661,7 @@
 "SC" = (
 /obj/machinery/camera/network/engineering,
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	dir = 1;
 	name = "north bump";
 	pixel_y = 24
@@ -12832,7 +12862,7 @@
 /area/engineering/atmos)
 "Tn" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -12951,7 +12981,8 @@
 "TE" = (
 /obj/machinery/telecomms/relay/preset/triumph/deck_four,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "TG" = (
@@ -13060,7 +13091,8 @@
 	dir = 10
 	},
 /turf/simulated/floor/bluegrid{
-	initial_gas_mix = "n2=100;TEMP=80";
+	nitrogen = 100
+	temperature=80
 	name = "Mainframe Base"
 	},
 /area/tcommsat/chamber)
@@ -13099,7 +13131,7 @@
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 1
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -13134,7 +13166,8 @@
 "UC" = (
 /obj/machinery/telecomms/bus/preset_two/triumph,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "UG" = (
@@ -13365,7 +13398,8 @@
 "Vo" = (
 /obj/machinery/telecomms/receiver/preset_right/triumph,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "Vr" = (
@@ -13528,7 +13562,7 @@
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 1
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 26
@@ -13779,7 +13813,8 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "WL" = (
@@ -13843,7 +13878,7 @@
 /area/engineering/engine_monitoring)
 "Xa" = (
 /obj/machinery/power/apc{
-	cell_type = /obj/item/cell/super;
+	cell_type = /obj/item/weapon/cell/super;
 	dir = 8;
 	name = "west bump";
 	pixel_x = -30
@@ -14111,7 +14146,8 @@
 "Yd" = (
 /obj/machinery/telecomms/processor/preset_four,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "Yh" = (
@@ -14326,7 +14362,8 @@
 "YH" = (
 /obj/machinery/telecomms/processor/preset_two,
 /turf/simulated/floor/tiled/dark{
-	initial_gas_mix = "n2=100;TEMP=80"
+	nitrogen = 100
+	temperature=80
 	},
 /area/tcommsat/chamber)
 "YJ" = (

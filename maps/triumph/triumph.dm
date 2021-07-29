@@ -15,11 +15,11 @@
 
 	#define USING_MAP_DATUM /datum/map/triumph
 
-//	#include "../../maps/triumph/triumph-01-deck1.dmm"
-//	#include "../../maps/triumph/triumph-02-deck2.dmm"
-//	#include "../../maps/triumph/triumph-03-deck3.dmm"
-//	#include "../../maps/triumph/triumph-04-deck4.dmm"
-//	#include "../../maps/triumph/triumph-05-flagship.dmm"
+	#include "../../maps/triumph/triumph-01-deck1.dmm"
+	#include "../../maps/triumph/triumph-02-deck2.dmm"
+	#include "../../maps/triumph/triumph-03-deck3.dmm"
+	#include "../../maps/triumph/triumph-04-deck4.dmm"
+	#include "../../maps/triumph/triumph-05-flagship.dmm"
 
 #elif !defined(MAP_OVERRIDE)
 

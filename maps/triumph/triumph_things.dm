@@ -303,9 +303,9 @@ var/global/list/latejoin_shuttle   = list()
 // ### Wall Machines On Full Windows ###
 // To make sure wall-mounted machines placed on full-tile windows are clickable they must be above the window
 //
-/obj/item/radio/intercom
+/obj/item/device/radio/intercom
 	layer = ABOVE_WINDOW_LAYER
-/obj/item/storage/secure/safe
+/obj/item/weapon/storage/secure/safe
 	layer = ABOVE_WINDOW_LAYER
 /obj/machinery/airlock_sensor
 	layer = ABOVE_WINDOW_LAYER
