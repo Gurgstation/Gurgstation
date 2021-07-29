@@ -4112,11 +4112,7 @@
 #include "maps\submaps\surface_submaps\wilderness\wilderness.dm"
 #include "maps\submaps\surface_submaps\wilderness\wilderness_areas.dm"
 #include "maps\triumph\triumph.dm"
-#include "maps\triumph\areas\asteroid_areas.dm"
-#include "maps\triumph\areas\Off Station Areas.dm"
 #include "maps\triumph\submaps\_healpers.dm"
-#include "maps\triumph\submaps\engine_submaps\engine.dm"
-#include "maps\triumph\submaps\engine_submaps\engine_areas.dm"
 #include "maps\triumph\submaps\lavaland\_lavaland_area.dm"
 #include "maps\~map_system\maps.dm"
 // END_INCLUDE
