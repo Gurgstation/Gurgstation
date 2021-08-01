@@ -32,11 +32,10 @@ SUBSYSTEM_DEF(vote)
 			reset()
 
 /datum/controller/subsystem/vote/proc/autotransfer()
-	// Before doing the vote, see if anyone is playing.
+	/* Before doing the vote, see if anyone is playing.
 	// If not, just do the transfer.
 	var/players_are_in_round = FALSE
-	for(var/a in player_list) // Mobs with clients attached.
-		var/mob/living/L = a
+	for(var/mob/living/L as anything in player_list) // Mobs with clients attached.
 		if(!istype(L)) // Exclude ghosts and other weird things.
 			continue
 		if(L.stat == DEAD) // Dead mobs aren't playing.
@@ -49,7 +48,7 @@ SUBSYSTEM_DEF(vote)
 		log_debug("The crew transfer shuttle was automatically called at vote time due to no players being present.")
 		init_shift_change(null, 1)
 		return
-
+*/
 	initiate_vote(VOTE_CREW_TRANSFER, "the server", 1)
 	log_debug("The server has called a crew transfer vote.")
 

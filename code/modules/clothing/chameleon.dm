@@ -13,10 +13,9 @@
 	body_parts_covered = copy.body_parts_covered
 	flags_inv = copy.flags_inv
 
-	item_icons = copy.item_icons.Copy()
-	if(copy.item_state_slots) //Runtime prevention for backpacks
-		item_state_slots = copy.item_state_slots.Copy()
-	sprite_sheets = copy.sprite_sheets.Copy()
+	item_icons = copy.item_icons?.Copy()
+	item_state_slots = copy.item_state_slots?.Copy()
+	sprite_sheets = copy.sprite_sheets?.Copy()
 	//copying sprite_sheets_obj should be unnecessary as chameleon items are not refittable.
 
 	return copy //for inheritance
@@ -25,15 +24,14 @@
 	. = list()
 
 	var/i = 1 //in case there is a collision with both name AND icon_state
-	for(var/typepath in typesof(basetype) - blacklist)
-		var/obj/O = typepath
+	for(var/obj/O as anything in typesof(basetype) - blacklist)
 		if(initial(O.icon) && initial(O.icon_state))
 			var/name = initial(O.name)
 			if(name in .)
 				name += " ([initial(O.icon_state)])"
 			if(name in .)
 				name += " \[[i++]\]"
-			.[name] = typepath
+			.[name] = O
 
 /obj/item/clothing/under/chameleon
 //starts off as black
@@ -54,7 +52,7 @@
 	name = "psychedelic"
 	desc = "Groovy!"
 	icon_state = "psyche"
-	item_state_slots[slot_w_uniform_str] = "psyche"
+	LAZYSET(item_state_slots, slot_w_uniform_str, "psyche")
 	update_icon()
 	update_clothing_icon()
 

@@ -48,6 +48,8 @@
 /datum/vore_look/tgui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
+		update_preview_icon()	//CHOMPEdit
+		give_client_previews(user.client) //CHOMPEdit
 		ui = new(user, src, "VorePanel", "Vore Panel")
 		ui.open()
 
@@ -126,8 +128,7 @@
 	data["inside"] = inside
 
 	var/list/our_bellies = list()
-	for(var/belly in host.vore_organs)
-		var/obj/belly/B = belly
+	for(var/obj/belly/B as anything in host.vore_organs)
 		our_bellies.Add(list(list(
 			"selected" = (B == host.vore_selected),
 			"name" = B.name,
@@ -318,8 +319,7 @@
 				failure_msg = "Entered belly name length invalid (must be longer than [BELLIES_NAME_MIN], no more than than [BELLIES_NAME_MAX])."
 			// else if(whatever) //Next test here.
 			else
-				for(var/belly in host.vore_organs)
-					var/obj/belly/B = belly
+				for(var/obj/belly/B as anything in host.vore_organs)
 					if(lowertext(new_name) == lowertext(B.name))
 						failure_msg = "No duplicate belly names, please."
 						break
@@ -568,7 +568,7 @@
 
 			to_chat(user,"<font color='green'>You begin to push [M] to freedom!</font>")
 			to_chat(M,"[host] begins to push you to freedom!")
-			to_chat(M.loc,"<span class='warning'>Someone is trying to escape from inside you!</span>")
+			to_chat(OB.owner,"<span class='warning'>Someone is trying to escape from inside you!</span>")
 			sleep(50)
 			if(prob(33))
 				OB.release_specific_contents(M)
@@ -699,8 +699,7 @@
 				failure_msg = "Entered belly name length invalid (must be longer than [BELLIES_NAME_MIN], no more than than [BELLIES_NAME_MAX])."
 			// else if(whatever) //Next test here.
 			else
-				for(var/belly in host.vore_organs)
-					var/obj/belly/B = belly
+				for(var/obj/belly/B as anything in host.vore_organs)
 					if(lowertext(new_name) == lowertext(B.name))
 						failure_msg = "No duplicate belly names, please."
 						break
@@ -1041,8 +1040,7 @@
 			var/failure_msg = ""
 
 			var/dest_for //Check to see if it's the destination of another vore organ.
-			for(var/belly in host.vore_organs)
-				var/obj/belly/B = belly
+			for(var/obj/belly/B as anything in host.vore_organs)
 				if(B.transferlocation == host.vore_selected)
 					dest_for = B.name
 					failure_msg += "This is the destiantion for at least '[dest_for]' belly transfers. Remove it as the destination from any bellies before deleting it. "

@@ -1,6 +1,6 @@
 //#define TESTING
-#if DM_VERSION < 506
-#warn This compiler is out of date. You may experience issues with projectile animations.
+#if DM_VERSION < 512
+#error This compiler is out of date Please update to at least BYOND 512.
 #endif
 
 // Items that ask to be called every cycle.
@@ -35,7 +35,7 @@ var/href_logfile		= null
 // var/const/company_short	= "NT"
 // var/const/star_name		= "Vir"
 // var/const/starsys_name	= "Vir"
-var/const/game_version	= "VOREStation"
+var/const/game_version	= "Gurgstation"
 var/changelog_hash		= ""
 var/game_year			= (text2num(time2text(world.realtime, "YYYY")) + 300) //VOREStation Edit
 var/round_progressing = 1

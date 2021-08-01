@@ -14,8 +14,6 @@ const getTagColor = tag => {
       return "blue";
     case "Switch":
       return "purple";
-    case "Non-Vore":
-      return "green";
   }
 };
 

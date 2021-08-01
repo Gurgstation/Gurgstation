@@ -22,9 +22,9 @@
 	desc = "Looks like some kind of slimy growth."
 	icon_state = "resin"
 
-	density = 1
+	density = TRUE
 	opacity = 1
-	anchored = 1
+	anchored = TRUE
 	can_atmos_pass = ATMOS_PASS_NO
 	var/health = 200
 	//var/mob/living/affecting = null
@@ -53,7 +53,7 @@
 
 /obj/effect/alien/resin/proc/healthcheck()
 	if(health <=0)
-		density = 0
+		density = FALSE
 		qdel(src)
 	return
 
@@ -162,8 +162,8 @@
 	name = "growth"
 	desc = "Weird organic growth."
 	icon_state = "weeds"
-	anchored = 1
-	density = 0
+	anchored = TRUE
+	density = FALSE
 	plane = TURF_PLANE
 	layer = ABOVE_TURF_LAYER
 
@@ -294,8 +294,7 @@
 	for(var/obj/effect/alien/weeds/W in orange(node_range, src))
 		nearby_weeds |= W
 
-	for(var/nbw in nearby_weeds)
-		var/obj/effect/alien/weeds/W = nbw
+	for(var/obj/effect/alien/weeds/W as anything in nearby_weeds)
 
 		if(!W.linked_node)
 			W.linked_node = src
@@ -319,7 +318,7 @@
 
 /obj/effect/alien/weeds/attackby(var/obj/item/weapon/W, var/mob/user)
 	user.setClickCooldown(user.get_attack_speed(W))
-	if(W.attack_verb.len)
+	if(LAZYLEN(W.attack_verb))
 		visible_message("<span class='danger'>\The [src] have been [pick(W.attack_verb)] with \the [W][(user ? " by [user]." : ".")]</span>")
 	else
 		visible_message("<span class='danger'>\The [src] have been attacked with \the [W][(user ? " by [user]." : ".")]</span>")
@@ -374,9 +373,9 @@
 	desc = "Burbling corrossive stuff. I wouldn't want to touch it."
 	icon_state = "acid"
 
-	density = 0
+	density = FALSE
 	opacity = 0
-	anchored = 1
+	anchored = TRUE
 
 	var/atom/target
 	var/ticks = 0
