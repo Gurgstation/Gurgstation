@@ -479,7 +479,7 @@
 /area/centcom/specops)
 "aQ" = (
 /obj/machinery/computer/communications,
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	frequency = 1443;
 	name = "Spec Ops Intercom";
@@ -1499,7 +1499,7 @@
 /obj/machinery/vending/cigarette{
 	name = "hacked cigarette machine";
 	prices = list();
-	products = list(/obj/item/storage/fancy/cigarettes = 10, /obj/item/storage/box/matches = 10, /obj/item/flame/lighter/zippo = 4, /obj/item/clothing/mask/smokable/cigarette/cigar/havana = 2)
+	products = list(/obj/item/weapon/storage/fancy/cigarettes = 10, /obj/item/weapon/storage/box/matches = 10, /obj/item/weapon/flame/lighter/zippo = 4)
 	},
 /turf/unsimulated/floor/steel{
 	icon = 'icons/turf/floors_vr.dmi';
@@ -3179,7 +3179,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 27
@@ -3663,7 +3663,7 @@
 /turf/unsimulated/floor/steel,
 /area/centcom/control)
 "gL" = (
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	broadcasting = 1;
 	dir = 1;
 	frequency = 1443;
@@ -4980,8 +4980,6 @@
 /obj/item/weapon/storage/belt/security/tactical,
 /obj/structure/closet{
 	desc = "It's a storage unit for standard-issue attire.";
-	icon_closed = "syndicate1";
-	icon_opened = "syndicate1open";
 	icon_state = "syndicate1";
 	name = "tactical equipment"
 	},
@@ -5004,8 +5002,6 @@
 /obj/item/weapon/storage/belt/security/tactical,
 /obj/structure/closet{
 	desc = "It's a storage unit for standard-issue attire.";
-	icon_closed = "syndicate1";
-	icon_opened = "syndicate1open";
 	icon_state = "syndicate1";
 	name = "tactical equipment"
 	},
@@ -5478,7 +5474,7 @@
 	},
 /obj/item/weapon/storage/box/handcuffs,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 21
@@ -7744,7 +7740,7 @@
 "oF" = (
 /obj/structure/table/standard,
 /obj/machinery/recharger,
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	name = "Station Intercom (General)";
 	pixel_y = 27
@@ -7835,12 +7831,12 @@
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_x = 30
 	},
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
-/obj/item/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
+/obj/item/device/radio,
 /obj/item/device/flashlight,
 /obj/item/device/flashlight,
 /obj/item/device/flashlight,
@@ -9790,7 +9786,7 @@
 /obj/effect/floor_decal/corner/blue/bordercorner2{
 	dir = 1
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	frequency = 1475;
 	name = "Station Intercom (Security)";
@@ -11251,7 +11247,7 @@
 	},
 /area/centcom/security)
 "wa" = (
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	frequency = 1475;
 	name = "Station Intercom (Security)";
@@ -11358,7 +11354,7 @@
 /obj/effect/floor_decal/corner/blue/border{
 	dir = 9
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	frequency = 1475;
 	name = "Station Intercom (Security)";
@@ -11788,7 +11784,7 @@
 /obj/structure/bed/chair/office/dark{
 	dir = 4
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	frequency = 1475;
 	name = "Station Intercom (Security)";
@@ -14107,7 +14103,7 @@
 	},
 /area/centcom/security)
 "AS" = (
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	frequency = 1475;
 	name = "Station Intercom (Security)";
@@ -14146,7 +14142,7 @@
 /obj/effect/floor_decal/corner/blue/bordercorner2{
 	dir = 1
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	dir = 1;
 	frequency = 1475;
 	name = "Station Intercom (Security)";

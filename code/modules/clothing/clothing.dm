@@ -16,13 +16,6 @@
 	var/list/enables_planes		//Enables these planes in the wearing mob's plane_holder
 	var/list/plane_slots		//But only if it's equipped into this specific slot
 
-	/*
-		Sprites used when the clothing item is refit. This is done by setting icon_override.
-		For best results, if this is set then sprite_sheets should be null and vice versa, but that is by no means necessary.
-		Ideally, sprite_sheets_refit should be used for "hard" clothing items that can't change shape very well to fit the wearer (e.g. helmets, hardsuits),
-		while sprite_sheets should be used for "flexible" clothing items that do not need to be refitted (e.g. aliens wearing jumpsuits).
-	*/
-	var/list/sprite_sheets_refit = null
 	var/ear_protection = 0
 	var/blood_sprite_state
 
@@ -163,9 +156,6 @@
 			species_restricted = list(target_species)
 
 	//Set icon
-	if (sprite_sheets_refit && (target_species in sprite_sheets_refit))
-		sprite_sheets[target_species] = sprite_sheets_refit[target_species]
-
 	if (sprite_sheets_obj && (target_species in sprite_sheets_obj))
 		icon = sprite_sheets_obj[target_species]
 	else
@@ -211,9 +201,6 @@
 			species_restricted = list(target_species)
 
 	//Set icon
-	if (sprite_sheets_refit && (target_species in sprite_sheets_refit))
-		sprite_sheets[target_species] = sprite_sheets_refit[target_species]
-
 	if (sprite_sheets_obj && (target_species in sprite_sheets_obj))
 		icon = sprite_sheets_obj[target_species]
 	else
@@ -542,9 +529,9 @@
 
 		// Generate and cache the on-mob icon, which is used in update_inv_head().
 		var/body_type = (H && H.species.get_bodytype(H))
-		var/cache_key = "[light_overlay][body_type && sprite_sheets[body_type] ? "_[body_type]" : ""]"
+		var/cache_key = "[light_overlay][body_type && LAZYACCESS(sprite_sheets, body_type) ? body_type : ""]"
 		if(!light_overlay_cache[cache_key])
-			var/use_icon = LAZYACCESS(sprite_sheets,body_type) || 'icons/mob/light_overlays.dmi'
+			var/use_icon = LAZYACCESS(sprite_sheets, body_type) || 'icons/mob/light_overlays.dmi'
 			light_overlay_cache[cache_key] = image(icon = use_icon, icon_state = "[light_overlay]")
 
 	else if(helmet_light)
@@ -736,7 +723,7 @@
 	var/fire_resist = T0C+100
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	allowed = list(/obj/item/weapon/tank/emergency/oxygen)
-	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0)
 	slot_flags = SLOT_OCLOTHING
 	var/blood_overlay_type = "suit"
 	blood_sprite_state = "suitblood" //Defaults to the suit's blood overlay, so that some blood renders instead of no blood.
@@ -764,17 +751,23 @@
 /obj/item/clothing/suit/equipped(var/mob/user, var/slot)
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
-		if((taurized && !istaurtail(H.tail_style)) || (!taurized && istaurtail(H.tail_style)))
-			taurize(user)
+		var/taurtail = istaurtail(H.tail_style)
+		if((taurized && !taurtail) || (!taurized && taurtail))
+			taurize(user, taurtail)
 
 	return ..()
 
-/obj/item/clothing/suit/proc/taurize(var/mob/living/carbon/human/Taur)
-	if(istaurtail(Taur.tail_style))
+/obj/item/clothing/suit/proc/taurize(var/mob/living/carbon/human/Taur, has_taur_tail = FALSE)
+	if(has_taur_tail)
 		var/datum/sprite_accessory/tail/taur/taurtail = Taur.tail_style
 		if(taurtail.suit_sprites && (get_worn_icon_state(slot_wear_suit_str) in cached_icon_states(taurtail.suit_sprites)))
 			icon_override = taurtail.suit_sprites
 			taurized = TRUE
+	// means that if a taur puts on an already taurized suit without a taur sprite
+	// for their taur type, but the previous taur type had a sprite, it stays
+	// taurized and they end up with that taur style which is funny
+	else 
+		taurized = FALSE
 
 	if(!taurized)
 		icon_override = initial(icon_override)
@@ -867,9 +860,7 @@
 /obj/item/clothing/under/New()
 	..()
 	if(worn_state)
-		if(!item_state_slots)
-			item_state_slots = list()
-		item_state_slots[slot_w_uniform_str] = worn_state
+		LAZYSET(item_state_slots, slot_w_uniform_str, worn_state)
 	else
 		worn_state = icon_state
 
@@ -891,9 +882,9 @@
 	var/icon/under_icon
 	if(icon_override)
 		under_icon = icon_override
-	else if(H && sprite_sheets && sprite_sheets[H.species.get_bodytype(H)])
+	else if(H && LAZYACCESS(sprite_sheets, H.species.get_bodytype(H)))
 		under_icon = sprite_sheets[H.species.get_bodytype(H)]
-	else if(item_icons && item_icons[slot_w_uniform_str])
+	else if(LAZYACCESS(item_icons, slot_w_uniform_str))
 		under_icon = item_icons[slot_w_uniform_str]
 	else if (worn_state in cached_icon_states(rolled_down_icon))
 		under_icon = rolled_down_icon
@@ -914,9 +905,9 @@
 	var/icon/under_icon
 	if(icon_override)
 		under_icon = icon_override
-	else if(H && sprite_sheets && sprite_sheets[H.species.get_bodytype(H)])
+	else if(H && LAZYACCESS(sprite_sheets, H.species.get_bodytype(H)))
 		under_icon = sprite_sheets[H.species.get_bodytype(H)]
-	else if(item_icons && item_icons[slot_w_uniform_str])
+	else if(LAZYACCESS(item_icons, slot_w_uniform_str))
 		under_icon = item_icons[slot_w_uniform_str]
 	else if (worn_state in cached_icon_states(rolled_down_sleeves_icon))
 		under_icon = rolled_down_sleeves_icon
@@ -1009,16 +1000,16 @@
 		body_parts_covered &= ~(UPPER_TORSO|ARMS)
 		if(worn_state in cached_icon_states(rolled_down_icon))
 			icon_override = rolled_down_icon
-			item_state_slots[slot_w_uniform_str] = worn_state
+			LAZYSET(item_state_slots, slot_w_uniform_str, worn_state)
 		else
-			item_state_slots[slot_w_uniform_str] = "[worn_state]_d"
+			LAZYSET(item_state_slots, slot_w_uniform_str, "[worn_state]_d")
 
 		to_chat(usr, "<span class='notice'>You roll down your [src].</span>")
 	else
 		body_parts_covered = initial(body_parts_covered)
 		if(icon_override == rolled_down_icon)
 			icon_override = initial(icon_override)
-		item_state_slots[slot_w_uniform_str] = worn_state
+		LAZYSET(item_state_slots, slot_w_uniform_str, worn_state)
 		to_chat(usr, "<span class='notice'>You roll up your [src].</span>")
 	update_clothing_icon()
 
@@ -1042,15 +1033,15 @@
 		body_parts_covered &= ~(ARMS)
 		if(worn_state in cached_icon_states(rolled_down_sleeves_icon))
 			icon_override = rolled_down_sleeves_icon
-			item_state_slots[slot_w_uniform_str] = worn_state
+			LAZYSET(item_state_slots, slot_w_uniform_str, worn_state)
 		else
-			item_state_slots[slot_w_uniform_str] = "[worn_state]_r"
+			LAZYSET(item_state_slots, slot_w_uniform_str, "[worn_state]_r")
 		to_chat(usr, "<span class='notice'>You roll up your [src]'s sleeves.</span>")
 	else
 		body_parts_covered = initial(body_parts_covered)
 		if(icon_override == rolled_down_sleeves_icon)
 			icon_override = initial(icon_override)
-		item_state_slots[slot_w_uniform_str] = worn_state
+		LAZYSET(item_state_slots, slot_w_uniform_str, worn_state)
 		to_chat(usr, "<span class='notice'>You roll down your [src]'s sleeves.</span>")
 	update_clothing_icon()
 

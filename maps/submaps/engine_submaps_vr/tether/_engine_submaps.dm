@@ -14,22 +14,23 @@
 	// annihilate = TRUE - Would wipe out in a rectangular area unfortunately
 	allow_duplicates = FALSE
 
-/datum/map_template/engine/rust
+/*/datum/map_template/engine/rust
 	name = "R-UST Engine"
 	desc = "R-UST Fusion Tokamak Engine"
 	mappath = 'maps/submaps/engine_submaps_vr/tether/engine_rust.dmm'
-
-/datum/map_template/engine/singulo
+*/
+/*/datum/map_template/engine/singulo
 	name = "Singularity Engine"
 	desc = "Lord Singuloth"
 	mappath = 'maps/submaps/engine_submaps_vr/tether/engine_singulo.dmm'
-
+*/
 /datum/map_template/engine/supermatter
 	name = "Supermatter Engine"
 	desc = "Old Faithful Supermatter"
 	mappath = 'maps/submaps/engine_submaps_vr/tether/engine_sme.dmm'
 
-/datum/map_template/engine/tesla
+/*/datum/map_template/engine/tesla
 	name = "Edison's Bane"
 	desc = "The Telsa Engine"
 	mappath = 'maps/submaps/engine_submaps_vr/tether/engine_tesla.dmm'
+	*/

@@ -190,7 +190,7 @@
 	name = "generic sector"
 	desc = "Sector with some stuff in it."
 	icon_state = "sector"
-	anchored = 1
+	anchored = TRUE
 
 // Because of the way these are spawned, they will potentially have their invisibility adjusted by the turfs they are mapped on
 // prior to being moved to the overmap. This blocks that. Use set_invisibility to adjust invisibility as needed instead.
@@ -240,8 +240,7 @@
 
 	testing("Putting overmap on [global.using_map.overmap_z]")
 	var/area/overmap/A = new
-	for (var/square in block(locate(1,1,global.using_map.overmap_z), locate(global.using_map.overmap_size,global.using_map.overmap_size,global.using_map.overmap_z)))
-		var/turf/T = square
+	for(var/turf/T as anything in block(locate(1,1,global.using_map.overmap_z), locate(global.using_map.overmap_size,global.using_map.overmap_size,global.using_map.overmap_z)))
 		if(T.x == 1 || T.y == 1 || T.x == global.using_map.overmap_size || T.y == global.using_map.overmap_size)
 			T = T.ChangeTurf(/turf/unsimulated/map/edge)
 		else

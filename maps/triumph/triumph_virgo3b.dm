@@ -9,13 +9,13 @@
 	amounts of both oxygen and nitrogen. Fortunately, the oxygen is not enough to be combustible in any meaningful way, however \
 	the phoron is desirable by many corporations, including NanoTrasen."
 	current_time = new /datum/time/virgo3b()
-	expected_z_levels = list(
-						Z_LEVEL_SURFACE_LOW,
-						Z_LEVEL_SURFACE_MID,
-						Z_LEVEL_SURFACE_HIGH,
-						Z_LEVEL_SURFACE_MINE,
-						Z_LEVEL_SOLARS
-						)
+//	expected_z_levels = list(
+//						Z_LEVEL_SURFACE_LOW,
+//						Z_LEVEL_SURFACE_MID,
+//						Z_LEVEL_SURFACE_HIGH,
+//						Z_LEVEL_SURFACE_MINE,
+//						Z_LEVEL_SOLARS
+//						)
 	planetary_wall_type = /turf/unsimulated/wall/planetary/virgo3b
 
 /datum/planet/virgo3b/New()

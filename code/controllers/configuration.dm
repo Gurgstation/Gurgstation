@@ -217,7 +217,7 @@ var/list/gamemode_cache = list()
 	var/use_lib_nudge = 0 //Use the C library nudge instead of the python nudge.
 	var/use_overmap = 0
 	
-	var/static/list/engine_map = list("Supermatter Engine", "Edison's Bane")	// Comma separated list of engines to choose from.  Blank means fully random.
+	var/static/list/engine_map = list("Supermatter Engine")	// Comma separated list of engines to choose from.  Blank means fully random.
 
 	// Event settings
 	var/static/expected_round_length = 3 * 60 * 60 * 10 // 3 hours
@@ -298,7 +298,7 @@ var/list/gamemode_cache = list()
 	var/static/list/jukebox_track_files
 
 /datum/configuration/New()
-	var/list/L = typesof(/datum/game_mode) - /datum/game_mode
+	var/list/L = subtypesof(/datum/game_mode)
 	for (var/T in L)
 		// I wish I didn't have to instance the game modes in order to look up
 		// their information, but it is the only way (at least that I know of).

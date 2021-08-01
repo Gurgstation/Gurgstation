@@ -12,11 +12,15 @@
 
 /datum/trait/neutral/shapeshifter/apply(var/datum/species/S,var/mob/living/carbon/human/H)
 	..(S,H)
-	var/datum/absorbed_dna/newDNA = new(H.real_name, H.dna, H.species.name, H.languages, H.identifying_gender, H.flavor_texts, H.modifiers)
+	var/datum/absorbed_dna/newDNA = new(H.real_name, H.dna, H.species.name, H.languages, H.identifying_gender, H.flavor_texts, H.modifiers, H.size_multiplier)
 	
+	newDNA.SetupExtras(H, newDNA)
+
 	if(!H.GetAbsorbedDNA(newDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
 		H.absorbedPreys += newDNA
-	
+		
+
 	H.verbs |= /mob/living/proc/remove_prey_transform
 	H.verbs |= /mob/living/proc/prey_transform
+	H.verbs |= /mob/living/proc/remove_markings
 
