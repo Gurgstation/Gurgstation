@@ -4058,6 +4058,7 @@
 #include "gurgs_content\code\modules\items\drinks_ch.dm"
 #include "gurgs_content\code\modules\items\toys_ch.dm"
 #include "gurgs_content\code\modules\mob\emotes.dm"
+#include "gurgs_content\code\modules\mob\animals\bigdragon_ch.dm"
 #include "gurgs_content\code\modules\mob\animals\goia_ch.dm"
 #include "gurgs_content\code\modules\mob\animals\greatwolf_ch.dm"
 #include "gurgs_content\code\modules\mob\animals\hyena.dm"
