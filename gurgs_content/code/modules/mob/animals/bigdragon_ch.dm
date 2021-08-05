@@ -350,55 +350,63 @@ I think I covered everything.
 		eyes = pick(eye_styles)
 		overlay_colors["Eyes"] = "#[get_random_colour(1)]"
 
-	var/image/I = image(icon, "dragon_under[under][resting? "-rest" : (vore_fullness? "-[vore_fullness]" : null)]", pixel_x = -48)
+	var/image/I = image(icon, "dragon_under[under][resting? "-rest" : (vore_fullness? "-[vore_fullness]" : null)]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Underbelly"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = MOB_PLANE
 	I.layer = MOB_LAYER
 	add_overlay(I)
 
-	I = image(icon, "dragon_body[body][resting? "-rest" : null]", pixel_x = -48)
+	I = image(icon, "dragon_body[body][resting? "-rest" : null]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Body"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = MOB_PLANE
 	I.layer = MOB_LAYER
 	add_overlay(I)
 
-	I = image(icon, "dragon_ears[ears][resting? "-rest" : null]", pixel_x = -48)
+	I = image(icon, "dragon_ears[ears][resting? "-rest" : null]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Ears"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = MOB_PLANE
 	I.layer = MOB_LAYER
 	add_overlay(I)
 
-	I = image(icon, "dragon_mane[mane][resting? "-rest" : null]", pixel_x = -48)
+	I = image(icon, "dragon_mane[mane][resting? "-rest" : null]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Mane"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = MOB_PLANE
 	I.layer = MOB_LAYER
 	add_overlay(I)
 
-	I = image(icon, "dragon_horns[horns][resting? "-rest" : null]", pixel_x = -48)
+	I = image(icon, "dragon_horns[horns][resting? "-rest" : null]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Horns"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = MOB_PLANE
 	I.layer = MOB_LAYER
 	add_overlay(I)
 
-	I = image(icon, "dragon_eyes[eyes][resting? "-rest" : null]", pixel_x = -48)
+	I = image(icon, "dragon_eyes[eyes][resting? "-rest" : null]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Eyes"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = PLANE_LIGHTING_ABOVE
 	add_overlay(I)
 
 	if(enraged)
-		I = image(icon, "dragon_rage", pixel_x = -48)
+		I = image(icon, "dragon_rage")
+		I.pixel_x = -48
 		I.appearance_flags |= PIXEL_SCALE
 		I.plane = MOB_PLANE
 		I.layer = MOB_LAYER
 		add_overlay(I)
 	if(flames)
-		I = image(icon, "dragon_flame[resting? "-rest" : null]", pixel_x = -48)
+		I = image(icon, "dragon_flame[resting? "-rest" : null]")
+		I.pixel_x = -48
 		I.appearance_flags |= PIXEL_SCALE
 		I.plane = PLANE_LIGHTING_ABOVE
 		add_overlay(I)
@@ -419,7 +427,8 @@ I think I covered everything.
 		if("Underbelly")
 			options = underbelly_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_under[option]", dir = 4, pixel_x = -48)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_under[option]", dir = 4)
+				I.pixel_x = -48
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -432,7 +441,8 @@ I think I covered everything.
 		if("Body")
 			options = body_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_body[option]", dir = 4, pixel_x = -48)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_body[option]", dir = 4)
+				I.pixel_x = -48
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -445,7 +455,9 @@ I think I covered everything.
 		if("Ears")
 			options = ear_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_ears[option]", dir = 4, pixel_x = -76, pixel_y = -50)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_ears[option]", dir = 4)
+				I.pixel_x = -76
+				I.pixel_y = -50
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -458,7 +470,9 @@ I think I covered everything.
 		if("Mane")
 			options = mane_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_mane[option]", dir = 4, pixel_x = -76, pixel_y = -50)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_mane[option]", dir = 4)
+				I.pixel_x = -76
+				I.pixel_y = -50
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -471,7 +485,9 @@ I think I covered everything.
 		if("Horns")
 			options = horn_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_horns[option]", dir = 4, pixel_x = -86, pixel_y = -50)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_horns[option]", dir = 4)
+				I.pixel_x = -86
+				I.pixel_y = -50
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -484,7 +500,9 @@ I think I covered everything.
 		if("Eyes")
 			options = eye_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_eyes[option]", dir = 2, pixel_x = -48, pixel_y = -50)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_eyes[option]", dir = 2)
+				I.pixel_x = -48
+				I.pixel_y = -50
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
