@@ -10,8 +10,6 @@
 
 	associated_map_datum = /datum/map_z_level/triumph_lateload/ships
 
-	ztraits = list()
-
 /datum/map_z_level/triumph_lateload/misc
 	name = "Misc"
 	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED
@@ -22,8 +20,6 @@
 	mappath = "maps/triumph/triumph_ships.dmm"
 
 	associated_map_datum = /datum/map_z_level/triumph_lateload/ships
-
-	ztraits = list()
 
 /datum/map_z_level/triumph_lateload/ships
 	name = "Ships"
@@ -39,7 +35,6 @@
 	desc = "A random debris field out in space."
 	mappath = "_maps/planet_levels/140x140/debrisfield.dmm"
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_debrisfield
-	ztraits = list(ZTRAIT_AWAY = TRUE, ZTRAIT_GRAVITY = FALSE)
 
 /datum/map_z_level/triumph_lateload/away_debrisfield
 	name = "Away Mission - Debris Field"
@@ -58,7 +53,6 @@
 	desc = "A Vox Marauder Base, oh no!"
 	mappath = "_maps/planet_levels/140x140/piratebase.dmm"
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_piratebase
-	ztraits = list(ZTRAIT_AWAY = TRUE, ZTRAIT_GRAVITY = FALSE)
 
 /datum/map_z_level/triumph_lateload/away_piratebase
 	name = "Away Mission - Pirate Base"
@@ -72,7 +66,6 @@
 	desc = "Mining Plante. For the miners to get actual supplies."
 	mappath = "_maps/planet_levels/140x140/mining_planet.dmm"
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_mining_planet
-	ztraits = list(ZTRAIT_AWAY = TRUE, ZTRAIT_GRAVITY = TRUE)
 
 /datum/map_z_level/triumph_lateload/away_mining_planet
 	name = "Away Mission - Mining Planet"
@@ -82,7 +75,7 @@
 	. = ..()
 	new /datum/random_map/automata/cave_system/no_cracks(null, 1, 1, Z_LEVEL_MININGPLANET, world.maxx - 4, world.maxy - 4) // Create the mining Z-level.
 	new /datum/random_map/noise/ore/mining_planet(null, 1, 1, Z_LEVEL_MININGPLANET, 64, 64)         // Create the mining ore distribution map.
-
+/*
 // lavaland start
 #include "lavaland/_lavaland.dm"
 /datum/map_template/triumph_lateload/lavaland
@@ -90,7 +83,6 @@
 	desc = "The fabled."
 	mappath = "_maps/planet_levels/140x140/lavaland.dmm"
 	associated_map_datum = /datum/map_z_level/triumph_lateload/lavaland
-	ztraits = list(ZTRAIT_AWAY = TRUE, ZTRAIT_GRAVITY = TRUE)
 
 /datum/map_z_level/triumph_lateload/lavaland
 	name = "Away Mission - Lava Land"
@@ -101,7 +93,7 @@
 	seed_submaps(list(Z_LEVEL_LAVALAND), 40, /area/lavaland/unexplored, /datum/map_template/submap/level_specific/lavaland)
 	new /datum/random_map/noise/ore/lavaland(null, 1, 1, Z_LEVEL_LAVALAND, 64, 64)         // Create the mining ore distribution map.
 	new /datum/random_map/automata/cave_system/no_cracks(null, 1, 1, Z_LEVEL_LAVALAND, world.maxx - 4, world.maxy - 4) // Create the lavaland Z-level.
-
+*/
 
 // Class D Rogue Planet Exploration Zone.
 /datum/map_template/triumph_lateload/away_d_world
@@ -109,7 +101,6 @@
 	desc = "A random unknown planet."
 	mappath = "_maps/planet_levels/140x140/Class_D.dmm"
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_d_world
-	ztraits = list(ZTRAIT_AWAY = TRUE, ZTRAIT_GRAVITY = TRUE)
 
 /datum/map_template/triumph_lateload/away_d_world/on_map_loaded(z)
 	. = ..()
@@ -128,7 +119,6 @@
 	desc = "A random unknown planet."
 	mappath = "_maps/planet_levels/140x140/Class_H.dmm"
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_h_world
-	ztraits = list(ZTRAIT_AWAY = TRUE, ZTRAIT_GRAVITY = TRUE)
 
 /datum/map_template/triumph_lateload/away_h_world/on_map_loaded(z)
 	. = ..()
@@ -147,7 +137,6 @@
 	desc = "A lush Gaia Class Planet."
 	mappath = "_maps/planet_levels/140x140/gaia_planet.dmm"
 	associated_map_datum = /datum/map_z_level/triumph_lateload/gaia_planet
-	ztraits = list(ZTRAIT_AWAY = TRUE, ZTRAIT_GRAVITY = TRUE)
 
 /datum/map_template/triumph_lateload/gaia_planet/on_map_loaded(z)
 	. = ..()
@@ -167,7 +156,6 @@
 	desc = "A Cold Frozen Planet."
 	mappath = "_maps/planet_levels/140x140//frozen_planet.dmm"
 	associated_map_datum = /datum/map_z_level/triumph_lateload/frozen_planet
-	ztraits = list(ZTRAIT_AWAY = TRUE, ZTRAIT_GRAVITY = TRUE)
 
 /datum/map_template/triumph_lateload/frozen_planet/on_map_loaded(z)
 	. = ..()
@@ -186,7 +174,6 @@
 	desc = "A space gas station! Stretch your legs!"
 	mappath = "_maps/planet_levels/140x140/tradeport.dmm"
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_tradeport
-	ztraits = list(ZTRAIT_AWAY = TRUE, ZTRAIT_GRAVITY = FALSE)
 
 /datum/map_z_level/triumph_lateload/away_tradeport
 	name = "Away Mission - Trade Port"
@@ -203,7 +190,7 @@
 		log_game("Extra z-level [src] has no associated map datum")
 		return
 
-	new associated_map_datum(GLOB.using_map, z)
+	new associated_map_datum(using_map, z)
 
 /datum/map_z_level/triumph_lateload
 	z = 0
