@@ -4057,6 +4057,9 @@
 #include "gurgs_content\code\modules\events\metroid.dm"
 #include "gurgs_content\code\modules\items\drinks_ch.dm"
 #include "gurgs_content\code\modules\items\toys_ch.dm"
+#include "gurgs_content\code\modules\map\submaps\class_d.dm"
+#include "gurgs_content\code\modules\map\submaps\class_h.dm"
+#include "gurgs_content\code\modules\map\submaps\frozen_planet.dm"
 #include "gurgs_content\code\modules\mob\emotes.dm"
 #include "gurgs_content\code\modules\mob\animals\goia_ch.dm"
 #include "gurgs_content\code\modules\mob\animals\greatwolf_ch.dm"
@@ -4116,6 +4119,7 @@
 #include "maps\submaps\surface_submaps\wilderness\wilderness_areas.dm"
 #include "maps\triumph\triumph.dm"
 #include "maps\triumph\submaps\_healpers.dm"
+#include "maps\triumph\submaps\_triumph_submaps.dm"
 #include "maps\triumph\submaps\lavaland\_lavaland_area.dm"
 #include "maps\~map_system\maps.dm"
 // END_INCLUDE

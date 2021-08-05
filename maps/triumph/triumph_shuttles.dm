@@ -325,6 +325,7 @@
 	name = "civilian jump console"
 	shuttle_tag = "Civilian Transport"
 
+/*
 // PIRATE SHIP (Yaya!)
 /datum/shuttle/autodock/overmap/pirate
 	name = "Pirate Skiff"
@@ -343,7 +344,7 @@
 /obj/machinery/computer/shuttle_control/explore/pirate
 	name = "short jump raiding console"
 	shuttle_tag = "Pirate Skiff"
-
+*/
 // Mining Shuttle
 
 /datum/shuttle/autodock/overmap/mining
