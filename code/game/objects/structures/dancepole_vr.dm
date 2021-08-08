@@ -2,22 +2,10 @@
 /obj/structure/dancepole
 	name = "dance pole"
 	desc = "Engineered for your entertainment"
-	icon = 'icons/obj/casino.dmi'
-	icon_state = "dance_pole"
+	icon = 'icons/obj/objects_vr.dmi'
+	icon_state = "dancepole"
 	density = FALSE
 	anchored = TRUE
-	density = 0
-
-/obj/structure/dancepole/attack_hand(mob/user)
-	dance(user)
-	user.spin(32,2)
-	..()
-
-/obj/structure/dancepole/proc/dance(mob/user)
-	if(layer == BELOW_MOB_LAYER)
-		layer = ABOVE_MOB_LAYER
-	else
-		layer = BELOW_MOB_LAYER
 
 /obj/structure/dancepole/attackby(var/obj/item/O as obj, var/mob/user as mob)
 	if(O.is_screwdriver())

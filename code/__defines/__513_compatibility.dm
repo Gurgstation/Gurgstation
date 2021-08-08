@@ -14,8 +14,6 @@
 
 #define arctan(x) (arcsin(x/sqrt(1+x*x)))
 
-#define between(x, y, z) max(min(y, z), x)
-
 //////////////////////////////////////////////////
 
 #else
@@ -27,7 +25,5 @@
 #define TAN(x) tan(x)
 
 #define ATAN2(x, y) arctan(x, y)
-
-#define between(x, y, z) clamp(y, x, z)
 
 #endif

@@ -17,11 +17,11 @@
 	initial_flooring = /decl/flooring/lava // Defining this in case someone DOES step on lava and survive. Somehow.
 
 /turf/simulated/floor/lava/outdoors
-	outdoors = OUTDOORS_YES
+	outdoors = TRUE
 
 // For maximum pedantry.
 /turf/simulated/floor/lava/Initialize()
-	if(!is_outdoors())
+	if(!outdoors)
 		name = "magma"
 	update_icon()
 	update_light()

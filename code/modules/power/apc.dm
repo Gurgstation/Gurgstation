@@ -75,16 +75,6 @@ GLOBAL_LIST_EMPTY(apcs)
 /obj/machinery/power/apc/alarms_hidden
 	alarms_hidden = TRUE
 
-/obj/machinery/power/apc/angled
-	icon = 'icons/obj/wall_machines_angled.dmi'
-
-/obj/machinery/power/apc/angled/hidden
-	alarms_hidden = TRUE
-
-/obj/machinery/power/apc/angled/offset_apc()
-	pixel_x = (dir & 3) ? 0 : (dir == 4 ? 24 : -24)
-	pixel_y = (dir & 3) ? (dir == 1 ? 20 : -20) : 0
-
 /obj/machinery/power/apc
 	name = "area power controller"
 	desc = "A control terminal for the area electrical systems."
@@ -195,9 +185,8 @@ GLOBAL_LIST_EMPTY(apcs)
 	if(building)
 		set_dir(ndir)
 
-	if(!pixel_x && !pixel_y)
-		offset_apc()
-	
+	pixel_x = (dir & 3)? 0 : (dir == 4 ? 26 : -26) //VOREStation Edit -> 24 to 26
+	pixel_y = (dir & 3)? (dir ==1 ? 26 : -26) : 0 //VOREStation Edit -> 24 to 26
 	if(building)
 		area = get_area(src)
 		area.apc = src
@@ -239,14 +228,11 @@ GLOBAL_LIST_EMPTY(apcs)
 
 	return ..()
 
-/obj/machinery/power/apc/proc/offset_apc()
-	pixel_x = (dir & 3) ? 0 : (dir == 4 ? 26 : -26)
-	pixel_y = (dir & 3) ? (dir == 1 ? 26 : -26) : 0
-
 // APCs are pixel-shifted, so they need to be updated.
 /obj/machinery/power/apc/set_dir(new_dir)
 	..()
-	offset_apc()
+	pixel_x = (dir & 3)? 0 : (dir == 4 ? 24 : -24)
+	pixel_y = (dir & 3)? (dir ==1 ? 24 : -24) : 0
 	if(terminal)
 		terminal.disconnect_from_network()
 		terminal.set_dir(dir) // Terminal has same dir as master

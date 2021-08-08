@@ -61,7 +61,6 @@
 	ambience = AMBIENCE_SIF
 	always_unpowered = TRUE
 	flags = AREA_FLAG_IS_NOT_PERSISTENT
-	outdoors = OUTDOORS_YES
 
 // The area near the outpost, so POIs don't show up right next to the outpost.
 /area/surface/outside/plains/outpost
@@ -164,12 +163,10 @@
 /area/surface/outpost/mining_main
 	name = "North Mining Outpost"
 	icon_state = "outpost_mine_main"
-	outdoors = OUTDOORS_NO
 
 /area/surface/outpost/mining_main/exterior
 	name = "North Mining Outpost Exterior"
 	icon_state = "outpost_mine_main"
-	outdoors = OUTDOORS_YES
 
 /area/surface/outpost/mining_main/crew_area
 	name = "North Mining Crew Area"
@@ -208,7 +205,6 @@
 
 /area/surface/outpost/research
 	icon_state = "outpost_research"
-	outdoors = OUTDOORS_NO
 
 /area/surface/outpost/research/xenoresearch
 	name = "\improper Xenoresearch"
@@ -295,7 +291,6 @@
 /area/surface/outpost/main
 	name = "\improper Main Outpost"
 	icon_state = "Sleep"
-	outdoors = OUTDOORS_NO
 
 /area/surface/outpost/main/gen_room
 	name = "\improper Main Outpost SMES"
@@ -376,7 +371,6 @@
 /area/outpost/mining_station
 	icon_state = "outpost_mine_main"
 	name = "Mining Station"
-	outdoors = OUTDOORS_NO
 
 /area/outpost/mining_station/dorms
 	name = "Mining Station Dormitory"

@@ -52,16 +52,14 @@
 /obj/machinery/ion_engine/Initialize()
 	. = ..()
 	controller = new(src)
-	add_glow()
+
+	var/image/i = image('icons/turf/shuttle_parts_vr.dmi', "ion_overlay") // VOREStation Edit
+	i.plane = PLANE_LIGHTING_ABOVE // VOREStation Edit
+	add_overlay(i) // VOREStation Edit
 
 /obj/machinery/ion_engine/Destroy()
 	QDEL_NULL(controller)
 	. = ..()
-
-/obj/machinery/ion_engine/proc/add_glow()
-	var/image/i = image('icons/turf/shuttle_parts_vr.dmi', "ion_overlay") // VOREStation Edit
-	i.plane = PLANE_LIGHTING_ABOVE // VOREStation Edit
-	add_overlay(i) // VOREStation Edit
 
 /obj/machinery/ion_engine/proc/get_status()
 	. = list()

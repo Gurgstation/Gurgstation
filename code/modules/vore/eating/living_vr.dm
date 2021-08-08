@@ -39,6 +39,18 @@
 // Hook for generic creation of stuff on new creatures
 //
 /hook/living_new/proc/vore_setup(mob/living/M)
+	M.verbs += /mob/living/proc/escapeOOC
+	M.verbs += /mob/living/proc/lick
+	M.verbs += /mob/living/proc/smell
+	M.verbs += /mob/living/proc/switch_scaling
+	M.verbs += /mob/living/proc/vorebelly_printout
+	if(M.no_vore) //If the mob isn't supposed to have a stomach, let's not give it an insidepanel so it can make one for itself, or a stomach.
+		return TRUE
+	M.vorePanel = new(M)
+	M.verbs += /mob/living/proc/insidePanel
+	// Gurg ADD: Import Chomp liquid bellies
+	M.verbs += /mob/living/proc/vore_transfer_reagents //CHOMP If mob doesnt have bellies it cant use this verb for anything
+
 	//Tries to load prefs if a client is present otherwise gives freebie stomach
 	spawn(2 SECONDS)
 		if(M)
@@ -883,7 +895,7 @@
 	dispvoreprefs += "<b>Giving liquids:</b> [give_reagents ? "Enabled" : "Disabled"]<br>"	//CHOMPstation edit
 	dispvoreprefs += "<b>Can be stepped on/over:</b> [step_mechanics_pref ? "Allowed" : "Disallowed"]<br>"
 	dispvoreprefs += "<b>Can be picked up:</b> [pickup_pref ? "Allowed" : "Disallowed"]<br>"
-	user << browse("<html><head><title>Vore prefs: [src]</title></head><body><center>[dispvoreprefs]</center></body></html>", "window=[name]mvp;size=300x400;can_resize=1;can_minimize=0")
+	user << browse("<html><head><title>Vore prefs: [src]</title></head><body><center>[dispvoreprefs]</center></body></html>", "window=[name]mvp;size=200x300;can_resize=0;can_minimize=0")
 	onclose(user, "[name]")
 	return
 
@@ -925,59 +937,3 @@
 				to_chat(src, "<span class='notice'><b>[EL]:</b></span>")
 				for(var/msg in B.emote_lists[EL])
 					to_chat(src, "<span class='notice'>[msg]</span>")
-
-/**
- * Small helper component to manage the vore panel HUD icon
- */
-/datum/component/vore_panel
-	var/obj/screen/vore_panel/screen_icon
-
-/datum/component/vore_panel/Initialize()
-	if(!isliving(parent))
-		return COMPONENT_INCOMPATIBLE
-	. = ..()
-
-/datum/component/vore_panel/RegisterWithParent()
-	. = ..()
-	RegisterSignal(parent, COMSIG_MOB_CLIENT_LOGIN, .proc/create_mob_button)
-	var/mob/living/owner = parent
-	if(owner.client)
-		create_mob_button(parent)
-	owner.verbs |= /mob/living/proc/insidePanel
-	owner.vorePanel = new(owner)
-
-/datum/component/vore_panel/UnregisterFromParent()
-	. = ..()
-	UnregisterSignal(parent, COMSIG_MOB_CLIENT_LOGIN)
-	var/mob/living/owner = parent
-	if(screen_icon)
-		owner?.client?.screen -= screen_icon
-		UnregisterSignal(screen_icon, COMSIG_CLICK)
-		qdel_null(screen_icon)
-	owner.verbs -= /mob/living/proc/insidePanel
-	qdel_null(owner.vorePanel)
-
-/datum/component/vore_panel/proc/create_mob_button(mob/user)
-	var/datum/hud/HUD = user.hud_used
-	if(!screen_icon)
-		screen_icon = new()
-		RegisterSignal(screen_icon, COMSIG_CLICK, .proc/vore_panel_click)
-	screen_icon.icon = HUD.ui_style
-	screen_icon.color = HUD.ui_color
-	screen_icon.alpha = HUD.ui_alpha
-	LAZYADD(HUD.other_important, screen_icon)
-	user.client?.screen += screen_icon
-
-/datum/component/vore_panel/proc/vore_panel_click(source, location, control, params, user)
-	var/mob/living/owner = user
-	if(istype(owner) && owner.vorePanel)
-		INVOKE_ASYNC(owner.vorePanel, .proc/tgui_interact, user)
-
-/**
- * Screen object for vore panel
- */
-/obj/screen/vore_panel
-	name = "vore panel"
-	icon = 'icons/mob/screen/midnight.dmi'
-	icon_state = "vore"
-	screen_loc = ui_smallquad

@@ -10,12 +10,10 @@ var/global/list/map_sectors = list()
 /turf/unsimulated/map
 	icon = 'icons/turf/space.dmi'
 	icon_state = "map"
-	alpha = 200
 
 /turf/unsimulated/map/edge
 	opacity = 1
 	density = TRUE
-	alpha = 255
 	var/map_is_to_my
 	var/turf/unsimulated/map/edge/wrap_buddy
 
@@ -77,7 +75,6 @@ var/global/list/map_sectors = list()
 		if(x == global.using_map.overmap_size)
 			I.pixel_x = 5*i + 2
 		add_overlay(I)
-	AddElement(/datum/element/turf_z_transparency)
 
 /turf/unsimulated/map/Entered(var/atom/movable/O, var/atom/oldloc)
 	..()

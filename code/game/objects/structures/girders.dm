@@ -15,7 +15,6 @@
 	var/datum/material/reinf_material
 	var/reinforcing = 0
 	var/applies_material_colour = 1
-	var/wall_type = /turf/simulated/wall
 
 /obj/structure/girder/New(var/newloc, var/material_key)
 	..(newloc)
@@ -250,7 +249,7 @@
 		wall_fake = 1
 
 	var/turf/Tsrc = get_turf(src)
-	Tsrc.ChangeTurf(wall_type)
+	Tsrc.ChangeTurf(/turf/simulated/wall)
 	var/turf/simulated/wall/T = get_turf(src)
 	T.set_material(M, reinf_material, girder_material)
 	if(wall_fake)
@@ -398,7 +397,7 @@
 		if(RCD_FLOORWALL)
 			to_chat(user, span("notice", "You finish a wall."))
 			// This is mostly the same as using on a floor. The girder's material is preserved, however.
-			T.ChangeTurf(wall_type)
+			T.ChangeTurf(/turf/simulated/wall)
 			var/turf/simulated/wall/new_T = get_turf(src) // Ref to the wall we just built.
 			// Apparently set_material(...) for walls requires refs to the material singletons and not strings.
 			// This is different from how other material objects with their own set_material(...) do it, but whatever.
@@ -413,9 +412,3 @@
 			qdel(src)
 			return TRUE
 
-/obj/structure/girder/bay
-	wall_type = /turf/simulated/wall/bay
-
-/obj/structure/girder/eris
-	wall_type = /turf/simulated/wall/eris
-	
