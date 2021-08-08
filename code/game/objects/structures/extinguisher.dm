@@ -2,23 +2,26 @@
 	name = "extinguisher cabinet"
 	desc = "A small wall mounted cabinet designed to hold a fire extinguisher."
 	icon = 'icons/obj/closet.dmi'
-	icon_state = "extinguisher" // map preview sprite
+	icon_state = "extinguisher_closed"
 	layer = ABOVE_WINDOW_LAYER
 	anchored = TRUE
 	density = FALSE
 	var/obj/item/weapon/extinguisher/has_extinguisher
 	var/opened = 0
 
-/obj/structure/extinguisher_cabinet/Initialize(var/mapload, var/dir, var/building = 0)
-	. = ..()
+/obj/structure/extinguisher_cabinet/New(var/loc, var/dir, var/building = 0)
+	..()
 
 	if(building)
+		if(loc)
+			src.loc = loc
+
 		pixel_x = (dir & 3)? 0 : (dir == 4 ? -27 : 27)
 		pixel_y = (dir & 3)? (dir ==1 ? -27 : 27) : 0
+		update_icon()
+		return
 	else
 		has_extinguisher = new/obj/item/weapon/extinguisher(src)
-	
-	update_icon()
 
 /obj/structure/extinguisher_cabinet/attackby(obj/item/O, mob/user)
 	if(isrobot(user))
@@ -76,17 +79,13 @@
 	update_icon()
 
 /obj/structure/extinguisher_cabinet/update_icon()
-	var/suffix = "empty"
+	if(!opened)
+		icon_state = "extinguisher_closed"
+		return
 	if(has_extinguisher)
 		if(istype(has_extinguisher, /obj/item/weapon/extinguisher/mini))
-			suffix = "mini"
+			icon_state = "extinguisher_mini"
 		else
-			suffix = "standard"
-	
-	icon_state = "[initial(icon_state)][opened ? "" : "_closed"]_[suffix]"
-
-/obj/structure/extinguisher_cabinet/old
-	name = "extinguisher cabinet"
-	desc = "A classic small wall mounted cabinet designed to hold a fire extinguisher."
-	icon = 'icons/obj/closet.dmi'
-	icon_state = "oldextinguisher" // map preview sprite
+			icon_state = "extinguisher_full"
+	else
+		icon_state = "extinguisher_empty"

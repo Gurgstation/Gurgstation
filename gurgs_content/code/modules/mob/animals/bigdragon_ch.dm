@@ -920,6 +920,8 @@ I think I covered everything.
 	if(!can_see_target(the_target) && vision_required)
 		return
 
+	if(istype(the_target, /mob/zshadow))
+		return // no
 
 	if(isliving(the_target))
 		var/mob/living/L = the_target
@@ -973,7 +975,7 @@ I think I covered everything.
 	if(last_warning + 1 MINUTE < world.time)
 		warnings = 0	//calm down
 
-/datum/ai_holder/simple_mob/healbelly/retaliate/dragon/react_to_attack(atom/movable/attacker, ignore_timers = FALSE)
+/datum/ai_holder/simple_mob/healbelly/retaliate/dragon/react_to_attack(atom/movable/attacker)
 	if(holder.stat)
 		return
 	if(istype(holder,/mob/living/simple_mob/vore/bigdragon))

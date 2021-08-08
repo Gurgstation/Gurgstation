@@ -1,5 +1,5 @@
 /datum/material/glass
-	name = MAT_GLASS
+	name = "glass"
 	stack_type = /obj/item/stack/material/glass
 	flags = MATERIAL_BRITTLE
 	icon_colour = "#00E1FF"
@@ -94,7 +94,7 @@
 	return (hardness > 35) //todo
 
 /datum/material/glass/reinforced
-	name = MAT_RGLASS
+	name = "rglass"
 	display_name = "reinforced glass"
 	stack_type = /obj/item/stack/material/glass/reinforced
 	flags = MATERIAL_BRITTLE
@@ -114,7 +114,7 @@
 	rod_product = null
 
 /datum/material/glass/phoron
-	name = MAT_PGLASS
+	name = "borosilicate glass"
 	display_name = "borosilicate glass"
 	stack_type = /obj/item/stack/material/glass/phoronglass
 	flags = MATERIAL_BRITTLE
@@ -128,7 +128,7 @@
 	rod_product = /obj/item/stack/material/glass/phoronrglass
 
 /datum/material/glass/phoron/reinforced
-	name = MAT_RPGLASS
+	name = "reinforced borosilicate glass"
 	display_name = "reinforced borosilicate glass"
 	stack_type = /obj/item/stack/material/glass/phoronrglass
 	stack_origin_tech = list(TECH_MATERIAL = 5)

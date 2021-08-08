@@ -1,9 +1,9 @@
-/datum/recipe/ovenfries
+/datum/recipe/ovenchips
 	appliance = OVEN
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/rawsticks
 	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/ovenfries
+	result = /obj/item/weapon/reagent_containers/food/snacks/ovenchips
 
 //Roasts
 //---------------
@@ -512,22 +512,12 @@
 
 /datum/recipe/pancakes
 	appliance = OVEN
-	reagents = list("milk" = 5, "sugar" = 15)
+	fruit = list("berries" = 2)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/sliceable/flatdough,
 		/obj/item/weapon/reagent_containers/food/snacks/sliceable/flatdough
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/pancakes
-
-/datum/recipe/pancakes/berry
-	appliance = OVEN
-	fruit = list("berries" = 2)
-	reagents = list("milk" = 5, "sugar" = 15)
-	items = list(
-		/obj/item/weapon/reagent_containers/food/snacks/sliceable/flatdough,
-		/obj/item/weapon/reagent_containers/food/snacks/sliceable/flatdough
-	)
-	result = /obj/item/weapon/reagent_containers/food/snacks/pancakes/berry
 
 /datum/recipe/lasagna
 	appliance = OVEN

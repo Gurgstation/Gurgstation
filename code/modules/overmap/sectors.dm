@@ -35,7 +35,6 @@
 
 	var/has_distress_beacon
 	var/list/levels_for_distress
-	var/list/unowned_areas // areas we don't own despite them being present on our z
 
 /obj/effect/overmap/visitable/Initialize()
 	. = ..()
@@ -138,12 +137,7 @@
 
 //Helper for init.
 /obj/effect/overmap/visitable/proc/check_ownership(obj/object)
-	var/area/A = get_area(object)
-	if(A in SSshuttles.shuttle_areas)
-		return 0
-	if(is_type_in_list(A, unowned_areas))
-		return 0	
-	if(get_z(object) in map_z)
+	if((get_z(object) in map_z) && !(get_area(object) in SSshuttles.shuttle_areas))
 		return 1
 
 //If shuttle_name is false, will add to generic waypoints; otherwise will add to restricted. Does not do checks.

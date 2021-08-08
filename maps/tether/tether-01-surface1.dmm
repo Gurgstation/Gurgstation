@@ -3469,10 +3469,7 @@
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/tram)
 "afH" = (
-/obj/effect/floor_decal/techfloor/orange{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/techfloor/grid,
+/turf/simulated/floor/maglev,
 /area/tether/surfacebase/tram)
 "afI" = (
 /obj/item/device/radio/intercom{
@@ -11609,9 +11606,6 @@
 /obj/effect/floor_decal/techfloor/orange{
 	dir = 4
 	},
-/obj/machinery/light{
-	dir = 4
-	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tether/surfacebase/tram)
 "atD" = (
@@ -11863,12 +11857,11 @@
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/tram)
 "aua" = (
-/obj/effect/shuttle_landmark{
-	base_area = /area/tether/surfacebase/tram;
-	base_turf = /turf/simulated/floor/tiled/techfloor/grid;
-	docking_controller = null;
-	landmark_tag = "escape_station";
-	name = "Tether Surface Base"
+/obj/effect/floor_decal/techfloor/orange{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/tether/surfacebase/tram)
@@ -13346,7 +13339,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals9{
 	dir = 8
 	},
-/obj/machinery/vending/snlvend,
+/obj/machinery/vending/snack,
 /turf/simulated/floor/tiled/monotile,
 /area/tether/surfacebase/lowernorthhall)
 "awr" = (
@@ -13573,7 +13566,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals9{
 	dir = 8
 	},
-/obj/machinery/vending/radren,
+/obj/machinery/vending/coffee,
 /turf/simulated/floor/tiled/monotile,
 /area/tether/surfacebase/lowernorthhall)
 "awG" = (
@@ -21283,7 +21276,14 @@
 /turf/simulated/floor/tiled/steel_grid,
 /area/tether/surfacebase/tram)
 "aJq" = (
-/turf/simulated/floor/maglev,
+/obj/effect/shuttle_landmark{
+	base_area = /area/tether/surfacebase/tram;
+	base_turf = /turf/simulated/floor/tiled/techfloor/grid;
+	docking_controller = null;
+	landmark_tag = "escape_station";
+	name = "Tether Surface Base"
+	},
+/turf/simulated/floor/tiled/techfloor/grid,
 /area/tether/surfacebase/tram)
 "aJr" = (
 /obj/effect/floor_decal/borderfloor{
@@ -31947,7 +31947,7 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/tether/surfacebase/funny/mimeoffice)
 "cWS" = (
-/obj/effect/floor_decal/emblem/nt2,
+/obj/item/device/radio/beacon,
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/surface_one_hall)
 "cXW" = (
@@ -33125,13 +33125,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/lowernorthhall)
-"gQH" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/machinery/door/firedoor,
-/obj/structure/window/reinforced,
-/turf/simulated/floor/plating,
-/area/crew_quarters/visitor_laundry)
 "gVe" = (
 /obj/effect/floor_decal/borderfloor{
 	dir = 4
@@ -33674,10 +33667,6 @@
 "igw" = (
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/lowernorthhall)
-"ikG" = (
-/obj/effect/floor_decal/emblem/nt3,
-/turf/simulated/floor/tiled,
-/area/tether/surfacebase/surface_one_hall)
 "ilZ" = (
 /obj/structure/cable/green{
 	d1 = 2;
@@ -33734,7 +33723,6 @@
 /obj/effect/floor_decal/steeldecal/steel_decals4{
 	dir = 10
 	},
-/obj/item/device/radio/beacon,
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/surface_one_hall)
 "iue" = (
@@ -33967,10 +33955,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/tether/surfacebase/security/brig)
-"jAo" = (
-/obj/effect/floor_decal/arrivals/right,
-/turf/simulated/floor/tiled/monotile,
-/area/tether/surfacebase/surface_one_hall)
 "jAq" = (
 /obj/structure/table/standard,
 /obj/effect/floor_decal/borderfloor{
@@ -34431,10 +34415,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/tether/surfacebase/surface_one_hall)
-"kBW" = (
-/obj/effect/floor_decal/arrivals,
-/turf/simulated/floor/tiled/monotile,
 /area/tether/surfacebase/surface_one_hall)
 "kCz" = (
 /obj/structure/railing{
@@ -36699,10 +36679,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/lower/vacant_site)
-"rjh" = (
-/obj/effect/floor_decal/emblem/nt1,
-/turf/simulated/floor/tiled,
-/area/tether/surfacebase/surface_one_hall)
 "rnt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 8
@@ -38616,7 +38592,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals9{
 	dir = 8
 	},
-/obj/machinery/vending/radren,
+/obj/machinery/vending/coffee,
 /turf/simulated/floor/tiled/monotile,
 /area/tether/surfacebase/surface_one_hall)
 "yaU" = (
@@ -39207,11 +39183,11 @@ aah
 aah
 yiS
 aHo
-aHL
-aHL
 aad
-aHL
-aHL
+aad
+aad
+aad
+aad
 aad
 aad
 aad
@@ -39349,13 +39325,13 @@ aah
 aah
 yiS
 aah
-aHL
 aad
 aad
-aHL
 aad
 aad
-aHL
+aad
+aad
+aad
 aad
 aad
 aad
@@ -39491,7 +39467,7 @@ aah
 aah
 yiS
 aah
-aHL
+aad
 aad
 aad
 aad
@@ -39635,10 +39611,10 @@ yiS
 aah
 aah
 aad
-aHL
 aad
 aad
-aHL
+aad
+aad
 aad
 aad
 aad
@@ -39779,8 +39755,8 @@ aah
 aad
 aad
 aad
-aHL
-aHL
+aad
+aad
 aad
 aad
 aad
@@ -39924,7 +39900,7 @@ aad
 aad
 aad
 aad
-aHL
+aad
 aad
 aad
 aad
@@ -40062,11 +40038,11 @@ aah
 baU
 baU
 aad
-aHL
 aad
 aad
 aad
-aHL
+aad
+aad
 aad
 aHL
 aad
@@ -40206,7 +40182,7 @@ baU
 aad
 aad
 aad
-aHL
+aad
 aad
 aad
 aad
@@ -40493,7 +40469,7 @@ aad
 aad
 aad
 aad
-aHL
+aad
 aad
 aad
 aad
@@ -40632,7 +40608,7 @@ baU
 aad
 aad
 aad
-aHL
+aad
 aad
 aad
 aad
@@ -53253,7 +53229,7 @@ awN
 axt
 aym
 azf
-rjh
+ayG
 byn
 uUP
 tVd
@@ -53537,7 +53513,7 @@ awO
 axu
 auR
 azh
-ikG
+ayG
 vDb
 aBY
 aCP
@@ -53963,7 +53939,7 @@ awQ
 axx
 auR
 azk
-kBW
+ayG
 tNJ
 agM
 aCS
@@ -54105,7 +54081,7 @@ auR
 auR
 ayn
 azd
-jAo
+ayG
 vDb
 aAR
 agM
@@ -54997,7 +54973,7 @@ rnt
 aUP
 aUP
 sch
-gQH
+aWn
 baU
 baU
 baU
@@ -55664,8 +55640,8 @@ aFU
 atA
 atA
 atA
+atA
 aJp
-aub
 aub
 aub
 aub
@@ -55673,8 +55649,8 @@ wXW
 atA
 atA
 atA
+atA
 mtl
-auc
 auc
 auc
 auc
@@ -55803,13 +55779,13 @@ aud
 aud
 aud
 aud
-aua
 aud
 aud
 aud
 aud
 aud
 aud
+aJq
 aud
 aud
 aud
@@ -55937,34 +55913,34 @@ baU
 aah
 aah
 auD
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
 auD
 aad
 aad
@@ -56079,34 +56055,34 @@ baU
 aah
 aah
 auD
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
 auD
 aad
 aad
@@ -56789,34 +56765,34 @@ aad
 aad
 aah
 auD
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
-aJq
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
 auD
 aad
 aad
@@ -56931,34 +56907,34 @@ aad
 aad
 aah
 auD
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
-aud
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
+afH
 auD
 aad
 aad
@@ -57073,34 +57049,34 @@ aad
 aad
 aah
 auD
-afH
-afH
-afH
-afH
-atC
-afH
-afH
-afH
-afH
-aue
-atC
-afH
-afH
-afH
-atC
-afH
-afH
-afH
-atC
-aue
-afH
-afH
-afH
-atC
-afH
-afH
-afH
-afH
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
 auD
 aad
 aad
@@ -57214,36 +57190,36 @@ aad
 aad
 aad
 aad
-aty
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-atx
-aty
+auD
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+aud
+auD
 aad
 aad
 aad
@@ -57356,36 +57332,36 @@ aad
 aad
 aad
 aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
+auD
+atC
+atC
+atC
+atC
+aua
+atC
+atC
+atC
+atC
+aue
+aua
+atC
+atC
+atC
+aua
+atC
+atC
+atC
+aua
+aue
+atC
+atC
+atC
+aua
+atC
+atC
+atC
+atC
+auD
 aad
 aad
 aad
@@ -57498,36 +57474,36 @@ aad
 aad
 aad
 aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
-aad
+aty
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+atx
+aty
 aad
 aad
 aad

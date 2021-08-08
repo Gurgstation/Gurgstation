@@ -51,30 +51,30 @@
 	var/image/I
 
 	if(!density)
-		I = image(wall_masks, "[material.icon_base]fwall_open")
+		I = image('icons/turf/wall_masks.dmi', "[material.icon_base]fwall_open")
 		I.color = material.icon_colour
 		add_overlay(I)
 		return
 
 	for(var/i = 1 to 4)
-		I = image(wall_masks, "[material.icon_base][wall_connections[i]]", dir = 1<<(i-1))
+		I = image('icons/turf/wall_masks.dmi', "[material.icon_base][wall_connections[i]]", dir = 1<<(i-1))
 		I.color = material.icon_colour
 		add_overlay(I)
 
 	if(reinf_material)
 		if(construction_stage != null && construction_stage < 6)
-			I = image(wall_masks, "reinf_construct-[construction_stage]")
+			I = image('icons/turf/wall_masks.dmi', "reinf_construct-[construction_stage]")
 			I.color = reinf_material.icon_colour
 			add_overlay(I)
 		else
-			if("[reinf_material.icon_reinf]0" in cached_icon_states(wall_masks))
+			if("[reinf_material.icon_reinf]0" in cached_icon_states('icons/turf/wall_masks.dmi'))
 				// Directional icon
 				for(var/i = 1 to 4)
-					I = image(wall_masks, "[reinf_material.icon_reinf][wall_connections[i]]", dir = 1<<(i-1))
+					I = image('icons/turf/wall_masks.dmi', "[reinf_material.icon_reinf][wall_connections[i]]", dir = 1<<(i-1))
 					I.color = reinf_material.icon_colour
 					add_overlay(I)
-			else if("[reinf_material.icon_reinf]" in cached_icon_states(wall_masks))
-				I = image(wall_masks, reinf_material.icon_reinf)
+			else
+				I = image('icons/turf/wall_masks.dmi', reinf_material.icon_reinf)
 				I.color = reinf_material.icon_colour
 				add_overlay(I)
 
@@ -104,23 +104,15 @@
 	if(!material)
 		return
 	var/list/dirs = list()
-	var/inrange = orange(src, 1)
-	for(var/turf/simulated/wall/W in inrange)
+	for(var/turf/simulated/wall/W in orange(src, 1))
 		if(!W.material)
 			continue
 		if(propagate)
 			W.update_connections()
 			W.update_icon()
-		if(can_join_with_wall(W))
+		if(can_join_with(W))
 			dirs += get_dir(src, W)
-	for(var/obj/structure/low_wall/WF in inrange)
-		if(can_join_with_low_wall(WF))
-			dirs += get_dir(src, WF)
 
-	special_wall_connections(dirs, inrange)
-	wall_connections = dirs_to_corner_states(dirs)
-
-/turf/simulated/wall/proc/special_wall_connections(list/dirs, list/inrange)
 	if(material.icon_base == "hull") // Could be improved...
 		var/additional_dirs = 0
 		for(var/direction in alldirs)
@@ -133,7 +125,10 @@
 				if ((additional_dirs & diag_dir) == diag_dir)
 					dirs += diag_dir
 
-/turf/simulated/wall/proc/can_join_with_wall(var/turf/simulated/wall/W)
+	wall_connections = dirs_to_corner_states(dirs)
+
+/turf/simulated/wall/proc/can_join_with(var/turf/simulated/wall/W)
+	//VOREStation Edit Start
 	//No blending if no material
 	if(!material || !W.material)
 		return 0
@@ -143,7 +138,5 @@
 	//Also blend if they have the same iconbase
 	if(material.icon_base == W.material.icon_base)
 		return 1
+	//VOREStation Edit End
 	return 0
-
-/turf/simulated/wall/proc/can_join_with_low_wall(var/obj/structure/low_wall/WF)
-	return FALSE

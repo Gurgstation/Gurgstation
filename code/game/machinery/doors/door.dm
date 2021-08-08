@@ -32,9 +32,6 @@
 	var/block_air_zones = 1 //If set, air zones cannot merge across the door even when it is opened.
 	var/close_door_at = 0 //When to automatically close the door, if possible
 
-	var/anim_length_before_density = 3
-	var/anim_length_before_finalize = 7
-
 	//Multi-tile doors
 	dir = EAST
 	var/width = 1
@@ -431,10 +428,10 @@
 	do_animate("opening")
 	icon_state = "door0"
 	set_opacity(0)
-	sleep(anim_length_before_density)
+	sleep(3)
 	src.density = FALSE
 	update_nearby_tiles()
-	sleep(anim_length_before_finalize)
+	sleep(7)
 	src.layer = open_layer
 	explosion_resistance = 0
 	update_icon()
@@ -456,12 +453,12 @@
 
 	close_door_at = 0
 	do_animate("closing")
-	sleep(anim_length_before_density)
+	sleep(3)
 	src.density = TRUE
 	explosion_resistance = initial(explosion_resistance)
 	src.layer = closed_layer
 	update_nearby_tiles()
-	sleep(anim_length_before_finalize)
+	sleep(7)
 	update_icon()
 	if(visible && !glass)
 		set_opacity(1)	//caaaaarn!
