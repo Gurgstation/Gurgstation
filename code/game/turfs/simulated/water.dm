@@ -9,6 +9,7 @@
 	edge_blending_priority = -1
 	movement_cost = 4
 	outdoors = TRUE
+	flags = TURF_ACID_IMMUNE
 
 	layer = WATER_FLOOR_LAYER
 
