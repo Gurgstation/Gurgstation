@@ -10,7 +10,7 @@
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "n" = (
-/obj/structure/closet/crate/carp,
+/obj/random/mob/semirandom_mob_spawner/carp,
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "p" = (
