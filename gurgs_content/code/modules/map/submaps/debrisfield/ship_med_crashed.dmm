@@ -101,7 +101,7 @@
 /area/space/debrisfield/explored)
 "v" = (
 /obj/structure/table/rack,
-/obj/item/reagent_containers/chem_disp_cartridge/clonexadone,
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/clonexadone,
 /turf/simulated/shuttle/floor/airless,
 /area/space/debrisfield/explored)
 "w" = (
@@ -141,11 +141,11 @@
 /area/space/debrisfield/explored)
 "D" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/storage/firstaid/adv,
+/obj/structure/bed/roller/adv,
 /turf/simulated/shuttle/plating/airless,
 /area/space/debrisfield/explored)
 "E" = (
-/obj/item/material/shard/shrapnel,
+/obj/item/weapon/material/shard/shrapnel,
 /turf/simulated/mineral/floor/vacuum,
 /area/space/debrisfield/explored)
 "F" = (
@@ -168,15 +168,15 @@
 /area/space/debrisfield/explored)
 "J" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/material/shard/shrapnel,
+/obj/item/weapon/material/shard/shrapnel,
 /turf/simulated/shuttle/plating/airless,
 /area/space/debrisfield/explored)
 "K" = (
-/obj/item/material/shard/shrapnel,
+/obj/item/weapon/material/shard/shrapnel,
 /turf/simulated/shuttle/floor/airless,
 /area/space/debrisfield/explored)
 "L" = (
-/obj/mob_spawner/carp,
+/obj/structure/closet/crate/carp,
 /turf/template_noop,
 /area/space/debrisfield/explored)
 "M" = (
@@ -184,12 +184,12 @@
 /area/space/debrisfield/explored)
 "V" = (
 /obj/structure/table/rack,
-/obj/item/reagent_containers/chem_disp_cartridge/dexalin_p,
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/dexalin_p,
 /turf/simulated/shuttle/floor/airless,
 /area/space/debrisfield/explored)
 "W" = (
 /obj/structure/table/rack,
-/obj/item/reagent_containers/chem_disp_cartridge/peridaxon,
+/obj/item/weapon/storage/pill_bottle/peridaxon,
 /turf/simulated/shuttle/floor/airless,
 /area/space/debrisfield/explored)
 
