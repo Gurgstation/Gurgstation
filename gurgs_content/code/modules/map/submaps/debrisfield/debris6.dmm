@@ -8,7 +8,7 @@
 /area/space/debrisfield/explored)
 "J" = (
 /obj/structure/lattice,
-/obj/mob_spawner/carp,
+/obj/structure/closet/crate/carp,
 /turf/space,
 /area/space/debrisfield/explored)
 

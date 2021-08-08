@@ -13,29 +13,29 @@
 /area/space/debrisfield/explored)
 "e" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
-/obj/item/reagent_containers/food/snacks/carpmeat,
+/obj/item/weapon/reagent_containers/food/snacks/carpmeat,
+/obj/item/weapon/reagent_containers/food/snacks/carpmeat,
+/obj/item/weapon/reagent_containers/food/snacks/carpmeat,
+/obj/item/weapon/reagent_containers/food/snacks/carpmeat,
+/obj/item/weapon/reagent_containers/food/snacks/carpmeat,
+/obj/item/weapon/reagent_containers/food/snacks/carpmeat,
+/obj/item/weapon/reagent_containers/food/snacks/carpmeat,
+/obj/item/weapon/reagent_containers/food/snacks/carpmeat,
+/obj/item/weapon/reagent_containers/food/snacks/carpmeat,
+/obj/item/weapon/reagent_containers/food/snacks/carpmeat,
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "f" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/condiment/coldsauce{
+/obj/item/weapon/reagent_containers/food/condiment/coldsauce{
 	pixel_x = 4;
 	pixel_y = 16
 	},
-/obj/item/reagent_containers/food/condiment/ketchup,
-/obj/item/reagent_containers/food/condiment/hotsauce{
+/obj/item/weapon/reagent_containers/food/condiment/ketchup,
+/obj/item/weapon/reagent_containers/food/condiment/hotsauce{
 	pixel_x = 8
 	},
-/obj/item/reagent_containers/food/condiment/soysauce{
+/obj/item/weapon/reagent_containers/food/condiment/soysauce{
 	pixel_x = -8
 	},
 /turf/simulated/floor/airless,
@@ -54,24 +54,24 @@
 /area/space/debrisfield/explored)
 "j" = (
 /obj/structure/closet/crate/freezer,
-/obj/item/reagent_containers/food/snacks/taco,
-/obj/item/reagent_containers/food/snacks/taco,
-/obj/item/reagent_containers/food/snacks/taco,
-/obj/item/reagent_containers/food/snacks/hotdog,
-/obj/item/reagent_containers/food/snacks/hotdog,
-/obj/item/reagent_containers/food/snacks/cheeseburrito,
-/obj/item/reagent_containers/food/snacks/cheeseburrito,
+/obj/item/weapon/reagent_containers/food/snacks/taco,
+/obj/item/weapon/reagent_containers/food/snacks/taco,
+/obj/item/weapon/reagent_containers/food/snacks/taco,
+/obj/item/weapon/reagent_containers/food/snacks/old/hotdog,
+/obj/item/weapon/reagent_containers/food/snacks/old/hotdog,
+/obj/item/weapon/reagent_containers/food/snacks/cheeseburrito,
+/obj/item/weapon/reagent_containers/food/snacks/cheeseburrito,
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "k" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/taco,
-/obj/item/reagent_containers/food/snacks/taco,
+/obj/item/weapon/reagent_containers/food/snacks/taco,
+/obj/item/weapon/reagent_containers/food/snacks/taco,
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "l" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/snacks/taco,
+/obj/item/weapon/reagent_containers/food/snacks/taco,
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "m" = (

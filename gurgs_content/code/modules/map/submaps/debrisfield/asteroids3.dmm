@@ -6,7 +6,7 @@
 /turf/template_noop,
 /area/space/debrisfield/explored)
 "v" = (
-/obj/mob_spawner/carp/hard,
+/obj/structure/closet/crate/carp,
 /turf/template_noop,
 /area/space/debrisfield/explored)
 

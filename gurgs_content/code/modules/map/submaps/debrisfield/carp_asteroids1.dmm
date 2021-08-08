@@ -6,7 +6,7 @@
 /turf/simulated/mineral/vacuum,
 /area/space/debrisfield/explored)
 "c" = (
-/obj/mob_spawner/carp,
+/obj/structure/closet/crate/carp,
 /turf/template_noop,
 /area/space/debrisfield/explored)
 
