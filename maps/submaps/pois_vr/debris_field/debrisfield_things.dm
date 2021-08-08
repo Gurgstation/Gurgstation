@@ -1,3 +1,30 @@
+/obj/tether_away_spawner // Whoever didn't bring this over, why. GURGS EDIT
+	name = "RENAME ME, JERK"
+	desc = "Spawns the mobs!"
+	icon = 'icons/mob/screen1.dmi'
+	icon_state = "x"
+	invisibility = 101
+	mouse_opacity = 0
+	density = 0
+	anchored = 1
+
+	//Weighted with values (not %chance, but relative weight)
+	//Can be left value-less for all equally likely
+	var/list/mobs_to_pick_from
+
+	//When the below chance fails, the spawner is marked as depleted and stops spawning
+	var/prob_spawn = 100	//Chance of spawning a mob whenever they don't have one
+	var/prob_fall = 5		//Above decreases by this much each time one spawns
+
+	//Settings to help mappers/coders have their mobs do what they want in this case
+	var/faction				//To prevent infighting if it spawns various mobs, set a faction
+	var/atmos_comp			//TRUE will set all their survivability to be within 20% of the current air
+	//var/guard				//# will set the mobs to remain nearby their spawn point within this dist
+
+	//Internal use only
+	var/mob/living/simple_mob/my_mob
+	var/depleted = FALSE
+
 /obj/tether_away_spawner/debrisfield
 	atmos_comp = FALSE
 	prob_spawn = 100
