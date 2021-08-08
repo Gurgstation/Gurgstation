@@ -19,7 +19,8 @@
 	verbs |= /mob/living/proc/lick
 	verbs |= /mob/living/proc/smell
 	verbs |= /mob/living/proc/switch_scaling
-	
+	verbs |= /mob/living/proc/vore_transfer_reagents
+
 	if(!no_vore)
 		verbs |= /mob/living/proc/vorebelly_printout
 		if(!vorePanel)
