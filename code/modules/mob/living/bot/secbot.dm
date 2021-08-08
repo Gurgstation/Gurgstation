@@ -195,7 +195,7 @@
 		react_to_attack(attacker)
 	..()
 
-/mob/living/bot/secbot/proc/react_to_attack(mob/attacker)
+/mob/living/bot/secbot/proc/react_to_attack(mob/attacker, ignore_timers = FALSE)
 	if(!on || !retaliates)		// We don't want it to react if it's off or doesn't care
 		return
 
