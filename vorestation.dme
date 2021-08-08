@@ -4122,6 +4122,7 @@
 #include "gurgs_content\code\modules\vore\vorepanel.dm"
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
+#include "maps\expedition_vr\space\_debrisfield.dm"
 #include "maps\gateway_archive_vr\blackmarketpackers.dm"
 #include "maps\gateway_vr\snowfield.dm"
 #include "maps\offmap_vr\om_ships\abductor.dm"

@@ -61,26 +61,22 @@
 /area/space/debrisfield/explored)
 "ap" = (
 /obj/structure/table/rack,
-/obj/item/shovel/spade,
-/obj/item/shovel/spade,
-/obj/item/material/minihoe,
-/obj/item/material/minihoe,
-/obj/item/material/knife/machete/hatchet,
-/obj/item/material/knife/machete/hatchet,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/analyzer/plant_analyzer,
-/obj/item/analyzer/plant_analyzer,
+/obj/item/weapon/shovel/spade,
+/obj/item/weapon/shovel/spade,
+/obj/item/weapon/material/minihoe,
+/obj/item/weapon/material/minihoe,
+/obj/item/weapon/material/knife/machete/hatchet,
+/obj/item/weapon/material/knife/machete/hatchet,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/device/analyzer/plant_analyzer,
+/obj/item/device/analyzer/plant_analyzer,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aq" = (
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/white/airless,
-/area/space/debrisfield/explored)
-"ar" = (
-/mob/living/simple_mob/hostile/tomato/space,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "as" = (
@@ -120,32 +116,32 @@
 /turf/simulated/wall/thull,
 /area/space/debrisfield/explored)
 "az" = (
-/obj/item/slime_scanner,
-/obj/item/slime_scanner,
+/obj/item/device/slime_scanner,
+/obj/item/device/slime_scanner,
 /obj/structure/table/reinforced,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aA" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/energy/taser/xeno,
-/obj/item/melee/baton/slime/loaded,
+/obj/item/weapon/gun/energy/taser/xeno,
+/obj/item/weapon/melee/baton/slime/loaded,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aB" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/chem_disp_cartridge/plantbgone,
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/plantbgone,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aC" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/food/snacks/monkeycube,
-/obj/item/reagent_containers/food/snacks/monkeycube/farwacube,
-/obj/item/reagent_containers/food/snacks/monkeycube/neaeracube,
-/obj/item/reagent_containers/food/snacks/monkeycube/sarucube,
-/obj/item/reagent_containers/food/snacks/monkeycube/sobakacube,
-/obj/item/reagent_containers/food/snacks/monkeycube/sparracube,
-/obj/item/reagent_containers/food/snacks/monkeycube/stokcube,
-/obj/item/reagent_containers/food/snacks/monkeycube/wolpincube,
+/obj/item/weapon/reagent_containers/food/snacks/monkeycube,
+/obj/item/weapon/reagent_containers/food/snacks/monkeycube/farwacube,
+/obj/item/weapon/reagent_containers/food/snacks/monkeycube/neaeracube,
+/obj/item/weapon/reagent_containers/food/snacks/monkeycube/sarucube,
+/obj/item/weapon/reagent_containers/food/snacks/monkeycube/sobakacube,
+/obj/item/weapon/reagent_containers/food/snacks/monkeycube/sparracube,
+/obj/item/weapon/reagent_containers/food/snacks/monkeycube/stokcube,
+/obj/item/weapon/reagent_containers/food/snacks/monkeycube/wolpincube,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aD" = (
@@ -159,16 +155,12 @@
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "aF" = (
-/obj/item/reagent_containers/spray/plantbgone,
+/obj/item/weapon/reagent_containers/spray/plantbgone,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aG" = (
-/obj/item/reagent_containers/spray/chemsprayer,
+/obj/item/weapon/reagent_containers/spray/chemsprayer,
 /turf/simulated/floor/tiled/white/airless,
-/area/space/debrisfield/explored)
-"aH" = (
-/obj/mob_spawner/carp,
-/turf/template_noop,
 /area/space/debrisfield/explored)
 "aI" = (
 /obj/effect/decal/remains,
@@ -190,7 +182,7 @@
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aK" = (
-/obj/item/gun/energy/temperature,
+/obj/item/weapon/gun/energy/temperature,
 /obj/structure/table/rack,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -219,7 +211,7 @@
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aO" = (
-/obj/item/gun/energy/decloner,
+/obj/item/weapon/gun/energy/decloner,
 /obj/structure/table/rack,
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
@@ -239,19 +231,19 @@
 /obj/item/stack/material/phoron{
 	amount = 10
 	},
-/obj/item/flashlight/pen,
+/obj/item/device/flashlight/pen,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aR" = (
 /obj/structure/table/reinforced,
-/obj/item/paper_bin,
-/obj/item/pen/blue,
-/obj/item/reagent_containers/chem_disp_cartridge/rezadone,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen/blue,
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/rezadone,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aS" = (
 /obj/structure/table/reinforced,
-/obj/item/folder/white,
+/obj/item/weapon/folder/white,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aT" = (
@@ -266,7 +258,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/item/material/shard,
+/obj/item/weapon/material/shard,
 /obj/item/clothing/mask/breath,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
@@ -277,11 +269,11 @@
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aW" = (
-/obj/item/airlock_electronics,
+/obj/item/weapon/airlock_electronics,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aX" = (
-/obj/item/material/shard,
+/obj/item/weapon/material/shard,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "aY" = (
@@ -311,17 +303,17 @@
 /area/space/debrisfield/explored)
 "bd" = (
 /obj/structure/bed,
-/obj/item/bedsheet/blue,
+/obj/item/weapon/bedsheet/blue,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "be" = (
 /obj/structure/bed,
-/obj/item/bedsheet/green,
+/obj/item/weapon/bedsheet/green,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "bf" = (
 /obj/structure/bed,
-/obj/item/bedsheet/rd,
+/obj/item/weapon/bedsheet/rd,
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "bg" = (
@@ -382,7 +374,7 @@
 /turf/simulated/floor/tiled/white/airless,
 /area/space/debrisfield/explored)
 "bp" = (
-/obj/item/tool/prybar/red,
+/obj/item/weapon/tool/prybar/red,
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "bq" = (
@@ -665,7 +657,7 @@ ad
 ad
 ad
 ad
-ar
+ad
 ad
 ad
 ad
@@ -765,7 +757,7 @@ aa
 aE
 ad
 ad
-ar
+ad
 ad
 ad
 ad
@@ -875,7 +867,7 @@ ad
 ak
 ad
 ad
-ar
+ad
 ad
 ab
 ad
@@ -899,13 +891,13 @@ aa
 aa
 ab
 af
-ar
-ar
+ad
+ad
 ad
 ad
 ad
 ab
-ar
+ad
 ad
 ad
 ab
@@ -930,7 +922,7 @@ ad
 am
 am
 ad
-ar
+ad
 av
 ad
 ad
@@ -983,7 +975,7 @@ ai
 ad
 ao
 ao
-ar
+ad
 ad
 ab
 ad
@@ -1008,7 +1000,7 @@ aa
 ab
 aj
 aF
-ar
+ad
 ad
 ad
 ad
@@ -1037,7 +1029,7 @@ aF
 aG
 aI
 ad
-ar
+ad
 ak
 ab
 ad
@@ -1196,7 +1188,7 @@ aa
 aa
 aa
 aa
-aH
+aa
 aa
 aa
 ab
