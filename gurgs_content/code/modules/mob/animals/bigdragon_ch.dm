@@ -1012,7 +1012,7 @@ I think I covered everything.
 	if(last_warning + 1 MINUTE < world.time)
 		warnings = 0	//calm down
 
-/datum/ai_holder/simple_mob/healbelly/retaliate/dragon/react_to_attack(atom/movable/attacker)
+/datum/ai_holder/simple_mob/healbelly/retaliate/dragon/react_to_attack(atom/movable/attacker, ignore_timers = FALSE)
 	if(holder.stat)
 		return
 	if(istype(holder,/mob/living/simple_mob/vore/bigdragon))
