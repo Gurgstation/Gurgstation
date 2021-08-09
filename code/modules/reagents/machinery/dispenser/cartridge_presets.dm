@@ -115,7 +115,8 @@
 	spawn_reagent = "watermelonjuice"
 /obj/item/weapon/reagent_containers/chem_disp_cartridge/lemon
 	spawn_reagent = "lemonjuice"
-
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/gelatin
+	spawn_reagent = "gelatin"
 // Bar, coffee
 /obj/item/weapon/reagent_containers/chem_disp_cartridge/coffee
 	spawn_reagent = "coffee"
