@@ -24,6 +24,16 @@
 
 */
 
+//jglitch: Johnny Deserador
+/obj/item/clothing/glasses/sunglasses/fluff/doublesun
+	name = "Two Sunglasses Taped Together"
+	desc = "Wow this dumbass chimera really taped together two sunglasses. finally sunglasses 2, i've been waiting for sunglasses the sunglassening"
+
+	icon_state = "sun"
+	icon = 'gurgs_content/icons/obj/doublesunglasses.dmi'
+	item_state = "dualsunglasses"
+	icon_override = 'gurgs_content/icons/obj/doublesunglasses.dmi'
+
 //Natje: Awen Henry
 /obj/item/clothing/head/fluff/wolfgirl
     name = "Wolfgirl Hat"
@@ -1351,6 +1361,7 @@ Departamental Swimsuits, for general use
 	icon = 'icons/vore/custom_clothes_vr.dmi'
 	icon_state = "alfonso_visor"
 	icon_override = 'icons/vore/custom_onmob_vr.dmi'
+
 
 //JackNoir413: Mor Xaina
 /obj/item/clothing/under/fluff/morunder
