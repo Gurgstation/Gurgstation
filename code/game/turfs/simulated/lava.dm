@@ -18,11 +18,11 @@
 	flags = TURF_ACID_IMMUNE
 
 /turf/simulated/floor/lava/outdoors
-	outdoors = TRUE
+	outdoors = OUTDOORS_YES
 
 // For maximum pedantry.
 /turf/simulated/floor/lava/Initialize()
-	if(!outdoors)
+	if(!is_outdoors())
 		name = "magma"
 	update_icon()
 	update_light()

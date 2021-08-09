@@ -250,7 +250,7 @@
 		vore_fx(M)
 		//Stop AI processing in bellies
 		if(M.ai_holder)
-			M.ai_holder.go_sleep()
+			M.ai_holder.handle_eaten()
 
 // Called whenever an atom leaves this belly
 /obj/belly/Exited(atom/movable/thing, atom/OldLoc)
@@ -417,8 +417,8 @@
 	formatted_message = replacetext(raw_message, "%belly", lowertext(name))
 	formatted_message = replacetext(formatted_message, "%pred", owner)
 	formatted_message = replacetext(formatted_message, "%prey", english_list(contents))
-	formatted_message = replacetext(formatted_message, "%count", contents.len)
 	formatted_message = replacetext(formatted_message, "%countprey", living_count)
+	formatted_message = replacetext(formatted_message, "%count", contents.len)
 
 	return("<span class='warning'>[formatted_message]</span>")
 
@@ -689,14 +689,14 @@
 	struggle_outer_message = replacetext(struggle_outer_message, "%pred", owner)
 	struggle_outer_message = replacetext(struggle_outer_message, "%prey", R)
 	struggle_outer_message = replacetext(struggle_outer_message, "%belly", lowertext(name))
-	struggle_outer_message = replacetext(struggle_outer_message, "%count", contents.len)
 	struggle_outer_message = replacetext(struggle_outer_message, "%countprey", living_count)
+	struggle_outer_message = replacetext(struggle_outer_message, "%count", contents.len)
 
 	struggle_user_message = replacetext(struggle_user_message, "%pred", owner)
 	struggle_user_message = replacetext(struggle_user_message, "%prey", R)
 	struggle_user_message = replacetext(struggle_user_message, "%belly", lowertext(name))
-	struggle_user_message = replacetext(struggle_user_message, "%count", contents.len)
 	struggle_user_message = replacetext(struggle_user_message, "%countprey", living_count)
+	struggle_user_message = replacetext(struggle_user_message, "%count", contents.len)
 
 	struggle_outer_message = "<span class='alert'>[struggle_outer_message]</span>"
 	struggle_user_message = "<span class='alert'>[struggle_user_message]</span>"
