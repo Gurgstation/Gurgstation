@@ -12,7 +12,7 @@
 /area/poi_h/explored)
 "k" = (
 /obj/structure/table/marble,
-/obj/item/flame/candle/candelabra/everburn{
+/obj/item/weapon/flame/candle/candelabra/everburn{
 	icon_state = "candelabra_lit";
 	lit = 1
 	},
@@ -25,11 +25,10 @@
 /area/poi_h/explored)
 "m" = (
 /obj/structure/table/marble,
-/obj/item/flame/candle/candelabra/everburn{
+/obj/item/weapon/flame/candle/candelabra/everburn{
 	icon_state = "candelabra_lit";
 	lit = 1
 	},
-/obj/item/clothing/accessory/necklace,
 /turf/simulated/floor/outdoors/beach/sand/dirt/classh,
 /area/poi_h/explored)
 "n" = (
@@ -47,7 +46,7 @@
 /area/poi_h/explored)
 "w" = (
 /obj/structure/table/marble,
-/obj/item/flame/candle/candelabra/everburn{
+/obj/item/weapon/flame/candle/candelabra/everburn{
 	icon_state = "candelabra_lit";
 	lit = 1
 	},
@@ -60,7 +59,7 @@
 /area/poi_h/explored)
 "H" = (
 /obj/structure/table/marble,
-/obj/item/flame/candle/candelabra/everburn{
+/obj/item/weapon/flame/candle/candelabra/everburn{
 	icon_state = "candelabra_lit";
 	lit = 1
 	},
@@ -89,7 +88,7 @@
 /area/poi_h/explored)
 "S" = (
 /obj/structure/table/marble,
-/obj/item/flame/candle/candelabra/everburn{
+/obj/item/weapon/flame/candle/candelabra/everburn{
 	icon_state = "candelabra_lit";
 	lit = 1
 	},
@@ -104,7 +103,7 @@
 /area/poi_h/explored)
 "U" = (
 /obj/structure/table/marble,
-/obj/item/flame/candle/candelabra/everburn{
+/obj/item/weapon/flame/candle/candelabra/everburn{
 	icon_state = "candelabra_lit";
 	lit = 1
 	},

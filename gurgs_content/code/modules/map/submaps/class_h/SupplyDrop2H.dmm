@@ -23,14 +23,14 @@
 /turf/simulated/floor/reinforced,
 /area/poi_h/explored)
 "h" = (
-/obj/item/flashlight,
+/obj/item/device/flashlight,
 /turf/simulated/floor/reinforced,
 /area/poi_h/explored)
 "i" = (
 /obj/structure/loot_pile/maint/technical,
-/obj/item/gps/internal/poi,
-/obj/item/cell/device/weapon/empty,
-/obj/item/cell/device/weapon/empty,
+/obj/item/device/gps/internal/poi,
+/obj/item/weapon/cell/device/weapon/empty,
+/obj/item/weapon/cell/device/weapon/empty,
 /turf/simulated/floor/reinforced,
 /area/poi_h/explored)
 "j" = (

@@ -14,7 +14,7 @@
 /area/poi_h/explored)
 "U" = (
 /obj/random/multiple/minevault,
-/obj/item/moneybag/vault,
+/obj/item/weapon/moneybag/vault,
 /turf/simulated/floor/outdoors/beach/sand/dirt/classh,
 /area/poi_h/explored)
 "Z" = (

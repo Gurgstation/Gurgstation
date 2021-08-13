@@ -53,7 +53,7 @@
 /turf/simulated/floor/reinforced,
 /area/submap/AuxiliaryResearchFacility)
 "aX" = (
-/mob/living/simple_mob/humanoid/merc/ranged/garand,
+/obj/random/mob/merc,
 /turf/simulated/floor/tiled/dark,
 /area/submap/AuxiliaryResearchFacility)
 "aZ" = (
@@ -128,7 +128,7 @@
 /area/submap/AuxiliaryResearchFacility)
 "cA" = (
 /obj/structure/table/woodentable,
-/obj/item/storage/box/cups,
+/obj/item/weapon/storage/box/cups,
 /turf/simulated/floor/lino,
 /area/submap/AuxiliaryResearchFacility)
 "cF" = (
@@ -179,7 +179,7 @@
 /area/submap/AuxiliaryResearchFacility)
 "dC" = (
 /obj/structure/table/rack,
-/obj/item/gun/projectile/shotgun/doublebarrel,
+/obj/item/weapon/gun/projectile/shotgun/doublebarrel,
 /turf/simulated/floor/tiled/steel,
 /area/submap/AuxiliaryResearchFacility)
 "dI" = (
@@ -555,7 +555,7 @@
 /area/submap/AuxiliaryResearchFacility)
 "jN" = (
 /obj/structure/table/woodentable,
-/obj/item/reagent_containers/food/drinks/glass2/pitcher,
+/obj/item/weapon/reagent_containers/food/drinks/glass2/pitcher,
 /turf/simulated/floor/lino,
 /area/submap/AuxiliaryResearchFacility)
 "jT" = (
@@ -624,7 +624,7 @@
 /area/submap/AuxiliaryResearchFacility)
 "lE" = (
 /obj/structure/bed/double,
-/obj/item/bedsheet/orangedouble,
+/obj/item/weapon/bedsheet/orangedouble,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/classh,
 /area/submap/AuxiliaryResearchFacility)
@@ -670,7 +670,7 @@
 /area/submap/AuxiliaryResearchFacility)
 "mU" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/ionrifle/pistol,
+/obj/item/weapon/gun/energy/ionrifle/pistol,
 /obj/effect/floor_decal/corner/red/border{
 	dir = 1
 	},
@@ -904,7 +904,7 @@
 /area/submap/AuxiliaryResearchFacility)
 "tC" = (
 /obj/structure/table/rack,
-/obj/item/storage/box/shotgunammo/large,
+/obj/item/weapon/storage/box/shotgunammo/large,
 /turf/simulated/floor/tiled/steel,
 /area/submap/AuxiliaryResearchFacility)
 "tO" = (
@@ -946,9 +946,9 @@
 "uI" = (
 /obj/structure/table/rack,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/grenade/concussion/frag,
-/obj/item/grenade/concussion/frag,
-/obj/item/grenade/concussion/frag,
+/obj/item/weapon/grenade/concussion,
+/obj/item/weapon/grenade/concussion,
+/obj/item/weapon/grenade/concussion,
 /turf/simulated/floor/tiled/steel,
 /area/submap/AuxiliaryResearchFacility)
 "uK" = (
@@ -960,7 +960,6 @@
 /area/submap/AuxiliaryResearchFacility)
 "uM" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_mob/mechanical/cyber_horror/vox,
 /turf/simulated/floor/tiled/white,
 /area/submap/AuxiliaryResearchFacility)
 "uO" = (
@@ -976,7 +975,7 @@
 /area/submap/AuxiliaryResearchFacility)
 "uZ" = (
 /obj/structure/bed/double,
-/obj/item/bedsheet/orangedouble,
+/obj/item/weapon/bedsheet/orangedouble,
 /turf/simulated/floor/wood/classh,
 /area/submap/AuxiliaryResearchFacility)
 "vc" = (
@@ -989,17 +988,15 @@
 /turf/simulated/floor/tiled/steel,
 /area/submap/AuxiliaryResearchFacility)
 "vq" = (
-/mob/living/simple_mob/mechanical/cyber_horror,
 /turf/simulated/floor/reinforced,
 /area/submap/AuxiliaryResearchFacility)
 "vY" = (
 /obj/effect/decal/cleanable/blood,
-/mob/living/simple_mob/mechanical/cyber_horror/tajaran,
 /turf/simulated/floor/tiled/white,
 /area/submap/AuxiliaryResearchFacility)
 "wc" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/cell/apc,
+/obj/item/weapon/cell/apc,
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/submap/AuxiliaryResearchFacility)
 "wg" = (
@@ -1059,7 +1056,7 @@
 /turf/simulated/floor/wood,
 /area/submap/AuxiliaryResearchFacility)
 "xX" = (
-/obj/item/storage/box/shotgunammo,
+/obj/item/weapon/storage/box/shotgunammo,
 /turf/simulated/floor/tiled/dark,
 /area/submap/AuxiliaryResearchFacility)
 "xZ" = (
@@ -1208,7 +1205,7 @@
 /area/submap/AuxiliaryResearchFacility)
 "Ca" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/gun/energy/taser/xeno,
+/obj/item/weapon/gun/energy/taser/xeno,
 /turf/simulated/floor/tiled/white,
 /area/submap/AuxiliaryResearchFacility)
 "Cl" = (
@@ -1331,7 +1328,7 @@
 /turf/simulated/floor/plating,
 /area/submap/AuxiliaryResearchFacility)
 "Gp" = (
-/mob/living/simple_mob/humanoid/merc/ranged/deagle,
+/obj/random/mob/merc,
 /turf/simulated/floor/outdoors/dirt,
 /area/template_noop)
 "Gr" = (
@@ -1339,7 +1336,6 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/mob/living/simple_mob/mechanical/cyber_horror/plasma_cyber_horror,
 /turf/simulated/floor/reinforced,
 /area/submap/AuxiliaryResearchFacility)
 "Gt" = (
@@ -1429,7 +1425,7 @@
 /area/template_noop)
 "Il" = (
 /obj/structure/table/woodentable,
-/obj/item/flashlight/lamp/green,
+/obj/item/device/flashlight/lamp/green,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/classh,
 /area/submap/AuxiliaryResearchFacility)
@@ -1556,7 +1552,6 @@
 "KN" = (
 /obj/effect/floor_decal/rust,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_mob/mechanical/cyber_horror/corgi,
 /turf/simulated/floor/reinforced,
 /area/submap/AuxiliaryResearchFacility)
 "KS" = (
@@ -1578,7 +1573,7 @@
 /turf/simulated/floor/lino,
 /area/submap/AuxiliaryResearchFacility)
 "Lm" = (
-/obj/item/reagent_containers/glass/beaker,
+/obj/item/weapon/reagent_containers/glass/beaker,
 /turf/simulated/floor/tiled/white,
 /area/submap/AuxiliaryResearchFacility)
 "Lp" = (
@@ -1631,7 +1626,6 @@
 /area/submap/AuxiliaryResearchFacility)
 "Me" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_mob/mechanical/cyber_horror,
 /turf/simulated/floor/tiled/white,
 /area/submap/AuxiliaryResearchFacility)
 "Mq" = (
@@ -1667,7 +1661,7 @@
 /area/submap/AuxiliaryResearchFacility)
 "MV" = (
 /obj/structure/table/woodentable,
-/obj/item/flashlight/lamp/green,
+/obj/item/device/flashlight/lamp/green,
 /turf/simulated/floor/wood/classh,
 /area/submap/AuxiliaryResearchFacility)
 "Na" = (
@@ -1760,7 +1754,6 @@
 /area/template_noop)
 "OO" = (
 /obj/effect/floor_decal/rust,
-/mob/living/simple_mob/mechanical/cyber_horror/cat_cyber_horror,
 /turf/simulated/floor/reinforced,
 /area/submap/AuxiliaryResearchFacility)
 "OU" = (
@@ -1781,7 +1774,7 @@
 /area/template_noop)
 "Pg" = (
 /obj/structure/table/standard,
-/obj/item/inducer/sci,
+/obj/item/weapon/inducer/sci,
 /obj/effect/floor_decal/corner/purple/border{
 	dir = 8
 	},
@@ -1796,7 +1789,7 @@
 	dir = 1
 	},
 /obj/structure/curtain/open/shower,
-/obj/item/soap,
+/obj/item/weapon/soap,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/freezer,
@@ -1863,10 +1856,10 @@
 /area/submap/AuxiliaryResearchFacility)
 "RQ" = (
 /obj/structure/table/rack,
-/obj/item/grenade/spawnergrenade/manhacks/mercenary,
-/obj/item/grenade/spawnergrenade/manhacks/mercenary,
-/obj/item/grenade/spawnergrenade/manhacks/mercenary,
-/obj/item/grenade/spawnergrenade/manhacks/mercenary,
+/obj/item/weapon/grenade/spawnergrenade/manhacks/mercenary,
+/obj/item/weapon/grenade/spawnergrenade/manhacks/mercenary,
+/obj/item/weapon/grenade/spawnergrenade/manhacks/mercenary,
+/obj/item/weapon/grenade/spawnergrenade/manhacks/mercenary,
 /obj/effect/floor_decal/corner/red/border{
 	dir = 1
 	},
@@ -1930,7 +1923,7 @@
 /area/template_noop)
 "Tr" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_mob/humanoid/merc/ranged/garand,
+/obj/random/mob/merc,
 /turf/simulated/floor/tiled/dark,
 /area/submap/AuxiliaryResearchFacility)
 "Tt" = (
@@ -2124,7 +2117,7 @@
 /area/submap/AuxiliaryResearchFacility)
 "YP" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/sniperrifle,
+/obj/item/weapon/gun/energy/sniperrifle,
 /turf/simulated/floor/tiled/steel,
 /area/submap/AuxiliaryResearchFacility)
 "YS" = (
