@@ -10,7 +10,7 @@
 /turf/simulated/mineral/vacuum,
 /area/poi_d/explored)
 "u" = (
-/obj/item/storage/bag/ore,
+/obj/item/weapon/storage/bag/ore,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "K" = (
@@ -26,7 +26,7 @@
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "R" = (
-/obj/item/flashlight/lantern,
+/obj/item/device/flashlight/lantern,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "S" = (
