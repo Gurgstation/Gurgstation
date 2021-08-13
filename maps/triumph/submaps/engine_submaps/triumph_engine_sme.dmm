@@ -146,9 +146,7 @@
 	name = "Reactor Vent";
 	p_open = 0
 	},
-/turf/simulated/floor/reinforced/nitrogen{
-	initial_gas_mix = "n2=82.1472;TEMP=293.15"
-	},
+/turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/engine_room)
 "fp" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -401,9 +399,7 @@
 /obj/machinery/camera/network/engine{
 	dir = 4
 	},
-/turf/simulated/floor/reinforced/nitrogen{
-	initial_gas_mix = "n2=82.1472;TEMP=293.15"
-	},
+/turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/engine_room)
 "nG" = (
 /obj/machinery/button/remote/blast_door{
@@ -555,9 +551,7 @@
 /obj/effect/floor_decal/industrial/warning/cee{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced/nitrogen{
-	initial_gas_mix = "n2=82.1472;TEMP=293.15"
-	},
+/turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/engine_room)
 "uo" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -653,9 +647,7 @@
 	dir = 4;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/reinforced/nitrogen{
-	initial_gas_mix = "n2=82.1472;TEMP=293.15"
-	},
+/turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/engine_room)
 "wa" = (
 /obj/machinery/atmospherics/binary/circulator{
@@ -945,9 +937,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/reinforced/nitrogen{
-	initial_gas_mix = "n2=82.1472;TEMP=293.15"
-	},
+/turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/engine_room)
 "Fa" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
@@ -1295,9 +1285,7 @@
 	dir = 1;
 	icon_state = "warningcorner"
 	},
-/turf/simulated/floor/reinforced/nitrogen{
-	initial_gas_mix = "n2=82.1472;TEMP=293.15"
-	},
+/turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/engine_room)
 "To" = (
 /obj/structure/cable/yellow{
@@ -1327,9 +1315,7 @@
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced/nitrogen{
-	initial_gas_mix = "n2=82.1472;TEMP=293.15"
-	},
+/turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/engine_room)
 "UR" = (
 /obj/structure/cable/yellow{

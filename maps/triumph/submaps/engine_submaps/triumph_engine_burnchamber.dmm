@@ -282,9 +282,7 @@
 /obj/structure/window/phoronreinforced{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced/phoron{
-	initial_gas_mix = "phoron=1000;TEMP=293.15"
-	},
+/turf/simulated/floor/reinforced/phoron,
 /area/engineering/engine_room)
 "ll" = (
 /obj/structure/window/phoronreinforced/full,
