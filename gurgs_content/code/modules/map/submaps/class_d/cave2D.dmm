@@ -44,7 +44,7 @@
 "n" = (
 /obj/effect/alien/weeds,
 /obj/random/tetheraid,
-/obj/item/gun/energy/phasegun/pistol,
+/obj/item/weapon/gun/energy/phasegun/pistol,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "p" = (
@@ -93,7 +93,7 @@
 /area/poi_d/explored)
 "B" = (
 /obj/effect/alien/weeds,
-/obj/item/storage/secure/briefcase/money,
+/obj/item/weapon/storage/secure/briefcase/money,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "D" = (

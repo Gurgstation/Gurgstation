@@ -12,7 +12,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/obj/item/radio/intercom{
+/obj/item/device/radio/intercom{
 	pixel_y = -26
 	},
 /obj/structure/closet/walllocker/emerglocker{
@@ -28,7 +28,7 @@
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "u" = (
-/obj/item/tool/crowbar/red,
+/obj/item/weapon/tool/crowbar/red,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "v" = (
@@ -59,7 +59,7 @@
 	},
 /obj/item/clothing/head/helmet/space/emergency,
 /obj/effect/decal/cleanable/blood,
-/obj/item/tank/emergency/oxygen,
+/obj/item/weapon/tank/emergency/oxygen,
 /obj/item/clothing/mask/breath,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)

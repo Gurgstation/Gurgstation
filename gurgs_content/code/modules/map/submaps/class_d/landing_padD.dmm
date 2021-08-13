@@ -119,8 +119,8 @@
 /obj/structure/table/rack,
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
-/obj/item/tank/oxygen,
-/obj/item/tank/oxygen,
+/obj/item/weapon/tank/oxygen,
+/obj/item/weapon/tank/oxygen,
 /turf/simulated/floor/tiled,
 /area/poi_d/POIs/landing_pad)
 "u" = (
@@ -132,7 +132,7 @@
 /obj/item/clothing/shoes/black,
 /obj/item/clothing/shoes/black,
 /obj/item/clothing/shoes/black,
-/obj/item/gun/projectile/shotgun/pump/rifle,
+/obj/item/weapon/gun/projectile/shotgun/pump/rifle,
 /obj/item/ammo_magazine/clip/c762,
 /obj/item/ammo_magazine/clip/c762,
 /obj/item/ammo_magazine/clip/c762,
@@ -204,18 +204,18 @@
 "H" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/freezer/rations,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
-/obj/item/reagent_containers/food/snacks/liquidvitamin,
-/obj/item/reagent_containers/food/snacks/liquidvitamin,
-/obj/item/reagent_containers/food/snacks/liquidvitamin,
-/obj/item/reagent_containers/food/snacks/liquidprotein,
-/obj/item/reagent_containers/food/snacks/liquidprotein,
-/obj/item/reagent_containers/food/snacks/liquidprotein,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
-/obj/item/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/storage/box/donkpockets,
+/obj/item/weapon/storage/box/donkpockets,
+/obj/item/weapon/storage/box/donkpockets,
+/obj/item/weapon/reagent_containers/food/snacks/liquidvitamin,
+/obj/item/weapon/reagent_containers/food/snacks/liquidvitamin,
+/obj/item/weapon/reagent_containers/food/snacks/liquidvitamin,
+/obj/item/weapon/reagent_containers/food/snacks/liquidprotein,
+/obj/item/weapon/reagent_containers/food/snacks/liquidprotein,
+/obj/item/weapon/reagent_containers/food/snacks/liquidprotein,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
+/obj/item/weapon/reagent_containers/food/snacks/liquidfood,
 /turf/simulated/floor/tiled,
 /area/poi_d/POIs/landing_pad)
 "I" = (
@@ -311,7 +311,7 @@
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/item/paper{
+/obj/item/weapon/paper{
 	info = "\[center]\[b] Greetings Brave Frontiersman \[/center]\[/b]\[br] Congratulations on your purchase of the \[i]Hephaestus Industries: Expedient Frontier Homestead\[/i]. Whether you are a private citizen buying just one or a government buying millions, we here at \[i]Hephaestus Industries\[/i] are happy to serve you in your missions to tame even the most remote regions of space. The model you are currently standing in is the \[i]Lone Frontiersmen\[/i] perfect for both those seeking a solitary exsistance among the stars and for groups looking to break ground on untamed worlds. \[br] This model's freatures include: \[br] \[list]\[*] Radioscoptic Power Capable of keeping the lights on for Centuries. \[*]A Small Landing Pad to that your personnel spacecraft has a easy place to land. \[*]A small kitchen containing rations that will last you months; plenty of time to secure food sources on an alien world. \[*]A bedroom with complimentary jumpsuits and spacious double bed. \[*]A full bathroom, with shower and sink. All liquids used are recycled so you will never run out. \[*] A simple robust rifle capable of firing in space with 20 rounds of ammunition. Perfect for keeping those carp at bay.\[*] 2 space suits and a hardsuit cycler are included with your purchase. \[/list]\[br] We once again congratulate you on your purchase and wish you luck on your quest to conquer the stars. Until we meet again this is \[i]Hephaestus Industries\[/i].";
 	name = "Dusty Flier"
 	},
@@ -329,7 +329,7 @@
 "Z" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/double,
-/obj/item/bedsheet/bluedouble,
+/obj/item/weapon/bedsheet/bluedouble,
 /obj/machinery/light/small{
 	dir = 4
 	},

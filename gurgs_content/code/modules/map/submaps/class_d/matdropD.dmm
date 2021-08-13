@@ -18,7 +18,7 @@
 /turf/simulated/floor/tiled,
 /area/poi_d/POIs/landing_pad)
 "d" = (
-/obj/mob_spawner/drone_spawner,
+/obj/random/mob/semirandom_mob_spawner/robot,
 /turf/simulated/floor/tiled,
 /area/poi_d/POIs/landing_pad)
 "g" = (
@@ -86,9 +86,9 @@
 /area/poi_d/POIs/landing_pad)
 "w" = (
 /obj/structure/closet/crate,
-/obj/item/airlock_electronics,
-/obj/item/airlock_electronics,
-/obj/item/airlock_electronics,
+/obj/item/weapon/airlock_electronics,
+/obj/item/weapon/airlock_electronics,
+/obj/item/weapon/airlock_electronics,
 /turf/simulated/floor/tiled,
 /area/poi_d/POIs/landing_pad)
 "x" = (

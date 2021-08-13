@@ -18,7 +18,7 @@
 /turf/simulated/floor/airless,
 /area/poi_d/explored)
 "ga" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "gP" = (
@@ -61,7 +61,7 @@
 /area/poi_d/explored)
 "jF" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/box/shotgunshells/large,
+/obj/item/weapon/storage/box/shotgunshells/large,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "jG" = (
@@ -83,7 +83,7 @@
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "nC" = (
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	frequency = 804;
 	icon_state = "door_locked";
 	id_tag = "bunkerD_internal";
@@ -121,7 +121,7 @@
 /area/poi_d/Mountain)
 "vP" = (
 /obj/structure/table/marble,
-/obj/item/reagent_containers/food/condiment/small/saltshaker,
+/obj/item/weapon/reagent_containers/food/condiment/small/saltshaker,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "vX" = (
@@ -130,13 +130,13 @@
 /area/poi_d/Mountain)
 "wt" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/belt/security/tactical/bandolier,
-/obj/item/storage/belt/security/tactical/bandolier,
+/obj/item/weapon/storage/belt/security/tactical/bandolier,
+/obj/item/weapon/storage/belt/security/tactical/bandolier,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "xq" = (
 /obj/structure/closet/gimmick/tacticool,
-/obj/item/material/knife/tacknife,
+/obj/item/weapon/material/knife/tacknife,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "yw" = (
@@ -148,7 +148,7 @@
 /area/poi_d/Mountain)
 "zH" = (
 /obj/machinery/appliance/cooker/fryer,
-/obj/item/reagent_containers/cooking_container/fryer,
+/obj/item/weapon/reagent_containers/cooking_container/fryer,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -183,7 +183,7 @@
 /area/poi_d/unexplored)
 "CA" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/firstaid/clotting,
+/obj/item/weapon/storage/firstaid/clotting,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "CG" = (
@@ -192,7 +192,7 @@
 /area/poi_d/Mountain)
 "Df" = (
 /obj/structure/bed,
-/obj/item/bedsheet,
+/obj/item/weapon/bedsheet,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "Di" = (
@@ -217,7 +217,7 @@
 /area/poi_d/Mountain)
 "FF" = (
 /obj/structure/table/reinforced,
-/obj/item/storage/firstaid/combat,
+/obj/item/weapon/storage/firstaid/combat,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "Hi" = (
@@ -285,7 +285,7 @@
 /area/poi_d/Mountain)
 "Pc" = (
 /obj/structure/table/rack/shelf,
-/obj/item/storage/toolbox/syndicate,
+/obj/item/weapon/storage/toolbox/syndicate,
 /turf/simulated/floor/plating,
 /area/poi_d/Mountain)
 "Ph" = (
@@ -323,14 +323,14 @@
 /area/poi_d/Mountain)
 "TI" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/projectile/automatic/tommygun,
+/obj/item/weapon/gun/projectile/automatic/tommygun,
 /obj/machinery/light{
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "Us" = (
-/mob/living/simple_mob/humanoid/merc/ranged/space/heavy,
+/obj/random/mob/merc,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "Vq" = (
@@ -372,7 +372,7 @@
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "XU" = (
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	frequency = 804;
 	icon_state = "door_locked";
 	id_tag = "bunkerD_internal";
@@ -386,15 +386,15 @@
 "Ys" = (
 /obj/structure/bed,
 /obj/structure/bed,
-/obj/item/bedsheet,
+/obj/item/weapon/bedsheet,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "YM" = (
-/mob/living/simple_mob/humanoid/merc/ranged/space/shotgun/auto,
+/obj/random/mob/merc,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "Zm" = (
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	frequency = 804;
 	icon_state = "door_locked";
 	id_tag = "bunkerD_external";
