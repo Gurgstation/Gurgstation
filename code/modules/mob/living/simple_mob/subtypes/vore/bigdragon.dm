@@ -891,8 +891,6 @@ I think I covered everything.
 /datum/ai_holder/simple_mob/healbelly
 	intelligence_level = 3
 	can_breakthrough = 0
-	var/vocal = 1
-	var/last_speak
 
 /datum/ai_holder/simple_mob/healbelly/retaliate
 	retaliate = 1
@@ -901,35 +899,6 @@ I think I covered everything.
 /datum/ai_holder/simple_mob/healbelly/retaliate/dragon
 	var/warnings = 0
 	var/last_warning
-
-/datum/ai_holder/simple_mob/healbelly/proc/confirmPatient(var/mob/living/P)
-	if(istype(holder,/mob/living/simple_mob))
-		var/mob/living/simple_mob/H = holder
-		if(H.will_eat(P))
-			if(issilicon(P))
-				return
-			if(iscarbon(P))
-				if(P.isSynthetic()) //Sorry robits
-					return
-			else
-				if(!P.client)	//Don't target simple mobs that aren't player controlled
-					return
-			if(P.stat == DEAD)
-				return
-			if(P.suiciding)
-				return
-			if(P.health <= (P.maxHealth * 0.95))	//Nom em'
-				if(vocal)
-					if(last_speak + 30 SECONDS < world.time)
-						var/message_options = list(
-							"Hey, [P.name]! You are injured, hold still.",
-							"[P.name]! Come here, let me help.",
-							"[P.name], you need help."
-							)
-						var/message = pick(message_options)
-						H.say(message)
-						last_speak = world.time
-					return 1
 
 //Attack overrides to let us """Attack""" allies and heal them
 /datum/ai_holder/simple_mob/healbelly/can_attack(atom/movable/the_target, vision_required = 1)

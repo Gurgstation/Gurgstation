@@ -405,13 +405,8 @@
 
 		if(iswall(target)) //Gurgs : Spruced up corrosive acid
 			var/turf/simulated/wall/W = target
-<<<<<<< HEAD
-			W.dismantle_wall(1)
-		if(isfloor(target))
-=======
 			W.dismantle_wall()
 		else if(isfloor(target))
->>>>>>> f821c8e5188314bec8b7ea7f4fc89b1d5c891c2f
 			var/turf/simulated/floor/T = target
 			T.ex_act(1)
 		else if(isobj(target))
