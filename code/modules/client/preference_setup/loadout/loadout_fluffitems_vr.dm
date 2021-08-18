@@ -451,6 +451,12 @@
 	ckeywhitelist = list("jacknoir413")
 	character_name = list("Mor Xaina")
 
+/datum/gear/fluff/dsun 
+	path = /obj/item/clothing/glasses/sunglasses/fluff/doublesun
+	display_name = "Johnny's Glasses"
+	ckeywhitelist = list("jglitch")
+	character_name = list("Johnny Deserador")
+
 /datum/gear/fluff/areax_staff
 	path = /obj/item/weapon/storage/backpack/fluff/stunstaff
 	display_name = "Areax's Stun Staff"
