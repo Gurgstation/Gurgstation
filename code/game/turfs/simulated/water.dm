@@ -8,7 +8,7 @@
 	var/under_state = "rock"
 	edge_blending_priority = -1
 	movement_cost = 4
-	outdoors = TRUE
+	outdoors = OUTDOORS_YES
 	flags = TURF_ACID_IMMUNE
 
 	layer = WATER_FLOOR_LAYER
