@@ -76,7 +76,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/mob_spawner/drone_spawner,
+/obj/random/mob/semirandom_mob_spawner/robot,
 /turf/simulated/floor/airless,
 /area/poi_d/POIs/solar_farm)
 "q" = (
@@ -89,7 +89,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/mob_spawner/drone_spawner,
+/obj/random/mob/semirandom_mob_spawner/robot,
 /turf/simulated/floor/airless,
 /area/poi_d/POIs/solar_farm)
 "s" = (
@@ -167,7 +167,7 @@
 /turf/simulated/floor/plating,
 /area/poi_d/POIs/solar_farm)
 "I" = (
-/obj/mob_spawner/drone_spawner,
+/obj/random/mob/semirandom_mob_spawner/robot,
 /turf/simulated/floor/airless,
 /area/poi_d/POIs/solar_farm)
 "K" = (

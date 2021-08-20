@@ -176,7 +176,7 @@
 /turf/simulated/shuttle/floor/airless,
 /area/space/debrisfield/explored)
 "L" = (
-/obj/structure/closet/crate/carp,
+/obj/random/mob/semirandom_mob_spawner/carp,
 /turf/template_noop,
 /area/space/debrisfield/explored)
 "M" = (

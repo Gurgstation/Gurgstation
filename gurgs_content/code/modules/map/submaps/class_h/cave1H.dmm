@@ -10,7 +10,7 @@
 /turf/simulated/mineral/floor/classh,
 /area/poi_h/explored)
 "r" = (
-/obj/item/storage/mre/random,
+/obj/item/weapon/storage/mre/random,
 /turf/simulated/mineral/floor/classh,
 /area/poi_h/explored)
 "s" = (
@@ -47,7 +47,7 @@
 /turf/simulated/mineral/floor/classh,
 /area/poi_h/explored)
 "R" = (
-/obj/item/flashlight/lantern,
+/obj/item/device/flashlight/lantern,
 /turf/simulated/mineral/floor/classh,
 /area/poi_h/explored)
 "S" = (

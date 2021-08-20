@@ -331,7 +331,7 @@
 /turf/simulated/shuttle/floor/black/airless,
 /area/space/debrisfield/explored)
 "aW" = (
-/obj/structure/closet/crate/carp,
+/obj/random/mob/semirandom_mob_spawner/carp,
 /turf/space,
 /area/space/debrisfield/explored)
 "aX" = (
@@ -389,7 +389,7 @@
 /turf/simulated/shuttle/floor/darkred/airless,
 /area/space/debrisfield/explored)
 "bh" = (
-/obj/structure/closet/crate/carp,
+/obj/random/mob/semirandom_mob_spawner/carp,
 /turf/space,
 /area/space/debrisfield/explored)
 "bi" = (

@@ -10,14 +10,14 @@
 /area/poi_h/POIs/graveyard)
 "e" = (
 /obj/structure/closet/coffin,
-/obj/item/digestion_remains/skull,
-/obj/item/digestion_remains/ribcage,
+/obj/item/weapon/digestion_remains/skull,
+/obj/item/weapon/digestion_remains/ribcage,
 /obj/item/clothing/gloves/ring/material/gold,
 /obj/item/clothing/ears/earring/stud/silver,
 /obj/item/clothing/ears/skrell/chain/bluejewels,
-/obj/item/coin/gold,
-/obj/item/coin/gold,
-/obj/item/coin/gold,
+/obj/item/weapon/coin/gold,
+/obj/item/weapon/coin/gold,
+/obj/item/weapon/coin/gold,
 /turf/simulated/floor/wmarble,
 /area/poi_h/POIs/graveyard)
 "i" = (
@@ -51,14 +51,14 @@
 /area/poi_h/POIs/graveyard)
 "y" = (
 /obj/structure/closet/coffin,
-/obj/item/digestion_remains/skull,
-/obj/item/digestion_remains/ribcage,
+/obj/item/weapon/digestion_remains/skull,
+/obj/item/weapon/digestion_remains/ribcage,
 /obj/item/clothing/gloves/ring/material/silver,
 /obj/item/clothing/ears/earring/dangle/platinum,
 /obj/item/clothing/ears/skrell/chain/redjewels,
-/obj/item/coin/gold,
-/obj/item/coin/gold,
-/obj/item/coin/gold,
+/obj/item/weapon/coin/gold,
+/obj/item/weapon/coin/gold,
+/obj/item/weapon/coin/gold,
 /turf/simulated/floor/wmarble,
 /area/poi_h/POIs/graveyard)
 "C" = (
@@ -68,13 +68,13 @@
 /turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/POIs/graveyard)
 "D" = (
-/obj/item/material/gravemarker{
+/obj/item/weapon/material/gravemarker{
 	material = MAT_WOOD
 	},
 /turf/simulated/floor/outdoors/beach/sand/dirtlight,
 /area/poi_h/POIs/graveyard)
 "F" = (
-/obj/item/flame/lighter/zippo/engraved,
+/obj/item/weapon/flame/lighter/zippo/engraved,
 /turf/simulated/floor/outdoors/beach/sand/dirtlight,
 /area/poi_h/POIs/graveyard)
 "H" = (
@@ -93,7 +93,7 @@
 /turf/simulated/floor/outdoors/beach/sand/dirtlight,
 /area/poi_h/POIs/graveyard)
 "T" = (
-/obj/item/shovel,
+/obj/item/weapon/shovel,
 /turf/simulated/floor/outdoors/beach/sand/dirtlight,
 /area/poi_h/POIs/graveyard)
 "U" = (

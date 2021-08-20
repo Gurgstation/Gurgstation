@@ -15,7 +15,7 @@
 /turf/simulated/floor/wmarble,
 /area/poi_h/explored)
 "l" = (
-/obj/item/material/knife/ritual,
+/obj/item/weapon/material/knife/ritual,
 /turf/simulated/floor/plating,
 /area/poi_h/explored)
 "m" = (
@@ -34,7 +34,7 @@
 /turf/simulated/wall/sandstone,
 /area/poi_h/explored)
 "r" = (
-/obj/item/flame/candle/candelabra/everburn{
+/obj/item/weapon/flame/candle/candelabra/everburn{
 	icon_state = "candelabra_lit";
 	lit = 1
 	},
@@ -57,7 +57,7 @@
 /turf/simulated/floor/wmarble,
 /area/poi_h/explored)
 "C" = (
-/obj/item/flame/candle/candelabra/everburn{
+/obj/item/weapon/flame/candle/candelabra/everburn{
 	icon_state = "candelabra_lit";
 	lit = 1
 	},

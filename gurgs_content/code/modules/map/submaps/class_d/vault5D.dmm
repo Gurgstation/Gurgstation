@@ -14,7 +14,7 @@
 "d" = (
 /obj/effect/alien/weeds,
 /obj/structure/bed/nest,
-/obj/item/gun/projectile/p92x/large,
+/obj/item/weapon/gun/projectile/p92x/large,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "e" = (
@@ -40,7 +40,7 @@
 /area/poi_d/explored)
 "i" = (
 /obj/effect/alien/weeds,
-/obj/effect/alien/egg,
+/obj/structure/alien/egg,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "j" = (
@@ -52,7 +52,7 @@
 "k" = (
 /obj/effect/alien/weeds,
 /obj/item/clothing/head/helmet/tac,
-/obj/item/gun/projectile/SVD,
+/obj/item/weapon/gun/projectile/SVD,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "A" = (

@@ -21,7 +21,7 @@
 /turf/simulated/shuttle/floor/white/airless,
 /area/space/debrisfield/explored)
 "I" = (
-/obj/structure/closet/crate/carp,
+/obj/random/mob/semirandom_mob_spawner/carp,
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "Y" = (

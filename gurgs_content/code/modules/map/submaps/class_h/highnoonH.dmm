@@ -26,7 +26,7 @@
 /area/poi_h/POIs/WW_Town)
 "dR" = (
 /obj/structure/table/woodentable,
-/obj/item/gun/projectile/revolver/detective45,
+/obj/item/weapon/gun/projectile/revolver/detective45,
 /turf/simulated/floor/wood,
 /area/poi_h/POIs/WW_Town)
 "eT" = (
@@ -50,7 +50,7 @@
 /area/poi_h/POIs/WW_Town)
 "iO" = (
 /obj/structure/table/gamblingtable,
-/obj/item/deck/cards,
+/obj/item/weapon/deck/cards,
 /obj/random/cash,
 /obj/random/cash,
 /obj/random/cash,
@@ -67,8 +67,8 @@
 /area/poi_h/POIs/WW_Town)
 "nU" = (
 /obj/structure/table/woodentable,
-/obj/item/storage/box/shotgunshells,
-/obj/item/storage/box/shotgunshells,
+/obj/item/weapon/storage/box/shotgunshells,
+/obj/item/weapon/storage/box/shotgunshells,
 /turf/simulated/floor/wood/classh,
 /area/poi_h/POIs/WW_Town)
 "ou" = (
@@ -115,7 +115,7 @@
 /area/poi_h/POIs/WW_Town)
 "wL" = (
 /obj/structure/table/woodentable,
-/obj/item/flashlight/lamp/green,
+/obj/item/device/flashlight/lamp/green,
 /turf/simulated/floor/wood/classh,
 /area/poi_h/POIs/WW_Town)
 "wR" = (
@@ -134,7 +134,7 @@
 /turf/simulated/floor/wood/classh,
 /area/poi_h/POIs/WW_Town)
 "Ab" = (
-/obj/item/moneybag/vault,
+/obj/item/weapon/moneybag/vault,
 /turf/simulated/floor/wood/classh,
 /area/poi_h/POIs/WW_Town)
 "Bf" = (
@@ -171,7 +171,7 @@
 /turf/simulated/floor/wood/classh,
 /area/poi_h/POIs/WW_Town)
 "Lo" = (
-/mob/living/simple_mob/humanoid/merc/ranged/deagle,
+/obj/random/mob/merc,
 /turf/simulated/floor/wood/classh,
 /area/poi_h/POIs/WW_Town)
 "LH" = (
@@ -248,7 +248,7 @@
 /area/poi_h/POIs/WW_Town)
 "Vx" = (
 /obj/structure/table/rack/shelf,
-/obj/item/gun/projectile/shotgun/pump/rifle,
+/obj/item/weapon/gun/projectile/shotgun/pump/rifle,
 /turf/simulated/floor/wood,
 /area/poi_h/POIs/WW_Town)
 "Wm" = (

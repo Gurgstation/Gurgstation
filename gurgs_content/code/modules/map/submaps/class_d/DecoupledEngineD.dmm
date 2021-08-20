@@ -6,15 +6,15 @@
 /turf/template_noop,
 /area/poi_d/POIs/ship)
 "ac" = (
-/obj/item/fuel_assembly/deuterium,
+/obj/item/weapon/fuel_assembly/deuterium,
 /turf/template_noop,
 /area/poi_d/POIs/ship)
 "ae" = (
-/obj/item/extinguisher,
+/obj/item/weapon/extinguisher,
 /turf/template_noop,
 /area/poi_d/POIs/ship)
 "af" = (
-/obj/item/material/shard/phoron,
+/obj/item/weapon/material/shard/phoron,
 /turf/template_noop,
 /area/template_noop)
 "ag" = (
@@ -22,7 +22,7 @@
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/POIs/ship)
 "ah" = (
-/obj/item/arrow/rod,
+/obj/item/weapon/arrow/rod,
 /obj/item/stack/material/steel,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/POIs/ship)
@@ -36,7 +36,7 @@
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/POIs/ship)
 "am" = (
-/obj/item/arrow/rod,
+/obj/item/weapon/arrow/rod,
 /turf/template_noop,
 /area/poi_d/POIs/ship)
 "an" = (
@@ -175,7 +175,7 @@
 /obj/structure/window/phoronreinforced{
 	dir = 4
 	},
-/obj/item/material/shard/phoron,
+/obj/item/weapon/material/shard/phoron,
 /obj/effect/floor_decal/rust,
 /turf/simulated/floor/airless,
 /area/poi_d/POIs/ship)
@@ -396,7 +396,7 @@
 "bq" = (
 /obj/effect/floor_decal/rust,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/rcd,
+/obj/item/weapon/rcd,
 /turf/simulated/floor/airless,
 /area/poi_d/POIs/ship)
 "br" = (
@@ -453,15 +453,15 @@
 /turf/simulated/mineral/floor/vacuum,
 /area/template_noop)
 "bA" = (
-/obj/item/arrow/rod,
+/obj/item/weapon/arrow/rod,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/POIs/ship)
 "bB" = (
-/obj/item/fuel_assembly/deuterium,
+/obj/item/weapon/fuel_assembly/deuterium,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/POIs/ship)
 "bC" = (
-/obj/item/material/shard/phoron,
+/obj/item/weapon/material/shard/phoron,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/POIs/ship)
 "bD" = (
@@ -469,11 +469,10 @@
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/POIs/ship)
 "bE" = (
-/obj/mob_spawner/alien/medium,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/POIs/ship)
 "gU" = (
-/obj/item/fuel_assembly/deuterium,
+/obj/item/weapon/fuel_assembly/deuterium,
 /turf/template_noop,
 /area/template_noop)
 

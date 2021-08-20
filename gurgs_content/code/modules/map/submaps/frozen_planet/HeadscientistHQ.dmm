@@ -30,10 +30,6 @@
 	},
 /turf/simulated/floor/outdoors/dirt,
 /area/template_noop)
-"aP" = (
-/mob/living/simple_mob/humanoid/merc/ranged/garand,
-/turf/simulated/shuttle/floor,
-/area/submap/HeadscientistHQ)
 "aY" = (
 /obj/machinery/power/solar,
 /obj/structure/cable/green{
@@ -68,7 +64,9 @@
 /turf/simulated/shuttle/wall/voidcraft/red,
 /area/submap/HeadscientistHQ)
 "cs" = (
-/obj/machinery/door/airlock/external/glass/bolted,
+/obj/machinery/door/airlock/glass_external{
+	locked = 1
+	},
 /obj/effect/decal/cleanable/blood,
 /obj/structure/fans/tiny,
 /turf/unsimulated/shuttle/floor,
@@ -196,7 +194,7 @@
 /turf/simulated/shuttle/floor/purple,
 /area/submap/HeadscientistHQ)
 "kr" = (
-/obj/structure/table/sandbags,
+/obj/structure/barricade/sandbag,
 /turf/simulated/floor/outdoors/dirt,
 /area/template_noop)
 "kD" = (
@@ -252,7 +250,7 @@
 /turf/simulated/shuttle/floor/red,
 /area/submap/HeadscientistHQ)
 "mb" = (
-/obj/item/inducer/sci,
+/obj/item/weapon/inducer/sci,
 /turf/simulated/floor/plating,
 /area/template_noop)
 "mX" = (
@@ -270,7 +268,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/blood,
-/mob/living/simple_mob/humanoid/merc/ranged/space/suppressor,
+/obj/random/mob/merc,
 /turf/simulated/shuttle/floor/yellow,
 /area/submap/HeadscientistHQ)
 "nZ" = (
@@ -279,7 +277,7 @@
 /area/template_noop)
 "on" = (
 /obj/structure/table/rack/shelf,
-/obj/item/gun/energy/lasercannon,
+/obj/item/weapon/gun/energy/lasercannon,
 /turf/simulated/shuttle/floor/red,
 /area/submap/HeadscientistHQ)
 "oy" = (
@@ -352,11 +350,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/shuttle/wall/voidcraft/red,
 /area/submap/HeadscientistHQ)
-"tD" = (
-/obj/effect/decal/cleanable/dirt,
-/mob/living/simple_mob/mechanical/cyber_horror/plasma_cyber_horror,
-/turf/simulated/shuttle/floor/purple,
-/area/submap/HeadscientistHQ)
 "tN" = (
 /obj/effect/decal/cleanable/blood/oil,
 /mob/living/simple_mob/humanoid/merc/melee/sword,
@@ -380,7 +373,7 @@
 /turf/simulated/shuttle/floor/red,
 /area/submap/HeadscientistHQ)
 "uq" = (
-/obj/item/grenade/spawnergrenade/manhacks/mercenary,
+/obj/item/weapon/grenade/spawnergrenade/manhacks/mercenary,
 /turf/simulated/shuttle/floor/red,
 /area/submap/HeadscientistHQ)
 "uz" = (
@@ -389,7 +382,7 @@
 /area/submap/HeadscientistHQ)
 "uA" = (
 /obj/structure/table/rack/shelf,
-/obj/item/gun/energy/sniperrifle/locked,
+/obj/item/weapon/gun/energy/sniperrifle,
 /turf/simulated/shuttle/floor/red,
 /area/submap/HeadscientistHQ)
 "uG" = (
@@ -398,7 +391,7 @@
 /area/template_noop)
 "va" = (
 /obj/effect/decal/cleanable/blood/oil,
-/mob/living/simple_mob/humanoid/merc/ranged/space/shotgun,
+/obj/random/mob/merc,
 /turf/simulated/floor/outdoors/dirt,
 /area/template_noop)
 "ve" = (
@@ -465,7 +458,7 @@
 /area/template_noop)
 "zG" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/simple_mob/humanoid/merc/ranged/garand,
+/obj/random/mob/merc,
 /turf/simulated/shuttle/floor/purple,
 /area/submap/HeadscientistHQ)
 "zK" = (
@@ -810,7 +803,7 @@
 /area/submap/HeadscientistHQ)
 "Tv" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/glass/beaker,
+/obj/item/weapon/reagent_containers/glass/beaker,
 /turf/simulated/shuttle/floor/purple,
 /area/submap/HeadscientistHQ)
 "Tw" = (
@@ -834,7 +827,7 @@
 /turf/simulated/shuttle/floor/purple,
 /area/submap/HeadscientistHQ)
 "UP" = (
-/mob/living/simple_mob/humanoid/merc/ranged/deagle,
+/obj/random/mob/merc,
 /turf/simulated/shuttle/floor,
 /area/submap/HeadscientistHQ)
 "UV" = (
@@ -865,7 +858,9 @@
 /turf/simulated/shuttle/plating,
 /area/submap/HeadscientistHQ)
 "VZ" = (
-/obj/machinery/door/airlock/external/glass/bolted,
+/obj/machinery/door/airlock/glass_external{
+	locked = 1
+	},
 /obj/structure/fans/tiny,
 /turf/unsimulated/shuttle/floor,
 /area/submap/HeadscientistHQ)
@@ -1876,7 +1871,7 @@ ve
 cb
 Tj
 Tj
-aP
+UP
 WI
 YH
 jt
@@ -2327,7 +2322,7 @@ Yi
 YH
 dB
 UV
-tD
+Xf
 la
 YH
 Bz

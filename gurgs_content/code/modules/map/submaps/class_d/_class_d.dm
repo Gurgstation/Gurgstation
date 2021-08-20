@@ -6,105 +6,105 @@
 
 /datum/map_template/submap/level_specific/class_d/broken_reactor_D
 	name = "Broken Reactor"
-	mappath = "broken_reactor_D.dmm"
+	mappath = 'broken_reactor_D.dmm'
 	cost = 15
 
 /datum/map_template/submap/level_specific/class_d/DecoupleEngineD
 	name = "Decoupled Engine"
-	mappath = "DecoupledEngineD.dmm"
+	mappath = 'DecoupledEngineD.dmm'
 	cost = 15
 
 /datum/map_template/submap/level_specific/class_d/drone_hive_D
 	name = "Drone Hive"
-	mappath = "broken_reactor_D.dmm"
+	mappath = 'broken_reactor_D.dmm'
 	cost = 15
 
 /datum/map_template/submap/level_specific/class_d/EpodD
 	name = "Decoupled Engine"
-	mappath = "EpodD.dmm"
+	mappath = 'EpodD.dmm'
 	cost = 5
 
 /datum/map_template/submap/level_specific/class_d/landing_padD
 	name = "Prefabricated Landing Pad"
-	mappath = "landing_padD.dmm"
+	mappath = 'landing_padD.dmm'
 	cost = 5
 	fixed_orientation = TRUE
 
 /datum/map_template/submap/level_specific/class_d/mechwreckD
 	name = "Ruined Ripley"
-	mappath = "mechwreckD.dmm"
+	mappath = 'mechwreckD.dmm'
 	cost = 5
 
 /datum/map_template/submap/level_specific/class_d/meteor
 	name = "Meteor Impact Site"
-	mappath = "meteor.dmm"
+	mappath = 'meteor.dmm'
 	cost = 5
 
 /datum/map_template/submap/level_specific/class_d/solar_farm
 	name = "Solar Farm"
-	mappath = "solar_farmD.dmm"
+	mappath = 'solar_farmD.dmm'
 	cost = 5
 	fixed_orientation = TRUE
 
 /datum/map_template/submap/level_specific/class_d/SupplyDrop1D
 	name = "Supply Drop"
-	mappath = "SupplyDrop1D.dmm"
+	mappath = 'SupplyDrop1D.dmm'
 	cost = 5
 
 /datum/map_template/submap/level_specific/class_d/SupplyDrop2D
 	name = "Supply Drop"
-	mappath = "SupplyDrop2D.dmm"
+	mappath = 'SupplyDrop2D.dmm'
 	cost = 5
 
 /datum/map_template/submap/level_specific/class_d/Vault1D
 	name = "Mineral Vault"
-	mappath = "vault1D.dmm"
+	mappath = 'vault1D.dmm'
 	cost = 5
 
 /datum/map_template/submap/level_specific/class_d/Vault2D
 	name = "Mineral Vault"
-	mappath = "vault2D.dmm"
+	mappath = 'vault2D.dmm'
 	cost = 5
 
 /datum/map_template/submap/level_specific/class_d/Vault3D
 	name = "Mineral Vault"
-	mappath = "vault3D.dmm"
+	mappath = 'vault3D.dmm'
 	cost = 5
 
 /datum/map_template/submap/level_specific/class_d/Vault4D
 	name = "Mineral Vault"
-	mappath = "vault4D.dmm"
+	mappath = 'vault4D.dmm'
 	cost = 5
 
 /datum/map_template/submap/level_specific/class_d/Vault5D
 	name = "Mineral Vault"
-	mappath = "vault5D.dmm"
+	mappath = 'vault5D.dmm'
 	cost = 5
 
 
 /datum/map_template/submap/level_specific/class_d/Cave1D
 	name = "Mineral Cave"
-	mappath = "cave1D.dmm"
+	mappath = 'cave1D.dmm'
 	cost = 10
 
 /datum/map_template/submap/level_specific/class_d/Cave2D
 	name = "Xenonest Cave"
-	mappath = "cave2D.dmm"
+	mappath = 'cave2D.dmm'
 	cost = 15
 
 /datum/map_template/submap/level_specific/class_d/Cave3D
 	name = "Mimic Cave"
-	mappath = "cave3D.dmm"
+	mappath = 'cave3D.dmm'
 	cost = 5
 
 /datum/map_template/submap/level_specific/class_d/droneship
 	name = "Automatic Constructor Ship"
-	mappath = "matdropD.dmm"
+	mappath = 'matdropD.dmm'
 	cost = 15
 	fixed_orientation = TRUE
 
 /datum/map_template/submap/level_specific/class_d/mercbunker
 	name = "Secret Mecenary Bunker"
-	mappath = "hiddenbunkerD.dmm"
+	mappath = 'hiddenbunkerD.dmm'
 	cost = 25
 	fixed_orientation = TRUE

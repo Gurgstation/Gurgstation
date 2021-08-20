@@ -14,7 +14,7 @@
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "k" = (
-/obj/structure/closet/crate/carp,
+/obj/random/mob/semirandom_mob_spawner/carp,
 /turf/simulated/floor/tiled/airless,
 /area/space/debrisfield/explored)
 "r" = (
@@ -26,7 +26,7 @@
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "D" = (
-/obj/structure/closet/crate/carp,
+/obj/random/mob/semirandom_mob_spawner/carp,
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 

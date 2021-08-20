@@ -18,11 +18,11 @@
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "w" = (
-/obj/structure/closet/crate/carp,
+/obj/random/mob/semirandom_mob_spawner/carp,
 /turf/simulated/floor/airless,
 /area/space/debrisfield/explored)
 "L" = (
-/obj/structure/closet/crate/carp,
+/obj/random/mob/semirandom_mob_spawner/carp,
 /turf/space,
 /area/space/debrisfield/explored)
 "M" = (

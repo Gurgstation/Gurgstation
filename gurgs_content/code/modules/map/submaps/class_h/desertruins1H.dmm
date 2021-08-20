@@ -13,7 +13,7 @@
 /turf/simulated/floor/outdoors/beach/sand/dirtlight,
 /area/poi_h/explored)
 "s" = (
-/obj/item/bone,
+/obj/item/weapon/bone,
 /turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/explored)
 "G" = (
@@ -21,7 +21,7 @@
 /turf/simulated/floor/outdoors/beach/sand/dirtlight,
 /area/poi_h/explored)
 "W" = (
-/obj/item/bone,
+/obj/item/weapon/bone,
 /turf/simulated/floor/outdoors/beach/sand/dirtlight,
 /area/poi_h/explored)
 "X" = (

@@ -28,7 +28,7 @@
 /turf/simulated/wall,
 /area/poi_d/POIs/reactor)
 "l" = (
-/obj/mob_spawner/drone_spawner,
+/obj/random/mob/semirandom_mob_spawner/robot,
 /turf/simulated/floor/tiled/airless,
 /area/poi_d/POIs/reactor)
 "m" = (

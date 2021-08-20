@@ -24,7 +24,7 @@
 /turf/simulated/wall,
 /area/poi_d/explored)
 "g" = (
-/obj/item/geiger,
+/obj/item/device/geiger,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/airless,
 /area/poi_d/explored)
@@ -45,7 +45,7 @@
 /turf/simulated/floor/tiled/airless,
 /area/poi_d/explored)
 "r" = (
-/obj/mob_spawner/drone_spawner,
+/obj/random/mob/semirandom_mob_spawner/robot,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/airless,
 /area/poi_d/explored)
