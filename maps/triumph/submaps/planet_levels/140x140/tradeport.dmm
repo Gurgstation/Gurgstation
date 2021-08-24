@@ -81,7 +81,7 @@
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/suit/space/void/merc,
 /obj/item/clothing/head/helmet/space/void/merc,
-/obj/item/tank/oxygen,
+/obj/item/weapon/tank/oxygen,
 /obj/structure/cable/green{
 	d1 = 1;
 	d2 = 4;
@@ -130,11 +130,11 @@
 /area/tradeport/cyndishow)
 "aD" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/lipstick/black,
-/obj/item/lipstick/jade,
-/obj/item/lipstick/purple,
-/obj/item/lipstick,
-/obj/item/lipstick/random,
+/obj/item/weapon/lipstick/black,
+/obj/item/weapon/lipstick/jade,
+/obj/item/weapon/lipstick/purple,
+/obj/item/weapon/lipstick,
+/obj/item/weapon/lipstick/random,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
 "aJ" = (
@@ -245,11 +245,11 @@
 /area/tradeport/spine)
 "bj" = (
 /obj/structure/table/woodentable,
-/obj/item/paper_bin{
+/obj/item/weapon/paper_bin{
 	pixel_x = -3;
 	pixel_y = 8
 	},
-/obj/item/pen{
+/obj/item/weapon/pen{
 	pixel_y = 4
 	},
 /turf/simulated/floor/carpet/bcarpet,
@@ -295,7 +295,6 @@
 	icon_state = null;
 	name = "stairs"
 	},
-/mob/living/carbon/human/dummy/mannequin/mummy,
 /turf/simulated/floor/tiled/asteroid_steel,
 /area/tradeport/cyndishow)
 "bA" = (
@@ -304,7 +303,7 @@
 "bB" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	req_access = list(160)
 	},
 /obj/machinery/door/firedoor{
@@ -319,7 +318,7 @@
 /area/tradeport/facility)
 "bG" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/rd,
+/obj/item/weapon/bedsheet/rd,
 /turf/simulated/floor/tiled/old_tile/gray,
 /area/shuttle/trade_ship/general)
 "bN" = (
@@ -395,7 +394,6 @@
 	req_access = list(160)
 	},
 /obj/structure/table/marble,
-/obj/item/melee/energy/hfmachete,
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/cyndishow)
 "cf" = (
@@ -410,11 +408,6 @@
 	},
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport/facility)
-"cg" = (
-/obj/structure/table/marble,
-/obj/item/reagent_containers/food/snacks/crayonburger_rbw,
-/turf/simulated/floor/wmarble,
-/area/tradeport/commons)
 "ch" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
@@ -500,19 +493,19 @@
 /area/tradeport/spine)
 "cE" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/coin/uranium,
-/obj/item/coin/silver,
-/obj/item/coin/platinum,
-/obj/item/coin/phoron,
-/obj/item/coin/iron,
-/obj/item/coin/gold,
-/obj/item/coin/diamond,
+/obj/item/weapon/coin/uranium,
+/obj/item/weapon/coin/silver,
+/obj/item/weapon/coin/platinum,
+/obj/item/weapon/coin/phoron,
+/obj/item/weapon/coin/iron,
+/obj/item/weapon/coin/gold,
+/obj/item/weapon/coin/diamond,
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
 "cH" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/blue,
+/obj/item/weapon/bedsheet/blue,
 /turf/simulated/floor/carpet,
 /area/tradeport/commons)
 "cJ" = (
@@ -603,10 +596,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/tradeport/engineering)
-"cY" = (
-/obj/structure/mob_spawner/pest_nest,
-/turf/simulated/floor/plating,
-/area/tradeport)
 "cZ" = (
 /obj/structure/closet/crate/bin{
 	anchored = 1
@@ -724,12 +713,12 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/material/knife/durasteel{
+/obj/item/weapon/material/knife{
 	desc = "A hand sharpened knife, used for cutting valentine treats.";
 	name = "Leftie";
 	pixel_x = 5
 	},
-/obj/item/material/knife/machete/hatchet/durasteel{
+/obj/item/weapon/material/knife/machete/hatchet{
 	desc = "A powerfully sharp axe, crafted with love.";
 	name = "Rightie"
 	},
@@ -842,13 +831,6 @@
 	},
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport/commons)
-"ef" = (
-/obj/structure/table/rack/shelf/steel,
-/obj/item/stolenpackageplus,
-/obj/item/stolenpackageplus,
-/obj/item/stolenpackageplus,
-/turf/simulated/floor/wood,
-/area/tradeport/cyndi)
 "eh" = (
 /turf/simulated/wall/r_wall,
 /area/tradeport/dock)
@@ -963,9 +945,9 @@
 /area/tradeport)
 "eD" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/silencer,
-/obj/item/silencer,
-/obj/item/silencer,
+/obj/item/weapon/silencer,
+/obj/item/weapon/silencer,
+/obj/item/weapon/silencer,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
@@ -1009,26 +991,26 @@
 /obj/structure/table/standard,
 /obj/item/clothing/gloves/sterile/latex,
 /obj/item/clothing/mask/surgical,
-/obj/item/surgical/retractor{
+/obj/item/weapon/surgical/retractor{
 	pixel_y = 6
 	},
-/obj/item/surgical/scalpel,
-/obj/item/surgical/surgicaldrill,
-/obj/item/surgical/circular_saw,
+/obj/item/weapon/surgical/scalpel,
+/obj/item/weapon/surgical/surgicaldrill,
+/obj/item/weapon/surgical/circular_saw,
 /obj/item/stack/nanopaste,
-/obj/item/surgical/hemostat{
+/obj/item/weapon/surgical/hemostat{
 	pixel_y = 4
 	},
-/obj/item/surgical/cautery{
+/obj/item/weapon/surgical/cautery{
 	pixel_y = 4
 	},
-/obj/item/surgical/FixOVein{
+/obj/item/weapon/surgical/FixOVein{
 	pixel_x = -6;
 	pixel_y = 1
 	},
 /obj/item/stack/medical/advanced/bruise_pack,
-/obj/item/surgical/bonesetter,
-/obj/item/surgical/bonegel{
+/obj/item/weapon/surgical/bonesetter,
+/obj/item/weapon/surgical/bonegel{
 	pixel_x = 4;
 	pixel_y = 3
 	},
@@ -1068,7 +1050,7 @@
 /turf/simulated/floor/reinforced,
 /area/tradeport/pads)
 "fb" = (
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	req_access = list(160)
 	},
 /obj/effect/map_helper/airlock/door/int_door,
@@ -1235,7 +1217,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 8
 	},
-/obj/item/paper{
+/obj/item/weapon/paper{
 	info = "Hey Jack, make sure the new guy knows that he's supposed to charge before he lets people go into the back for the 'safari'. General price is 5 thalers. If they want to buy a Grub, make sure to charge them for the crate too.";
 	name = "Admissions Guidelines"
 	},
@@ -1298,7 +1280,7 @@
 	req_access = list(160)
 	},
 /obj/structure/table/marble,
-/obj/item/powersink,
+/obj/item/device/powersink,
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/cyndishow)
 "gi" = (
@@ -1308,12 +1290,7 @@
 /turf/simulated/shuttle/floor/white,
 /area/tradeport/commons)
 "gk" = (
-/obj/structure/closet{
-	icon_closed = "cabinet_closed";
-	icon_opened = "cabinet_open";
-	icon_state = "cabinet_closed"
-	},
-/obj/item/bluespace_radio/commerce,
+/obj/structure/closet,
 /turf/simulated/floor/wood,
 /area/shuttle/trade_ship/general)
 "gl" = (
@@ -1373,7 +1350,7 @@
 /area/shuttle/trade_ship/general)
 "gs" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/hos,
+/obj/item/weapon/bedsheet/hos,
 /turf/simulated/floor/tiled/old_tile/gray,
 /area/shuttle/trade_ship/general)
 "gt" = (
@@ -1420,7 +1397,7 @@
 	req_access = list(160)
 	},
 /obj/structure/table/marble,
-/obj/item/sword/fluff/joanaria/scisword,
+/obj/item/weapon/sword/fluff/joanaria/scisword,
 /obj/machinery/camera{
 	dir = 8
 	},
@@ -1483,11 +1460,11 @@
 "gT" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/warning,
-/obj/item/kit/paint/gygax/darkgygax,
-/obj/item/kit/paint/gygax/recitence,
-/obj/item/kit/paint/durand,
-/obj/item/kit/paint/durand/phazon,
-/obj/item/kit/paint/durand/seraph,
+/obj/item/device/kit/paint/gygax/darkgygax,
+/obj/item/device/kit/paint/gygax/recitence,
+/obj/item/device/kit/paint/durand,
+/obj/item/device/kit/paint/durand/phazon,
+/obj/item/device/kit/paint/durand/seraph,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
 "gV" = (
@@ -1571,14 +1548,14 @@
 "hj" = (
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/item/reagent_containers/food/drinks/bottle/cream,
-/obj/item/reagent_containers/food/drinks/bottle/cream,
-/obj/item/reagent_containers/food/drinks/bottle/cream,
-/obj/item/reagent_containers/food/drinks/bottle/cream,
-/obj/item/reagent_containers/food/drinks/bottle/cream,
-/obj/item/reagent_containers/food/drinks/bottle/cream,
-/obj/item/reagent_containers/food/drinks/bottle/cream,
-/obj/item/reagent_containers/food/drinks/bottle/cream,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/cream,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/cream,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/cream,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/cream,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/cream,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/cream,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/cream,
+/obj/item/weapon/reagent_containers/food/drinks/bottle/cream,
 /turf/simulated/floor/tiled/freezer,
 /area/tradeport)
 "hk" = (
@@ -1698,10 +1675,10 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/outdoors/dirtlight,
+/turf/simulated/floor/outdoors/dirt,
 /area/tradeport/cyndishow)
 "hR" = (
-/turf/simulated/floor/outdoors/dirtlight,
+/turf/simulated/floor/outdoors/dirt,
 /area/tradeport/cyndishow)
 "hS" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -1729,11 +1706,11 @@
 /area/tradeport/spine)
 "ia" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/paper_bin{
+/obj/item/weapon/paper_bin{
 	pixel_x = -3;
 	pixel_y = 8
 	},
-/obj/item/pen{
+/obj/item/weapon/pen{
 	pixel_y = 4
 	},
 /obj/machinery/alarm/alarms_hidden{
@@ -1775,10 +1752,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/item/reagent_containers/food/snacks/candy_corn,
-/obj/item/reagent_containers/food/snacks/candy_corn,
-/obj/item/reagent_containers/food/snacks/candy_corn,
-/obj/item/reagent_containers/food/snacks/candy_corn,
+/obj/item/weapon/reagent_containers/food/snacks/candy_corn,
+/obj/item/weapon/reagent_containers/food/snacks/candy_corn,
+/obj/item/weapon/reagent_containers/food/snacks/candy_corn,
+/obj/item/weapon/reagent_containers/food/snacks/candy_corn,
 /turf/simulated/floor/tiled/steel,
 /area/tradeport)
 "if" = (
@@ -1868,7 +1845,7 @@
 	dir = 8
 	},
 /obj/structure/table/alien,
-/obj/item/folder/blue_captain,
+/obj/item/weapon/folder/blue_captain,
 /turf/simulated/floor/carpet/blue,
 /area/tradeport/commons)
 "iB" = (
@@ -2047,7 +2024,7 @@
 /area/tradeport/safarizoo)
 "jj" = (
 /obj/structure/table/glass,
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	dir = 8;
 	pixel_x = -25
 	},
@@ -2522,7 +2499,7 @@
 	req_access = list(160)
 	},
 /obj/structure/table/marble,
-/obj/item/gun/energy/alien,
+/obj/item/weapon/gun/energy/alien,
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
 	},
@@ -2632,7 +2609,7 @@
 /area/tradeport)
 "lU" = (
 /obj/structure/table/glass,
-/obj/item/deck/cards{
+/obj/item/weapon/deck/cards{
 	pixel_x = -12
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -2643,8 +2620,8 @@
 "lV" = (
 /obj/structure/closet/jcloset,
 /obj/random/soap,
-/obj/item/storage/bag/trash,
-/obj/item/mop,
+/obj/item/weapon/storage/bag/trash,
+/obj/item/weapon/mop,
 /obj/item/rig_module/cleaner_launcher,
 /turf/simulated/floor/tiled/old_cargo/beige,
 /area/tradeport/engineering)
@@ -2750,8 +2727,8 @@
 	dir = 8
 	},
 /obj/structure/table/wooden_reinforced,
-/obj/item/paper_bin,
-/obj/item/pen,
+/obj/item/weapon/paper_bin,
+/obj/item/weapon/pen,
 /turf/simulated/floor/tiled/old_tile/beige,
 /area/tradeport/safari)
 "mx" = (
@@ -2802,17 +2779,17 @@
 	dir = 1
 	},
 /obj/structure/closet/l3closet/janitor,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
+/obj/item/weapon/grenade/chem_grenade/cleaner,
 /turf/simulated/floor/tiled/old_cargo/beige,
 /area/tradeport/engineering)
 "mJ" = (
@@ -2934,9 +2911,9 @@
 /obj/structure/closet{
 	name = "custodial"
 	},
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/mop,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/mop,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/cockpit)
 "nv" = (
@@ -3049,12 +3026,12 @@
 /area/tradeport)
 "or" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/flame/lighter/zippo/red,
-/obj/item/flame/lighter/zippo/red,
-/obj/item/flame/lighter/zippo/red,
-/obj/item/flame/lighter/zippo/red,
-/obj/item/flame/lighter/zippo/red,
-/obj/item/flame/lighter/zippo/red,
+/obj/item/weapon/flame/lighter/zippo/red,
+/obj/item/weapon/flame/lighter/zippo/red,
+/obj/item/weapon/flame/lighter/zippo/red,
+/obj/item/weapon/flame/lighter/zippo/red,
+/obj/item/weapon/flame/lighter/zippo/red,
+/obj/item/weapon/flame/lighter/zippo/red,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
@@ -3221,10 +3198,10 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/obj/item/kit/paint/ripley/death,
-/obj/item/kit/paint/ripley/flames_blue,
-/obj/item/kit/paint/ripley/flames_red,
-/obj/item/kit/paint/ripley,
+/obj/item/device/kit/paint/ripley/death,
+/obj/item/device/kit/paint/ripley/flames_blue,
+/obj/item/device/kit/paint/ripley/flames_red,
+/obj/item/device/kit/paint/ripley,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
 "pb" = (
@@ -3241,7 +3218,7 @@
 /turf/simulated/wall/r_wall,
 /area/tradeport/safari)
 "pg" = (
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	pixel_y = -25
 	},
 /turf/simulated/floor/wood,
@@ -3268,10 +3245,6 @@
 "pk" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
-	},
-/obj/structure/statue/silver/janitor{
-	desc = "This statue commemorates Farnsworth, the legendary Nebula Gas janitor. Even posthumously, Farnsworth retains the longest consecutive run of employee of the month awards.";
-	name = "Employee of the Month"
 	},
 /turf/simulated/floor/tiled/old_cargo/beige,
 /area/tradeport/engineering)
@@ -3307,7 +3280,7 @@
 /obj/machinery/computer/ship/helm{
 	dir = 4
 	},
-/obj/item/gps/internal/base{
+/obj/item/device/gps/internal/base{
 	desc = "A tracking beacon embedded in the shuttle systems, to help customers find where the best deals are.";
 	gps_tag = "BERU";
 	name = "trade transport beacon"
@@ -3382,11 +3355,7 @@
 /turf/simulated/floor/outdoors/dirt,
 /area/tradeport/cyndishow)
 "pU" = (
-/obj/structure/closet{
-	icon_closed = "cabinet_closed";
-	icon_opened = "cabinet_open";
-	icon_state = "cabinet_closed"
-	},
+/obj/structure/closet,
 /turf/simulated/floor/tiled/old_tile/gray,
 /area/shuttle/trade_ship/general)
 "pW" = (
@@ -3423,15 +3392,15 @@
 /area/tradeport)
 "qj" = (
 /obj/structure/table/alien,
-/obj/item/reagent_containers/food/drinks/bottle/gin{
+/obj/item/weapon/reagent_containers/food/drinks/bottle/gin{
 	pixel_x = -5;
 	pixel_y = 16
 	},
-/obj/item/storage/fancy/cigarettes/menthols{
+/obj/item/weapon/storage/fancy/cigarettes/menthols{
 	pixel_x = 7;
 	pixel_y = 11
 	},
-/obj/item/flame/lighter/zippo/royal,
+/obj/item/weapon/flame/lighter/zippo/royal,
 /turf/simulated/floor/carpet/blue,
 /area/tradeport/commons)
 "qm" = (
@@ -3530,7 +3499,7 @@
 	dir = 8;
 	pixel_x = -14
 	},
-/obj/structure/mirror/long/broke{
+/obj/structure/mirror{
 	dir = 8;
 	pixel_x = -29
 	},
@@ -3704,7 +3673,7 @@
 /turf/simulated/floor/wood,
 /area/tradeport/cyndi)
 "rJ" = (
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	pixel_y = -25
 	},
 /turf/simulated/floor/wood,
@@ -3740,7 +3709,7 @@
 	dir = 1
 	},
 /obj/structure/bookcase,
-/obj/item/gun/projectile/shotgun/pump/combat,
+/obj/item/weapon/gun/projectile/shotgun/pump/combat,
 /turf/simulated/floor/wood,
 /area/shuttle/trade_ship/general)
 "rR" = (
@@ -3799,10 +3768,10 @@
 /area/tradeport/pads)
 "sb" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/cell/high,
-/obj/item/cell/high,
-/obj/item/cell/hyper,
-/obj/item/cell/potato,
+/obj/item/weapon/cell/high,
+/obj/item/weapon/cell/high,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/cell/potato,
 /obj/structure/window/reinforced,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
@@ -3917,7 +3886,7 @@
 /area/tradeport/commons)
 "sz" = (
 /obj/structure/bed/double/padded,
-/obj/item/bedsheet/captaindouble,
+/obj/item/weapon/bedsheet/captaindouble,
 /obj/machinery/light_switch{
 	dir = 4;
 	pixel_x = 25
@@ -4028,9 +3997,9 @@
 	dir = 8
 	},
 /obj/structure/table/rack/shelf/steel,
-/obj/item/whetstone,
-/obj/item/whetstone,
-/obj/item/whetstone,
+/obj/item/weapon/whetstone,
+/obj/item/weapon/whetstone,
+/obj/item/weapon/whetstone,
 /turf/simulated/floor/wood,
 /area/tradeport/cyndi)
 "sY" = (
@@ -4090,7 +4059,7 @@
 /area/shuttle/trade_ship/general)
 "tp" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/purple,
+/obj/item/weapon/bedsheet/purple,
 /turf/simulated/floor/carpet,
 /area/tradeport/commons)
 "tq" = (
@@ -4210,12 +4179,12 @@
 /area/tradeport/commons)
 "tX" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/syndie/c4explosive,
-/obj/item/syndie/c4explosive,
-/obj/item/syndie/c4explosive,
-/obj/item/syndie/c4explosive,
-/obj/item/syndie/c4explosive,
-/obj/item/syndie/c4explosive,
+/obj/item/weapon/syndie/c4explosive,
+/obj/item/weapon/syndie/c4explosive,
+/obj/item/weapon/syndie/c4explosive,
+/obj/item/weapon/syndie/c4explosive,
+/obj/item/weapon/syndie/c4explosive,
+/obj/item/weapon/syndie/c4explosive,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
@@ -4363,7 +4332,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	pixel_y = -25
 	},
 /turf/simulated/shuttle/floor/white,
@@ -4634,7 +4603,7 @@
 /obj/random/contraband,
 /obj/random/contraband,
 /obj/random/contraband,
-/obj/item/bikehorn,
+/obj/item/weapon/bikehorn,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
 "vy" = (
@@ -4672,7 +4641,7 @@
 /turf/simulated/floor/wood,
 /area/tradeport/commons)
 "vH" = (
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	pixel_y = -25
 	},
 /turf/simulated/wall,
@@ -4720,7 +4689,7 @@
 /area/tradeport/cyndishow)
 "vU" = (
 /obj/machinery/portable_atmospherics/hydroponics,
-/obj/item/reagent_containers/glass/bucket,
+/obj/item/weapon/reagent_containers/glass/bucket,
 /turf/simulated/floor/grass,
 /area/tradeport)
 "vV" = (
@@ -4788,7 +4757,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/item/storage/secure/safe{
+/obj/item/weapon/storage/secure/safe{
 	pixel_x = 6;
 	pixel_y = -26
 	},
@@ -4802,7 +4771,7 @@
 /turf/simulated/floor/wmarble,
 /area/tradeport/commons)
 "wg" = (
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	req_access = list(160)
 	},
 /obj/effect/map_helper/airlock/door/ext_door,
@@ -4832,7 +4801,7 @@
 /area/tradeport/facility)
 "wj" = (
 /obj/structure/table/standard,
-/obj/item/storage/box/donkpockets,
+/obj/item/weapon/storage/box/donkpockets,
 /turf/simulated/floor/carpet,
 /area/shuttle/trade_ship/general)
 "wq" = (
@@ -4958,7 +4927,7 @@
 	dir = 8;
 	pixel_x = -14
 	},
-/obj/structure/mirror/long/left_broke{
+/obj/structure/mirror{
 	dir = 8;
 	pixel_x = -29
 	},
@@ -5048,7 +5017,7 @@
 /area/tradeport/cyndi)
 "xl" = (
 /obj/machinery/camera,
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	dir = 1;
 	pixel_y = 25
 	},
@@ -5252,9 +5221,9 @@
 /area/space)
 "ya" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/shield_diffuser,
-/obj/item/shield_diffuser,
-/obj/item/shield_diffuser,
+/obj/item/weapon/shield_diffuser,
+/obj/item/weapon/shield_diffuser,
+/obj/item/weapon/shield_diffuser,
 /obj/machinery/camera{
 	dir = 1
 	},
@@ -5397,7 +5366,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/tradeport/facility)
 "yI" = (
-/obj/item/material/ashtray/plastic,
+/obj/item/weapon/material/ashtray/plastic,
 /obj/structure/table/glass,
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/commons)
@@ -5522,7 +5491,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/tradeport)
 "zx" = (
-/obj/item/stool/padded,
+/obj/item/weapon/stool/padded,
 /obj/effect/landmark{
 	name = "Trader"
 	},
@@ -5715,8 +5684,8 @@
 	name = "Shop Shutters";
 	pixel_y = -1
 	},
-/obj/item/storage/secure/briefcase,
-/obj/item/radio/intercom/trader{
+/obj/item/weapon/storage/secure/briefcase,
+/obj/item/device/radio/intercom/trader{
 	dir = 1;
 	pixel_y = 25
 	},
@@ -5907,7 +5876,7 @@
 	dir = 4
 	},
 /obj/structure/table/alien,
-/obj/item/phone,
+/obj/item/weapon/phone,
 /turf/simulated/floor/carpet/blue,
 /area/tradeport/commons)
 "Bl" = (
@@ -5971,7 +5940,6 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/vending/glukoz,
 /turf/simulated/floor/tiled/old_tile/red,
 /area/tradeport)
 "Bw" = (
@@ -6183,25 +6151,12 @@
 /turf/simulated/floor/carpet/blue,
 /area/tradeport/commons)
 "Cx" = (
-/obj/item/material/gravemarker,
+/obj/item/weapon/material/gravemarker,
 /obj/effect/floor_decal/grass_edge{
 	dir = 10
 	},
-/mob/living/carbon/human/dummy/mannequin/scarecrow,
 /turf/simulated/floor/outdoors/dirt,
 /area/tradeport/cyndishow)
-"Cy" = (
-/obj/structure/table/glass,
-/obj/item/radio/intercom/trader{
-	dir = 1;
-	pixel_y = 25
-	},
-/obj/machinery/light/small{
-	dir = 4
-	},
-/obj/item/toy/plushie/bear_space,
-/turf/simulated/floor/carpet,
-/area/tradeport/commons)
 "CC" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
 	dir = 4;
@@ -6242,7 +6197,7 @@
 "CP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	req_access = list(160)
 	},
 /obj/machinery/door/firedoor{
@@ -6340,11 +6295,11 @@
 /turf/simulated/floor/tiled/asteroid_steel/airless,
 /area/tradeport/pads)
 "Dh" = (
-/obj/item/paper_bin{
+/obj/item/weapon/paper_bin{
 	pixel_x = -3;
 	pixel_y = 8
 	},
-/obj/item/pen{
+/obj/item/weapon/pen{
 	pixel_y = 4
 	},
 /obj/machinery/light,
@@ -6749,7 +6704,7 @@
 /turf/simulated/floor/tiled/old_tile/red,
 /area/tradeport/spine)
 "ET" = (
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	req_access = list(160)
 	},
 /obj/machinery/door/firedoor{
@@ -6773,7 +6728,7 @@
 /area/tradeport/cyndishow)
 "EY" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/food/snacks/milosoup,
+/obj/item/weapon/reagent_containers/food/snacks/milosoup,
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/commons)
 "EZ" = (
@@ -6855,7 +6810,7 @@
 /area/shuttle/trade_ship/general)
 "Fq" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/captain,
+/obj/item/weapon/bedsheet/captain,
 /turf/simulated/floor/wood,
 /area/shuttle/trade_ship/general)
 "Fs" = (
@@ -6935,11 +6890,11 @@
 /obj/structure/sign/poster{
 	pixel_x = 32
 	},
-/obj/item/paper_bin{
+/obj/item/weapon/paper_bin{
 	pixel_x = -3;
 	pixel_y = 8
 	},
-/obj/item/pen/click,
+/obj/item/weapon/pen,
 /turf/simulated/floor/carpet/blue,
 /area/tradeport/commons)
 "FL" = (
@@ -6948,7 +6903,7 @@
 /area/tradeport/pads)
 "FM" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/food/snacks/chips,
+/obj/item/weapon/reagent_containers/food/snacks/chips,
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/commons)
 "FN" = (
@@ -6978,12 +6933,12 @@
 /area/tradeport/commons)
 "FW" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/gift,
-/obj/item/gift,
-/obj/item/gift,
-/obj/item/gift,
-/obj/item/gift,
-/obj/item/gift,
+/obj/item/weapon/gift,
+/obj/item/weapon/gift,
+/obj/item/weapon/gift,
+/obj/item/weapon/gift,
+/obj/item/weapon/gift,
+/obj/item/weapon/gift,
 /turf/simulated/floor/wood,
 /area/tradeport/cyndi)
 "FX" = (
@@ -7033,7 +6988,7 @@
 /obj/machinery/door/firedoor{
 	req_one_access = list(160)
 	},
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	icon_state = "door_locked";
 	locked = 1;
 	name = "Wing Expansion - Under Construction"
@@ -7117,11 +7072,11 @@
 /area/tradeport/facility)
 "Gx" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/storage/toolbox/syndicate{
+/obj/item/weapon/storage/toolbox/syndicate{
 	pixel_x = 3;
 	pixel_y = 5
 	},
-/obj/item/storage/toolbox/electrical,
+/obj/item/weapon/storage/toolbox/electrical,
 /obj/item/stack/cable_coil/yellow,
 /obj/item/stack/cable_coil/yellow,
 /turf/simulated/floor/tiled/dark,
@@ -7199,11 +7154,6 @@
 	dir = 1
 	},
 /obj/structure/table/steel_reinforced,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
 "GK" = (
@@ -7289,7 +7239,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/material/knife/ritual{
+/obj/item/weapon/material/knife/ritual{
 	desc = "This curved blade, reminiscent of the harvest moon, brings an uncanny chill at the touch. Some wielders have claimed they hear the constant rustling of grain when holding it.";
 	name = "Harvest Blade"
 	},
@@ -7357,7 +7307,7 @@
 /area/tradeport/spine)
 "HA" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/inflatable_duck,
+/obj/item/weapon/inflatable_duck,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
 "HB" = (
@@ -7543,7 +7493,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	dir = 4;
 	pixel_x = 25
 	},
@@ -7610,14 +7560,6 @@
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/wood,
-/area/tradeport/commons)
-"Ja" = (
-/obj/structure/table/alien,
-/obj/item/toy/plushie/bear_bloody{
-	pixel_x = 6;
-	pixel_y = 3
-	},
-/turf/simulated/floor/carpet/blue,
 /area/tradeport/commons)
 "Jc" = (
 /obj/structure/cable/green{
@@ -7717,7 +7659,7 @@
 	req_access = list(160)
 	},
 /obj/structure/table/marble,
-/obj/item/gun/energy/gun/fluff/dominator,
+/obj/item/weapon/gun/energy/gun/fluff/dominator,
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/cyndishow)
 "JO" = (
@@ -7730,7 +7672,7 @@
 /area/tradeport/pads)
 "JQ" = (
 /obj/effect/decal/cleanable/blood,
-/obj/item/bone/skull,
+/obj/item/weapon/bone/skull,
 /turf/simulated/floor/snow,
 /area/tradeport/cyndishow)
 "JT" = (
@@ -7958,7 +7900,7 @@
 /area/tradeport/commons)
 "KM" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/rig/internalaffairs,
+/obj/item/weapon/rig/internalaffairs,
 /obj/item/clothing/head/helmet/space/void/wizard,
 /obj/item/clothing/suit/space/void/wizard,
 /turf/simulated/floor/tiled/dark,
@@ -8044,7 +7986,7 @@
 	req_access = list(160)
 	},
 /obj/structure/table/marble,
-/obj/item/gun/energy/decloner,
+/obj/item/weapon/gun/energy/decloner,
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
 	},
@@ -8072,12 +8014,12 @@
 /area/tradeport/engineering)
 "Ls" = (
 /obj/structure/table/marble,
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	dir = 1;
 	pixel_y = 25
 	},
-/obj/item/material/knife/butch/plasteel,
-/obj/item/material/kitchen/rollingpin/durasteel,
+/obj/item/weapon/material/knife/butch,
+/obj/item/weapon/material/kitchen/rollingpin,
 /turf/simulated/floor/wmarble,
 /area/tradeport/commons)
 "Lu" = (
@@ -8108,7 +8050,7 @@
 	req_access = list(160)
 	},
 /obj/structure/table/marble,
-/obj/item/gun/energy/gun/fluff/gunsword,
+/obj/item/weapon/gun/energy/gun/fluff/gunsword,
 /obj/effect/floor_decal/spline/plain{
 	dir = 10
 	},
@@ -8217,7 +8159,7 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/shuttle/trade_ship/general)
 "LV" = (
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	req_access = list(160)
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -8298,9 +8240,6 @@
 /area/tradeport)
 "Mo" = (
 /obj/effect/decal/cleanable/blood/drip,
-/mob/living/carbon/human/dummy/mannequin/animegirl{
-	dir = 1
-	},
 /turf/simulated/floor/tiled/hydro,
 /area/tradeport/cyndishow)
 "Mp" = (
@@ -8472,7 +8411,7 @@
 	dir = 8
 	},
 /obj/structure/table/steel_reinforced,
-/obj/item/gun/projectile/automatic/as24{
+/obj/item/weapon/gun/projectile/automatic/as24{
 	desc = "Never ask to speak to the manager.";
 	name = "Kate"
 	},
@@ -8630,7 +8569,7 @@
 /area/tradeport/cyndishow)
 "NJ" = (
 /obj/structure/window/reinforced,
-/obj/item/material/sword/katana{
+/obj/item/weapon/material/sword/katana{
 	applies_material_colour = 0;
 	default_material = "durasteel";
 	desc = "This blade's edge seems uncannily sharp, as if it could wilt leaves simply with a touch.";
@@ -8757,8 +8696,8 @@
 /area/shuttle/trade_ship/general)
 "Oc" = (
 /obj/structure/janitorialcart,
-/obj/item/reagent_containers/glass/bucket,
-/obj/item/mop,
+/obj/item/weapon/reagent_containers/glass/bucket,
+/obj/item/weapon/mop,
 /turf/simulated/floor/tiled/old_cargo/beige,
 /area/tradeport/engineering)
 "Od" = (
@@ -8798,11 +8737,11 @@
 /area/tradeport/commhall)
 "On" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/grenade/chem_grenade/metalfoam,
-/obj/item/grenade/chem_grenade/metalfoam,
-/obj/item/grenade/chem_grenade/metalfoam,
-/obj/item/grenade/chem_grenade/metalfoam,
-/obj/item/grenade/chem_grenade/metalfoam,
+/obj/item/weapon/grenade/chem_grenade/metalfoam,
+/obj/item/weapon/grenade/chem_grenade/metalfoam,
+/obj/item/weapon/grenade/chem_grenade/metalfoam,
+/obj/item/weapon/grenade/chem_grenade/metalfoam,
+/obj/item/weapon/grenade/chem_grenade/metalfoam,
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
@@ -8810,7 +8749,7 @@
 /turf/simulated/floor/plating,
 /area/tradeport/engineering)
 "Oo" = (
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	req_access = list(160)
 	},
 /obj/machinery/door/firedoor{
@@ -8957,21 +8896,20 @@
 /area/tradeport)
 "OS" = (
 /obj/structure/table/glass,
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	dir = 1;
 	pixel_y = 25
 	},
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/item/toy/plushie/bear_panda,
 /turf/simulated/floor/carpet,
 /area/tradeport/commons)
 "OW" = (
 /obj/structure/window/reinforced,
 /obj/structure/table/woodentable,
-/obj/item/material/kitchen/rollingpin/durasteel,
-/obj/item/material/knife/butch/plasteel,
+/obj/item/weapon/material/kitchen/rollingpin,
+/obj/item/weapon/material/knife/butch,
 /turf/simulated/floor/tiled/freezer,
 /area/tradeport)
 "Pa" = (
@@ -9112,7 +9050,7 @@
 /turf/simulated/floor/tiled/neutral,
 /area/tradeport/engineering)
 "PF" = (
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	dir = 8;
 	pixel_x = -25
 	},
@@ -9211,7 +9149,7 @@
 /turf/simulated/floor/tiled/old_cargo/red,
 /area/shuttle/trade_ship/general)
 "Qc" = (
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	pixel_y = -25
 	},
 /turf/simulated/floor/tiled/dark,
@@ -9325,13 +9263,13 @@
 /area/tradeport/facility)
 "Qu" = (
 /obj/effect/floor_decal/grass_edge,
-/turf/simulated/floor/outdoors/dirtlight,
+/turf/simulated/floor/outdoors/dirt,
 /area/tradeport/cyndishow)
 "Qv" = (
 /obj/structure/table/standard,
-/obj/item/soap/deluxe,
-/obj/item/soap/deluxe,
-/obj/item/soap/deluxe,
+/obj/item/weapon/soap/deluxe,
+/obj/item/weapon/soap/deluxe,
+/obj/item/weapon/soap/deluxe,
 /obj/machinery/alarm/alarms_hidden{
 	dir = 1;
 	pixel_y = -22;
@@ -9339,20 +9277,6 @@
 	},
 /turf/simulated/shuttle/floor/white,
 /area/tradeport/commons)
-"Qw" = (
-/obj/structure/table/rack/shelf/steel,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/obj/item/contraband/poster,
-/turf/simulated/floor/wood,
-/area/tradeport/cyndi)
 "Qx" = (
 /obj/machinery/firealarm{
 	dir = 8;
@@ -9374,7 +9298,7 @@
 /area/space)
 "QC" = (
 /obj/structure/table/standard,
-/obj/item/storage/box/glasses/square,
+/obj/item/weapon/storage/box/glasses/square,
 /turf/simulated/floor/carpet,
 /area/shuttle/trade_ship/general)
 "QD" = (
@@ -9481,7 +9405,7 @@
 /area/tradeport/engineering)
 "QV" = (
 /obj/structure/window/reinforced,
-/obj/item/nullrod/egyptian{
+/obj/item/weapon/nullrod{
 	desc = "This golden scepter was once the object of many fanciful tales. Old Earth archaeologists long believed it to be a myth. It was discovered by scavenger teams after the Final War, and has changed hands many times since.";
 	name = "The Staff of Ahten-Ka"
 	},
@@ -9590,7 +9514,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	dir = 1;
 	pixel_y = 25
 	},
@@ -9697,7 +9621,7 @@
 /turf/simulated/floor/wood,
 /area/tradeport/safarizoo)
 "Sd" = (
-/obj/machinery/door/airlock/external/glass{
+/obj/machinery/door/airlock/glass_external{
 	req_access = list(160)
 	},
 /obj/machinery/door/firedoor{
@@ -9707,16 +9631,16 @@
 /area/tradeport/facility)
 "Sf" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/lightreplacer,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/reagent_containers/spray/cleaner,
-/obj/item/storage/box/lights/mixed,
-/obj/item/storage/box/lights/mixed,
-/obj/item/reagent_containers/spray/cleaner/drone,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/device/lightreplacer,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/weapon/reagent_containers/spray/cleaner,
+/obj/item/weapon/storage/box/lights/mixed,
+/obj/item/weapon/storage/box/lights/mixed,
+/obj/item/weapon/reagent_containers/spray/cleaner/drone,
 /turf/simulated/floor/tiled/old_cargo/beige,
 /area/tradeport/engineering)
 "Sg" = (
@@ -9790,7 +9714,7 @@
 /obj/machinery/computer/ship/engines{
 	dir = 1
 	},
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	dir = 8;
 	pixel_x = -25
 	},
@@ -9809,10 +9733,10 @@
 /turf/simulated/mineral/floor/vacuum,
 /area/tradeport/engineering)
 "SF" = (
-/obj/item/towel/random,
-/obj/item/towel/random,
-/obj/item/towel/random,
-/obj/item/towel/random,
+/obj/item/weapon/towel/random,
+/obj/item/weapon/towel/random,
+/obj/item/weapon/towel/random,
+/obj/item/weapon/towel/random,
 /obj/structure/table/standard,
 /turf/simulated/shuttle/floor/white,
 /area/tradeport/commons)
@@ -9903,7 +9827,7 @@
 /turf/simulated/floor/wood,
 /area/tradeport/commons)
 "Tc" = (
-/obj/item/radio/intercom/trader{
+/obj/item/device/radio/intercom/trader{
 	dir = 1;
 	pixel_y = 25
 	},
@@ -10060,9 +9984,6 @@
 /area/tradeport/commons)
 "TO" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/melee/spike,
-/obj/item/melee/spike,
-/obj/item/melee/spike,
 /turf/simulated/floor/wood,
 /area/tradeport/cyndi)
 "TQ" = (
@@ -10289,7 +10210,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/item/material/twohanded/baseballbat/penbat,
+/obj/item/weapon/material/twohanded/baseballbat,
 /obj/machinery/door/window/eastright{
 	name = "rare item display case";
 	req_access = list(160)
@@ -10355,7 +10276,6 @@
 /area/tradeport/spine)
 "Vm" = (
 /obj/effect/decal/cleanable/blood/drip,
-/mob/living/carbon/human/dummy/mannequin/samurai,
 /turf/simulated/floor/snow,
 /area/tradeport/cyndishow)
 "Vo" = (
@@ -10588,7 +10508,7 @@
 	dir = 8;
 	pixel_x = -14
 	},
-/obj/structure/mirror/long/right_broke{
+/obj/structure/mirror{
 	dir = 8;
 	pixel_x = -29
 	},
@@ -10898,7 +10818,7 @@
 /obj/random/tech_supply,
 /obj/random/tech_supply,
 /obj/random/tech_supply,
-/obj/item/weldpack,
+/obj/item/weapon/weldpack,
 /turf/simulated/floor/tiled/dark,
 /area/shuttle/trade_ship/general)
 "XK" = (
@@ -10998,7 +10918,7 @@
 	req_access = list(160)
 	},
 /obj/structure/table/marble,
-/obj/item/chameleon,
+/obj/item/device/chameleon,
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/cyndishow)
 "Yk" = (
@@ -11066,7 +10986,7 @@
 /area/tradeport)
 "Yy" = (
 /obj/structure/table/glass,
-/obj/item/reagent_containers/food/snacks/cheesyfries,
+/obj/item/weapon/reagent_containers/food/snacks/cheesyfries,
 /turf/simulated/floor/carpet/bcarpet,
 /area/tradeport/commons)
 "YB" = (
@@ -11107,8 +11027,8 @@
 "YI" = (
 /obj/machinery/light,
 /obj/structure/table/standard,
-/obj/item/soap,
-/obj/item/towel{
+/obj/item/weapon/soap,
+/obj/item/weapon/towel{
 	color = "#0000FF"
 	},
 /obj/machinery/alarm/alarms_hidden{
@@ -11233,11 +11153,11 @@
 /turf/simulated/floor/tiled/freezer,
 /area/tradeport)
 "Zo" = (
-/obj/item/storage/firstaid/regular{
+/obj/item/weapon/storage/firstaid/regular{
 	pixel_x = -2;
 	pixel_y = 4
 	},
-/obj/item/storage/firstaid/regular{
+/obj/item/weapon/storage/firstaid/regular{
 	pixel_x = -2;
 	pixel_y = 4
 	},
@@ -11247,30 +11167,30 @@
 /obj/item/bodybag/cryobag{
 	pixel_x = 5
 	},
-/obj/item/storage/firstaid/o2{
+/obj/item/weapon/storage/firstaid/o2{
 	layer = 2.8;
 	pixel_x = 4;
 	pixel_y = 6
 	},
-/obj/item/storage/box/masks,
-/obj/item/storage/box/gloves{
+/obj/item/weapon/storage/box/masks,
+/obj/item/weapon/storage/box/gloves{
 	pixel_x = 3;
 	pixel_y = 4
 	},
-/obj/item/storage/firstaid/toxin,
-/obj/item/storage/firstaid/fire{
+/obj/item/weapon/storage/firstaid/toxin,
+/obj/item/weapon/storage/firstaid/fire{
 	layer = 2.9;
 	pixel_x = 2;
 	pixel_y = 3
 	},
-/obj/item/storage/firstaid/adv{
+/obj/item/weapon/storage/firstaid/adv{
 	pixel_x = -2
 	},
-/obj/item/reagent_containers/blood/empty,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/empty,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus,
+/obj/item/weapon/reagent_containers/blood/OMinus,
 /obj/structure/closet/medical_wall{
 	pixel_y = 32
 	},
@@ -11452,7 +11372,7 @@
 "ZR" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/effect/floor_decal/grass_edge,
-/turf/simulated/floor/outdoors/dirtlight,
+/turf/simulated/floor/outdoors/dirt,
 /area/tradeport/cyndishow)
 "ZT" = (
 /obj/machinery/light{
@@ -18657,7 +18577,7 @@ HE
 lC
 sX
 tM
-ef
+TO
 xK
 in
 im
@@ -19645,7 +19565,7 @@ Tm
 Of
 hl
 jY
-Qw
+TO
 Sl
 or
 tM
@@ -25144,7 +25064,7 @@ nG
 fu
 eh
 fB
-cg
+tF
 YE
 xJ
 tF
@@ -28292,7 +28212,7 @@ tK
 Ci
 Cd
 hL
-cY
+Cd
 lS
 ej
 ZM
@@ -28848,7 +28768,7 @@ OK
 Tc
 jz
 sz
-Ja
+vI
 bA
 RV
 DN
@@ -29839,7 +29759,7 @@ Gi
 cH
 AP
 OK
-Cy
+OS
 Gi
 tp
 sc

@@ -109,6 +109,7 @@ var/const/AI_FREQ	= 1343
 var/const/DTH_FREQ	= 1341
 var/const/SYND_FREQ = 1213
 var/const/RAID_FREQ	= 1277
+var/const/TRADE_FREQ = 1279 // GURGS ADD: Trade Frequency
 var/const/ENT_FREQ	= 1461 //entertainment frequency. This is not a diona exclusive frequency.
 
 // department channels
@@ -145,6 +146,7 @@ var/list/radiochannels = list(
 	"Entertainment" = ENT_FREQ,
 	"Medical(I)"	= MED_I_FREQ,
 	"Security(I)"	= SEC_I_FREQ,
+	"Trader"		= TRADE_FREQ, // GURGS ADD: Trade Frequency
 	"Talon"			= TALON_FREQ //VOREStation Add
 )
 
@@ -190,7 +192,7 @@ var/list/CENT_FREQS = list(ERT_FREQ, DTH_FREQ)
 var/list/ANTAG_FREQS = list(SYND_FREQ, RAID_FREQ)
 
 //Department channels, arranged lexically
-var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, ENT_FREQ, MED_FREQ, SEC_FREQ, SCI_FREQ, SRV_FREQ, SUP_FREQ)
+var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, ENT_FREQ, MED_FREQ, SEC_FREQ, SCI_FREQ, SRV_FREQ, SUP_FREQ, TRADE_FREQ) // GURGS ADD: Trade Frequency
 
 var/list/OFFMAP_FREQS = list(TALON_FREQ) //VOREStation Add
 
@@ -226,6 +228,9 @@ var/list/OFFMAP_FREQS = list(TALON_FREQ) //VOREStation Add
 		return "entradio"
 	if(frequency in DEPT_FREQS)
 		return "deptradio"
+	if(frequency == TRADE_FREQ) // GURGS ADD: Trade Frequency
+		return "syndradio"
+
 	//VOREStation Add
 	if(frequency in OFFMAP_FREQS)
 		return "expradio"

@@ -83,10 +83,6 @@
 /obj/machinery/vending/boozeomat,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
-"eq" = (
-/mob/living/simple_mob/humanoid/merc/voxpirate/pirate,
-/turf/simulated/floor/reinforced,
-/area/piratebase/facility)
 "ez" = (
 /obj/structure/lattice,
 /obj/structure/railing{
@@ -138,13 +134,13 @@
 /area/piratebase/facility)
 "gw" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/cell/device/weapon/recharge/captain,
+/obj/item/weapon/cell/device/weapon/recharge/captain,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "gQ" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/cell/hyper,
-/obj/item/storage/secure/briefcase/ml3m_pack_cmo,
+/obj/item/weapon/cell/hyper,
+/obj/item/weapon/storage/secure/briefcase/ml3m_pack_cmo,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "hc" = (
@@ -179,12 +175,12 @@
 /area/piratebase/facility)
 "ie" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/food/snacks/dionaroast,
+/obj/item/weapon/reagent_containers/food/snacks/dionaroast,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "ig" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/cell/device/weapon/gunsword,
+/obj/item/weapon/cell/device/weapon/gunsword,
 /obj/random/tool,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
@@ -274,12 +270,12 @@
 /area/space)
 "lH" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/storage/firstaid/bonemed,
+/obj/item/weapon/storage/firstaid/bonemed,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "lI" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/cell/device/weapon/gunsword,
+/obj/item/weapon/cell/device/weapon/gunsword,
 /obj/random/tool,
 /obj/machinery/light{
 	dir = 8
@@ -295,10 +291,6 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced,
-/area/piratebase/facility)
-"mE" = (
-/mob/living/simple_mob/humanoid/merc/voxpirate/captain,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "mK" = (
@@ -377,11 +369,6 @@
 /obj/structure/railing,
 /turf/space,
 /area/space)
-"rX" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/storage/firstaid/insiderepair,
-/turf/simulated/floor/reinforced,
-/area/piratebase/facility)
 "sb" = (
 /obj/structure/sign/atmos/phoron{
 	pixel_y = -32
@@ -466,10 +453,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
-"vL" = (
-/mob/living/simple_mob/humanoid/merc/voxpirate/boarder,
-/turf/simulated/floor/reinforced,
-/area/piratebase/facility)
 "vW" = (
 /mob/living/simple_mob/mechanical/mecha/combat/marauder/mauler{
 	faction = "voxpirate"
@@ -488,7 +471,7 @@
 /area/piratebase/facility)
 "wF" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/cell/device/weapon/gunsword,
+/obj/item/weapon/cell/device/weapon/gunsword,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "wN" = (
@@ -498,7 +481,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/mob/living/simple_mob/humanoid/merc/voxpirate/pirate,
+/obj/random/mob/merc,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "wT" = (
@@ -512,7 +495,7 @@
 /area/piratebase/facility)
 "xo" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/storage/firstaid/adv,
+/obj/item/weapon/storage/firstaid/adv,
 /obj/machinery/cell_charger,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
@@ -547,7 +530,7 @@
 /area/piratebase/facility)
 "yA" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
 /obj/random/tool,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
@@ -556,7 +539,7 @@
 /area/piratebase/facility)
 "Ar" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/storage/firstaid/clotting,
+/obj/item/weapon/storage/firstaid/clotting,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "Az" = (
@@ -594,12 +577,12 @@
 /area/piratebase/facility)
 "Dz" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/material/sword/katana/durasteel,
+/obj/item/weapon/material/sword/katana,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "DE" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/cell/slime,
+/obj/item/weapon/cell/slime,
 /obj/random/mre,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
@@ -616,10 +599,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
-"DX" = (
-/mob/living/simple_mob/humanoid/merc/voxpirate/technician,
-/turf/simulated/floor/reinforced,
-/area/piratebase/facility)
 "Ea" = (
 /obj/machinery/computer/shuttle_control/explore{
 	dir = 4
@@ -627,7 +606,7 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/pirate/general)
 "Em" = (
-/mob/living/simple_mob/humanoid/merc/voxpirate/suppressor,
+/obj/random/mob/merc,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "EB" = (
@@ -648,7 +627,7 @@
 /area/space)
 "Ft" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/cell/hyper,
+/obj/item/weapon/cell/hyper,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "Gb" = (
@@ -679,7 +658,7 @@
 /area/space)
 "HY" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/gun/energy/gun/fluff/gunsword,
+/obj/item/weapon/gun/energy/gun/fluff/gunsword,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "Il" = (
@@ -705,7 +684,7 @@
 /area/piratebase/facility)
 "IJ" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/food/snacks/chickenfillet,
+/obj/item/weapon/reagent_containers/food/snacks/chickenfillet,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "Jl" = (
@@ -739,12 +718,12 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/mob/living/simple_mob/humanoid/merc/voxpirate/suppressor,
+/obj/random/mob/merc,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "JH" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "JT" = (
@@ -915,7 +894,7 @@
 /area/shuttle/pirate/general)
 "Pr" = (
 /obj/machinery/light,
-/mob/living/simple_mob/humanoid/merc/voxpirate/pirate,
+/obj/random/mob/merc,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "PJ" = (
@@ -951,7 +930,7 @@
 /obj/structure/sink{
 	pixel_y = 23
 	},
-/mob/living/simple_mob/humanoid/merc/voxpirate/pirate,
+/obj/random/mob/merc,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "Rp" = (
@@ -997,12 +976,12 @@
 /turf/space,
 /area/space)
 "Uh" = (
-/mob/living/simple_mob/humanoid/merc/voxpirate/boarder,
+/obj/random/mob/merc,
 /turf/simulated/floor/airless,
 /area/piratebase/facility)
 "Um" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/cell/device/weapon,
+/obj/item/weapon/cell/device/weapon,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -1028,7 +1007,7 @@
 /area/piratebase/facility)
 "WS" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/pickaxe/diamonddrill,
+/obj/item/weapon/pickaxe/diamonddrill,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "Xd" = (
@@ -6970,7 +6949,7 @@ fl
 yq
 yq
 hT
-vL
+Em
 hT
 hT
 hT
@@ -7120,7 +7099,7 @@ hT
 hT
 hT
 hT
-eq
+Em
 hT
 hT
 hT
@@ -7255,17 +7234,17 @@ yq
 yq
 hT
 hT
-vL
+Em
 hT
 hT
-DX
+Em
 hT
 rM
 hT
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 hT
@@ -7292,7 +7271,7 @@ hT
 hT
 hT
 hT
-eq
+Em
 hT
 hT
 hT
@@ -7527,7 +7506,7 @@ hT
 hT
 hT
 hT
-DX
+Em
 hT
 hT
 hT
@@ -7571,7 +7550,7 @@ hT
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 kf
@@ -7699,13 +7678,13 @@ Xd
 yq
 hT
 hT
-eq
+Em
 hT
 hT
 hT
 hT
 hT
-DX
+Em
 hT
 hT
 hT
@@ -8244,7 +8223,7 @@ Em
 rM
 hT
 hT
-mE
+Em
 hT
 hT
 hT
@@ -8374,7 +8353,7 @@ Tv
 ol
 hT
 hT
-DX
+Em
 hT
 hT
 hT
@@ -8388,7 +8367,7 @@ hT
 hT
 hT
 hT
-DX
+Em
 hT
 hT
 hT
@@ -8403,14 +8382,14 @@ hT
 yq
 yq
 hi
-DX
+Em
 hT
 hT
 Rx
 hT
 hT
 hT
-mE
+Em
 hT
 hT
 hT
@@ -8554,7 +8533,7 @@ hT
 hT
 hT
 hT
-DX
+Em
 hT
 hT
 ol
@@ -8681,7 +8660,7 @@ hT
 hT
 hT
 hT
-eq
+Em
 hT
 hT
 yq
@@ -8830,13 +8809,13 @@ yq
 yq
 hT
 hT
-vL
+Em
 hT
 yq
 hT
 hT
 hT
-vL
+Em
 Em
 hT
 hT
@@ -9248,7 +9227,7 @@ rM
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 hT
@@ -9263,7 +9242,7 @@ hT
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 hT
@@ -9514,7 +9493,7 @@ hT
 hT
 hT
 hT
-mE
+Em
 hT
 hT
 hT
@@ -9823,7 +9802,7 @@ hT
 yq
 yq
 hT
-mE
+Em
 hT
 Xd
 yq
@@ -9950,7 +9929,7 @@ hT
 hT
 hT
 hT
-mE
+Em
 hT
 hT
 hT
@@ -10112,7 +10091,7 @@ hT
 hT
 yq
 hT
-vL
+Em
 hT
 hT
 hT
@@ -10367,7 +10346,7 @@ ol
 qL
 hT
 hT
-vL
+Em
 hT
 ye
 yq
@@ -10532,7 +10511,7 @@ yq
 hT
 yq
 yq
-vL
+Em
 hT
 hT
 hT
@@ -10541,7 +10520,7 @@ hT
 hT
 JW
 hT
-vL
+Em
 rM
 hT
 hT
@@ -10662,13 +10641,13 @@ yq
 yq
 hT
 hT
-vL
+Em
 hT
 hT
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 hT
@@ -10791,9 +10770,9 @@ Tv
 Tv
 ol
 YV
-vL
+Em
 hT
-eq
+Em
 hT
 hT
 yq
@@ -10807,7 +10786,7 @@ hT
 hT
 hT
 hT
-DX
+Em
 hT
 hT
 hT
@@ -10818,13 +10797,13 @@ yq
 yq
 hT
 hT
-vL
+Em
 hT
 yq
 hT
 hT
 rM
-vL
+Em
 hT
 rM
 hT
@@ -11083,7 +11062,7 @@ wT
 yq
 hT
 hT
-eq
+Em
 hT
 yq
 hi
@@ -11111,11 +11090,11 @@ hT
 hT
 hT
 hT
-vL
+Em
 LB
 yq
 hT
-vL
+Em
 hT
 hT
 ol
@@ -11360,7 +11339,7 @@ Tv
 ol
 qL
 hT
-DX
+Em
 wT
 hT
 nx
@@ -11651,7 +11630,7 @@ wT
 yq
 hT
 hT
-vL
+Em
 hT
 yq
 hT
@@ -11788,7 +11767,7 @@ hT
 hT
 hT
 hT
-DX
+Em
 ye
 yq
 hi
@@ -11941,23 +11920,23 @@ yq
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 yq
 yq
 pp
-vL
+Em
 hT
 JW
 hT
-vL
+Em
 rM
 ye
 yq
@@ -11966,9 +11945,9 @@ hT
 hT
 hT
 yq
-vL
+Em
 hT
-DX
+Em
 hT
 Rp
 GX
@@ -12105,7 +12084,7 @@ hT
 yq
 hT
 hT
-eq
+Em
 ye
 yq
 JW
@@ -12247,7 +12226,7 @@ hT
 yq
 hT
 hT
-vL
+Em
 hT
 yq
 hT
@@ -12353,10 +12332,10 @@ Tv
 Tv
 ol
 hT
-vL
+Em
 hT
-vL
-eq
+Em
+Em
 hT
 vX
 hT
@@ -12666,7 +12645,7 @@ ng
 hT
 hT
 rM
-vL
+Em
 hT
 rM
 hT
@@ -12787,7 +12766,7 @@ Jw
 yq
 hT
 hT
-DX
+Em
 hT
 yq
 hT
@@ -12806,7 +12785,7 @@ yq
 yq
 Ne
 hT
-vL
+Em
 hT
 hT
 hT
@@ -12950,7 +12929,7 @@ Ne
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 hT
@@ -13212,7 +13191,7 @@ cM
 hT
 yq
 hT
-vL
+Em
 hT
 ye
 yq
@@ -13360,7 +13339,7 @@ hT
 yq
 Xd
 hT
-vL
+Em
 hT
 hT
 hT
@@ -13504,7 +13483,7 @@ hT
 hT
 hT
 hT
-DX
+Em
 hT
 hT
 yq
@@ -13530,7 +13509,7 @@ hT
 yq
 rM
 hT
-DX
+Em
 LB
 ol
 GX
@@ -13652,7 +13631,7 @@ ye
 yq
 hi
 hT
-vL
+Em
 hT
 hT
 hT
@@ -13671,7 +13650,7 @@ hT
 hT
 yq
 rM
-vL
+Em
 hT
 LB
 ol
@@ -13788,7 +13767,7 @@ hi
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 yq
@@ -13799,7 +13778,7 @@ hT
 hT
 hT
 hT
-vL
+Em
 hT
 yq
 hi
@@ -13923,7 +13902,7 @@ hT
 yq
 hT
 hT
-vL
+Em
 hT
 yq
 Xd
@@ -14200,9 +14179,9 @@ Tv
 ol
 yq
 hX
-vL
+Em
 hT
-vL
+Em
 JA
 yq
 hi
@@ -14220,7 +14199,7 @@ hT
 hT
 hT
 hT
-DX
+Em
 ye
 yq
 LB
@@ -14247,7 +14226,7 @@ hT
 hT
 kf
 hT
-DX
+Em
 hT
 hT
 hT
@@ -14350,7 +14329,7 @@ yq
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 hT
@@ -14386,14 +14365,14 @@ hT
 hT
 yq
 hT
-vL
+Em
 rM
 hT
 hT
 hT
 rM
 hT
-eq
+Em
 yq
 hT
 hT
@@ -14660,7 +14639,7 @@ hT
 hT
 yq
 hT
-vL
+Em
 hT
 hT
 yq
@@ -14814,7 +14793,7 @@ hT
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 kf
@@ -14928,7 +14907,7 @@ hT
 hT
 iq
 iq
-rX
+rM
 Ar
 lH
 xo
@@ -14959,7 +14938,7 @@ kf
 rM
 hT
 hT
-DX
+Em
 kf
 hT
 hT
@@ -15071,7 +15050,7 @@ hT
 hT
 hT
 hT
-DX
+Em
 hT
 hT
 yq
@@ -15104,8 +15083,8 @@ hT
 rM
 rM
 hT
-eq
-eq
+Em
+Em
 hT
 ol
 GX
@@ -15223,7 +15202,7 @@ hT
 hT
 hT
 hT
-vL
+Em
 hT
 LB
 yq
@@ -15360,9 +15339,9 @@ Em
 hT
 yq
 hi
-vL
+Em
 hT
-DX
+Em
 hT
 hT
 hT
@@ -15648,13 +15627,13 @@ hT
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 LB
 yq
 LB
-vL
+Em
 hT
 hT
 yq
@@ -15802,13 +15781,13 @@ Xd
 yq
 LB
 hT
-DX
+Em
 ye
 yq
 hi
 hT
 hT
-vL
+Em
 hT
 hT
 hT
@@ -16094,7 +16073,7 @@ hT
 hT
 hT
 hT
-DX
+Em
 hT
 hT
 hT
@@ -16228,7 +16207,7 @@ ye
 yq
 hT
 hT
-vL
+Em
 hT
 Rx
 hT
@@ -16349,16 +16328,16 @@ hT
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 hT
-vL
+Em
 hT
 ye
 yq
 hT
-vL
+Em
 hT
 hT
 hT
@@ -16368,7 +16347,7 @@ hT
 hT
 hT
 yq
-vL
+Em
 hT
 hT
 hT
@@ -16518,7 +16497,7 @@ yq
 hT
 hT
 hT
-vL
+Em
 hT
 hT
 hT
@@ -16914,7 +16893,7 @@ Tv
 ol
 hT
 hT
-DX
+Em
 hT
 hT
 hT
@@ -16951,7 +16930,7 @@ hT
 hT
 hT
 hT
-vL
+Em
 hT
 ol
 Tv

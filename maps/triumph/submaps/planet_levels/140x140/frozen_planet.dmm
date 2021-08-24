@@ -654,7 +654,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/smes/buildable/point_of_interest{
-	lastcharge = 0
+	last_charge = 0
 	},
 /turf/simulated/floor/old_tile/blue/frozen_world{
 	color = "#8ba7ad";

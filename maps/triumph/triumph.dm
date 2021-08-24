@@ -1,13 +1,13 @@
 #if !defined(USING_MAP_DATUM)
 
+	#include "triumph_areas.dm"
 	#include "triumph_defines.dm"
-	#include "triumph_turfs.dm"
-	#include "triumph_things.dm"
+	#include "triumph_overmap.dm"
 	#include "triumph_shuttle_defs.dm"
 	#include "triumph_shuttles.dm"
 	#include "triumph_telecomms.dm"
-	#include "triumph_overmap.dm"
-	#include "triumph_areas.dm"
+	#include "triumph_things.dm"
+	#include "triumph_turfs.dm"
 	#include "triumph_virgo3b.dm"
 
 

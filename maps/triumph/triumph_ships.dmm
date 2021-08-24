@@ -1834,6 +1834,7 @@
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "sa" = (
+/turf/space,
 /area/space)
 "se" = (
 /obj/machinery/computer/shuttle_control{
@@ -4040,11 +4041,7 @@
 /turf/simulated/shuttle/wall/voidcraft/green,
 /area/space)
 "Sw" = (
-/obj/structure/closet{
-	icon_closed = "cabinet_closed";
-	icon_opened = "cabinet_open";
-	icon_state = "cabinet_closed"
-	},
+/obj/structure/closet,
 /turf/simulated/shuttle/floor/black,
 /area/space)
 "Sx" = (
