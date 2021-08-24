@@ -6,24 +6,26 @@
 /datum/map_template/triumph_lateload/triumph_misc
 	name = "Triumph - Misc"
 	desc = "Misc areas, like some transit areas, holodecks, merc area."
-	mappath = "maps/triumph/triumph_misc.dmm"
+	mappath = 'maps/triumph/triumph_misc.dmm'
 
 	associated_map_datum = /datum/map_z_level/triumph_lateload/ships
 
 /datum/map_z_level/triumph_lateload/misc
 	name = "Misc"
-	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED
+	z = Z_LEVEL_MISC
+	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED|MAP_LEVEL_XENOARCH_EXEMPT
 
 /datum/map_template/triumph_lateload/triumph_ships
 	name = "Triumph - Ships"
 	desc = "Ship transit map and whatnot."
-	mappath = "maps/triumph/triumph_ships.dmm"
+	mappath = 'maps/triumph/triumph_ships.dmm'
 
 	associated_map_datum = /datum/map_z_level/triumph_lateload/ships
 
 /datum/map_z_level/triumph_lateload/ships
 	name = "Ships"
-	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED
+	z = Z_LEVEL_SHIPS
+	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED|MAP_LEVEL_XENOARCH_EXEMPT
 
 //////////////////////////////////////////////////////////////////////////////
 /// Away Missions
@@ -33,7 +35,7 @@
 /datum/map_template/triumph_lateload/away_debrisfield
 	name = "Debris Field - Z1 Space"
 	desc = "A random debris field out in space."
-	mappath = "_maps/planet_levels/140x140/debrisfield.dmm"
+	mappath = 'maps/triumph/submaps/planet_levels/140x140/debrisfield.dmm'
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_debrisfield
 
 /datum/map_z_level/triumph_lateload/away_debrisfield
@@ -51,7 +53,7 @@
 /datum/map_template/triumph_lateload/away_piratebase
 	name = "Away Mission - Pirate Base"
 	desc = "A Vox Marauder Base, oh no!"
-	mappath = "_maps/planet_levels/140x140/piratebase.dmm"
+	mappath = 'maps/triumph/submaps/planet_levels/140x140/piratebase.dmm'
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_piratebase
 
 /datum/map_z_level/triumph_lateload/away_piratebase
@@ -64,7 +66,7 @@
 /datum/map_template/triumph_lateload/away_mining_planet
 	name = "Away Mission - Mining Planet"
 	desc = "Mining Plante. For the miners to get actual supplies."
-	mappath = "_maps/planet_levels/140x140/mining_planet.dmm"
+	mappath = 'maps/triumph/submaps/planet_levels/140x140/mining_planet.dmm'
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_mining_planet
 
 /datum/map_z_level/triumph_lateload/away_mining_planet
@@ -81,7 +83,7 @@
 /datum/map_template/triumph_lateload/lavaland
 	name = "Away Mission - Lava Land"
 	desc = "The fabled."
-	mappath = "_maps/planet_levels/140x140/lavaland.dmm"
+	mappath = '_maps/planet_levels/140x140/lavaland.dmm"
 	associated_map_datum = /datum/map_z_level/triumph_lateload/lavaland
 
 /datum/map_z_level/triumph_lateload/lavaland
@@ -99,7 +101,7 @@
 /datum/map_template/triumph_lateload/away_d_world
 	name = "ExoPlanet - Z1 Planet"
 	desc = "A random unknown planet."
-	mappath = "_maps/planet_levels/140x140/Class_D.dmm"
+	mappath = 'maps/triumph/submaps/planet_levels/140x140/Class_D.dmm'
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_d_world
 
 /datum/map_template/triumph_lateload/away_d_world/on_map_loaded(z)
@@ -117,7 +119,7 @@
 /datum/map_template/triumph_lateload/away_h_world
 	name = "ExoPlanet - Z2 Planet"
 	desc = "A random unknown planet."
-	mappath = "_maps/planet_levels/140x140/Class_H.dmm"
+	mappath = 'maps/triumph/submaps/planet_levels/140x140/Class_H.dmm'
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_h_world
 
 /datum/map_template/triumph_lateload/away_h_world/on_map_loaded(z)
@@ -135,7 +137,7 @@
 /datum/map_template/triumph_lateload/gaia_planet
 	name = "Gaia Planet - Z3 Planet"
 	desc = "A lush Gaia Class Planet."
-	mappath = "_maps/planet_levels/140x140/gaia_planet.dmm"
+	mappath = 'maps/triumph/submaps/planet_levels/140x140/gaia_planet.dmm'
 	associated_map_datum = /datum/map_z_level/triumph_lateload/gaia_planet
 
 /datum/map_template/triumph_lateload/gaia_planet/on_map_loaded(z)
@@ -154,7 +156,7 @@
 /datum/map_template/triumph_lateload/frozen_planet
 	name = "Forzen Planet - Z4 Planet"
 	desc = "A Cold Frozen Planet."
-	mappath = "_maps/planet_levels/140x140//frozen_planet.dmm"
+	mappath = 'maps/triumph/submaps/planet_levels/140x140/frozen_planet.dmm'
 	associated_map_datum = /datum/map_z_level/triumph_lateload/frozen_planet
 
 /datum/map_template/triumph_lateload/frozen_planet/on_map_loaded(z)
@@ -172,7 +174,7 @@
 /datum/map_template/triumph_lateload/away_tradeport
 	name = "Away Mission - Trade Port"
 	desc = "A space gas station! Stretch your legs!"
-	mappath = "_maps/planet_levels/140x140/tradeport.dmm"
+	mappath = 'maps/triumph/submaps/planet_levels/140x140/tradeport.dmm'
 	associated_map_datum = /datum/map_z_level/triumph_lateload/away_tradeport
 
 /datum/map_z_level/triumph_lateload/away_tradeport
@@ -249,7 +251,7 @@
 /datum/map_template/triumph_lateload/roguemines1
 	name = "Asteroid Belt 1"
 	desc = "Mining, but rogue. Zone 1"
-	mappath = "_maps/planet_levels/140x140/roguemining/rogue_mine1.dmm"
+	mappath = 'maps/submaps/rogue_mines_vr/rogue_mine1.dmm'
 
 	associated_map_datum = /datum/map_z_level/triumph_lateload/roguemines1
 
@@ -261,7 +263,7 @@
 /datum/map_template/triumph_lateload/tether_roguemines2
 	name = "Asteroid Belt 2"
 	desc = "Mining, but rogue. Zone 2"
-	mappath = "_maps/planet_levels/140x140/roguemining/rogue_mine2.dmm"
+	mappath = 'maps/submaps/rogue_mines_vr/rogue_mine2.dmm'
 
 	associated_map_datum = /datum/map_z_level/triumph_lateload/roguemines2
 
@@ -273,7 +275,7 @@
 /datum/map_template/triumph_lateload/tether_roguemines3
 	name = "Asteroid Belt 3"
 	desc = "Mining, but rogue. Zone 3"
-	mappath = "_maps/planet_levels/140x140/roguemining/rogue_mine3.dmm"
+	mappath = 'maps/submaps/rogue_mines_vr/rogue_mine3.dmm'
 
 	associated_map_datum = /datum/map_z_level/triumph_lateload/roguemines3
 
@@ -285,7 +287,7 @@
 /datum/map_template/triumph_lateload/tether_roguemines4
 	name = "Asteroid Belt 4"
 	desc = "Mining, but rogue. Zone 4"
-	mappath = "_maps/planet_levels/140x140/roguemining/rogue_mine4.dmm"
+	mappath = 'maps/submaps/rogue_mines_vr/rogue_mine4.dmm'
 
 	associated_map_datum = /datum/map_z_level/triumph_lateload/roguemines4
 

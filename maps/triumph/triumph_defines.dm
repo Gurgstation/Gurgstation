@@ -222,13 +222,3 @@
 	z = Z_LEVEL_CENTCOM
 	name = "Flagship"
 	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_CONTACT|MAP_LEVEL_XENOARCH_EXEMPT
-
-/datum/map_z_level/triumph/ships
-	z = Z_LEVEL_SHIPS
-	name = "Misc"
-	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_XENOARCH_EXEMPT
-
-/datum/map_z_level/triumph/misc
-	z = Z_LEVEL_MISC
-	name = "Misc"
-	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_XENOARCH_EXEMPT
