@@ -192,13 +192,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/engineering/engine_room)
-"hU" = (
-/obj/structure/window/phoronreinforced,
-/obj/structure/window/phoronreinforced{
-	dir = 8
-	},
-/turf/simulated/floor/reinforced/phoron,
-/area/engineering/engine_room)
 "iB" = (
 /obj/machinery/atmospherics/pipe/simple/visible/purple,
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -1820,7 +1813,7 @@ He
 Zz
 jK
 ws
-hU
+kO
 Bn
 Ma
 sx

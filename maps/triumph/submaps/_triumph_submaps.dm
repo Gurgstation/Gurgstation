@@ -10,22 +10,12 @@
 
 	associated_map_datum = /datum/map_z_level/triumph_lateload/ships
 
-/datum/map_z_level/triumph_lateload/misc
-	name = "Misc"
-	z = Z_LEVEL_MISC
-	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED|MAP_LEVEL_XENOARCH_EXEMPT
-
 /datum/map_template/triumph_lateload/triumph_ships
 	name = "Triumph - Ships"
 	desc = "Ship transit map and whatnot."
 	mappath = 'maps/triumph/triumph_ships.dmm'
 
 	associated_map_datum = /datum/map_z_level/triumph_lateload/ships
-
-/datum/map_z_level/triumph_lateload/ships
-	name = "Ships"
-	z = Z_LEVEL_SHIPS
-	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED|MAP_LEVEL_XENOARCH_EXEMPT
 
 //////////////////////////////////////////////////////////////////////////////
 /// Away Missions
