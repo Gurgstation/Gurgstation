@@ -32,10 +32,10 @@
 	invisibility = 101 // nope cant see this
 	anchored = 1
 
-/obj/effect/ceiling/CheckExit(atom/movable/O as mob|obj, turf/target as turf)
+/*/obj/effect/ceiling/CheckExit(atom/movable/O as mob|obj, turf/target as turf)
 	if(target && target.z > src.z)
 		return FALSE // Block exit from our turf to above
-	return TRUE
+	return TRUE*/
 
 //
 // SHUTTLE STATION
