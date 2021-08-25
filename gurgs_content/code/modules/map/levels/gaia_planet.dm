@@ -34,7 +34,7 @@
 	maximum_temp = 307.3
 */
 
-GAIA_TURF_CREATE(/turf/simulated/wall/planetary/gaia)
+GAIA_TURF_CREATE(/turf/simulated/wall/planetary)
 
 GAIA_TURF_CREATE(/turf/simulated/wall)
 GAIA_TURF_CREATE(/turf/simulated/wall/sandstone)

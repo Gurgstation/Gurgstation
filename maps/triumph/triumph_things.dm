@@ -355,3 +355,41 @@ var/global/list/latejoin_shuttle   = list()
 	layer = ABOVE_WINDOW_LAYER
 /obj/structure/noticeboard
 	layer = ABOVE_WINDOW_LAYER
+
+
+// Aaa why does this exist, well, I know why, but why do I have to heckin do dis why not use an instance.
+/obj/machinery/cash_register/trader
+	name = "Nebula Gas Cash Register"
+	account_to_connect = "Civilian"
+	machine_id = "Nebula Gas RETAIL UNIT"
+	req_access = list(160)
+
+
+/obj/item/device/radio/intercom/trader
+	name = "commercial intercom"
+	desc = "Good luck finding a 'Skip Advertisements' button here."
+	frequency = TRADE_FREQ
+	subspace_transmission = 0
+	syndie = 0
+
+/obj/item/device/radio/intercom/trader/Initialize(mapload)
+	. = ..()
+	internal_channels[num2text(TRADE_FREQ)] = list(access_trader)
+
+
+/obj/item/device/encryptionkey/trader
+	icon_state = "cypherkey"
+	channels = list("Trader" = 1, "Common" = 1)
+	origin_tech = list(TECH_ILLEGAL = 2)
+	syndie = 1
+
+/obj/item/device/radio/headset/trader
+	name = "trade headset"
+	origin_tech = list(TECH_ILLEGAL = 2) // UHM NO MAYBE NOT IDK
+	syndie = 1
+	adhoc_fallback = TRUE
+	ks1type = /obj/item/device/encryptionkey/trader
+
+/obj/item/device/radio/headset/trader/Initialize(mapload)
+	. = ..()
+	set_frequency(TRADE_FREQ)

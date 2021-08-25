@@ -1,28 +1,27 @@
 // Normal map defs
-// Z1 is dynamic transit.
-#define Z_LEVEL_DECK_ONE				2
-#define Z_LEVEL_DECK_TWO				3
-#define Z_LEVEL_DECK_THREE				4
-#define Z_LEVEL_DECK_FOUR				5
-#define Z_LEVEL_CENTCOM					6
-#define Z_LEVEL_MISC					7
-#define Z_LEVEL_SHIPS					8
+#define Z_LEVEL_DECK_ONE				1
+#define Z_LEVEL_DECK_TWO				2
+#define Z_LEVEL_DECK_THREE				3
+#define Z_LEVEL_DECK_FOUR				4
+#define Z_LEVEL_CENTCOM					5
+#define Z_LEVEL_MISC					6
+#define Z_LEVEL_SHIPS					7
 
-#define Z_LEVEL_DEBRISFIELD				9
-#define Z_LEVEL_PIRATEBASE				10
-#define Z_LEVEL_MININGPLANET			11
-#define Z_LEVEL_UNKNOWN_PLANET			12
-#define Z_LEVEL_DESERT_PLANET			13
-#define Z_LEVEL_GAIA_PLANET				14
-#define Z_LEVEL_FROZEN_PLANET			15
+#define Z_LEVEL_DEBRISFIELD				8
+#define Z_LEVEL_PIRATEBASE				9
+#define Z_LEVEL_MININGPLANET			10
+#define Z_LEVEL_UNKNOWN_PLANET			11
+#define Z_LEVEL_DESERT_PLANET			12
+#define Z_LEVEL_GAIA_PLANET				13
+#define Z_LEVEL_FROZEN_PLANET			14
 
-#define Z_LEVEL_ROGUEMINE_1				16
-#define Z_LEVEL_ROGUEMINE_2				17
-#define Z_LEVEL_ROGUEMINE_3				18
-#define Z_LEVEL_ROGUEMINE_4				19
+#define Z_LEVEL_ROGUEMINE_1				15
+#define Z_LEVEL_ROGUEMINE_2				16
+#define Z_LEVEL_ROGUEMINE_3				17
+#define Z_LEVEL_ROGUEMINE_4				18
 
-#define Z_LEVEL_TRADEPORT				20
-#define Z_LEVEL_LAVALAND				21
+#define Z_LEVEL_TRADEPORT				19
+#define Z_LEVEL_LAVALAND				20
 // Camera Networks
 #define NETWORK_TRIUMPH "Triumph"
 #define NETWORK_TCOMMS "Telecommunications"
@@ -46,6 +45,7 @@
 	lobby_icon = 'icons/misc/title_vr.dmi'
 	lobby_screens = list("title1", "title2", "title3", "title4", "title5", "title6", "title7", "title8", "title9")
 	id_hud_icons = 'icons/mob/hud_jobs_vr.dmi' //CITADEL CHANGE: Ignore this line because it's going to be overriden in modular_citadel\maps\triumph\triumph_defines.dm	//TODO Remove/Fix these unneccessary Override Overrides everywhere ffs - Zandario
+	// excuse me what but that comment above made no fucking sense please. THIS IS TRIUMPH_DEFINES!
 
 	holomap_smoosh = list(list(
 		Z_LEVEL_DECK_ONE,
@@ -223,12 +223,12 @@
 	name = "Flagship"
 	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_CONTACT|MAP_LEVEL_XENOARCH_EXEMPT
 
-/datum/map_z_level/triumph/ships
-	z = Z_LEVEL_SHIPS
+/datum/map_z_level/triumph_lateload/misc
 	name = "Misc"
-	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_XENOARCH_EXEMPT
-
-/datum/map_z_level/triumph/misc
 	z = Z_LEVEL_MISC
-	name = "Misc"
-	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_XENOARCH_EXEMPT
+	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED|MAP_LEVEL_XENOARCH_EXEMPT
+
+/datum/map_z_level/triumph_lateload/ships
+	name = "Ships"
+	z = Z_LEVEL_SHIPS
+	flags = MAP_LEVEL_ADMIN|MAP_LEVEL_SEALED|MAP_LEVEL_XENOARCH_EXEMPT

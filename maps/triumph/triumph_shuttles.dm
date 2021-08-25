@@ -261,7 +261,7 @@
 ////////////////////////////////////////
 //////// Excursion Shuttle /////////////
 ////////////////////////////////////////
-/*
+
 // The 'shuttle' of the excursion shuttle
 /datum/shuttle/autodock/overmap/excursion
 	name = "Excursion Shuttle"
@@ -281,7 +281,7 @@
 	shuttle = "Excursion Shuttle"
 	start_x = 4
 	start_y = 5
-*/
+
 
 
 // EXCURSION SHUTTLE DATA
@@ -325,7 +325,7 @@
 	name = "civilian jump console"
 	shuttle_tag = "Civilian Transport"
 
-/*
+
 // PIRATE SHIP (Yaya!)
 /datum/shuttle/autodock/overmap/pirate
 	name = "Pirate Skiff"
@@ -344,7 +344,7 @@
 /obj/machinery/computer/shuttle_control/explore/pirate
 	name = "short jump raiding console"
 	shuttle_tag = "Pirate Skiff"
-*/
+
 // Mining Shuttle
 
 /datum/shuttle/autodock/overmap/mining
