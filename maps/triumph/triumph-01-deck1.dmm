@@ -925,7 +925,7 @@
 "GO" = (/obj/machinery/space_heater,/obj/effect/floor_decal/industrial/warning{dir = 8},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/tcommsat/computer)
 "GQ" = (/obj/effect/floor_decal/techfloor/orange{dir = 1},/turf/simulated/floor/tiled,/area/engineering/hallway/lower)
 "GR" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/obj/structure/bed/chair/office/dark{dir = 1},/turf/simulated/floor/tiled,/area/engineering/engine_monitoring)
-"GS" = (/obj/machinery/power/smes/buildable{charge = 4e+007},/obj/structure/cable{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/engineering/engine_smes)
+"GS" = (/obj/machinery/power/smes/buildable{charge = 4e+007; input_level_max = 400000; output_level = 250000; output_level_max = 400000; outputting = 1},/obj/structure/cable{d2 = 4; icon_state = "0-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/engineering/engine_smes)
 "GU" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/engineering/atmos)
 "GX" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/maintenance/engineering)
 "GZ" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/obj/machinery/light/small{dir = 8},/turf/simulated/floor/tiled/techmaint,/area/maintenance/trash_pit)
