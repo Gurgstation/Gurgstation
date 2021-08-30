@@ -327,7 +327,7 @@
 
 
 // PIRATE SHIP (Yaya!)
-/datum/shuttle/autodock/overmap/pirate
+/*/datum/shuttle/autodock/overmap/pirate
 	name = "Pirate Skiff"
 	warmup_time = 0
 	shuttle_area = list(/area/shuttle/pirate/cockpit, /area/shuttle/pirate/general, /area/shuttle/pirate/cargo)
@@ -335,7 +335,7 @@
 	docking_controller_tag = "pirate_docker"
 	landmark_transition = "nav_transit_pirate"
 	fuel_consumption = 5
-	move_time = 10
+	move_time = 10*/
 
 /area/shuttle/pirate
 	name = "Pirate Skiff"
@@ -365,7 +365,7 @@
 	shuttle_tag = "Mining Shuttle"
 
 // TRADE SHIP
-/datum/shuttle/autodock/overmap/trade
+/*/datum/shuttle/autodock/overmap/trade
 	name = "Beruang Trade Ship"
 	warmup_time = 0
 	shuttle_area = list(/area/shuttle/trade_ship/cockpit, /area/shuttle/trade_ship/general)
@@ -373,7 +373,7 @@
 	docking_controller_tag = "tradeport_hangar_docker"
 	landmark_transition = "nav_transit_trade"
 	fuel_consumption = 5
-	move_time = 10
+	move_time = 10*/
 
 /area/shuttle/trade_ship
 	name = "Beruang Trade Ship"
