@@ -62,7 +62,7 @@
 
 // Vox Pirate ship (Yaya, yous be giving us all your gear now.)
 
-/obj/effect/overmap/visitable/ship/landable/pirate
+/*/obj/effect/overmap/visitable/ship/landable/pirate
 	name = "Pirate Skiff"
 	desc = "Yous need not care about this."
 	fore_dir = WEST
@@ -70,7 +70,7 @@
 	vessel_size = SHIP_SIZE_SMALL
 	shuttle = "Pirate Skiff"
 
-/*/datum/shuttle/autodock/overmap/pirate
+/datum/shuttle/autodock/overmap/pirate
 	name = "Pirate Skiff"
 	warmup_time = 3
 	shuttle_area = list(/area/shuttle/pirate/cockpit, /area/shuttle/pirate/general, /area/shuttle/pirate/cargo)
@@ -95,13 +95,13 @@
 
 // Trade Shuttle
 
-/obj/effect/overmap/visitable/ship/landable/trade
+/*/obj/effect/overmap/visitable/ship/landable/trade
 	name = "Beruang Trade Ship"
 	desc = "You know our motto: 'We deliver!'"
 	fore_dir = WEST
 	vessel_mass = 25000
 	vessel_size = SHIP_SIZE_SMALL
-	shuttle = "Beruang Trade Ship"
+	shuttle = "Beruang Trade Ship"*/
 
 //EMT Shuttle
 
