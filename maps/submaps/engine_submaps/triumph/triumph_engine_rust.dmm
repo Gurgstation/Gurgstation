@@ -478,12 +478,9 @@
 /area/engineering/engine_room)
 "kB" = (
 /obj/machinery/computer/general_air_control/supermatter_core{
-	dir = 1;
-	frequency = 1438;
 	input_tag = "cooling_in";
 	name = "Engine Cooling Control";
 	output_tag = "cooling_out";
-	pressure_setting = 100;
 	sensors = list("engine_sensor" = "Engine Core");
 	throwpass = 1
 	},
@@ -507,6 +504,7 @@
 /area/engineering/engine_room)
 "kJ" = (
 /obj/machinery/computer/fusion_fuel_control{
+	dir = 4;
 	id_tag = "engine-i"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -759,6 +757,7 @@
 /area/engineering/engine_room)
 "tn" = (
 /obj/machinery/computer/gyrotron_control{
+	dir = 4;
 	id_tag = "engine-g"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -1050,6 +1049,7 @@
 /area/engineering/engine_room)
 "Ke" = (
 /obj/machinery/computer/fusion_core_control{
+	dir = 4;
 	id_tag = "engine"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
