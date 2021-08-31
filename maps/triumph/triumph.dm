@@ -12,9 +12,6 @@
 
 
 	// engine submappies, yee
-
-	#include "./submaps/engine_submaps/engine_areas.dm"
-	#include "./submaps/engine_submaps/engine.dm"
 	#include "./submaps/_triumph_submaps.dm"
 
 
