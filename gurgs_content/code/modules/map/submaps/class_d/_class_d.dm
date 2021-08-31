@@ -28,6 +28,7 @@
 	name = "Prefabricated Landing Pad"
 	mappath = 'landing_padD.dmm'
 	cost = 5
+	allow_duplicates = FALSE
 	fixed_orientation = TRUE
 
 /datum/map_template/submap/level_specific/class_d/mechwreckD
@@ -103,10 +104,9 @@
 	cost = 15
 	fixed_orientation = TRUE
 
-/* // Disabled for now, causes runtimies because it loads this template twice in some areas :S
 /datum/map_template/submap/level_specific/class_d/mercbunker
 	name = "Secret Mecenary Bunker"
 	mappath = 'hiddenbunkerD.dmm'
 	cost = 25
+	allow_duplicates = FALSE
 	fixed_orientation = TRUE
-*/ 
