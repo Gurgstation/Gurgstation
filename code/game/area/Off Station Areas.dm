@@ -360,10 +360,10 @@
 
 /area/mine/unexplored/underdark
 	name = "\improper Mining Underdark"
-	base_turf = /turf/simulated/mineral/floor/virgo3b
+	base_turf = /turf/simulated/mineral/floor
 /area/mine/explored/underdark
 	name = "\improper Mining Underdark"
-	base_turf = /turf/simulated/mineral/floor/virgo3b
+	base_turf = /turf/simulated/mineral/floor
 
 // Mining outpost areas
 /area/outpost/mining_main/passage
@@ -552,34 +552,34 @@
 // Lavaland
 /area/shuttle/excursion/lavaland
 	name = "Shuttle Landing Point"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
+	base_turf = /turf/simulated/floor/outdoors
 	flags = RAD_SHIELDED
 
 /area/lavaland
 	name = "Lava Land"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
+	base_turf = /turf/simulated/floor/outdoors
 
 /area/lavaland/horrors
 	name = "Lava Land - Horrors"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
+	base_turf = /turf/simulated/floor/outdoors
 
 /area/lavaland/dogs
 	name = "Lava Land - Dogs"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
+	base_turf = /turf/simulated/floor/outdoors
 
 /area/lavaland/idleruins
 	name = "Lava Land - Idle Ruins"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
+	base_turf = /turf/simulated/floor/outdoors
 
 /area/lavaland/bosses
 	name = "Lava Land - Boss"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
+	base_turf = /turf/simulated/floor/outdoors
 	requires_power = 0
 
 /area/lavaland
 	name = "Lava Land"
 	icon_state = "away"
-	base_turf = /turf/simulated/floor/outdoors/lavaland
+	base_turf = /turf/simulated/floor/outdoors
 	dynamic_lighting = 1
 
 /area/lavaland/base
@@ -603,12 +603,12 @@
 // Aerostat
 /area/shuttle/excursion/away_aerostat
 	name = "\improper Excursion Shuttle - Aerostat"
-	base_turf = /turf/unsimulated/floor/sky/virgo2_sky
+	base_turf = /turf/unsimulated/floor/sky
 
 // The aerostat shuttle
 /area/shuttle/aerostat/docked
 	name = "\improper Aerostat Shuttle - Dock"
-	base_turf = /turf/unsimulated/floor/sky/virgo2_sky
+	base_turf = /turf/unsimulated/floor/sky
 
 /area/shuttle/aerostat/landed
 	name = "\improper Aerostat Shuttle - Surface"
@@ -618,7 +618,7 @@
 /area/aerostat
 	name = "\improper Away Mission - Aerostat Outside"
 	icon_state = "away"
-	base_turf = /turf/unsimulated/floor/sky/virgo2_sky
+	base_turf = /turf/unsimulated/floor/sky
 	requires_power = FALSE
 	dynamic_lighting = FALSE
 
