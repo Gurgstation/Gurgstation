@@ -17,7 +17,7 @@
 /datum/map_template/engine/rust
 	name = "R-UST Engine"
 	desc = "R-UST Fusion Tokamak Engine"
-	mappath = 'maps/triumph/submaps/engine_submaps/triumph_engine_rust.dmm'
+	mappath = 'maps/submaps/engine_submaps/triumph/triumph_engine_rust.dmm'
 
 /*/datum/map_template/engine/singulo
 	name = "Singularity Engine"
@@ -27,7 +27,7 @@
 /datum/map_template/engine/supermatter
 	name = "Supermatter Engine"
 	desc = "Old Faithful Supermatter"
-	mappath = 'maps/triumph/submaps/engine_submaps/triumph_engine_sme.dmm'
+	mappath = 'maps/submaps/engine_submaps/triumph/triumph_engine_sme.dmm'
 
 /*/datum/map_template/engine/tesla
 	name = "Edison's Bane"
