@@ -434,12 +434,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/engineering/engine_room)
-"iE" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/machinery/door/firedoor/glass,
-/turf/simulated/floor,
-/area/engineering/engine_room)
 "jt" = (
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
@@ -452,14 +446,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/engineering/engine_room)
-"kt" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/full,
-/obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor,
 /area/engineering/engine_room)
 "kv" = (
 /obj/machinery/light,
@@ -1186,15 +1172,8 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "OJ" = (
-/obj/structure/grille,
-/obj/structure/window/reinforced/full,
 /obj/machinery/door/firedoor/glass,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
+/obj/effect/wingrille_spawn/reinforced,
 /turf/simulated/floor,
 /area/engineering/engine_room)
 "Pb" = (
@@ -1745,11 +1724,11 @@ qB
 dB
 dB
 as
-iE
-iE
-iE
 OJ
-iE
+OJ
+OJ
+OJ
+OJ
 Th
 os
 VD
@@ -1766,7 +1745,7 @@ PY
 wL
 aa
 aD
-iE
+OJ
 SQ
 tn
 Ke
@@ -1787,7 +1766,7 @@ PY
 YK
 aa
 aE
-kt
+OJ
 GQ
 vj
 kP
@@ -1808,7 +1787,7 @@ rl
 rl
 ai
 aF
-iE
+OJ
 kB
 vm
 aP
