@@ -5,9 +5,8 @@
 "b" = (
 /obj/machinery/embedded_controller/radio/airlock/docking_port{
 	frequency = 1998;
-	id_tag = "padD_dock";
-	pixel_x = -28;
-	req_one_access = null
+	id_tag = "padH_dock";
+	pixel_x = -28
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/vent_pump/high_volume,
@@ -20,7 +19,7 @@
 /obj/machinery/door/airlock/glass_external/public{
 	frequency = 1998;
 	icon_state = "door_locked";
-	id_tag = "padD_internal";
+	id_tag = "padH_internal";
 	locked = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden,
@@ -36,7 +35,7 @@
 /obj/machinery/door/airlock/glass_external/public{
 	frequency = 1998;
 	icon_state = "door_locked";
-	id_tag = "padD_external";
+	id_tag = "padH_external";
 	locked = 1
 	},
 /turf/simulated/floor/tiled,
@@ -166,7 +165,7 @@
 "A" = (
 /obj/machinery/airlock_sensor{
 	frequency = 1998;
-	id_tag = "padD_sensor";
+	id_tag = "padH_sensor";
 	pixel_x = -30;
 	pixel_y = 8
 	},
@@ -256,7 +255,7 @@
 /obj/machinery/door/airlock/glass_external/public{
 	frequency = 1998;
 	icon_state = "door_locked";
-	id_tag = "padD_internal";
+	id_tag = "padH_internal";
 	locked = 1
 	},
 /turf/simulated/floor/tiled,

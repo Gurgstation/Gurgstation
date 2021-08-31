@@ -154,13 +154,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
-"zZ" = (
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	frequency = 804;
-	id_tag = "bunkerD"
-	},
-/turf/simulated/wall,
-/area/poi_d/Mountain)
 "Ac" = (
 /obj/machinery/door/airlock/freezer,
 /turf/simulated/floor/tiled/kafel_full,
@@ -327,10 +320,6 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
-/area/poi_d/Mountain)
-"Us" = (
-/obj/random/mob/merc,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "Vq" = (
@@ -785,7 +774,7 @@ Ch
 mn
 da
 da
-zZ
+KB
 PI
 HS
 HS
@@ -929,7 +918,7 @@ KB
 no
 no
 vP
-Us
+YM
 LA
 XL
 Jh
