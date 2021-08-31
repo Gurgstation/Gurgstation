@@ -315,7 +315,7 @@
 "cnK" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden{dir = 4},/turf/simulated/floor/tiled/dark,/area/hallway/secondary/docking_hallway)
 "coe" = (/obj/machinery/washing_machine,/turf/simulated/floor/tiled,/area/exploration/showers)
 "cok" = (/obj/machinery/door/firedoor/glass,/obj/machinery/door/airlock/glass_security{name = "Holding Room"; req_one_access = list(1,2,4,38)},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/monotile,/area/security/hallway)
-"cot" = (/turf/simulated/floor/tiled/eris/steel/monofloor,/area/exploration/explorer_prep)
+"cot" = (/turf/simulated/open,/area/exploration/explorer_prep)
 "cqg" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/dark,/area/chapel/main)
 "cqx" = (/obj/machinery/atmospherics/pipe/manifold/hidden/yellow{dir = 8},/turf/simulated/shuttle/wall/voidcraft/blue,/area/shuttle/excursion/general)
 "crd" = (/obj/structure/table/woodentable,/obj/item/weapon/ducttape,/turf/simulated/floor/plating,/area/vacant/vacant_bar)
