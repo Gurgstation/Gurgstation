@@ -2094,7 +2094,7 @@
 "rhL" = (/obj/machinery/light/small{dir = 4},/turf/simulated/floor/plating,/area/maintenance/medbay/aft)
 "riz" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/obj/effect/floor_decal/borderfloor{dir = 8},/obj/effect/floor_decal/corner/mauve/border{dir = 8},/turf/simulated/floor/tiled,/area/rnd/hallway)
 "riD" = (/obj/random/maintenance/clean,/obj/structure/closet,/turf/simulated/floor/plating,/area/maintenance/medbay/aft)
-"riG" = (/obj/machinery/light{dir = 4},/obj/effect/floor_decal/borderfloorwhite{dir = 6},/obj/effect/floor_decal/corner/blue/border{dir = 6},/obj/machinery/newscaster{pixel_y = -31},/obj/structure/table/standard,/turf/simulated/floor/tiled/white,/area/medical/reception)
+"riG" = (/obj/machinery/light{dir = 4},/obj/effect/floor_decal/borderfloorwhite{dir = 6},/obj/effect/floor_decal/corner/blue/border{dir = 6},/obj/machinery/newscaster{pixel_y = -31},/obj/structure/table/standard,/obj/item/weapon/backup_implanter{pixel_y = -8},/obj/item/weapon/backup_implanter{pixel_y = -2},/obj/item/weapon/backup_implanter{pixel_y = 4},/obj/item/weapon/backup_implanter{pixel_y = 11},/turf/simulated/floor/tiled/white,/area/medical/reception)
 "rjw" = (/obj/machinery/door/window/brigdoor/southright{name = "Containment Pen"; req_access = list(55)},/turf/simulated/floor/reinforced,/area/rnd/xenobiology)
 "rjS" = (/obj/structure/closet/l3closet/scientist/double,/turf/simulated/floor/tiled,/area/rnd/xenobiology)
 "rkC" = (/obj/effect/floor_decal/borderfloorwhite{dir = 1},/obj/effect/floor_decal/corner/blue/border{dir = 1},/obj/structure/bed/chair,/turf/simulated/floor/tiled/white,/area/medical/reception)
