@@ -21,7 +21,7 @@
 */
 
 /datum/map_template/engine/supermatter
-	name = "EngineSubmap_SM"
+	name = "Supermatter Engine"
 	desc = "Old Faithful Supermatter"
 	mappath = 'triumph_engine_sme.dmm'
 
@@ -31,8 +31,9 @@
 	desc = "The Telsa Engine"
 	mappath = '_maps/templates/engines/triumph/engine_tesla.dmm'
 */
+
 /datum/map_template/engine/burnchamber
-	name = "EngineSubmap_Burn"
+	name = "Burnchamber"
 	desc = "Burn Chamber Engine"
 	mappath = 'triumph_engine_burnchamber.dmm'
 

@@ -103,8 +103,10 @@
 	cost = 15
 	fixed_orientation = TRUE
 
+/* // Disabled for now, causes runtimies because it loads this template twice in some areas :S
 /datum/map_template/submap/level_specific/class_d/mercbunker
 	name = "Secret Mecenary Bunker"
 	mappath = 'hiddenbunkerD.dmm'
 	cost = 25
 	fixed_orientation = TRUE
+*/ 
