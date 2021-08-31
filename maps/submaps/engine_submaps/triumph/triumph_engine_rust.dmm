@@ -362,9 +362,6 @@
 /obj/machinery/atmospherics/pipe/manifold/visible/red{
 	dir = 8
 	},
-/obj/machinery/camera/network/engine{
-	dir = 4
-	},
 /turf/simulated/floor/reinforced,
 /area/engineering/engine_room)
 "eD" = (
@@ -652,10 +649,8 @@
 /turf/simulated/floor/plating,
 /area/engineering/engine_room)
 "op" = (
-/obj/structure/window/phoronreinforced/full{
-	icon_state = "phoronwindow0"
-	},
-/obj/structure/grille,
+/obj/effect/wingrille_spawn/reinforced_phoron,
+/obj/structure/window/phoronreinforced/full,
 /turf/simulated/floor,
 /area/engineering/engine_room)
 "os" = (
@@ -738,15 +733,13 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "sq" = (
-/obj/structure/window/phoronreinforced/full{
-	icon_state = "phoronwindow0"
-	},
-/obj/structure/grille,
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
+/obj/effect/wingrille_spawn/reinforced_phoron,
+/obj/structure/window/phoronreinforced/full,
 /turf/simulated/floor,
 /area/engineering/engine_room)
 "ss" = (
@@ -1130,13 +1123,11 @@
 /turf/simulated/floor,
 /area/engineering/engine_room)
 "Mh" = (
-/obj/structure/window/phoronreinforced/full{
-	icon_state = "phoronwindow0"
-	},
-/obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/visible/red{
 	dir = 4
 	},
+/obj/effect/wingrille_spawn/reinforced_phoron,
+/obj/structure/window/phoronreinforced/full,
 /turf/simulated/floor,
 /area/engineering/engine_room)
 "MW" = (
@@ -1420,13 +1411,11 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "Yy" = (
-/obj/structure/window/phoronreinforced/full{
-	icon_state = "phoronwindow0"
-	},
-/obj/structure/grille,
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 4
 	},
+/obj/effect/wingrille_spawn/reinforced_phoron,
+/obj/structure/window/phoronreinforced/full,
 /turf/simulated/floor,
 /area/engineering/engine_room)
 "YK" = (
