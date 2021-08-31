@@ -2,10 +2,10 @@
 // This is so CI can validate PoIs, and ensure future changes don't break PoIs, as PoIs are loaded at runtime and the compiler can't catch errors.
 // When adding a new engine, please add it to this list.
 #if MAP_TEST
-#include "engine_rust.dmm"
-//#include "engine_singulo.dmm"
-#include "engine_sme.dmm"
-//#include "engine_tesla.dmm"
+#include "triumph_engine_rust.dmm"
+//#include "triumph_engine_singulo.dmm"
+#include "triumph_engine_sme.dmm"
+//#include "triumph_engine_tesla.dmm"
 #endif
 
 /datum/map_template/engine
