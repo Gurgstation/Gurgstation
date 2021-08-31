@@ -8,6 +8,7 @@
 	name = "Prefabricated Landing Pad"
 	mappath = 'landing_padH.dmm'
 	cost = 5
+	allow_duplicates = FALSE
 	fixed_orientation = TRUE
 
 /datum/map_template/submap/level_specific/class_h/solar_farm
