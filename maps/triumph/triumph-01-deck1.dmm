@@ -988,6 +988,7 @@
 "Jl" = (/obj/effect/floor_decal/techfloor/orange{dir = 5},/obj/structure/table/bench/padded,/obj/effect/landmark/start{name = "Station Engineer"},/obj/item/weapon/storage/toolbox/lunchbox/nt,/turf/simulated/floor/tiled/techmaint,/area/engineering/locker_room)
 "Jm" = (/obj/effect/floor_decal/corner/paleblue/border,/obj/effect/floor_decal/industrial/warning{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_airlock)
 "Jp" = (/obj/machinery/atmospherics/portables_connector{dir = 8},/obj/machinery/portable_atmospherics/canister/empty,/turf/simulated/floor/tiled/hydro,/area/engineering/atmos)
+"Jr" = (/turf/simulated/floor/plating,/area/engineering/atmos)
 "Jt" = (/obj/machinery/power/apc{dir = 8; name = "west bump"; pixel_x = -28},/obj/structure/cable/green,/obj/structure/closet/crate/bin{anchored = 1},/turf/simulated/floor/tiled,/area/crew_quarters/heads/chief)
 "Ju" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/disposalpipe/segment,/obj/effect/floor_decal/techfloor/orange,/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/fuel{dir = 1},/turf/simulated/floor/tiled,/area/engineering/hallway/lower)
 "Jv" = (/obj/machinery/atmospherics/pipe/simple/visible/green{dir = 4},/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/tiled/techmaint,/area/engineering/atmos)
@@ -1384,7 +1385,6 @@
 "Xm" = (/obj/effect/floor_decal/industrial/outline/yellow,/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/tiled/techfloor/grid,/area/engineering/atmos/storage)
 "Xn" = (/obj/structure/table/steel,/obj/item/device/integrated_electronics/debugger{pixel_x = -5},/obj/item/device/integrated_electronics/wirer{pixel_x = 5},/turf/simulated/floor,/area/storage/tech)
 "Xp" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/wall/r_wall,/area/tcommsat/entrance)
-"Xr" = (/turf/simulated/floor/plating,/area/engineering/atmos)
 "Xu" = (/obj/machinery/portable_atmospherics/canister/oxygen,/turf/simulated/floor/reinforced/oxygen,/area/engineering/atmos)
 "Xv" = (/turf/simulated/floor/tiled/techmaint,/area/engineering/atmos)
 "Xy" = (/obj/machinery/atmospherics/pipe/simple/visible/red{dir = 10},/obj/effect/floor_decal/industrial/warning{dir = 4},/turf/simulated/floor/tiled/techmaint,/area/engineering/atmos)
@@ -1556,7 +1556,7 @@ fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNfNfNfNfNfNfNfNZjfNfNiCfNNoIDekZAjHjHQqiqAEcqYNRzZAXKKQjKZAGtPTCqEpZAIDzHfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNiCfNNoIDekZAZAZAZAUpAEwsIjhbZAQqQqvAZAjURZuQBCxXIDtSfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNiCfNNoIDekZAnoENKcMgXTnUhuelLqvEuwOLZAlyvbMhFXZAIDtSfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNdXZjZjiCZjFGIDzHZAlRXuQqroyaRYpxdxXrzMglzMZAsjYYYYGUxXIDzHfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNdXZjZjiCZjFGIDzHZAlRXuQqroyaRYpxdxJrzMglzMZAsjYYYYGUxXIDzHfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNfNfNNoIDekZAnorQuqpLgGPWOYpwZAzMzMzMZAYSMmUwvHZAIDdXfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNfNfNNoIDUNZAZAZAZAZALJZAZAZAZAZAZAZAZAxXZAxXZAZAIDzHfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNdXfNfNfNfNNoIDIDIDIDIDIDIDECIDIDIDIDIDIDIDIDlIIDIDIDIDIDzHfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
