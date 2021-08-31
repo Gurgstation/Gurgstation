@@ -61,8 +61,10 @@
 	spawn_reagent = "kahlua"
 /obj/item/weapon/reagent_containers/chem_disp_cartridge/whiskey
 	spawn_reagent = "whiskey"
-/obj/item/weapon/reagent_containers/chem_disp_cartridge/wine
-	spawn_reagent = "wine"
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/redwine
+	spawn_reagent = "redwine"
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/whitewine
+	spawn_reagent = "whitewine"
 /obj/item/weapon/reagent_containers/chem_disp_cartridge/vodka
 	spawn_reagent = "vodka"
 /obj/item/weapon/reagent_containers/chem_disp_cartridge/gin
@@ -113,7 +115,8 @@
 	spawn_reagent = "watermelonjuice"
 /obj/item/weapon/reagent_containers/chem_disp_cartridge/lemon
 	spawn_reagent = "lemonjuice"
-
+/obj/item/weapon/reagent_containers/chem_disp_cartridge/gelatin
+	spawn_reagent = "gelatin"
 // Bar, coffee
 /obj/item/weapon/reagent_containers/chem_disp_cartridge/coffee
 	spawn_reagent = "coffee"

@@ -120,7 +120,6 @@ I think I covered everything.
 	var/small = 0
 	var/small_icon = 'gurgs_content/icons/mob/bigdragon_small_ch.dmi'
 	var/small_icon_state = "dragon_small"
-	var/nameset
 	var/flames
 
 	tame_items = list(
@@ -242,8 +241,8 @@ I think I covered everything.
 	verbs |= /mob/living/simple_mob/vore/bigdragon/proc/sprite_toggle
 	verbs |= /mob/living/simple_mob/vore/bigdragon/proc/flame_toggle
 	verbs |= /mob/living/simple_mob/vore/bigdragon/proc/special_toggle
-	verbs |= /mob/living/simple_mob/vore/bigdragon/proc/set_name
-	verbs |= /mob/living/simple_mob/vore/bigdragon/proc/set_desc
+	verbs |= /mob/living/simple_mob/vore/proc/set_name
+	verbs |= /mob/living/simple_mob/vore/proc/set_desc
 	faction = "neutral"
 
 /mob/living/simple_mob/vore/bigdragon/Initialize()
@@ -310,30 +309,6 @@ I think I covered everything.
 	specialtoggle = !specialtoggle
 	to_chat(src, "<span class='notice'>You will [specialtoggle?"now special":"no longer special"] attack on grab/disarm intent.</span>")
 
-/mob/living/simple_mob/vore/bigdragon/proc/set_name()
-	set name = "Set Name"
-	set desc = "Sets your mobs name. You only get to do this once."
-	set category = "Abilities"
-	if(nameset)
-		to_chat(src, "<span class='userdanger'>You've already set your name. Ask an admin to toggle \"nameset\" to 0 if you really must.</span>")
-		return
-	var/newname
-	newname = sanitizeSafe(input(src,"Set your name. You only get to do this once. Max 52 chars.", "Name set","") as text, MAX_NAME_LEN)
-	if (newname)
-		name = newname
-		voice_name = newname
-		nameset = 1
-
-/mob/living/simple_mob/vore/bigdragon/proc/set_desc()
-	set name = "Set Description"
-	set desc = "Set your description."
-	set category = "Abilities"
-	var/newdesc
-	newdesc = sanitizeSafe(input(src,"Set your description. Max 4096 chars.", "Description set","") as text, MAX_MESSAGE_LEN)
-	if(newdesc)
-		desc = newdesc
-
-
 ///
 ///		Icon generation stuff
 ///
@@ -375,55 +350,63 @@ I think I covered everything.
 		eyes = pick(eye_styles)
 		overlay_colors["Eyes"] = "#[get_random_colour(1)]"
 
-	var/image/I = image(icon, "dragon_under[under][resting? "-rest" : (vore_fullness? "-[vore_fullness]" : null)]", x = -48)
+	var/image/I = image(icon, "dragon_under[under][resting? "-rest" : (vore_fullness? "-[vore_fullness]" : null)]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Underbelly"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = MOB_PLANE
 	I.layer = MOB_LAYER
 	add_overlay(I)
 
-	I = image(icon, "dragon_body[body][resting? "-rest" : null]", pixel_x = -48)
+	I = image(icon, "dragon_body[body][resting? "-rest" : null]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Body"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = MOB_PLANE
 	I.layer = MOB_LAYER
 	add_overlay(I)
 
-	I = image(icon, "dragon_ears[ears][resting? "-rest" : null]", pixel_x = -48)
+	I = image(icon, "dragon_ears[ears][resting? "-rest" : null]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Ears"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = MOB_PLANE
 	I.layer = MOB_LAYER
 	add_overlay(I)
 
-	I = image(icon, "dragon_mane[mane][resting? "-rest" : null]", pixel_x = -48)
+	I = image(icon, "dragon_mane[mane][resting? "-rest" : null]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Mane"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = MOB_PLANE
 	I.layer = MOB_LAYER
 	add_overlay(I)
 
-	I = image(icon, "dragon_horns[horns][resting? "-rest" : null]", pixel_x = -48)
+	I = image(icon, "dragon_horns[horns][resting? "-rest" : null]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Horns"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = MOB_PLANE
 	I.layer = MOB_LAYER
 	add_overlay(I)
 
-	I = image(icon, "dragon_eyes[eyes][resting? "-rest" : null]", pixel_x = -48)
+	I = image(icon, "dragon_eyes[eyes][resting? "-rest" : null]")
+	I.pixel_x = -48
 	I.color = overlay_colors["Eyes"]
 	I.appearance_flags |= (RESET_COLOR|PIXEL_SCALE)
 	I.plane = PLANE_LIGHTING_ABOVE
 	add_overlay(I)
 
 	if(enraged)
-		I = image(icon, "dragon_rage", pixel_x = -48)
+		I = image(icon, "dragon_rage")
+		I.pixel_x = -48
 		I.appearance_flags |= PIXEL_SCALE
 		I.plane = MOB_PLANE
 		I.layer = MOB_LAYER
 		add_overlay(I)
 	if(flames)
-		I = image(icon, "dragon_flame[resting? "-rest" : null]", pixel_x = -48)
+		I = image(icon, "dragon_flame[resting? "-rest" : null]")
+		I.pixel_x = -48
 		I.appearance_flags |= PIXEL_SCALE
 		I.plane = PLANE_LIGHTING_ABOVE
 		add_overlay(I)
@@ -444,7 +427,8 @@ I think I covered everything.
 		if("Underbelly")
 			options = underbelly_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_under[option]", dir = 4, x = -48)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_under[option]", dir = 4)
+				I.pixel_x = -48
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -457,7 +441,8 @@ I think I covered everything.
 		if("Body")
 			options = body_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_body[option]", dir = 4, x = -48)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_body[option]", dir = 4)
+				I.pixel_x = -48
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -470,7 +455,9 @@ I think I covered everything.
 		if("Ears")
 			options = ear_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_ears[option]", dir = 4, x = -76, y = -50)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_ears[option]", dir = 4)
+				I.pixel_x = -76
+				I.pixel_y = -50
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -483,7 +470,9 @@ I think I covered everything.
 		if("Mane")
 			options = mane_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_mane[option]", dir = 4, pixel_x = -76, pixel_y = -50)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_mane[option]", dir = 4)
+				I.pixel_x = -76
+				I.pixel_y = -50
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -496,7 +485,9 @@ I think I covered everything.
 		if("Horns")
 			options = horn_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_horns[option]", dir = 4, pixel_x = -86, pixel_y = -50)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_horns[option]", dir = 4)
+				I.pixel_x = -86
+				I.pixel_y = -50
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -509,7 +500,9 @@ I think I covered everything.
 		if("Eyes")
 			options = eye_styles
 			for(var/option in options)
-				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_eyes[option]", dir = 2, pixel_x = -48, pixel_y = -50)
+				var/image/I = new /image('gurgs_content/icons/mob/vore128x64_ch.dmi', "dragon_eyes[option]", dir = 2)
+				I.pixel_x = -48
+				I.pixel_y = -50
 				LAZYSET(options, option, I)
 			choice = show_radial_menu(src, src, options, radius = 90)
 			if(!choice || QDELETED(src) || src.incapacitated())
@@ -528,6 +521,7 @@ I think I covered everything.
 ///	My thanks to Raeschen for these descriptions
 
 /mob/living/simple_mob/vore/bigdragon/init_vore()
+	//Ow my sanity
 	var/obj/belly/B = new /obj/belly/dragon/maw(src)
 	B.emote_lists[DM_HOLD] = list(
 		"The dragon's breath continues to pant over you rhythmically, each exhale carrying a bone-shivering growl",
@@ -547,7 +541,7 @@ I think I covered everything.
 	B = new /obj/belly/dragon/stomach(src)
 	B.emote_lists[DM_DIGEST] = list(
 		"The stomach walls spontaneously contract! Those wavey, fleshy walls binding your body in their embrace for the moment, slathering you with thick, caustic acids.",
-		"You hear a soft rumbling as the dragon’s insides churn around your body, the well-used stomach walls shuddering with a growl as you melt down.",
+		"You hear a soft rumbling as the dragon�s insides churn around your body, the well-used stomach walls shuddering with a growl as you melt down.",
 		"The stomach squishes and squelches over your body, the growling and grumbling of those bowels kneading you into submission like a deafening orchestra. Gradually melting you down into something easier to manage",
 		"As your body breaks down into this beasts lunch you feel the walls compress tighter and tighter every moment pressing a crushing weight on your form.",
 		"The constant, rhythmic kneading and massaging starts to take its toll along with the muggy heat, making you feel weaker and weaker!",
@@ -588,7 +582,6 @@ I think I covered everything.
 	contamination_color = "grey"
 	contamination_flavor = "Wet"
 	vore_verb = "slurp"
-	belly_fullscreen_color = "#711e1e"
 
 /obj/belly/dragon/maw
 	name = "Maw"
@@ -612,7 +605,6 @@ I think I covered everything.
 	struggle_messages_inside = list(
 		"Wriggling around and resisting the beast's efforts to gently devour you, makes them call out to you with a deeply concerned rhhhrrrl. It sounds like it's trying to reassure you, though it seems to relent and let you pry the jaws agape to attempt to slide yourself free.")
 	autotransferlocation = "Throat."
-	human_prey_swallow_time = 40	//Probably should eat people quick if they're dying
 
 /obj/belly/dragon/throat
 	name = "Throat"
@@ -914,8 +906,6 @@ I think I covered everything.
 /datum/ai_holder/simple_mob/healbelly
 	intelligence_level = 3
 	can_breakthrough = 0
-	var/vocal = 1
-	var/last_speak
 
 /datum/ai_holder/simple_mob/healbelly/retaliate
 	retaliate = 1
@@ -925,42 +915,11 @@ I think I covered everything.
 	var/warnings = 0
 	var/last_warning
 
-/datum/ai_holder/simple_mob/healbelly/proc/confirmPatient(var/mob/living/P)
-	if(istype(holder,/mob/living/simple_mob))
-		var/mob/living/simple_mob/H = holder
-		if(H.will_eat(P))
-			if(issilicon(P))
-				return
-			if(iscarbon(P))
-				if(P.isSynthetic()) //Sorry robits
-					return
-			else
-				if(!P.client)	//Don't target simple mobs that aren't player controlled
-					return
-			if(P.stat == DEAD)
-				return
-			if(P.suiciding)
-				return
-			if(P.health <= (P.maxHealth * 0.95))	//Nom em'
-				if(vocal)
-					if(last_speak + 30 SECONDS < world.time)
-						var/message_options = list(
-							"Hey, [P.name]! You are injured, hold still.",
-							"[P.name]! Come here, let me help.",
-							"[P.name], you need help."
-							)
-						var/message = pick(message_options)
-						H.say(message)
-						last_speak = world.time
-					return 1
-
 //Attack overrides to let us """Attack""" allies and heal them
 /datum/ai_holder/simple_mob/healbelly/can_attack(atom/movable/the_target, vision_required = 1)
 	if(!can_see_target(the_target) && vision_required)
 		return
 
-	if(istype(the_target, /mob/zshadow))
-		return // no
 
 	if(isliving(the_target))
 		var/mob/living/L = the_target
@@ -1014,7 +973,7 @@ I think I covered everything.
 	if(last_warning + 1 MINUTE < world.time)
 		warnings = 0	//calm down
 
-/datum/ai_holder/simple_mob/healbelly/retaliate/dragon/react_to_attack(atom/movable/attacker)
+/datum/ai_holder/simple_mob/healbelly/retaliate/dragon/react_to_attack(atom/movable/attacker, ignore_timers = FALSE)
 	if(holder.stat)
 		return
 	if(istype(holder,/mob/living/simple_mob/vore/bigdragon))

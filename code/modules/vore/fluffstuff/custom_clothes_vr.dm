@@ -24,6 +24,16 @@
 
 */
 
+//jglitch: Johnny Deserador
+/obj/item/clothing/glasses/sunglasses/fluff/doublesun
+	name = "Two Sunglasses Taped Together"
+	desc = "Wow this dumbass chimera really taped together two sunglasses. finally sunglasses 2, i've been waiting for sunglasses the sunglassening"
+
+	icon_state = "sun"
+	icon = 'gurgs_content/icons/obj/doublesunglasses.dmi'
+	item_state = "dualsunglasses"
+	icon_override = 'gurgs_content/icons/obj/doublesunglasses.dmi'
+
 //Natje: Awen Henry
 /obj/item/clothing/head/fluff/wolfgirl
     name = "Wolfgirl Hat"
@@ -1352,6 +1362,7 @@ Departamental Swimsuits, for general use
 	icon_state = "alfonso_visor"
 	icon_override = 'icons/vore/custom_onmob_vr.dmi'
 
+
 //JackNoir413: Mor Xaina
 /obj/item/clothing/under/fluff/morunder
 	name = "grey top with shorts"
@@ -2305,6 +2316,17 @@ Departamental Swimsuits, for general use
 
 	icon_override = 'icons/vore/custom_onmob_vr.dmi'
 	item_state = "evelyncoat_mob"
+	hoodtype = /obj/item/clothing/head/hood/winter/security/fluff/evelyn
+
+/obj/item/clothing/head/hood/winter/security/fluff/evelyn
+	name = "warden's navy winter hood"
+	desc = "A custom tailored security winter coat's hood in navy blue colors."
+	icon = 'icons/vore/custom_clothes_vr.dmi'
+	icon_state = "evelynhood"
+
+
+	icon_override = 'icons/vore/custom_onmob_vr.dmi'
+	item_state = "evelynhood_mob"
 
 /obj/item/clothing/suit/storage/hooded/wintercoat/security/fluff/evelyn/ui_action_click()
 	ToggleHood_evelyn()
