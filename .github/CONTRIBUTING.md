@@ -16,6 +16,7 @@ These are just guidelines, not rules, use your best judgment and feel free to pr
   * [Gurgstation Coding Standards](#gurgstation-coding-standards)
   * [Pull Requests](#pull-requests)
   * [Git Commit Messages](#git-commit-messages)
+  * [Useful Guides](#useful-guides)
 
 [Licensing](#Licensing)
 
@@ -53,6 +54,38 @@ If your submission doesn't meet the standards we'll probably reject it, but we w
 * Limit the first line to 72 characters or less, otherwise it truncates the title with '...', wrapping the rest into the description.
 * Reference issues and pull requests liberally.
 * Use the GitHub magic words "Fixed/Fixes/Fix, Resolved/Resolves/Resolve, Closed/Closes/Close", as in, "Closes #1928", as this will automatically close that issue when the PR is merged if it is a fix for that issue.
+
+### Useful Guides
+
+#### PLEASE FIRST BEFORE ANYTHING DO THIS ONE FIRST SO YOU CAN ACTUALLY SEND THE WORK WITHOUT A MIDDLEMAN
+https://forums.yogstation.net/threads/release-the-gitkraken-how-to-make-your-first-pull-request.15099/
+Replace their GitHub URL with the one we use by the way. We don't use yogstation code c:
+
+
+#### CODING
+
+Setting up VSCode:
+ https://www.paradisestation.org/wiki/index.php/Guide_to_Contributing#Setting_up_Visual_Studio_Code 
+
+Bibles:
+ http://www.byond.com/docs/ref/
+ http://www.byond.com/docs/guide/ non SS13 guide to help get into BYOND language.
+ https://tgstation13.org/wiki/Understanding_SS13_code guide to help code with SS13
+ https://tgstation13.org/wiki/SS13_for_experienced_programmers great reference for newcomers
+
+#### SPRITING
+
+You can right click the icon and export it as a png. And import too to make sprites.
+
+#### MAPPING
+ https://wiki.ss13polaris.com/index.php?title=Guide_to_StrongDMM
+
+ https://tgstation13.org/wiki/Guide_to_mapping read this first to understand how SS13 works if you don't already 
+
+I suggest using external software such as FastDMM 2 or Strongdmm found here:
+ https://github.com/SpaiR/StrongDMM
+ https://fastdmm2.ss13.io/
+
 
 ## Licensing
 Gurgstation is licensed under the GNU Affero General Public License version 3, which can be found in full in LICENSE-AGPL3.txt.
