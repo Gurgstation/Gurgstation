@@ -143,7 +143,7 @@
 		return 1
 	if(is_type_in_list(A, unowned_areas))
 		return 0
-	if(!ignoreZ && get_z(object) in map_z)
+	if(!ignoreZ && (get_z(object) in map_z))
 		return 1
 
 //If shuttle_name is false, will add to generic waypoints; otherwise will add to restricted. Does not do checks.
