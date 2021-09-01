@@ -367,7 +367,7 @@
 /obj/machinery/camera/network/engine{
 	dir = 4
 	},
-/turf/simulated/floor/reinforced/nitrogen,
+/turf/simulated/floor/reinforced,
 /area/engineering/engine_room)
 "nG" = (
 /obj/machinery/button/remote/blast_door{
@@ -418,7 +418,7 @@
 	dir = 8;
 	id = "enginecore"
 	},
-/turf/simulated/floor/greengrid/nitrogen,
+/turf/simulated/floor/greengrid,
 /area/engineering/engine_room)
 "py" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
@@ -519,7 +519,7 @@
 /obj/effect/floor_decal/industrial/warning/cee{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced/nitrogen,
+/turf/simulated/floor/reinforced,
 /area/engineering/engine_room)
 "uo" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -615,7 +615,7 @@
 	dir = 4;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/reinforced/nitrogen,
+/turf/simulated/floor/reinforced,
 /area/engineering/engine_room)
 "wa" = (
 /obj/machinery/atmospherics/binary/circulator{
@@ -873,7 +873,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/reinforced/nitrogen,
+/turf/simulated/floor/reinforced,
 /area/engineering/engine_room)
 "Fa" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
@@ -1073,7 +1073,7 @@
 /turf/simulated/floor,
 /area/engineering/engine_room)
 "OV" = (
-/turf/simulated/floor/greengrid/nitrogen,
+/turf/simulated/floor/greengrid,
 /area/engineering/engine_room)
 "Pw" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
@@ -1207,7 +1207,7 @@
 	dir = 1;
 	icon_state = "warningcorner"
 	},
-/turf/simulated/floor/reinforced/nitrogen,
+/turf/simulated/floor/reinforced,
 /area/engineering/engine_room)
 "To" = (
 /obj/structure/cable/yellow{
@@ -1237,7 +1237,7 @@
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
 	},
-/turf/simulated/floor/reinforced/nitrogen,
+/turf/simulated/floor/reinforced,
 /area/engineering/engine_room)
 "UR" = (
 /obj/structure/cable/yellow{
