@@ -262,15 +262,6 @@
 //////// Excursion Shuttle /////////////
 ////////////////////////////////////////
 
-// The 'shuttle' of the excursion shuttle
-/datum/shuttle/autodock/overmap/excursion
-	name = "Excursion Shuttle"
-	warmup_time = 0
-	current_location = "triumph_excursion_hangar"
-	docking_controller_tag = "expshuttle_dock"
-	shuttle_area = list(/area/shuttle/excursion/cockpit, /area/shuttle/excursion/general, /area/shuttle/excursion/cargo)
-	//fuel_consumption = 3
-	fuel_consumption = 0	//inf fuel for testing purposes
 
 // The 'ship' of the excursion shuttle
 /obj/effect/overmap/visitable/ship/landable/excursion
@@ -288,12 +279,12 @@
 
 /datum/shuttle/autodock/overmap/excursion
 	name = "Excursion Shuttle"
-	warmup_time = 0
+	warmup_time = 2
 	shuttle_area = list(/area/shuttle/excursion/cockpit, /area/shuttle/excursion/general, /area/shuttle/excursion/cargo)
 	current_location = "triumph_excursion_hangar"
-	docking_controller_tag = "expshuttle_docker"
 	landmark_transition = "nav_transit_exploration"
-	fuel_consumption = 3
+	docking_controller_tag = "expshuttle_docker"
+	fuel_consumption = 2
 	move_time = 20
 
 /area/shuttle/excursion
@@ -393,7 +384,7 @@
 /datum/shuttle/autodock/overmap/emt
 	name = "Dart EMT Shuttle"
 	warmup_time = 5
-	shuttle_area = list(/area/shuttle/emt/general, /area/shuttle/emt/cockpit)
+	shuttle_area = list(/area/shuttle/emt, /area/shuttle/emt/general, /area/shuttle/emt/cockpit)
 	current_location = "triumph_emt_dock"
 	docking_controller_tag = "emt_shuttle_docker"
 	landmark_transition = "nav_transit_emt"

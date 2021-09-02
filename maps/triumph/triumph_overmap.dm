@@ -31,23 +31,8 @@
 	vessel_mass = 10000
 	vessel_size = SHIP_SIZE_SMALL
 	shuttle = "Excursion Shuttle"
-
-/datum/shuttle/autodock/overmap/excursion
-	name = "Excursion Shuttle"
-	warmup_time = 2
-//	shuttle_area = list(/area/shuttle/excursion/cockpit, /area/shuttle/excursion/general, /area/shuttle/excursion/cargo)
-	current_location = "triumph_excursion_hangar"
-	docking_controller_tag = "expshuttle_docker"
-	fuel_consumption = 2
-
-/area/shuttle/excursion
-	name = "Excursion Shuttle"
-	icon_state = "shuttle"
-
-/obj/machinery/computer/shuttle_control/explore/excursion
-	name = "short jump console"
-	shuttle_tag = "Excursion Shuttle"
-	req_one_access = list(access_pilot)
+	start_x = 4
+	start_y = 5
 
 // Public Civilian Shuttle
 
@@ -112,6 +97,7 @@
 	vessel_mass = 9000
 	vessel_size = SHIP_SIZE_SMALL
 	shuttle = "Dart EMT Shuttle"
+
 
 // STATIC PLANET/BASE LOCATIONS
 
