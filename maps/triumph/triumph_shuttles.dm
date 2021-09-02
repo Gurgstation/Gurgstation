@@ -262,19 +262,6 @@
 //////// Excursion Shuttle /////////////
 ////////////////////////////////////////
 
-
-// The 'ship' of the excursion shuttle
-/obj/effect/overmap/visitable/ship/landable/excursion
-	name = "Excursion Shuttle"
-	desc = "The traditional Excursion Shuttle. NT Approved!"
-	vessel_mass = 10000
-	vessel_size = SHIP_SIZE_SMALL
-	shuttle = "Excursion Shuttle"
-	start_x = 4
-	start_y = 5
-
-
-
 // EXCURSION SHUTTLE DATA
 
 /datum/shuttle/autodock/overmap/excursion
