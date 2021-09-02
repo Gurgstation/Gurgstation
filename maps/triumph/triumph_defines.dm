@@ -141,7 +141,7 @@
 		list("Forzen Planet - Z4 Planet"), // Frozen Planet
 		list("Asteroid Belt 1","Asteroid Belt 2","Asteroid Belt 3","Asteroid Belt 4"),
 		list("Away Mission - Trade Port"), // Trading Post
-		list("Away Mission - Lava Land")
+//		list("Away Mission - Lava Land")
 	)
 
 	ai_shell_restricted = TRUE
