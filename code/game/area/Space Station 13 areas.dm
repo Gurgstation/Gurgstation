@@ -1518,7 +1518,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 
 /area/crew_quarters/sleep/Dorm_11
 	name = "\improper Dormitory Room 11"
-	icon_state = "crew_quarters"
+	icon_state = "Sleep"
 
 /area/crew_quarters/showers
 	name = "\improper Unisex Showers"
