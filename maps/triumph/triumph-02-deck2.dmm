@@ -323,6 +323,7 @@
 "iv" = (/obj/machinery/vending/hydronutrients,/turf/simulated/floor/tiled/techfloor,/area/hydroponics)
 "iw" = (/obj/structure/bed/double/padded,/obj/item/weapon/bedsheet/clowndouble,/turf/simulated/floor/wood,/area/crew_quarters/sleep/Dorm_7)
 "ix" = (/obj/machinery/vending/loadout/overwear,/turf/simulated/floor/tiled/dark,/area/vacant/vacant_shop)
+"iy" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/light{dir = 4},/turf/simulated/floor/wood,/area/crew_quarters/recreation_area_hallway)
 "iz" = (/obj/structure/closet/firecloset,/obj/effect/floor_decal/spline/fancy/wood{dir = 5},/obj/machinery/light{dir = 1},/turf/simulated/floor/wood,/area/station/stairs_two)
 "iA" = (/obj/structure/fitness/punchingbag,/turf/simulated/floor/wood,/area/crew_quarters/fitness)
 "iB" = (/obj/structure/stairs/spawner/south,/turf/simulated/floor/tiled,/area/station/stairs_two)
@@ -646,7 +647,7 @@
 "rL" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/structure/disposalpipe/segment{dir = 4},/turf/simulated/floor/tiled,/area/hallway/primary/port)
 "rM" = (/obj/machinery/alarm{dir = 4; pixel_x = -22},/obj/structure/bed/chair/comfy/teal,/obj/machinery/computer/security/telescreen{pixel_y = 32},/turf/simulated/floor/wood,/area/crew_quarters/sleep/Dorm_5)
 "rN" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/turf/simulated/floor/tiled,/area/quartermaster/warehouse)
-"rO" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/obj/structure/bed/chair/comfy/beige{dir = 4},/turf/simulated/floor/carpet/turcarpet,/area/crew_quarters/recreation_area_hallway)
+"rO" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/obj/structure/bed/chair/comfy/beige{dir = 4},/obj/machinery/light{dir = 8},/turf/simulated/floor/carpet/turcarpet,/area/crew_quarters/recreation_area_hallway)
 "rP" = (/turf/simulated/wall/r_wall,/area/quartermaster/warehouse)
 "rT" = (/obj/structure/cable/green{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/obj/structure/cable/green{d1 = 1; d2 = 4; icon_state = "1-4"},/turf/simulated/floor/tiled/white,/area/crew_quarters/toilet)
 "rU" = (/obj/structure/closet/crate,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/steel,/area/shuttle/belter)
@@ -1303,7 +1304,7 @@
 "Js" = (/turf/simulated/floor/tiled,/area/triumph/surfacebase/mining_main/storage)
 "Jt" = (/obj/structure/closet/firecloset,/obj/machinery/light/small{dir = 1},/turf/simulated/floor/plating,/area/maintenance/dormitory)
 "Ju" = (/obj/item/weapon/storage/box/nifsofts_mining,/obj/structure/table/reinforced,/obj/effect/floor_decal/borderfloor{dir = 8},/obj/effect/floor_decal/corner/brown/border{dir = 8},/obj/machinery/camera/network/cargo{dir = 4},/obj/item/device/suit_cooling_unit,/obj/item/device/suit_cooling_unit,/obj/item/weapon/ducttape,/turf/simulated/floor/tiled,/area/triumph/surfacebase/mining_main/storage)
-"Jv" = (/obj/structure/extinguisher_cabinet{pixel_x = 27},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/camera/network/civilian{dir = 8},/turf/simulated/floor/wood,/area/crew_quarters/recreation_area_hallway)
+"Jv" = (/obj/structure/extinguisher_cabinet{pixel_x = 27},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/camera/network/civilian{dir = 8},/obj/machinery/light{dir = 4},/turf/simulated/floor/wood,/area/crew_quarters/recreation_area_hallway)
 "Jw" = (/obj/machinery/recharge_station,/turf/simulated/floor/tiled/white,/area/station/stairs_two)
 "Jx" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/obj/machinery/firealarm{dir = 1; pixel_y = -24},/turf/simulated/floor/tiled/techfloor,/area/crew_quarters/sleep/cryo)
 "Jz" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/floor_decal/techfloor{dir = 9},/obj/effect/floor_decal/steeldecal/steel_decals10,/turf/simulated/floor/tiled/monotile,/area/hallway/primary/port)
@@ -1773,7 +1774,7 @@
 "WA" = (/obj/structure/shuttle/engine/heater{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden{dir = 6},/turf/simulated/shuttle/wall/voidcraft/green,/area/shuttle/mining_ship/general)
 "WB" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/wood,/area/vacant/vacant_shop)
 "WC" = (/obj/structure/cryofeed{dir = 2},/obj/machinery/status_display{pixel_y = 32},/turf/simulated/floor/tiled/techfloor/grid,/area/crew_quarters/sleep/cryo)
-"WD" = (/obj/machinery/firealarm{dir = 1; pixel_y = -24},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/turf/simulated/floor/wood,/area/crew_quarters/recreation_area_hallway)
+"WD" = (/obj/machinery/firealarm{dir = 1; pixel_y = -24},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/obj/machinery/light,/turf/simulated/floor/wood,/area/crew_quarters/recreation_area_hallway)
 "WE" = (/turf/simulated/floor/tiled,/area/hydroponics)
 "WF" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/carpet/purcarpet,/area/crew_quarters/sleep/Dorm_4)
 "WI" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/carpet/purcarpet,/area/crew_quarters/sleep/Dorm_5)
@@ -1982,7 +1983,7 @@ iiiiiiiiiiiiiiiiiiiiiiiiiiiikDEdEdEdYjUqvmyGfMHJHJHJKspvIoHJSVFwZmJXKzDmbaaiKiKi
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiEdiiiiiiYjCZCZOGHJHJHJHJGaXgeXfMaTCDLAJXVrDmRWgWKihqHxxnVGYtHdYWKiIjOFwdbnNyraDCRUaOqmrajdiqgUGDlXdtCiCiOyHYOAhcANwjyenKWoUyJCUUhoXzMRcXakTBBDgYLYzkKWQRjLCEuzzyhVCrOOcKWCuzWCuzzksliMaijTxupgYzYzITpgpgjTaiMHaimqmqACmqmqEviiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiirCiiiiiiYjkUwVSiHJnPgAgmjPukoyyHJXJXeOJXDpDmRWNNKinyWEVoeTeTVcpVKiIjIjIjmFraraskskskdGraLJYdYdYdYdzORDRDSTHYWVWVWVWVLPnKeZUyNANXyLYsKDcXUkBVyrOelWzkKWQRWZLQLQOOzTVKOCLQLQLQLQXMzkslSUaijTlgXBGWYzjTiBiBjToECUaiJwvOKbtAtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiikDEdEdEdeHeHeHblFLWRWRWRWRaiAtaiDmSDupPQDDDmRWhZKiOqSdAADZAAAuwiXpivfIZKZrskvhtQtQskskraJfNxYdSFSFzORDRDObHYrOaewSuLLPeGfYUykEduMTxvYncXmTKqzKDXNrzksoOOOOWZWZOOHmIUJxKBWZWZWZepzksloEaijTOXjTjTjTjTmqmqjTiLCUaiMJjtvZtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-iiiiiiiiiiiiiiiiiiiiiiiiiiiirCiiEdiiiiiiiixkTCVyTCQIWRZayZgWDmDyugtSwvDmRWiMKiTPCRCRCRuwrlArPhzjgkKiVqskgJDHtQtQskraYdwoYdwoYdMfDKDKbEHYLPAfLPLPLPnKPxUyUyUyUyHjUycXcXeucXcXcXzkPMOOOOOOOOSXzkVgzkzkzkzkzkzkzkslCUmzCUCUCUqHiMoEnjqHoEoECUaiaiaitAtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiiiiirCiiEdiiiiiiiixkTCVyTCQIWRZayZgWDmDyugtSwvDmRWiMKiTPCRCRCRuwrlArPhzjgkKiVqskgJDHtQtQskraYdwoYdwoYdMfDKDKbEHYLPAfLPLPLPnKiyUyUyUyUyHjUycXcXeucXcXcXzkPMOOOOOOOOSXzkVgzkzkzkzkzkzkzkslCUmzCUCUCUqHiMoEnjqHoEoECUaiaiaitAtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiEdiiEdiiiiiiiixkTCTCTCtXWRhZyZodDmDySmefDoDmRWoEKiBZVoeTeTyXbqWEmSTtwUKigHskmAsktQskskraYdWQYYkoYYYYYYYYeRcjzhsiXkXkTXhpkQKenNiSOcYcXkpPmEWMfRLPLPXKVmOOOOWZPsmDzkQyEyHWgWnjqHoEoEsliMaiaiaiCUCUCUCUCUCUCUCUCUaioEiMtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiikDiiEdiiiiiiiiblODTCTCuoWRoEyZoEDmDmTDefefDmRWoEKiieCRCRCRCRPYCRCRjwHHKiskskmAWuNuskLxraqcPwiAEnLqWplxfXYdVLQdPxjuRwJKPPAXkVkVsFGzEckVYOnwJEsgWDvWzkKWQRWZWZPspIzkIcgCgCgCfggCgCgCjRLHLHIpaiexexoEoEiMhZoEoEiMaioEtAtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiEdEdEdEdEdEdEdbllvTCoeCcWRoEyZCknjaiZtDmZtDmRWoEKimyWEWEWEWEtKWEWEUhFfKiraraCXwcwcwcwcwcwcwcMFMFMFMFMFMFtFMFMFvSPrBptpBpBpBpBpjWjWjWjWjWGBLPybybybzkKWQRQKKBPsmDzkxHaitAtAtAtAtAtAtAtAtAtAtAtAtAtAmvmvmvmvtAtAtAtAtArCiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
@@ -1992,7 +1993,7 @@ iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiEdiiiiiiAUiiiitAWNCUoEoEoEoEaioEQeRWoEgIiM
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiEdiiiiiiiiiiiimvqlrFrFrFrFrFfdrFrFYogCgCgCgCgCgCgCYogCuegCgCgCgCgCRqwcZVAYzWwcwGjMMFDnMFDnMFkfrTVPYyGRnKBpsRbWhlvvBpstVXvgdpjWAfTqybIrdrQpdlybRWoEtAtAmvtAtAtAiiiiEdiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiEdrCrCrCEdrCEdtAtAtAtAtAtAtAtAtAtAtAtAtAtAtAtAtAtAtAtAaiaizcaiaioEslwcpxceajNzFIcuMFqiMFthMFckTnHCMFzaTaBppExxECzvBpAovcwqxMjWAfQXybhAhWnxVkybRWoEtAiiiiiiEdAUiiiirCiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiEdiiiiiiEdiiiiAUiiiiEdiiiiiiiiiiiiiiEdiiiimvoEoEoEobaiLWslwcwcwcwcwcwcwcMFMFMFMFMFMFMFMFMFvEsQBpBpBpBpBpBpjWjWjWjWjWnLDdybybybybybybRWodtAiiiiiiEdiiiiiirCiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiicsiiiiiiiiiiiiiiiiii
-iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiEdiiiiiiEdiiiiiiiiiiEdiiiiiiiiiiiiiiEdiiiitAxBoEoEoEaixBONsPgCgCuKgCOVOVOVOViTuQFdJbhewruQPOnKUzbuGLzGZRmGUzAMADUzewslgWaioEiMQeoEoERWiMtAiiiiEdrCrCrCEdrCiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiEdiiiiiiEdiiiiiiiiiiEdiiiiiiiiiiiiiiEdiiiitAxBoEoEoEaixBONsPgCgCuKgCOVOVOVOViTuQFdJbhewruQPOABUzbuGLzGZRmGUzAMADUzewslgWaioEiMQeoEoERWiMtAiiiiEdrCrCrCEdrCiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiicsiiiiiiiiiiiiiiiiiiiiiiiiiiEdEdrCrCrCrCrCrCrCrCrCrCrCrCrCrCEdEdEdEdEdtAoEoEoEoEaioEoEaioEoEiMCUCUCUCUCURWuQjKAQqnyjuQLvLdfeBfDlEQdXRJUzamyMUzHWIcfgMngCgCgCgCgCAhhRtAEdEdEdiiiiiiiiiiiiiiiiiiiicsiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiirCiiiitAtAtAtAtAtAtAtAtAtAtAtAtAtAtAtAoERWuQAVqwuEXFMzGRnKUzTSsakLCNHUSzSulBUzoERWtAtAtAtAmvtAmvtAtAtAiiiirCiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiirCiiiiiiiiAUiiiiiiiiiiEdiiiiiiiiiiiitALWRWuQRyiwFsNnuQaBnKUzXeHiVBoSOUUzfTmXUzoERWtAiiiiiiiiAUiiEdiiiiiiiirCiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiCOiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
