@@ -1006,7 +1006,7 @@
 "Bj" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/catwalk,/turf/simulated/floor/plating,/area/maintenance/cargo)
 "Bk" = (/obj/machinery/washing_machine,/turf/simulated/floor/tiled/white,/area/crew_quarters/toilet)
 "Bl" = (/obj/machinery/alarm{dir = 4; pixel_x = -22},/turf/simulated/floor/wood,/area/crew_quarters/sleep/Dorm_6)
-"Bn" = (/obj/item/stack/cable_coil/yellow,/obj/machinery/light/small{dir = 8},/obj/structure/table/rack,/turf/simulated/floor/tiled/dark,/area/maintenance/dormitory)
+"Bn" = (/obj/item/stack/cable_coil/yellow,/obj/machinery/light/small{dir = 8},/obj/structure/table/rack,/obj/item/clothing/gloves/yellow,/turf/simulated/floor/tiled/dark,/area/maintenance/dormitory)
 "Bo" = (/obj/machinery/firealarm{dir = 1; pixel_y = -24},/obj/effect/floor_decal/techfloor,/turf/simulated/floor/tiled,/area/hallway/primary/port)
 "Bp" = (/turf/simulated/wall,/area/crew_quarters/sleep/Dorm_4)
 "Bt" = (/turf/simulated/floor/lino,/area/crew_quarters/coffee_shop)
@@ -1564,7 +1564,6 @@
 "Re" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/carpet/sblucarpet,/area/quartermaster/foyer)
 "Rf" = (/obj/machinery/station_map{pixel_y = 32},/obj/effect/floor_decal/techfloor{dir = 1},/turf/simulated/floor/tiled,/area/hallway/primary/starboard)
 "Rh" = (/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled,/area/station/stairs_two)
-"Ri" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/light{dir = 4},/turf/simulated/floor/wood,/area/crew_quarters/recreation_area_hallway)
 "Rj" = (/turf/simulated/wall/r_wall,/area/maintenance/cargo)
 "Rk" = (/turf/simulated/wall,/area/crew_quarters/sleep/Dorm_8)
 "Rl" = (/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 1},/obj/structure/table/woodentable,/turf/simulated/floor/wood,/area/station/stairs_two)
@@ -1685,6 +1684,7 @@
 "Uk" = (/obj/machinery/alarm{dir = 4; pixel_x = -22},/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/turf/simulated/floor/wood,/area/crew_quarters/sleep/Dorm_3)
 "Um" = (/obj/item/weapon/stool/padded,/turf/simulated/floor/wood,/area/crew_quarters/bar)
 "Un" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/wood,/area/crew_quarters/sleep/Dorm_9)
+"Uo" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/light{dir = 4},/turf/simulated/floor/wood,/area/crew_quarters/recreation_area_hallway)
 "Up" = (/obj/structure/table/marble,/obj/machinery/cash_register/civilian{dir = 4; req_access = list(25)},/turf/simulated/floor/tiled/dark,/area/vacant/vacant_shop)
 "Uq" = (/obj/structure/bed/chair/sofa/right{icon_state = "sofaend_right"},/turf/simulated/floor/carpet/bcarpet,/area/crew_quarters/bar)
 "Ur" = (/obj/structure/table/reinforced,/obj/machinery/recharger,/turf/simulated/floor/tiled,/area/triumph/surfacebase/mining_main/refinery)
@@ -1983,7 +1983,7 @@ iiiiiiiiiiiiiiiiiiiiiiiiiiiikDEdEdEdYjUqvmyGfMHJHJHJKspvIoHJSVFwZmJXKzDmbaaiKiKi
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiEdiiiiiiYjCZCZOGHJHJHJHJGaXgeXfMaTCDLAJXVrDmRWgWKihqHxxnVGYtHdYWKiIjOFwdbnNyraDCRUaOqmrajdiqgUGDlXdtCiCiOyHYOAhcANwjyenKWoUyJCUUhoXzMRcXakTBBDgYLYzkKWQRjLCEuzzyhVCrOOcKWCuzWCuzzksliMaijTxupgYzYzITpgpgjTaiMHaimqmqACmqmqEviiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiirCiiiiiiYjkUwVSiHJnPgAgmjPukoyyHJXJXeOJXDpDmRWNNKinyWEVoeTeTVcpVKiIjIjIjmFraraskskskdGraLJYdYdYdYdzORDRDSTHYWVWVWVWVLPnKeZUyNANXyLYsKDcXUkBVyrOelWzkKWQRWZLQLQOOzTVKOCLQLQLQLQXMzkslSUaijTlgXBGWYzjTiBiBjToECUaiJwvOKbtAtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiikDEdEdEdeHeHeHblFLWRWRWRWRaiAtaiDmSDupPQDDDmRWhZKiOqSdAADZAAAuwiXpivfIZKZrskvhtQtQskskraJfNxYdSFSFzORDRDObHYrOaewSuLLPeGfYUykEduMTxvYncXmTKqzKDXNrzksoOOOOWZWZOOHmIUJxKBWZWZWZepzksloEaijTOXjTjTjTjTmqmqjTiLCUaiMJjtvZtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-iiiiiiiiiiiiiiiiiiiiiiiiiiiirCiiEdiiiiiiiixkTCVyTCQIWRZayZgWDmDyugtSwvDmRWiMKiTPCRCRCRuwrlArPhzjgkKiVqskgJDHtQtQskraYdwoYdwoYdMfDKDKbEHYLPAfLPLPLPnKRiUyUyUyUyHjUycXcXeucXcXcXzkPMOOOOOOOOSXzkVgzkzkzkzkzkzkzkslCUmzCUCUCUqHiMoEnjqHoEoECUaiaiaitAtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiiiiirCiiEdiiiiiiiixkTCVyTCQIWRZayZgWDmDyugtSwvDmRWiMKiTPCRCRCRuwrlArPhzjgkKiVqskgJDHtQtQskraYdwoYdwoYdMfDKDKbEHYLPAfLPLPLPnKUoUyUyUyUyHjUycXcXeucXcXcXzkPMOOOOOOOOSXzkVgzkzkzkzkzkzkzkslCUmzCUCUCUqHiMoEnjqHoEoECUaiaiaitAtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiEdiiEdiiiiiiiixkTCTCTCtXWRhZyZodDmDySmefDoDmRWoEKiBZVoeTeTyXbqWEmSTtwUKigHskmAsktQskskraYdWQYYkoYYYYYYYYeRcjzhsiXkXkTXhpkQKenNiSOcYcXkpPmEWMfRLPLPXKVmOOOOWZPsmDzkQyEyHWgWnjqHoEoEsliMaiaiaiCUCUCUCUCUCUCUCUCUaioEiMtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiikDiiEdiiiiiiiiblODTCTCuoWRoEyZoEDmDmTDefefDmRWoEKiieCRCRCRCRPYCRCRjwHHKiskskmAWuNuskLxraqcPwiAEnLqWplxfXYdVLQdPxjuRwJKPPAXkVkVsFGzEckVYOnwJEsgWDvWzkKWQRWZWZPspIzkIcgCgCgCfggCgCgCjRLHLHIpaiexexoEoEiMhZoEoEiMaioEtAtAiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiEdEdEdEdEdEdEdbllvTCoeCcWRoEyZCknjaiZtDmZtDmRWoEKimyWEWEWEWEtKWEWEUhFfKiraraCXwcwcwcwcwcwcwcMFMFMFMFMFMFtFMFMFvSPrBptpBpBpBpBpjWjWjWjWjWGBLPybybybzkKWQRQKKBPsmDzkxHaitAtAtAtAtAtAtAtAtAtAtAtAtAtAmvmvmvmvtAtAtAtAtArCiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
