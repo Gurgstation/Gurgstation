@@ -42,6 +42,12 @@
 	ckeywhitelist = list("adk09")
 	character_name = list("Lethe")
 
+/datum/gear/fluff/foursun
+	path = /obj/item/clothing/glasses/sunglasses/fluff/chanceofcondensation
+	display_name = "Chance's nibbled sunglasses"
+	ckeywhitelist = list("aruis")
+	character_name = list("Chance")
+
 /datum/gear/fluff/xander_bracer
 	path = /obj/item/clothing/accessory/bracer/fluff/xander_sthasha
 	display_name = "Xander's Bracer"

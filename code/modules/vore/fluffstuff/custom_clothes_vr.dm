@@ -34,6 +34,16 @@
 	item_state = "dualsunglasses"
 	icon_override = 'gurgs_content/icons/obj/doublesunglasses.dmi'
 
+//Aruis: Chance
+/obj/item/clothing/glasses/sunglasses/fluff/chanceofcondensation
+	name = "Four-Eyed Sunglasses"
+	desc = "Sunglasses designed for people with four eyes! It looks like the ends have been chewed on quite a lot."
+
+	icon_state = "sun"
+	icon = 'gurgs_content/icons/obj/doublesunglasses.dmi'
+	item_state = "dualsunglasses"
+	icon_override = 'gurgs_content/icons/obj/doublesunglasses.dmi'
+
 //Natje: Awen Henry
 /obj/item/clothing/head/fluff/wolfgirl
     name = "Wolfgirl Hat"
