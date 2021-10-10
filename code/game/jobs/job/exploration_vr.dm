@@ -98,7 +98,6 @@
 	supervisors = "the Pathfinder and the Head of Personnel"
 	selection_color = "#999440"
 	economic_modifier = 6
-	whitelist_only = 1
 	pto_type = PTO_EXPLORATION
 	access = list(access_explorer, access_external_airlocks, access_eva)
 	minimal_access = list(access_explorer, access_external_airlocks, access_eva)
