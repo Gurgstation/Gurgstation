@@ -31,7 +31,7 @@
 
 /datum/map/triumph
 	name = "Triumph"
-	full_name = "NSV Triumph"
+	full_name = "OCV Triumph"
 	path = "triumph"
 
 	use_overmap = TRUE
@@ -53,15 +53,15 @@
 		Z_LEVEL_DECK_THREE,
 		Z_LEVEL_DECK_FOUR))
 
-	station_name	= "NSV Triumph"
+	station_name	= "OCV Triumph"
 	station_short	= "Triumph"
-	dock_name		= "NDV Marksman"
+	dock_name		= "OCS Longbow"
 	dock_type		= "space"
-	boss_name		= "Central Command"
-	boss_short		= "CentCom"
-	company_name	= "NanoTrasen"
-	company_short	= "NT"
-	starsys_name	= "Sigmar Concord"
+	boss_name		= "Holding Board"
+	boss_short		= "Board"
+	company_name	= "Odysseus Holding Company"
+	company_short	= "Odysseus"
+	starsys_name	= "Shareen Point Supply Post"
 
 	shuttle_docked_message = "This is the %dock_name% calling to the Triumph. A shift transfer is commencing for crew that need to depart. The transfer shuttle will arrive in %ETD%. %dock_name% out."
 	shuttle_leaving_dock = "The transfer shuttle has left the ship. Estimate %ETA% until the shuttle arrives at the %dock_name%."
@@ -136,7 +136,7 @@
 		list("Away Mission - Pirate Base"), // Vox Pirate Base & Mining Planet
 		list("Away Mission - Mining Planet"),//Mining planet
 		list("ExoPlanet - Z1 Planet"), // Rogue Exoplanet
-		list("ExoPlanet - Z2 Planet"), // Desert Exoplanet
+//		list("ExoPlanet - Z2 Planet"), // Desert Exoplanet
 		list("Gaia Planet - Z3 Planet"), // Gaia Planet
 		list("Forzen Planet - Z4 Planet"), // Frozen Planet
 		list("Asteroid Belt 1","Asteroid Belt 2","Asteroid Belt 3","Asteroid Belt 4"),
