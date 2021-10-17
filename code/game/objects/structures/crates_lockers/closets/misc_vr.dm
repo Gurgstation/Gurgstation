@@ -126,9 +126,11 @@
 
 /obj/structure/closet/secure_closet/pathfinder/Initialize()
 	if(prob(50))
-		starts_with += /obj/item/weapon/storage/backpack
+		starts_with += /obj/item/weapon/storage/backpack/explorer
 	else
-		starts_with += /obj/item/weapon/storage/backpack/satchel/norm
+		starts_with += /obj/item/weapon/storage/backpack/satchel/explorer
+	if(prob(50))
+		starts_with += /obj/item/weapon/storage/backpack/dufflebag/explorer
 	return ..()
 
 /*
