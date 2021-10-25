@@ -7,7 +7,7 @@
 /turf/simulated/floor/wood,
 /area/poi_h/POIs/WW_Town)
 "aX" = (
-/turf/simulated/floor/beach/sand/outdoors/lowdesert,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/explored)
 "dt" = (
 /obj/structure/table/rack/shelf,
@@ -162,7 +162,7 @@
 /turf/simulated/floor/wood/classh,
 /area/poi_h/POIs/WW_Town)
 "GS" = (
-/turf/simulated/floor/beach/sand/outdoors/lowdesert,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/POIs/WW_Town)
 "KK" = (
 /obj/structure/bed/chair/wood{
@@ -256,7 +256,7 @@
 /turf/simulated/floor/wood,
 /area/poi_h/POIs/WW_Town)
 "Xx" = (
-/turf/simulated/floor/beach/sand/outdoors/dirtlight,
+/turf/simulated/floor/outdoors/beach/sand/dirtlight,
 /area/poi_h/POIs/WW_Town)
 
 (1,1,1) = {"

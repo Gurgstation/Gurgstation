@@ -1,31 +1,31 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/simulated/floor/beach/sand/outdoors/lowdesert,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/unexplored)
 "c" = (
 /turf/simulated/wall/sandstone/classh,
 /area/poi_h/explored)
 "l" = (
 /obj/structure/loot_pile/surface/bones,
-/turf/simulated/floor/beach/sand/outdoors/lowdesert,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/explored)
 "n" = (
-/turf/simulated/floor/beach/sand/outdoors/dirtlight,
+/turf/simulated/floor/outdoors/beach/sand/dirtlight,
 /area/poi_h/explored)
 "s" = (
 /obj/item/weapon/bone,
-/turf/simulated/floor/beach/sand/outdoors/lowdesert,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/explored)
 "G" = (
 /obj/structure/loot_pile/surface/bones,
-/turf/simulated/floor/beach/sand/outdoors/dirtlight,
+/turf/simulated/floor/outdoors/beach/sand/dirtlight,
 /area/poi_h/explored)
 "W" = (
 /obj/item/weapon/bone,
-/turf/simulated/floor/beach/sand/outdoors/dirtlight,
+/turf/simulated/floor/outdoors/beach/sand/dirtlight,
 /area/poi_h/explored)
 "X" = (
-/turf/simulated/floor/beach/sand/outdoors/lowdesert,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/explored)
 
 (1,1,1) = {"

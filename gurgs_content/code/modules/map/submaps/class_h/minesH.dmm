@@ -51,7 +51,7 @@
 /turf/simulated/mineral/floor/classh,
 /area/poi_h/POIs/goldmine)
 "q" = (
-/turf/simulated/floor/beach/sand/outdoors/lowdesert,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/POIs/goldmine)
 "r" = (
 /obj/random/mob/spider/nurse,

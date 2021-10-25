@@ -1,16 +1,16 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "e" = (
-/turf/simulated/floor/beach/sand/outdoors/lowdesert,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/unexplored)
 "g" = (
-/turf/simulated/floor/beach/sand/outdoors/lowdesert,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/explored)
 "j" = (
 /turf/simulated/mineral/classh,
 /area/poi_h/explored)
 "l" = (
 /obj/effect/overmap/visitable/sector/class_h,
-/turf/simulated/floor/beach/sand/outdoors/lowdesert,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/explored)
 "o" = (
 /turf/simulated/floor/water/shoreline/corner/classh,
@@ -40,7 +40,7 @@
 /area/poi_h/explored)
 "z" = (
 /obj/effect/shuttle_landmark/automatic,
-/turf/simulated/floor/beach/sand/outdoors/lowdesert,
+/turf/simulated/floor/outdoors/beach/sand/lowdesert,
 /area/poi_h/explored)
 "H" = (
 /turf/simulated/floor/water/shoreline/classh{

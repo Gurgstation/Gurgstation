@@ -2844,7 +2844,7 @@
 "mY" = (
 /obj/structure/window/reinforced,
 /obj/random/humanoidremains,
-/turf/simulated/floor/beach/sand/desert/outdoors,
+/turf/simulated/floor/outdoors/beach/sand/desert,
 /area/tradeport/cyndishow)
 "mZ" = (
 /obj/structure/table/rack/shelf/steel,
@@ -4016,7 +4016,7 @@
 /turf/simulated/floor/tiled/old_tile/red,
 /area/tradeport)
 "ta" = (
-/turf/simulated/floor/beach/sand/desert/outdoors,
+/turf/simulated/floor/outdoors/beach/sand/desert,
 /area/tradeport/cyndishow)
 "tc" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -4209,7 +4209,7 @@
 /obj/effect/floor_decal/plaque{
 	desc = "Ancient tombs like these are common across multiple species. The final resting place of Ahten-Ka is a popular topic amongst modern occult enthusiasts, who still debate whether the strange occurrence at that cyclopean pyramid were in fact early instances of Low Frequency Wave interference on humankind."
 	},
-/turf/simulated/floor/beach/sand/desert/outdoors,
+/turf/simulated/floor/outdoors/beach/sand/desert,
 /area/tradeport/cyndishow)
 "uf" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -6017,7 +6017,7 @@
 /area/tradeport/cyndi)
 "BM" = (
 /obj/effect/decal/remains/mummy1,
-/turf/simulated/floor/beach/sand/desert/outdoors,
+/turf/simulated/floor/outdoors/beach/sand/desert,
 /area/tradeport/cyndishow)
 "BO" = (
 /obj/machinery/atmospherics/binary/pump/on{
@@ -8230,7 +8230,7 @@
 /area/tradeport/engineering)
 "Mm" = (
 /obj/structure/cult/pylon,
-/turf/simulated/floor/beach/sand/desert/outdoors,
+/turf/simulated/floor/outdoors/beach/sand/desert,
 /area/tradeport/cyndishow)
 "Mn" = (
 /obj/machinery/door/airlock/silver{
@@ -9420,7 +9420,7 @@
 	dir = 1
 	},
 /obj/structure/table/marble,
-/turf/simulated/floor/beach/sand/desert/outdoors,
+/turf/simulated/floor/outdoors/beach/sand/desert,
 /area/tradeport/cyndishow)
 "QW" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -10828,7 +10828,7 @@
 "XL" = (
 /obj/structure/window/reinforced,
 /obj/structure/cult/pylon,
-/turf/simulated/floor/beach/sand/desert/outdoors,
+/turf/simulated/floor/outdoors/beach/sand/desert,
 /area/tradeport/cyndishow)
 "XM" = (
 /obj/machinery/camera{
