@@ -269,8 +269,7 @@
 	current_location = "triumph_excursion_hangar"
 	docking_controller_tag = "expshuttle_dock"
 	shuttle_area = list(/area/shuttle/excursion/cockpit, /area/shuttle/excursion/general, /area/shuttle/excursion/cargo)
-	//fuel_consumption = 3
-	fuel_consumption = 0	//inf fuel for testing purposes
+	fuel_consumption = 3
 
 // The 'ship' of the excursion shuttle
 /obj/effect/overmap/visitable/ship/landable/excursion
@@ -281,6 +280,7 @@
 	shuttle = "Excursion Shuttle"
 	start_x = 4
 	start_y = 5
+	known = TRUE
 
 
 
@@ -292,7 +292,6 @@
 	shuttle_area = list(/area/shuttle/excursion/cockpit, /area/shuttle/excursion/general, /area/shuttle/excursion/cargo)
 	current_location = "triumph_excursion_hangar"
 	docking_controller_tag = "expshuttle_docker"
-	landmark_transition = "nav_transit_exploration"
 	fuel_consumption = 3
 	move_time = 20
 
@@ -313,7 +312,6 @@
 	shuttle_area = list(/area/shuttle/civvie/cockpit, /area/shuttle/civvie/general)
 	current_location = "triumph_civvie_home"
 	docking_controller_tag = "civvie_docker"
-	landmark_transition = "nav_transit_civvie"
 	fuel_consumption = 10
 	move_time = 30
 
@@ -353,7 +351,6 @@
 	shuttle_area = list(/area/shuttle/mining_ship/general)
 	current_location = "triumph_mining_port"
 	docking_controller_tag = "mining_docker"
-	landmark_transition = "nav_transit_mining"
 	move_time = 30
 
 /area/shuttle/mining
@@ -396,7 +393,6 @@
 	shuttle_area = list(/area/shuttle/emt/general, /area/shuttle/emt/cockpit)
 	current_location = "triumph_emt_dock"
 	docking_controller_tag = "emt_shuttle_docker"
-	landmark_transition = "nav_transit_emt"
 	move_time = 20
 
 /area/shuttle/emt
