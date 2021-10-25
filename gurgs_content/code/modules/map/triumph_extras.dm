@@ -1,6 +1,6 @@
 // Turfs
 
-/turf/simulated/floor/outdoors/beach/sand/lowdesert
+/turf/simulated/floor/beach/sand/outdoors/lowdesert
 	name = "\improper low desert"
 	icon = 'icons/turf/desert.dmi'
 	icon_state = "lowdesert"
@@ -16,7 +16,7 @@
 	icon_state = "dirt-dark"
 	icon = 'icons/turf/outdoors.dmi'
 
-/turf/simulated/floor/outdoors/beach/sand/dirtlight
+/turf/simulated/floor/beach/sand/outdoors/dirtlight
 	name = "sun bleached path"
 	desc = "A cracked path of compacted sand, worn by heavy traffic and bleached by constant sunlight."
 	icon_state = "dirt-light"

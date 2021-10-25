@@ -102,7 +102,7 @@
 "cL" = (
 /obj/structure/fence,
 /obj/structure/fence/corner,
-/turf/simulated/floor/outdoors/beach/sand/gaia,
+/turf/simulated/floor/beach/sand/outdoors/gaia,
 /area/gaia_planet/outside)
 "cU" = (
 /obj/item/weapon/stool/padded,
@@ -268,7 +268,7 @@
 /obj/structure/fence/corner{
 	dir = 1
 	},
-/turf/simulated/floor/outdoors/beach/sand/gaia,
+/turf/simulated/floor/beach/sand/outdoors/gaia,
 /area/gaia_planet/outside)
 "gF" = (
 /obj/machinery/light{
@@ -300,7 +300,7 @@
 /obj/structure/fence{
 	dir = 4
 	},
-/turf/simulated/floor/outdoors/beach/sand/gaia,
+/turf/simulated/floor/beach/sand/outdoors/gaia,
 /area/gaia_planet/outside)
 "hr" = (
 /mob/living/simple_mob/animal/passive/fish/solarfish,
@@ -349,7 +349,7 @@
 /obj/structure/fence/post{
 	dir = 8
 	},
-/turf/simulated/floor/outdoors/beach/sand/gaia,
+/turf/simulated/floor/beach/sand/outdoors/gaia,
 /area/gaia_planet/outside)
 "il" = (
 /obj/structure/toilet{
@@ -1061,7 +1061,7 @@
 /area/gaia_planet/inside)
 "xv" = (
 /obj/structure/fence,
-/turf/simulated/floor/outdoors/beach/sand/gaia,
+/turf/simulated/floor/beach/sand/outdoors/gaia,
 /area/gaia_planet/outside)
 "xB" = (
 /obj/machinery/light{
@@ -1293,7 +1293,7 @@
 /turf/simulated/floor/tiled/gaia,
 /area/gaia_planet/inside)
 "BU" = (
-/turf/simulated/floor/outdoors/beach/sand/gaia,
+/turf/simulated/floor/beach/sand/outdoors/gaia,
 /area/gaia_planet/outside)
 "Ca" = (
 /obj/item/weapon/ore/coal,
@@ -1724,7 +1724,7 @@
 /area/gaia_planet/inside)
 "Lk" = (
 /obj/item/weapon/stool,
-/turf/simulated/floor/outdoors/beach/sand/gaia,
+/turf/simulated/floor/beach/sand/outdoors/gaia,
 /area/gaia_planet/outside)
 "Lt" = (
 /obj/structure/table/marble,
@@ -2028,7 +2028,7 @@
 /obj/structure/fence/post{
 	dir = 8
 	},
-/turf/simulated/floor/outdoors/beach/sand/gaia,
+/turf/simulated/floor/beach/sand/outdoors/gaia,
 /area/gaia_planet/outside)
 "SV" = (
 /obj/effect/shuttle_landmark/automatic{

@@ -1,9 +1,9 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/turf/simulated/floor/beach/sand/outdoors/lowdesert,
 /area/poi_h/unexplored)
 "b" = (
-/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/turf/simulated/floor/beach/sand/outdoors/lowdesert,
 /area/poi_h/explored)
 "e" = (
 /turf/simulated/floor/water/shoreline/classh{
@@ -15,7 +15,7 @@
 /area/poi_h/explored)
 "h" = (
 /obj/random/outcrop,
-/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/turf/simulated/floor/beach/sand/outdoors/lowdesert,
 /area/poi_h/explored)
 "i" = (
 /turf/simulated/floor/water/shoreline/classh{

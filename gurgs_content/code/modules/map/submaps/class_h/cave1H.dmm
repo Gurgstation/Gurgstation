@@ -39,7 +39,7 @@
 /area/poi_h/explored)
 "M" = (
 /obj/random/outcrop,
-/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/turf/simulated/floor/beach/sand/outdoors/lowdesert,
 /area/poi_h/explored)
 "N" = (
 /obj/structure/closet/crate/miningcar,
@@ -55,7 +55,7 @@
 /turf/simulated/mineral/classh,
 /area/poi_h/explored)
 "W" = (
-/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/turf/simulated/floor/beach/sand/outdoors/lowdesert,
 /area/poi_h/explored)
 
 (1,1,1) = {"
