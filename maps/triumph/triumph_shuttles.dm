@@ -262,6 +262,28 @@
 //////// Excursion Shuttle /////////////
 ////////////////////////////////////////
 
+// The 'shuttle' of the excursion shuttle
+/datum/shuttle/autodock/overmap/excursion
+	name = "Excursion Shuttle"
+	warmup_time = 0
+	current_location = "triumph_excursion_hangar"
+	docking_controller_tag = "expshuttle_dock"
+	shuttle_area = list(/area/shuttle/excursion/cockpit, /area/shuttle/excursion/general, /area/shuttle/excursion/cargo)
+	fuel_consumption = 3
+
+// The 'ship' of the excursion shuttle
+/obj/effect/overmap/visitable/ship/landable/excursion
+	name = "Excursion Shuttle"
+	desc = "The traditional Excursion Shuttle. NT Approved!"
+	vessel_mass = 10000
+	vessel_size = SHIP_SIZE_SMALL
+	shuttle = "Excursion Shuttle"
+	start_x = 4
+	start_y = 5
+	known = TRUE
+
+
+
 // EXCURSION SHUTTLE DATA
 
 /datum/shuttle/autodock/overmap/excursion
@@ -269,9 +291,8 @@
 	warmup_time = 2
 	shuttle_area = list(/area/shuttle/excursion/cockpit, /area/shuttle/excursion/general, /area/shuttle/excursion/cargo)
 	current_location = "triumph_excursion_hangar"
-	landmark_transition = "nav_transit_exploration"
 	docking_controller_tag = "expshuttle_docker"
-	fuel_consumption = 2
+	fuel_consumption = 3
 	move_time = 20
 
 /area/shuttle/excursion
@@ -291,7 +312,6 @@
 	shuttle_area = list(/area/shuttle/civvie/cockpit, /area/shuttle/civvie/general)
 	current_location = "triumph_civvie_home"
 	docking_controller_tag = "civvie_docker"
-	landmark_transition = "nav_transit_civvie"
 	fuel_consumption = 10
 	move_time = 30
 
@@ -331,7 +351,6 @@
 	shuttle_area = list(/area/shuttle/mining_ship/general)
 	current_location = "triumph_mining_port"
 	docking_controller_tag = "mining_docker"
-	landmark_transition = "nav_transit_mining"
 	move_time = 30
 
 /area/shuttle/mining
@@ -374,7 +393,6 @@
 	shuttle_area = list(/area/shuttle/emt, /area/shuttle/emt/general, /area/shuttle/emt/cockpit)
 	current_location = "triumph_emt_dock"
 	docking_controller_tag = "emt_shuttle_docker"
-	landmark_transition = "nav_transit_emt"
 	move_time = 20
 
 /area/shuttle/emt
