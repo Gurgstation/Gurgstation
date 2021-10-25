@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/simulated/floor/outdoors/beach/sand/lowdesert,
+/turf/simulated/floor/beach/sand/outdoors/lowdesert,
 /area/poi_h/unexplored)
 "h" = (
 /turf/simulated/wall/sandstone/classh,
@@ -15,7 +15,7 @@
 "U" = (
 /obj/random/multiple/minevault,
 /obj/item/weapon/moneybag/vault,
-/turf/simulated/floor/outdoors/beach/sand/dirt/classh,
+/turf/simulated/floor/beach/sand/outdoors/dirt/classh,
 /area/poi_h/explored)
 "Z" = (
 /turf/simulated/wall/sandstone/classh{

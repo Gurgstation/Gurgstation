@@ -265,7 +265,7 @@
 /area/poi_h
 	name = "Mining Planet"
 	icon_state = "away"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors/classh
 	requires_power = 0
 	dynamic_lighting = 1
 
@@ -280,36 +280,36 @@
 
 /area/shuttle/excursion/poi_h
 	name = "Shuttle Landing Point"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors/classh
 	flags = RAD_SHIELDED
 
 /area/poi_h
 	name = "Class H World"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors/classh
 
 /area/poi_h/POIs/WW_Town
 	name = "Ghost Town"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors/classh
 
 /area/poi_h/POIs/landing_pad
 	name = "Prefab Homestead"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors/classh
 
 /area/poi_h/POIs/solar_farm
 	name = "Prefab Solar Farm"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors/classh
 
 /area/poi_h/POIs/dirt_farm
 	name = "Abandoned Farmstead"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors/classh
 
 /area/poi_h/POIs/graveyard
 	name = "Desert Graveyard"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors/classh
 
 /area/poi_h/POIs/goldmine
 	name = "Desert Goldmine"
-	base_turf = /turf/simulated/floor/outdoors/beach/sand/desert/classh
+	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors/classh
 
 /area/poi_h/explored
 	name = "Class H World - Explored (E)"
