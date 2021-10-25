@@ -1,5 +1,5 @@
 // Gurgs ADD: Imports belches, brp~
-/client/verb/toggle_belch_noises()
+/*/client/verb/toggle_belch_noises()
 	set name = "Toggle Audible belching"
 	set category = "Preferences"
 	set desc = "Toggles audible belches."
@@ -13,7 +13,7 @@
 	SScharacter_setup.queue_preferences_save(prefs)
 
 	feedback_add_details("admin_verb","TBelchNoise")
-
+*/
 // Gurgs ADD: New toggleable sound to stop slosh sounds when walking
 /client/verb/toggle_walking_sloshes()
 	set name = "Toggle Walking Sloshes"

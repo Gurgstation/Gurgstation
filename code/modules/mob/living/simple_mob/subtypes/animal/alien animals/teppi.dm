@@ -129,7 +129,7 @@ GLOBAL_VAR_INIT(teppi_count, 0)	// How mant teppi DO we have?
 
 	mob_size = MOB_LARGE
 
-	has_langs = list("Teppi", "Galactic Common")
+	has_langs = list("Teppi")
 	say_list_type = /datum/say_list/teppi
 	player_msg = "Teppi are large omnivorous quadrupeds. You have four toes on each paw, a long, strong tail, and are quite tough and powerful. You’re a lot more intimidating than you are actually harmful though. Your kind are ordinarily rather passive, only really rising to violence when someone does violence to you or others like you. You’re not stupid though, you can commiunicate with others of your kind, and form bonds with those who are kind to you, be they Teppi or otherwise. <br>- - - - -<br><span class='notice'>While you may have access to galactic common, this is purely meant for making it so you can understand people in an OOC manner, for facilitating roleplay. You almost certainly should not be speaking to people or roleplaying as though you understand everything everyone says perfectly, but it's not unreasonable to be able to intuit intent and such through people's tones when they speak. Teppi are kind of smart, but they are animals, and should be roleplayed as such.</span> <span class='warning'>ADDITIONALLY, you have the ability to produce offspring if you're well fed enough every once in a while, and the ability to disable this from happening to you. These verbs exist for to preserve the mechanical functionality of the mob you are playing. You should be aware of your surroundings when you use this verb, and NEVER use it to prefbreak or be disruptive. If in doubt, don't use it.</span> <span class='notice'>Also, to note, AI Teppi will never initiate breeding with player Teppi.</span>"
 	loot_list = list(/obj/item/weapon/bone/horn = 100)
@@ -757,8 +757,7 @@ GLOBAL_VAR_INIT(teppi_count, 0)	// How mant teppi DO we have?
 	if(do_after(user, sheartime, exclusive = TASK_USER_EXCLUSIVE, target = src))
 		user.visible_message("<span class='notice'>\The [user] shears \the [src] with \the [tool].</span>","<span class='notice'>You shear \the [src] with \the [tool].</span>")
 		amount_grown = rand(0,250)
-		var/obj/item/stack/material/fur/F = new(get_turf(user))
-		F.amount = rand(10,15)
+		var/obj/item/stack/material/fur/F = new(get_turf(user), rand(10,15))
 		F.color = marking_color
 		teppi_wool = FALSE
 		update_icon()
@@ -801,11 +800,12 @@ GLOBAL_VAR_INIT(teppi_count, 0)	// How mant teppi DO we have?
 	if(client)
 		return ..()
 	var/current_affinity = affinity[T.real_name]
-	ai_holder.busy = TRUE
+	ai_holder.set_busy(TRUE)
 	T.stop_pulling()
 	if(current_affinity >= 50)
 		var/tumby = vore_selected
 		vore_selected = friend_zone
+		ai_holder.set_busy(FALSE)
 		..()
 		vore_selected = tumby
 		return
@@ -814,24 +814,26 @@ GLOBAL_VAR_INIT(teppi_count, 0)	// How mant teppi DO we have?
 	else 
 		vore_selected.digest_mode = DM_DRAIN
 	..()
-	ai_holder.busy = FALSE
+	ai_holder.set_busy(FALSE)
 
 	
 /mob/living/simple_mob/vore/alienanimals/teppi/perform_the_nom(user, mob/living/prey, user, belly, delay)
 	if(client)
 		return ..()
 	var/current_affinity = affinity[prey.real_name]
-	ai_holder.busy = TRUE
+	ai_holder.set_busy(TRUE)
 	prey.stop_pulling()
 	if(current_affinity >= 50)
 		belly = friend_zone
-		return ..()
+		..()
+		ai_holder.set_busy(FALSE)
+		return
 	if(current_affinity <= -50)
 		vore_selected.digest_mode = DM_DIGEST
 	else 
 		vore_selected.digest_mode = DM_DRAIN
 	..()
-	ai_holder.busy = FALSE
+	ai_holder.set_busy(FALSE)
 
 //Instead of copying this everywhere let's just make a proc
 /mob/living/simple_mob/vore/alienanimals/teppi/proc/lets_eat(person)
