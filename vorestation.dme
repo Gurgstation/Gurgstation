@@ -4089,6 +4089,7 @@
 #include "gurgs_content\code\modules\events\metroid.dm"
 #include "gurgs_content\code\modules\items\drinks_ch.dm"
 #include "gurgs_content\code\modules\items\toys_ch.dm"
+#include "gurgs_content\code\modules\items\uno.dm"
 #include "gurgs_content\code\modules\map\areas.dm"
 #include "gurgs_content\code\modules\map\triumph_extras.dm"
 #include "gurgs_content\code\modules\map\levels\classd.dm"
