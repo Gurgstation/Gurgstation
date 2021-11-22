@@ -6,7 +6,6 @@
 /obj/item/weapon/deck/unus
 	name = "deck of unus cards"
 	desc = "Because the crew needed another game to get violently angry about."
-	icon = 'gurgs_content/icons/obj/playing_cards.dmi'
 	icon_state = "deck_unus"
 
 /obj/item/weapon/deck/unus/Initialize(mapload)
