@@ -1,19 +1,19 @@
 /datum/gear/unus
-	name = "Deck of Unus Cards"
-	path = /obj/item/deck/unus
+	display_name = "Deck of Unus Cards"
+	sort_category = "General"
+	path = /obj/item/weapon/deck/unus
 
-/obj/item/deck/unus
+/obj/item/weapon/deck/unus
 	name = "deck of unus cards"
 	desc = "Because the crew needed another game to get violently angry about."
-    icon = 'gurgs_content/icons/playing_cards.dmi'
+	icon = 'gurgs_content/icons/obj/playing_cards.dmi'
 	icon_state = "deck_unus"
 
-/obj/item/deck/unus/Initialize(mapload)
+/obj/item/weapon/deck/unus/Initialize(mapload)
 	. = ..()
 
 	var/datum/playingcard/P
 	for(var/suit in list("red", "yellow", "blue", "green"))
-
 		for(var/i = 0, i < 2, i++)
 			for(var/number in list("draw two", "skip", "reverse"))
 				P = new()
@@ -44,7 +44,7 @@
 	
 	
 
-/obj/item/deck/unus/shuffle()
+/obj/item/weapon/deck/unus/shuffle()
 	var/mob/living/user = usr
 	if (cooldown < world.time - 10)
 		var/list/newcards = list()
