@@ -103,6 +103,7 @@
 	
 	if(chosenPart)
 		src.transform_part(chosenPart, chosen_dna)
+		src.visible_message("<span class='warning'>[src] transforms!</span>")
 	
 	// Ooooh! That's a clever way to do a cooldown!
 	src.verbs -= /mob/living/proc/prey_transform
@@ -117,8 +118,6 @@
 	if(!ishuman(src))	return
 
 	var/mob/living/carbon/human/H = src
-
-	src.visible_message("<span class='warning'>[src] transforms!</span>")
 
 	var/sizeMult = H.size_multiplier
 
@@ -227,7 +226,7 @@
 
 		if("species")
 			var/newSpecies = chosen_dna.speciesName
-			H.set_species(newSpecies,1)
+			H.shapeshift_change_species(newSpecies)
 		if("wings")
 			var/wing = chosen_dna.dna.GetUIValueRange(DNA_UI_WING_STYLE, wing_styles_list.len + 1) - 1
 			if((0 < wing) && (wing <= wing_styles_list.len))
@@ -310,7 +309,7 @@
 			
 			if(selection)
 				if(selection == "all")
-					for(var/tag in dna.body_markings)
+					for(var/tag in dna.body_markings) 
 						var/obj/item/organ/external/E = H.organs_by_name[tag]
 						if(E)
 							var/list/marklist = dna.body_markings[tag]
@@ -331,14 +330,23 @@
 				H.resize(player_sizes_list[player_sizes_list[size]], FALSE, ignore_prefs = TRUE)
 				sizeMult = chosen_dna.size_multiplier
 		if("all")
-			var/list/partlist = list("ears", "ears color","hair", "hair color", "face", "facial hair", "facial hair color", "body color", "species", "wings", "wings color", "tail", "tail color", "gender", "markings", "size") // TODO: Refactor this
+			var/list/partlist = list("ears", "ears color","hair", "hair color", "face", "facial hair", "facial hair color", "body color", "species", "wings", "wings color", "tail", "tail color", "gender", "size") // TODO: Refactor this
 			
-			for(var/i in partlist)
-				H.transform_part(i, chosen_dna)
+			spawn(0)
+				for(var/tag in dna.body_markings)
+					var/obj/item/organ/external/E = H.organs_by_name[tag]
+					if(E)
+						var/list/marklist = dna.body_markings[tag]
+						H.dna.body_markings[tag] = marklist.Copy()
+						E.markings = marklist.Copy()
+
+
+				for(var/i in partlist)
+					H.transform_part(i, chosen_dna)
 				
-			H.b_type = "AB+" //For some reason we have two blood types on the mob.
-			H.identifying_gender = chosen_dna.identifying_gender
-			H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
+				H.b_type = "AB+" //For some reason we have two blood types on the mob.
+				H.identifying_gender = chosen_dna.identifying_gender
+				H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
 
 	H.UpdateAppearance()
 	H.resize(sizeMult, animate = FALSE)
@@ -382,3 +390,66 @@
 
 	H.UpdateAppearance()
 	H.resize(size, FALSE)
+
+/mob/living/carbon/proc/shapeshift_change_species(var/new_species) // This is a copy of the species_shapeshift.dm version, however catered to this instead. 
+	if(!species)
+		return
+
+	dna.species = new_species
+
+	var/list/limb_exists = list(
+		BP_TORSO =  0,
+		BP_GROIN =  0,
+		BP_HEAD =   0,
+		BP_L_ARM =  0,
+		BP_R_ARM =  0,
+		BP_L_LEG =  0,
+		BP_R_LEG =  0,
+		BP_L_HAND = 0,
+		BP_R_HAND = 0,
+		BP_L_FOOT = 0,
+		BP_R_FOOT = 0
+		)
+	var/list/wounds_by_limb = list(
+		BP_TORSO =  new/list(),
+		BP_GROIN =  new/list(),
+		BP_HEAD =   new/list(),
+		BP_L_ARM =  new/list(),
+		BP_R_ARM =  new/list(),
+		BP_L_LEG =  new/list(),
+		BP_R_LEG =  new/list(),
+		BP_L_HAND = new/list(),
+		BP_R_HAND = new/list(),
+		BP_L_FOOT = new/list(),
+		BP_R_FOOT = new/list()
+		)
+
+	// Copy damage values
+	for(var/limb in organs_by_name)
+		var/obj/item/organ/external/O = organs_by_name[limb]
+		limb_exists[O.organ_tag] = 1
+		wounds_by_limb[O.organ_tag] = O.wounds
+
+	species = GLOB.all_species[new_species]
+	species.create_organs(src)
+//	species.handle_post_spawn(src)
+
+	for(var/limb in organs_by_name)
+		var/obj/item/organ/external/O = organs_by_name[limb]
+		if(limb_exists[O.organ_tag])
+			O.species = GLOB.all_species[new_species]
+			O.wounds = wounds_by_limb[O.organ_tag]
+			// sync the organ's damage with its wounds
+			O.update_damages()
+			O.owner.updatehealth() //droplimb will call updatehealth() again if it does end up being called
+		else
+			organs.Remove(O)
+			organs_by_name.Remove(O)
+			qdel(O)
+
+	regenerate_icons()
+/* VOREStation Edit - Our own trait system, sorry.
+	if(species && mind)
+		apply_traits()
+*/
+	return
