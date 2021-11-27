@@ -4124,6 +4124,7 @@
 #include "gurgs_content\code\modules\mob\metroid\metJuvenile.dm"
 #include "gurgs_content\code\modules\mob\metroid\metObjects.dm"
 #include "gurgs_content\code\modules\mob\metroid\metTypes.dm"
+#include "gurgs_content\code\modules\mob\new_player\sprite_accessories_taur_gr.dm"
 #include "gurgs_content\code\modules\mob\traits\negative_ch.dm"
 #include "gurgs_content\code\modules\mob\traits\negative_gg.dm"
 #include "gurgs_content\code\modules\mob\traits\neutral_ch.dm"
