@@ -4077,6 +4077,7 @@
 #include "gurgs_content\code\_helpers\global_lists_ch.dm"
 #include "gurgs_content\code\modules\maps.dm"
 #include "gurgs_content\code\modules\misc.dm"
+#include "gurgs_content\code\modules\client\admin_verbs.dm"
 #include "gurgs_content\code\modules\client\setting_datums.dm"
 #include "gurgs_content\code\modules\client\sprite_accessories\sprite_accessories_ear_ch.dm"
 #include "gurgs_content\code\modules\client\sprite_accessories\sprite_accessories_extra_ch.dm"

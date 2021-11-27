@@ -662,8 +662,11 @@ var/failed_old_db_connections = 0
 		results += "dbcon was not connected"
 
 	if(dbcon_old?.IsConnected())
+		dbcon_old.Disconnect()
 		results += "WARNING: dbcon_old is connected, not touching it, but is this intentional?"
-	
+	else
+		results += "dbcon_old was not connected"
+
 	if(!config.sql_enabled)
 		results += "stopping because config.sql_enabled = false"
 	else
@@ -673,8 +676,17 @@ var/failed_old_db_connections = 0
 		else
 			results += "FAIL: failed to connect to the database with setup_database_connection()"
 		
+		. = setup_old_database_connection()
+		if(.)
+			results += "SUCCESS: set up a connection successfully with setup_old_database_connection()"
+		else
+			results += "FAIL: failed to connect to the database with setup_old_database_connection()"
+		
 	results += "-- DB Reset End --"
-	to_world_log(results.Join("\n"))
+	results = results.Join("\n")
+	
+	to_world_log(results)
+	return results // Gurgs ADD, debugging reasons~ 
 
 // Things to do when a new z-level was just made.
 /world/proc/max_z_changed()
