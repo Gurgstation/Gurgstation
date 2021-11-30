@@ -134,13 +134,13 @@
 
 	return 1
 
-/mob/living/proc/transform_part(var/part, var/datum/absorbed_dna/chosen_dna)
+/mob/living/proc/transform_part(var/part, var/datum/absorbed_dna/chosen_dna, var/all = 0)
 	if(!part)	return
 	if(!ishuman(src))	return
 
 	var/mob/living/carbon/human/H = src
 
-	//var/sizeMult = H.size_multiplier
+	var/sizeMult = H.size_multiplier
 
 	switch(part)
 		if("species")
@@ -333,7 +333,7 @@
 			H.identifying_gender = chosen_dna.identifying_gender
 
 		if("markings") // Experimental, not working the best, need to work out the kinks with it, gonna take some more time.
-			if(part == "all")
+			if(all)
 				H.dna.body_markings.Cut()
 				for(var/tag in chosen_dna.dna.body_markings) 
 					var/obj/item/organ/external/E = H.organs_by_name[tag]
@@ -345,6 +345,8 @@
 				var/selection = tgui_input_list(H, "Select markings:", "Ass blast USA", chosen_dna.dna.body_markings + "all")
 
 				if(selection)
+					if(selection == "all")
+						H.transform_part("markings", chosen_dna, 1)
 					var/obj/item/organ/external/E = H.organs_by_name[selection]
 					var/chosenMarking = tgui_input_list(H, "Select markings:", "Ass blast USA", chosen_dna.dna.body_markings[selection])
 					if(chosenMarking)
@@ -354,19 +356,20 @@
 
 		if("size")
 			var/size = chosen_dna.dna.GetUIValueRange(DNA_UI_PLAYERSCALE, player_sizes_list.len)
-			if((0 < size) && (size <= player_sizes_list.len))
-				H.dna.SetUIValueRange(DNA_UI_PLAYERSCALE, size, player_sizes_list.len, 1)
-				H.resize(player_sizes_list[player_sizes_list[size]], FALSE, ignore_prefs = TRUE)
-				sizeMult = chosen_dna.size_multiplier
+			H.dna.SetUIValueRange(DNA_UI_PLAYERSCALE, size, player_sizes_list.len, 1)
+
+			sizeMult = size
 		if("all")
 			var/list/partlist = list("ears", "ears color","hair", "hair color", "face", "facial hair", "facial hair color", "body color", "species", "wings", "wings color", "tail", "tail color", "gender", "markings", "size") // TODO: Refactor this
 
 			for(var/i in partlist)
-				H.transform_part(i, chosen_dna)
+				H.transform_part(i, chosen_dna, 1)
 
 			H.b_type = "AB+" //For some reason we have two blood types on the mob.
 			H.identifying_gender = chosen_dna.identifying_gender
 			H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
+
+	H.resize(sizeMult, animate = FALSE)
 
 // Forget Prey you wish you forget.
 /mob/living/proc/remove_prey_transform()
