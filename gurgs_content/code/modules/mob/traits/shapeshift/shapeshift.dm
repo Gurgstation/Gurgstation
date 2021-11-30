@@ -331,14 +331,22 @@
 				H.resize(player_sizes_list[player_sizes_list[size]], FALSE, ignore_prefs = TRUE)
 				sizeMult = chosen_dna.size_multiplier
 		if("all")
-			var/list/partlist = list("ears", "ears color","hair", "hair color", "face", "facial hair", "facial hair color", "body color", "species", "wings", "wings color", "tail", "tail color", "gender", "markings", "size") // TODO: Refactor this
+			if(ishuman(src))
+				var/newSpecies = chosen_dna.speciesName
+				H.set_species(newSpecies,1)
+
+			src.dna = chosen_dna.dna.Clone()
+			src.dna.b_type = "AB+" //This is needed to avoid blood rejection bugs.  The fact that the blood type might not match up w/ records could be a *FEATURE* too.
+
+			if(ishuman(src))
+				H.b_type = "AB+" //For some reason we have two blood types on the mob.
+				H.identifying_gender = chosen_dna.identifying_gender
+				H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
+			src.real_name = chosen_dna.name
 			
-			for(var/i in partlist)
-				H.transform_part(i, chosen_dna)
-				
-			H.b_type = "AB+" //For some reason we have two blood types on the mob.
-			H.identifying_gender = chosen_dna.identifying_gender
-			H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
+			sizeMult = chosen_dna.size_multiplier
+			
+			domutcheck(src, null)
 
 	H.UpdateAppearance()
 	H.resize(sizeMult, animate = FALSE)
