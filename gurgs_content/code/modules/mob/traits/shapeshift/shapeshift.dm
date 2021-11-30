@@ -45,9 +45,9 @@
 	if(nutrientLoss)
 		owner.adjust_nutrition(-100)
 
-	var/preyDNA = owner.GetAbsorbedDNA(L.real_name)
-	if(preyDNA)
-		owner.absorbedPreys -= preyDNA
+//	var/preyDNA = owner.GetAbsorbedDNA(L.real_name)
+//	if(preyDNA)
+//		owner.absorbedPreys -= preyDNA
 
 /datum/digest_mode/unabsorb/process_mob(obj/belly/B, mob/living/L) // Gurgs OVERRIDE
 	if(L.absorbed && B.owner.nutrition >= 100)
@@ -73,9 +73,26 @@
 	AbsorbPreyDNA(M)
 	..()
 
+/datum/absorbed_dna
+	var/custom_species
+
+	var/r_grad
+	var/g_grad
+	var/b_grad
+	var/grad_style
+
+
 /datum/absorbed_dna/proc/SetupExtras(var/mob/living/M, var/datum/absorbed_dna/new_dna)
 	new_dna.size_multiplier = M.size_multiplier
 	
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		custom_species = H.custom_species
+
+		r_grad = H.r_grad
+		g_grad = H.g_grad
+		b_grad = H.b_grad
+		grad_style = H.grad_style
 
 
 
@@ -103,7 +120,11 @@
 	
 	if(chosenPart)
 		src.transform_part(chosenPart, chosen_dna)
-		src.visible_message("<span class='warning'>[src] transforms!</span>")
+		src.visible_message("<span class='warning'>[src] transforms!</span>")	
+		
+		src?.dna.UpdateUI()
+		src.UpdateAppearance()
+
 	
 	// Ooooh! That's a clever way to do a cooldown!
 	src.verbs -= /mob/living/proc/prey_transform
@@ -119,9 +140,13 @@
 
 	var/mob/living/carbon/human/H = src
 
-	var/sizeMult = H.size_multiplier
+	//var/sizeMult = H.size_multiplier
 
 	switch(part)
+		if("species")
+			var/newSpecies = chosen_dna.speciesName
+			H.shapeshift_change_species(newSpecies)
+			H.custom_species = chosen_dna.custom_species
 		if("ears")
 			var/ears = chosen_dna.dna.GetUIValueRange(DNA_UI_EAR_STYLE, ear_styles_list.len + 1) - 1
 			if((0 < ears) && (ears <= ear_styles_list.len))
@@ -177,8 +202,12 @@
 			H.g_hair = gHair
 			H.b_hair = bHair
 
+			H.r_grad = chosen_dna.r_grad
+			H.g_grad = chosen_dna.g_grad
+			H.b_grad = chosen_dna.b_grad
+			H.grad_style = chosen_dna.grad_style
+
 		if("face")
-			
 			H.real_name = chosen_dna.name
 			H.custom_say = chosen_dna.dna.custom_say
 			H.custom_ask = chosen_dna.dna.custom_ask
@@ -224,11 +253,10 @@
 			H.g_skin   = gSkin
 			H.b_skin   = bSkin
 
-		if("species")
-			var/newSpecies = chosen_dna.speciesName
-			H.shapeshift_change_species(newSpecies)
 		if("wings")
 			var/wing = chosen_dna.dna.GetUIValueRange(DNA_UI_WING_STYLE, wing_styles_list.len + 1) - 1
+			if(wing < 1)
+				H.wing_style = null
 			if((0 < wing) && (wing <= wing_styles_list.len))
 				H.dna.SetUIValueRange(DNA_UI_WING_STYLE,	wing + 1,    wing_styles_list.len + 1,  1)
 				H.wing_style = wing_styles_list[wing_styles_list[wing]]
@@ -305,17 +333,18 @@
 			H.identifying_gender = chosen_dna.identifying_gender
 
 		if("markings") // Experimental, not working the best, need to work out the kinks with it, gonna take some more time.
-			var/selection = tgui_input_list(H, "Select markings:", "Ass blast USA", chosen_dna.dna.body_markings + "all")
-			
-			if(selection)
-				if(selection == "all")
-					for(var/tag in dna.body_markings) 
-						var/obj/item/organ/external/E = H.organs_by_name[tag]
-						if(E)
-							var/list/marklist = dna.body_markings[tag]
-							H.dna.body_markings[tag] = marklist.Copy()
-							E.markings = marklist.Copy()
-				else
+			if(part == "all")
+				H.dna.body_markings.Cut()
+				for(var/tag in chosen_dna.dna.body_markings) 
+					var/obj/item/organ/external/E = H.organs_by_name[tag]
+					if(E)
+						var/list/marklist = chosen_dna.dna.body_markings[tag]
+						H.dna.body_markings[tag] = marklist.Copy()
+						E.markings = marklist.Copy()
+			else
+				var/selection = tgui_input_list(H, "Select markings:", "Ass blast USA", chosen_dna.dna.body_markings + "all")
+
+				if(selection)
 					var/obj/item/organ/external/E = H.organs_by_name[selection]
 					var/chosenMarking = tgui_input_list(H, "Select markings:", "Ass blast USA", chosen_dna.dna.body_markings[selection])
 					if(chosenMarking)
@@ -330,26 +359,14 @@
 				H.resize(player_sizes_list[player_sizes_list[size]], FALSE, ignore_prefs = TRUE)
 				sizeMult = chosen_dna.size_multiplier
 		if("all")
-			var/list/partlist = list("ears", "ears color","hair", "hair color", "face", "facial hair", "facial hair color", "body color", "species", "wings", "wings color", "tail", "tail color", "gender", "size") // TODO: Refactor this
-			
-			spawn(0)
-				for(var/tag in dna.body_markings)
-					var/obj/item/organ/external/E = H.organs_by_name[tag]
-					if(E)
-						var/list/marklist = dna.body_markings[tag]
-						H.dna.body_markings[tag] = marklist.Copy()
-						E.markings = marklist.Copy()
+			var/list/partlist = list("ears", "ears color","hair", "hair color", "face", "facial hair", "facial hair color", "body color", "species", "wings", "wings color", "tail", "tail color", "gender", "markings", "size") // TODO: Refactor this
 
+			for(var/i in partlist)
+				H.transform_part(i, chosen_dna)
 
-				for(var/i in partlist)
-					H.transform_part(i, chosen_dna)
-				
-				H.b_type = "AB+" //For some reason we have two blood types on the mob.
-				H.identifying_gender = chosen_dna.identifying_gender
-				H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
-
-	H.UpdateAppearance()
-	H.resize(sizeMult, animate = FALSE)
+			H.b_type = "AB+" //For some reason we have two blood types on the mob.
+			H.identifying_gender = chosen_dna.identifying_gender
+			H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
 
 // Forget Prey you wish you forget.
 /mob/living/proc/remove_prey_transform()
@@ -392,10 +409,6 @@
 	H.resize(size, FALSE)
 
 /mob/living/carbon/proc/shapeshift_change_species(var/new_species) // This is a copy of the species_shapeshift.dm version, however catered to this instead. 
-	if(!species)
-		return
-
-	dna.species = new_species
 
 	var/list/limb_exists = list(
 		BP_TORSO =  0,
