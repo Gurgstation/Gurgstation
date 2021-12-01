@@ -87,7 +87,7 @@
 	
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
-		custom_species = H.custom_species
+		custom_species = H.dna.custom_species
 
 		r_grad = H.r_grad
 		g_grad = H.g_grad
@@ -122,13 +122,11 @@
 		src.transform_part(chosenPart, chosen_dna)
 		src.visible_message("<span class='warning'>[src] transforms!</span>")	
 		
-		src?.dna.UpdateUI()
 		src.UpdateAppearance()
-
 	
 	// Ooooh! That's a clever way to do a cooldown!
 	src.verbs -= /mob/living/proc/prey_transform
-	spawn(10)
+	spawn(25)
 		src.verbs += /mob/living/proc/prey_transform
 		src.regenerate_icons()
 
@@ -146,6 +144,7 @@
 		if("species")
 			var/newSpecies = chosen_dna.speciesName
 			H.shapeshift_change_species(newSpecies)
+			H.dna.custom_species = chosen_dna.custom_species
 			H.custom_species = chosen_dna.custom_species
 		if("ears")
 			var/ears = chosen_dna.dna.GetUIValueRange(DNA_UI_EAR_STYLE, ear_styles_list.len + 1) - 1
@@ -299,15 +298,15 @@
 				H.tail_style = tail_styles_list[tail_styles_list[tail]]
 
 		if("tail color")
-			var/rTail   = dna.GetUIValueRange(DNA_UI_TAIL_R,    255)
-			var/gTail   = dna.GetUIValueRange(DNA_UI_TAIL_G,    255)
-			var/bTail   = dna.GetUIValueRange(DNA_UI_TAIL_B,    255)
-			var/rTail2  = dna.GetUIValueRange(DNA_UI_TAIL2_R,   255)
-			var/gTail2  = dna.GetUIValueRange(DNA_UI_TAIL2_G,   255)
-			var/bTail2  = dna.GetUIValueRange(DNA_UI_TAIL2_B,   255)
-			var/rTail3  = dna.GetUIValueRange(DNA_UI_TAIL3_R,   255)
-			var/gTail3  = dna.GetUIValueRange(DNA_UI_TAIL3_G,   255)
-			var/bTail3  = dna.GetUIValueRange(DNA_UI_TAIL3_B,   255)
+			var/rTail   = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL_R,    255)
+			var/gTail   = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL_G,    255)
+			var/bTail   = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL_B,    255)
+			var/rTail2  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL2_R,   255)
+			var/gTail2  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL2_G,   255)
+			var/bTail2  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL2_B,   255)
+			var/rTail3  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL3_R,   255)
+			var/gTail3  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL3_G,   255)
+			var/bTail3  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL3_B,   255)
 
 			H.dna.SetUIValueRange(DNA_UI_TAIL_R,    rTail,    255,    1)
 			H.dna.SetUIValueRange(DNA_UI_TAIL_G,    gTail,    255,    1)
@@ -358,18 +357,14 @@
 			var/size = chosen_dna.dna.GetUIValueRange(DNA_UI_PLAYERSCALE, player_sizes_list.len)
 			H.dna.SetUIValueRange(DNA_UI_PLAYERSCALE, size, player_sizes_list.len, 1)
 
-			sizeMult = size
+			
 		if("all")
 			var/list/partlist = list("ears", "ears color","hair", "hair color", "face", "facial hair", "facial hair color", "body color", "species", "wings", "wings color", "tail", "tail color", "gender", "markings", "size") // TODO: Refactor this
 
 			for(var/i in partlist)
 				H.transform_part(i, chosen_dna, 1)
 
-			H.b_type = "AB+" //For some reason we have two blood types on the mob.
-			H.identifying_gender = chosen_dna.identifying_gender
 			H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
-
-	H.resize(sizeMult, animate = FALSE)
 
 // Forget Prey you wish you forget.
 /mob/living/proc/remove_prey_transform()
