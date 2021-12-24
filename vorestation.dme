@@ -4075,6 +4075,7 @@
 #include "code\ZAS\Zone.dm"
 #include "gurgs_content\code\tgs_commands.dm"
 #include "gurgs_content\code\_helpers\global_lists_ch.dm"
+#include "gurgs_content\code\ATMOSPHERICS\components\unary\heat_source_gu.dm"
 #include "gurgs_content\code\modules\maps.dm"
 #include "gurgs_content\code\modules\misc.dm"
 #include "gurgs_content\code\modules\client\admin_verbs.dm"
