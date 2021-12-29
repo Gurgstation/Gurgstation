@@ -3508,5 +3508,105 @@
 "lobby": false,
 "jukebox": true,
 "genre": "Rock"
+},
+{
+"url": "https://files.catbox.moe/5qmuve.mp3",
+"title": "Last Christmas",
+"duration": 2780,
+"artist": "Wham!",
+"secret": false,
+"lobby": true,
+"jukebox": true,
+"genre": "Christmas"
+},
+{
+"url": "https://files.catbox.moe/lqemyu.mp3",
+"title": "Merry Xmas Everybody",
+"duration": 2230,
+"artist": "Slade",
+"secret": false,
+"lobby": true,
+"jukebox": true,
+"genre": "Christmas"
+},
+{
+"url": "https://files.catbox.moe/sofd65.mp3",
+"title": "Fairytale of New York",
+"duration": 2420,
+"artist": "The Pogues",
+"secret": false,
+"lobby": true,
+"jukebox": true,
+"genre": "Christmas"
+},
+{
+"url": "https://files.catbox.moe/9t6hyq.mp3",
+"title": "All I Want For Christmas Is You",
+"duration": 2420,
+"artist": "Mairiah Carey",
+"secret": false,
+"lobby": true,
+"jukebox": true,
+"genre": "Christmas"
+},
+{
+"url": "https://files.catbox.moe/3o0chv.mp3",
+"title": "The Most Wonderful Time Of the Year",
+"duration": 1720,
+"artist": "Andy Williams",
+"secret": false,
+"lobby": true,
+"jukebox": true,
+"genre": "Christmas"
+},
+{
+"url": "https://files.catbox.moe/i69rrb.mp3",
+"title": "HAPPY XMAS (WAR IS OVER)",
+"duration": 2130,
+"artist": "John & Yoko Plastic Ono Band + Harlem Community Choir",
+"secret": false,
+"lobby": true,
+"jukebox": true,
+"genre": "Christmas"
+},
+{
+"url": "https://files.catbox.moe/3qx5rt.mp3",
+"title": "White Christmas",
+"duration": 1810,
+"artist": "Michael Bublé",
+"secret": false,
+"lobby": true,
+"jukebox": true,
+"genre": "Christmas"
+},
+{
+"url": "https://files.catbox.moe/welcp5.mp3",
+"title": "Do They Know Its Christmas",
+"duration": 2570,
+"artist": "Band Aid",
+"secret": false,
+"lobby": true,
+"jukebox": true,
+"genre": "Christmas"
+},
+{
+"url": "https://files.catbox.moe/pv9uyt.mp3",
+"title": "Merry Christmas Everyone",
+"duration": 2200,
+"artist": "Shakin' Stevens",
+"secret": false,
+"lobby": true,
+"jukebox": true,
+"genre": "Christmas"
+},
+{
+"url": "https://files.catbox.moe/12161y.mp3",
+"title": "Driving Home For Christmas",
+"duration": 2400,
+"artist": "Chris Rea",
+"secret": false,
+"lobby": true,
+"jukebox": true,
+"genre": "Christmas"
 }
 ]
