@@ -657,15 +657,15 @@ var/global/datum/controller/occupations/job_master
 
 	//Spawn them at their preferred one
 	if(C && C.prefs.spawnpoint)
-			if(!(C.prefs.spawnpoint in using_map.allowed_spawns))
-				if(fail_deadly)
-					to_chat(C, "<span class='warning'>Your chosen spawnpoint is unavailable for this map and your job requires a specific spawnpoint. Please correct your spawn point choice.</span>")
-					return
-				else
-					to_chat(C, "<span class='warning'>Your chosen spawnpoint ([C.prefs.spawnpoint]) is unavailable for the current map. Spawning you at one of the enabled spawn points instead.</span>")
-					spawnpos = null
+		if(!(C.prefs.spawnpoint in using_map.allowed_spawns))
+			if(fail_deadly)
+				to_chat(C, "<span class='warning'>Your chosen spawnpoint is unavailable for this map and your job requires a specific spawnpoint. Please correct your spawn point choice.</span>")
+				return
 			else
-				spawnpos = spawntypes[C.prefs.spawnpoint]
+				to_chat(C, "<span class='warning'>Your chosen spawnpoint ([C.prefs.spawnpoint]) is unavailable for the current map. Spawning you at one of the enabled spawn points instead.</span>")
+				spawnpos = null
+		else
+			spawnpos = spawntypes[C.prefs.spawnpoint]
 
 	//We will return a list key'd by "turf" and "msg" 
 	. = list("turf","msg","voreny") // Gurgs ADD: Spawnable Belees
