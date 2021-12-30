@@ -657,80 +657,15 @@ var/global/datum/controller/occupations/job_master
 
 	//Spawn them at their preferred one
 	if(C && C.prefs.spawnpoint)
-		// Gurgs ADD: Spawnable Belees - START
-		if(C.prefs.spawnpoint == "Vore Belly")
-			var/list/preds = list()
-			var/list/pred_names = list() //This is cringe
-			for(var/client/V in GLOB.clients)
-				if(!isliving(V.mob))
-					continue
-				var/mob/living/M = V.mob
-				if(M.stat == UNCONSCIOUS || M.stat == DEAD || M.client.is_afk(10 MINUTES))
-					continue
-				if(!M.latejoin_vore)
-					continue
-				if(!(M.z in using_map.vorespawn_levels))
-					continue
-				preds += M
-				pred_names += M.real_name //very cringe
-
-			if(preds.len)
-				var/pred_name = input(C, "Choose a Predator.", "Pred Spawnpoint") as null|anything in pred_names
-				if(!pred_name)
-					return
-				var/index = pred_names.Find(pred_name)
-				var/mob/living/pred = preds[index]
-				var/list/available_bellies = list()
-				for(var/obj/belly/Y in pred.vore_organs)
-					if(Y.vorespawn_blacklist)
-						continue
-					available_bellies += Y
-				var/backup = alert(C, "Do you want a mind backup?", "Confirm", "Yes", "No")
-				if(backup == "Yes")
-					backup = 1
-				vore_spawn_gut = input(C, "Choose a Belly.", "Belly Spawnpoint") as null|anything in available_bellies
-				if(!vore_spawn_gut)
-					return
-				to_chat(C, "<span class='warning'>[pred] has received your spawn request. Please wait.</span>")
-				log_admin("[key_name(C)] has requested to vore spawn into [key_name(pred)]")
-				message_admins("[key_name(C)] has requested to vore spawn into [key_name(pred)]")
-
-				var/confirm = alert(pred, "[C.prefs.real_name] is attempting to spawn into your [vore_spawn_gut]. Let them?", "Confirm", "No", "Yes")
-				if(confirm != "Yes")
-					to_chat(C, "<span class='warning'>[pred] has declined your spawn request.</span>")
-					return
-				if(!vore_spawn_gut || QDELETED(vore_spawn_gut))
-					to_chat(C, "<span class='warning'>Somehow, the belly you were trying to enter no longer exists.</span>")
-					return
-				if(pred.stat == UNCONSCIOUS || pred.stat == DEAD)
-					to_chat(C, "<span class='warning'>[pred] is not conscious.</span>")
-					to_chat(pred, "<span class='warning'>You must be conscious to accept.</span>")
-					return
-				if(!(pred.z in using_map.vorespawn_levels))
-					to_chat(C, "<span class='warning'>[pred] is no longer in station grounds.</span>")
-					to_chat(pred, "<span class='warning'>You must be within station grounds to accept.</span>")
-					return
-				if(backup)
-					addtimer(CALLBACK(src, .proc/m_backup_client, C), 5 SECONDS)
-				log_admin("[key_name(C)] has vore spawned into [key_name(pred)]")
-				message_admins("[key_name(C)] has vore spawned into [key_name(pred)]")
-				to_chat(C, "<span class='notice'>You have been spawned via vore. You are free to roleplay how you got there as you please, such as teleportation or having had already been there.</span>")
-				to_chat(pred, "<span class='notice'>Your prey has spawned via vore. You are free to roleplay this how you please, such as teleportation or having had already been there.</span>")
-			else
-				to_chat(C, "<span class='warning'>No predators were available to accept you.</span>")
+		if(!(C.prefs.spawnpoint in using_map.allowed_spawns))
+			if(fail_deadly)
+				to_chat(C, "<span class='warning'>Your chosen spawnpoint is unavailable for this map and your job requires a specific spawnpoint. Please correct your spawn point choice.</span>")
 				return
-			spawnpos = spawntypes[C.prefs.spawnpoint]
-		else
-		// Gurgs ADD: Spawnable Belees - END
-			if(!(C.prefs.spawnpoint in using_map.allowed_spawns))
-				if(fail_deadly)
-					to_chat(C, "<span class='warning'>Your chosen spawnpoint is unavailable for this map and your job requires a specific spawnpoint. Please correct your spawn point choice.</span>")
-					return
-				else
-					to_chat(C, "<span class='warning'>Your chosen spawnpoint ([C.prefs.spawnpoint]) is unavailable for the current map. Spawning you at one of the enabled spawn points instead.</span>")
-					spawnpos = null
 			else
-				spawnpos = spawntypes[C.prefs.spawnpoint]
+				to_chat(C, "<span class='warning'>Your chosen spawnpoint ([C.prefs.spawnpoint]) is unavailable for the current map. Spawning you at one of the enabled spawn points instead.</span>")
+				spawnpos = null
+		else
+			spawnpos = spawntypes[C.prefs.spawnpoint]
 
 	//We will return a list key'd by "turf" and "msg" 
 	. = list("turf","msg","voreny") // Gurgs ADD: Spawnable Belees
