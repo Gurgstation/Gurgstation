@@ -135,6 +135,22 @@
 	},
 /turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/engine_room)
+"eK" = (
+/obj/machinery/air_sensor{
+	frequency = 1438;
+	id_tag = "engine_sensor";
+	output = 63
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 5
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 8
+	},
+/turf/simulated/floor/reinforced/nitrogen{
+	nitrogen = 82.1472
+	},
+/area/engineering/engine_room)
 "fp" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 6
@@ -152,6 +168,28 @@
 "gC" = (
 /obj/machinery/atmospherics/trinary/atmos_filter,
 /turf/simulated/floor/plating,
+/area/engineering/engine_room)
+"gS" = (
+/obj/machinery/atmospherics/unary/outlet_injector{
+	dir = 4;
+	frequency = 1438;
+	id = "cooling_in";
+	name = "Coolant Injector";
+	pixel_y = 1;
+	power_rating = 30000;
+	use_power = 1;
+	volume_rate = 700
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 6
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 1;
+	icon_state = "warningcorner"
+	},
+/turf/simulated/floor/reinforced/nitrogen{
+	nitrogen = 82.1472
+	},
 /area/engineering/engine_room)
 "hh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -360,15 +398,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/engine_room)
-"ns" = (
-/obj/effect/floor_decal/industrial/warning/cee{
-	dir = 8
-	},
-/obj/machinery/camera/network/engine{
-	dir = 4
-	},
-/turf/simulated/floor/reinforced/nitrogen,
-/area/engineering/engine_room)
 "nG" = (
 /obj/machinery/button/remote/blast_door{
 	desc = "A remote control-switch for the engine charging port.";
@@ -504,23 +533,6 @@
 "td" = (
 /turf/template_noop,
 /area/template_noop)
-"tj" = (
-/obj/machinery/atmospherics/unary/vent_pump/engine{
-	dir = 1;
-	external_pressure_bound = 100;
-	external_pressure_bound_default = 0;
-	frequency = 1438;
-	icon_state = "map_vent_in";
-	id_tag = "cooling_out";
-	initialize_directions = 4;
-	pump_direction = 0;
-	use_power = 1
-	},
-/obj/effect/floor_decal/industrial/warning/cee{
-	dir = 8
-	},
-/turf/simulated/floor/reinforced/nitrogen,
-/area/engineering/engine_room)
 "uo" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 10
@@ -606,16 +618,6 @@
 	},
 /obj/machinery/camera/network/engine,
 /turf/simulated/floor/plating,
-/area/engineering/engine_room)
-"vX" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 4;
-	icon_state = "warning"
-	},
-/turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/engine_room)
 "wa" = (
 /obj/machinery/atmospherics/binary/circulator{
@@ -757,6 +759,15 @@
 /obj/machinery/light,
 /turf/simulated/floor/plating,
 /area/engineering/engine_room)
+"Df" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/reinforced/nitrogen{
+	nitrogen = 82.1472
+	},
+/area/engineering/engine_room)
 "Dh" = (
 /obj/machinery/power/generator{
 	anchored = 1;
@@ -867,13 +878,6 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
-/area/engineering/engine_room)
-"EU" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/engine_room)
 "Fa" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
@@ -1010,12 +1014,43 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
+"Lo" = (
+/obj/machinery/atmospherics/unary/vent_pump/engine{
+	dir = 1;
+	external_pressure_bound = 100;
+	external_pressure_bound_default = 0;
+	frequency = 1438;
+	icon_state = "map_vent_in";
+	id_tag = "cooling_out";
+	initialize_directions = 4;
+	pump_direction = 0;
+	use_power = 1
+	},
+/obj/effect/floor_decal/industrial/warning/cee{
+	dir = 8
+	},
+/turf/simulated/floor/reinforced/nitrogen{
+	nitrogen = 82.1472
+	},
+/area/engineering/engine_room)
 "LJ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
 /turf/simulated/floor,
+/area/engineering/engine_room)
+"LR" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4;
+	icon_state = "warning"
+	},
+/turf/simulated/floor/reinforced/nitrogen{
+	nitrogen = 82.1472
+	},
 /area/engineering/engine_room)
 "MT" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1189,26 +1224,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/engineering/engine_room)
-"SW" = (
-/obj/machinery/atmospherics/unary/outlet_injector{
-	dir = 4;
-	frequency = 1438;
-	id = "cooling_in";
-	name = "Coolant Injector";
-	pixel_y = 1;
-	power_rating = 30000;
-	use_power = 1;
-	volume_rate = 700
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 6
-	},
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 1;
-	icon_state = "warningcorner"
-	},
-/turf/simulated/floor/reinforced/nitrogen,
-/area/engineering/engine_room)
 "To" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -1224,20 +1239,6 @@
 	icon_state = "2-8"
 	},
 /turf/simulated/floor,
-/area/engineering/engine_room)
-"TQ" = (
-/obj/machinery/air_sensor{
-	frequency = 1438;
-	id_tag = "engine_sensor";
-	output = 63
-	},
-/obj/effect/floor_decal/industrial/warning{
-	dir = 5
-	},
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 8
-	},
-/turf/simulated/floor/reinforced/nitrogen,
 /area/engineering/engine_room)
 "UR" = (
 /obj/structure/cable/yellow{
@@ -1406,6 +1407,17 @@
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
+"XY" = (
+/obj/effect/floor_decal/industrial/warning/cee{
+	dir = 8
+	},
+/obj/machinery/camera/network/engine{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced/nitrogen{
+	nitrogen = 82.1472
+	},
+/area/engineering/engine_room)
 "Yg" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
@@ -1503,9 +1515,9 @@ Za
 WZ
 SS
 Pw
-tj
+Lo
 OV
-ns
+XY
 Oz
 FN
 WZ
@@ -1524,9 +1536,9 @@ Za
 WZ
 Jw
 Oz
-EU
+Df
 oR
-EU
+Df
 Oz
 Cu
 WZ
@@ -1545,9 +1557,9 @@ WZ
 WZ
 IJ
 Oz
-TQ
-vX
-SW
+eK
+LR
+gS
 Oz
 FN
 WZ
