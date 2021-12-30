@@ -174,8 +174,6 @@
 			"emote_time" = selected.emote_time,
 			"emote_active" = selected.emote_active,
 			"belly_fullscreen" = selected.belly_fullscreen,
-			// Gurgs ADD: Spawnable Belees
-			"vorespawn_blacklist" = selected.vorespawn_blacklist,
 			"belly_fullscreen_color" = selected.belly_fullscreen_color,	// Gurgs ADD: Colorable bellies!
 			"mapRef" = map_name	//CHOMPEdit
 		)
@@ -1171,10 +1169,7 @@
 			qdel(host.vore_selected)
 			host.vore_selected = host.vore_organs[1]
 			. = TRUE
-		// Gurgs ADD: Spawnable Belees
-		if("b_vorespawn_blacklist") //CHOMP Addition
-			host.vore_selected.vorespawn_blacklist = !host.vore_selected.vorespawn_blacklist
-			. = TRUE
+
 	if(.)
 		unsaved_changes = TRUE
 

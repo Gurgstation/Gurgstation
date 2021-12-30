@@ -237,8 +237,6 @@
 		"fullness4_messages",
 		"fullness5_messages",     //CHOMP end of variables from CHOMP
 		// Gurg ADD: Import Chomp liquid bellies - END
-		// Gurgs ADD: Spawnable Belees
-		"vorespawn_blacklist",
 		"egg_type"
 		)
 
@@ -1106,9 +1104,6 @@
 	dupe.reagent_transfer_verb = reagent_transfer_verb
 	dupe.custom_max_volume = custom_max_volume	//CHOMP end of variables from CHOMP
 	// Gurg ADD: Import Chomp liquid bellies - END
-
-	// Gurgs ADD: Spawnable Belees
-	dupe.vorespawn_blacklist = vorespawn_blacklist
 	
 	dupe.belly_fullscreen = belly_fullscreen
 	dupe.disable_hud = disable_hud
