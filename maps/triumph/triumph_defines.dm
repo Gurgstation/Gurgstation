@@ -26,8 +26,6 @@
 #define NETWORK_TRIUMPH "Triumph"
 #define NETWORK_TCOMMS "Telecommunications"
 #define NETWORK_OUTSIDE "Outside"
-#define NETWORK_EXPLORATION "Exploration"
-#define NETWORK_XENOBIO "Xenobiology"
 
 /datum/map/triumph
 	name = "Triumph"
@@ -160,7 +158,6 @@
 		Z_LEVEL_TRADEPORT,
 		Z_LEVEL_LAVALAND)
 
-	lateload_single_pick = null //Nothing right now.
 
 /datum/map/triumph/perform_map_generation()
 	return 1
