@@ -53,7 +53,8 @@ var/list/all_maps = list()
 	var/list/lateload_z_levels = list()
 
 	//Similar to above, but only pick ONE to load, useful for random away missions and whatnot
-	var/list/lateload_single_pick = list()
+	var/list/lateload_gateway = list()
+	var/list/lateload_overmap = list() //VOREStation Add - The same thing as gateway, but not
 
 	var/list/allowed_jobs = list() //Job datums to use.
 	                               //Works a lot better so if we get to a point where three-ish maps are used
@@ -81,6 +82,7 @@ var/list/all_maps = list()
 
 	var/station_name  = "BAD Station"
 	var/station_short = "Baddy"
+	var/facility_type = "facility"
 	var/dock_name     = "THE PirateBay"
 	var/dock_type     = "station"	//VOREStation Edit - for a list of valid types see the switch block in air_traffic.dm at line 148
 	var/boss_name     = "Captain Roger"
@@ -216,14 +218,9 @@ var/list/all_maps = list()
 // Get a list of 'nearby' or 'connected' zlevels.
 // You should at least return a list with the given z if nothing else.
 /datum/map/proc/get_map_levels(var/srcz, var/long_range = FALSE, var/om_range = -1)
-	//Overmap behavior
-	if(use_overmap)
-		//Get what sector we're in
-		var/obj/effect/overmap/visitable/O = get_overmap_sector(srcz)
-		if(!istype(O))
-			//Anything in multiz then (or just themselves)
-			return GetConnectedZlevels(srcz)
-
+	//Get what sector we're in
+	var/obj/effect/overmap/visitable/O = get_overmap_sector(srcz)
+	if(istype(O))
 		//Just the sector we're in
 		if(om_range == -1)
 			return O.map_z.Copy()
@@ -236,7 +233,7 @@ var/list/all_maps = list()
 			connections += V.map_z // Adding list to list adds contents
 		return connections
 
-	//Traditional behavior
+	//Traditional behavior, if not in an overmap sector
 	else
 		//If long range, and they're at least in contact levels, return contact levels.
 		if (long_range && (srcz in contact_levels))

@@ -600,6 +600,12 @@
 				prob(2);/obj/item/weapon/coin/platinum,
 				prob(1);/obj/item/weapon/coin/diamond)
 
+//VOREStation Add Start
+/obj/random/coin/sometimes
+	spawn_nothing_percentage = 66
+
+//VOREStation Add End
+
 /obj/random/action_figure
 	name = "random action figure"
 	desc = "This is a random action figure."
@@ -960,4 +966,22 @@
 		prob(5);/obj/item/weapon/storage/pouch/holster,
 		prob(5);/obj/item/weapon/storage/pouch/baton/full,
 		prob(1);/obj/item/weapon/storage/pouch/holding
+	)
+
+/obj/random/flashlight
+	name = "Random Flashlight"
+	desc = "This is a random storage pouch."
+	icon = 'icons/obj/lighting.dmi'
+	icon_state = "random_flashlight"
+
+/obj/random/flashlight/item_to_spawn()
+	return pick(
+		prob(8);/obj/item/device/flashlight,
+		prob(6);/obj/item/device/flashlight/color,
+		prob(6);/obj/item/device/flashlight/color/green,
+		prob(6);/obj/item/device/flashlight/color/purple,
+		prob(6);/obj/item/device/flashlight/color/red,
+		prob(6);/obj/item/device/flashlight/color/orange,
+		prob(6);/obj/item/device/flashlight/color/yellow,
+		prob(2);/obj/item/device/flashlight/maglight
 	)
