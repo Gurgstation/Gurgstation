@@ -135,9 +135,10 @@ var/list/_human_default_emotes = list(
 
 	/decl/emote/helper/vwag,
 	/decl/emote/helper/vflap,
+	/decl/emote/audible/prbt,
 	//VOREStation Add End
 
-	/decl/emote/audible/belch // Gurgs ADD: On demand belches~
+	/decl/emote/audible/belch, // Gurgs ADD: On demand belches~
 )
 
 	//VOREStation Add Start
@@ -263,7 +264,8 @@ var/list/_simple_mob_default_emotes = list(
 	/decl/emote/audible/spiderpurr,
 	/decl/emote/audible/squeaky,
 	/decl/emote/visible/mlem,
-	/decl/emote/visible/blep
+	/decl/emote/visible/blep,
+	/decl/emote/audible/prbt
 	)
 	//VOREStation Add End
 

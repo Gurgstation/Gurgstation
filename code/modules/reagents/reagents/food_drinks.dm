@@ -234,6 +234,12 @@
 			to_chat(M, "<span class='danger'>Searing hot oil burns you, wash it off quick!</span>")
 			lastburnmessage = world.time
 
+/datum/reagent/nutriment/triglyceride/oil/cooking
+	name = "Cooking Oil"
+	id = "cookingoil"
+	description = "A general-purpose cooking oil."
+	reagent_state = LIQUID
+
 /datum/reagent/nutriment/triglyceride/oil/corn
 	name = "Corn Oil"
 	id = "cornoil"
@@ -315,6 +321,13 @@
 	taste_description = "mud"
 	color = "#664330"
 	allergen_type = ALLERGEN_FISH //Murkfin is fish
+
+/datum/reagent/nutriment/protein/bean
+	name = "beans"
+	id = "bean_protein"
+	taste_description = "beans"
+	color = "#562e0b"
+	allergen_type = ALLERGEN_BEANS //Made from soy beans
 
 /datum/reagent/nutriment/honey
 	name = "Honey"

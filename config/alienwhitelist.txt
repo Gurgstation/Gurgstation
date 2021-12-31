@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-some~user - Species
-=======
 admiraldragon - Vox
 aetherelemental - Daemon
 alphaprime1 - Protean
@@ -33,8 +30,10 @@ funnyman2003 - Xenochimera
 greennyy - Protean
 h0lysquirr3l - Protean
 hawkerthegreat - Vox
+heroman3003 - Xenochimera
 hollifex - Diona
 huenererschrecker - Xenochimera
+hunterbirk - Protean
 hunterbirk - Xenochimera
 idcaboutaname - Protean
 inuzari - Diona
@@ -50,6 +49,7 @@ lizehrd - Xenochimera
 lordlag - Black-Eyed Shadekin
 losstinspess - Xenochimera
 magpiemayhem - Vox
+magpiemayhem - Xenochimera
 marcobarko - Protean
 mewchild - Diona
 mewchild - Vox
@@ -88,7 +88,6 @@ silvertalismen - Xenochimera
 skylarks - Black-Eyed Shadekin
 spirit1299 - Black-Eyed Shadekin
 stackerrobot - Protean
-stobarico - Protean
 storesund97 - Protean
 syzygyrior - Black-Eyed Shadekin
 tastypred - Black-Eyed Shadekin
@@ -116,4 +115,3 @@ xonkon - Protean
 zalvine - Shadekin Empathy
 zammyman215 - Vox
 zeracyfr - Xenochimera
->>>>>>> e667e86813d4ddbcde151656477d4efd80dc4250
