@@ -54,7 +54,7 @@ var/global/datum/controller/occupations/job_master
 		var/datum/job/job = GetJob(rank)
 		if(!job)
 			return 0
-		if(job.minimum_character_age && (player.client.prefs.age < job.minimum_character_age))
+		if((job.minimum_character_age || job.min_age_by_species) && (player.client.prefs.age < job.get_min_age(player.client.prefs.species, player.client.prefs.organ_data["brain"])))
 			return 0
 		if(jobban_isbanned(player, rank))
 			return 0
@@ -97,7 +97,7 @@ var/global/datum/controller/occupations/job_master
 		if(!job.player_old_enough(player.client))
 			Debug("FOC player not old enough, Player: [player]")
 			continue
-		if(job.minimum_character_age && (player.client.prefs.age < job.minimum_character_age))
+		if(job.minimum_character_age && (player.client.prefs.age < job.get_min_age(player.client.prefs.species, player.client.prefs.organ_data["brain"])))
 			Debug("FOC character not old enough, Player: [player]")
 			continue
 		//VOREStation Code Start
@@ -108,6 +108,9 @@ var/global/datum/controller/occupations/job_master
 			Debug("FOC is_job_whitelisted failed, Player: [player]")
 			continue
 		//VOREStation Code End
+		if(job.is_species_banned(player.client.prefs.species, player.client.prefs.organ_data["brain"]) == TRUE)
+			Debug("FOC character species invalid for job, Player: [player]")
+			continue
 		if(flag && !(player.client.prefs.be_special & flag))
 			Debug("FOC flag failed, Player: [player], Flag: [flag], ")
 			continue
@@ -122,7 +125,10 @@ var/global/datum/controller/occupations/job_master
 		if(!job)
 			continue
 
-		if(job.minimum_character_age && (player.client.prefs.age < job.minimum_character_age))
+		if((job.minimum_character_age || job.min_age_by_species) && (player.client.prefs.age < job.get_min_age(player.client.prefs.species, player.client.prefs.organ_data["brain"])))
+			continue
+
+		if(job.is_species_banned(player.client.prefs.species, player.client.prefs.organ_data["brain"]) == TRUE)
 			continue
 
 		if(istype(job, GetJob(USELESS_JOB))) // We don't want to give him assistant, that's boring! //VOREStation Edit - Visitor not Assistant
@@ -180,20 +186,18 @@ var/global/datum/controller/occupations/job_master
 				if(!V.client) continue
 				var/age = V.client.prefs.age
 
-				if(age < job.minimum_character_age) // Nope.
+				if(age < job.get_min_age(V.client.prefs.species, V.client.prefs.organ_data["brain"])) // Nope.
 					continue
 
-				switch(age)
-					if(job.minimum_character_age to (job.minimum_character_age+10))
-						weightedCandidates[V] = 3 // Still a bit young.
-					if((job.minimum_character_age+10) to (job.ideal_character_age-10))
-						weightedCandidates[V] = 6 // Better.
-					if((job.ideal_character_age-10) to (job.ideal_character_age+10))
-						weightedCandidates[V] = 10 // Great.
-					if((job.ideal_character_age+10) to (job.ideal_character_age+20))
-						weightedCandidates[V] = 6 // Still good.
-					if((job.ideal_character_age+20) to INFINITY)
-						weightedCandidates[V] = 3 // Geezer.
+				var/idealage = job.get_ideal_age(V.client.prefs.species, V.client.prefs.organ_data["brain"])
+				var/agediff = abs(idealage - age) // Compute the absolute difference in age from target
+				switch(agediff) /// If the math sucks, it's because I almost failed algebra in high school.
+					if(20 to INFINITY)
+						weightedCandidates[V] = 3 // Too far off
+					if(10 to 20)
+						weightedCandidates[V] = 6 // Nearer the mark, but not quite
+					if(0 to 10)
+						weightedCandidates[V] = 10 // On the mark
 					else
 						// If there's ABSOLUTELY NOBODY ELSE
 						if(candidates.len == 1) weightedCandidates[V] = 1
@@ -657,80 +661,15 @@ var/global/datum/controller/occupations/job_master
 
 	//Spawn them at their preferred one
 	if(C && C.prefs.spawnpoint)
-		// Gurgs ADD: Spawnable Belees - START
-		if(C.prefs.spawnpoint == "Vore Belly")
-			var/list/preds = list()
-			var/list/pred_names = list() //This is cringe
-			for(var/client/V in GLOB.clients)
-				if(!isliving(V.mob))
-					continue
-				var/mob/living/M = V.mob
-				if(M.stat == UNCONSCIOUS || M.stat == DEAD || M.client.is_afk(10 MINUTES))
-					continue
-				if(!M.latejoin_vore)
-					continue
-				if(!(M.z in using_map.vorespawn_levels))
-					continue
-				preds += M
-				pred_names += M.real_name //very cringe
-
-			if(preds.len)
-				var/pred_name = input(C, "Choose a Predator.", "Pred Spawnpoint") as null|anything in pred_names
-				if(!pred_name)
-					return
-				var/index = pred_names.Find(pred_name)
-				var/mob/living/pred = preds[index]
-				var/list/available_bellies = list()
-				for(var/obj/belly/Y in pred.vore_organs)
-					if(Y.vorespawn_blacklist)
-						continue
-					available_bellies += Y
-				var/backup = alert(C, "Do you want a mind backup?", "Confirm", "Yes", "No")
-				if(backup == "Yes")
-					backup = 1
-				vore_spawn_gut = input(C, "Choose a Belly.", "Belly Spawnpoint") as null|anything in available_bellies
-				if(!vore_spawn_gut)
-					return
-				to_chat(C, "<span class='warning'>[pred] has received your spawn request. Please wait.</span>")
-				log_admin("[key_name(C)] has requested to vore spawn into [key_name(pred)]")
-				message_admins("[key_name(C)] has requested to vore spawn into [key_name(pred)]")
-
-				var/confirm = alert(pred, "[C.prefs.real_name] is attempting to spawn into your [vore_spawn_gut]. Let them?", "Confirm", "No", "Yes")
-				if(confirm != "Yes")
-					to_chat(C, "<span class='warning'>[pred] has declined your spawn request.</span>")
-					return
-				if(!vore_spawn_gut || QDELETED(vore_spawn_gut))
-					to_chat(C, "<span class='warning'>Somehow, the belly you were trying to enter no longer exists.</span>")
-					return
-				if(pred.stat == UNCONSCIOUS || pred.stat == DEAD)
-					to_chat(C, "<span class='warning'>[pred] is not conscious.</span>")
-					to_chat(pred, "<span class='warning'>You must be conscious to accept.</span>")
-					return
-				if(!(pred.z in using_map.vorespawn_levels))
-					to_chat(C, "<span class='warning'>[pred] is no longer in station grounds.</span>")
-					to_chat(pred, "<span class='warning'>You must be within station grounds to accept.</span>")
-					return
-				if(backup)
-					addtimer(CALLBACK(src, .proc/m_backup_client, C), 5 SECONDS)
-				log_admin("[key_name(C)] has vore spawned into [key_name(pred)]")
-				message_admins("[key_name(C)] has vore spawned into [key_name(pred)]")
-				to_chat(C, "<span class='notice'>You have been spawned via vore. You are free to roleplay how you got there as you please, such as teleportation or having had already been there.</span>")
-				to_chat(pred, "<span class='notice'>Your prey has spawned via vore. You are free to roleplay this how you please, such as teleportation or having had already been there.</span>")
-			else
-				to_chat(C, "<span class='warning'>No predators were available to accept you.</span>")
+		if(!(C.prefs.spawnpoint in using_map.allowed_spawns))
+			if(fail_deadly)
+				to_chat(C, "<span class='warning'>Your chosen spawnpoint is unavailable for this map and your job requires a specific spawnpoint. Please correct your spawn point choice.</span>")
 				return
-			spawnpos = spawntypes[C.prefs.spawnpoint]
-		else
-		// Gurgs ADD: Spawnable Belees - END
-			if(!(C.prefs.spawnpoint in using_map.allowed_spawns))
-				if(fail_deadly)
-					to_chat(C, "<span class='warning'>Your chosen spawnpoint is unavailable for this map and your job requires a specific spawnpoint. Please correct your spawn point choice.</span>")
-					return
-				else
-					to_chat(C, "<span class='warning'>Your chosen spawnpoint ([C.prefs.spawnpoint]) is unavailable for the current map. Spawning you at one of the enabled spawn points instead.</span>")
-					spawnpos = null
 			else
-				spawnpos = spawntypes[C.prefs.spawnpoint]
+				to_chat(C, "<span class='warning'>Your chosen spawnpoint ([C.prefs.spawnpoint]) is unavailable for the current map. Spawning you at one of the enabled spawn points instead.</span>")
+				spawnpos = null
+		else
+			spawnpos = spawntypes[C.prefs.spawnpoint]
 
 	//We will return a list key'd by "turf" and "msg" 
 	. = list("turf","msg","voreny") // Gurgs ADD: Spawnable Belees
