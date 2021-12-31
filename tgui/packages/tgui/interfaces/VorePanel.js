@@ -628,12 +628,12 @@ const VoreSelectedBellyVisuals = (props, context) => {
         </Flex>
         <ByondUi
           style={{
-          width: '200px',
-          height: '200px',
+            width: '200px',
+            height: '200px',
           }}
           params={{
-          id: mapRef,
-          type: 'map',
+            id: mapRef,
+            type: 'map',
           }} />
       </Section>
       <Section title="Belly Fullscreens">
@@ -1226,8 +1226,8 @@ const VoreUserPreferences = (props, context) => {
         enable: "Click here to disable belching when full.",
         disable: "Click here to enable belching when full.",
       },
-      content:{
-        enabled:  "Belching Enabled",
+      content: {
+        enabled: "Belching Enabled",
         disabled: "Belching Disabled",
       },
     },
@@ -1239,8 +1239,8 @@ const VoreUserPreferences = (props, context) => {
         enable: "Click here to prevent receiving liquids.",
         disable: "Click here to allow receiving liquids.",
       },
-      content:{
-        enabled:  "Receiving Liquids Allowed",
+      content: {
+        enabled: "Receiving Liquids Allowed",
         disabled: "Receiving Liquids Disallowed",
       },
     },
@@ -1252,8 +1252,8 @@ const VoreUserPreferences = (props, context) => {
         enable: "Click here to prevent taking liquids.",
         disable: "Click here to allow taking liquids.",
       },
-      content:{
-        enabled:  "Taking Liquids Allowed",
+      content: {
+        enabled: "Taking Liquids Allowed",
         disabled: "Taking Liquids Disallowed",
       },
     },
@@ -1266,8 +1266,8 @@ const VoreUserPreferences = (props, context) => {
         enable: "Click here to allow being transformed into.",
         disable: "Click here to disable being transformed into.",
       },
-      content:{
-        enabled:  "Shapeshifted into Enabled",
+      content: {
+        enabled: "Shapeshifted into Enabled",
         disabled: "Shapeshifted into Disabled",
       },
     },
