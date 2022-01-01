@@ -23,6 +23,10 @@
 		"Mining Shuttle" = list("triumph_mining_port")
 		)
 
+	known = TRUE;
+
+	unowned_areas = list(/area/shuttle/mining_ship, /area/shuttle/civvie, /area/shuttle/excursion, /area/shuttle/emt)
+
 // EXCURSION SHUTTLE DATA
 /obj/effect/overmap/visitable/ship/landable/excursion
 	name = "Excursion Shuttle"
@@ -33,6 +37,7 @@
 	shuttle = "Excursion Shuttle"
 	start_x = 4
 	start_y = 5
+	known = TRUE;
 
 // Public Civilian Shuttle
 
@@ -43,6 +48,7 @@
 	vessel_mass = 15000
 	vessel_size = SHIP_SIZE_SMALL
 	shuttle = "Civilian Transport"
+	known = TRUE;
 
 
 // Vox Pirate ship (Yaya, yous be giving us all your gear now.)
@@ -77,6 +83,7 @@
 	vessel_mass = 7000
 	vessel_size = SHIP_SIZE_SMALL
 	shuttle = "Mining Shuttle"
+	known = TRUE;
 
 // Trade Shuttle
 
@@ -97,6 +104,7 @@
 	vessel_mass = 9000
 	vessel_size = SHIP_SIZE_SMALL
 	shuttle = "Dart EMT Shuttle"
+	known = TRUE;
 
 
 // STATIC PLANET/BASE LOCATIONS
