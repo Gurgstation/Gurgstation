@@ -129,10 +129,11 @@
 	if(chosenPart)
 		src.transform_part(chosenPart, chosen_dna)
 		src.visible_message("<span class='warning'>[src] transforms!</span>")	
-		//src.UpdateAppearance()
-		//src.resize(chosen_dna.size_multiplier, animate = FALSE)
-		
-		H.force_update_organs() //VOREStation Add - Gotta do this too
+
+		//src.UpdateAppearance() // Forces to update size though DNA, skipping this and as transform_part already copies the DNA values onto the character, it's safe to just skip to the end. :)
+
+		// Copied from UpdateAppearance() to update the appearance of the character.
+		H.force_update_organs()
 		H.force_update_limbs()
 		H.update_eyes()
 		H.update_hair()
@@ -367,8 +368,7 @@
 						E.markings |= mark
 
 		if("size")
-			H.size_multiplier = chosen_dna.size_multiplier
-			H.resize(H.size_multiplier, TRUE)
+			H.resize(chosen_dna.size_multiplier, TRUE)
 
 		if("all")
 			var/list/partlist = list("ears", "ears color","hair", "hair color", "face", "facial hair", "facial hair color", "body color", "species", "wings", "wings color", "tail", "tail color", "gender", "markings", "size") // TODO: Refactor this
