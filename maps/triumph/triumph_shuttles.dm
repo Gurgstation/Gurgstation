@@ -270,6 +270,8 @@
 	docking_controller_tag = "expshuttle_dock"
 	shuttle_area = list(/area/shuttle/excursion/cockpit, /area/shuttle/excursion/general, /area/shuttle/excursion/cargo)
 	fuel_consumption = 3
+	move_time = 20
+
 
 // The 'ship' of the excursion shuttle
 /obj/effect/overmap/visitable/ship/landable/excursion
@@ -285,15 +287,6 @@
 
 
 // EXCURSION SHUTTLE DATA
-
-/datum/shuttle/autodock/overmap/excursion
-	name = "Excursion Shuttle"
-	warmup_time = 2
-	shuttle_area = list(/area/shuttle/excursion/cockpit, /area/shuttle/excursion/general, /area/shuttle/excursion/cargo)
-	current_location = "triumph_excursion_hangar"
-	docking_controller_tag = "expshuttle_docker"
-	fuel_consumption = 3
-	move_time = 20
 
 /area/shuttle/excursion
 	name = "Excursion Shuttle"
