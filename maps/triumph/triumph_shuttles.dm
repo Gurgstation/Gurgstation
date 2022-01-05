@@ -407,7 +407,7 @@
 /datum/shuttle/autodock/overmap/viro
 	name = "SickBay Virology Shuttle"
 	warmup_time = 15
-	shuttle_area = list(/area/shuttle/viro)
+	shuttle_area = list(/area/shuttle/viro/cockpit, /area/shuttle/viro/general, /area/shuttle/viro/airlock)
 	current_location = "triumph_viro_dock"
 	docking_controller_tag = "viro_shuttle_docker"
 	move_time = 30
