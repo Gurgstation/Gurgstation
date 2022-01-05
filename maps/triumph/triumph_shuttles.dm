@@ -423,6 +423,9 @@
 /area/shuttle/viro/general
 	name = "SickBay Shuttle"
 
+/area/shuttle/viro/airlock
+	name = "Sickbay Airlock"
+
 /obj/machinery/computer/shuttle_control/explore/viro
 	name = "Viro jump console"
 	shuttle_tag = "SickBay Virology Shuttle"

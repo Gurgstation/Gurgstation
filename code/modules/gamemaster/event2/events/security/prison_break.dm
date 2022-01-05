@@ -103,6 +103,7 @@
 	relevant_areas = list(
 		/area/medical/virology,
 		/area/medical/virologyaccess
+		/area/shuttle/viro/general
 	)
 
 /datum/event2/meta/prison_break/virology/get_odds_from_trapped_mobs()
@@ -174,6 +175,7 @@
 	area_types_to_break = list(
 		/area/medical/virology,
 		/area/medical/virologyaccess
+		/area/shuttle/viro/general
 	)
 
 
