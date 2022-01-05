@@ -47,7 +47,7 @@
 
 /atom/movable/proc/size_range_check(size_select)		//both objects and mobs needs to have that
 	var/area/A = get_area(src) //Get the atom's area to check for size limit.
-	if((A?.limit_mob_size && (size_select > 200 || size_select < 25)) || (size_select > 600 || size_select <1))
+	if((A?.limit_mob_size && (size_select > 300 || size_select < 25)) || (size_select > 600 || size_select <1))
 		return FALSE
 	return TRUE
 
@@ -140,7 +140,7 @@
 		to_chat(src, "<span class='warning'>You are immune to resizing!</span>")
 		return
 
-	var/nagmessage = "Adjust your mass to be a size between 25 to 200% (or 1% to 600% in dormitories). (DO NOT ABUSE)"
+	var/nagmessage = "Adjust your mass to be a size between 25 to 300% (or 1% to 600% in dormitories). (DO NOT ABUSE)"
 	var/new_size = input(nagmessage, "Pick a Size") as num|null
 	if(size_range_check(new_size))
 		resize(new_size/100, uncapped = has_large_resize_bounds(), ignore_prefs = TRUE)
@@ -173,7 +173,7 @@
 		var/mob/living/simple_mob/SA = M
 		if(!SA.has_hands)
 			return 0
-	if(size_diff >= 0.50 || mob_size < MOB_SMALL)
+	if(size_diff >= 0.50 || mob_size < MOB_SMALL || size_diff >= get_effective_size())
 		if(buckled)
 			to_chat(usr,"<span class='notice'>You have to unbuckle \the [src] before you pick them up.</span>")
 			return 0

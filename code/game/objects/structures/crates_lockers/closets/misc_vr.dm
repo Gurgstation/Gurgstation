@@ -93,7 +93,7 @@
  */
 /obj/structure/closet/secure_closet/pathfinder
 	name = "pathfinder locker"
-	req_access = list(access_gateway)
+	req_access = list(access_pathfinder)
 	closet_appearance = /decl/closet_appearance/secure_closet/expedition/pathfinder
 
 	starts_with = list(
@@ -113,7 +113,6 @@
 		/obj/item/device/geiger,
 		/obj/item/weapon/cell/device,
 		/obj/item/device/radio,
-		/obj/item/device/bluespaceradio/tether_prelinked,
 		/obj/item/stack/marker_beacon/thirty,
 		/obj/item/weapon/material/knife/tacknife/survival,
 		/obj/item/weapon/material/knife/machete/deluxe,
@@ -126,9 +125,11 @@
 
 /obj/structure/closet/secure_closet/pathfinder/Initialize()
 	if(prob(50))
-		starts_with += /obj/item/weapon/storage/backpack
+		starts_with += /obj/item/weapon/storage/backpack/explorer
 	else
-		starts_with += /obj/item/weapon/storage/backpack/satchel/norm
+		starts_with += /obj/item/weapon/storage/backpack/satchel/explorer
+	if(prob(50))
+		starts_with += /obj/item/weapon/storage/backpack/dufflebag/explorer
 	return ..()
 
 /*

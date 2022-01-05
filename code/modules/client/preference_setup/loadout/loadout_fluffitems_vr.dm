@@ -16,7 +16,7 @@
 	display_name = "Airhorn - Example Item"
 	description = "An example item that you probably shouldn't see!"
 	ckeywhitelist = list("mewchild")
-	allowed_roles = list("Station Engineer")
+	allowed_roles = list("Engineer")
 */
 
 
@@ -41,6 +41,12 @@
 	slot = slot_head
 	ckeywhitelist = list("adk09")
 	character_name = list("Lethe")
+
+/datum/gear/fluff/foursun
+	path = /obj/item/clothing/glasses/sunglasses/fluff/chanceofcondensation
+	display_name = "Chance's nibbled sunglasses"
+	ckeywhitelist = list("aruis")
+	character_name = list("Chance")
 
 /datum/gear/fluff/xander_bracer
 	path = /obj/item/clothing/accessory/bracer/fluff/xander_sthasha
@@ -296,6 +302,12 @@
 	ckeywhitelist = list("chaleur")
 	character_name = list("Hisako Arato")
 
+/datum/gear/fluff/jade_stamp
+	path = /obj/item/weapon/stamp/fluff/jade_horror
+	display_name = "Official Council of Mid Horror rubber stamp"
+	ckeywhitelist = list("coolcrow420")
+	character_name = list("Jade Davis")
+
 //  D CKEYS
 /datum/gear/fluff/dhaeleena_medal
 	path = /obj/item/clothing/accessory/medal/silver/security/fluff/dhael
@@ -394,6 +406,7 @@
 //  G CKEYS
 
 //  H CKEYS
+
 /datum/gear/fluff/lauren_medal
 	path = /obj/item/clothing/accessory/medal/conduct
 	display_name = "Lauren's Medal"
@@ -411,6 +424,12 @@
 	display_name = "Belle's Sizegun"
 	ckeywhitelist = list("hottokeeki")
 	character_name = list("Belle Day")
+
+/datum/gear/fluff/amaryll_claws
+	path = /obj/item/weapon/surgical/scalpel/amaryll_claws
+	display_name = "Amaryll's Claws"
+	ckeywhitelist = list("hunterbirk")
+	character_name = list("Amaryll")
 
 //  I CKEYS
 /datum/gear/fluff/ruda_badge
@@ -657,12 +676,6 @@
 	ckeywhitelist = list("luminescentring")
 	character_name = list("Briana Moore")
 
-/datum/gear/fluff/entchtut_medal
-	path = /obj/item/clothing/accessory/medal/conduct
-	display_name = "Entchtut's Conduct Medal"
-	ckeywhitelist = list("littlebigkid2000")
-	character_name = list("Entchtut Cenein")
-
 //  M CKEYS
 /datum/gear/fluff/phi_box
 	path = /obj/item/weapon/storage/box/fluff/phi
@@ -832,6 +845,24 @@
 	ckeywhitelist = list("pastelprincedan")
 	character_name = list("Kiyoshi Maki", "Masumi Maki")
 
+/datum/gear/fluff/entchtut_medal
+	path = /obj/item/clothing/accessory/medal/conduct
+	display_name = "Entchtut's Conduct Medal"
+	ckeywhitelist = list("positronicjune")
+	character_name = list("Entchtut Cenein")
+
+/datum/gear/fluff/mechanic_overalls
+	path = /obj/item/clothing/under/fluff/mechanic_overalls
+	display_name = "mechanic overalls"
+	ckeywhitelist = list("pastelprincedan", "hatterhat")
+	character_name = list("Masumi Maki", "Harold Robinson")
+
+/datum/gear/fluff/mechanic_coat
+	path = /obj/item/clothing/suit/storage/hooded/wintercoat/fluff/mechanic
+	display_name = "mechanic winter coat"
+	ckeywhitelist = list("pastelprincedan", "hatterhat")
+	character_name = list("Masumi Maki", "Harold Robinson")
+
 //  Q CKEYS
 
 //  R CKEYS
@@ -903,14 +934,14 @@
 	display_name = "Kateryna's Voidsuit"
 	ckeywhitelist = list("samanthafyre")
 	character_name = list("Kateryna Petrovitch")
-	allowed_roles = list("Station Engineer", "Chief Engineer", "Atmospheric Technician")
+	allowed_roles = list("Engineer", "Chief Engineer", "Atmospheric Technician")
 
 /datum/gear/fluff/katerina_spacesuit
 	path = /obj/item/clothing/head/helmet/space/fluff/kate
 	display_name = "Kateryna's Helmet"
 	ckeywhitelist = list("samanthafyre")
 	character_name = list("Kateryna Petrovitch")
-	allowed_roles = list("Station Engineer", "Chief Engineer", "Atmospheric Technician")
+	allowed_roles = list("Engineer", "Chief Engineer", "Atmospheric Technician")
 
 /datum/gear/fluff/kateryna_armorvest
 	path = /obj/item/clothing/suit/armor/vest/wolftaur/kate

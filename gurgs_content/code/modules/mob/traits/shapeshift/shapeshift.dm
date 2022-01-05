@@ -3,6 +3,7 @@
 // Absorbed gays are stored as DNA bubbles, similar to changelings, which when users have the shapeshifting trait, they can transform into the prey. 
 // This also can work with digested prey but more permanent absorbed DNA.
 // It's not intended to be persistent, do not try to make it persistent or suffer with gamebreaking issues. 
+// This is because DNA is not designed to be serialisable, if you want to make it persistent, go the paradise route and have characters stored on the database. c:
 
 //
 // Big brain definitions before we get to the half-meaty bit of code
@@ -27,12 +28,14 @@
 	if(M.can_be_transformed)
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
-			var/datum/absorbed_dna/newDNA = new(H.real_name, H.dna, H.species.name, H.languages, H.identifying_gender, H.flavor_texts, H.modifiers)
 
-			newDNA.SetupExtras(M, newDNA)
+			var/datum/dna/newDNA = H.dna.Clone()
+			var/datum/absorbed_dna/absorbedDNA = new(H.real_name, newDNA, H.species.name, H.languages, H.identifying_gender, H.flavor_texts, H.modifiers)
 
-			if(!GetAbsorbedDNA(newDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
-				absorbedPreys += newDNA
+			absorbedDNA.SetupExtras(M, absorbedDNA)
+
+			if(!GetAbsorbedDNA(absorbedDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
+				absorbedPreys += absorbedDNA
 
 //
 // Preparation for the actual stuff. This includes refactoring unabsorption, adding the prey's DNA to the player's list and also removing it on unabsorption, hence refactorising.
@@ -45,9 +48,9 @@
 	if(nutrientLoss)
 		owner.adjust_nutrition(-100)
 
-	var/preyDNA = owner.GetAbsorbedDNA(L.real_name)
-	if(preyDNA)
-		owner.absorbedPreys -= preyDNA
+//	var/preyDNA = owner.GetAbsorbedDNA(L.real_name)
+//	if(preyDNA)
+//		owner.absorbedPreys -= preyDNA
 
 /datum/digest_mode/unabsorb/process_mob(obj/belly/B, mob/living/L) // Gurgs OVERRIDE
 	if(L.absorbed && B.owner.nutrition >= 100)
@@ -58,12 +61,14 @@
 	if(M.can_be_transformed)
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
-			var/datum/absorbed_dna/newDNA = new(H.real_name, H.dna, H.species.name, H.languages, H.identifying_gender, H.flavor_texts, H.modifiers)
 
-			newDNA.SetupExtras(H, newDNA)
+			var/datum/dna/newDNA = H.dna.Clone()
+			var/datum/absorbed_dna/absorbedDNA = new(H.real_name, newDNA, H.species.name, H.languages, H.identifying_gender, H.flavor_texts, H.modifiers)
 
-			if(!owner.GetAbsorbedDNA(newDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
-				owner.absorbedPreys += newDNA
+			absorbedDNA.SetupExtras(H, absorbedDNA)
+
+			if(!owner.GetAbsorbedDNA(absorbedDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
+				owner.absorbedPreys += absorbedDNA
 
 /obj/belly/absorb_living(mob/living/M)
 	..()
@@ -73,9 +78,26 @@
 	AbsorbPreyDNA(M)
 	..()
 
+/datum/absorbed_dna
+	var/custom_species
+
+	var/r_grad
+	var/g_grad
+	var/b_grad
+	var/grad_style
+
+
 /datum/absorbed_dna/proc/SetupExtras(var/mob/living/M, var/datum/absorbed_dna/new_dna)
 	new_dna.size_multiplier = M.size_multiplier
 	
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		custom_species = H.dna.custom_species
+
+		r_grad = H.r_grad
+		g_grad = H.g_grad
+		b_grad = H.b_grad
+		grad_style = H.grad_style
 
 
 
@@ -86,6 +108,9 @@
 /mob/living/proc/prey_transform()
 	set category = "Abilities"
 	set name = "Shapeshift into Prey"
+
+	if(!ishuman(src))	return
+	var/mob/living/carbon/human/H = src
 
 	var/list/names = list()
 	for(var/datum/absorbed_dna/DNA in absorbedPreys)
@@ -99,30 +124,42 @@
 		return
 
 	var/list/partlist = list("ears", "ears color","hair", "hair color", "face", "facial hair", "facial hair color", "body color", "species", "wings", "wings color", "tail", "tail color", "gender", "markings", "size", "all")
-	var/chosenPart = tgui_input_list(usr, "Select part:", "Poggers", partlist)
+	var/chosenPart = tgui_input_list(usr, "Select part:", "Part Select", partlist)
 	
 	if(chosenPart)
 		src.transform_part(chosenPart, chosen_dna)
+		src.visible_message("<span class='warning'>[src] transforms!</span>")	
+
+		//src.UpdateAppearance() // Forces to update size though DNA, skipping this and as transform_part already copies the DNA values onto the character, it's safe to just skip to the end. :)
+
+		// Copied from UpdateAppearance() to update the appearance of the character.
+		H.force_update_organs()
+		H.force_update_limbs()
+		H.update_eyes()
+		H.update_hair()
+
+
 	
 	// Ooooh! That's a clever way to do a cooldown!
 	src.verbs -= /mob/living/proc/prey_transform
-	spawn(10)
+	spawn(25)
 		src.verbs += /mob/living/proc/prey_transform
 		src.regenerate_icons()
 
 	return 1
 
-/mob/living/proc/transform_part(var/part, var/datum/absorbed_dna/chosen_dna)
+/mob/living/proc/transform_part(var/part, var/datum/absorbed_dna/chosen_dna, var/all = 0)
 	if(!part)	return
 	if(!ishuman(src))	return
 
 	var/mob/living/carbon/human/H = src
 
-	src.visible_message("<span class='warning'>[src] transforms!</span>")
-
-	var/sizeMult = H.size_multiplier
-
 	switch(part)
+		if("species")
+			var/newSpecies = chosen_dna.speciesName
+			H.shapeshift_change_species(newSpecies)
+			H.dna.custom_species = chosen_dna.custom_species
+			H.custom_species = chosen_dna.custom_species
 		if("ears")
 			var/ears = chosen_dna.dna.GetUIValueRange(DNA_UI_EAR_STYLE, ear_styles_list.len + 1) - 1
 			if((0 < ears) && (ears <= ear_styles_list.len))
@@ -178,8 +215,12 @@
 			H.g_hair = gHair
 			H.b_hair = bHair
 
+			H.r_grad = chosen_dna.r_grad
+			H.g_grad = chosen_dna.g_grad
+			H.b_grad = chosen_dna.b_grad
+			H.grad_style = chosen_dna.grad_style
+
 		if("face")
-			
 			H.real_name = chosen_dna.name
 			H.custom_say = chosen_dna.dna.custom_say
 			H.custom_ask = chosen_dna.dna.custom_ask
@@ -225,11 +266,10 @@
 			H.g_skin   = gSkin
 			H.b_skin   = bSkin
 
-		if("species")
-			var/newSpecies = chosen_dna.speciesName
-			H.set_species(newSpecies,1)
 		if("wings")
 			var/wing = chosen_dna.dna.GetUIValueRange(DNA_UI_WING_STYLE, wing_styles_list.len + 1) - 1
+			if(wing < 1)
+				H.wing_style = null
 			if((0 < wing) && (wing <= wing_styles_list.len))
 				H.dna.SetUIValueRange(DNA_UI_WING_STYLE,	wing + 1,    wing_styles_list.len + 1,  1)
 				H.wing_style = wing_styles_list[wing_styles_list[wing]]
@@ -272,15 +312,15 @@
 				H.tail_style = tail_styles_list[tail_styles_list[tail]]
 
 		if("tail color")
-			var/rTail   = dna.GetUIValueRange(DNA_UI_TAIL_R,    255)
-			var/gTail   = dna.GetUIValueRange(DNA_UI_TAIL_G,    255)
-			var/bTail   = dna.GetUIValueRange(DNA_UI_TAIL_B,    255)
-			var/rTail2  = dna.GetUIValueRange(DNA_UI_TAIL2_R,   255)
-			var/gTail2  = dna.GetUIValueRange(DNA_UI_TAIL2_G,   255)
-			var/bTail2  = dna.GetUIValueRange(DNA_UI_TAIL2_B,   255)
-			var/rTail3  = dna.GetUIValueRange(DNA_UI_TAIL3_R,   255)
-			var/gTail3  = dna.GetUIValueRange(DNA_UI_TAIL3_G,   255)
-			var/bTail3  = dna.GetUIValueRange(DNA_UI_TAIL3_B,   255)
+			var/rTail   = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL_R,    255)
+			var/gTail   = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL_G,    255)
+			var/bTail   = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL_B,    255)
+			var/rTail2  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL2_R,   255)
+			var/gTail2  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL2_G,   255)
+			var/bTail2  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL2_B,   255)
+			var/rTail3  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL3_R,   255)
+			var/gTail3  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL3_G,   255)
+			var/bTail3  = chosen_dna.dna.GetUIValueRange(DNA_UI_TAIL3_B,   255)
 
 			H.dna.SetUIValueRange(DNA_UI_TAIL_R,    rTail,    255,    1)
 			H.dna.SetUIValueRange(DNA_UI_TAIL_G,    gTail,    255,    1)
@@ -306,50 +346,38 @@
 			H.identifying_gender = chosen_dna.identifying_gender
 
 		if("markings") // Experimental, not working the best, need to work out the kinks with it, gonna take some more time.
-			var/selection = tgui_input_list(H, "Select markings:", "Ass blast USA", chosen_dna.dna.body_markings + "all")
-			
-			if(selection)
-				if(selection == "all")
-					for(var/tag in dna.body_markings)
-						var/obj/item/organ/external/E = H.organs_by_name[tag]
-						if(E)
-							var/list/marklist = dna.body_markings[tag]
-							H.dna.body_markings[tag] = marklist.Copy()
-							E.markings = marklist.Copy()
-				else
+			if(all)
+				H.dna.body_markings.Cut()
+				for(var/tag in chosen_dna.dna.body_markings) 
+					var/obj/item/organ/external/E = H.organs_by_name[tag]
+					if(E)
+						var/list/marklist = chosen_dna.dna.body_markings[tag]
+						H.dna.body_markings[tag] = marklist.Copy()
+						E.markings = marklist.Copy()
+			else
+				var/selection = tgui_input_list(H, "Select markings:", "Marking Selection", chosen_dna.dna.body_markings + "all")
+
+				if(selection)
+					if(selection == "all")
+						H.transform_part("markings", chosen_dna, 1)
 					var/obj/item/organ/external/E = H.organs_by_name[selection]
-					var/chosenMarking = tgui_input_list(H, "Select markings:", "Ass blast USA", chosen_dna.dna.body_markings[selection])
+					var/chosenMarking = tgui_input_list(H, "Select markings:", "Marking Selection", chosen_dna.dna.body_markings[selection])
 					if(chosenMarking)
 						var/mark = chosen_dna.dna.body_markings[chosenMarking]
 						H.dna.body_markings[chosenMarking] |= mark
 						E.markings |= mark
 
 		if("size")
-			var/size = chosen_dna.dna.GetUIValueRange(DNA_UI_PLAYERSCALE, player_sizes_list.len)
-			if((0 < size) && (size <= player_sizes_list.len))
-				H.dna.SetUIValueRange(DNA_UI_PLAYERSCALE, size, player_sizes_list.len, 1)
-				H.resize(player_sizes_list[player_sizes_list[size]], FALSE, ignore_prefs = TRUE)
-				sizeMult = chosen_dna.size_multiplier
+			H.resize(chosen_dna.size_multiplier, TRUE)
+
 		if("all")
-			if(ishuman(src))
-				var/newSpecies = chosen_dna.speciesName
-				H.set_species(newSpecies,1)
+			var/list/partlist = list("ears", "ears color","hair", "hair color", "face", "facial hair", "facial hair color", "body color", "species", "wings", "wings color", "tail", "tail color", "gender", "markings", "size") // TODO: Refactor this
 
-			src.dna = chosen_dna.dna.Clone()
-			src.dna.b_type = "AB+" //This is needed to avoid blood rejection bugs.  The fact that the blood type might not match up w/ records could be a *FEATURE* too.
+			for(var/i in partlist)
+				H.transform_part(i, chosen_dna, 1)
 
-			if(ishuman(src))
-				H.b_type = "AB+" //For some reason we have two blood types on the mob.
-				H.identifying_gender = chosen_dna.identifying_gender
-				H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
-			src.real_name = chosen_dna.name
+			H.flavor_texts = chosen_dna.flavour_texts ? chosen_dna.flavour_texts.Copy() : null
 			
-			sizeMult = chosen_dna.size_multiplier
-			
-			domutcheck(src, null)
-
-	H.UpdateAppearance()
-	H.resize(sizeMult, animate = FALSE)
 
 // Forget Prey you wish you forget.
 /mob/living/proc/remove_prey_transform()
@@ -390,3 +418,62 @@
 
 	H.UpdateAppearance()
 	H.resize(size, FALSE)
+
+/mob/living/carbon/proc/shapeshift_change_species(var/new_species) // This is a copy of the species_shapeshift.dm version, however catered to this instead. 
+
+	var/list/limb_exists = list(
+		BP_TORSO =  0,
+		BP_GROIN =  0,
+		BP_HEAD =   0,
+		BP_L_ARM =  0,
+		BP_R_ARM =  0,
+		BP_L_LEG =  0,
+		BP_R_LEG =  0,
+		BP_L_HAND = 0,
+		BP_R_HAND = 0,
+		BP_L_FOOT = 0,
+		BP_R_FOOT = 0
+		)
+	var/list/wounds_by_limb = list(
+		BP_TORSO =  new/list(),
+		BP_GROIN =  new/list(),
+		BP_HEAD =   new/list(),
+		BP_L_ARM =  new/list(),
+		BP_R_ARM =  new/list(),
+		BP_L_LEG =  new/list(),
+		BP_R_LEG =  new/list(),
+		BP_L_HAND = new/list(),
+		BP_R_HAND = new/list(),
+		BP_L_FOOT = new/list(),
+		BP_R_FOOT = new/list()
+		)
+
+	// Copy damage values
+	for(var/limb in organs_by_name)
+		var/obj/item/organ/external/O = organs_by_name[limb]
+		limb_exists[O.organ_tag] = 1
+		wounds_by_limb[O.organ_tag] = O.wounds
+
+	species = GLOB.all_species[new_species]
+	species.create_organs(src)
+//	species.handle_post_spawn(src)
+
+	for(var/limb in organs_by_name)
+		var/obj/item/organ/external/O = organs_by_name[limb]
+		if(limb_exists[O.organ_tag])
+			O.species = GLOB.all_species[new_species]
+			O.wounds = wounds_by_limb[O.organ_tag]
+			// sync the organ's damage with its wounds
+			O.update_damages()
+			O.owner.updatehealth() //droplimb will call updatehealth() again if it does end up being called
+		else
+			organs.Remove(O)
+			organs_by_name.Remove(O)
+			qdel(O)
+
+	regenerate_icons()
+/* VOREStation Edit - Our own trait system, sorry.
+	if(species && mind)
+		apply_traits()
+*/
+	return

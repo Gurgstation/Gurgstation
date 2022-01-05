@@ -61,6 +61,7 @@
 		test_result["result"] = 1
 		test_result["msg"] = "Checked [GM_checked.len] zones"
 	else
+		test_result["result"] = 1 // VOREStation Add - Why MUST we map in every area?
 		test_result["msg"] = "No zones checked."
 
 	return test_result
@@ -111,10 +112,11 @@
 	name = "ZAS: Xenobiology"
 	area_path = /area/rnd/xenobiology
 
-/datum/unit_test/zas_area_test/mining_area
+// Gurgs Remove: Ya yeet, triumph doesn't use this area anymore.
+/*/datum/unit_test/zas_area_test/mining_area
 	name = "ZAS: Mining Area (Vacuum)"
 	area_path = /area/mine/explored
-	expectation = UT_VACUUM
+	expectation = UT_VACUUM*/
 
 /datum/unit_test/zas_area_test/cargo_bay
 	name = "ZAS: Cargo Bay"

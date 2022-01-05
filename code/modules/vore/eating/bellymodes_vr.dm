@@ -63,10 +63,9 @@
 				SEND_SOUND(M, prey_digest)
 		play_sound = pred_digest
 
-	if(to_update)
-		updateVRPanels()
-
 	if(!LAZYLEN(touchable_mobs))
+		if(to_update)
+			updateVRPanels()
 		if(play_sound)
 			for(var/mob/M in hearers(VORE_SOUND_RANGE, get_turf(owner))) //so we don't fill the whole room with the sound effect
 				if(!M.is_preference_enabled(/datum/client_preference/digestion_noises))
@@ -107,23 +106,40 @@
 
 	if(emote_active)
 		var/list/EL = emote_lists[digest_mode]
-		if(LAZYLEN(EL) && next_emote <= world.time)
+		if((LAZYLEN(EL) || LAZYLEN(emote_lists[DM_HOLD_ABSORBED]) || (digest_mode == DM_DIGEST && LAZYLEN(emote_lists[DM_HOLD]))) && next_emote <= world.time)
 			var/living_count = 0
+			var/absorbed_count = 0
 			for(var/mob/living/L in contents)
 				living_count++
+				if(L.absorbed)
+					absorbed_count++
 			next_emote = world.time + (emote_time SECONDS)
 			for(var/mob/living/M in contents)
-				if(digest_mode == DM_DIGEST && !M.digestable)
-					continue // don't give digesty messages to indigestible people
+				if(M.absorbed)
+					EL = emote_lists[DM_HOLD_ABSORBED]
 
-				var/raw_message = pick(EL)
-				var/formatted_message
-				formatted_message = replacetext(raw_message, "%belly", lowertext(name))
-				formatted_message = replacetext(formatted_message, "%pred", owner)
-				formatted_message = replacetext(formatted_message, "%prey", english_list(contents))
-				formatted_message = replacetext(formatted_message, "%countprey", living_count)
-				formatted_message = replacetext(formatted_message, "%count", contents.len)
-				to_chat(M, "<span class='notice'>[formatted_message]</span>")
+					var/raw_message = pick(EL)
+					var/formatted_message
+					formatted_message = replacetext(raw_message, "%belly", lowertext(name))
+					formatted_message = replacetext(formatted_message, "%pred", owner)
+					formatted_message = replacetext(formatted_message, "%prey", M)
+					formatted_message = replacetext(formatted_message, "%countprey", absorbed_count)
+					to_chat(M, "<span class='notice'>[formatted_message]</span>")
+				else
+					if(digest_mode == DM_DIGEST && !M.digestable)
+						EL = emote_lists[DM_HOLD]					// Use Hold's emote list if we're indigestible
+
+					var/raw_message = pick(EL)
+					var/formatted_message
+					formatted_message = replacetext(raw_message, "%belly", lowertext(name))
+					formatted_message = replacetext(formatted_message, "%pred", owner)
+					formatted_message = replacetext(formatted_message, "%prey", M)
+					formatted_message = replacetext(formatted_message, "%countprey", living_count)
+					formatted_message = replacetext(formatted_message, "%count", contents.len)
+					to_chat(M, "<span class='notice'>[formatted_message]</span>")
+
+	if(to_update)
+		updateVRPanels()
 
 
 /obj/belly/proc/handle_touchable_atoms(list/touchable_atoms)
@@ -233,7 +249,9 @@
 /obj/belly/proc/handle_digestion_death(mob/living/M)
 	var/digest_alert_owner = pick(digest_messages_owner)
 	var/digest_alert_prey = pick(digest_messages_prey)
-	var/compensation = M.getOxyLoss() //How much of the prey's damage was caused by passive crit oxyloss to compensate the lost nutrition.
+	var/compensation = M.maxHealth / 5 //Dead body bonus.
+	if(ishuman(M))
+		compensation += M.getOxyLoss() //How much of the prey's damage was caused by passive crit oxyloss to compensate the lost nutrition.
 
 	var/living_count = 0
 	for(var/mob/living/L in contents)
@@ -280,7 +298,7 @@
 				R.cell.charge += 25*compensation //CHOMPedit end
 		else
 			if(reagent_mode_flags & DM_FLAG_REAGENTSDIGEST && reagents.total_volume < reagents.maximum_volume) //CHOMP digestion producing reagents
-				owner.adjust_nutrition((nutrition_percent / 100)*3.0*compensation)
+				owner.adjust_nutrition((nutrition_percent / 100)*25.0*compensation)
 				GenerateBellyReagents_digested()
 			else
 				owner.adjust_nutrition((nutrition_percent / 100)*4.5*compensation) //CHOMPedit end

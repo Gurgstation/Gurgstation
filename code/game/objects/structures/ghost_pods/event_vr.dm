@@ -41,7 +41,8 @@
 								  "Frost Giant Spider" = /mob/living/simple_mob/animal/giant_spider/frost,
 								  "Nurse Giant Spider" = /mob/living/simple_mob/animal/giant_spider/nurse/eggless,
 								  "Giant Spider Queen" = /mob/living/simple_mob/animal/giant_spider/nurse/queen/eggless,
-								  "Weretiger" = /mob/living/simple_mob/vore/weretiger
+								  "Weretiger" = /mob/living/simple_mob/vore/weretiger,
+								  "Catslug" = /mob/living/simple_mob/vore/alienanimals/catslug
 								  )
 
 /obj/structure/ghost_pod/ghost_activated/maintpred/create_occupant(var/mob/M)
@@ -51,6 +52,9 @@
 	var/finalized = "No"
 
 	while(finalized == "No" && M.client)
+		if(jobban_isbanned(M, "GhostRoles"))
+			to_chat(M, "<span class='warning'>You cannot inhabit this creature because you are banned from playing ghost roles.</span>")
+			return
 		choice = tgui_input_list(M, "What type of predator do you want to play as?", "Maintpred Choice", possible_mobs)
 		if(!choice)
 			randomize = TRUE

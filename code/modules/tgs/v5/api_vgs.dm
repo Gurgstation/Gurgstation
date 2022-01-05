@@ -59,7 +59,7 @@ GLOBAL_DATUM(vgs, /datum/tgs_api)
 	server_port = 8080  // Default port
 
 // Override to prevent error messages from the lack of revision/test_merge information, and to use config isntead of params.
-/datum/tgs_api/v5/vgs1/OnWorldNew()
+/*/datum/tgs_api/v5/vgs1/OnWorldNew()
 	if(config.vgs_server_port)
 		server_port = config.vgs_server_port
 	access_identifier = config.vgs_access_identifier
@@ -81,7 +81,7 @@ GLOBAL_DATUM(vgs, /datum/tgs_api)
 	DecodeChannels(runtime_information)
 
 	return TRUE
-
+*/ // literally had to remove deprecated features. go figure
 /datum/tgs_api/v5/vgs1/proc/AddMemberRole(chat_user_id)
 	Bridge(DMAPI5_BRIDGE_COMMAND_ADD_MEMBER_ROLE, list(DMAPI5_BRIDGE_PARAMETER_CHAT_USER_ID = chat_user_id))
 
