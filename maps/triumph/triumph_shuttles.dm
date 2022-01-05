@@ -424,7 +424,7 @@
 	name = "SickBay Shuttle"
 
 /area/shuttle/viro/airlock
-	name = "Sickbay Airlock"
+	name = "SickBay Airlock"
 
 /obj/machinery/computer/shuttle_control/explore/viro
 	name = "Viro jump console"

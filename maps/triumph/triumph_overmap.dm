@@ -21,7 +21,7 @@
 		"Dart EMT Shuttle" = list("triumph_emt_dock"),
 		"Beruang Trade Ship" = list("triumph_annex_dock"),
 		"Mining Shuttle" = list("triumph_mining_port"),
-		"SickBay Shuttle" = list("triumph_viro_dock")
+		"SickBay Virology Shuttle" = list("triumph_viro_dock")
 		)
 
 	known = TRUE;
@@ -115,7 +115,7 @@
 	fore_dir = EAST
 	vessel_mass = 15000
 	vessel_size = SHIP_SIZE_SMALL
-	shuttle = "SickBay Shuttle"
+	shuttle = "SickBay Virology Shuttle"
 	known = TRUE;
 
 // STATIC PLANET/BASE LOCATIONS
