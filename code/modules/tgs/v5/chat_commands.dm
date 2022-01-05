@@ -4,7 +4,7 @@
 	admin_only = FALSE
 
 /datum/tgs_chat_command/status/Run(datum/tgs_chat_user/sender, params)
-	return "Current server status:\n**Web Manifest:** <https://vore-station.net/manifest.php>\n**Players:** [TGS_CLIENT_COUNT]\n**Round Duration:** [roundduration2text()]"
+	return "Current server status:\n**Web Manifest:** <http://manifest.gurgstation.tk:4583>\n**Players:** [TGS_CLIENT_COUNT]\n**Round Duration:** [roundduration2text()]"
 
 /datum/tgs_chat_command/parsetest
 	name = "parsetest"
