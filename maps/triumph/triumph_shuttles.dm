@@ -70,8 +70,8 @@
 // ON STATION NAV POINTS
 
 /obj/effect/shuttle_landmark/triumph/deck4/excursion_space
-	name = "Near OCV Triumph (SE)"
-	landmark_tag = "triumph_space_SE"
+	name = "Near OCV Triumph (SW)"
+	landmark_tag = "triumph_space_SW"
 	base_turf = /turf/space
 	base_area = /area/space
 
