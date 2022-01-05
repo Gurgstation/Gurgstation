@@ -13,7 +13,7 @@
 	fore_dir = EAST	// Which direction the ship/z-level is facing.  It will move dust particles from that direction when moving.
 	base = TRUE		// Honestly unsure what this does but it seems the main sector or "Map" we're at has this so here it stays
 	// The waypoints that are avaliable once you are at this Navpoint
-	initial_generic_waypoints = list("nav_capitalship_docking2", "triumph_excursion_hangar", "triumph_space_SW", "triumph_mining_port")
+	initial_generic_waypoints = list("nav_capitalship_docking2", "triumph_excursion_hangar", "triumph_space_SE", "triumph_mining_port")
 
 	initial_restricted_waypoints = list(
 		"Excursion Shuttle" = list("triumph_excursion_hangar"),
