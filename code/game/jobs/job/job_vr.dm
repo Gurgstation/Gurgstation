@@ -25,7 +25,7 @@
 	return (available_in_playhours(C) == 0)
 
 /datum/job/proc/available_in_playhours(client/C)
-	if(C && (C.check_rights(R_ADMIN, 0) || C.check_rights(R_MOD, 0)))	return 1 // Gurgs ADD: Bypass dept hour limit as staff.
+	if(check_rights(R_ADMIN | R_MOD, 0, C)	return 1 // Gurgs ADD: Bypass dept hour limit as staff.
 	if(C && config.use_playtime_restriction_for_jobs && dept_time_required)
 		if(isnum(C.play_hours[pto_type])) // Has played that department before
 			return max(0, dept_time_required - C.play_hours[pto_type])
