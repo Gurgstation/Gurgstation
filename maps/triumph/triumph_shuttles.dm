@@ -310,7 +310,7 @@
 	name = "Civilian Transport"
 	warmup_time = 10
 	shuttle_area = list(/area/shuttle/civvie/cockpit, /area/shuttle/civvie/general)
-	current_location = "triumph_civvie_home"
+	current_location = "civvie_home"
 	docking_controller_tag = "civvie_docker"
 	fuel_consumption = 10
 	move_time = 30
