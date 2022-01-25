@@ -412,19 +412,6 @@
 	docking_controller_tag = "viro_shuttle_docker"
 	move_time = 30
 
-/area/shuttle/viro
-	requires_power = 1
-	icon_state = "shuttle2"
-	name = "Sick Bay Shuttle"
-
-/area/shuttle/viro/cockpit
-	name = "SickBay Shuttle Cockpit"
-
-/area/shuttle/viro/general
-	name = "SickBay Shuttle"
-
-/area/shuttle/viro/airlock
-	name = "SickBay Airlock"
 
 /obj/machinery/computer/shuttle_control/explore/viro
 	name = "Viro jump console"
