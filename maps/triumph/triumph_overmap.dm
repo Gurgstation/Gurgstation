@@ -20,12 +20,13 @@
 		"Civilian Transport" = list("triumph_civvie_home"),
 		"Dart EMT Shuttle" = list("triumph_emt_dock"),
 		"Beruang Trade Ship" = list("triumph_annex_dock"),
-		"Mining Shuttle" = list("triumph_mining_port")
+		"Mining Shuttle" = list("triumph_mining_port"),
+		"SickBay Virology Shuttle" = list("triumph_viro_dock")
 		)
 
 	known = TRUE;
 
-	unowned_areas = list(/area/shuttle/mining_ship, /area/shuttle/civvie, /area/shuttle/excursion, /area/shuttle/emt)
+	unowned_areas = list(/area/shuttle/mining_ship, /area/shuttle/civvie, /area/shuttle/excursion, /area/shuttle/emt, /area/shuttle/viro)
 
 // EXCURSION SHUTTLE DATA
 /obj/effect/overmap/visitable/ship/landable/excursion
@@ -106,6 +107,16 @@
 	shuttle = "Dart EMT Shuttle"
 	known = TRUE;
 
+//Virology Shuttle
+
+/obj/effect/overmap/visitable/ship/landable/viro
+	name = "SickBay Virology Shuttle"
+	desc = "The budget didn't allow for flashing lights."
+	fore_dir = EAST
+	vessel_mass = 15000
+	vessel_size = SHIP_SIZE_SMALL
+	shuttle = "SickBay Virology Shuttle"
+	known = TRUE;
 
 // STATIC PLANET/BASE LOCATIONS
 

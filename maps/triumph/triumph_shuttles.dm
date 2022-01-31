@@ -4,14 +4,14 @@
 
 // Shared landmark for docking at the station
 
-/obj/effect/shuttle_landmark/automatic/station_dockpoint1
+/obj/effect/shuttle_landmark/triumph/deck4/station_dockpoint1
 	name = "Station Docking Point 1"
 	landmark_tag = "nav_station_docking1"
 	docking_controller = "deck4_dockarm1"
 	base_turf = /turf/space
 	base_area = /area/space
 
-/obj/effect/shuttle_landmark/automatic/station_dockpoint2
+/obj/effect/shuttle_landmark/triumph/deck4/station_dockpoint2
 	name = "OCV Triumph - Docking Arm 2"
 	landmark_tag = "nav_capitalship_docking2"
 	docking_controller = "deck4_dockarm2"
@@ -24,14 +24,21 @@
 /obj/effect/shuttle_landmark/triumph/deck4/civvie
 	name = "OCV Triumph - Civilian Transport Dock"
 	landmark_tag = "triumph_civvie_home"
-	docking_controller = "civvie_docker"
+	docking_controller = "civvie_home"
 	base_turf = /turf/space
 	base_area = /area/space
 
 /obj/effect/shuttle_landmark/triumph/deck3/emt
 	name = "OCV Triumph - EMT Shuttle Dock"
 	landmark_tag = "triumph_emt_dock"
-	docking_controller = "emt_shuttle_docker"
+	docking_controller = "emt_shuttle_landing"
+	base_turf = /turf/space
+	base_area = /area/space
+
+/obj/effect/shuttle_landmark/triumph/deck3/viro
+	name = "OCV Triumph - Virology Shuttle Dock"
+	landmark_tag = "triumph_viro_dock"
+	docking_controller = "viro_shuttle_landing"
 	base_turf = /turf/space
 	base_area = /area/space
 
@@ -383,7 +390,7 @@
 /datum/shuttle/autodock/overmap/emt
 	name = "Dart EMT Shuttle"
 	warmup_time = 5
-	shuttle_area = list(/area/shuttle/emt, /area/shuttle/emt/general, /area/shuttle/emt/cockpit)
+	shuttle_area = list(/area/shuttle/emt/general, /area/shuttle/emt/cockpit)
 	current_location = "triumph_emt_dock"
 	docking_controller_tag = "emt_shuttle_docker"
 	move_time = 20
@@ -395,6 +402,20 @@
 /obj/machinery/computer/shuttle_control/explore/emt
 	name = "EMT jump console"
 	shuttle_tag = "Dart EMT Shuttle"
+
+//Virology Shuttle
+/datum/shuttle/autodock/overmap/viro
+	name = "SickBay Virology Shuttle"
+	warmup_time = 15
+	shuttle_area = list(/area/shuttle/viro/cockpit, /area/shuttle/viro/general, /area/shuttle/viro/airlock)
+	current_location = "triumph_viro_dock"
+	docking_controller_tag = "viro_shuttle_docker"
+	move_time = 30
+
+
+/obj/machinery/computer/shuttle_control/explore/viro
+	name = "Viro jump console"
+	shuttle_tag = "SickBay Virology Shuttle"
 
 ////////////////////////////////////////
 ////////      Tour Bus     /////////////
