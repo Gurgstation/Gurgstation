@@ -27,14 +27,50 @@
 "o" = (
 /turf/simulated/wall/sandstone,
 /area/mining_planet/explored)
+"r" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "mining_1";
+	layer = 3.3;
+	name = "Mineral Dock Controller"
+	},
+/turf/simulated/wall/sandstone,
+/area/mining_planet/explored)
 "s" = (
 /turf/unsimulated/floor/steel,
+/area/mining_planet/explored)
+"w" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "mining_3";
+	layer = 3.3;
+	name = "Mineral Dock Controller"
+	},
+/turf/simulated/wall/sandstone,
 /area/mining_planet/explored)
 "y" = (
 /obj/effect/shuttle_landmark/automatic{
 	docking_controller = "mining_3"
 	},
 /turf/unsimulated/floor/steel,
+/area/mining_planet/explored)
+"z" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "mining_2";
+	layer = 3.3;
+	name = "Mineral Dock Controller"
+	},
+/turf/simulated/wall/sandstone,
+/area/mining_planet/explored)
+"B" = (
+/obj/machinery/embedded_controller/radio/simple_docking_controller{
+	frequency = 1380;
+	id_tag = "mining_4";
+	layer = 3.3;
+	name = "Mineral Dock Controller"
+	},
+/turf/simulated/wall/sandstone,
 /area/mining_planet/explored)
 "F" = (
 /turf/simulated/mineral,
@@ -1017,8 +1053,8 @@ F
 F
 F
 F
-F
-o
+N
+r
 o
 o
 o
@@ -1921,7 +1957,7 @@ s
 s
 o
 o
-o
+w
 F
 F
 F
@@ -15830,7 +15866,7 @@ s
 o
 o
 o
-o
+B
 N
 F
 F
@@ -15904,7 +15940,7 @@ F
 F
 F
 F
-o
+z
 s
 o
 o
