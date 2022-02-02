@@ -22,34 +22,34 @@
 // Exclusive landmark for docking at the station
 
 /obj/effect/shuttle_landmark/triumph/deck4/civvie
-	name = "OCV Triumph - Civilian Transport Dock"
+	name = "OHC Triumph - Civilian Transport Dock"
 	landmark_tag = "triumph_civvie_home"
 	docking_controller = "civvie_home"
 	base_turf = /turf/space
 	base_area = /area/space
 
 /obj/effect/shuttle_landmark/triumph/deck3/emt
-	name = "OCV Triumph - EMT Shuttle Dock"
+	name = "OHC Triumph - EMT Shuttle Dock"
 	landmark_tag = "triumph_emt_dock"
 	docking_controller = "emt_shuttle_landing"
 	base_turf = /turf/space
 	base_area = /area/space
 
 /obj/effect/shuttle_landmark/triumph/deck3/viro
-	name = "OCV Triumph - Virology Shuttle Dock"
+	name = "OHC Triumph - Virology Shuttle Dock"
 	landmark_tag = "triumph_viro_dock"
 	docking_controller = "viro_shuttle_landing"
 	base_turf = /turf/space
 	base_area = /area/space
 
 /obj/effect/shuttle_landmark/triumph/deck2/mining
-	name = "OCV Triumph Mining Dock"
+	name = "OHC Triumph Mining Dock"
 	landmark_tag = "triumph_mining_port"
 	base_turf = /turf/space
 	base_area = /area/space
 
 /obj/effect/shuttle_landmark/triumph/deck2/trade
-	name = "OCV Triumph Annex Dock"
+	name = "OHC Triumph Annex Dock"
 	landmark_tag = "triumph_annex_dock"
 	base_turf = /turf/space
 	base_area = /area/space
@@ -60,7 +60,7 @@
 // Exclusive landmark for docking *inside* the station
 
 /obj/effect/shuttle_landmark/triumph/deck4/excursion
-	name = "OCV Triumph - Excursion Hanger"
+	name = "OHC Triumph - Excursion Hanger"
 	landmark_tag = "triumph_excursion_hangar"
 	docking_controller = "expshuttle_dock"
 	base_turf = /turf/simulated/floor/tiled/techfloor/grid
@@ -70,43 +70,43 @@
 // ON STATION NAV POINTS
 
 /obj/effect/shuttle_landmark/triumph/deck4/excursion_space
-	name = "Near OCV Triumph (SW)"
+	name = "Near OHC Triumph (SW)"
 	landmark_tag = "triumph_space_SW"
 	base_turf = /turf/space
 	base_area = /area/space
 
 /obj/effect/shuttle_landmark/triumph/deck3/port
-	name = "Near OCV Triumph (Port Deck 3)"
+	name = "Near OHC Triumph (Port Deck 3)"
 	landmark_tag = "triumph_space_port_3"
 	base_turf = /turf/space
 	base_area = /area/space
 
 /obj/effect/shuttle_landmark/triumph/deck3/starboard
-	name = "Near OCV Triumph (Starboard Deck 3)"
+	name = "Near OHC Triumph (Starboard Deck 3)"
 	landmark_tag = "triumph_space_starboard_3"
 	base_turf = /turf/space
 	base_area = /area/space
 
 /obj/effect/shuttle_landmark/triumph/deck2/port
-	name = "Near OCV Triumph (Port Deck 2)"
+	name = "Near OHC Triumph (Port Deck 2)"
 	landmark_tag = "triumph_space_port_2"
 	base_turf = /turf/space
 	base_area = /area/space
 
 /obj/effect/shuttle_landmark/triumph/deck2/starboard
-	name = "Near OCV Triumph (Starboard Deck 2)"
+	name = "Near OHC Triumph (Starboard Deck 2)"
 	landmark_tag = "triumph_space_starboard_2"
 	base_turf = /turf/space
 	base_area = /area/space
 
 /obj/effect/shuttle_landmark/triumph/deck1/port
-	name = "Near OCV Triumph (Port Deck 1)"
+	name = "Near OHC Triumph (Port Deck 1)"
 	landmark_tag = "triumph_space_port_1"
 	base_turf = /turf/space
 	base_area = /area/space
 
 /obj/effect/shuttle_landmark/triumph/deck1/starboard
-	name = "Near OCV Triumph (Starboard Deck 1)"
+	name = "Near OHC Triumph (Starboard Deck 1)"
 	landmark_tag = "triumph_space_starboard_1"
 	base_turf = /turf/space
 	base_area = /area/space

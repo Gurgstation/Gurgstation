@@ -1,8 +1,8 @@
 /obj/effect/overmap/visitable/ship/triumph
-	name = "NSV Triumph"	// Name of the location on the overmap.
+	name = "OHC Triumph"	// Name of the location on the overmap.
 	desc = "The Triumph is one of the many ships that is a part of the NDV Marksmans Fleet in this sector"
 
-	scanner_desc = @{"[i]Registration[/i]: NSV Triumph
+	scanner_desc = @{"[i]Registration[/i]: OHC Triumph
 [i]Class[/i]: Science Vessel
 [i]Transponder[/i]: Transmitting (CIV), NanoTrasen IFF
 [b]Notice[/b]: NanoTrasen Vessel, authorized personnel only"}
@@ -172,6 +172,7 @@ Warning, unable to scan through sensor shielding systems at location. Possible h
 Atmopshere: Mix of Oxygen, Nitrogen and Phoron. DANGER
 Lifesigns: No immediate life-signs detected."}
 	in_space = 0
+	known = TRUE
 	icon_state = "globe"
 	color = "#8F6E4C"
 	initial_generic_waypoints = list("mining_outpost")

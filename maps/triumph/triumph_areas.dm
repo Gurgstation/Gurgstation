@@ -167,19 +167,19 @@
 	icon_state = "away"
 	base_turf = /turf/simulated/floor/outdoors/dirt
 	requires_power = 0
-	dynamic_lighting = 1
+	dynamic_lighting = 0
 
 /area/frozen_planet/facility
-	name = "Gaia Planet - Facility"
+	name = "Frozen Planet - Facility"
 	requires_power = 1
 	icon_state = "red"
 
 /area/frozen_planet/ruins
-	name = "Gaia Planet - Ruins"
+	name = "Frozen Planet - Ruins"
 	icon_state = "green"
 
 /area/frozen_planet/outside
-	name = "Gaia Planet - Outside (UE)"
+	name = "Frozen Planet - Outside (UE)"
 	icon_state = "yellow"
 
 //Gaia planet world areas
@@ -188,7 +188,7 @@
 	icon_state = "away"
 	base_turf = /turf/simulated/floor/outdoors/dirt
 	requires_power = 0
-	dynamic_lighting = 1
+	dynamic_lighting = 0
 
 /area/gaia_planet/inside
 	name = "Gaia Planet - Inside (E)"
@@ -203,7 +203,8 @@
 	name = "Mining Planet"
 	icon_state = "away"
 	base_turf = /turf/simulated/mineral/floor/
-	dynamic_lighting = 1
+	requires_power = 0
+	dynamic_lighting = 0
 
 /area/mining_planet/explored
 	name = "Mining Planet - Explored (E)"
@@ -231,7 +232,8 @@
 	name = "Class D World"
 	icon_state = "away"
 	base_turf = /turf/simulated/mineral/floor/vacuum
-	dynamic_lighting = 1
+	requires_power = 0
+	dynamic_lighting = 0
 
 /area/poi_d/plains
 	name = "Class D World Plains"
@@ -268,7 +270,7 @@
 	icon_state = "away"
 	base_turf = /turf/simulated/floor/beach/sand/desert/outdoors
 	requires_power = 0
-	dynamic_lighting = 1
+	dynamic_lighting = 0
 
 /area/poi_h/explored
 	name = "Mining Planet - Explored (E)"
