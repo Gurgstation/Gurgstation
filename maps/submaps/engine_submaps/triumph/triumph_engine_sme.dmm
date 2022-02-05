@@ -97,6 +97,9 @@
 	},
 /turf/simulated/floor/tiled/monotile,
 /area/engineering/engine_room)
+"mL" = (
+/turf/template_noop,
+/area/engineering/engine_room)
 "oR" = (
 /obj/machinery/power/supermatter{
 	layer = 4
@@ -560,9 +563,9 @@ FN
 FN
 FN
 FN
-FN
-FN
-FN
+td
+td
+td
 FN
 WZ
 "}
@@ -582,7 +585,7 @@ WZ
 WZ
 WZ
 td
-WZ
+td
 td
 WZ
 WZ
@@ -698,7 +701,7 @@ WZ
 WZ
 WZ
 WZ
-WZ
+mL
 WZ
 WZ
 WZ
