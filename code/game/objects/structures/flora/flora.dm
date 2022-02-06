@@ -69,7 +69,7 @@
 /obj/structure/flora/proc/spawn_harvest(var/path = null, var/mob/user = null)
 	if(!ispath(path))
 		return 0
-	
+
 	var/atom/movable/AM = new path()
 	if(user)
 		user.put_in_hands(AM)
@@ -84,7 +84,7 @@
 	name = "bush"
 	icon = 'icons/obj/flora/snowflora.dmi'
 	icon_state = "snowbush1"
-	
+
 	destroy_on_harvest = TRUE
 	harvest_tool = /obj/item/weapon/material/knife
 	randomize_harvest_count = FALSE
@@ -109,13 +109,13 @@
 	name = "bush"
 	icon = 'icons/obj/flora/ausflora.dmi'
 	icon_state = "firstbush_1"
-	
+
 	destroy_on_harvest = TRUE
 	harvest_tool = /obj/item/weapon/material/knife
 	randomize_harvest_count = TRUE
 	harvest_loot = list(/obj/item/stack/material/fiber = 1)
 	min_harvests = 1
-	max_harvests = 3		
+	max_harvests = 3
 
 /obj/structure/flora/ausbushes/spawn_harvest(var/path = null, var/mob/user = null)
 	. = ..()
@@ -467,11 +467,11 @@
 		prob(10);/obj/structure/flora/pottedplant/smalltree,
 		prob(10);/obj/structure/flora/pottedplant/unusual,
 		prob(10);/obj/structure/flora/pottedplant/orientaltree,
-		prob(10);/obj/structure/flora/pottedplant/smallcactus,
+		prob(1);/obj/structure/flora/pottedplant/smallcactus,
 		prob(10);/obj/structure/flora/pottedplant/tall,
 		prob(10);/obj/structure/flora/pottedplant/sticky,
 		prob(10);/obj/structure/flora/pottedplant/smelly,
-		prob(10);/obj/structure/flora/pottedplant/small,
+		prob(1);/obj/structure/flora/pottedplant/small,
 		prob(10);/obj/structure/flora/pottedplant/aquatic,
 		prob(10);/obj/structure/flora/pottedplant/shoot,
 		prob(10);/obj/structure/flora/pottedplant/flower,
@@ -481,7 +481,7 @@
 		prob(10);/obj/structure/flora/pottedplant/stoutbush,
 		prob(10);/obj/structure/flora/pottedplant/drooping,
 		prob(10);/obj/structure/flora/pottedplant/tropical,
-		prob(10);/obj/structure/flora/pottedplant/dead,
+		prob(1);/obj/structure/flora/pottedplant/dead,
 		prob(10);/obj/structure/flora/pottedplant/decorative,
 		prob(1);/obj/structure/flora/pottedplant/xmas
 				)
