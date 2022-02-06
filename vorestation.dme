@@ -4152,6 +4152,7 @@
 #include "gurgs_content\code\modules\mob\traits\trait_ch.dm"
 #include "gurgs_content\code\modules\mob\traits\shapeshift\shapeshift.dm"
 #include "gurgs_content\code\modules\mob\traits\shapeshift\shapeshift_trait.dm"
+#include "gurgs_content\code\modules\organs\ferallimbs_custom.dm"
 #include "gurgs_content\code\modules\reagents\medicine_ch.dm"
 #include "gurgs_content\code\modules\vore\living.dm"
 #include "gurgs_content\code\modules\vore\preferences.dm"
