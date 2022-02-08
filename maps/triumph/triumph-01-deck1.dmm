@@ -3,65 +3,80 @@
 "aY" = (/obj/structure/stairs/spawner/north,/turf/simulated/floor/tiled/steel,/area/space)
 "bc" = (/obj/effect/floor_decal/borderfloor{dir = 6},/obj/effect/floor_decal/corner/yellow/border{dir = 6},/turf/simulated/floor/tiled/steel,/area/space)
 "bE" = (/obj/machinery/door/firedoor/glass,/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/space)
-"cB" = (/obj/structure/table/reinforced,/obj/fiftyspawner/rglass,/obj/fiftyspawner/steel,/obj/fiftyspawner/rods,/obj/fiftyspawner/plasteel,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
+"bR" = (/obj/machinery/telecomms/server/presets/engineering,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "cV" = (/obj/structure/bed/chair/office/dark{dir = 1},/obj/effect/floor_decal/steeldecal/steel_decals10{dir = 5},/obj/effect/floor_decal/steeldecal/steel_decals10{dir = 6},/turf/simulated/floor/tiled/steel,/area/space)
 "dV" = (/obj/machinery/button/remote/blast_door{desc = "A remote control-switch for the engine control room blast doors."; dir = 8; id = "SMESRadShield"; name = "SMES Radiation Shield Controller"; pixel_x = 26; pixel_y = 37; req_access = list(10)},/obj/machinery/button/remote/airlock{dir = 8; id = "engine_electrical_maintenance"; name = "Door Bolt Control"; pixel_x = 26; pixel_y = 27; specialfunctions = 4},/turf/simulated/floor/plating,/area/engineering/engine_room)
 "dX" = (/turf/simulated/wall,/area/space)
+"eh" = (/obj/machinery/telecomms/server/presets/command,/turf/simulated/floor/tiled/techmaint{nitrogen = 100; temperature = 80},/area/space)
 "ek" = (/obj/structure/railing{dir = 8},/turf/space,/area/space)
 "eD" = (/turf/simulated/wall/r_wall,/area/space)
 "eE" = (/obj/structure/lattice,/obj/structure/railing,/turf/space,/area/space)
+"eS" = (/obj/machinery/telecomms/server/presets/medical,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "fz" = (/obj/effect/floor_decal/borderfloor{dir = 1},/obj/effect/floor_decal/corner/yellow/border{dir = 1},/turf/simulated/floor/tiled/steel,/area/space)
 "fC" = (/obj/machinery/power/smes/buildable{RCon_tag = "Engine - Core"; charge = 3e+006; input_attempt = 1; input_level = 100000},/obj/structure/cable/cyan{d2 = 2; icon_state = "0-2"},/obj/effect/floor_decal/industrial/warning/cee{dir = 8},/turf/simulated/floor/plating,/area/engineering/engine_smes)
 "fN" = (/turf/space,/area/space)
+"fU" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/button/remote/blast_door{desc = "A remote control-switch for the engine control room blast doors."; dir = 4; id = "SMESRadShield"; name = "SMES Radiation Shield Controller"; pixel_x = -26; pixel_y = 36; req_access = list(10)},/obj/machinery/button/remote/airlock{dir = 4; id = "engine_electrical_maintenance"; name = "Door Bolt Control"; pixel_x = -26; pixel_y = 26; specialfunctions = 4},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
+"gr" = (/obj/machinery/atmospherics/unary/vent_pump/high_volume{dir = 4; frequency = 1381; id_tag = "server_access_pump"},/turf/simulated/floor/tiled/techfloor,/area/space)
 "gt" = (/obj/structure/railing{dir = 4},/obj/structure/railing{dir = 1},/obj/structure/lattice,/turf/space,/area/space)
 "gB" = (/obj/structure/table/standard,/obj/machinery/recharger,/turf/simulated/floor/tiled/steel,/area/space)
 "gU" = (/obj/structure/closet/radiation,/obj/effect/floor_decal/borderfloor{dir = 10},/obj/effect/floor_decal/corner/yellow/border{dir = 10},/turf/simulated/floor/tiled/steel,/area/space)
 "hj" = (/obj/machinery/door/firedoor/glass,/obj/structure/cable{d2 = 4; icon_state = "0-4"},/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor,/area/space)
 "ig" = (/obj/machinery/computer/power_monitor{dir = 8; throwpass = 1},/turf/simulated/floor/tiled/steel,/area/space)
 "iC" = (/obj/structure/lattice,/obj/structure/grille,/turf/space,/area/space)
-"iD" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/button/remote/blast_door{desc = "A remote control-switch for the engine control room blast doors."; dir = 4; id = "SMESRadShield"; name = "SMES Radiation Shield Controller"; pixel_x = -26; pixel_y = 36; req_access = list(10)},/obj/machinery/button/remote/airlock{dir = 4; id = "engine_electrical_maintenance"; name = "Door Bolt Control"; pixel_x = -26; pixel_y = 26; specialfunctions = 4},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
 "iR" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/maintenance,/turf/simulated/floor/plating,/area/engineering/hallway/lower)
-"jo" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_smes)
+"jf" = (/obj/machinery/embedded_controller/radio/airlock/advanced_airlock_controller{frequency = 1381; id_tag = "server_access_airlock"; name = "Server Access Airlock"; pixel_y = 25; tag_airpump = "server_access_pump"; tag_chamber_sensor = "server_access_sensor"; tag_exterior_door = "server_access_outer"; tag_exterior_sensor = "server_access_ex_sensor"; tag_interior_door = "server_access_inner"; tag_interior_sensor = "server_access_in_sensor"; tag_secure = 1},/obj/machinery/airlock_sensor{frequency = 1381; id_tag = "server_access_sensor"; pixel_y = 38},/turf/simulated/floor/tiled/techfloor,/area/space)
+"jx" = (/obj/machinery/power/terminal,/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_smes)
 "jN" = (/obj/machinery/door/firedoor/glass,/obj/machinery/door/blast/regular{density = 0; icon_state = "pdoor0"; id = "eng_sec_lockdown"; name = "Security Checkpoint Blast Doors"; opacity = 0},/obj/structure/cable,/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/space)
+"jW" = (/obj/structure/closet/secure_closet/engineering_electrical,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
+"kh" = (/obj/structure/lattice,/obj/effect/landmark/engine_loader,/turf/space,/area/space)
 "kq" = (/turf/simulated/floor/airless/ceiling,/area/space)
-"kK" = (/turf/simulated/floor/tiled/techmaint{nitrogen = 100; temperature = 80},/area/space)
 "kT" = (/obj/effect/floor_decal/borderfloor/corner,/obj/effect/floor_decal/corner/yellow/bordercorner,/turf/simulated/floor/tiled/steel,/area/space)
+"kV" = (/obj/effect/floor_decal/borderfloor,/obj/effect/floor_decal/corner/yellow/border,/obj/machinery/computer/security/engineering{dir = 1},/turf/simulated/floor/tiled/steel,/area/space)
 "le" = (/obj/turbolift_map_holder/triumph,/turf/simulated/floor/holofloor/tiled/dark,/area/engineering/hallway/lower)
+"li" = (/obj/machinery/telecomms/server/presets/common,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "lI" = (/obj/machinery/camera/network/outside,/obj/structure/catwalk,/turf/simulated/floor/airless/ceiling,/area/space)
 "mn" = (/turf/simulated/wall/r_wall,/area/engineering/hallway/lower)
 "mq" = (/obj/structure/railing{dir = 4},/obj/structure/lattice,/turf/space,/area/space)
-"mx" = (/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/sign/warning/radioactive{pixel_x = -32; pixel_y = -32},/turf/simulated/floor/plating,/area/engineering/engine_smes)
 "mO" = (/obj/effect/shuttle_landmark/triumph/deck1/port,/turf/space,/area/space)
-"mT" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/power/terminal{dir = 1},/obj/structure/cable{d2 = 4; icon_state = "0-4"},/obj/machinery/button/remote/blast_door{desc = "A remote control-switch for the engine control room blast doors."; dir = 4; id = "SMESRadShield"; name = "SMES Radiation Shield Controller"; pixel_x = -25; pixel_y = -37; req_access = list(10)},/obj/machinery/button/remote/airlock{dir = 4; id = "engine_electrical_maintenance"; name = "Door Bolt Control"; pixel_x = -25; pixel_y = -27; specialfunctions = 4},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
 "nj" = (/turf/simulated/floor/tiled/steel,/area/space)
 "ns" = (/obj/structure/railing{dir = 1},/turf/space,/area/space)
-"nK" = (/obj/structure/closet/radiation,/obj/item/clothing/glasses/meson,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
+"nv" = (/obj/machinery/telecomms/bus/preset_one,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "nS" = (/obj/machinery/door/firedoor,/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/space)
 "nV" = (/obj/structure/catwalk,/obj/structure/sign/warning{pixel_y = -32},/obj/structure/ladder/up,/turf/simulated/floor/airless/ceiling,/area/space)
 "oF" = (/obj/structure/window/reinforced{dir = 1},/obj/machinery/computer/station_alert{dir = 4},/obj/machinery/door/blast/shutters{density = 0; icon_state = "shutter0"; id = "engifrontdesk"; name = "Front Desk Shutters"; opacity = 0},/turf/simulated/floor/tiled/steel,/area/space)
 "oH" = (/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/cable/cyan{d2 = 8; icon_state = "0-8"},/obj/machinery/power/sensor{name = "Powernet Sensor - Engine Output"; name_tag = "Engine Output"},/turf/simulated/floor/plating,/area/engineering/engine_smes)
+"pe" = (/turf/simulated/floor/bluegrid{name = "Mainframe Base"; nitrogen = 100; temperature = 80},/area/space)
+"pm" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_smes)
+"pT" = (/obj/machinery/telecomms/bus/preset_two/triumph,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "qp" = (/obj/structure/railing{dir = 1},/obj/structure/lattice,/turf/space,/area/space)
+"qD" = (/obj/machinery/telecomms/processor/preset_four,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "qN" = (/obj/machinery/door/firedoor/glass,/obj/machinery/atmospherics/pipe/simple/visible/green{dir = 4},/obj/effect/wingrille_spawn/reinforced_phoron,/turf/simulated/floor/tiled/techfloor/grid,/area/engineering/engine_room)
 "qS" = (/obj/effect/floor_decal/steeldecal/steel_decals4,/obj/effect/floor_decal/steeldecal/steel_decals4{dir = 10},/turf/simulated/floor/tiled/steel,/area/space)
 "rh" = (/obj/structure/table/reinforced,/obj/structure/window/reinforced{dir = 1},/obj/item/weapon/book/manual/supermatter_engine,/obj/item/device/multitool,/obj/random/powercell,/obj/machinery/door/blast/shutters{density = 0; icon_state = "shutter0"; id = "engifrontdesk"; name = "Front Desk Shutters"; opacity = 0},/turf/simulated/floor/tiled/steel,/area/space)
-"sr" = (/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
-"tG" = (/obj/effect/floor_decal/borderfloor,/obj/effect/floor_decal/corner/yellow/border,/obj/machinery/computer/security/engineering{dir = 1},/turf/simulated/floor/tiled/steel,/area/space)
+"rC" = (/turf/simulated/floor/tiled/techmaint{nitrogen = 100; temperature = 80},/area/space)
+"sx" = (/obj/effect/floor_decal/industrial/warning{dir = 1},/obj/structure/table/reinforced,/obj/item/weapon/storage/toolbox/electrical,/obj/item/clothing/gloves/yellow,/obj/item/device/multitool,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
+"sI" = (/obj/machinery/telecomms/relay/preset/triumph/deck_four,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
+"ta" = (/obj/machinery/pda_multicaster/prebuilt,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
+"tz" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/door/blast/regular{density = 0; icon_state = "pdoor0"; id = "SMESRadShield"; name = "Radiation Shield"; opacity = 0},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
 "tS" = (/obj/structure/lattice,/obj/structure/grille,/obj/structure/railing{dir = 8},/turf/space,/area/space)
-"ud" = (/obj/effect/floor_decal/industrial/warning,/obj/structure/sign/warning/radioactive{pixel_x = -32; pixel_y = 32},/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
+"uu" = (/obj/machinery/telecomms/broadcaster/preset_right,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "uB" = (/obj/structure/sign/warning,/turf/simulated/wall/r_wall,/area/space)
-"va" = (/obj/effect/floor_decal/industrial/warning{dir = 4},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch{icon_state = "door_locked"; id_tag = "engine_electrical_maintenance"; locked = 1; name = "Engine Room"; req_one_access = list(11)},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
-"vN" = (/obj/effect/floor_decal/industrial/warning{dir = 4},/obj/machinery/door/airlock/maintenance/engi,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
-"vT" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/door/blast/regular{density = 0; icon_state = "pdoor0"; id = "SMESRadShield"; name = "Radiation Shield"; opacity = 0},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
+"uU" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_smes)
+"vz" = (/obj/machinery/telecomms/server/presets/security,/turf/simulated/floor/tiled/techmaint{nitrogen = 100; temperature = 80},/area/space)
 "vX" = (/obj/machinery/shield_diffuser,/turf/simulated/floor/airless/ceiling,/area/space)
 "wd" = (/obj/machinery/recharge_station,/obj/effect/floor_decal/borderfloor{dir = 1},/obj/effect/floor_decal/corner/yellow/border{dir = 1},/turf/simulated/floor/tiled/steel,/area/space)
+"wi" = (/obj/machinery/telecomms/relay/preset/triumph/deck_two,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "wz" = (/obj/structure/railing{dir = 1},/obj/structure/railing{dir = 4},/turf/space,/area/space)
 "xl" = (/obj/structure/table/reinforced,/obj/structure/window/reinforced,/obj/machinery/requests_console/preset/engineering{dir = 8; pixel_x = 28},/turf/simulated/floor/tiled/steel,/area/space)
 "xv" = (/turf/simulated/wall/r_wall,/area/maintenance/engi_engine)
 "ya" = (/obj/machinery/door/firedoor/glass,/obj/structure/cable,/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor,/area/space)
 "yb" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 10},/obj/structure/lattice,/turf/space,/area/space)
+"ys" = (/obj/structure/closet/radiation,/obj/item/clothing/glasses/meson,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
+"yz" = (/obj/machinery/telecomms/bus/preset_three,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "yE" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/door/airlock/hatch{name = "Engine SMES Room"; req_one_access = list(11)},/turf/simulated/floor/tiled/steel,/area/engineering/engine_smes)
+"yN" = (/obj/structure/closet/firecloset,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
 "yO" = (/obj/machinery/power/port_gen/pacman,/obj/structure/cable/cyan,/obj/fiftyspawner/phoron,/turf/simulated/floor/plating,/area/engineering/engine_smes)
-"yW" = (/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
+"yX" = (/obj/effect/floor_decal/industrial/warning{dir = 4},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch{icon_state = "door_locked"; id_tag = "engine_electrical_maintenance"; locked = 1; name = "Engine Room"; req_one_access = list(11)},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
 "yY" = (/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_smes)
 "zb" = (/obj/machinery/door/firedoor/glass,/obj/effect/wingrille_spawn/reinforced_phoron,/turf/simulated/floor/tiled/techfloor/grid,/area/engineering/engine_room)
 "zd" = (/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/plating,/area/engineering/engine_smes)
@@ -73,74 +88,93 @@
 "Ah" = (/obj/machinery/door/firedoor/glass,/obj/machinery/door/blast/regular{density = 0; icon_state = "pdoor0"; id = "eng_sec_lockdown"; name = "Security Checkpoint Blast Doors"; opacity = 0},/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/space)
 "An" = (/obj/machinery/power/grid_checker,/obj/structure/cable,/turf/simulated/floor/plating,/area/engineering/engine_smes)
 "AP" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/simple/heat_exchanging,/turf/space,/area/space)
-"AV" = (/obj/structure/closet/secure_closet/engineering_electrical,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
 "Bc" = (/obj/machinery/button/remote/airlock{dir = 8; id = "engine_electrical_maintenance"; name = "Door Bolt Control"; pixel_x = 26; pixel_y = -26; specialfunctions = 4},/obj/machinery/button/remote/blast_door{desc = "A remote control-switch for the engine control room blast doors."; dir = 8; id = "SMESRadShield"; name = "SMES Radiation Shield Controller"; pixel_x = 26; pixel_y = -36; req_access = list(10)},/turf/simulated/floor/plating,/area/engineering/engine_room)
+"Bj" = (/obj/machinery/telecomms/relay/preset/triumph/deck_three,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "Bs" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging,/obj/structure/lattice,/turf/space,/area/space)
 "Bu" = (/obj/structure/railing{dir = 8},/obj/structure/railing{dir = 1},/turf/space,/area/space)
+"BC" = (/turf/simulated/floor/tiled/techfloor,/area/space)
+"BE" = (/obj/effect/floor_decal/industrial/warning,/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/machinery/power/apc{dir = 4; name = "east bump"; pixel_x = 28},/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
 "BL" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 6},/obj/structure/lattice,/turf/space,/area/space)
-"BT" = (/obj/effect/floor_decal/industrial/warning{dir = 4},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch{icon_state = "door_locked"; id_tag = "engine_electrical_maintenance"; locked = 1; name = "Engine Room"; req_one_access = list(11)},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
+"Ca" = (/obj/effect/floor_decal/industrial/warning,/obj/structure/sign/warning/radioactive{pixel_x = -32; pixel_y = 32},/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
+"Cn" = (/obj/structure/cable/cyan{d1 = 1; d2 = 4; icon_state = "1-4"},/obj/structure/sign/warning/radioactive{pixel_x = -32; pixel_y = -32},/turf/simulated/floor/plating,/area/engineering/engine_smes)
 "Cu" = (/turf/simulated/floor/tiled/techfloor/grid,/area/space)
-"Cv" = (/obj/machinery/power/terminal,/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_smes)
 "CM" = (/obj/machinery/button/remote/blast_door{desc = "A remote control-switch for the engine control room blast doors."; dir = 8; id = "engineemergancy"; name = "Engine Emergency Access Hatch"; pixel_x = 26; pixel_y = 27; req_access = list(10)},/turf/simulated/floor/plating,/area/engineering/engine_room)
+"Df" = (/obj/machinery/telecomms/processor/preset_three,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "Dt" = (/obj/effect/landmark{name = "carpspawn"},/turf/space,/area/space)
-"Dv" = (/obj/effect/floor_decal/industrial/warning{dir = 5},/obj/structure/table/reinforced,/obj/item/weapon/tool/wrench,/obj/item/weapon/tool/crowbar/red,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
 "DI" = (/obj/structure/table/reinforced,/obj/machinery/door/window/northright{name = "Engineering Reception Desk"; req_access = list(10)},/obj/machinery/recharger,/obj/machinery/door/blast/shutters{density = 0; icon_state = "shutter0"; id = "engifrontdesk"; name = "Front Desk Shutters"; opacity = 0},/turf/simulated/floor/tiled/steel,/area/space)
 "DM" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 10},/turf/space,/area/space)
+"El" = (/obj/machinery/telecomms/server/presets/supply,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "Fh" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 5},/turf/space,/area/space)
 "Fq" = (/obj/random/pottedplant,/obj/effect/floor_decal/borderfloor,/obj/effect/floor_decal/corner/yellow/border,/turf/simulated/floor/tiled/steel,/area/space)
+"FA" = (/obj/machinery/telecomms/server/presets/science,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "FG" = (/obj/structure/lattice,/obj/structure/railing{dir = 4},/turf/space,/area/space)
 "FH" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/maintenance/engi,/turf/simulated/floor/plating,/area/engineering/engine_smes)
 "FL" = (/obj/machinery/door/firedoor/glass,/obj/machinery/door/blast/regular{density = 0; icon_state = "pdoor0"; id = "eng_sec_lockdown"; name = "Security Checkpoint Blast Doors"; opacity = 0},/obj/structure/cable{d2 = 8; icon_state = "0-8"},/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/space)
 "He" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 9},/turf/space,/area/space)
+"HA" = (/obj/machinery/exonet_node{anchored = 1},/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
+"HE" = (/obj/machinery/telecomms/hub/preset/triumph,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "Iw" = (/obj/structure/stairs/spawner/north,/obj/structure/railing{dir = 4},/turf/simulated/floor/tiled/steel,/area/space)
 "ID" = (/obj/structure/catwalk,/turf/simulated/floor/airless/ceiling,/area/space)
+"IE" = (/obj/machinery/power/terminal,/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_smes)
 "IJ" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{dir = 8},/turf/space,/area/space)
 "IY" = (/turf/simulated/floor/plating,/area/space)
 "Jc" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 9},/obj/structure/lattice,/turf/space,/area/space)
-"Kj" = (/obj/machinery/power/terminal,/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_smes)
+"JH" = (/obj/effect/floor_decal/industrial/warning{dir = 5},/obj/structure/table/reinforced,/obj/item/weapon/tool/wrench,/obj/item/weapon/tool/crowbar/red,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
+"Ke" = (/obj/machinery/ntnet_relay,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "Kl" = (/turf/simulated/floor/plating,/area/engineering/engine_smes)
 "KQ" = (/turf/simulated/wall/r_wall,/area/engineering/engine_smes)
+"Lk" = (/obj/machinery/telecomms/relay/preset/triumph/deck_one,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
+"Lp" = (/obj/machinery/door/airlock/maintenance_hatch{frequency = 1381; icon_state = "door_locked"; id_tag = "server_access_outer"; locked = 1; name = "Telecoms Server Access"; req_access = list(61)},/turf/simulated/floor/tiled/techfloor,/area/space)
 "Lu" = (/obj/effect/floor_decal/borderfloor/corner{dir = 8},/obj/effect/floor_decal/corner/yellow/bordercorner{dir = 8},/turf/simulated/floor/tiled/steel,/area/space)
 "LQ" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 6},/turf/space,/area/space)
+"LT" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_smes)
+"Mh" = (/obj/structure/table/reinforced,/obj/fiftyspawner/rglass,/obj/fiftyspawner/steel,/obj/fiftyspawner/rods,/obj/fiftyspawner/plasteel,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
 "Ms" = (/obj/machinery/power/smes/buildable{RCon_tag = "Power - Main One"; charge = 2e+007; cur_coils = 4; input_attempt = 1; input_level = 500000; output_level = 1e+006},/obj/structure/cable{d2 = 4; icon_state = "0-4"},/obj/effect/floor_decal/industrial/warning{dir = 1},/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/plating,/area/engineering/engine_smes)
+"Mt" = (/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "MC" = (/obj/structure/railing{dir = 1},/obj/structure/railing{dir = 8},/obj/structure/lattice,/turf/space,/area/space)
-"MI" = (/obj/structure/closet/firecloset,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
+"MP" = (/obj/machinery/atmospherics/portables_connector{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/space)
 "Nc" = (/obj/machinery/door/firedoor/glass,/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor,/area/space)
 "No" = (/obj/structure/railing{dir = 4},/turf/space,/area/space)
 "ND" = (/obj/structure/railing{dir = 1},/turf/simulated/floor/airless/ceiling,/area/space)
 "NJ" = (/obj/machinery/button/remote/blast_door{dir = 8; id = "engifrontdesk"; name = "Front Desk Shutters"; pixel_x = 30; pixel_y = 1},/obj/effect/floor_decal/steeldecal/steel_decals10{dir = 5},/obj/effect/floor_decal/steeldecal/steel_decals10{dir = 6},/turf/simulated/floor/tiled/steel,/area/space)
+"NW" = (/obj/machinery/telecomms/bus/preset_four,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "Os" = (/obj/structure/lattice,/obj/structure/grille,/obj/structure/railing{dir = 1},/turf/space,/area/space)
+"OE" = (/obj/machinery/telecomms/processor/preset_one,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
+"Pd" = (/obj/machinery/telecomms/server/presets/service/triumph,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
+"Po" = (/obj/machinery/door/airlock/maintenance_hatch{frequency = 1381; icon_state = "door_locked"; id_tag = "server_access_inner"; locked = 1; name = "Telecoms Server Access"; req_access = list(61)},/turf/simulated/floor/tiled/techfloor,/area/space)
 "PJ" = (/obj/effect/shuttle_landmark/triumph/deck1/starboard,/turf/space,/area/space)
+"Qa" = (/obj/machinery/telecomms/receiver/preset_right/triumph,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "Qw" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable{d2 = 8; icon_state = "0-8"},/obj/machinery/power/sensor{name = "Powernet Sensor - Master Grid"; name_tag = "Master"},/turf/simulated/floor/plating,/area/engineering/engine_smes)
+"QC" = (/obj/effect/floor_decal/borderfloor,/obj/effect/floor_decal/corner/yellow/border,/obj/machinery/computer/atmoscontrol{dir = 1},/turf/simulated/floor/tiled/steel,/area/space)
 "Rg" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 4},/turf/space,/area/space)
 "Rh" = (/obj/machinery/door/blast/regular{dir = 4; id = "engineemergancy"; name = "Engine Emergancy Access"},/obj/effect/floor_decal/industrial/warning{dir = 8},/turf/simulated/floor/plating,/area/engineering/engine_room)
 "Rk" = (/obj/machinery/door/firedoor/glass,/obj/machinery/atmospherics/pipe/simple/visible/cyan{dir = 4},/obj/effect/wingrille_spawn/reinforced_phoron,/turf/simulated/floor/tiled/techfloor/grid,/area/engineering/engine_room)
-"Ro" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_smes)
-"RP" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/door/blast/regular{density = 0; icon_state = "pdoor0"; id = "SMESRadShield"; name = "Radiation Shield"; opacity = 0},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
-"Tl" = (/obj/effect/floor_decal/borderfloor,/obj/effect/floor_decal/corner/yellow/border,/obj/machinery/computer/atmoscontrol{dir = 1},/turf/simulated/floor/tiled/steel,/area/space)
+"Rt" = (/obj/effect/floor_decal/industrial/warning,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
+"Ss" = (/obj/machinery/telecomms/server/presets/unused,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "Tq" = (/turf/simulated/floor/holofloor/tiled/dark,/area/engineering/hallway/lower)
+"Ts" = (/obj/machinery/telecomms/processor/preset_two,/turf/simulated/floor/tiled/dark{nitrogen = 100; temperature = 80},/area/space)
 "Uf" = (/obj/machinery/door/airlock/maintenance/engi,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
 "Uy" = (/obj/structure/cable{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/plating,/area/engineering/engine_smes)
 "UJ" = (/obj/structure/lattice,/obj/structure/railing{dir = 8},/obj/structure/railing,/turf/space,/area/space)
 "UN" = (/obj/structure/railing{dir = 8},/obj/structure/railing,/turf/space,/area/space)
 "UQ" = (/obj/structure/table/rack/shelf/steel,/obj/item/weapon/book/manual/evaguide,/obj/item/weapon/book/manual/atmospipes,/obj/item/weapon/book/manual/engineering_guide,/obj/item/weapon/book/manual/engineering_construction,/obj/effect/floor_decal/borderfloor{dir = 1},/obj/effect/floor_decal/corner/yellow/border{dir = 1},/turf/simulated/floor/tiled/steel,/area/space)
 "Vn" = (/obj/effect/floor_decal/steeldecal/steel_decals4{dir = 6},/obj/effect/floor_decal/steeldecal/steel_decals4{dir = 1},/turf/simulated/floor/tiled/steel,/area/space)
+"VH" = (/obj/effect/floor_decal/industrial/warning{dir = 4},/obj/machinery/door/airlock/maintenance/engi,/obj/machinery/door/firedoor,/turf/simulated/floor/plating,/area/space)
 "VI" = (/turf/simulated/shuttle/wall/voidcraft/hard_corner,/area/engineering/hallway/lower)
-"VP" = (/obj/structure/lattice,/obj/effect/landmark/engine_loader,/turf/space,/area/space)
 "We" = (/obj/structure/lattice,/obj/structure/railing{dir = 1},/turf/space,/area/space)
+"Wm" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/structure/cable/cyan{d1 = 2; d2 = 8; icon_state = "2-8"},/obj/machinery/power/terminal{dir = 1},/obj/structure/cable{d2 = 4; icon_state = "0-4"},/obj/machinery/button/remote/blast_door{desc = "A remote control-switch for the engine control room blast doors."; dir = 4; id = "SMESRadShield"; name = "SMES Radiation Shield Controller"; pixel_x = -25; pixel_y = -37; req_access = list(10)},/obj/machinery/button/remote/airlock{dir = 4; id = "engine_electrical_maintenance"; name = "Door Bolt Control"; pixel_x = -25; pixel_y = -27; specialfunctions = 4},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
 "Ww" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging{dir = 4},/obj/structure/lattice,/turf/space,/area/space)
-"WW" = (/obj/effect/floor_decal/industrial/warning{dir = 1},/obj/structure/table/reinforced,/obj/item/weapon/storage/toolbox/electrical,/obj/item/clothing/gloves/yellow,/obj/item/device/multitool,/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
 "WX" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/tiled/steel,/area/space)
 "XQ" = (/turf/simulated/shuttle/wall/voidcraft/blue,/area/engineering/hallway/lower)
 "XU" = (/obj/machinery/atmospherics/pipe/simple/heat_exchanging,/turf/space,/area/space)
 "Yi" = (/obj/machinery/power/smes/buildable{RCon_tag = "Power - Main Two"; charge = 2e+007; cur_coils = 4; input_attempt = 1; input_level = 500000; output_level = 1e+006},/obj/structure/cable{d2 = 4; icon_state = "0-4"},/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/industrial/warning/cee{dir = 4},/turf/simulated/floor/plating,/area/engineering/engine_smes)
 "Yl" = (/obj/machinery/computer/atmos_alert{dir = 4},/turf/simulated/floor/tiled/steel,/area/space)
 "Yp" = (/turf/simulated/floor/plating,/area/maintenance/engi_engine)
-"Yq" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_smes)
+"Yx" = (/obj/effect/floor_decal/industrial/warning{dir = 4},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/hatch{icon_state = "door_locked"; id_tag = "engine_electrical_maintenance"; locked = 1; name = "Engine Room"; req_one_access = list(11)},/obj/structure/cable/cyan{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
+"YW" = (/obj/effect/floor_decal/industrial/hatch/yellow,/obj/machinery/door/blast/regular{density = 0; icon_state = "pdoor0"; id = "SMESRadShield"; name = "Radiation Shield"; opacity = 0},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/techmaint,/area/engineering/engine_room)
 "Zd" = (/obj/structure/table/reinforced,/obj/machinery/door/window/northleft{name = "Engineering Reception Desk"; req_access = list(10)},/obj/machinery/door/blast/shutters{density = 0; icon_state = "shutter0"; id = "engifrontdesk"; name = "Front Desk Shutters"; opacity = 0},/turf/simulated/floor/tiled/steel,/area/space)
 "Zf" = (/obj/machinery/door/firedoor/glass,/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor,/area/space)
 "Zj" = (/obj/structure/lattice,/turf/space,/area/space)
-"ZP" = (/obj/effect/floor_decal/industrial/warning,/obj/structure/cable{d2 = 2; icon_state = "0-2"},/obj/machinery/power/apc{dir = 4; name = "east bump"; pixel_x = 28},/turf/simulated/floor/tiled/techfloor,/area/engineering/engine_smes)
 "ZZ" = (/turf/simulated/floor/plating,/area/engineering/engine_room)
 
 (1,1,1) = {"
@@ -187,20 +221,20 @@ fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNfNfNfNfNeDfNfNeDyWyWyWkKkKyWyWfNfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNeDZjZjeDZjZjZjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNZjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDZjZjZjZjZjZjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNZjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNZjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNfNfNfNfNeDfNfNeDBjperCrCrCpesIeDfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDLkpeehtavzpewieDfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDMtpepepepepeMteDfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDEluupeHEpeQaPdeDfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDpepepepepepepeeDfNfNfNfNfNeDfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDpeSslibRFAeSpeeDfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDpepepepepepepeeDfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDTspTpeKepeNWqDeDfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDnvOEpeHApeDfyzeDfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNeDZjZjeDZjZjZjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDpepepepepepepeeDfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNZjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNeDeDeDeDPoeDeDeDeDfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDZjZjZjZjZjZjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNeDeDgrjfLpfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNZjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDeDfNfNfNfNeDMPBCBCeDfNfNfNfNfNfNfNfNfNfNeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNZjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNeDeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNZjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDZjZjZjZjZjZjZjZjfNfNfNfNZjfNfNfNZjfNeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDeDeDeDZfZfZfeDZfZfZfeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNLQWwRgRgRgRgWwDMfNfNfNZjfNfNfNZjfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
@@ -210,20 +244,20 @@ fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNDtZjfNXUBsXUXUXUXUBsXUXUBsXUBsXUXUXUFhIJqNZZZZZZZZ
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXUBsXUXUXUXUBsXUXUBsXUBsXUXUXUfNfNzbZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzeDIYIYIYIYIYIYIYIYIYfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNbEfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDZjBsBsBsBsBsBsBsBsBsBsBsBsBsBszXWwIJRkZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzeDIYeDxvxvxvYpxvxvxvfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNDtfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXUBsXUXUXUXUBsXUXUBsXUBsXUXUfNfNfNzzZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzeDIYeDVIXQXQiRXQVImneDeDnjnjeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDbEeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXUBsXUXUXUXUBsXUXUBsXUBsXUXUzzzzzzzzZZZZZZZZZZZZZZZZZZZZZZZZZZCMRhvNIYeDXQTqTqTqTqXQmnaYIwnjnjeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXUBsXUXUXUXUBsXUXUBsXUBsXUXUzzzzzzzzZZZZZZZZZZZZZZZZZZZZZZZZZZCMRhVHIYeDXQTqTqTqTqXQmnaYIwnjnjeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNXUBsFhHeFhHezXHeFhJcFhJcFhHezzZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzeDIYeDXQleTqTqTqXQmnnjzZnjnjeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjZjAPAPZjZjZjZjZjZjZjZjZjZjZjZjzzZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzeDIYeDVIXQTqTqXQVImnnjnjnjnjeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDhjNceDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNXUXUfNfNfNfNfNfNZjuBfNZjfNfNzzZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzeDnjnjnjnjnjnjnjnjnjnjnjnjnjeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNAhfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNXUXUDtfNfNfNfNfNZjvXkqkqkqkqzzZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzeDnjnjnjnjnjnjnjnjnjnjnjnjnjeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNFLfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNXUXUfNfNfNfNfNfNZjuBfNZjfNfNzzZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZzzeDnjnjnjnjnjnjnjnjnjnjnjnjnjeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNjNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjZjAPAPZjZjZjZjZjZjZjZjZjZjZjZjzzZZZZZZZZZZZZZZZZZZZZZZzzzzzzzzzzzzzzeDnjnjnjnjnjnjnjnjnjnjnjnjnjeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDhjyaeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNXUFhWwRgWwRgWwRgRgWwRgWwRgDMzzZZZZZZZZZZZZZZZZZZZZZZzzzzMInKnKAVcBKQnjnjeDoFZdDIrheDeDeDeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXULQybLQybLQybLQDMBLDMBLDMXUzzzzzzzzZZZZZZZZZZZZZZZZzzzzudsrsrsrZPKQKQeDeDzucVNJxleDeDnjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXUXUBsXUBsXUBsXUXUBsXUBsXUXUfNfNfNzbZZZZZZZZZZZZZZdVBTRPiDCvKjyYjoyYKQwdfzfzfzfzfzUQeDnjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDbEeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNXUFhWwRgWwRgWwRgRgWwRgWwRgDMzzZZZZZZZZZZZZZZZZZZZZZZzzzzyNysysjWMhKQnjnjeDoFZdDIrheDeDeDeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXULQybLQybLQybLQDMBLDMBLDMXUzzzzzzzzZZZZZZZZZZZZZZZZzzzzCaRtRtRtBEKQKQeDeDzucVNJxleDeDnjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXUXUBsXUBsXUBsXUXUBsXUBsXUXUfNfNfNzbZZZZZZZZZZZZZZdVyXYWfUIEjxyYLTyYKQwdfzfzfzfzfzUQeDnjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDbEeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDZjBsBsBsBsBsBsBsBsBsBsBsBsBsAPZjZjZjzbZZZZZZZZZZZZZZZZzzabfCMsYiQwUyyYyEVnnjnjnjnjnjqSnjnjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXUXUBsXUXUXUBsXUXUBsXUBsXUXUfNfNfNzbZZZZZZZZZZZZZZBcvavTmTRoRoRoYqyYKQLuYlWXgBWXigkTeDnjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNbEfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXUXUBsXUXUXUBsXUXUBsXUBsXUXUfNfNfNzzZZZZZZZZZZZZZZZZzzzzmxzdoHKlAnKQKQgUFqTltGaTFqbceDnjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
-fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDZjBsBsBsXUXUXUBsXUBsBsBsBszXJcVPZjZjeDeDeDeDeDeDeDeDeDeDKQWWDvyOKlKQKQKQeDeDeDeDeDeDUfeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXUXUBsXUXUXUBsXUXUBsXUBsXUXUfNfNfNzbZZZZZZZZZZZZZZBcYxtzWmuUuUuUpmyYKQLuYlWXgBWXigkTeDnjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNbEfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNXUXUBsXUXUXUBsXUXUBsXUBsXUXUfNfNfNzzZZZZZZZZZZZZZZZZzzzzCnzdoHKlAnKQKQgUFqQCkVaTFqbceDnjfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
+fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDZjBsBsBsXUXUXUBsXUBsBsBsBszXJckhZjZjeDeDeDeDeDeDeDeDeDeDKQsxJHyOKlKQKQKQeDeDeDeDeDeDUfeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNFhHezXHeFhHezXHeFhJcFhJcfNfNfNZjfNeDIYIYIYIYIYIYIYIYeDKQKQKQKQFHKQIYIYIYIYIYIYIYIYIYIYIYfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNZjfNfNfNZjfNfNfNZjfNfNfNfNZjfNfNfNZjfNeDIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYIYfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
 fNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDZjZjZjZjZjZjZjZjfNfNfNfNZjfNfNfNZjfNeDeDeDeDeDeDeDeDIYIYIYIYIYIYIYIYIYeDeDeDeDeDeDeDeDeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDeDfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfNfN
