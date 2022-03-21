@@ -40,6 +40,7 @@
 	selection_color = "#d6d05c"
 	economic_modifier = 8
 	minimal_player_age = 7
+	whitelist_only = 1
 	pto_type = PTO_EXPLORATION
 	dept_time_required = 20
 
@@ -123,6 +124,7 @@
 	selection_color = "#999440"
 	economic_modifier = 6
 	minimal_player_age = 3
+	whitelist_only = 1
 	pto_type = PTO_EXPLORATION
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_eva, access_maint_tunnels, access_external_airlocks, access_pilot)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_pilot)
