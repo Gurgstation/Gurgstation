@@ -327,6 +327,7 @@
 /obj/structure/sign/directions/evac{
 	pixel_x = -32
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "aO" = (
@@ -547,8 +548,11 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/firealarm/angled{
-	dir = 4
+/obj/machinery/disposal/wall/cleaner{
+	dir = 8
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
@@ -641,6 +645,7 @@
 /obj/structure/sign/painting/public{
 	pixel_x = -30
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/aft)
 "bv" = (
@@ -986,7 +991,11 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+	dir = 5
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/stellardelight/deck1/resleeving)
@@ -1074,7 +1083,10 @@
 	},
 /obj/structure/curtain/open/shower/medical,
 /obj/structure/window/reinforced{
-	dir = 1
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
 	},
 /turf/simulated/floor/tiled/dark,
 /area/stellardelight/deck1/resleeving)
@@ -1660,20 +1672,20 @@
 /area/security/security_cell_hallway)
 "dD" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/storage/box/shotgunshells{
-	pixel_x = -2;
-	pixel_y = 7
-	},
-/obj/item/weapon/storage/box/shotgunshells{
-	pixel_x = 2;
-	pixel_y = 3
-	},
-/obj/item/weapon/storage/box/shotgunshells{
-	pixel_x = 6;
-	pixel_y = -1
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/purple,
 /obj/effect/floor_decal/milspec/color/black,
+/obj/item/ammo_magazine/ammo_box/b12g/pellet{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/item/ammo_magazine/ammo_box/b12g/pellet{
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/obj/item/ammo_magazine/ammo_box/b12g/pellet{
+	pixel_x = -5;
+	pixel_y = 7
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "dF" = (
@@ -1755,6 +1767,10 @@
 "dP" = (
 /obj/structure/cable/white{
 	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/aft)
@@ -2074,6 +2090,10 @@
 "ev" = (
 /obj/machinery/computer/transhuman/resleeving{
 	dir = 8
+	},
+/obj/item/device/radio/intercom{
+	dir = 4;
+	pixel_x = 24
 	},
 /turf/simulated/floor/tiled/eris/white/bluecorner,
 /area/stellardelight/deck1/resleeving)
@@ -2454,6 +2474,9 @@
 	dir = 1
 	},
 /obj/item/weapon/reagent_containers/glass/beaker/sulphuric,
+/obj/machinery/light{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/rnd/research)
 "fq" = (
@@ -2651,6 +2674,8 @@
 	color = "#42038a";
 	icon_state = "0-2"
 	},
+/obj/item/clothing/suit/bio_suit/scientist,
+/obj/item/clothing/head/bio_hood/scientist,
 /turf/simulated/floor/tiled/steel_grid,
 /area/rnd/xenobiology)
 "fN" = (
@@ -3391,6 +3416,7 @@
 /obj/machinery/door/airlock/angled_bay/double/glass{
 	name = "glass airlock"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/stellardelight/deck1/port)
 "hq" = (
@@ -3711,6 +3737,7 @@
 /obj/machinery/power/apc/angled{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "hS" = (
@@ -3793,6 +3820,16 @@
 /obj/structure/closet/bombcloset,
 /turf/simulated/floor/tiled/dark,
 /area/rnd/xenobiology)
+"ia" = (
+/obj/structure/cable/white{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/obj/machinery/firealarm/angled{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/stellardelight/deck1/port)
 "ib" = (
 /obj/machinery/power/pointdefense{
 	id_tag = "sd_pd"
@@ -4142,6 +4179,7 @@
 /obj/machinery/camera/network/halls{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/aft)
 "iK" = (
@@ -4219,6 +4257,16 @@
 /obj/effect/floor_decal/steeldecal/steel_decals4,
 /turf/simulated/floor/tiled/milspec,
 /area/stellardelight/deck1/exploration)
+"iR" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/white,
+/area/crew_quarters/toilet)
 "iS" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -4800,6 +4848,7 @@
 /obj/machinery/alarm/angled{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "kf" = (
@@ -4965,6 +5014,7 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/toilet)
 "kz" = (
@@ -6492,6 +6542,9 @@
 /obj/structure/sign/department/medbay{
 	pixel_x = -32
 	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/aft)
 "nH" = (
@@ -6521,6 +6574,7 @@
 /obj/machinery/door/airlock/angled_bay/double/glass{
 	name = "glass airlock"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/steel_ridged,
 /area/stellardelight/deck1/port)
 "nK" = (
@@ -6672,6 +6726,12 @@
 /obj/item/weapon/hand_labeler,
 /turf/simulated/floor/tiled/dark,
 /area/security/warden)
+"ob" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/stellardelight/deck1/port)
 "oc" = (
 /obj/machinery/light{
 	dir = 4
@@ -6714,11 +6774,8 @@
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 5
-	},
 /obj/machinery/button/remote/airlock{
-	desc = "A remote control switch for the medbay foyer.";
+	desc = "A remote control switch for the cleaning room exit.";
 	dir = 4;
 	id = "resleeveexit";
 	name = "Door Control";
@@ -6731,6 +6788,10 @@
 /obj/effect/floor_decal/steeldecal/steel_decals4{
 	dir = 1
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/universal,
 /turf/simulated/floor/tiled/dark,
 /area/stellardelight/deck1/resleeving)
 "oi" = (
@@ -6871,6 +6932,9 @@
 /obj/effect/floor_decal/steeldecal/steel_decals3{
 	dir = 6
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/aft)
 "oz" = (
@@ -6927,6 +6991,10 @@
 	},
 /obj/structure/cable/green{
 	icon_state = "1-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/toilet)
@@ -7089,6 +7157,10 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
@@ -7372,6 +7444,14 @@
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals4{
 	dir = 1
+	},
+/obj/machinery/button/remote/airlock{
+	desc = "A remote control switch for the cleaning room.";
+	dir = 4;
+	id = "resleeveclean";
+	name = "Door Control";
+	pixel_x = -27;
+	pixel_y = -27
 	},
 /turf/simulated/floor/tiled/eris/white/bluecorner,
 /area/stellardelight/deck1/resleeving)
@@ -7787,6 +7867,7 @@
 /obj/structure/sign/deck1{
 	pixel_x = -32
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/aft)
 "qw" = (
@@ -7962,7 +8043,9 @@
 /turf/simulated/floor/carpet,
 /area/chapel/main)
 "qR" = (
-/obj/structure/table/glass,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
 /turf/simulated/floor/tiled/dark,
 /area/stellardelight/deck1/resleeving)
 "qS" = (
@@ -8080,6 +8163,7 @@
 /obj/structure/sign/painting/public{
 	pixel_x = -30
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "rf" = (
@@ -8093,6 +8177,7 @@
 /obj/structure/cable/white{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "rh" = (
@@ -8696,11 +8781,7 @@
 "sr" = (
 /obj/structure/closet/secure_closet/warden,
 /obj/item/weapon/book/manual/security_space_law,
-/obj/item/weapon/gun/projectile/shotgun/pump/combat{
-	ammo_type = /obj/item/ammo_casing/a12g/beanbag;
-	desc = "Built for close quarters combat, the Hesphaistos Industries KS-40 is widely regarded as a weapon of choice for repelling boarders. This one has 'Property of the Warden' inscribed on the stock.";
-	name = "warden's shotgun"
-	},
+/obj/item/gunbox/warden,
 /obj/machinery/power/apc/angled{
 	dir = 8
 	},
@@ -8755,6 +8836,18 @@
 	},
 /turf/simulated/wall/bay/r_wall/steel,
 /area/security/armoury)
+"sw" = (
+/obj/structure/cable/green{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/stellardelight/deck1/port)
 "sx" = (
 /obj/structure/cable/pink{
 	icon_state = "1-2"
@@ -9753,6 +9846,7 @@
 	dir = 8;
 	pixel_x = -27
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "uH" = (
@@ -10100,6 +10194,16 @@
 /obj/item/weapon/pen,
 /turf/simulated/floor/tiled/dark,
 /area/security/security_processing)
+"vt" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/item_bank{
+	dir = 4;
+	pixel_x = -29
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/stellardelight/deck1/starboard)
 "vu" = (
 /turf/simulated/wall/bay/r_wall/brown,
 /area/stellardelight/deck1/dorms/dorm5)
@@ -10528,6 +10632,7 @@
 /obj/structure/cable/white{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "wv" = (
@@ -11042,6 +11147,16 @@
 	},
 /turf/simulated/floor/wood,
 /area/library)
+"xC" = (
+/obj/structure/cable/white{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 2;
+	icon_state = "pipe-j2"
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/stellardelight/deck1/port)
 "xD" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -12004,21 +12119,22 @@
 /area/security/warden)
 "zE" = (
 /obj/structure/table/rack/shelf/steel,
-/obj/item/weapon/storage/box/stunshells{
-	pixel_x = 3;
-	pixel_y = 3
-	},
-/obj/item/weapon/storage/box/flashshells{
-	pixel_x = 1
-	},
-/obj/item/weapon/storage/box/beanbags{
-	pixel_x = 4;
-	pixel_y = -5
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/purple{
 	dir = 6
 	},
 /obj/effect/floor_decal/milspec/color/black,
+/obj/item/ammo_magazine/ammo_box/b12g/stunshell{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/obj/item/ammo_magazine/ammo_box/b12g/flash{
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/obj/item/ammo_magazine/ammo_box/b12g/beanbag{
+	pixel_x = -5;
+	pixel_y = 7
+	},
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
 "zG" = (
@@ -12543,6 +12659,7 @@
 /obj/item/weapon/book/bundle/custom_library/nonfiction/skrelliancastesystem,
 /obj/item/weapon/book/bundle/custom_library/nonfiction/viabilityofcorporategov,
 /obj/item/weapon/book/custom_library/nonfiction/freesirisailightbulbs,
+/obj/item/weapon/book/manual/synthetic_life,
 /turf/simulated/floor/wood,
 /area/library)
 "AI" = (
@@ -13022,6 +13139,7 @@
 /obj/machinery/door/airlock/angled_bay/standard/color{
 	dir = 8;
 	door_color = "#ffffff";
+	id_tag = "m-ex-room";
 	name = "Exam Room";
 	req_access = list(5);
 	stripe_color = "#5a96bb"
@@ -13842,6 +13960,7 @@
 /obj/machinery/newscaster{
 	pixel_x = -29
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "Ds" = (
@@ -14416,20 +14535,9 @@
 /turf/simulated/floor/tiled/eris/white/bluecorner,
 /area/stellardelight/deck1/paramedic)
 "EN" = (
-/obj/structure/mirror{
-	pixel_y = 38
-	},
-/obj/structure/sink{
-	pixel_y = 20
-	},
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/structure/cable/green{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/crew_quarters/toilet)
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/techmaint,
+/area/stellardelight/deck1/port)
 "EO" = (
 /obj/machinery/door/firedoor/glass/hidden/steel{
 	dir = 8
@@ -14483,6 +14591,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals3{
 	dir = 5
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/aft)
 "EU" = (
@@ -14581,7 +14690,6 @@
 	},
 /obj/structure/closet/secure_closet/detective,
 /obj/item/weapon/reagent_containers/spray/pepper,
-/obj/item/weapon/gun/energy/taser,
 /obj/item/device/camera{
 	desc = "A one use - polaroid camera. 30 photos left.";
 	name = "detectives camera";
@@ -14738,6 +14846,9 @@
 	fill_color = "#5c5c5c";
 	name = "Unisex Restrooms";
 	stripe_color = "#89bd66"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/crew_quarters/toilet)
@@ -15406,6 +15517,7 @@
 /obj/structure/sign/painting/library_secure{
 	pixel_y = 30
 	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled/dark,
 /area/stellardelight/deck1/resleeving)
 "Ha" = (
@@ -15487,6 +15599,10 @@
 /area/maintenance/stellardelight/deck1/portcent)
 "Hi" = (
 /obj/machinery/computer/timeclock/premade/west,
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "Hj" = (
@@ -15998,16 +16114,6 @@
 /obj/effect/floor_decal/milspec/color/black,
 /turf/simulated/floor/tiled/dark,
 /area/security/armoury)
-"Ij" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/obj/item/device/radio/intercom{
-	dir = 8;
-	pixel_x = -24
-	},
-/turf/simulated/floor/tiled/eris/white/bluecorner,
-/area/stellardelight/deck1/resleeving)
 "Ik" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -16403,6 +16509,7 @@
 	pixel_x = -32;
 	pixel_y = 6
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/aft)
 "IX" = (
@@ -16575,6 +16682,14 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
+/obj/machinery/button/remote/airlock{
+	dir = 4;
+	id = "m-ex-room";
+	name = "Exam Room Lock";
+	pixel_x = -30;
+	pixel_y = -8;
+	specialfunctions = 4
+	},
 /turf/simulated/floor/tiled/eris/white/bluecorner,
 /area/medical/exam_room)
 "Js" = (
@@ -16634,6 +16749,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "JB" = (
@@ -16862,11 +16978,16 @@
 /turf/simulated/floor/tiled/eris/steel/cargo,
 /area/stellardelight/deck1/oreprocessing)
 "Kc" = (
-/obj/machinery/washing_machine,
-/obj/machinery/atmospherics/unary/vent_pump/on,
 /obj/item/device/radio/intercom{
 	dir = 1;
 	pixel_y = 24
+	},
+/obj/machinery/transhuman/autoresleever,
+/obj/machinery/atmospherics/unary/vent_pump/siphon/on/atmos{
+	external_pressure_bound = 101.3;
+	external_pressure_bound_default = 101.3;
+	pressure_checks = 1;
+	pressure_checks_default = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/stellardelight/deck1/resleeving)
@@ -16877,6 +16998,7 @@
 /obj/machinery/status_display{
 	pixel_x = -32
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "Ke" = (
@@ -17439,6 +17561,9 @@
 /obj/machinery/firealarm/angled{
 	dir = 8
 	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/eris/white/bluecorner,
 /area/medical/exam_room)
 "Ls" = (
@@ -17599,6 +17724,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals3{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "LD" = (
@@ -17759,9 +17885,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -17769,6 +17892,11 @@
 	dir = 4
 	},
 /obj/machinery/alarm/angled,
+/obj/structure/disposalpipe/sortjunction{
+	dir = 4;
+	name = "Resleeving";
+	sortType = "Resleeving"
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "LW" = (
@@ -17947,6 +18075,9 @@
 "Mq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "Mr" = (
@@ -18062,6 +18193,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals6{
 	dir = 6
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "MJ" = (
@@ -18078,8 +18210,8 @@
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 5
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -18239,6 +18371,9 @@
 /obj/structure/closet/crate/bin{
 	anchored = 1
 	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/eris/white/bluecorner,
 /area/stellardelight/deck1/resleeving)
 "MZ" = (
@@ -18256,6 +18391,11 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/stellardelight/deck1/shower)
+"Na" = (
+/obj/item/weapon/storage/box/nifsofts_mining,
+/obj/structure/table/reinforced,
+/turf/simulated/floor/tiled/eris/steel/cargo,
+/area/stellardelight/deck1/miningequipment)
 "Nb" = (
 /obj/machinery/door/firedoor/glass,
 /obj/machinery/door/blast/angled{
@@ -19540,6 +19680,15 @@
 /area/crew_quarters/toilet)
 "PV" = (
 /obj/machinery/light/small,
+/obj/structure/disposaloutlet{
+	dir = 4
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/stellardelight/deck1/resleeving)
 "PW" = (
@@ -19620,6 +19769,13 @@
 /obj/machinery/alarm/angled,
 /turf/simulated/floor/carpet/purcarpet,
 /area/stellardelight/deck1/dorms/dorm3)
+"Qf" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/techmaint,
+/area/stellardelight/deck1/port)
 "Qg" = (
 /obj/structure/table/steel,
 /obj/item/device/flashlight/lamp,
@@ -19745,6 +19901,7 @@
 /obj/structure/cable/white{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/aft)
 "Qw" = (
@@ -19936,6 +20093,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/toilet)
 "QU" = (
@@ -20146,6 +20304,9 @@
 	name = "Resleeving Lab";
 	req_access = list(5);
 	stripe_color = "#5a96bb"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel_ridged,
 /area/stellardelight/deck1/resleeving)
@@ -20399,6 +20560,12 @@
 /obj/machinery/alarm/angled{
 	dir = 8
 	},
+/obj/machinery/disposal/wall/cleaner{
+	dir = 1
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/toilet)
 "RL" = (
@@ -20470,8 +20637,9 @@
 /obj/machinery/door/airlock/angled_bay/standard/color{
 	dir = 8;
 	door_color = "#ffffff";
+	id_tag = "resleeveclean";
 	name = "Cleaning Room";
-	req_access = null;
+	req_access = list(5);
 	stripe_color = "#5a96bb"
 	},
 /turf/simulated/floor/tiled/steel_ridged,
@@ -20544,6 +20712,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals3{
 	dir = 4
 	},
+/obj/structure/disposalpipe/junction,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "Sb" = (
@@ -20805,6 +20974,7 @@
 /obj/structure/cable/green{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/toilet)
 "SH" = (
@@ -22815,6 +22985,7 @@
 /obj/machinery/camera/network/halls{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "WA" = (
@@ -23431,6 +23602,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/crew_quarters/toilet)
 "XQ" = (
@@ -23974,6 +24148,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals3{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/port)
 "YT" = (
@@ -24384,6 +24559,7 @@
 	dir = 4;
 	pixel_x = -32
 	},
+/obj/structure/disposalpipe/segment,
 /turf/simulated/floor/tiled/techmaint,
 /area/stellardelight/deck1/aft)
 "ZP" = (
@@ -31959,7 +32135,7 @@ Ki
 IY
 vd
 IY
-EN
+Um
 XP
 NH
 in
@@ -32527,7 +32703,7 @@ oC
 ky
 QS
 SG
-LR
+iR
 RK
 NH
 Ew
@@ -32797,7 +32973,7 @@ Hi
 Dq
 aN
 hp
-YT
+Qf
 YS
 rg
 rg
@@ -32806,9 +32982,9 @@ rg
 JA
 wu
 Kd
-rg
+ia
 Sa
-rg
+xC
 hR
 ke
 rg
@@ -32935,7 +33111,7 @@ jJ
 qm
 Vw
 ug
-YT
+ob
 nS
 Ov
 zM
@@ -32950,7 +33126,7 @@ ut
 WK
 wW
 oU
-WK
+sw
 Jv
 cK
 qy
@@ -33077,7 +33253,7 @@ ew
 AG
 ms
 CZ
-CZ
+ms
 hk
 YF
 YF
@@ -33091,7 +33267,7 @@ KF
 KF
 KF
 uk
-YT
+ob
 HW
 TT
 Fk
@@ -33219,7 +33395,7 @@ YT
 WF
 Pt
 SL
-YT
+ob
 Je
 YF
 Vv
@@ -33233,7 +33409,7 @@ TN
 pm
 KF
 kU
-YT
+ob
 BI
 Wf
 Jt
@@ -33359,9 +33535,9 @@ Ku
 hY
 Ku
 LV
-YT
-YT
-YT
+EN
+EN
+Pt
 Sh
 Wn
 SY
@@ -33517,7 +33693,7 @@ Li
 WW
 KF
 uS
-YT
+ob
 YT
 cO
 cd
@@ -33543,7 +33719,7 @@ dl
 QK
 pV
 xf
-qV
+Na
 MG
 vC
 vi
@@ -33819,7 +33995,7 @@ dH
 oW
 vb
 pA
-Ij
+hv
 CG
 ZB
 hg
@@ -35779,7 +35955,7 @@ Sj
 Jb
 Sj
 mS
-Sj
+vt
 Sj
 Sj
 pg
