@@ -38,7 +38,7 @@
 "bl" = (/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_emptycourt)
 "bm" = (/obj/effect/floor_decal/corner/red{dir = 6},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_emptycourt)
 "bn" = (/turf/simulated/shuttle/floor,/area/shuttle/supply)
-"bo" = (/obj/structure/flora/ausbushes/brflowers,/obj/effect/floor_decal/spline/fancy/wood/corner,/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
+"bo" = (/obj/structure/flora/ausbushes/brflowers,/obj/effect/floor_decal/spline/fancy/wood/corner,/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
 "bp" = (/obj/structure/flora/ausbushes/ywflowers,/obj/effect/floor_decal/spline/fancy/wood,/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
 "bq" = (/obj/structure/flora/ausbushes/brflowers,/obj/effect/floor_decal/spline/fancy/wood,/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
 "br" = (/obj/structure/flora/ausbushes/ywflowers,/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 8},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
@@ -50,7 +50,7 @@
 "bx" = (/obj/machinery/door/window/holowindoor{name = "Red Team"},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_emptycourt)
 "by" = (/obj/machinery/light{dir = 8},/turf/simulated/shuttle/floor,/area/shuttle/supply)
 "bz" = (/obj/machinery/light{dir = 4},/turf/simulated/shuttle/floor,/area/shuttle/supply)
-"bA" = (/obj/structure/flora/ausbushes/ywflowers,/obj/effect/floor_decal/spline/fancy/wood,/obj/effect/floor_decal/spline/fancy/wood{dir = 6},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
+"bA" = (/obj/structure/flora/ausbushes/ywflowers,/obj/effect/floor_decal/spline/fancy/wood/cee,/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
 "bB" = (/turf/simulated/floor/holofloor/desert,/area/holodeck/source_picnicarea)
 "bC" = (/obj/effect/decal/cleanable/dirt,/obj/structure/holostool,/turf/simulated/floor/holofloor/desert,/area/holodeck/source_picnicarea)
 "bD" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/holofloor/desert,/area/holodeck/source_picnicarea)
@@ -81,6 +81,7 @@
 "cc" = (/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 5},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_courtroom)
 "cd" = (/obj/structure/bed/chair/holochair{dir = 8},/obj/effect/floor_decal/carpet{dir = 8},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_courtroom)
 "ce" = (/obj/structure/bed/chair/holochair{dir = 8},/obj/effect/floor_decal/carpet{dir = 4},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_courtroom)
+"cf" = (/obj/structure/table/woodentable/holotable,/obj/effect/landmark/costume/madscientist,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
 "cs" = (/obj/machinery/door/airlock/glass_external,/obj/effect/map_helper/airlock/door/simple,/turf/simulated/shuttle/floor,/area/shuttle/supply)
 "ct" = (/obj/structure/holostool,/obj/effect/floor_decal/carpet{dir = 8},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_theatre)
 "cu" = (/obj/structure/holostool,/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_theatre)
@@ -94,11 +95,11 @@
 "cO" = (/obj/machinery/embedded_controller/radio/simple_docking_controller{frequency = 1380; id_tag = "supply_shuttle"; pixel_x = -25; req_one_access = list(13,31); tag_door = supply_shuttle_hatch},/turf/simulated/shuttle/floor,/area/shuttle/supply)
 "cP" = (/obj/structure/flora/ausbushes/ywflowers,/obj/effect/floor_decal/spline/fancy/wood{dir = 1},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
 "cQ" = (/obj/structure/flora/ausbushes/brflowers,/obj/effect/floor_decal/spline/fancy/wood{dir = 1},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
-"cR" = (/obj/structure/flora/ausbushes/ywflowers,/obj/effect/floor_decal/spline/fancy/wood{dir = 1},/obj/effect/floor_decal/spline/fancy/wood{dir = 5},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
+"cR" = (/obj/structure/flora/ausbushes/ywflowers,/obj/effect/floor_decal/spline/fancy/wood/cee{dir = 1},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
 "cS" = (/obj/structure/bed/chair/holochair{dir = 1},/obj/effect/floor_decal/carpet{dir = 8},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_courtroom)
 "cT" = (/obj/structure/bed/chair/holochair{dir = 1},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_courtroom)
 "cU" = (/obj/structure/bed/chair/holochair{dir = 1},/obj/effect/floor_decal/carpet{dir = 4},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_courtroom)
-"da" = (/obj/structure/flora/ausbushes/brflowers,/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 1},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
+"da" = (/obj/structure/flora/ausbushes/brflowers,/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 1},/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
 "db" = (/obj/structure/flora/ausbushes/ywflowers,/obj/effect/floor_decal/spline/fancy/wood/corner{dir = 4},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
 "dc" = (/obj/machinery/door/window/holowindoor{base_state = "right"; icon_state = "right"},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_courtroom)
 "dd" = (/obj/effect/floor_decal/carpet{dir = 8},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_courtroom)
@@ -142,7 +143,7 @@
 "dW" = (/obj/structure/table/holotable,/obj/effect/floor_decal/corner/red/full{dir = 1},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_thunderdomecourt)
 "dX" = (/obj/structure/table/holotable,/obj/item/clothing/gloves/boxing/hologlove,/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
 "dY" = (/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
-"ec" = (/obj/effect/landmark{name = "Holocarp Spawn Random"},/turf/simulated/floor/holofloor/space,/area/holodeck/source_space)
+"eb" = (/obj/effect/floor_decal/sign/small_g,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
 "ed" = (/obj/structure/flora/grass/both,/turf/simulated/floor/holofloor/snow,/area/holodeck/source_snowfield)
 "ee" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet,/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 9},/obj/effect/floor_decal/carpet{dir = 10},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
 "ef" = (/obj/effect/floor_decal/carpet,/obj/effect/floor_decal/carpet{dir = 1},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
@@ -161,19 +162,19 @@
 "es" = (/obj/item/clothing/glasses/sunglasses,/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/source_beach)
 "et" = (/obj/effect/overlay/palmtree_l,/obj/effect/overlay/coconut,/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/source_beach)
 "eu" = (/obj/machinery/door/window/holowindoor{name = "Red Team"},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_thunderdomecourt)
-"ev" = (/obj/machinery/door/window/holowindoor{base_state = "right"; dir = 2; icon_state = "right"; name = "Red Corner"},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
-"ew" = (/obj/structure/window/reinforced/holowindow,/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
+"ev" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 5},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
+"ew" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 4},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
 "eJ" = (/obj/structure/flora/tree/dead,/turf/simulated/floor/holofloor/snow,/area/holodeck/source_snowfield)
 "eK" = (/turf/simulated/floor/holofloor/lino,/area/holodeck/source_meetinghall)
 "eL" = (/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_meetinghall)
 "eM" = (/obj/item/weapon/beach_ball,/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/source_beach)
-"eN" = (/obj/structure/window/reinforced/holowindow{dir = 4},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
-"eO" = (/obj/effect/floor_decal/corner/red/full{dir = 8},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_boxingcourt)
-"eP" = (/obj/effect/floor_decal/corner/red{dir = 5},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_boxingcourt)
-"eQ" = (/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_boxingcourt)
-"eR" = (/obj/structure/window/reinforced/holowindow{dir = 8},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
+"eN" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 6},/turf/simulated/floor/holofloor/grass,/area/holodeck/source_picnicarea)
+"eO" = (/obj/structure/fitness/boxing_ropes{dir = 1},/obj/structure/fitness/boxing_turnbuckle{dir = 8; layer = 3.4},/turf/simulated/fitness,/area/holodeck/source_boxingcourt)
+"eP" = (/obj/structure/fitness/boxing_ropes{dir = 1},/turf/simulated/fitness,/area/holodeck/source_boxingcourt)
+"eQ" = (/obj/structure/fitness/boxing_ropes{dir = 1},/obj/structure/fitness/boxing_turnbuckle{dir = 4; layer = 3.4},/turf/simulated/fitness,/area/holodeck/source_boxingcourt)
+"eR" = (/obj/effect/floor_decal/carpet{dir = 9},/obj/effect/floor_decal/carpet{dir = 5},/obj/effect/floor_decal/carpet{dir = 6},/obj/effect/floor_decal/carpet{dir = 10},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
 "eT" = (/obj/structure/flora/grass/green,/turf/simulated/floor/holofloor/snow,/area/holodeck/source_snowfield)
-"eU" = (/obj/effect/floor_decal/carpet{dir = 5},/obj/effect/floor_decal/carpet{dir = 6},/obj/effect/floor_decal/carpet{dir = 9},/obj/effect/floor_decal/carpet{dir = 10},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
+"eU" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet{dir = 4},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
 "eV" = (/obj/structure/holostool,/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 9},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
 "eW" = (/obj/structure/holostool,/obj/effect/floor_decal/carpet{dir = 1},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
 "eX" = (/obj/structure/holostool,/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 5},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
@@ -185,10 +186,8 @@
 "fd" = (/obj/structure/window/reinforced/holowindow/disappearing,/obj/effect/floor_decal/corner/red/full,/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_thunderdomecourt)
 "fe" = (/obj/structure/window/reinforced/holowindow/disappearing,/obj/effect/floor_decal/corner/red{dir = 10},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_thunderdomecourt)
 "ff" = (/obj/structure/window/reinforced/holowindow/disappearing,/obj/effect/floor_decal/corner/red/full{dir = 4},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_thunderdomecourt)
-"fg" = (/obj/effect/floor_decal/corner/red{dir = 9},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_boxingcourt)
-"fh" = (/obj/effect/floor_decal/corner/blue/full{dir = 8},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_boxingcourt)
-"fi" = (/obj/effect/floor_decal/corner/blue/full{dir = 1},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_boxingcourt)
-"fj" = (/obj/effect/floor_decal/corner/green{dir = 6},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_boxingcourt)
+"fg" = (/obj/structure/fitness/boxing_ropes{dir = 8},/turf/simulated/fitness,/area/holodeck/source_boxingcourt)
+"fj" = (/obj/structure/fitness/boxing_ropes{dir = 4},/turf/simulated/fitness,/area/holodeck/source_boxingcourt)
 "fn" = (/obj/structure/holostool,/obj/effect/floor_decal/carpet{dir = 8},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
 "fo" = (/obj/structure/holostool,/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
 "fp" = (/obj/structure/holostool,/obj/effect/floor_decal/carpet{dir = 4},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
@@ -198,22 +197,21 @@
 "ft" = (/obj/structure/window/reinforced/holowindow/disappearing{dir = 1},/obj/effect/floor_decal/corner/green/full{dir = 8},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_thunderdomecourt)
 "fu" = (/obj/structure/window/reinforced/holowindow/disappearing{dir = 1},/obj/effect/floor_decal/corner/green{dir = 5},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_thunderdomecourt)
 "fv" = (/obj/structure/window/reinforced/holowindow/disappearing{dir = 1},/obj/effect/floor_decal/corner/green/full{dir = 1},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_thunderdomecourt)
-"fw" = (/obj/effect/floor_decal/corner/blue/full,/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_boxingcourt)
-"fx" = (/obj/effect/floor_decal/corner/blue/full{dir = 4},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_boxingcourt)
+"fx" = (/turf/simulated/fitness,/area/holodeck/source_boxingcourt)
 "fz" = (/obj/effect/floor_decal/corner/green{dir = 9},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_basketball)
 "fA" = (/obj/effect/floor_decal/corner/green{dir = 6},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_basketball)
 "fB" = (/obj/effect/floor_decal/corner/green{dir = 9},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_thunderdomecourt)
 "fC" = (/obj/effect/floor_decal/corner/green{dir = 6},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_thunderdomecourt)
-"fD" = (/obj/effect/floor_decal/corner/green{dir = 10},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_boxingcourt)
-"fE" = (/obj/effect/floor_decal/corner/green/full{dir = 4},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_boxingcourt)
+"fD" = (/obj/structure/fitness/boxing_ropes_bottom,/turf/simulated/fitness,/area/holodeck/source_boxingcourt)
+"fE" = (/obj/structure/fitness/boxing_turnbuckle{dir = 4},/obj/structure/fitness/boxing_ropes_bottom,/turf/simulated/fitness,/area/holodeck/source_boxingcourt)
 "fG" = (/obj/structure/flora/grass/brown,/turf/simulated/floor/holofloor/snow,/area/holodeck/source_snowfield)
 "fH" = (/obj/structure/holostool,/obj/effect/floor_decal/carpet{dir = 4},/turf/simulated/floor/holofloor/carpet{dir = 8},/area/holodeck/source_meetinghall)
 "fI" = (/obj/machinery/door/window/holowindoor{base_state = "right"; icon_state = "right"; name = "Green Team"},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_basketball)
 "fJ" = (/obj/effect/floor_decal/corner/green{dir = 10},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_basketball)
 "fK" = (/turf/unsimulated/beach/sand{icon_state = "beach"},/area/holodeck/source_beach)
 "fL" = (/obj/machinery/door/window/holowindoor{base_state = "right"; icon_state = "right"; name = "Green Team"},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_thunderdomecourt)
-"fM" = (/obj/structure/window/reinforced/holowindow{dir = 1},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
-"fN" = (/obj/machinery/door/window/holowindoor{dir = 1; name = "Green Corner"},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
+"fM" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet{dir = 9},/obj/effect/floor_decal/carpet{dir = 5},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
+"fN" = (/obj/structure/holostool{dir = 4},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
 "fO" = (/obj/structure/holostool,/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet,/obj/effect/floor_decal/carpet{dir = 10},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
 "fP" = (/obj/structure/holostool,/obj/effect/floor_decal/carpet,/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
 "fQ" = (/obj/structure/holostool,/obj/effect/floor_decal/carpet,/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet{dir = 6},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
@@ -225,108 +223,211 @@
 "fW" = (/obj/structure/table/holotable,/obj/item/clothing/head/helmet/thunderdome,/obj/item/clothing/suit/armor/tdome/green,/obj/item/clothing/under/color/green,/obj/item/weapon/holo/esword/green,/obj/effect/floor_decal/corner/green{dir = 10},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_thunderdomecourt)
 "fX" = (/obj/structure/table/holotable,/obj/machinery/readybutton,/obj/effect/floor_decal/corner/green/full{dir = 4},/turf/simulated/floor/holofloor/tiled,/area/holodeck/source_thunderdomecourt)
 "fY" = (/obj/structure/table/holotable,/obj/item/clothing/gloves/boxing/hologlove{icon_state = "boxinggreen"; item_state = "boxinggreen"},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
-"fZ" = (/obj/structure/window/reinforced{dir = 1},/turf/unsimulated/wall,/area/space)
-"ga" = (/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_basic)
-"gb" = (/obj/structure/bed/chair/holochair{dir = 4},/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_basic)
-"gc" = (/obj/structure/table/woodentable/holotable,/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_basic)
-"gd" = (/obj/structure/bed/chair/holochair{dir = 8},/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_basic)
-"ge" = (/obj/effect/overlay/palmtree_r,/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/holodorm/source_beach)
-"gf" = (/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/holodorm/source_beach)
-"gg" = (/obj/effect/overlay/coconut,/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/holodorm/source_beach)
-"gh" = (/obj/item/clothing/glasses/sunglasses,/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/holodorm/source_beach)
-"gi" = (/obj/effect/overlay/palmtree_l,/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/holodorm/source_beach)
-"gj" = (/obj/structure/flora/grass/brown,/obj/structure/flora/tree/dead,/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
-"gk" = (/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
-"gl" = (/turf/unsimulated/beach/sand{icon_state = "beach"},/area/holodeck/holodorm/source_beach)
-"gm" = (/obj/effect/landmark{name = "Wolfgirl Spawn"},/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
-"gn" = (/obj/structure/flora/grass/brown,/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
-"go" = (/obj/structure/flora/grass/green,/obj/structure/flora/tree/pine,/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
-"gq" = (/obj/structure/bed/holobed,/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_basic)
-"gr" = (/turf/simulated/floor/holofloor/beach/water,/area/holodeck/holodorm/source_beach)
-"gs" = (/obj/structure/flora/grass/green,/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
-"gt" = (/obj/structure/flora/grass/both,/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
-"gN" = (/obj/structure/flora/ausbushes/fullgrass,/turf/simulated/floor/holofloor/desert,/area/holodeck/holodorm/source_desert)
-"gO" = (/turf/simulated/floor/holofloor/desert,/area/holodeck/holodorm/source_desert)
-"gP" = (/obj/structure/flora/ausbushes/sparsegrass,/turf/simulated/floor/holofloor/desert,/area/holodeck/holodorm/source_desert)
-"gQ" = (/obj/structure/flora/ausbushes/brflowers,/turf/simulated/floor/holofloor/grass,/area/holodeck/holodorm/source_garden)
-"gR" = (/obj/structure/flora/ausbushes/ywflowers,/turf/simulated/floor/holofloor/grass,/area/holodeck/holodorm/source_garden)
-"gS" = (/turf/simulated/floor/holofloor/reinforced,/area/holodeck/holodorm/source_off)
-"hg" = (/obj/structure/flora/ausbushes/ywflowers,/obj/effect/landmark{name = "Catgirl Spawn"},/turf/simulated/floor/holofloor/grass,/area/holodeck/holodorm/source_garden)
-"hx" = (/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_seating)
-"hy" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 9},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
-"hz" = (/obj/structure/bed/chair/holochair,/obj/effect/floor_decal/carpet{dir = 1},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
-"hA" = (/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet{dir = 5},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
-"hB" = (/obj/structure/table/holotable,/obj/item/clothing/gloves/boxing/hologlove,/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/holodorm/source_boxing)
-"hC" = (/obj/effect/floor_decal/corner/red{dir = 9},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/holodorm/source_boxing)
-"hD" = (/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/holodorm/source_boxing)
-"hE" = (/obj/effect/floor_decal/corner/green{dir = 6},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/holodorm/source_boxing)
-"hF" = (/turf/simulated/floor/holofloor/space,/area/holodeck/holodorm/source_space)
-"hJ" = (/obj/structure/bed/chair/holochair{dir = 4},/obj/effect/floor_decal/carpet{dir = 8},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
-"hK" = (/obj/structure/table/woodentable/holotable,/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
-"hL" = (/obj/structure/bed/chair/holochair{dir = 8},/obj/effect/floor_decal/carpet{dir = 4},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
-"hO" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet,/obj/effect/floor_decal/carpet{dir = 10},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
-"hP" = (/obj/structure/bed/chair/holochair{dir = 1},/obj/effect/floor_decal/carpet,/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
-"hQ" = (/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet,/obj/effect/floor_decal/carpet{dir = 6},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
-"hR" = (/obj/structure/table/holotable,/obj/item/clothing/gloves/boxing/hologlove{icon_state = "boxinggreen"; item_state = "boxinggreen"},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/holodorm/source_boxing)
+"fZ" = (/obj/structure/holostool{dir = 8},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
+"ga" = (/obj/structure/table/woodentable/holotable,/obj/item/weapon/dice/d8,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"gb" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet{dir = 6},/obj/effect/floor_decal/carpet{dir = 10},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
+"gt" = (/turf/simulated/floor/smole/megablocks,/area/holodeck/source_smoleworld)
+"gN" = (/obj/structure/table/woodentable/holotable,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"hb" = (/obj/structure/bed/chair/holochair{dir = 4},/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_basic)
+"hg" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 1},/turf/simulated/floor/holofloor/tiled{icon_state = "monotile"},/area/holodeck/source_gym)
+"hs" = (/obj/structure/table/woodentable/holotable,/obj/effect/landmark/costume/fakewizard,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"hx" = (/obj/structure/table/woodentable/holotable,/obj/effect/landmark/costume/elpresidente,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"hy" = (/obj/structure/fitness/boxing_turnbuckle{dir = 8},/obj/structure/fitness/boxing_ropes_bottom,/turf/simulated/fitness,/area/holodeck/source_boxingcourt)
+"hB" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 10},/turf/simulated/floor/holofloor/tiled{icon_state = "monotile"},/area/holodeck/source_gym)
+"hD" = (/obj/effect/floor_decal/spline/fancy/wood,/turf/simulated/floor/holofloor/tiled{icon_state = "monotile"},/area/holodeck/source_gym)
+"hE" = (/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_gym)
+"hF" = (/turf/simulated/floor/smole/desert,/area/holodeck/source_smoleworld)
+"hH" = (/obj/effect/floor_decal/carpet,/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet{dir = 6},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_game_room)
+"hJ" = (/obj/effect/floor_decal/carpet{dir = 10},/obj/effect/floor_decal/carpet{dir = 6},/obj/effect/floor_decal/carpet{dir = 5},/obj/effect/floor_decal/carpet{dir = 9},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_meetinghall)
+"hK" = (/obj/machinery/scale,/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_gym)
+"hL" = (/obj/structure/table/holotable,/obj/item/clothing/gloves/boxing/hologlove,/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_gym)
+"hO" = (/obj/structure/holostool{dir = 1},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_boxingcourt)
+"hQ" = (/obj/structure/window/reinforced{dir = 1},/turf/unsimulated/wall,/area/space)
+"hR" = (/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"ji" = (/obj/effect/overlay/coconut,/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/holodorm/source_beach)
+"jQ" = (/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet{dir = 5},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_game_room)
+"jW" = (/obj/structure/table/holotable,/obj/item/clothing/gloves/boxing/hologlove{icon_state = "boxinggreen"; item_state = "boxinggreen"},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/holodorm/source_boxing)
+"ko" = (/obj/structure/flora/ausbushes/ywflowers,/obj/effect/landmark{name = "Catgirl Spawn"},/turf/simulated/floor/holofloor/grass,/area/holodeck/holodorm/source_garden)
+"ls" = (/obj/structure/table/woodentable/holotable,/obj/effect/landmark/costume/pirate,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"lF" = (/obj/structure/table/woodentable/holotable,/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_basic)
+"lH" = (/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_seating)
+"lK" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 9},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
+"md" = (/obj/item/weapon/bedsheet/medical,/obj/structure/bed/padded,/obj/structure/curtain/open/privacy,/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"mf" = (/obj/structure/flora/grass/green,/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
+"mq" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 5},/turf/simulated/floor/holofloor/tiled{icon_state = "monotile"},/area/holodeck/source_gym)
 "mD" = (/obj/machinery/conveyor{dir = 4; id = "QMLoad"},/turf/simulated/shuttle/floor,/area/shuttle/supply)
+"ng" = (/obj/structure/flora/grass/green,/obj/structure/flora/tree/pine,/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
+"no" = (/obj/effect/floor_decal/corner/paleblue{dir = 10},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"nt" = (/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"ot" = (/obj/item/toy/chess/bishop_white,/turf/simulated/floor/holofloor/wmarble,/area/holodeck/source_chess)
+"oL" = (/obj/structure/flora/ausbushes/sparsegrass,/turf/simulated/floor/holofloor/desert,/area/holodeck/holodorm/source_desert)
+"oO" = (/obj/item/toy/chess/rook_black,/turf/simulated/floor/holofloor/bmarble,/area/holodeck/source_chess)
 "oP" = (/turf/space/transit/east,/area/space)
 "oW" = (/obj/effect/shuttle_landmark/transit{base_area = /area/space; base_turf = /turf/space/transit/east; landmark_tag = "escape_transit"; name = "Escape Shuttle Transit"},/turf/space/transit/east,/area/space)
+"oY" = (/obj/effect/landmark{name = "Wolfgirl Spawn"},/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
+"pt" = (/obj/structure/table/holotable,/obj/item/clothing/gloves/boxing/hologlove,/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/holodorm/source_boxing)
+"py" = (/turf/simulated/floor/holofloor/reinforced,/area/space)
+"pG" = (/obj/structure/flora/ausbushes/brflowers,/turf/simulated/floor/holofloor/grass,/area/holodeck/holodorm/source_garden)
+"pP" = (/obj/effect/floor_decal/sign/small_a,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"qf" = (/obj/item/toy/chess/pawn_black,/turf/simulated/floor/holofloor/bmarble,/area/holodeck/source_chess)
+"rm" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 9},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_game_room)
+"rQ" = (/obj/item/toy/chess/knight_black,/turf/simulated/floor/holofloor/wmarble,/area/holodeck/source_chess)
+"rU" = (/obj/structure/bed/chair/holochair,/obj/effect/floor_decal/carpet{dir = 1},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
+"sb" = (/obj/item/toy/chess/knight_black,/turf/simulated/floor/holofloor/bmarble,/area/holodeck/source_chess)
+"si" = (/obj/structure/bed/chair/holochair{dir = 1},/obj/effect/floor_decal/carpet,/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_game_room)
+"sp" = (/obj/effect/floor_decal/sign/small_d,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"sq" = (/obj/item/toy/chess/rook_white,/turf/simulated/floor/holofloor/bmarble,/area/holodeck/source_chess)
+"su" = (/turf/simulated/floor/holofloor/space,/area/holodeck/holodorm/source_space)
+"sw" = (/obj/item/toy/chess/rook_white,/turf/simulated/floor/holofloor/wmarble,/area/holodeck/source_chess)
+"tB" = (/obj/structure/bed/chair/holochair{dir = 4},/obj/effect/floor_decal/carpet{dir = 8},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_game_room)
+"tO" = (/turf/simulated/floor/holofloor/desert,/area/holodeck/holodorm/source_desert)
+"tQ" = (/obj/effect/floor_decal/corner/paleblue/full{dir = 4},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"tW" = (/obj/structure/bed/holobed,/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_basic)
+"tX" = (/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_basic)
+"tZ" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 4},/turf/simulated/floor/holofloor/tiled{icon_state = "monotile"},/area/holodeck/source_gym)
 "uc" = (/turf/unsimulated/wall,/area/centcom/suppy)
 "ud" = (/obj/machinery/status_display/supply_display,/turf/unsimulated/wall,/area/centcom/suppy)
 "ue" = (/obj/structure/closet/crate,/turf/unsimulated/floor{dir = 1; icon_state = "vault"},/area/centcom/suppy)
 "uf" = (/turf/unsimulated/floor{icon_state = "dark"},/area/centcom/suppy)
 "ug" = (/obj/item/weapon/paper{info = "You're not supposed to be here."; name = "unnerving letter"},/turf/unsimulated/floor{icon_state = "dark"},/area/centcom/suppy)
+"uC" = (/obj/item/toy/chess/rook_black,/turf/simulated/floor/holofloor/wmarble,/area/holodeck/source_chess)
+"uN" = (/obj/effect/floor_decal/corner/paleblue/full,/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"uP" = (/obj/effect/floor_decal/sign/small_c,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"uQ" = (/obj/item/toy/chess/pawn_white,/turf/simulated/floor/holofloor/wmarble,/area/holodeck/source_chess)
+"vi" = (/obj/effect/floor_decal/corner/red{dir = 9},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/holodorm/source_boxing)
+"wu" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/unsimulated/wall,/area/space)
+"xS" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 9},/turf/simulated/floor/holofloor/tiled{icon_state = "monotile"},/area/holodeck/source_gym)
+"xY" = (/obj/structure/bed/chair/holochair{dir = 8},/turf/simulated/floor/holofloor/wood,/area/holodeck/holodorm/source_basic)
+"ym" = (/obj/effect/floor_decal/corner/paleblue{dir = 9},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"yv" = (/obj/effect/floor_decal/corner/green{dir = 6},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/holodorm/source_boxing)
+"yB" = (/obj/item/toy/chess/pawn_white,/turf/simulated/floor/holofloor/bmarble,/area/holodeck/source_chess)
+"yW" = (/obj/item/toy/chess/queen_black,/turf/simulated/floor/holofloor/bmarble,/area/holodeck/source_chess)
+"zq" = (/obj/structure/flora/grass/brown,/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
+"zx" = (/obj/item/weapon/bedsheet/medical,/obj/structure/bed/padded,/obj/structure/curtain/open/privacy,/obj/effect/floor_decal/corner/paleblue{dir = 5},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
 "zT" = (/obj/effect/step_trigger/teleporter/random,/obj/effect/step_trigger/teleporter/random,/turf/space,/area/space)
+"Au" = (/obj/structure/bed/chair/holochair{dir = 8},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"Av" = (/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/holodorm/source_beach)
+"BE" = (/obj/structure/table/woodentable/holotable,/obj/item/weapon/dice/d12,/obj/item/weapon/dice/d10,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"Cs" = (/obj/effect/floor_decal/sign/small_2,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"CK" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet,/obj/effect/floor_decal/carpet{dir = 10},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
+"Ds" = (/obj/structure/bed/chair/holochair{dir = 8},/obj/effect/floor_decal/carpet{dir = 4},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
+"DM" = (/obj/item/toy/chess/pawn_black,/turf/simulated/floor/holofloor/wmarble,/area/holodeck/source_chess)
+"Ej" = (/obj/effect/floor_decal/sign/small_b,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"Ep" = (/obj/item/toy/chess/bishop_white,/turf/simulated/floor/holofloor/bmarble,/area/holodeck/source_chess)
+"EQ" = (/obj/effect/floor_decal/sign/small_6,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
 "Fb" = (/turf/unsimulated/map/edge,/area/overmap)
+"FI" = (/obj/effect/floor_decal/sign/small_8,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"FO" = (/obj/structure/table/woodentable/holotable,/obj/effect/landmark/costume/chicken,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"FU" = (/obj/effect/floor_decal/sign/small_7,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"FY" = (/obj/effect/floor_decal/sign/small_3,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"FZ" = (/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet,/obj/effect/floor_decal/carpet{dir = 6},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
+"Gu" = (/obj/structure/table/holotable,/obj/effect/floor_decal/corner/paleblue{dir = 5},/obj/effect/floor_decal/corner/paleblue{dir = 10},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"GU" = (/obj/structure/bed/chair/holochair{dir = 1},/obj/effect/floor_decal/carpet,/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
+"HB" = (/obj/item/weapon/bedsheet/medical,/obj/structure/bed/padded,/obj/structure/curtain/open/privacy,/obj/effect/floor_decal/corner/paleblue/full{dir = 8},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"HO" = (/obj/structure/flora/grass/both,/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
+"HQ" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 6},/turf/simulated/floor/holofloor/tiled{icon_state = "monotile"},/area/holodeck/source_gym)
+"Ii" = (/obj/structure/flora/ausbushes/fullgrass,/turf/simulated/floor/holofloor/desert,/area/holodeck/holodorm/source_desert)
+"Iv" = (/obj/structure/table/woodentable/holotable,/obj/effect/landmark/costume/cutewitch,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"IV" = (/obj/item/clothing/glasses/sunglasses,/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/holodorm/source_beach)
+"IZ" = (/obj/structure/flora/grass/brown,/obj/structure/flora/tree/dead,/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
 "JB" = (/turf/unsimulated/map,/area/overmap)
+"JD" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/effect/floor_decal/carpet,/obj/effect/floor_decal/carpet{dir = 10},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_game_room)
+"Kb" = (/obj/effect/floor_decal/corner/paleblue{dir = 5},/obj/effect/floor_decal/corner/paleblue{dir = 10},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"KB" = (/obj/effect/overlay/palmtree_l,/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/holodorm/source_beach)
+"LL" = (/obj/item/toy/chess/bishop_black,/turf/simulated/floor/holofloor/wmarble,/area/holodeck/source_chess)
+"LR" = (/obj/item/toy/chess/queen_white,/turf/simulated/floor/holofloor/wmarble,/area/holodeck/source_chess)
+"LS" = (/obj/structure/table/woodentable/holotable,/obj/effect/landmark/costume/gladiator,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"Me" = (/turf/simulated/floor/holofloor/beach/water,/area/holodeck/holodorm/source_beach)
+"Mh" = (/obj/effect/floor_decal/spline/fancy/wood{dir = 8},/turf/simulated/floor/holofloor/tiled{icon_state = "monotile"},/area/holodeck/source_gym)
+"ML" = (/obj/structure/table/woodentable/holotable,/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_game_room)
+"Ne" = (/obj/structure/table/woodentable/holotable,/obj/item/weapon/dice/d100,/obj/item/weapon/dice/d20,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"Np" = (/turf/simulated/floor/holofloor/wmarble,/area/holodeck/source_chess)
+"Ob" = (/obj/structure/table/holotable,/obj/item/clothing/gloves/boxing/hologlove{icon_state = "boxinggreen"; item_state = "boxinggreen"},/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_gym)
+"OU" = (/obj/item/toy/chess/knight_white,/turf/simulated/floor/holofloor/bmarble,/area/holodeck/source_chess)
+"Pb" = (/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"Pq" = (/obj/structure/table/woodentable/holotable,/obj/item/weapon/dice,/obj/item/weapon/dice/d4,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_game_room)
+"Ps" = (/turf/simulated/floor/holofloor/tiled{icon_state = "monotile"},/area/holodeck/source_gym)
+"PD" = (/obj/structure/bed/chair/holochair,/obj/effect/floor_decal/carpet{dir = 1},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_game_room)
+"PL" = (/obj/item/toy/chess/king_black,/turf/simulated/floor/holofloor/wmarble,/area/holodeck/source_chess)
+"PP" = (/obj/item/weapon/bedsheet/medical,/obj/structure/bed/padded,/obj/structure/curtain/open/privacy,/obj/effect/floor_decal/corner/paleblue{dir = 6},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"Qi" = (/obj/effect/floor_decal/sign/small_f,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"QC" = (/obj/item/toy/chess/bishop_black,/turf/simulated/floor/holofloor/bmarble,/area/holodeck/source_chess)
+"Rf" = (/obj/structure/bed/chair/holochair{dir = 4},/obj/effect/floor_decal/carpet{dir = 8},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
+"Rr" = (/obj/effect/floor_decal/corner/paleblue{dir = 6},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"RS" = (/turf/simulated/floor/holofloor/bmarble,/area/holodeck/source_chess)
+"Sh" = (/obj/structure/flora/ausbushes/ywflowers,/turf/simulated/floor/holofloor/grass,/area/holodeck/holodorm/source_garden)
+"SM" = (/obj/effect/overlay/palmtree_r,/turf/simulated/floor/holofloor/beach/sand,/area/holodeck/holodorm/source_beach)
+"TZ" = (/obj/item/toy/chess/king_white,/turf/simulated/floor/holofloor/bmarble,/area/holodeck/source_chess)
+"Ut" = (/obj/machinery/fitness/punching_bag/clown,/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_gym)
+"UC" = (/obj/structure/bed/chair/holochair{dir = 4},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"UN" = (/obj/effect/floor_decal/sign/small_4,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"Vd" = (/obj/machinery/fitness/heavy/lifter,/obj/effect/floor_decal/industrial/outline/red,/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_gym)
+"VF" = (/turf/simulated/floor/holofloor/snow,/area/holodeck/holodorm/source_snow)
+"VS" = (/turf/simulated/floor/holofloor/reinforced,/area/holodeck/holodorm/source_off)
+"VV" = (/obj/structure/table/holotable,/obj/item/device/flashlight/lamp/green,/obj/effect/floor_decal/corner/paleblue{dir = 5},/obj/effect/floor_decal/corner/paleblue{dir = 10},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"Wx" = (/obj/effect/floor_decal/sign/small_e,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"Xt" = (/turf/unsimulated/beach/sand{icon_state = "beach"},/area/holodeck/holodorm/source_beach)
+"Xx" = (/obj/structure/bed/chair/holochair{dir = 8},/obj/effect/floor_decal/carpet{dir = 4},/turf/simulated/floor/holofloor/carpet,/area/holodeck/source_game_room)
+"XF" = (/obj/item/toy/chess/knight_white,/turf/simulated/floor/holofloor/wmarble,/area/holodeck/source_chess)
+"XQ" = (/obj/effect/floor_decal/corner/paleblue{dir = 5},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"XY" = (/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/holodorm/source_boxing)
+"Yr" = (/obj/structure/table/woodentable/holotable,/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
+"YO" = (/obj/effect/floor_decal/sign/small_5,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"YW" = (/obj/structure/fitness/weightlifter,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_gym)
+"YY" = (/obj/structure/table/holotable,/obj/effect/floor_decal/corner/paleblue{dir = 10},/obj/effect/floor_decal/corner/paleblue{dir = 5},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"Zb" = (/obj/item/weapon/bedsheet/medical,/obj/structure/bed/padded,/obj/structure/curtain/open/privacy,/obj/effect/floor_decal/corner/paleblue/full{dir = 1},/turf/simulated/floor/holofloor/tiled{icon_state = "white"},/area/holodeck/source_patient_ward)
+"Zw" = (/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet{dir = 5},/turf/simulated/floor/holofloor/carpet,/area/holodeck/holodorm/source_seating)
+"ZN" = (/obj/effect/floor_decal/sign/small_1,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"ZS" = (/obj/effect/floor_decal/sign/small_h,/turf/simulated/floor/holofloor/wood,/area/holodeck/source_chess)
+"ZV" = (/obj/structure/fitness/punchingbag,/turf/simulated/floor/holofloor/tiled/dark,/area/holodeck/source_gym)
 
 (1,1,1) = {"
 apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqarasasasasasasasasasasarasasasasasasasasasasarasasasasasasasasasasarasasasasasasasasasasarasasasasasasasasasasarasasasasasasasasasasarasasasasasasasasasasar
 apaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqzTapapapapapapaqapapapapapapapapapapapapapapaqaIaJaJaJaKaJaJaJaJaJaJaLaMaNaMaNaMaMaNaMaNaMaLaOaPaPaPaPaPaPaPaPaPaLaQaRaSaSaSaSaSaSaSaSaLaTaTaTaTaTaTaTaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXaYaZaZaZaZaZbabb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucucucucucucudbcbcbcbcbcbcbcaqaIaJaJaJaJaJaJaJaJbdaJaLbebfbebfbebfbebfbebfaLbgbgbgbgbgbgbgbgbgbgaLaQbhbibibibibibibibiaLaTbjaTaTaTaTaTaTbjaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXbkblblblblblbmbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueufueufbcbnbnbnbnbnbcaqaIaJbdaJaJaJaJaJaJaJaJaLbfbebobpbqbpbqbrbfbeaLbgbgbgbgbgbgbgbgbgbgaLaQbsbiaSbtaSbibubvbwaLaTaTaTaTaTaTaTaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaVbxbkblblblblblbmbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueufueufbcbybnbnbnbzbcaqaIaJaJaJaJaJaKaJaJaJaJaLbpbqbAbBbCbCbDbEbebFaLbGbGbGbGbGbGbGbGbGbHaLaQbsbIbJbKbLbMbNbObPaLaTaTaTbjaTaTbjaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXbkblblblblblbmbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucufufufufufufbQbRbRbRbnbnbcaqaIaJaJaKaJaJaJaKaJaJaJaLbDbDbDbDbSbSbDbTbfbUaLbVbVbWbXbXbXbXbYbVbZaLaQbscacbcbcbccbNcdceaLaTaTaTaTaTaTaTaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXbkblblblblblbmbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueufueufcsbnbnbnbnbnbcaqaIaJaJaJaJaJaJaJaJaJaJaLbDbDbDbDbSbSbDbTbfbUaLbVbVctcucucucucvbVbZaLaQbscwcxcycxczbNcdceaLaTaTaTaTaTaTaTaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXcAblblblblblcBbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueugueufbccObnbnbnbnbcaqaIaJaJaJaJaJbdaJaJaJaKaLcPcQcRbBbCbCbDbEbebFaLbVbVctcucucucucvbVbZaLaQbscScTcycTcUbNcdceaLaTaTaTbjaTaTbjaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXcAblblblblblcBbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueufueufcsbnbnbnbnbnbcaqaIaJaJbdaJaJaJaJaJaJaJaLbfbedacPcQcPcQdbbfbeaLbVbVctcucucucucvbVbZaLaQdcddcycycydebNcdceaLaTaTaTaTaTaTaTaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaVdfcAblblblblblcBbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucufufufufufufdhmDmDmDbnbnbcaqaIaJaJaJaJaJaJaJaJaJaJaLbebfbebfbebfbebfbfbeaLbVbVdjdkdkdkdkdlbVdmaLaQbscScTcTcTcUbNdndoaLaTbjaTaTaTaTaTaTbjaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXcAblblblblblcBbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucucucucucucudbcbcbcbcbcbcbcaqaIaJaJaJaJaJaJaJaJbdaJaLbpbqbrbfbebfbebfbebfaLbgbgbgbgbgbgbgbgbgbgaLaQbhbibibibibibibibiaLaTbjaTaTaTaTaTaTbjaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXbkblblblblblbmbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueufueufbcbnbnbnbnbnbcaqaIaJbdaJaJaJaJaJaJaJaJaLbDbDbobpbqbpbqbrbfbeaLbgbgbgbgbgbgbgbgbgbgaLaQbsbiaSbtaSbibubvbwaLaTaTaTaTaTaTaTaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaVbxbkblblblblblbmbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueufueufbcbybnbnbnbzbcaqaIaJaJaJaJaJaKaJaJaJaJaLevbDbAbBbCbCbDbEbebFaLbGbGbGbGbGbGbGbGbGbHaLaQbsbIbJbKbLbMbNbObPaLaTaTaTbjaTaTbjaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXbkblblblblblbmbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucufufufufufufbQbRbRbRbnbnbcaqaIaJaJaKaJaJaJaKaJaJaJaLewbDbDbDbSbSbDbTbfbUaLbVbVbWbXbXbXbXbYbVbZaLaQbscacbcbcbccbNcdceaLaTaTaTaTaTaTaTaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXbkblblblblblbmbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueufueufcsbnbnbnbnbnbcaqaIaJaJaJaJaJaJaJaJaJaJaLewbDbDbDbSbSbDbTbfbUaLbVbVctcucucucucvbVbZaLaQbscwcxcycxczbNcdceaLaTaTaTaTaTaTaTaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXcAblblblblblcBbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueugueufbccObnbnbnbnbcaqaIaJaJaJaJaJbdaJaJaJaKaLeNbDcRbBbCbCbDbEbebFaLbVbVctcucucucucvbVbZaLaQbscScTcycTcUbNcdceaLaTaTaTbjaTaTbjaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXcAblblblblblcBbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueufueufcsbnbnbnbnbnbcaqaIaJaJbdaJaJaJaJaJaJaJaLbDbDdacPcQcPcQdbbfbeaLbVbVctcucucucucvbVbZaLaQdcddcycycydebNcdceaLaTaTaTaTaTaTaTaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaVdfcAblblblblblcBbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucufufufufufufdhmDmDmDbnbnbcaqaIaJaJaJaJaJaJaJaJaJaJaLcPcQdbbfbebfbebfbfbeaLbVbVdjdkdkdkdkdlbVdmaLaQbscScTcTcTcUbNdndoaLaTbjaTaTaTaTaTaTbjaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXcAblblblblblcBbb
 apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueufueufbcbybnbnbnbzbcaqaIaKaJaJaJbdaJaJaJaJbdaLaMaNaMaNaMaMaNaMaNaMaLdqbVbVbVbVbVbVbVbVdraLaQaRdsdtdtdtdubNaSaSaLaTaTaTaTaTaTaTaTaTaTaLaUaUaUaUaUaUaUaUaUaUaLaVaWaXdvdwdwdwdwdwdxbb
 apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucueufueufueufbcbcbnbnbnbcbcaqardAdAdAdAdAdAdAdAdAdAardAdAdAdAdAdAdAdAdAdAardAdAdAdAdAdAdAdAdAdAardBdBdBdBdBdBdBdBdBdBardBdBdBdBdBdBdBdBdBdBardBdBdBdBdBdBdBdBdBdBardBdBdBdBdBdBdBdBdBdBar
 apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqucucucucucucudbcbcdEdEdEbcbcaqaIdFdFdFdFdFdFdFdFdFdFaLdGdGdGdGdGdGdGdGdGdGaLdHdHdHdHdHdHdHdHdHdIaLdJdKdLdMdNdMdOdPdNdPaLdQdQdQdQdQdQdQdQdQdQaLdRdSdTdUdVdVdVdVdVdWaLdXdXdYdYdYdYdYdYdYdYbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqapapapapapapapapaaabacabadapaqaIdFdFdFecdFdFdFdFecdFaLdGeddGdGdGdGeddGdGdGaLdHdHeeefefefegdHdHdHaLdJdKdLeheieheiejeiejaLdQdQekdQdQdQdQdQdQdQaLdRdSdTelemememememenaLdYdYdYdYeoeoeodYdYdYbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqapapapapapapapapapapapapapapaqaIdFdFdFdFdFdFdFdFdFdFaLdGdGdGdGdGdGdGdGepdGaLdHdHeqeqeqeqeqdHdHdHaLdJdJereheidNdNdNeiejaLdQdQdQdQdQdQesetdQdQaLdRdReuelemememememenaLdYdYdYevewewewdYdYdYbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoWoPoPoPoPoPoPoPaqapapapapapapaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaIdFecdFdFdFdFecdFdFdFaLdGdGeJdGepdGdGdGdGdGaLeKeKeKeKeKeKeKeKeKeLaLdJdKdLeheieieieieiejaLdQdQdQdQeMdQdQdQdQdQaLdRdSdTelemememememenaLdYeoeNeOePePeQeReodYbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIdFdFdFdFdFdFdFdFdFdFaLdGdGdGeTdGdGdGdGeTdGaLeUeVeWeWeWeWeWeXeKeLaLdJdKdLeYeZeZfaeZeZfbaLdQdQdQdQdQdQdQfcdQdQaLdRdSdTfdfefefefefeffaLdYeoeNfgfhfifjeReodYbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIdFdFdFdFdFdFdFdFdFdFaLdGdGdGdGdGdGdGdGdGdGaLeUfnfofofofofofpeKeLaLdJdKdLfqfrfrfrfrfrfsaLdQdQdQdQdQdQdQdQdQdQaLdRdSdTftfufufufufufvaLdYeoeNfgfwfxfjeReodYbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIdFdFdFecdFdFdFdFecdFaLdGdGdGdGeddGeJdGdGedaLeKfnfofofofofofpeKeLaLdJdKdLfzeieieieieifAaLdQdQdQdQdQdQdQdQdQdQaLdRdSdTfBemememememfCaLdYeoeNeQfDfDfEeReodYbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIdFdFdFdFdFdFdFdFdFdFaLfGdGdGdGdGfGdGdGdGdGaLeKfnfofofofofofHeKeLaLdJdJfIfzeifJfJfJeifAaLfKfKfKfKfKfKfKfKfKfKaLdRdRfLfBemememememfCaLdYdYdYfMfMfMfNdYdYdYbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIdFecdFdFdFdFecdFdFdFaLdGeTdGeJdGdGeTdGeJdGaLeKfOfPfPfPfPfPfQeKeLaLdJdKdLfzeifzeifAeifAaLfRfRfRfRfRfRfRfRfRfRaLdRdSdTfBemememememfCaLdYdYdYeoeoeodYdYdYdYbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqapapapapapapapapaaabacabadapaqaIdFdFdFdFdFdFdFdFdFdFaLdGeddGdGdGdGeddGdGdGaLdHdHeeefefefegdHdHdHaLdJdKdLeheieheiejeiejaLdQdQekdQdQdQdQdQdQdQaLdRdSdTelemememememenaLdYdYdYdYeoeoeodYdYdYbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapaqapapapapapapapapapapapapapapaqaIdFdFdFdFdFdFdFdFdFdFaLdGdGdGdGdGdGdGdGepdGaLeRdHeqeqeqeqeqdHdHdHaLdJdJereheidNdNdNeiejaLdQdQdQdQdQdQesetdQdQaLdRdReuelemememememenaLdYdYdYdYdYdYdYdYdYdYbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoWoPoPoPoPoPoPoPaqapapapapapapaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaIdFdFdFdFdFdFdFdFdFdFaLdGdGeJdGepdGdGdGdGdGaLfMeKeKeKeKeKeKeKeKeLaLdJdKdLeheieieieieiejaLdQdQdQdQeMdQdQdQdQdQaLdRdSdTelemememememenaLdYfNdYeOePePeQdYfZdYbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIdFdFdFdFdFdFdFdFdFdFaLdGdGdGeTdGdGdGdGeTdGaLeUeVeWeWeWeWeWeXeKeLaLdJdKdLeYeZeZfaeZeZfbaLdQdQdQdQdQdQdQfcdQdQaLdRdSdTfdfefefefefeffaLdYfNdYfgfxfxfjdYfZdYbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIdFdFdFdFdFdFdFdFdFdFaLdGdGdGdGdGdGdGdGdGdGaLeUfnfofofofofofpeKeLaLdJdKdLfqfrfrfrfrfrfsaLdQdQdQdQdQdQdQdQdQdQaLdRdSdTftfufufufufufvaLdYfNdYfgfxfxfjdYfZdYbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIdFdFdFdFdFdFdFdFdFdFaLdGdGdGdGeddGeJdGdGedaLgbfnfofofofofofpeKeLaLdJdKdLfzeieieieieifAaLdQdQdQdQdQdQdQdQdQdQaLdRdSdTfBemememememfCaLdYfNdYhyfDfDfEdYfZdYbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIdFdFdFdFdFdFdFdFdFdFaLfGdGdGdGdGfGdGdGdGdGaLhJfnfofofofofofHeKeLaLdJdJfIfzeifJfJfJeifAaLfKfKfKfKfKfKfKfKfKfKaLdRdRfLfBemememememfCaLdYdYdYdYdYdYdYdYdYdYbb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIdFdFdFdFdFdFdFdFdFdFaLdGeTdGeJdGdGeTdGeJdGaLeKfOfPfPfPfPfPfQeKeLaLdJdKdLfzeifzeifAeifAaLfRfRfRfRfRfRfRfRfRfRaLdRdSdTfBemememememfCaLdYdYdYhOhOhOdYdYdYdYbb
 apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIdFdFdFdFdFdFdFdFdFdFaLdGdGdGdGfGdGdGdGdGfGaLeKeKeKeKeKeKeKeKeKeLaLdJdKdLfSfJfSfTfUfJfUaLfRfRfRfRfRfRfRfRfRfRaLdRdSdTfVfWfWfWfWfWfXaLdYdYdYdYdYdYdYdYfYfYbb
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapaparfZfZfZfZfZfZfZfZfZfZarfZfZfZfZfZfZfZfZfZfZarfZfZfZfZfZfZfZfZfZdAasdAdAdAdAfZdAdAdAdAdAasfZdAdAdAdAdAdAfZfZfZarfZfZfZfZfZfZfZfZfZfZarfZfZfZfZfZfZfZfZfZfZar
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIgagbgcgdgcgcaLgegfggghgigfaLgjgkgkgkgkgkbbapapapapapapapapapapapapapapapapapapapapapapapapap
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIgagagagagagaaLglglglglglglaLgkgmgngogkgkbbapapapapapapapapapapapapapapapapapapapapapapapapap
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIgagqgcgagqgcaLgrgrgrgrgrgraLgsgkgkgkgkgtbbapapapapapapapapapapapapapapapapapapapapapapapapap
-apzToPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapardBdBdBdBdBdBardBdBdBdBdBdBardBdBdBdBdBdBarapapapapapapapapapapapapapapapapapapapapapapapapap
-apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIgNgOgOgOgOgPaLgQgRgQgRgQgRaLgSgSgSgSgSgSbbapapapapapapapapapapapapapapapapapapapapapapapapap
-apaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIgOgOgOgNgOgOaLgRgQhggQgRgQaLgSgSgSgSgSgSbbapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIgOgPgOgOgOgOaLgQgRgQgRgQgRaLgSgSgSgSgSgSbbapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapardBdBdBdBdBdBardBdBdBdBdBdBardBdBdBdBdBdBarapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIhxhyhzhzhAhxaLhBhChDhDhEhDaLhFhFhFhFhFhFbbapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIhxhJhKhKhLhxaLhDhChDhDhEhDaLhFhFhFhFhFhFbbapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIhxhOhPhPhQhxaLhDhChDhDhEhRaLhFhFhFhFhFhFbbapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaparfZfZfZfZfZfZarfZfZfZfZfZfZarfZfZfZfZfZfZarapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
-apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapardBdBdBdBdBdBdBdBdBdBardBdBdBdBdBdBdBdBdBdBardBdBdBdBdBdBdBdBdBdBardBdBdBdBdBdBdBdBdBdBardBdBdBdBdBdBdBdBdBdBardBdBdBdBdBdBdBdBdBdBardBdBdBdBdBdBdBdBdBdBar
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIhRhRhRhRhRhRhRhRhRhRwuHBXQzxXQKbGuXQzxXQZbaLntntntntntntntNeBEgaaLhEhEhEhEhEhEhEhEhEhEwuhFhFhFhFhFhFhFhFhFhFwupypypypypypypypypypyaLpypypypypypypypypypybb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIFIuCsbLLyWPLQCrQoOhRwuymPbPbPbPbPbPbPbPbRraLntntntntntntntntntPqaLhEVdhEVdhEhEZVhEUthEwuhFhFhFhFhFhFhFhFhFhFwupypypypypypypypypypyaLpypypypypypypypypypybb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIFUqfDMqfDMqfDMqfDMhRwuymPbmdPbPbPbPbmdPbPPaLntntntrmPDPDjQntntgNaLhEhEhEhEhEhEhEhEhEhEwuhFhFgtgtgtgtgtgthFhFwupypypypypypypypypypyaLpypypypypypypypypypybb
+apzToPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIEQNpRSNpRSNpRSNpRShRwuymPbPbPbPbPbPbPbPbRraLntntnttBMLMLXxntntntaLhEYWhEYWhEhEUthEZVhEwuhFhFgtgtgtgtgtgthFhFwupypypypypypypypypypyaLpypypypypypypypypypybb
+apaqoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPoPaqapapapapapapapapapapapapapapapapapapapapapapaIYORSNpRSNpRSNpRSNphRwuymPbmdPbYYYYPbmdPbPPaLntntnttBMLMLXxntntgNaLhEhEhEhEhEhEhEhEhEhEwuhFhFgtgtgtgtgtgthFhFwupypypypypypypypypypyaLpypypypypypypypypypybb
+apaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqaqapapapapapapapapapapapapapapapapapapapapapapaIUNNpRSNpRSNpRSNpRShRwuymPbPbPbPbPbPbPbPbRraLntntnttBMLMLXxntntgNaLhEhEhEhEhExShghgmqhEwuhFhFgtgtgtgtgtgthFhFwupypypypypypypypypypyaLpypypypypypypypypypybb
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIFYRSNpRSNpRSNpRSNphRwuymPbPbPbPbPbPbPbPbRraLntntnttBMLMLXxntntntaLhEhEhEhEhEMhPsPstZhEwuhFhFgtgtgtgtgtgthFhFwupypypypypypypypypypyaLpypypypypypypypypypybb
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaICsuQyBuQyBuQyBuQyBhRwuymPbPbPbVVGuGuPbPbRraLntntntJDsisihHntnthsaLhEhEhEhEhEMhPsPstZhEwuhFhFgtgtgtgtgtgthFhFwupypypypypypypypypypyaLpypypypypypypypypypybb
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIZNsqXFEpLRTZotOUswhRwuymPbPbUCGuAuPbPbPbRraLntntntntntntntntnthxaLhEhEhEhEhEhBhDhDHQhEwuhFhFhFhFhFhFhFhFhFhFwupypypypypypypypypypyaLpypypypypypypypypypybb
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIhRpPEjuPspWxQiebZShRwuuNnononoYYnonononotQaLntntntntntlsLScfFOIvaLhEObhLhKhEhEhEhEhEhEwuhFhFhFhFhFhFhFhFhFhFwupypypypypypypypypypyaLpypypypypypypypypypybb
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapardBdBdBdBdBdBhQdBdBdBasdBdBhQdBdBdBdBdBdBhQarhQhQhQhQhQhQhQhQhQhQarhQhQhQhQhQhQhQhQhQhQarhQhQhQhQhQhQhQhQhQhQarhQhQhQhQhQhQhQhQhQhQarhQhQhQhQhQhQhQhQhQhQar
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaItXhblFxYlFlFaLSMAvjiIVKBAvaLIZVFVFVFVFVFbbapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaItXtXtXtXtXtXaLXtXtXtXtXtXtaLVFoYzqngVFVFbbapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaItXtWlFtXtWlFaLMeMeMeMeMeMeaLmfVFVFVFVFHObbapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapardBdBdBdBdBdBardBdBdBdBdBdBardBdBdBdBdBdBarapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIIitOtOtOtOoLaLpGShpGShpGShaLVSVSVSVSVSVSbbapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaItOtOtOIitOtOaLShpGkopGShpGaLVSVSVSVSVSVSbbapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaItOoLtOtOtOtOaLpGShpGShpGShaLVSVSVSVSVSVSbbapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapardBdBdBdBdBdBardBdBdBdBdBdBardBdBdBdBdBdBarapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIlHlKrUrUZwlHaLptviXYXYyvXYaLsusususususubbapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIlHRfYrYrDslHaLXYviXYXYyvXYaLsusususususubbapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaIlHCKGUGUFZlHaLXYviXYXYyvjWaLsusususususubbapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
+apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapaparhQhQhQhQhQhQarhQhQhQhQhQhQarhQhQhQhQhQhQarapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
 apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
 apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
 apapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapapap
