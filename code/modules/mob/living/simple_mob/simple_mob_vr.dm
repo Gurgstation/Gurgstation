@@ -36,7 +36,7 @@
 	var/vore_stomach_flavor				// The flavortext for the first belly if not the default
 
 	var/vore_default_item_mode = IM_DIGEST_FOOD			//How belly will interact with items
-	var/vore_default_contaminates = TRUE				//Will it contaminate?
+	var/vore_default_contaminates = FALSE				//Will it contaminate?
 	var/vore_default_contamination_flavor = "Generic"	//Contamination descriptors
 	var/vore_default_contamination_color = "green"		//Contamination color
 
@@ -50,6 +50,8 @@
 
 	var/obj/item/device/radio/headset/mob_headset/mob_radio		//Adminbus headset for simplemob shenanigans.
 	does_spin = FALSE
+	can_be_drop_pred = TRUE				// Mobs are pred by default.
+
 
 // Release belly contents before being gc'd!
 /mob/living/simple_mob/Destroy()
@@ -301,12 +303,13 @@
 /datum/riding/simple_mob/get_offsets(pass_index) // list(dir = x, y, layer)
 	var/mob/living/simple_mob/L = ridden
 	var/scale = L.size_multiplier
+	var/scale_difference = (L.size_multiplier - rider_size) * 10
 
 	var/list/values = list(
-		"[NORTH]" = list(0, L.mount_offset_y*scale, ABOVE_MOB_LAYER),
-		"[SOUTH]" = list(0, L.mount_offset_y*scale, BELOW_MOB_LAYER),
-		"[EAST]" = list(-L.mount_offset_x*scale, L.mount_offset_y*scale, ABOVE_MOB_LAYER),
-		"[WEST]" = list(L.mount_offset_x*scale, L.mount_offset_y*scale, ABOVE_MOB_LAYER))
+		"[NORTH]" = list(0, L.mount_offset_y*scale + scale_difference, ABOVE_MOB_LAYER),
+		"[SOUTH]" = list(0, L.mount_offset_y*scale + scale_difference, BELOW_MOB_LAYER),
+		"[EAST]" = list(-L.mount_offset_x*scale, L.mount_offset_y*scale + scale_difference, ABOVE_MOB_LAYER),
+		"[WEST]" = list(L.mount_offset_x*scale, L.mount_offset_y*scale + scale_difference, ABOVE_MOB_LAYER))
 
 	return values
 
@@ -333,6 +336,7 @@
 
 	. = ..()
 	if(.)
+		riding_datum.rider_size = H.size_multiplier
 		buckled_mobs[H] = "riding"
 
 /mob/living/simple_mob/attack_hand(mob/user as mob)

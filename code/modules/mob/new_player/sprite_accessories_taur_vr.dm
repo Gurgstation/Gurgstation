@@ -577,3 +577,19 @@
 
 	msg_owner_grab_fail = "You step down onto %prey with one of your vines, forcing them onto the ground!"
 	msg_prey_grab_fail = "%owner steps down onto you with one of their vines, squishing you and forcing you onto the ground!"
+
+/datum/sprite_accessory/tail/taur/rat
+	name = "Rat (dual color)"
+	icon_state = "rat_s"
+	extra_overlay = "rat_markings"
+	clip_mask_state = "taur_clip_mask_rat"
+	icon_sprite_tag = "rat"
+
+/datum/sprite_accessory/tail/taur/noodle
+	name = "Eastern Dragon (Taur)"
+	icon_state = "noodle_s"
+	extra_overlay = "noodle_markings"
+	extra_overlay2 = "noodle_markings_2"
+	suit_sprites = 'icons/mob/taursuits_noodle_vr.dmi'
+	clip_mask_state = "taur_clip_mask_noodle"
+	icon_sprite_tag = "noodle"
