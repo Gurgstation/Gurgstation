@@ -25,7 +25,7 @@ These are just guidelines, not rules, use your best judgment and feel free to pr
 
 ### Code of Conduct
 
-This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md).
+This project adheres to the Contributor Covenant [code of conduct](code_of_conduct.md).
 By participating, you are expected to uphold this code.
 
 ## How Can I Contribute?
@@ -94,4 +94,5 @@ Commits with a git authorship date prior to `1420675200 +0000` (2015/01/08 00:00
 
 All commits whose authorship dates are not prior to `1420675200 +0000` are assumed to be licensed under AGPL v3, if you wish to license under GPL v3 please make this clear in the commit message and any added files.
 
-[Mapmerge2 Readme]: ../tools/mapmerge2/readme.md
+[Mapmerge2 Readme]: ../tools/mapmerge2/mapmerge tool readme.md
+[StrongDMM]: ../tools/StrongDMM/README.md

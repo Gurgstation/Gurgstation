@@ -352,6 +352,22 @@
 	forced_ambience = list('sound/ambience/tension/tension.ogg', 'sound/ambience/tension/horror.ogg')
 	requires_power = FALSE
 
+//Shuttles for the events to compile properly
+
+/area/shuttle/viro
+	requires_power = 1
+	icon_state = "shuttle2"
+	name = "Sick Bay Shuttle"
+
+/area/shuttle/viro/cockpit
+	name = "SickBay Shuttle Cockpit"
+
+/area/shuttle/viro/general
+	name = "SickBay Shuttle"
+
+/area/shuttle/viro/airlock
+	name = "SickBay Airlock"
+
 ////////////////////////////////////
 //// END TRIUMPH SPECIFIC AREAS ////
 ////////////////////////////////////
