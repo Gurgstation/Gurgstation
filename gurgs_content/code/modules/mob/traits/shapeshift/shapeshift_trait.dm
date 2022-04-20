@@ -22,7 +22,7 @@
 		absorbedDNA.SetupExtras(H, absorbedDNA)
 
 		if(!H.GetAbsorbedDNA(absorbedDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
-			H.absorbedPreys += absorbedDNA
+			H.balls += absorbedDNA
 		
 
 		H.verbs |= /mob/living/proc/remove_prey_transform
