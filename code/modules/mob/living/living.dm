@@ -853,6 +853,9 @@
 			lying = incapacitated(INCAPACITATION_KNOCKDOWN)
 			canmove = !incapacitated(INCAPACITATION_DISABLED)
 
+	if(leashed)	// GURGS ADD: Leashes!
+		canmove = 0
+	
 	if(lying)
 		density = FALSE
 		if(l_hand)
