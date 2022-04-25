@@ -587,7 +587,12 @@
 
 	if(ishuman(AM))
 		var/mob/living/carbon/human/H = AM
-		if(H.lying) // If they're on the ground we're probably dragging their arms to move them
+		// Gurgs ADD - START Leash pulling text.
+		if(H.leashed)
+			visible_message(SPAN_WARNING("\The [src] pulls their leash."), SPAN_NOTICE("You pull your leash."), exclude_mobs = list(H))
+			if(!H.stat)
+				to_chat(H, SPAN_WARNING("\The [src] pulls your leash.")) // Gurgs ADD - END
+		else if(H.lying) // If they're on the ground we're probably dragging their arms to move them // GURGS EDIT: Adds an else before the if()
 			visible_message(SPAN_WARNING("\The [src] leans down and grips \the [H]'s arms."), SPAN_NOTICE("You lean down and grip \the [H]'s arms."), exclude_mobs = list(H))
 			if(!H.stat)
 				to_chat(H, SPAN_WARNING("\The [src] leans down and grips your arms."))

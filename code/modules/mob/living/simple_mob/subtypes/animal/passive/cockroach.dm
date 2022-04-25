@@ -7,8 +7,8 @@
 	icon_state = "cockroach"
 	item_state = "cockroach"
 	icon_living = "cockroach"
-	icon_dead = "cockroach_rest" //No real 'dead' sprite
-	icon_rest = "cockroach_rest"
+	icon_dead = "cockroach_dead" //No real 'dead' sprite
+	icon_rest = "cockroach_dead"
 
 	maxHealth = 1
 	health = 1

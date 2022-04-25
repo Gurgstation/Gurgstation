@@ -350,7 +350,7 @@
 	warmup_time = 10
 	shuttle_area = list(/area/shuttle/mining_ship/general)
 	current_location = "triumph_mining_port"
-	docking_controller_tag = "mining_docker"
+	//docking_controller_tag = "mining_docker"
 	move_time = 30
 
 /area/shuttle/mining
