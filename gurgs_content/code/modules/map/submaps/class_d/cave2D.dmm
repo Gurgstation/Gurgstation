@@ -73,7 +73,6 @@
 "I" = (
 /obj/effect/alien/weeds/node,
 /turf/simulated/wall/resin,
-/turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "K" = (
 /obj/random/medical/pillbottle,
@@ -88,7 +87,6 @@
 "M" = (
 /obj/effect/alien/weeds,
 /turf/simulated/wall/resin,
-/turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "O" = (
 /obj/random/tetheraid,
@@ -107,7 +105,6 @@
 /area/poi_d/explored)
 "T" = (
 /turf/simulated/wall/resin,
-/turf/space,
 /area/poi_d/explored)
 "U" = (
 /mob/living/simple_mob/animal/space/alien/drone,
