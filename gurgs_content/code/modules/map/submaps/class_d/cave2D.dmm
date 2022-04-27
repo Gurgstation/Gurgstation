@@ -36,9 +36,9 @@
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "m" = (
-/obj/effect/alien/resin/wall,
 /obj/effect/alien/weeds,
 /obj/effect/alien/weeds,
+/turf/simulated/wall/resin,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "n" = (
@@ -81,11 +81,6 @@
 /mob/living/simple_mob/animal/space/alien/sentinel,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
-"y" = (
-/obj/effect/alien/weeds,
-/obj/effect/alien/resin/wall,
-/turf/simulated/mineral/floor/vacuum,
-/area/poi_d/explored)
 "z" = (
 /obj/effect/alien/weeds,
 /mob/living/simple_mob/animal/space/alien,
@@ -124,8 +119,8 @@
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "M" = (
-/obj/effect/alien/resin/wall,
 /obj/effect/alien/weeds,
+/turf/simulated/wall/resin,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "O" = (
@@ -145,7 +140,7 @@
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "T" = (
-/obj/effect/alien/resin/wall,
+/turf/simulated/wall/resin,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "U" = (
@@ -463,8 +458,8 @@ s
 s
 p
 p
-y
-y
+M
+M
 s
 h
 q
@@ -486,7 +481,7 @@ s
 p
 s
 b
-y
+M
 q
 q
 L
@@ -530,7 +525,7 @@ P
 s
 s
 b
-y
+M
 k
 s
 s
@@ -552,7 +547,7 @@ p
 p
 p
 P
-y
+M
 s
 P
 p
