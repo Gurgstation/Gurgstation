@@ -3,8 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "b" = (
-/obj/effect/alien/resin/wall,
-/turf/simulated/mineral/floor/vacuum,
+/turf/simulated/wall/resin,
 /area/poi_d/explored)
 "c" = (
 /obj/structure/simple_door/resin,
