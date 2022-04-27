@@ -117,10 +117,10 @@ var/global/list/ovi_eggs_list = list() // Stores a type reference of all eggs.
 			log_debug("ovi: chosenBelly NOT true")
 			return
 		
-		visible_message("[span_warning("[user.name] is inserting a [name] into [M.name]!")]")
+		user.visible_message("[span_warning("[user.name] is inserting a [name] into [M.name]!")]")
 		if(do_after(user, 5 SECONDS, user))
 			insert(chosenBelly)
-			visible_message("[span_warning("[user.name] finished inserting a [name] into [M.name]!")]")
+			user.visible_message("[span_warning("[user.name] finished inserting a [name] into [M.name]!")]")
 
 	. = ..()
 
