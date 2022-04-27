@@ -10,21 +10,23 @@
 var/global/list/ovi_eggs_list = list() // Stores a type reference of all eggs. 
 
 /hook/startup/proc/init_ovi_eggs()
-	var/subtypes = subtypesof(/obj/item/weapon/ovi_egg)
-	for(var/pathtype in subtypes)
-		var/obj/item/weapon/ovi_egg/egg = new pathtype()
+	var/types = typesof(/obj/item/weapon/storage/vore_egg)
+	for(var/pathtype in types)
+		var/obj/item/weapon/storage/vore_egg/egg = new pathtype()
 
 		ovi_eggs_list[pathtype] = egg
 
 
-
+/* // Now using the vore_egg item types, as I thought they were only lockers :o
 // Base egg, don't use this one..! Use the subtypes c:
-/obj/item/weapon/ovi_egg
+/obj/item/weapon/storage/vore_egg
 	name = "Egg"
 	desc = "James May Special. Egg."
+	icon = 'gurgs_content/icons/obj/ovieggs.dmi'
+*/
 
 /mob/living
-	var/obj/item/weapon/ovi_egg/ovi_egg_type
+	var/obj/item/weapon/storage/vore_egg/ovi_egg_type
 
 /mob/living/proc/select_egg_type()
 	set category = "Abilities"
@@ -35,7 +37,7 @@ var/global/list/ovi_eggs_list = list() // Stores a type reference of all eggs.
 	var/list/egglist = ovi_eggs_list.Copy()
 	var/list/generated_list = list()
 	for(var/E in egglist)
-		var/obj/item/weapon/ovi_egg/OE = egglist[E]
+		var/obj/item/weapon/storage/vore_egg/OE = egglist[E]
 		generated_list[OE.name] = E
 	
 	var/selected = tgui_input_list(src, "Select an egg", "Egg Selection", generated_list)
@@ -82,7 +84,7 @@ var/global/list/ovi_eggs_list = list() // Stores a type reference of all eggs.
 	if(!src.client) // If it's an AI.
 		log_debug("ovi: AI insertion")
 		var/targetBelly = pick(target.vore_organs) // select a random belly.
-		var/obj/item/weapon/ovi_egg/egg = new ovi_egg_type()
+		var/obj/item/weapon/storage/vore_egg/egg = new ovi_egg_type()
 		visible_message("[span_warning("[src] is inserting a \the [egg] into [target]!")]", "[span_warning("You begin inserting a \the [egg] into [target].")]")
 		if(do_after(src, 5 SECONDS, src))
 			egg.insert(targetBelly)
@@ -94,7 +96,7 @@ var/global/list/ovi_eggs_list = list() // Stores a type reference of all eggs.
 		log_debug("ovi: chosenBelly NOT true")
 		return
 	
-	var/obj/item/weapon/ovi_egg/egg = new ovi_egg_type()
+	var/obj/item/weapon/storage/vore_egg/egg = new ovi_egg_type()
 
 	// TO DO: Customisable insertion messages. - Currently a placeholder while I get the main eggy bit in firstly c:
 	visible_message("[span_warning("[src] is inserting a \the [egg] into [target]!")]")
@@ -106,7 +108,7 @@ var/global/list/ovi_eggs_list = list() // Stores a type reference of all eggs.
 
 
 
-/obj/item/weapon/ovi_egg/proc/insert(var/obj/belly/belly)
+/obj/item/weapon/storage/vore_egg/proc/insert(var/obj/belly/belly)
 
 	/* If no sound is made, uncomment this.
 	// Copying this code from /obj/belly/Entered() so that it's compatible to both sound files.
