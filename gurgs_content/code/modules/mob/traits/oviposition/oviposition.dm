@@ -1,6 +1,7 @@
 // Author - GremlingSS
 
 // TODO:
+// Custom egg colors (totally didn't forget this)
 // Allow custom insertion messages.
 // Modify existing AI holders to support oviposition (spiders are gonna be kinda h o t now???)
 // Enable oviposition on simple_mobs and other mobs.
