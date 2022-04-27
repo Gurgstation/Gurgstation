@@ -1,3 +1,6 @@
+// Unused.
+
+
 /obj/item/weapon/ovi_egg/slime
 	name = "slime egg"
 	desc = "James May Special. Egg."
