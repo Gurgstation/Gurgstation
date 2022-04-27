@@ -500,6 +500,13 @@
 /obj/structure/simple_door/sandstone,
 /turf/simulated/floor/tiled/asteroid_steel,
 /area/tether_away/beach/resort/janibar)
+"gq" = (
+/obj/move_trader_landmark{
+	dir = 8;
+	trader_type = /obj/trader/general
+	},
+/turf/simulated/floor/outdoors/grass,
+/area/tether_away/beach/cavebase)
 "gw" = (
 /obj/structure/bonfire,
 /turf/simulated/mineral/floor/cave{
@@ -1245,6 +1252,10 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
+/obj/move_trader_landmark{
+	dir = 4;
+	trader_type = /obj/trader/general
+	},
 /turf/simulated/floor/outdoors/grass,
 /area/tether_away/beach/resort/janibar)
 "yz" = (
@@ -1377,6 +1388,7 @@
 /obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
 /obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
 /obj/item/weapon/reagent_containers/glass/bottle/eznutrient,
+/obj/random/donkpocketbox,
 /turf/simulated/floor/tiled/eris/cafe,
 /area/tether_away/beach/resort/kitchen)
 "By" = (
@@ -1384,6 +1396,14 @@
 	dir = 4
 	},
 /turf/simulated/floor/lino,
+/area/tether_away/beach/resort/kitchen)
+"BC" = (
+/obj/structure/table/bench/sifwooden/padded,
+/obj/move_trader_landmark{
+	dir = 4;
+	trader_type = /obj/trader/general
+	},
+/turf/simulated/floor/wood,
 /area/tether_away/beach/resort/kitchen)
 "BF" = (
 /turf/simulated/wall/sandstone,
@@ -1526,6 +1546,13 @@
 "EU" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/outdoors/grass,
+/area/tether_away/beach/resort)
+"Ff" = (
+/obj/move_trader_landmark{
+	dir = 4;
+	trader_type = /obj/trader/general
+	},
+/turf/simulated/floor/beach/sand/outdoors,
 /area/tether_away/beach/resort)
 "Fm" = (
 /obj/structure/cable{
@@ -5447,7 +5474,7 @@ Xd
 Xd
 Xd
 Xd
-LQ
+gq
 Xd
 Xd
 xy
@@ -10595,7 +10622,7 @@ zV
 yf
 as
 ad
-as
+BC
 yf
 as
 ad
@@ -15524,7 +15551,7 @@ lI
 lI
 Nv
 Fm
-Nv
+Ff
 lI
 pP
 lI

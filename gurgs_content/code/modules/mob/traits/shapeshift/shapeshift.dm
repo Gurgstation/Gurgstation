@@ -17,10 +17,10 @@
 
 /mob/living/
 	var/can_be_transformed = FALSE
-	var/list/datum/absorbed_dna/absorbedPreys = list() // Why not use this? It's got everything I need.
+	var/list/datum/absorbed_dna/balls = list() // Why not use this? It's got everything I need.
 
 /mob/living/proc/GetAbsorbedDNA(var/dna_owner)
-	for(var/datum/absorbed_dna/DNA in absorbedPreys)
+	for(var/datum/absorbed_dna/DNA in balls)
 		if(dna_owner == DNA.name)
 			return DNA
 
@@ -35,7 +35,7 @@
 			absorbedDNA.SetupExtras(M, absorbedDNA)
 
 			if(!GetAbsorbedDNA(absorbedDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
-				absorbedPreys += absorbedDNA
+				balls += absorbedDNA
 
 //
 // Preparation for the actual stuff. This includes refactoring unabsorption, adding the prey's DNA to the player's list and also removing it on unabsorption, hence refactorising.
@@ -50,7 +50,7 @@
 
 //	var/preyDNA = owner.GetAbsorbedDNA(L.real_name)
 //	if(preyDNA)
-//		owner.absorbedPreys -= preyDNA
+//		owner.balls -= preyDNA
 
 /datum/digest_mode/unabsorb/process_mob(obj/belly/B, mob/living/L) // Gurgs OVERRIDE
 	if(L.absorbed && B.owner.nutrition >= 100)
@@ -68,7 +68,7 @@
 			absorbedDNA.SetupExtras(H, absorbedDNA)
 
 			if(!owner.GetAbsorbedDNA(absorbedDNA.name)) // Don't duplicate - I wonder if it's possible for it to still be a different DNA? DNA code could use a rewrite
-				owner.absorbedPreys += absorbedDNA
+				owner.balls += absorbedDNA
 
 /obj/belly/absorb_living(mob/living/M)
 	..()
@@ -113,7 +113,7 @@
 	var/mob/living/carbon/human/H = src
 
 	var/list/names = list()
-	for(var/datum/absorbed_dna/DNA in absorbedPreys)
+	for(var/datum/absorbed_dna/DNA in balls)
 		names += "[DNA.name]"
 
 	var/S = tgui_input_list(src, "Select the prey:", "Pick which Prey", names)
@@ -385,7 +385,7 @@
 	set name = "Forget Prey"
 
 	var/list/names = list()
-	for(var/datum/absorbed_dna/DNA in absorbedPreys)
+	for(var/datum/absorbed_dna/DNA in balls)
 		names += "[DNA.name]"
 
 	var/S = tgui_input_list(src, "Select the prey to forget:", "Prey-B-Gone", names)
@@ -394,7 +394,7 @@
 	var/datum/absorbed_dna/chosen_dna = GetAbsorbedDNA(S)
 	if(chosen_dna)
 		if(tgui_alert(src, "Are you sure you want to forget this? You won't remember it unless you reabsorb or digest them again!", "Forget Prey",list("No","Yes")) == "Yes")
-			absorbedPreys -= chosen_dna
+			balls -= chosen_dna
 			return 1
 	return 0
 

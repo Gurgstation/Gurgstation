@@ -100,7 +100,7 @@
 	result = /obj/item/weapon/reagent_containers/food/snacks/sliceable/sushi
 
 /datum/recipe/lobster
-	fruit = list("lemon" = 1, "cabbage" = 1)
+	fruit = list("lemon" = 1, "lettuce" = 1)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/lobster
 	)
@@ -160,7 +160,7 @@
 	result = /obj/item/weapon/storage/box/wings/bucket
 
 /datum/recipe/grub_pink
-	fruit = list("cherry" = 1)
+	fruit = list("cherries" = 1)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/grub
 	)

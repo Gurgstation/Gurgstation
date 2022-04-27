@@ -22,7 +22,7 @@ var/list/preferences_datums = list()
 	var/UI_style_color = "#ffffff"
 	var/UI_style_alpha = 255
 	var/tooltipstyle = "Midnight"		//Style for popup tooltips
-	var/client_fps = 0
+	var/client_fps = 40
 	var/ambience_freq = 5				// How often we're playing repeating ambience to a client.
 	var/ambience_chance = 35			// What's the % chance we'll play ambience (in conjunction with the above frequency)
 
@@ -30,6 +30,7 @@ var/list/preferences_datums = list()
 	var/tgui_lock = FALSE
 
 	//character preferences
+	var/num_languages = 0				//CHOMPEdit
 	var/real_name						//our character's name
 	var/be_random_name = 0				//whether we are a random name every round
 	var/nickname						//our character's nickname
@@ -156,6 +157,13 @@ var/list/preferences_datums = list()
 
 	///If they are currently in the process of swapping slots, don't let them open 999 windows for it and get confused
 	var/selecting_slots = FALSE
+
+//CHOMPEdit Begin
+/datum/preferences/proc/numlanguage()
+	var/datum/species/S = GLOB.all_species[species]
+	var/num = max(num_languages, S.num_alternate_languages)
+	return (num == 0) ? 3 : num //Don't return 0
+//CHOMPEdit End
 
 
 /datum/preferences/New(client/C)

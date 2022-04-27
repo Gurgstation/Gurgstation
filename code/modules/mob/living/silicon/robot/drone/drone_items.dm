@@ -22,7 +22,7 @@
 		/obj/item/weapon/tank,
 		/obj/item/weapon/circuitboard,
 		/obj/item/weapon/smes_coil,
-		/obj/item/weapon/fuel_assembly // Gurgs ADD: R-UST fuel cells now grabbable
+		/obj/item/weapon/fuel_assembly
 		)
 
 	var/obj/item/wrapped = null // Item currently being held.
