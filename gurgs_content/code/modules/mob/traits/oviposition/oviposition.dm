@@ -57,6 +57,7 @@ var/global/list/ovi_eggs_list = list() // Stores a type reference of all eggs.
 	var/obj/item/weapon/grab/G = src.get_active_hand()
 
 	if(!G)
+		to_chat(src,"You need to grab someone!")
 		return
 
 	if(!G.affecting)
@@ -85,10 +86,10 @@ var/global/list/ovi_eggs_list = list() // Stores a type reference of all eggs.
 		log_debug("ovi: AI insertion")
 		var/targetBelly = pick(target.vore_organs) // select a random belly.
 		var/obj/item/weapon/storage/vore_egg/egg = new ovi_egg_type()
-		visible_message("[span_warning("[src] is inserting a \the [egg] into [target]!")]", "[span_warning("You begin inserting a \the [egg] into [target].")]")
+		visible_message("[span_warning("[src] is inserting a [egg.name] into [target.name]!")]", "[span_warning("You begin inserting a [egg.name] into [target.name].")]")
 		if(do_after(src, 5 SECONDS, src))
 			egg.insert(targetBelly)
-			visible_message("[span_warning("[src] finished inserting a \the [egg] into [target]!")]", "[span_warning("You finished inserting a \the [egg] into [target]")]")
+			visible_message("[span_warning("[src] finished inserting a [egg.name] into [target.name]!")]", "[span_warning("You finished inserting a [egg.name] into [target.name]")]")
 	
 	var/chosenBelly = tgui_input_list(usr, "Choose Belly", "Belly Choice", target.vore_organs)
 
@@ -99,14 +100,29 @@ var/global/list/ovi_eggs_list = list() // Stores a type reference of all eggs.
 	var/obj/item/weapon/storage/vore_egg/egg = new ovi_egg_type()
 
 	// TO DO: Customisable insertion messages. - Currently a placeholder while I get the main eggy bit in firstly c:
-	visible_message("[span_warning("[src] is inserting a \the [egg] into [target]!")]")
+	visible_message("[span_warning("[src] is inserting a [egg.name] into [target]!")]")
 	if(do_after(src, 5 SECONDS, src))
 		egg.insert(chosenBelly)
-		visible_message("[span_warning("[src] finished inserting a \the [egg] into [target]!")]")
+		visible_message("[span_warning("[src] finished inserting a [egg.name] into [target]!")]")
 	
 	log_debug("ovi: finished")
 
+/obj/item/weapon/storage/vore_egg/attack(mob/living/M, mob/living/user, target_zone, attack_modifier)
+	if(user.a_intent == I_GRAB)
+		if(M.vore_organs.len <= 0)
+			return
+		var/chosenBelly = tgui_input_list(usr, "Choose Belly", "Belly Choice", M.vore_organs)
 
+		if(!chosenBelly)
+			log_debug("ovi: chosenBelly NOT true")
+			return
+		
+		visible_message("[span_warning("[user.name] is inserting a [name] into [M.name]!")]")
+		if(do_after(user, 5 SECONDS, user))
+			insert(chosenBelly)
+			visible_message("[span_warning("[user.name] finished inserting a [name] into [M.name]!")]")
+
+	. = ..()
 
 /obj/item/weapon/storage/vore_egg/proc/insert(var/obj/belly/belly)
 
