@@ -41,9 +41,7 @@
 /area/poi_d/explored)
 "t" = (
 /obj/effect/alien/weeds,
-/obj/effect/alien/weeds,
 /obj/structure/simple_door/resin,
-/obj/effect/alien/weeds,
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "v" = (

@@ -43,7 +43,6 @@
 /turf/simulated/mineral/floor/vacuum,
 /area/poi_d/explored)
 "j" = (
-/obj/effect/alien/weeds,
 /obj/effect/alien/weeds/node,
 /mob/living/simple_mob/animal/space/alien/queen/empress,
 /turf/simulated/mineral/floor/vacuum,
