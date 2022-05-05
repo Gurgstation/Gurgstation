@@ -435,6 +435,11 @@ var/global/list/light_type_cache = list()
 		var/correct_range = nightshift_enabled ? brightness_range_ns : brightness_range
 		var/correct_power = nightshift_enabled ? brightness_power_ns : brightness_power
 		var/correct_color = nightshift_enabled ? brightness_color_ns : brightness_color
+		
+		// Gurgs ADD: Dimmable Switches - START
+		correct_power = correct_power * get_area(src).light_brightness
+		// Gurgs ADD - END
+
 		if(light_range != correct_range || light_power != correct_power || light_color != correct_color)
 			if(!auto_flicker)
 				switchcount++
