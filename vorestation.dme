@@ -4118,6 +4118,7 @@
 #include "code\ZAS\Turf.dm"
 #include "code\ZAS\Variable Settings.dm"
 #include "code\ZAS\Zone.dm"
+#include "gurgs_content\code\dimmerswitch.dm"
 #include "gurgs_content\code\tgs_commands.dm"
 #include "gurgs_content\code\_helpers\global_lists_ch.dm"
 #include "gurgs_content\code\ATMOSPHERICS\components\unary\heat_source_gu.dm"
