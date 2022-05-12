@@ -4180,6 +4180,8 @@
 #include "gurgs_content\code\modules\mob\traits\neutral_ch.dm"
 #include "gurgs_content\code\modules\mob\traits\positive_ch.dm"
 #include "gurgs_content\code\modules\mob\traits\trait_ch.dm"
+#include "gurgs_content\code\modules\mob\traits\oviposition\oviposition.dm"
+#include "gurgs_content\code\modules\mob\traits\oviposition\oviposition_trait.dm"
 #include "gurgs_content\code\modules\mob\traits\shapeshift\shapeshift.dm"
 #include "gurgs_content\code\modules\mob\traits\shapeshift\shapeshift_trait.dm"
 #include "gurgs_content\code\modules\organs\ferallimbs_custom.dm"

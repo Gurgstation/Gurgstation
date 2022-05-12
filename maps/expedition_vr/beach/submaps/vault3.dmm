@@ -22,7 +22,6 @@
 /area/submap/cave/vault3)
 "f" = (
 /obj/effect/alien/weeds,
-/obj/effect/alien/weeds,
 /turf/simulated/floor/plating,
 /area/submap/cave/vault3)
 "g" = (
@@ -30,8 +29,6 @@
 /turf/simulated/floor/plating,
 /area/submap/cave/vault3)
 "h" = (
-/obj/effect/alien/weeds,
-/obj/effect/alien/weeds,
 /obj/effect/alien/weeds/node,
 /turf/simulated/floor/plating,
 /area/submap/cave/vault3)
