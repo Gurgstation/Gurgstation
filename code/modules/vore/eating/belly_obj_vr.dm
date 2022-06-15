@@ -30,6 +30,7 @@
 	var/escapechance = 0 					// % Chance of prey beginning to escape if prey struggles.
 	var/transferchance = 0 					// % Chance of prey being trasnsfered, goes from 0-100%
 	var/transferchance_secondary = 0 		// % Chance of prey being transfered to transferchance_secondary, also goes 0-100%
+	var/save_digest_mode = TRUE			// Whether this belly's digest mode persists across rounds
 	var/can_taste = FALSE					// If this belly prints the flavor of prey when it eats someone.
 	var/bulge_size = 0.25					// The minimum size the prey has to be in order to show up on examine.
 	var/display_absorbed_examine = FALSE	// Do we display absorption examine messages for this belly at all?
@@ -157,7 +158,7 @@
 
 //For serialization, keep this updated, required for bellies to save correctly.
 /obj/belly/vars_to_save()
-	return ..() + list(
+	var/list/saving = list(
 		"name",
 		"desc",
 		"absorbed_desc",
@@ -238,7 +239,13 @@
 		"fullness5_messages",     //CHOMP end of variables from CHOMP
 		// Gurg ADD: Import Chomp liquid bellies - END
 		"egg_type"
+		"save_digest_mode"
 		)
+
+	if (save_digest_mode == 1)
+		return ..() + saving + list("digest_mode")
+
+	return ..() + saving
 
 /obj/belly/Initialize()
 	. = ..()
@@ -365,7 +372,7 @@
 		owner.update_icons()
 
 	//Print notifications/sound if necessary
-	if(!silent)
+	if(!silent && count)
 		owner.visible_message("<font color='green'><b>[owner] expels everything from their [lowertext(name)]!</b></font>")
 		var/soundfile
 		if(!fancy_vore)
@@ -401,6 +408,9 @@
 		slip.slip_protect = world.time + 25 // This is to prevent slipping back into your pred if they stand on soap or something.
 	//Place them into our drop_location
 	M.forceMove(drop_location())
+	if(ismob(M))
+		var/mob/ourmob = M
+		ourmob.reset_view(null)
 	items_preserved -= M
 
 	//Special treatment for absorbed prey
@@ -440,6 +450,10 @@
 			soundfile = fancy_release_sounds[release_sound]
 		if(soundfile)
 			playsound(src, soundfile, vol = 100, vary = 1, falloff = VORE_SOUND_FALLOFF, preference = /datum/client_preference/eating_noises, volume_channel = VOLUME_CHANNEL_VORE)
+	//Should fix your view not following you out of mobs sometimes!
+	if(ismob(M))
+		var/mob/ourmob = M
+		ourmob.reset_view(null)
 
 	return 1
 
@@ -453,6 +467,9 @@
 		prey.buckled.unbuckle_mob()
 
 	prey.forceMove(src)
+	if(ismob(prey))
+		var/mob/ourmob = prey
+		ourmob.reset_view(owner)
 	owner.updateVRPanel()
 	if(isanimal(owner))
 		owner.update_icon()
@@ -746,6 +763,10 @@
 	//This is probably already the case, but for sub-prey, it won't be.
 	if(M.loc != src)
 		M.forceMove(src)
+
+	if(ismob(M))
+		var/mob/ourmob = M
+		ourmob.reset_view(owner)
 
 	//Seek out absorbed prey of the prey, absorb them too.
 	//This in particular will recurse oddly because if there is absorbed prey of prey of prey...
@@ -1057,6 +1078,9 @@
 	if(!(content in src) || !istype(target))
 		return
 	content.forceMove(target)
+	if(ismob(content))
+		var/mob/ourmob = content
+		ourmob.reset_view(owner)
 	if(isitem(content))
 		var/obj/item/I = content
 		if(istype(I,/obj/item/weapon/card/id))
@@ -1154,6 +1178,7 @@
 	dupe.egg_type = egg_type
 	dupe.emote_time = emote_time
 	dupe.emote_active = emote_active
+	dupe.save_digest_mode = save_digest_mode
 
 	//// Object-holding variables
 	//struggle_messages_outside - strings
