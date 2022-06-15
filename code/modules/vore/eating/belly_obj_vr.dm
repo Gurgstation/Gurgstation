@@ -238,7 +238,7 @@
 		"fullness4_messages",
 		"fullness5_messages",     //CHOMP end of variables from CHOMP
 		// Gurg ADD: Import Chomp liquid bellies - END
-		"egg_type"
+		"egg_type",
 		"save_digest_mode"
 		)
 
