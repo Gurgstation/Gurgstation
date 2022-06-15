@@ -652,7 +652,7 @@ const VoreSelectedBellyVisuals = (props, context) => {
               className={classes([
                 'vore240x240',
                 key,
-              ])}/>
+              ])} />
           </Button>
         ))}
       </Section>
