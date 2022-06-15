@@ -615,26 +615,24 @@ const VoreSelectedBellyVisuals = (props, context) => {
               selected={disable_hud}
               content={disable_hud ? "Yes" : "No"} />
           </LabeledList.Item>
+          <LabeledList.Item label="Belly Color & Preview">
+            <Box backgroundColor={belly_fullscreen_color} width="20px" height="20px" />
+            <Button
+              icon="eye-dropper"
+              onClick={() => act("set_attribute", { attribute: "b_fullscreen_color", val: null })}>
+              Select Color
+            </Button>
+            <ByondUi
+              style={{
+                width: '200px',
+                height: '200px',
+              }}
+              params={{
+                id: mapRef,
+                type: 'map',
+              }} />
+          </LabeledList.Item>
         </LabeledList>
-      </Section>
-      <Section title="Belly Fullscreens Preview and Coloring">
-        <Flex direction="row">
-          <Box backgroundColor={belly_fullscreen_color} width="20px" height="20px" />
-          <Button
-            icon="eye-dropper"
-            onClick={() => act("set_attribute", { attribute: "b_fullscreen_color", val: null })}>
-            Select Color
-          </Button>
-        </Flex>
-        <ByondUi
-          style={{
-            width: '200px',
-            height: '200px',
-          }}
-          params={{
-            id: mapRef,
-            type: 'map',
-          }} />
       </Section>
       <Section title="Belly Fullscreens">
         <Button
@@ -654,10 +652,7 @@ const VoreSelectedBellyVisuals = (props, context) => {
               className={classes([
                 'vore240x240',
                 key,
-              ])}
-              style={{
-                transform: 'translate(0%, 4%)',
-              }} />
+              ])}/>
           </Button>
         ))}
       </Section>
