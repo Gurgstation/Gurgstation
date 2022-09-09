@@ -145,9 +145,8 @@
 // which is exactly what sign language does.
 /datum/language/sign/broadcast(var/mob/living/speaker, var/message, var/speaker_mask)
 	log_say("(SIGN) [message]", speaker)
-	var/verb_to_use = pick(signlang_verb)
-	speaker.say_signlang(message, verb_to_use, verb_to_use, src)
-
+	speaker.say_signlang(message, pick(signlang_verb), src)
+	
 
 // Silly language for those times when you try to talk a languague you normally can't
 /datum/language/gibberish

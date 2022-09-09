@@ -72,12 +72,8 @@
 	path = /obj/item/weapon/folder/yellow
 
 /datum/gear/utility/paicard
-	display_name = "personal AI device (classic)"
+	display_name = "personal AI device"
 	path = /obj/item/device/paicard
-
-/datum/gear/utility/paicard_b
-	display_name = "personal AI device (new)"
-	path = /obj/item/device/paicard/typeb
 
 /datum/gear/utility/securecase
 	display_name = "secure briefcase"

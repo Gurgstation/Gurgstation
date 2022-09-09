@@ -51,7 +51,6 @@
 	icon_state = "ice"
 	desc = "Looks slippery."
 	edge_blending_priority = 0
-	can_be_plated = FALSE
 
 /turf/simulated/floor/outdoors/ice/dark
 	name = "black ice"

@@ -1,5 +1,7 @@
+import { round } from 'common/math';
+import { Fragment } from 'inferno';
 import { useBackend } from "../backend";
-import { Box, Button, LabeledList, Section } from "../components";
+import { AnimatedNumber, Box, Button, Divider, Flex, Icon, LabeledList, ProgressBar, Section } from "../components";
 import { Window } from "../layouts";
 
 export const pAIMedrecords = (props, context) => {

@@ -6,6 +6,7 @@ import { Window } from "../layouts";
 import { LoginInfo } from './common/LoginInfo';
 import { LoginScreen } from './common/LoginScreen';
 import { TemporaryNotice } from './common/TemporaryNotice';
+import { decodeHtmlEntities } from 'common/string';
 
 const severities = {
   "Minor": "good",

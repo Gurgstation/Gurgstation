@@ -21,10 +21,10 @@ export const TelecommsLogBrowser = (props, context) => {
       height={450}
       resizable>
       <Window.Content scrollable>
-        {temp ? (
-          <NoticeBox danger={temp.color === "bad"} warning={temp.color !== "bad"}>
+        {(temp && temp.length) ? (
+          <NoticeBox warning>
             <Box display="inline-box" verticalAlign="middle">
-              {temp.text}
+              {temp}
             </Box>
             <Button
               icon="times-circle"
@@ -97,7 +97,7 @@ const TelecommsServerSelection = (props, context) => {
   }
 
   return (
-    <Section title="Detected Telecommunications Servers">
+    <Section title="Detected Telecommunication Servers">
       <LabeledList>
         {servers.map(server => (
           <LabeledList.Item

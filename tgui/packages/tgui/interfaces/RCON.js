@@ -2,7 +2,7 @@ import { round } from 'common/math';
 import { formatPower } from '../format';
 import { Fragment } from 'inferno';
 import { useBackend, useLocalState } from "../backend";
-import { Box, Button, Icon, LabeledList, ProgressBar, Stack, Section, Tabs, Slider } from "../components";
+import { Box, Button, Flex, Icon, LabeledList, ProgressBar, Stack, Section, Tabs, Slider, AnimatedNumber } from "../components";
 import { Window } from "../layouts";
 import { capitalize } from 'common/string';
 
@@ -14,7 +14,7 @@ export const RCON = (props, context) => {
   return (
     <Window
       width={630}
-      height={540}
+      height={440}
       resizable>
       <Window.Content scrollable>
         <RCONContent />
@@ -61,16 +61,10 @@ const RCONSmesList = (props, context) => {
 
   const {
     smes_info,
-    pages,
-    current_page,
   } = data;
 
-  const runCallback = (cb) => {
-    return cb();
-  };
-
   return (
-    <Section title={"SMESs (Page " + current_page + ")"}>
+    <Section title="SMESs">
       <Stack vertical>
         {smes_info.map(smes => (
           <Stack.Item key={smes.RCON_tag}>
@@ -78,23 +72,6 @@ const RCONSmesList = (props, context) => {
           </Stack.Item>
         ))}
       </Stack>
-      Page Selection:<br />
-      {runCallback(() => {
-        const row = [];
-        for (let i = 1; i < pages; i++) {
-          row.push(
-            <Button
-              selected={current_page === i}
-              key={i}
-              onClick={() => act("set_smes_page", {
-                index: i,
-              })}>
-              {i}
-            </Button>
-          );
-        }
-        return row;
-      })}
     </Section>
   );
 };

@@ -1,28 +1,29 @@
+import { round } from 'common/math';
 import { Fragment } from 'inferno';
 import { useBackend } from "../backend";
-import { Box, Button, NoticeBox, LabeledList, Section } from "../components";
+import { Box, Button, Flex, NoticeBox, LabeledList, Section } from "../components";
 import { Window } from "../layouts";
 
 export const TelecommsMachineBrowser = (props, context) => {
   const { act, data } = useBackend(context);
-
+  
   const {
     network,
     temp,
     machinelist,
     selectedMachine,
   } = data;
-
+  
   return (
     <Window
       width={575}
       height={450}
       resizable>
       <Window.Content scrollable>
-        {temp ? (
-          <NoticeBox danger={temp.color === "bad"} warning={temp.color !== "bad"}>
+        {(temp && temp.length) ? (
+          <NoticeBox warning>
             <Box display="inline-box" verticalAlign="middle">
-              {temp.text}
+              {temp}
             </Box>
             <Button
               icon="times-circle"

@@ -278,7 +278,6 @@
 /obj/item/weapon/holo
 	damtype = HALLOSS
 	no_attack_log = 1
-	no_random_knockdown = TRUE
 
 /obj/item/weapon/holo/esword
 	desc = "May the force be within you. Sorta."

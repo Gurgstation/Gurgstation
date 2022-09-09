@@ -1,7 +1,9 @@
-import { Component } from 'inferno';
+import { round } from 'common/math';
+import { Component, Fragment } from 'inferno';
 import { useBackend } from "../backend";
-import { Box, Button, Icon, LabeledList, Section, Slider } from "../components";
+import { Box, Button, Flex, Icon, LabeledList, ProgressBar, Section, Slider } from "../components";
 import { Window } from "../layouts";
+import { logger } from '../logging';
 
 export const BombTester = (props, context) => {
   const { act, data } = useBackend(context);
@@ -92,7 +94,7 @@ export const BombTester = (props, context) => {
                   <Slider
                     minValue={0}
                     value={sim_canister_output}
-                    maxValue={1013.25}
+                    maxValue={1013.25} 
                     onDrag={(e, val) => act("set_can_pressure", { pressure: val })} />
                 </LabeledList.Item>
               )}
@@ -120,7 +122,7 @@ class BombTesterSimulation extends Component {
     const BOUND_X = 340;
     const BOUND_Y = 205;
     const MOVEMENT_SPEED = 2;
-
+    
     let startRight = Math.random() > 0.5;
     let startBottom = Math.random() > 0.5;
 

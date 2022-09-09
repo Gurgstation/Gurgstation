@@ -1,7 +1,8 @@
 import { toFixed } from 'common/math';
+import { decodeHtmlEntities } from 'common/string';
 import { Fragment } from 'inferno';
 import { useBackend, useLocalState } from '../backend';
-import { Box, Button, LabeledList, Section } from '../components';
+import { Box, Button, LabeledList, NumberInput, Section } from '../components';
 import { getGasLabel, getGasColor } from '../constants';
 import { Window } from '../layouts';
 import { InterfaceLockNoticeBox } from './common/InterfaceLockNoticeBox';

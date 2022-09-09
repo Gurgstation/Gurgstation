@@ -54,19 +54,18 @@ window.addEventListener('beforeunload', () => {
 });
 
 /**
- * Get the bounding box of the DOM element in display-pixels.
+ * Get the bounding box of the DOM element.
  */
 const getBoundingBox = element => {
-  const pixelRatio = window.devicePixelRatio ?? 1;
   const rect = element.getBoundingClientRect();
   return {
     pos: [
-      rect.left * pixelRatio,
-      rect.top * pixelRatio,
+      rect.left,
+      rect.top,
     ],
     size: [
-      (rect.right - rect.left) * pixelRatio,
-      (rect.bottom - rect.top) * pixelRatio,
+      rect.right - rect.left,
+      rect.bottom - rect.top,
     ],
   };
 };
@@ -115,7 +114,7 @@ export class ByondUi extends Component {
     const box = getBoundingBox(this.containerRef.current);
     logger.debug('bounding box', box);
     this.byondUiElement.render({
-      parent: Byond.windowId,
+      parent: window.__windowId__,
       ...params,
       pos: box.pos[0] + ',' + box.pos[1],
       size: box.size[0] + 'x' + box.size[1],

@@ -1,5 +1,6 @@
+import { toFixed, round } from 'common/math';
 import { useBackend } from '../backend';
-import { Box, Button, LabeledList, NumberInput, Section, ProgressBar } from '../components';
+import { Box, Button, Icon, LabeledList, NumberInput, Section, ProgressBar } from '../components';
 import { Window } from '../layouts';
 
 export const XenoarchHandheldPowerUtilizer = (props, context) => {

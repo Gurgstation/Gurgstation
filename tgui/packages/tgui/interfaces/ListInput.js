@@ -4,9 +4,9 @@
  * @license MIT
  */
 
-import { Loader } from "./common/Loader";
+import { clamp01 } from 'common/math';
 import { useBackend, useLocalState } from '../backend';
-import { Button, Section, Input, Stack } from '../components';
+import { Box, Button, Section, Input, Stack } from '../components';
 import { KEY_DOWN, KEY_UP, KEY_ENTER, KEY_SPACE, KEY_ESCAPE, KEY_HOME, KEY_END } from 'common/keycodes';
 import { Window } from '../layouts';
 
@@ -208,5 +208,18 @@ export const ListInput = (props, context) => {
         </Stack>
       </Window.Content>
     </Window>
+  );
+};
+
+export const Loader = props => {
+  const { value } = props;
+  return (
+    <div className="ListInput__Loader">
+      <Box
+        className="ListInput__LoaderProgress"
+        style={{
+          width: clamp01(value) * 100 + '%',
+        }} />
+    </div>
   );
 };

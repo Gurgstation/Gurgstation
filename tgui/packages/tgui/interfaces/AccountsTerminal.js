@@ -1,5 +1,7 @@
+import { round } from 'common/math';
+import { Fragment } from 'inferno';
 import { useBackend, useSharedState } from "../backend";
-import { Box, Button, LabeledList, Input, Section, Table, Tabs } from "../components";
+import { Box, Button, Flex, Icon, LabeledList, Input, Section, Table, Tabs } from "../components";
 import { Window } from "../layouts";
 
 export const AccountsTerminal = (props, context) => {
@@ -124,7 +126,7 @@ const DetailedView = (props, context) => {
     suspended,
     transactions,
   } = data;
-
+  
   return (
     <Section title="Account Details" level={2} buttons={
       <Button
@@ -204,7 +206,7 @@ const ListView = (props, context) => {
   const {
     accounts,
   } = data;
-
+  
   return (
     <Section title="NanoTrasen Accounts" level={2}>
       {accounts.length && (

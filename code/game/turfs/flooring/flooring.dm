@@ -146,7 +146,7 @@ var/list/flooring_types
 	flags = 0
 	icon = 'icons/turf/outdoors.dmi'
 	icon_base = "grass_sif"
-	build_type = null
+	build_type = /obj/item/stack/tile/grass/sif
 	has_base_range = 1
 
 /decl/flooring/grass/sif/forest
@@ -155,6 +155,7 @@ var/list/flooring_types
 	flags = 0
 	icon = 'icons/turf/outdoors.dmi'
 	icon_base = "grass_sif_dark"
+	build_type = /obj/item/stack/tile/grass/sif/forest
 	has_base_range = 1
 
 /decl/flooring/water

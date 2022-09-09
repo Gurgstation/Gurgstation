@@ -49,7 +49,7 @@
 	s.start()
 
 	new /obj/effect/decal/cleanable/blood/oil(Tsec)
-	return ..()
+	qdel(src)
 
 /mob/living/bot/secbot/ed209/handleRangedTarget()
 	RangedAttack(target)

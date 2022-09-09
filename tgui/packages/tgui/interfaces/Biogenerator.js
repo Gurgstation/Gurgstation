@@ -1,9 +1,10 @@
 import { createSearch } from 'common/string';
 import { Fragment } from 'inferno';
 import { useBackend, useLocalState } from "../backend";
-import { Box, Button, Collapsible, Dropdown, Flex, Input, Section } from '../components';
+import { Box, Button, Collapsible, Dropdown, Flex, Input, NoticeBox, Section } from '../components';
 import { Window } from "../layouts";
 import { refocusLayout } from '../layouts';
+import { logger } from '../logging';
 
 const sortTypes = {
   'Alphabetical': (a, b) => a - b,

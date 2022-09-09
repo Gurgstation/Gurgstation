@@ -1,4 +1,9 @@
 //DEFINITIONS FOR ASSET DATUMS START HERE.
+/datum/asset/simple/tgui_common
+	// keep_local_name = TRUE
+	assets = list(
+		"tgui-common.bundle.js" = file("tgui/public/tgui-common.bundle.js"),
+	)
 
 /datum/asset/simple/tgui
 	// keep_local_name = TRUE

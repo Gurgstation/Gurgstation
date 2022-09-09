@@ -1,5 +1,7 @@
-import { useBackend } from "../backend";
-import { Box, Button, Flex, LabeledList, Section, AnimatedNumber } from "../components";
+import { round } from 'common/math';
+import { Fragment } from 'inferno';
+import { useBackend, useLocalState } from "../backend";
+import { Box, Button, Flex, Icon, LabeledList, ProgressBar, Section, Table, AnimatedNumber } from "../components";
 import { Window } from "../layouts";
 import { OvermapPanControls } from './common/Overmap';
 

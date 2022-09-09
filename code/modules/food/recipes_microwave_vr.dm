@@ -37,7 +37,6 @@
 	)
 	result = /obj/item/weapon/reagent_containers/food/snacks/donerkebab
 
-
 /datum/recipe/roastbeef
 	fruit = list("carrot" = 2, "potato" = 2)
 	items = list(
@@ -151,7 +150,7 @@
 	result = /obj/item/weapon/storage/box/wings/tray
 
 /datum/recipe/bucket
-	fruit = list("durian" = 1)
+	fruit = list("potato" = 1)
 	items = list(
 		/obj/item/weapon/reagent_containers/food/snacks/meat,
 		/obj/item/weapon/reagent_containers/food/snacks/meat,

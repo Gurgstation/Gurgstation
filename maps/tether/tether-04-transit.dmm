@@ -683,7 +683,7 @@
 /area/tether/midpoint)
 "Ud" = (
 /obj/structure/table/woodentable,
-/obj/random/paicard,
+/obj/item/device/paicard,
 /turf/simulated/floor/midpoint_glass/reinf,
 /area/tether/midpoint)
 "Ui" = (

@@ -1,8 +1,10 @@
 import { round } from 'common/math';
+import { Fragment } from 'inferno';
 import { useBackend } from "../backend";
-import { Box, Button, LabeledList, ProgressBar, Section, AnimatedNumber } from "../components";
+import { Box, Button, Flex, Icon, LabeledList, ProgressBar, Section, Table, Divider, AnimatedNumber } from "../components";
 import { Window } from "../layouts";
-import { formatPower } from "../format";
+import { decodeHtmlEntities } from 'common/string';
+import { formatSiUnit, formatPower } from "../format";
 
 export const ICAssembly = (props, context) => {
   const { act, data } = useBackend(context);

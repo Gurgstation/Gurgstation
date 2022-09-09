@@ -1,6 +1,7 @@
+import { round } from 'common/math';
 import { Fragment } from 'inferno';
 import { useBackend, useSharedState } from "../backend";
-import { Box, Button, LabeledList, Section, Tabs } from "../components";
+import { Box, Button, Flex, Icon, LabeledList, ProgressBar, Section, Tabs } from "../components";
 import { Window } from "../layouts";
 import { filter } from 'common/collections';
 
@@ -110,7 +111,7 @@ const ResearchServerAccess = (props, context) => {
     }
     return false;
   };
-
+  
   const hasDownloadAccess = (server, console) => {
     if (server.id_with_download.indexOf(console.id) !== -1) {
       return true;
