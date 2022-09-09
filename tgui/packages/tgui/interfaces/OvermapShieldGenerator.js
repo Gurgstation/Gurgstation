@@ -1,6 +1,7 @@
+import { round } from 'common/math';
 import { Fragment } from 'inferno';
-import { useBackend } from "../backend";
-import { Box, Button, LabeledList, ProgressBar, Section, AnimatedNumber } from "../components";
+import { useBackend, useLocalState } from "../backend";
+import { Box, Button, Flex, Icon, LabeledList, ProgressBar, Section, Table, AnimatedNumber } from "../components";
 import { Window } from "../layouts";
 
 export const OvermapShieldGenerator = (props, context) => {

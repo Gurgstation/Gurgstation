@@ -1,5 +1,7 @@
+import { round } from 'common/math';
+import { Fragment } from 'inferno';
 import { useBackend } from "../backend";
-import { Button, LabeledList, Slider, Section } from "../components";
+import { Box, Button, Flex, Icon, LabeledList, Slider, Section } from "../components";
 import { Window } from "../layouts";
 
 export const VolumePanel = (props, context) => {

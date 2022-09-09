@@ -11,10 +11,7 @@ var/datum/paiController/paiController			// Global handler for pAI candidates
 	var/role
 	var/comments
 	var/ready = 0
-	var/chassis
-	var/ouremotion
-	var/eye_color
-	var/gender
+
 
 /hook/startup/proc/paiControllerSetup()
 	paiController = new /datum/paiController()
@@ -36,25 +33,14 @@ var/datum/paiController/paiController			// Global handler for pAI candidates
 			return
 		if(istype(card,/obj/item/device/paicard) && istype(candidate,/datum/paiCandidate))
 			var/mob/living/silicon/pai/pai = new(card)
-			pai.key = candidate.key
-			card.setPersonality(pai)
 			if(!candidate.name)
-				pai.SetName(pick(ninja_names))
+				pai.name = pick(ninja_names)
 			else
-				pai.SetName(candidate.name)
-			if(candidate.description)
-				pai.flavor_text = candidate.description
-			if(candidate.eye_color)
-				pai.eye_color = candidate.eye_color
-				card.screen_color = pai.eye_color
-			if(candidate.chassis)
-				pai.chassis = candidate.chassis
-			if(candidate.ouremotion)
-				card.setEmotion(candidate.ouremotion)
-			if(candidate.gender)
-				pai.gender = candidate.gender
-			pai.update_icon()
+				pai.name = candidate.name
 			pai.real_name = pai.name
+			pai.key = candidate.key
+
+			card.setPersonality(pai)
 			card.looking_for_personality = 0
 
 			if(pai.mind) update_antag_icons(pai.mind)
@@ -224,7 +210,7 @@ var/datum/paiController/paiController			// Global handler for pAI candidates
 			</tr>
 			<tr>
 				<td class="button">
-					<a href='byond://?src=\ref[src];option=load;new=1;allow_submit=[allowSubmit];candidate=\ref[candidate]' class="button"><b><font size="3px">Load Personality</font></b></a>
+					<a href='byond://?src=\ref[src];option=load;new=1;allow_submit=[allowSubmit];candidate=\ref[candidate]' class="button">Load Personality</a>
 				</td>
 			</tr>
 		</table><br>

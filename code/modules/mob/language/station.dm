@@ -96,8 +96,7 @@
 
 /datum/language/tajsign/broadcast(var/mob/living/speaker, var/message, var/speaker_mask)
 	log_say("(SIGN) [message]", speaker)
-	var/verb_to_use = pick(signlang_verb)
-	speaker.say_signlang(message, verb_to_use, verb_to_use, src)
+	speaker.say_signlang(message, pick(signlang_verb), src)
 
 /datum/language/tajsign/can_speak_special(var/mob/speaker)	// TODO: If ever we make external organs assist languages, convert this over to the new format
 	var/list/allowed_species = list(SPECIES_TAJ, SPECIES_TESHARI)	// Need a tail and ears and such to use this.

@@ -1,6 +1,7 @@
+import { round } from 'common/math';
 import { Fragment } from 'inferno';
 import { useBackend } from "../backend";
-import { Box, Button, LabeledList, Section, Dropdown } from "../components";
+import { Box, Button, Flex, Icon, LabeledList, ProgressBar, Section, Dropdown } from "../components";
 import { Window } from "../layouts";
 
 export const DroneConsole = (props, context) => {

@@ -1,6 +1,8 @@
+import { round } from 'common/math';
+import { Fragment } from 'inferno';
 import { formatPower } from "../format";
 import { useBackend } from "../backend";
-import { AnimatedNumber, Box, Button, LabeledList, Section } from "../components";
+import { AnimatedNumber, Box, Button, Flex, Icon, LabeledList, ProgressBar, Section, Table } from "../components";
 import { Window } from "../layouts";
 
 export const TurbineControl = (props, context) => {

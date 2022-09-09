@@ -1,7 +1,9 @@
+import { round } from 'common/math';
 import { flow } from 'common/fp';
 import { filter, sortBy } from 'common/collections';
+import { Fragment } from 'inferno';
 import { useBackend, useSharedState } from "../backend";
-import { Box, Button, Flex, Input, Section, Dropdown } from "../components";
+import { Box, Button, Flex, Icon, Input, LabeledList, ProgressBar, Section, Dropdown } from "../components";
 import { Window } from "../layouts";
 import { Materials } from "./ExosuitFabricator";
 import { createSearch, toTitleCase } from 'common/string';
@@ -34,7 +36,7 @@ export const Autolathe = (props, context) => {
     materials,
     categories,
   } = data;
-
+  
   const [category, setCategory] = useSharedState(context, "category", 0);
 
   const [

@@ -1,6 +1,7 @@
+import { round } from 'common/math';
 import { Fragment } from 'inferno';
-import { useBackend } from "../backend";
-import { Box, Button, Flex, LabeledList, Section, Table } from "../components";
+import { useBackend, useLocalState } from "../backend";
+import { Box, Button, Flex, Icon, LabeledList, ProgressBar, Section, Table } from "../components";
 import { Window } from "../layouts";
 import { OvermapFlightData, OvermapPanControls } from './common/Overmap';
 

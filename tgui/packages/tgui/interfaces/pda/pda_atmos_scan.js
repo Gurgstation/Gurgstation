@@ -1,7 +1,8 @@
 import { filter } from 'common/collections';
-import { decodeHtmlEntities } from 'common/string';
-import { useBackend } from "../../backend";
-import { Box, LabeledList } from "../../components";
+import { decodeHtmlEntities, toTitleCase } from 'common/string';
+import { Fragment } from 'inferno';
+import { useBackend, useLocalState } from "../../backend";
+import { Box, Button, Flex, Icon, LabeledList, ProgressBar, Section } from "../../components";
 
 const getItemColor = (value, min2, min1, max1, max2) => {
   if (value < min2) {

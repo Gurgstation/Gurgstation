@@ -1,5 +1,5 @@
 import { useBackend } from "../backend";
-import { Button, LabeledList, Section, AnimatedNumber, Dropdown } from "../components";
+import { Box, Button, LabeledList, ProgressBar, Section, NumberInput, AnimatedNumber, Dropdown } from "../components";
 import { Window } from "../layouts";
 
 export const Floorbot = (props, context) => {

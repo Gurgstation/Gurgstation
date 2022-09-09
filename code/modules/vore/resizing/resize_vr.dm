@@ -65,7 +65,7 @@
  */
 
 
-/mob/living/proc/resize(var/new_size, var/animate = TRUE, var/uncapped = FALSE, var/ignore_prefs = FALSE, var/aura_animation = TRUE)
+/mob/living/proc/resize(var/new_size, var/animate = TRUE, var/uncapped = FALSE, var/ignore_prefs = FALSE)
 	if(!uncapped)
 		new_size = clamp(new_size, RESIZE_MINIMUM, RESIZE_MAXIMUM)
 		var/datum/component/resize_guard/guard = GetComponent(/datum/component/resize_guard)
@@ -99,20 +99,21 @@
 		resize.Translate(0, (vis_height/2) * (new_size - 1)) //Move the player up in the tile so their feet align with the bottom
 		animate(src, transform = resize, time = duration) //Animate the player resizing
 
-		if(aura_animation)
-			var/aura_grow_to = change > 0 ? 2 : 0.5
-			var/aura_anim_duration = 5
-			var/aura_offset = change > 0 ? 0 : 10
-			var/aura_color = size_multiplier > new_size ? "#FF2222" : "#2222FF"
-			var/aura_loops = round((duration)/aura_anim_duration)
+		var/aura_grow_to = change > 0 ? 2 : 0.5
+		var/aura_anim_duration = 5
+		var/aura_offset = change > 0 ? 0 : 10
+		var/aura_color = size_multiplier > new_size ? "#FF2222" : "#2222FF"
+		var/aura_loops = round((duration)/aura_anim_duration)
 
-			animate_aura(src, color = aura_color, offset = aura_offset, anim_duration = aura_anim_duration, loops = aura_loops, grow_to = aura_grow_to)
+		animate_aura(src, color = aura_color, offset = aura_offset, anim_duration = aura_anim_duration, loops = aura_loops, grow_to = aura_grow_to)
 	else
 		update_transform() //Lame way
 
-/mob/living/carbon/human/resize(var/new_size, var/animate = TRUE, var/uncapped = FALSE, var/ignore_prefs = FALSE, var/aura_animation = TRUE)
+/mob/living/carbon/human/resize(var/new_size, var/animate = TRUE, var/uncapped = FALSE, var/ignore_prefs = FALSE)
 	if(!resizable && !ignore_prefs)
 		return 1
+	if(species)
+		vis_height = species.icon_height
 	. = ..()
 	if(LAZYLEN(hud_list) && has_huds)
 		var/new_y_offset = vis_height * (size_multiplier - 1)
@@ -122,7 +123,7 @@
 			apply_hud(index, HI)
 
 // Optimize mannequins - never a point to animating or doing HUDs on these.
-/mob/living/carbon/human/dummy/mannequin/resize(var/new_size, var/animate = TRUE, var/uncapped = FALSE, var/ignore_prefs = FALSE, var/aura_animation = TRUE)
+/mob/living/carbon/human/dummy/mannequin/resize(var/new_size, var/animate = TRUE, var/uncapped = FALSE, var/ignore_prefs = FALSE)
 	size_multiplier = new_size
 
 /**
@@ -145,8 +146,8 @@
 		resize(new_size/100, uncapped = has_large_resize_bounds(), ignore_prefs = TRUE)
 		// I'm not entirely convinced that `src ? ADMIN_JMP(src) : "null"` here does anything
 		// but just in case it does, I'm leaving the null-src checking
-		log_admin("[key_name(src)] used the resize command in-game to be [new_size]% size. [src ? ADMIN_JMP(src) : "null"]")
-		
+		message_admins("[key_name(src)] used the resize command in-game to be [new_size]% size. [src ? ADMIN_JMP(src) : "null"]")
+
 /*
 //Add the set_size() proc to usable verbs. By commenting this out, we can leave the proc and hand it to species that need it.
 /hook/living_new/proc/resize_setup(mob/living/H)

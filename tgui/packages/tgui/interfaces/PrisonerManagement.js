@@ -1,7 +1,9 @@
+import { round } from 'common/math';
 import { Fragment } from 'inferno';
 import { useBackend } from '../backend';
-import { Button, Section, Box, Table } from '../components';
+import { Button, Section, NumberInput, Flex, Box, Table } from '../components';
 import { Window } from '../layouts';
+import { formatTime } from '../format';
 
 export const PrisonerManagement = (props, context) => {
   const { act, data } = useBackend(context);

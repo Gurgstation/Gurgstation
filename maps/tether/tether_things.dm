@@ -145,7 +145,6 @@
 	desc = "Magnetic levitation tram tracks. Caution! Electrified!"
 	icon = 'icons/turf/flooring/maglevs.dmi'
 	icon_state = "maglevup"
-	can_be_plated = FALSE
 
 	var/area/shock_area = /area/tether/surfacebase/tram
 

@@ -376,7 +376,7 @@
 	if(battery)
 		var/lost = battery.use(amount * CELLRATE)
 		net_power -= lost
-		return lost
+		return lost > 0
 	return FALSE
 
 // Ditto for giving.

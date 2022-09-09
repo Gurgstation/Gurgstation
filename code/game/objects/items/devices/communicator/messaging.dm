@@ -76,15 +76,9 @@
 		return
 
 	if(ringer)
-		var/S
-		if(ttone in ttone_sound)
-			S = ttone_sound[ttone]
-		else
-			S = 'sound/machines/twobeep.ogg'
-
-		playsound(src, S, 50, 1)
+		playsound(src, 'sound/machines/twobeep.ogg', 50, 1)
 		for (var/mob/O in hearers(2, loc))
-			O.show_message(text("[bicon(src)] *[ttone]*"))
+			O.show_message(text("[bicon(src)] *beep*"))
 
 	alert_called = 1
 	update_icon()
@@ -95,20 +89,7 @@
 		L = loc
 
 	if(L)
-		to_chat(L, "<span class='notice'>[bicon(src)] Message from [who]: <b>\"[text]\"</b> (<a href='?src=\ref[src];action=Reply;target=\ref[candidate]'>Reply</a>)</span>")
-
-// This is the only Topic the communicators really uses
-/obj/item/device/communicator/Topic(href, href_list)
-	switch(href_list["action"])
-		if("Reply")
-			var/obj/item/device/communicator/comm = locate(href_list["target"])
-			var/message = input(usr, "Enter your message below.", "Reply")
-
-			if(message)
-				exonet.send_message(comm.exonet.address, "text", message)
-				im_list += list(list("address" = exonet.address, "to_address" = comm.exonet.address, "im" = message))
-				log_pda("(COMM: [src]) sent \"[message]\" to [exonet.get_atom_from_address(comm.exonet.address)]", usr)
-				to_chat(usr, "<span class='notice'>[bicon(src)] Sent message to [comm.owner], <b>\"[message]\"</b></span>")
+		to_chat(L, "<span class='notice'>[bicon(src)] Message from [who].</span>")
 
 // Verb: text_communicator()
 // Parameters: None

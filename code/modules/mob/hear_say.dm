@@ -4,7 +4,7 @@
 	var/msg = "" // This is to make sure that the pieces have actually added something
 	var/raw_msg = ""
 	. = list("formatted" = "[verb], \"", "raw" = "")
-
+	
 	for(var/datum/multilingual_say_piece/SP in message_pieces)
 		iteration_count++
 		var/piece = SP.message
@@ -15,11 +15,11 @@
 			if(radio)
 				.["formatted"] = SP.speaking.format_message_radio(piece)
 				.["raw"] = piece
-				return
+				return 
 			else
 				.["formatted"] = SP.speaking.format_message(piece)
 				.["raw"] = piece
-				return
+				return 
 
 		if(iteration_count == 1)
 			piece = capitalize(piece)
@@ -27,17 +27,14 @@
 		if(always_stars)
 			piece = stars(piece)
 		else if(!say_understands(speaker, SP.speaking))
-			if(SP.speaking.flags & INAUDIBLE)
-				piece = ""
-			else
-				piece = saypiece_scramble(SP)
-				if(isliving(speaker))
-					var/mob/living/S = speaker
-					if(istype(S.say_list) && length(S.say_list.speak))
-						piece = pick(S.say_list.speak)
+			piece = saypiece_scramble(SP)
+			if(isliving(speaker))
+				var/mob/living/S = speaker
+				if(istype(S.say_list) && length(S.say_list.speak))
+					piece = pick(S.say_list.speak)
 
 		raw_msg += (piece + " ")
-
+		
 		//HTML formatting
 		if(!SP.speaking) // Catch the most generic case first
 			piece = "<span class='message body'>[piece]</span>"
@@ -47,7 +44,7 @@
 			piece = SP.speaking.format_message(piece)
 
 		msg += (piece + " ")
-
+	
 	if(msg == "")
 		// There is literally no content left in this message, we need to shut this shit down
 		.["formatted"] = "" // hear_say will suppress it
@@ -93,7 +90,7 @@
 	var/message = combined["formatted"]
 	if(message == "")
 		return
-
+	
 	if(sleeping || stat == UNCONSCIOUS)
 		hear_sleep(multilingual_to_message(message_pieces))
 		return FALSE
@@ -172,7 +169,7 @@
         var/regex/R = new("\\[delimiter](.+?)\\[delimiter]","g")
         var/tag = GLOB.speech_toppings[delimiter]
         tagged_message = R.Replace(tagged_message,"<[tag]>$1</[tag]>")
-
+        
     return tagged_message
 
 /mob/proc/hear_radio(var/list/message_pieces, var/verb = "says", var/part_a, var/part_b, var/part_c, var/mob/speaker = null, var/hard_to_hear = 0, var/vname = "")
@@ -229,13 +226,13 @@
 		final_message = "[time][final_message]"
 	to_chat(src, final_message)
 
-/mob/proc/hear_signlang(var/message, var/verb = "gestures", var/verb_understood = "gestures", var/datum/language/language, var/mob/speaker = null, var/speech_type = 1)
+/mob/proc/hear_signlang(var/message, var/verb = "gestures", var/datum/language/language, var/mob/speaker = null)
 	if(!client)
 		return
 
 	if(say_understands(speaker, language))
-		message = "<B>[speaker]</B> [verb_understood], \"[message]\""
-	else if(!(language.ignore_adverb))
+		message = "<B>[speaker]</B> [verb], \"[message]\""
+	else
 		var/adverb
 		var/length = length(message) * pick(0.8, 0.9, 1.0, 1.1, 1.2)	//Adds a little bit of fuzziness
 		switch(length)
@@ -245,10 +242,8 @@
 			if(48 to 90)	adverb = " a lengthy message"
 			else			adverb = " a very lengthy message"
 		message = "<B>[speaker]</B> [verb][adverb]."
-	else
-		message = "<B>[speaker]</B> [verb]."
 
-	show_message(message, type = speech_type) // Type 1 is visual message
+	show_message(message, type = 1) // Type 1 is visual message
 
 /mob/proc/hear_sleep(var/message)
 	var/heard = ""
@@ -298,4 +293,4 @@
 		name = speaker.voice_name
 
 	var/rendered = "<span class='game say'><span class='name'>[name]</span> [message]</span>"
-	to_chat(src, rendered)
+	to_chat(src, rendered) 

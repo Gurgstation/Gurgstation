@@ -38,7 +38,7 @@ GLOBAL_LIST_EMPTY(fancy_shuttles)
 	icon = 'icons/turf/fancy_shuttles/generic_preview.dmi'
 	icon_state = "floors"
 	plane = PLATING_PLANE
-	layer = DISPOSAL_LAYER
+	layer = ABOVE_TURF_LAYER
 	alpha = 90
 
 /obj/effect/fancy_shuttle_floor_preview/Initialize()

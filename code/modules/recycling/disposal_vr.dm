@@ -6,13 +6,6 @@
 
 /obj/machinery/disposal/wall/cleaner/flush()
 	flick("[icon_state]-flush", src)
-	for(var/obj/item/weapon/storage/i in src)
-		if(istype(i, /obj/item/weapon/storage))
-			var/list/storage_items = i.return_inv()
-
-			for(var/obj/item/item in storage_items)
-				item.decontaminate()
-
 	for(var/obj/item/i in src)
 		if(istype(i, /obj/item))
 			i.decontaminate()

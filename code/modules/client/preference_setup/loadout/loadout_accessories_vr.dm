@@ -44,10 +44,6 @@
 	display_name = "collar, cowbell"
 	path = /obj/item/clothing/accessory/collar/cowbell
 
-/datum/gear/collar/planet_earth
-	display_name = "collar, planet"
-	path = /obj/item/clothing/accessory/collar/collarplanet_earth
-
 /datum/gear/collar/holo
 	display_name = "collar, holo"
 	path = /obj/item/clothing/accessory/collar/holo
@@ -120,11 +116,6 @@
 /datum/gear/accessory/flops/New()
 	..()
 	gear_tweaks += gear_tweak_free_color_choice
-
-/datum/gear/accessory/dosimeter
-	display_name = "Dosimeter"
-	path = /obj/item/weapon/storage/box/dosimeter
-	description = "A small device that will display dangerous levels of radiation."
 
 /*
 Talon pin

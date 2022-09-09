@@ -1,3 +1,4 @@
+import { Fragment } from 'inferno';
 import { useBackend } from '../backend';
 import { Section, Button, Box } from '../components';
 import { Window } from '../layouts';

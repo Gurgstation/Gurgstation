@@ -1,11 +1,12 @@
 import { Fragment } from 'inferno';
 import { useBackend } from "../backend";
-import { Box, Button, Flex, Input, LabeledList, Section, Tabs } from "../components";
-import { ComplexModal, modalOpen } from "../interfaces/common/ComplexModal";
+import { Box, Button, Collapsible, Flex, Icon, Input, LabeledList, Section, Tabs } from "../components";
+import { ComplexModal, modalOpen, modalRegisterBodyOverride } from "../interfaces/common/ComplexModal";
 import { Window } from "../layouts";
 import { LoginInfo } from './common/LoginInfo';
 import { LoginScreen } from './common/LoginScreen';
 import { TemporaryNotice } from './common/TemporaryNotice';
+import { decodeHtmlEntities } from 'common/string';
 
 const doEdit = (context, field) => {
   modalOpen(context, 'edit', {
@@ -140,7 +141,7 @@ const SecurityRecordsView = (_properties, context) => {
           content="Delete Record (All)"
           color="bad"
           onClick={() => act('del_r_2')}
-        />
+        />        
         <Button
           icon={printing ? 'spinner' : 'print'}
           disabled={printing}
