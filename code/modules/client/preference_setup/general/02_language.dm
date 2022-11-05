@@ -12,6 +12,15 @@
 	if(islist(pref.alternate_languages))			// Because aparently it may not be?
 		testing("LANGSANI: Loaded from [pref.client]'s character [pref.real_name || "-name not yet loaded-"] savefile: [english_list(pref.alternate_languages || list())]")
 	S["language_prefixes"]	>> pref.language_prefixes
+	//CHOMPEdit Begin // Verkister's master languist code added in. c:
+	S["species"]			>> pref.species
+	S["pos_traits"]		>> pref.pos_traits
+	var/morelang = 0
+	for(var/trait in pref.pos_traits)
+		if(trait==/datum/trait/positive/linguist)
+			morelang = 1
+	pref.num_languages = morelang * 12
+	//CHOMPEdit End
 	S["language_custom_keys"]	>> pref.language_custom_keys
 
 /datum/category_item/player_setup_item/general/language/save_character(var/savefile/S)
