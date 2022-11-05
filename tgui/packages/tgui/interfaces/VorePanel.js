@@ -4,7 +4,6 @@ import { useBackend, useLocalState } from '../backend';
 import { Box, Button, Flex, Collapsible, Icon, LabeledList, NoticeBox, Section, Tabs, Divider } from '../components';
 import { Window } from '../layouts';
 import { classes } from 'common/react';
-import { ByondUi } from '../components';
 
 const stats = [null, 'average', 'bad'];
 

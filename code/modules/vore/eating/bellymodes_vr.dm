@@ -313,10 +313,10 @@
 				R.cell.charge += 25*compensation //CHOMPedit end
 		else
 			if(reagent_mode_flags & DM_FLAG_REAGENTSDIGEST && reagents.total_volume < reagents.maximum_volume) //CHOMP digestion producing reagents
-				owner.adjust_nutrition((nutrition_percent / 100)*25.0*compensation)
+				owner.adjust_nutrition((nutrition_percent / 100)*25.0*compensation * personal_nutrition_modifier)
 				GenerateBellyReagents_digested()
 			else
-				owner.adjust_nutrition((nutrition_percent / 100)*4.5*compensation) //CHOMPedit end
+				owner.adjust_nutrition((nutrition_percent / 100)*4.5*compensation * personal_nutrition_modifier * pred_digestion_efficiency) //CHOMPedit end
 // Gurg ADD: Import Chomp liquid bellies - END
 
 /obj/belly/proc/steal_nutrition(mob/living/L)
