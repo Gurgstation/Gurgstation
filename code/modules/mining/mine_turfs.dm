@@ -53,7 +53,7 @@ var/list/mining_overlay_cache = list()
 		"phoron" = /obj/item/weapon/ore/phoron,
 		"osmium" = /obj/item/weapon/ore/osmium,
 		"hydrogen" = /obj/item/weapon/ore/hydrogen,
-		"silicates" = /obj/item/weapon/ore/glass,
+		"sand" = /obj/item/weapon/ore/glass,
 		"carbon" = /obj/item/weapon/ore/coal,
 		"verdantium" = /obj/item/weapon/ore/verdantium,
 		"marble" = /obj/item/weapon/ore/marble,
@@ -352,7 +352,7 @@ var/list/mining_overlay_cache = list()
 //Not even going to touch this pile of spaghetti
 /turf/simulated/mineral/attackby(obj/item/weapon/W as obj, mob/user as mob)
 
-	if (!(istype(usr, /mob/living/carbon/human) || ticker) && ticker.mode.name != "monkey")
+	if (!user.IsAdvancedToolUser())
 		to_chat(user, "<span class='warning'>You don't have the dexterity to do this!</span>")
 		return
 

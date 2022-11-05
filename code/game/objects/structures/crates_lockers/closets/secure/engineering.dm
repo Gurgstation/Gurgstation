@@ -5,7 +5,8 @@
 
 	starts_with = list(
 		/obj/item/clothing/accessory/storage/brown_vest,
-		/obj/item/blueprints,
+		/obj/item/areaeditor/blueprints,
+		/obj/item/wire_reader,
 		///obj/item/clamp,	//VOREStation Removal: without leaks those are pointless,
 		///obj/item/clamp,	//VOREStation Removal: without leaks those are pointless,
 		/obj/item/clothing/under/rank/chief_engineer,
@@ -54,6 +55,12 @@
 		/obj/item/weapon/module/power_control = 3,
 		/obj/item/device/multitool = 3)
 
+/obj/structure/closet/secure_closet/engineering_electrical/double
+	starts_with = list(
+		/obj/item/clothing/gloves/yellow = 4,
+		/obj/item/weapon/storage/toolbox/electrical = 6,
+		/obj/item/weapon/module/power_control = 6,
+		/obj/item/device/multitool = 6)
 
 /obj/structure/closet/secure_closet/engineering_welding
 	name = "welding supplies"
@@ -65,6 +72,13 @@
 		/obj/item/weapon/weldingtool/largetank = 3,
 		/obj/item/weapon/weldpack = 3,
 		/obj/item/clothing/glasses/welding = 3)
+
+/obj/structure/closet/secure_closet/engineering_welding/double
+	starts_with = list(
+		/obj/item/clothing/head/welding = 6,
+		/obj/item/weapon/weldingtool/largetank = 6,
+		/obj/item/weapon/weldpack = 6,
+		/obj/item/clothing/glasses/welding = 6)
 
 /obj/structure/closet/secure_closet/engineering_personal
 	name = "engineer's locker"
@@ -86,7 +100,8 @@
 		/obj/item/clothing/shoes/boots/winter/engineering,
 		/obj/item/weapon/tank/emergency/oxygen/engi,
 		/obj/item/weapon/storage/belt/utility,	//VOREStation Add
-		/obj/item/weapon/reagent_containers/spray/windowsealant) //VOREStation Add
+		/obj/item/weapon/reagent_containers/spray/windowsealant,	//VOREStation Add
+		/obj/item/areaeditor/blueprints/engineers) //VOREStation Add
 
 /obj/structure/closet/secure_closet/engineering_personal/Initialize()
 	if(prob(50))
@@ -119,7 +134,7 @@
 		/obj/item/clothing/suit/storage/hooded/wintercoat/engineering/atmos,
 		/obj/item/clothing/shoes/boots/winter/atmos,
 		/obj/item/weapon/tank/emergency/oxygen/engi,
-		/obj/item/weapon/storage/belt/utility/atmostech) //VOREStation edit. They don't get a toolbox to fill it from, so why not give a spare one that's full already? 
+		/obj/item/weapon/storage/belt/utility/atmostech) //VOREStation edit. They don't get a toolbox to fill it from, so why not give a spare one that's full already?
 
 /obj/structure/closet/secure_closet/atmos_personal/Initialize()
 	if(prob(50))
