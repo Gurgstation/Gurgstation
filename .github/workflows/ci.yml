@@ -65,7 +65,7 @@ jobs:
   unit_tests:
     strategy:
       matrix:
-        map: ['tether', 'stellar_delight', 'groundbase']
+        map: ['tether', 'stellar_delight', 'groundbase', 'triumph' ]
     # name: Integration Tests (${{ matrix.map }})
     name: Integration Tests
     # needs: ['file_tests', 'dreamchecker']
