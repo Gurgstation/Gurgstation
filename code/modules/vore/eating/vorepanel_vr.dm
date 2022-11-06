@@ -50,8 +50,6 @@
 /datum/vore_look/tgui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
-		update_preview_icon()	//CHOMPEdit
-		give_client_previews(user.client) //CHOMPEdit
 		ui = new(user, src, "VorePanel", "Vore Panel")
 		ui.open()
 		ui.set_autoupdate(FALSE)
@@ -1378,14 +1376,12 @@
 			. = TRUE
 		if("b_fullscreen")
 			host.vore_selected.belly_fullscreen = params["val"]
-			update_preview_icon()	//CHOMPEdit Begin
 			. = TRUE
 		// Gurgs ADD: Colorable Bellies!
 		if("b_fullscreen_color")
 			var/newcolor = input(usr, "Choose a color.", "", host.vore_selected.belly_fullscreen_color) as color|null
 			if(newcolor)
 				host.vore_selected.belly_fullscreen_color = newcolor
-			update_preview_icon()
 			. = TRUE 				//CHOMPEdit End
 
 		if("b_disable_hud")
