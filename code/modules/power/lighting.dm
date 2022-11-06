@@ -857,8 +857,9 @@ var/global/list/light_type_cache = list()
 			s.set_up(3, 1, src)
 			s.start()
 	status = LIGHT_BROKEN //This occasionally runtimes when it occurs midround after build mode spawns a broken light. No idea why.
-	installed_light.status = status
-	installed_light.update_icon()
+	if(installed_light)
+		installed_light.status = status
+		installed_light.update_icon()
 	update()
 
 /obj/machinery/light/proc/fix()
