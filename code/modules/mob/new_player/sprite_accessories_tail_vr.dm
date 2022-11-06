@@ -9,7 +9,9 @@
 	name = "You should not see this..."
 	icon = 'icons/mob/vore/tails_vr.dmi'
 	do_colouration = 0 //Set to 1 to enable coloration using the tail color.
-	species_allowed = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_TAJ, SPECIES_TESHARI, SPECIES_NEVREAN, SPECIES_AKULA, SPECIES_SERGAL, SPECIES_FENNEC, SPECIES_ZORREN_HIGH, SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_XENOHYBRID, SPECIES_VASILISSAN, SPECIES_RAPALA, SPECIES_PROTEAN, SPECIES_ALRAUNE, SPECIES_WEREBEAST, SPECIES_SHADEKIN, SPECIES_SHADEKIN_CREW) //This lets all races use
+	species_allowed = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_UNATHI, SPECIES_TAJ, SPECIES_TESHARI, SPECIES_NEVREAN, SPECIES_AKULA, SPECIES_SERGAL, SPECIES_FENNEC, SPECIES_ZORREN_HIGH, SPECIES_VULPKANIN, SPECIES_XENOCHIMERA, SPECIES_XENOHYBRID, SPECIES_VASILISSAN, SPECIES_RAPALA, SPECIES_PROTEAN, SPECIES_ALRAUNE, SPECIES_WEREBEAST, SPECIES_SHADEKIN, SPECIES_SHADEKIN_CREW, SPECIES_ALTEVIAN) //This lets all races use
+
+	var/list/lower_layer_dirs = list(SOUTH)
 
 /datum/sprite_accessory/tail/New()
 	. = ..()
@@ -1175,6 +1177,21 @@
 	color_blend_mode = ICON_MULTIPLY
 	ckeys_allowed = list("prettiebyrd")
 
+/datum/sprite_accessory/tail/altevian
+	name = "Altevian Tail"
+	icon = 'icons/mob/vore/tails_vr.dmi'
+	icon_state = "altevian"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+	lower_layer_dirs = list(SOUTH, WEST)
+
+/datum/sprite_accessory/tail/shark_finless
+	name = "shark tail, finless (colorable)"
+	desc = ""
+	icon_state = "sharktail_finless"
+	do_colouration = 1
+	color_blend_mode = ICON_MULTIPLY
+
 /datum/sprite_accessory/tail/tentacle
 	name = "Tentacle, colorable (vwag)"
 	desc = ""
@@ -1183,6 +1200,12 @@
 	ani_state = "tentacle_w"
 	do_colouration = 1
 	color_blend_mode = ICON_MULTIPLY
+
+/datum/sprite_accessory/tail/perrin_tentacles
+	name = "octopus tentacles (Perrin Kade)"
+	desc = ""
+	icon_state = "perrintentacles"
+	ckeys_allowed = list("codeme")
 
 //LONG TAILS ARE NOT TAUR BUTTS >:O
 /datum/sprite_accessory/tail/longtail

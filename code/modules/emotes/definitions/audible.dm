@@ -140,7 +140,7 @@
 
 /decl/emote/audible/bug_buzz
 	key = "bbuzz"
-	emote_message_3p = "buzzes its wings."
+	emote_message_3p = "buzzes USER_THEIR wings."
 	emote_sound = 'sound/voice/BugBuzz.ogg'
 
 /decl/emote/audible/bug_chitter
@@ -204,6 +204,14 @@
 	key = "purrl"
 	emote_message_3p = "purrs."
 	emote_sound = 'sound/voice/cat_purr_long.ogg'
+
+/decl/emote/audible/fennecscream
+	key = "fennecscream"
+	emote_message_3p = "screeches!"
+
+/decl/emote/audible/zoom
+	key = "zoom"
+	emote_message_3p = "zooms."
 
 /decl/emote/audible/teshsqueak
 	key = "surprised"

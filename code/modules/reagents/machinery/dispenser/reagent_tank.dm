@@ -474,7 +474,7 @@
 	amount_per_transfer_from_this = 120
 
 /obj/structure/reagent_dispensers/cookingoil/Initialize()
-	..()
+	. = ..()
 	reagents.add_reagent("cookingoil",5000)
 
 /obj/structure/reagent_dispensers/cookingoil/bullet_act(var/obj/item/projectile/Proj)
