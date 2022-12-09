@@ -863,6 +863,12 @@
 	ckeywhitelist = list("pandora029")
 	character_name = list("Seona Young")
 
+/datum/gear/fluff/seona_big_plushie
+	path = /obj/item/toy/plushie/fluff/seona_mofuorb
+	display_name = "comically oversized fox plushie"
+	ckeywhitelist = list("pandora029")
+	character_name = list("Seona Young")
+
 /datum/gear/fluff/lily_medal
 	path = /obj/item/clothing/accessory/medal/silver/unity
 	display_name = "Lily's Unity Medal"
@@ -1077,6 +1083,18 @@
 	ckeywhitelist = list("shalax")
 	character_name = list("Cerise Duelliste")
 	allowed_roles = list("Security Officer", "Warden", "Head of Security", "Detective")
+
+/datum/gear/fluff/sidona_robes
+	path = /obj/item/clothing/under/fluff/gildedrobe_perrin
+	display_name = "Sidona's Robes"
+	ckeywhitelist = list("siennaathens ")
+	character_name = list("Sidona Kaal")
+
+/datum/gear/fluff/sidona_shoes
+	path = /obj/item/clothing/shoes/fluff/gildedshoes_perrin
+	display_name = "Sidona's Shoes"
+	ckeywhitelist = list("siennaathens")
+	character_name = list("Sidona Kaal")
 
 /datum/gear/fluff/nthasd_modkit //Converts a Security suit's sprite
 	path = /obj/item/device/modkit_conversion/hasd
