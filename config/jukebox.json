@@ -4805,7 +4805,7 @@
 "secret": false,
 "lobby": false,
 "jukebox": true,
-"genre": "Electronic"
+"genre": "Video Game"
 },
 {
 "url": "https://files.catbox.moe/r6zcd8.m4a",
@@ -4815,7 +4815,7 @@
 "secret": false,
 "lobby": false,
 "jukebox": true,
-"genre": "Electronic"
+"genre": "Video Game"
 },
 {
 "url": "https://files.catbox.moe/1cpsps.m4a",
@@ -4825,6 +4825,6 @@
 "secret": false,
 "lobby": false,
 "jukebox": true,
-"genre": "Pop"
+"genre": "Video Game"
 }
 ]
