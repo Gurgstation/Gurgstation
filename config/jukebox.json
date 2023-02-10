@@ -1080,9 +1080,9 @@
 "genre": "Rock"
 },
 {
-"url": "https://files.catbox.moe/c961k1.m4a",
+"url": "https://files.catbox.moe/c71um1.m4a",
 "title": "Blue Monday",
-"duration": 4430,
+"duration": 4460,
 "artist": "New Order",
 "secret": false,
 "lobby": false,
@@ -2240,9 +2240,9 @@
 "genre": "Rock"
 },
 {
-"url": "https://files.catbox.moe/jgigel.m4a",
+"url": "https://files.catbox.moe/x2z7zd.m4a",
 "title": "Starman",
-"duration": 2540,
+"duration": 2570,
 "artist": "David Bowie",
 "secret": false,
 "lobby": false,
@@ -4864,5 +4864,45 @@
 "secret": true,
 "lobby": false,
 "jukebox": true
+},
+{
+"url": "https://files.catbox.moe/bgrsvh.m4a",
+"title": "I Want To Be Your Groom",
+"duration": 1850,
+"artist": "MC Xiao Afeng",
+"secret": false,
+"lobby": false,
+"jukebox": true,
+"genre": "Pop"
+},
+{
+"url": "https://files.catbox.moe/nxt1pn.m4a",
+"title": "Second Trumpet",
+"duration": 1760,
+"artist": "Lobotomy Corporation",
+"secret": false,
+"lobby": false,
+"jukebox": true,
+"genre": "Video Game"
+},
+{
+"url": "https://files.catbox.moe/r6zcd8.m4a",
+"title": "Collective Consciousness",
+"duration": 2900,
+"artist": "Lobotomy Corporation",
+"secret": false,
+"lobby": false,
+"jukebox": true,
+"genre": "Video Game"
+},
+{
+"url": "https://files.catbox.moe/1cpsps.m4a",
+"title": "Nature's Crescendo",
+"duration": 2100,
+"artist": "Stardew Valley",
+"secret": false,
+"lobby": false,
+"jukebox": true,
+"genre": "Video Game"
 }
 ]
