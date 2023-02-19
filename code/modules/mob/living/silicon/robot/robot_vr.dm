@@ -87,6 +87,10 @@
 		return
 	return feed_grabbed_to_self(src,T)
 
+/mob/living/silicon/robot/lay_down()
+	 . = ..()
+	 updateicon()
+
 /mob/living/silicon/robot/proc/rest_style()
 	set name = "Switch Rest Style"
 	set category = "IC"
@@ -136,6 +140,8 @@
 	if(wideborg == TRUE)
 		if(icontype == "Drake") // Why, Why can't we have normal nice things
 			icon = 'icons/mob/drakeborg/drakeborg_vr.dmi'
+		else if(icontype == "Raptor V-4") //Added for raptor sprites
+			icon = 'icons/mob/raptorborg/raptor.dmi'
 		else
 			icon = wideborg_dept
 		return
