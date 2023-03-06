@@ -5,6 +5,7 @@
 	name = "Metabolism, Fast"
 	desc = "You process ingested and injected reagents faster, but get hungry faster (Teshari speed)."
 	cost = 0
+	custom_only = FALSE //Gurg edit, allows all species to change metabolism
 	var_changes = list("metabolic_rate" = 1.2, "hunger_factor" = 0.2, "metabolism" = 0.06) // +20% rate and 4x hunger (Teshari level)
 	excludes = list(/datum/trait/neutral/metabolism_down, /datum/trait/neutral/metabolism_apex)
 
@@ -12,6 +13,7 @@
 	name = "Metabolism, Slow"
 	desc = "You process ingested and injected reagents slower, but get hungry slower."
 	cost = 0
+	custom_only = FALSE //Gurg edit, allows all species to change metabolism
 	var_changes = list("metabolic_rate" = 0.8, "hunger_factor" = 0.04, "metabolism" = 0.0012) // -20% of default.
 	excludes = list(/datum/trait/neutral/metabolism_up, /datum/trait/neutral/metabolism_apex)
 
@@ -19,6 +21,7 @@
 	name = "Metabolism, Apex"
 	desc = "Finally a proper excuse for your predatory actions. Essentially doubles the fast trait rates. Good for characters with big appetites."
 	cost = 0
+	custom_only = FALSE //Gurg edit, allows all species to change metabolism
 	var_changes = list("metabolic_rate" = 1.4, "hunger_factor" = 0.4, "metabolism" = 0.012) // +40% rate and 8x hunger (Double Teshari)
 	excludes = list(/datum/trait/neutral/metabolism_up, /datum/trait/neutral/metabolism_down)
 
