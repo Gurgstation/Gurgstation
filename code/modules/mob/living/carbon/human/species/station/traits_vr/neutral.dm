@@ -644,14 +644,14 @@
 	desc = "You are considered smaller than you are for micro interactions."
 	cost = 0
 	custom_only = FALSE
-	var_changes = list("micro_size_mod" = -0.15)
+	var_changes = list("micro_size_mod" = -0.25)
 
 /datum/trait/neutral/micro_size_up
 	name = "Heavy Frame"
 	desc = "You are considered bigger than you are for micro interactions."
 	cost = 0
 	custom_only = FALSE
-	var_changes = list("micro_size_mod" = 0.15)
+	var_changes = list("micro_size_mod" = 0.25)
 
 /datum/trait/neutral/digestion_value_up
 	name = "Highly Filling"
