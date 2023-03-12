@@ -4210,6 +4210,7 @@
 #include "gurgs_content\code\modules\client\sprite_accessories\sprite_accessories_taur_yw.dm"
 #include "gurgs_content\code\modules\client\sprite_accessories\sprite_accessories_wing_ch.dm"
 #include "gurgs_content\code\modules\client\sprite_accessories\sprite_accessories_yw.dm"
+#include "gurgs_content\code\modules\economy\vending_machines_gg.dm"
 #include "gurgs_content\code\modules\events\maintpred.dm"
 #include "gurgs_content\code\modules\events\metroid.dm"
 #include "gurgs_content\code\modules\items\drinks_ch.dm"
@@ -4267,6 +4268,7 @@
 #include "gurgs_content\code\modules\vore\preferences.dm"
 #include "gurgs_content\code\modules\vore\vore.dm"
 #include "gurgs_content\code\modules\vore\vorepanel.dm"
+#include "gurgs_content\maps\triumph\triumph.dm"
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
 #include "maps\atoll\atoll_decals.dm"
@@ -4295,7 +4297,6 @@
 #include "maps\submaps\space_submaps\debrisfield\debrisfield.dm"
 #include "maps\submaps\surface_submaps\wilderness\wilderness.dm"
 #include "maps\submaps\surface_submaps\wilderness\wilderness_areas.dm"
-#include "maps\triumph\triumph.dm"
 #include "maps\triumph\submaps\_healpers.dm"
 #include "maps\~map_system\maps.dm"
 // END_INCLUDE
