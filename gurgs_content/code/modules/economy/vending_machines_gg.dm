@@ -13,7 +13,6 @@
                     /obj/item/weapon/reagent_containers/food/drinks/bottle/grenadine = 5,
                     /obj/item/weapon/reagent_containers/food/condiment/cookingoil = 5,
                     /obj/item/weapon/reagent_containers/food/condiment/cornoil = 5,
-                    /obj/item/weapon/reagent_containers/food/drinks/cans/alecan = 15,
                     /obj/item/weapon/reagent_containers/food/drinks/bottle/orangejuice = 5,
                     /obj/item/weapon/reagent_containers/food/drinks/bottle/tomatojuice = 5,
                     /obj/item/weapon/reagent_containers/food/drinks/bottle/limejuice = 5,
