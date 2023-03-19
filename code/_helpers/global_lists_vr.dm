@@ -251,7 +251,8 @@ var/global/list/edible_trash = list(/obj/item/broken_device,
 				/obj/item/weapon/cell,
 				/obj/item/weapon/coin,
 				/obj/item/weapon/glass_extra, //Straws for bar glasses, bar glass sticks
-				/obj/item/device/megaphone //Don't know why you would want to, but you can now
+				/obj/item/device/megaphone, //Don't know why you would want to, but you can now
+				/obj/item/ammo_casing //Eat the brass you little rhoomba
 				)
 
 var/global/list/contamination_flavors = list(

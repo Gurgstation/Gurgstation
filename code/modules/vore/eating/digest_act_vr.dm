@@ -144,8 +144,6 @@
 	return FALSE
 /obj/item/clothing/shoes/leg_guard/digest_act(var/atom/movable/item_storage = null)
 	return FALSE
-/obj/item/ammo_casing/digest_act(var/atom/movable/item_storage = null)
-	return FALSE //Remember not wanting to digest ammo? Same concept, just with shotgun shells
 
 /////////////
 // Some special treatment
