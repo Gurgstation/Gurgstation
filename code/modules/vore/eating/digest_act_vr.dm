@@ -90,6 +90,62 @@
 	return FALSE //Sorta important to not digest your own beacons.
 /obj/item/organ/internal/brain/slime/digest_act(var/atom/movable/item_storage = null)
 	return FALSE //so prometheans can be recovered
+/obj/item/weapon/circuitboard/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/weapon/tank/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //So you don't accidentally digest a oxygen tank
+/obj/item/weapon/reagent_containers/syringe/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/weapon/grenade/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //Are you trying to explode?
+/obj/item/weapon/storage/pill_bottle/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/weapon/implant/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/weapon/reagent_containers/hypospray/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/clothing/suit/radiation/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/clothing/head/radiation/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/clothing/suit/bio_suit/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/clothing/head/bio_hood/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/clothing/suit/space/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //You really shouldn't be digesting this
+/obj/item/clothing/suit/bomb_suit/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/clothing/head/bomb_hood/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/weapon/rig/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //Seriously, don't digest this
+/obj/item/clothing/suit/armor/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/clothing/head/helmet/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/weapon/shield/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //Alright big-mouth, spit it out
+/obj/item/device/nif/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //I don't know why you would want to, just no
+/obj/item/ammo_magazine/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //You really shouldn't digest ammo
+/obj/item/weapon/surgical/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //Radar, where's my scalpel!?
+/obj/item/stack/medical/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //What do you mean I can't digest gauze?
+/obj/item/device/defib_kit/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //Why would you want to digest this?
+/obj/item/weapon/storage/box/freezer/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //You don't get many of these, best to not digest it
+/obj/item/device/perfect_tele/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //Like the handtele, but better. Don't digest this
+/obj/item/clothing/gloves/arm_guard/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/clothing/shoes/leg_guard/digest_act(var/atom/movable/item_storage = null)
+	return FALSE
+/obj/item/ammo_casing/digest_act(var/atom/movable/item_storage = null)
+	return FALSE //Remember not wanting to digest ammo? Same concept, just with shotgun shells
 
 /////////////
 // Some special treatment

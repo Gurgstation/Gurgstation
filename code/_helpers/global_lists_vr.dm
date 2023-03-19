@@ -46,7 +46,16 @@ var/global/list/item_vore_blacklist = list(
 		/obj/item/areaeditor/blueprints,
 		/obj/item/clothing/head/helmet/space,
 		/obj/item/weapon/disk/nuclear,
-		/obj/item/clothing/suit/storage/hooded/wintercoat/roiz)
+		/obj/item/clothing/suit/storage/hooded/wintercoat/roiz,
+		/obj/item/device/perfect_tele,
+		/obj/item/weapon/rig,
+		/obj/item/clothing/suit/radiation,
+		/obj/item/clothing/head/radiation,
+		/obj/item/clothing/suit/bio_suit,
+		/obj/item/clothing/head/bio_hood,
+		/obj/item/clothing/suit/space,
+		/obj/item/clothing/suit/armor,
+		/obj/item/clothing/head/helmet)
 
 //Classic Vore sounds
 var/global/list/classic_vore_sounds = list(
@@ -185,13 +194,8 @@ var/global/list/tf_vore_egg_types = list(
 	"Spotted pink"	= /obj/item/weapon/storage/vore_egg/pinkspots)
 
 var/global/list/edible_trash = list(/obj/item/broken_device,
-				/obj/item/clothing/accessory/collar,
+				/obj/item/clothing, //indigestable and inedible list being expanded to prevent nom shenanigans with this
 				/obj/item/device/communicator,
-				/obj/item/clothing/mask,
-				/obj/item/clothing/glasses,
-				/obj/item/clothing/gloves,
-				/obj/item/clothing/head,
-				/obj/item/clothing/shoes,
 				/obj/item/device/aicard,
 				/obj/item/device/flashlight,
 				/obj/item/device/mmi/digital/posibrain,
@@ -207,9 +211,7 @@ var/global/list/edible_trash = list(/obj/item/broken_device,
 				/obj/item/weapon/bananapeel,
 				/obj/item/weapon/bone,
 				/obj/item/weapon/broken_bottle,
-				/obj/item/weapon/card/emag_broken,
 				/obj/item/trash/cigbutt,
-				/obj/item/weapon/circuitboard/broken,
 				/obj/item/weapon/clipboard,
 				/obj/item/weapon/corncob,
 				/obj/item/weapon/dice,
@@ -226,18 +228,32 @@ var/global/list/edible_trash = list(/obj/item/broken_device,
 				/obj/item/weapon/reagent_containers/glass/rag,
 				/obj/item/weapon/soap,
 				/obj/item/weapon/spacecash,
-				/obj/item/weapon/storage/box/khcrystal,
-				/obj/item/weapon/storage/box/matches,
-				/obj/item/weapon/storage/box/wings,
+				/obj/item/weapon/storage/box, //Can eat boxes now, expanded indigestable list to prevent shenanigan
 				/obj/item/weapon/storage/fancy/candle_box,
 				/obj/item/weapon/storage/fancy/cigarettes,
 				/obj/item/weapon/storage/fancy/crayons,
 				/obj/item/weapon/storage/fancy/egg_box,
 				/obj/item/weapon/storage/wallet,
 				/obj/item/weapon/storage/vore_egg,
-				/obj/item/weapon/bikehorn/tinytether,
+				/obj/item/weapon/bikehorn, //This includes rubber duckies
 				/obj/item/capture_crystal,
-				/obj/item/roulette_ball
+				/obj/item/roulette_ball,
+				/obj/item/weapon/hand, //Playing cards from a deck
+				/obj/item/weapon/tool, //My hydrospanner!
+				/obj/item/stack/cable_coil, //Mmm, metal spaghetti
+				/obj/item/stack/material/wood, //Wood is edible, right?
+				/obj/item/seeds, //Birds like seeds, right?
+				/obj/item/weapon/towel,
+				/obj/item/weapon/tape_roll,
+				/obj/item/weapon/book,
+				/obj/item/weapon/folder,
+				/obj/item/device/tape,
+				/obj/item/weapon/beach_ball, //You absolute buffoon
+				/obj/item/weapon/stock_parts, //For when you accidentally make 20+ T1 parts
+				/obj/item/weapon/cell,
+				/obj/item/weapon/coin,
+				/obj/item/weapon/glass_extra, //Straws for bar glasses, bar glass sticks
+				/obj/item/device/megaphone //Don't know why you would want to, but you can now
 				)
 
 var/global/list/contamination_flavors = list(
