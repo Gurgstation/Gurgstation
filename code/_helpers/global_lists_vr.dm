@@ -44,18 +44,16 @@ var/global/list/item_vore_blacklist = list(
 		/obj/item/weapon/pinpointer,
 		/obj/item/clothing/shoes/magboots,
 		/obj/item/areaeditor/blueprints,
-		/obj/item/clothing/head/helmet/space,
+		/obj/item/clothing/head/helmet,
 		/obj/item/weapon/disk/nuclear,
 		/obj/item/clothing/suit/storage/hooded/wintercoat/roiz,
 		/obj/item/device/perfect_tele,
-		/obj/item/weapon/rig,
 		/obj/item/clothing/suit/radiation,
 		/obj/item/clothing/head/radiation,
 		/obj/item/clothing/suit/bio_suit,
 		/obj/item/clothing/head/bio_hood,
 		/obj/item/clothing/suit/space,
-		/obj/item/clothing/suit/armor,
-		/obj/item/clothing/head/helmet)
+		/obj/item/clothing/suit/armor,)
 
 //Classic Vore sounds
 var/global/list/classic_vore_sounds = list(
