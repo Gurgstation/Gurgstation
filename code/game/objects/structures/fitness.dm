@@ -1,4 +1,4 @@
-/obj/structure/fitness
+/obj/structure/fitness //Don't use this, use obj/machinery/fitness instead. Using this one will give you brain rot.
 	icon = 'icons/obj/stationobjs.dmi'
 	anchored = TRUE
 	var/being_used = 0
