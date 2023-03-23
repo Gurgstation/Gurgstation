@@ -200,7 +200,7 @@
 			if(!feral) return //just to avoid fuckery in the event that they un-feral in the time it takes for the spawn to proc
 			var/halpick = rand(1,100)
 			switch(halpick)
-				if(0 to 15) //15% chance
+				/*if(0 to 15) //15% chance |Gurg Edit, some hallucination types removed to make xenochimera less obnoxious to play|
 					//Screwy HUD
 					//to_chat(src, "Screwy HUD")
 					hal_screwyhud = pick(1,2,3,3,4,4)
@@ -253,7 +253,7 @@
 							spawn(rand(100,250))
 								if(client)
 									client.screen -= halitem
-								halitem = null
+								halitem = null */
 				if(26 to 35) //10% chance
 					//Flashes of danger
 					//to_chat(src, "Danger Flash")
@@ -281,7 +281,7 @@
 								if(client) client.images -= halimage
 								halimage = null
 
-				if(36 to 55) //20% chance
+				/*if(36 to 55) //20% chance |Gurg Edit, some hallucination types removed to make xenochimera less obnoxious to play|
 					//Strange audio
 					//to_chat(src, "Strange Audio")
 					switch(rand(1,12))
@@ -337,7 +337,7 @@
 							if(client) client.images += halbody
 							spawn(rand(50,80)) //Only seen for a brief moment.
 								if(client) client.images -= halbody
-								halbody = null
+								halbody = null */
 				if(61 to 85) //25% chance
 					//food
 					if(!halbody)
@@ -372,12 +372,12 @@
 							spawn(rand(50,80)) //Only seen for a brief moment.
 								if(client) client.images -= halbody
 								halbody = null
-				if(86 to 100) //15% chance
+				/*if(86 to 100) //15% chance |Gurg Edit, some hallucination types removed to make xenochimera less obnoxious to play|
 					//hear voices. Could make the voice pick from nearby creatures, but nearby creatures make feral hallucinations rare so don't bother.
 					var/list/hiddenspeakers = list("Someone distant", "A voice nearby","A familiar voice", "An echoing voice", "A cautious voice", "A scared voice", "Someone around the corner", "Someone", "Something", "Something scary", "An urgent voice", "An angry voice")
 					var/list/speakerverbs = list("calls out", "yells", "screams", "exclaims", "shrieks", "shouts", "hisses", "snarls")
 					var/list/spookyphrases = list("It's over here!","Stop it!", "Hunt it down!", "Get it!", "Quick, over here!", "Anyone there?", "Who's there?", "Catch that thing!", "Stop it! Kill it!", "Anyone there?", "Where is it?", "Find it!", "There it is!")
-					to_chat(src, "<span class='game say'><span class='name'>[pick(hiddenspeakers)]</span> [pick(speakerverbs)], \"[pick(spookyphrases)]\"</span>")
+					to_chat(src, "<span class='game say'><span class='name'>[pick(hiddenspeakers)]</span> [pick(speakerverbs)], \"[pick(spookyphrases)]\"</span>") */
 
 
 	handling_hal = 0

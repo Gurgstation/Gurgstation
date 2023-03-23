@@ -5,24 +5,28 @@
 	name = "Slowdown"
 	desc = "Allows you to move slower on average than baseline."
 	cost = -2
+	custom_only = FALSE //Gurg edit, allows all species to walk slower
 	var_changes = list("slowdown" = 0.5)
 
 /datum/trait/negative/speed_slow_plus
 	name = "Slowdown, Major"
 	desc = "Allows you to move MUCH slower on average than baseline."
 	cost = -3
+	custom_only = FALSE //Gurg edit, allows all species to walk slower
 	var_changes = list("slowdown" = 1.0)
 
 /datum/trait/negative/weakling
 	name = "Weakling"
 	desc = "Causes heavy equipment to slow you down more when carried."
 	cost = -1
+	custom_only = FALSE //Gurg edit, allows all species to be weak
 	var_changes = list("item_slowdown_mod" = 1.5)
 
 /datum/trait/negative/weakling_plus
 	name = "Weakling, Major"
 	desc = "Allows you to carry heavy equipment with much more slowdown."
 	cost = -2
+	custom_only = FALSE //Gurg edit, allows all species to be weak
 	var_changes = list("item_slowdown_mod" = 2.0)
 
 /datum/trait/negative/endurance_low
@@ -167,4 +171,3 @@
 	var_changes = list("gun_accuracy_mod" = -35)
 	custom_only = FALSE
 	varchange_type = TRAIT_VARCHANGE_MORE_BETTER
-
