@@ -27,7 +27,7 @@
 
 /obj/structure/closet/secure_closet/hydroponics/sci
 	name = "xenoflorist's locker"
-	req_access = list(access_xenobiology)
+	req_access = list(access_xenobotany) //gurgs : fixed xenobotanists not being able to access their lockers, due to job separation
 	closet_appearance = /decl/closet_appearance/secure_closet/hydroponics/xenoflora
 
 /obj/structure/closet/secure_closet/hydroponics/sci/Initialize()
