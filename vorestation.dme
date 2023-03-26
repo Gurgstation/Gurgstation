@@ -4217,6 +4217,7 @@
 #include "gurgs_content\code\modules\client\sprite_accessories\sprite_accessories_taur_yw.dm"
 #include "gurgs_content\code\modules\client\sprite_accessories\sprite_accessories_wing_ch.dm"
 #include "gurgs_content\code\modules\client\sprite_accessories\sprite_accessories_yw.dm"
+#include "gurgs_content\code\modules\clothing\head\jobs.dm"
 #include "gurgs_content\code\modules\economy\vending_machines_gg.dm"
 #include "gurgs_content\code\modules\events\maintpred.dm"
 #include "gurgs_content\code\modules\events\metroid.dm"
