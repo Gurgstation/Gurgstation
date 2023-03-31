@@ -36,7 +36,7 @@
 	var_changes = list("total_health" = 75)
 
 /datum/trait/negative/endurance_low/apply(var/datum/species/S,var/mob/living/carbon/human/H)
-	..(S,H)
+	..()
 	H.setMaxHealth(S.total_health)
 
 /datum/trait/negative/endurance_very_low
@@ -46,7 +46,7 @@
 	var_changes = list("total_health" = 50)
 
 /datum/trait/negative/endurance_very_low/apply(var/datum/species/S,var/mob/living/carbon/human/H)
-	..(S,H)
+	..()
 	H.setMaxHealth(S.total_health)
 
 /datum/trait/negative/minor_brute_weak
@@ -114,7 +114,7 @@
 	cost = -2 //I feel like this should be higher, but let's see where it goes
 
 /datum/trait/negative/hollow/apply(var/datum/species/S,var/mob/living/carbon/human/H)
-	..(S,H)
+	..()
 	for(var/obj/item/organ/external/O in H.organs)
 		O.min_broken_damage *= 0.5
 		O.min_bruised_damage *= 0.5
