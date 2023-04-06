@@ -72,7 +72,7 @@
 /datum/gear/utility/bs_bracelet
 	display_name = "bluespace bracelet"
 	path = /obj/item/clothing/gloves/bluespace
-	cost = 5
+	cost = 1 //Gurg edit, changed from 5 to 1 . Price does not line up with uses
 
 /datum/gear/utility/walkpod
 	display_name = "podzu music player"
