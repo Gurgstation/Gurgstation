@@ -17,7 +17,7 @@
 	storage_slots = 50
 	max_storage_space = ITEMSIZE_COST_NORMAL * 50
 	max_w_class = ITEMSIZE_NORMAL
-	can_hold = list(/obj/item/weapon/fossil)
+	can_hold = list(/obj/item/weapon/fossil, /obj/item/weapon/strangerock)
 
 /obj/item/weapon/storage/box/samplebags
 	name = "sample bag box"
@@ -352,4 +352,3 @@
 	set name = "Scan for Anomalies"
 	set desc = "Scan for artifacts and anomalies within your vicinity."
 	anomaly_scanner.interact(user)
-

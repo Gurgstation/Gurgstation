@@ -81,6 +81,7 @@
 	messages = list("You lift some weights")
 	weightloss_power = 2
 	cooldown = 40
+	workout_sounds = list('sound/effects/weightlifter.ogg') //gurgs fix : the machine makes a sound now
 
 /obj/machinery/scale
 	name = "scale"
