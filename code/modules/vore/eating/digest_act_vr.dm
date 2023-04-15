@@ -160,7 +160,7 @@
 	update_icon()
 	return FALSE
 
-/obj/item/weapon/reagent_containers/food/digest_act(atom/movable/item_storage = null)
+/obj/item/weapon/reagent_containers/digest_act(atom/movable/item_storage = null) //Gurg edit
 	if(isbelly(item_storage))
 		var/obj/belly/B = item_storage
 		if(ishuman(B.owner))
