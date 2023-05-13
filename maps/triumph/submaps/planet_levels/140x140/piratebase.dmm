@@ -61,6 +61,10 @@
 /obj/random/medical,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
+"cu" = (
+/obj/machinery/light,
+/turf/simulated/floor/reinforced,
+/area/shuttle/pirate/general)
 "cJ" = (
 /obj/structure/railing{
 	dir = 1
@@ -246,10 +250,6 @@
 /obj/structure/lattice,
 /turf/space,
 /area/space)
-"jB" = (
-/obj/machinery/light,
-/turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
 "jS" = (
 /turf/simulated/shuttle/wall/voidcraft/hard_corner,
 /area/shuttle/pirate/cockpit)
@@ -353,6 +353,16 @@
 "nD" = (
 /turf/simulated/shuttle/wall/voidcraft/red,
 /area/shuttle/pirate/cockpit)
+"nV" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/recharger/wallcharger{
+	pixel_x = 5;
+	pixel_y = 32
+	},
+/turf/simulated/floor/reinforced,
+/area/shuttle/pirate/general)
 "ol" = (
 /turf/simulated/shuttle/wall/voidcraft/green,
 /area/piratebase/facility)
@@ -610,16 +620,9 @@
 /obj/structure/catwalk,
 /turf/space,
 /area/piratebase/facility)
-"Cm" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/machinery/recharger/wallcharger{
-	pixel_x = 5;
-	pixel_y = 32
-	},
-/turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+"BR" = (
+/turf/simulated/floor/airless,
+/area/space)
 "Cq" = (
 /obj/structure/closet/crate/critter,
 /obj/machinery/light{
@@ -1057,9 +1060,6 @@
 /obj/structure/lattice,
 /obj/structure/railing,
 /turf/space,
-/area/space)
-"Ub" = (
-/turf/simulated/floor/airless,
 /area/space)
 "Uh" = (
 /obj/random/mob/merc,
@@ -11940,7 +11940,7 @@ rG
 kU
 MC
 JT
-Ub
+BR
 RQ
 iI
 RQ
@@ -12084,7 +12084,7 @@ iI
 Mt
 RQ
 Mt
-Cm
+nV
 RQ
 GX
 zT
@@ -12369,7 +12369,7 @@ ws
 RQ
 Mt
 ZX
-Lg
+tJ
 GX
 zT
 Tx
@@ -12510,7 +12510,7 @@ kI
 FS
 GX
 JT
-jB
+cu
 RQ
 Xf
 zT
