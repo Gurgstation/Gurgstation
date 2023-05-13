@@ -325,15 +325,15 @@
 
 
 // PIRATE SHIP (Yaya!)
-/*/datum/shuttle/autodock/overmap/pirate
+/datum/shuttle/autodock/overmap/pirate
 	name = "Pirate Skiff"
 	warmup_time = 0
 	shuttle_area = list(/area/shuttle/pirate/cockpit, /area/shuttle/pirate/general, /area/shuttle/pirate/cargo)
 	current_location = "piratebase_hanger"
-	docking_controller_tag = "pirate_docker"
-	landmark_transition = "nav_transit_pirate"
-	fuel_consumption = 5
-	move_time = 10*/
+	//docking_controller_tag = "pirate_docker"
+	//landmark_transition = "nav_transit_pirate"
+	fuel_consumption = 0
+	move_time = 10
 
 /area/shuttle/pirate
 	name = "Pirate Skiff"

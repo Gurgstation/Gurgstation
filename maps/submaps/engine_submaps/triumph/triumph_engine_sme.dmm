@@ -353,7 +353,8 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/vault{
 	name = "REACTOR ROOM";
-	req_one_access = list(10)
+	req_one_access = null;
+	req_access = list(11)
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
@@ -405,7 +406,7 @@
 	name = "Reactor Blast Doors";
 	pixel_x = -25;
 	pixel_y = -5;
-	req_access = list(10)
+	req_access = list(11)
 	},
 /obj/machinery/button/remote/blast_door{
 	desc = "A remote control-switch for the engine control room blast doors.";
@@ -413,7 +414,7 @@
 	name = "Engine Monitoring Room Blast Doors";
 	pixel_x = -25;
 	pixel_y = 5;
-	req_access = list(10)
+	req_access = list(11)
 	},
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -649,7 +650,7 @@
 	name = "Reactor Ventillatory Control";
 	pixel_x = 0;
 	pixel_y = -25;
-	req_access = list(10)
+	req_access = list(11)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/black{
 	dir = 4
@@ -808,7 +809,7 @@
 	name = "Engine Cooling Control";
 	output_tag = "cooling_out";
 	pressure_setting = 100;
-	sensors = list("engine_sensor" = "Engine Core");
+	sensors = list("engine_sensor"="Engine Core");
 	throwpass = 1
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
@@ -970,7 +971,7 @@
 	name = "Engine Radiator Viewport Shutters";
 	pixel_x = -25;
 	pixel_y = 0;
-	req_access = list(10)
+	req_access = list(11)
 	},
 /turf/simulated/floor/plating,
 /area/engineering/engine_room)
@@ -1070,7 +1071,8 @@
 	},
 /obj/machinery/door/airlock/vault{
 	name = "REACTOR ROOM";
-	req_one_access = list(10)
+	req_one_access = null;
+	req_access = list(11)
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
@@ -1156,7 +1158,8 @@
 	},
 /obj/machinery/door/airlock/vault{
 	name = "REACTOR ROOM";
-	req_one_access = list(10)
+	req_one_access = null;
+	req_access = list(11)
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
@@ -1276,7 +1279,10 @@
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)
 "Vn" = (
-/obj/machinery/door/airlock/maintenance/engi,
+/obj/machinery/door/airlock/maintenance/engi{
+	req_one_access = null;
+	req_access = list(11)
+	},
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/plating,
 /area/engineering/engine_room)
@@ -1307,7 +1313,8 @@
 "VK" = (
 /obj/machinery/door/airlock/vault{
 	name = "REACTOR ROOM";
-	req_one_access = list(10)
+	req_one_access = null;
+	req_access = list(11)
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -1452,7 +1459,8 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/vault{
 	name = "REACTOR ROOM";
-	req_one_access = list(10)
+	req_one_access = null;
+	req_access = list(11)
 	},
 /turf/simulated/floor/tiled/techfloor/grid,
 /area/engineering/engine_room)

@@ -13,13 +13,12 @@
 	fore_dir = EAST	// Which direction the ship/z-level is facing.  It will move dust particles from that direction when moving.
 	base = TRUE		// Honestly unsure what this does but it seems the main sector or "Map" we're at has this so here it stays
 	// The waypoints that are avaliable once you are at this Navpoint
-	initial_generic_waypoints = list("nav_capitalship_docking2", "triumph_excursion_hangar", "triumph_space_SW", "triumph_mining_port")
+	initial_generic_waypoints = list("triumph_annex_dock","nav_capitalship_docking2", "triumph_excursion_hangar", "triumph_space_SW", "triumph_mining_port","triumph_space_port_3","triumph_space_starboard_3","triumph_space_port_2","triumph_space_starboard_2","triumph_space_port_1","triumph_space_starboard_1")
 
 	initial_restricted_waypoints = list(
 		"Excursion Shuttle" = list("triumph_excursion_hangar"),
 		"Civilian Transport" = list("triumph_civvie_home"),
 		"Dart EMT Shuttle" = list("triumph_emt_dock"),
-		"Beruang Trade Ship" = list("triumph_annex_dock"),
 		"Mining Shuttle" = list("triumph_mining_port"),
 		"SickBay Virology Shuttle" = list("triumph_viro_dock")
 		)
@@ -54,7 +53,7 @@
 
 // Vox Pirate ship (Yaya, yous be giving us all your gear now.)
 
-/*/obj/effect/overmap/visitable/ship/landable/pirate
+/obj/effect/overmap/visitable/ship/landable/pirate
 	name = "Pirate Skiff"
 	desc = "Yous need not care about this."
 	fore_dir = WEST
@@ -68,12 +67,11 @@
 	shuttle_area = list(/area/shuttle/pirate/cockpit, /area/shuttle/pirate/general, /area/shuttle/pirate/cargo)
 	current_location = "piratebase_hanger"
 	docking_controller_tag = "pirate_docker"
-	fuel_consumption = 5
 
 /obj/machinery/computer/shuttle_control/explore/pirate
 	name = "short jump raiding console"
 	shuttle_tag = "Pirate Skiff"
-*/
+
 
 // Mining Shuttle
 
@@ -81,7 +79,7 @@
 	name = "Mining Shuttle"
 	desc = "It ain't much, but it's honest work."
 	fore_dir = WEST
-	vessel_mass = 7000
+	vessel_mass = 3500
 	vessel_size = SHIP_SIZE_SMALL
 	shuttle = "Mining Shuttle"
 	known = TRUE;
