@@ -29,19 +29,23 @@
 /obj/structure/shuttle/engine/heater{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 5
 	},
 /turf/simulated/shuttle/wall/voidcraft/hard_corner,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "bM" = (
 /obj/machinery/turretid/lethal{
 	control_area = "\improper Pirate Skiff Shuttle";
 	pixel_x = 30;
 	req_access = null
 	},
+/obj/structure/cable/cyan,
+/obj/machinery/power/apc{
+	pixel_y = -24
+	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cockpit)
 "bT" = (
 /obj/machinery/portable_atmospherics/canister/phoron,
 /turf/simulated/floor/reinforced,
@@ -72,6 +76,11 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
+"dm" = (
+/obj/effect/shuttle_landmark/triumph/pirate,
+/obj/effect/overmap/visitable/ship/landable/pirate,
+/turf/simulated/floor/reinforced,
+/area/shuttle/pirate/general)
 "dA" = (
 /obj/structure/dispenser/phoron,
 /obj/machinery/light{
@@ -132,6 +141,12 @@
 /obj/fiftyspawner/deuterium,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
+"gs" = (
+/obj/machinery/atmospherics/binary/pump/fuel{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced,
+/area/shuttle/pirate/cargo)
 "gw" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/cell/device/weapon/recharge/captain,
@@ -202,10 +217,11 @@
 /area/shuttle/pirate/general)
 "iL" = (
 /obj/machinery/atmospherics/pipe/tank/phoron{
-	volume = 20000
+	volume = 20000;
+	piping_layer = 4
 	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "iO" = (
 /obj/structure/railing,
 /obj/structure/lattice,
@@ -214,8 +230,15 @@
 "iT" = (
 /obj/structure/table/rack,
 /obj/fiftyspawner/phoron,
+/obj/machinery/power/apc{
+	pixel_y = -24
+	},
+/obj/structure/cable/cyan,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 5
+	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "jh" = (
 /obj/structure/railing{
 	dir = 8
@@ -223,6 +246,19 @@
 /obj/structure/lattice,
 /turf/space,
 /area/space)
+"jI" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/recharger/wallcharger{
+	pixel_x = 5;
+	pixel_y = 32
+	},
+/turf/simulated/floor/reinforced,
+/area/shuttle/pirate/general)
+"jS" = (
+/turf/simulated/shuttle/wall/voidcraft/hard_corner,
+/area/shuttle/pirate/cockpit)
 "jU" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/item/projectile/beam/medical_cell/omni3,
@@ -238,14 +274,14 @@
 /obj/structure/shuttle/engine/heater{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold4w/hidden,
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/fuel,
 /turf/simulated/shuttle/wall/voidcraft/red,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "kI" = (
 /obj/machinery/recharger,
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "kS" = (
 /obj/machinery/body_scanconsole{
 	dir = 4
@@ -320,6 +356,9 @@
 /obj/structure/lattice,
 /turf/space,
 /area/space)
+"nD" = (
+/turf/simulated/shuttle/wall/voidcraft/red,
+/area/shuttle/pirate/cockpit)
 "ol" = (
 /turf/simulated/shuttle/wall/voidcraft/green,
 /area/piratebase/facility)
@@ -353,7 +392,7 @@
 "rA" = (
 /obj/machinery/computer/ship/engines,
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cockpit)
 "rG" = (
 /obj/structure/bed/chair/shuttle,
 /turf/simulated/floor/reinforced,
@@ -369,6 +408,17 @@
 /obj/structure/railing,
 /turf/space,
 /area/space)
+"rX" = (
+/obj/machinery/door/airlock/external{
+	name = "Cockpit"
+	},
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/reinforced,
+/area/shuttle/pirate/cockpit)
 "sb" = (
 /obj/structure/sign/atmos/phoron{
 	pixel_y = -32
@@ -382,6 +432,9 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
+"tz" = (
+/turf/simulated/floor/airless,
+/area/space)
 "tJ" = (
 /obj/machinery/door/airlock/external,
 /obj/structure/fans/tiny,
@@ -428,7 +481,7 @@
 /obj/machinery/light,
 /obj/machinery/recharger/wallcharger{
 	pixel_x = 5;
-	pixel_y = 32
+	pixel_y = -32
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/pirate/general)
@@ -469,6 +522,9 @@
 /obj/random/tool,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
+"ws" = (
+/turf/simulated/shuttle/wall/voidcraft/hard_corner,
+/area/shuttle/pirate/cargo)
 "wF" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/item/weapon/cell/device/weapon/gunsword,
@@ -504,11 +560,15 @@
 	dir = 8
 	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cockpit)
 "ye" = (
 /obj/machinery/light,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
+"yh" = (
+/obj/machinery/light,
+/turf/simulated/floor/reinforced,
+/area/shuttle/pirate/general)
 "yq" = (
 /turf/simulated/shuttle/wall/voidcraft/hard_corner,
 /area/piratebase/facility)
@@ -534,6 +594,11 @@
 /obj/random/tool,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
+"zk" = (
+/obj/structure/grille,
+/obj/structure/window/phoronreinforced/full,
+/turf/simulated/floor/reinforced,
+/area/shuttle/pirate/cockpit)
 "zT" = (
 /turf/simulated/floor/airless,
 /area/piratebase/facility)
@@ -600,11 +665,11 @@
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "Ea" = (
-/obj/machinery/computer/shuttle_control/explore{
+/obj/machinery/computer/shuttle_control/explore/pirate{
 	dir = 4
 	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cockpit)
 "Em" = (
 /obj/random/mob/merc,
 /turf/simulated/floor/reinforced,
@@ -630,6 +695,11 @@
 /obj/item/weapon/cell/hyper,
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
+"FS" = (
+/obj/structure/grille,
+/obj/structure/window/phoronreinforced/full,
+/turf/simulated/floor/reinforced,
+/area/shuttle/pirate/cargo)
 "Gb" = (
 /obj/machinery/door/airlock/external,
 /obj/structure/fans/tiny,
@@ -640,15 +710,17 @@
 /area/space)
 "Hr" = (
 /obj/machinery/light,
-/obj/machinery/nuclearbomb,
+/obj/machinery/atmospherics/portables_connector/fuel{
+	dir = 8
+	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "Hz" = (
 /obj/machinery/atmospherics/unary/engine{
 	dir = 8
 	},
-/turf/simulated/shuttle/plating/airless/carry,
-/area/shuttle/pirate/general)
+/turf/simulated/floor/plating,
+/area/shuttle/pirate/cargo)
 "HA" = (
 /obj/structure/catwalk,
 /obj/structure/railing{
@@ -677,7 +749,7 @@
 	icon_state = "0-2"
 	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "Iz" = (
 /obj/machinery/vending/cola,
 /turf/simulated/floor/reinforced,
@@ -697,7 +769,7 @@
 	dir = 1
 	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "Jw" = (
 /obj/structure/closet,
 /obj/random/tool,
@@ -792,7 +864,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "Mc" = (
 /obj/structure/catwalk,
 /obj/structure/railing{
@@ -805,11 +877,9 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden{
-	dir = 8
-	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel,
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "Mt" = (
 /turf/simulated/shuttle/wall/voidcraft/hard_corner,
 /area/shuttle/pirate/general)
@@ -820,6 +890,11 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/pirate/general)
 "MN" = (
+/obj/structure/cable/cyan{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /obj/structure/cable/cyan{
 	d1 = 1;
 	d2 = 4;
@@ -832,20 +907,9 @@
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "Nz" = (
-/obj/machinery/light{
-	dir = 1
-	},
-/obj/machinery/embedded_controller/radio/airlock/docking_port{
-	cycle_to_external_air = 1;
-	frequency = 1380;
-	id_tag = "piratebase_hanger";
-	pixel_y = 30;
-	req_one_access = null;
-	tag_airpump = "piratebase_vent";
-	tag_chamber_sensor = "piratebase_sensor";
-	tag_exterior_door = "piratebase_door_Ro";
-	tag_exterior_sensor = "expshuttle_exterior_sensor";
-	tag_interior_door = "piratebase_door_Ri"
+/obj/machinery/recharger/wallcharger{
+	pixel_x = 5;
+	pixel_y = -32
 	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/pirate/general)
@@ -858,15 +922,26 @@
 "Of" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable/cyan{
+	d1 = 1;
 	d2 = 8;
 	icon_state = "1-8"
 	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "Ou" = (
 /obj/machinery/shipsensors,
 /turf/simulated/floor/airless,
 /area/shuttle/pirate/general)
+"OB" = (
+/obj/machinery/porta_turret/industrial{
+	faction = "voxpirate"
+	},
+/turf/simulated/floor/airless,
+/area/shuttle/pirate/cockpit)
 "OD" = (
 /obj/structure/closet/crate/critter,
 /obj/machinery/light{
@@ -880,6 +955,17 @@
 	},
 /turf/simulated/floor/airless,
 /area/shuttle/pirate/general)
+"ON" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	dir = 6
+	},
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/reinforced,
+/area/shuttle/pirate/cargo)
 "Pd" = (
 /obj/structure/cable/cyan{
 	d2 = 2;
@@ -887,7 +973,6 @@
 	},
 /obj/machinery/power/apc{
 	dir = 1;
-	name = "north bump";
 	pixel_y = 24
 	},
 /turf/simulated/floor/reinforced,
@@ -948,19 +1033,20 @@
 "RT" = (
 /obj/machinery/light,
 /obj/machinery/computer/ship/helm{
-	dir = 1
+	dir = 1;
+	req_one_access = null
 	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cockpit)
 "Sl" = (
 /obj/structure/shuttle/engine/heater{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold/hidden{
+/obj/machinery/atmospherics/pipe/manifold/hidden/fuel{
 	dir = 8
 	},
 /turf/simulated/shuttle/wall/voidcraft/red,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "Tv" = (
 /turf/simulated/mineral/vacuum,
 /area/space)
@@ -993,6 +1079,17 @@
 	},
 /turf/space,
 /area/space)
+"Vw" = (
+/obj/structure/cable/cyan{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/reinforced,
+/area/shuttle/pirate/cockpit)
+"VI" = (
+/turf/simulated/shuttle/wall/voidcraft/red,
+/area/shuttle/pirate/cargo)
 "Wg" = (
 /obj/structure/lattice,
 /obj/structure/railing{
@@ -1024,7 +1121,7 @@
 	},
 /obj/machinery/computer/ship/sensors,
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cockpit)
 "XU" = (
 /obj/machinery/bodyscanner{
 	dir = 1
@@ -1037,11 +1134,9 @@
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "Yz" = (
-/obj/machinery/atmospherics/portables_connector{
-	dir = 1
-	},
+/obj/machinery/nuclearbomb,
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "YD" = (
 /obj/structure/table/rack/shelf/steel,
 /obj/item/projectile/beam/medical_cell/antirad,
@@ -1060,20 +1155,22 @@
 /obj/structure/shuttle/engine/heater{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden{
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
 	dir = 6
 	},
 /turf/simulated/shuttle/wall/voidcraft/hard_corner,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "ZJ" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/external,
+/obj/machinery/door/airlock/external{
+	name = "Cargo Hold"
+	},
 /turf/simulated/floor/reinforced,
-/area/shuttle/pirate/general)
+/area/shuttle/pirate/cargo)
 "ZX" = (
 /obj/machinery/recharger/wallcharger{
 	pixel_x = 5;
@@ -10560,11 +10657,11 @@ GX
 GX
 na
 GX
-OI
-Mt
-JT
-Mt
-OI
+OB
+jS
+zk
+jS
+OB
 GX
 GX
 na
@@ -10702,11 +10799,11 @@ na
 na
 na
 GX
-Mt
-Mt
+jS
+jS
 Ea
-Mt
-Mt
+jS
+jS
 GX
 GX
 na
@@ -10844,11 +10941,11 @@ GX
 na
 GX
 GX
-RQ
+nD
 Xy
 xM
 RT
-RQ
+nD
 GX
 GX
 na
@@ -10986,11 +11083,11 @@ GX
 na
 GX
 GX
-RQ
+nD
 rA
-iI
+Vw
 bM
-RQ
+nD
 GX
 GX
 na
@@ -11128,11 +11225,11 @@ GX
 na
 GX
 GX
-Mt
-Mt
-Lg
-Mt
-Mt
+jS
+jS
+rX
+jS
+jS
 GX
 GX
 na
@@ -11272,7 +11369,7 @@ GX
 GX
 JT
 oy
-iI
+kU
 kZ
 JT
 GX
@@ -11414,7 +11511,7 @@ GX
 GX
 JT
 rG
-iI
+kU
 MC
 JT
 GX
@@ -11556,7 +11653,7 @@ GX
 GX
 Mt
 Qt
-iI
+kU
 Qo
 Mt
 GX
@@ -11698,7 +11795,7 @@ RQ
 GX
 Mt
 rG
-iI
+kU
 MC
 Mt
 GX
@@ -11840,10 +11937,10 @@ RQ
 Ou
 JT
 rG
-iI
+kU
 MC
 JT
-GX
+tz
 RQ
 iI
 RQ
@@ -11987,7 +12084,7 @@ iI
 Mt
 RQ
 Mt
-hB
+jI
 RQ
 GX
 zT
@@ -12129,7 +12226,7 @@ iI
 DH
 iI
 Lg
-iI
+dm
 tJ
 yw
 zT
@@ -12264,15 +12361,15 @@ RQ
 uH
 Mt
 RQ
-Mt
-RQ
+ws
+VI
 ZJ
+VI
+ws
 RQ
 Mt
-RQ
-Mt
-uH
-RQ
+ZX
+Lg
 GX
 zT
 Tx
@@ -12403,17 +12500,17 @@ zT
 zT
 Tx
 RQ
-ZX
+hB
 JT
 GX
-JT
+FS
 Io
 Of
 kI
-JT
+FS
 GX
 JT
-iI
+yh
 RQ
 Xf
 zT
@@ -12548,11 +12645,11 @@ Mt
 Mt
 Mt
 GX
-Mt
+ws
 LT
-iI
+ON
 iT
-Mt
+ws
 GX
 Mt
 Mt
@@ -12690,11 +12787,11 @@ OI
 Mt
 RQ
 GX
-RQ
+VI
 Jl
-iI
+gs
 Hr
-RQ
+VI
 GX
 RQ
 Mt
@@ -12832,11 +12929,11 @@ GX
 RQ
 RQ
 GX
-RQ
+VI
 iL
 Mm
 Yz
-RQ
+VI
 GX
 RQ
 RQ

@@ -234,7 +234,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/alien
 	name = "\improper Alien base"
 	icon_state = "yellow"
-	
+
 /area/shuttle/tether/surface
 	name = "Tether Shuttle Landed"
 	icon_state = "shuttle"
@@ -278,7 +278,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "\improper Pirate Skiff Shuttle Cockpit"
 
 /area/shuttle/pirate/cargo
-	name = "\improper Pirate Skiff Shuttle Cockpit"
+	name = "\improper Pirate Skiff Shuttle Cargo Hold"
 
 // Civilian Transport
 /area/shuttle/civvie
@@ -1844,7 +1844,7 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 /area/vacant/vacant_site2
 	name = "\improper Abandoned Locker Room"
 	icon_state = "vacant_site"
-	
+
 /area/vacant/vacant_site/east
 	name = "\improper East Base Vacant Site"
 
