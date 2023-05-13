@@ -25,7 +25,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	minimum_character_age = 25
 	min_age_by_species = list(SPECIES_HUMAN_VATBORN = 14)
 	ideal_character_age = 70 // Old geezer captains ftw
-	ideal_age_by_species = list(SPECIES_HUMAN_VATBORN = 55) /// Vatborn live shorter, no other race eligible for captain besides human/skrell 
+	ideal_age_by_species = list(SPECIES_HUMAN_VATBORN = 55) /// Vatborn live shorter, no other race eligible for captain besides human/skrell
 	banned_job_species = list(SPECIES_UNATHI, SPECIES_TAJ, SPECIES_DIONA, SPECIES_PROMETHEAN, SPECIES_ZADDAT, "mechanical", "digital")
 
 	outfit_type = /decl/hierarchy/outfit/job/captain
@@ -105,7 +105,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 /datum/job/secretary
 	title = "Command Secretary"
 	flag = BRIDGE
-	departments = list(DEPARTMENT_COMMAND)
+	departments = list(DEPARTMENT_COMMAND, DEPARTMENT_CIVILIAN)
 	department_accounts = list(DEPARTMENT_COMMAND)
 	department_flag = CIVILIAN
 	faction = "Station"
@@ -122,4 +122,3 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	outfit_type = /decl/hierarchy/outfit/job/secretary
 	job_description = "A Command Secretary handles paperwork duty for the Heads of Staff, so they can better focus on managing their departments. \
 						They are not Heads of Staff, and have no real authority."
-
