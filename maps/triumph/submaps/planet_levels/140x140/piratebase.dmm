@@ -38,7 +38,8 @@
 /obj/machinery/turretid/lethal{
 	control_area = "\improper Pirate Skiff Shuttle";
 	pixel_x = 30;
-	req_access = null
+	req_access = null;
+	locked = 0
 	},
 /obj/structure/cable/cyan,
 /obj/machinery/power/apc{
@@ -221,7 +222,7 @@
 /area/shuttle/pirate/general)
 "iL" = (
 /obj/machinery/atmospherics/pipe/tank/phoron{
-	volume = 20000;
+	volume = 50000;
 	piping_layer = 4
 	},
 /turf/simulated/floor/reinforced,
@@ -291,7 +292,9 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/pirate/general)
 "kZ" = (
-/obj/structure/closet/secure_closet/guncabinet/sidearm,
+/obj/structure/closet/secure_closet/guncabinet/sidearm{
+	req_one_access = null
+	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/pirate/general)
 "ls" = (
@@ -373,7 +376,9 @@
 /turf/simulated/floor/reinforced,
 /area/piratebase/facility)
 "oy" = (
-/obj/structure/closet/secure_closet/guncabinet/rifle,
+/obj/structure/closet/secure_closet/guncabinet/rifle{
+	req_one_access = null
+	},
 /turf/simulated/floor/reinforced,
 /area/shuttle/pirate/general)
 "pn" = (
