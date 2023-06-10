@@ -227,32 +227,6 @@
 	"colorization_enabled",
 	"egg_type",
 	"save_digest_mode",
-	// Gurg ADD: Import Chomp liquid bellies - START
-	"reagent_mode_flags",	//CHOMP start of variables from CHOMP
-	"reagentbellymode",
-	"liquid_fullness1_messages",
-	"liquid_fullness2_messages",
-	"liquid_fullness3_messages",
-	"liquid_fullness4_messages",
-	"liquid_fullness5_messages",
-	"reagent_name",
-	"reagent_chosen",
-	"reagentid",
-	"reagentcolor",
-	"gen_cost",
-	"gen_amount",
-	"gen_time",
-	"gen_time_display",
-	"reagent_transfer_verb",
-	"custom_max_volume",
-	"generated_reagents",
-	"vorefootsteps_sounds",
-	"fullness1_messages",
-	"fullness2_messages",
-	"fullness3_messages",
-	"fullness4_messages",
-	"fullness5_messages",     //CHOMP end of variables from CHOMP
-	// Gurg ADD: Import Chomp liquid bellies - END
 	)
 
 	if (save_digest_mode == 1)
