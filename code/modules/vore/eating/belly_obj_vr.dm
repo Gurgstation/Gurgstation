@@ -268,9 +268,6 @@
 		owner.vore_organs |= src
 		START_PROCESSING(SSbellies, src)
 
-	create_reagents(100)	// Gurg ADD: Import Chomp liquid bellies
-	flags |= NOREACT		// We dont want bellies to start bubling nonstop due to people mixing when transfering and making different reagents
-
 /obj/belly/Destroy()
 	STOP_PROCESSING(SSbellies, src)
 	owner?.vore_organs?.Remove(src)
@@ -1300,45 +1297,6 @@
 	dupe.examine_messages_absorbed.Cut()
 	for(var/I in examine_messages_absorbed)
 		dupe.examine_messages_absorbed += I
-
-
-	// Gurg ADD: Import Chomp liquid bellies - START
-	// CHOMP reagent belly
-	//generated_reagents - strings
-	dupe.generated_reagents.Cut()
-	for(var/I in generated_reagents)
-		dupe.generated_reagents += I
-
-	// CHOMP fullness messages stage 1
-	//fullness1_messages - strings
-	dupe.fullness1_messages.Cut()
-	for(var/I in fullness1_messages)
-		dupe.fullness1_messages += I
-
-	// CHOMP fullness messages stage 2
-	//fullness2_messages - strings
-	dupe.fullness2_messages.Cut()
-	for(var/I in fullness2_messages)
-		dupe.fullness2_messages += I
-
-	// CHOMP fullness messages stage 3
-	//fullness3_messages - strings
-	dupe.fullness3_messages.Cut()
-	for(var/I in fullness3_messages)
-		dupe.fullness3_messages += I
-
-	// CHOMP fullness messages stage 4
-	//fullness4_messages - strings
-	dupe.fullness4_messages.Cut()
-	for(var/I in fullness4_messages)
-		dupe.fullness4_messages += I
-
-	// CHOMP fullness messages stage 5
-	//generated_reagents - strings
-	dupe.fullness5_messages.Cut()
-	for(var/I in fullness5_messages)
-		dupe.fullness5_messages += I
-	// Gurg ADD: Import Chomp liquid bellies - END
 
 	//emote_lists - index: digest mode, key: list of strings
 	dupe.emote_lists.Cut()

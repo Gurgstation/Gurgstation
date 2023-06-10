@@ -154,7 +154,7 @@
 		)))
 	data["our_bellies"] = our_bellies
 
-	var/list/selected_list = list()
+	var/list/selected_list = null
 	if(host.vore_selected)
 		var/obj/belly/selected = host.vore_selected
 		selected_list = list(
@@ -291,9 +291,6 @@
 		selected_list["contents"] = selected_contents
 
 	data["selected"] = selected_list
-
-
-
 	data["prefs"] = list(
 		"digestable" = host.digestable,
 		"devourable" = host.devourable,
@@ -382,31 +379,6 @@
 			var/obj/belly/NB = new(host)
 			NB.name = new_name
 			host.vore_selected = NB
-			unsaved_changes = TRUE
-			return TRUE
-
-		// Gurg ADD: Import Chomp liquid bellies - START
-		if("liq_set_attribute")
-			return liq_set_attr(usr, params)
-		if("liq_set_messages")
-			return liq_set_msg(usr, params)
-		if("toggle_liq_rec")
-			host.receive_reagents = !host.receive_reagents
-			if(host.client.prefs_vr)
-				host.client.prefs_vr.receive_reagents = host.receive_reagents
-			unsaved_changes = TRUE
-			return TRUE
-		if("toggle_liq_giv")
-			host.give_reagents = !host.give_reagents
-			if(host.client.prefs_vr)
-				host.client.prefs_vr.give_reagents = host.give_reagents
-			unsaved_changes = TRUE
-			return TRUE
-		// Gurg ADD: Import Chomp liquid bellies - END
-
-		// Gurgs ADD: Imports belches, brp~
-		if("toggle_noisy_full")
-			host.noisy_full = !host.noisy_full
 			unsaved_changes = TRUE
 			return TRUE
 

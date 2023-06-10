@@ -655,7 +655,6 @@ var/global/datum/controller/occupations/job_master
 
 	var/datum/spawnpoint/spawnpos
 	var/fail_deadly = FALSE
-	var/obj/belly/vore_spawn_gut // Gurgs ADD: Spawnable Belees
 
 	var/datum/job/J = SSjob.get_job(rank)
 	fail_deadly = J?.offmap_spawn
@@ -672,10 +671,8 @@ var/global/datum/controller/occupations/job_master
 		else
 			spawnpos = spawntypes[C.prefs.spawnpoint]
 
-	//We will return a list key'd by "turf" and "msg" 
-	. = list("turf","msg","voreny") // Gurgs ADD: Spawnable Belees
-	if(vore_spawn_gut)
-		.["voreny"] = vore_spawn_gut
+	//We will return a list key'd by "turf" and "msg"
+	. = list("turf","msg")
 	if(spawnpos && istype(spawnpos) && spawnpos.turfs.len)
 		if(spawnpos.check_job_spawning(rank))
 			.["turf"] = spawnpos.get_spawn_position()

@@ -67,10 +67,6 @@ V::::::V           V::::::VO:::::::OOO:::::::ORR:::::R     R:::::REE::::::EEEEEE
 	var/step_mechanics_pref = FALSE
 	var/pickup_pref = TRUE
 
-	// Gurg ADD: Import Chomp liquid bellies
-	var/receive_reagents = FALSE
-	var/give_reagents = FALSE
-
 	var/list/belly_prefs = list()
 	var/vore_taste = "nothing in particular"
 	var/vore_smell = "nothing in particular"
@@ -291,16 +287,6 @@ V::::::V           V::::::VO:::::::OOO:::::::ORR:::::R     R:::::REE::::::EEEEEE
 	else if(weight_messages.len < 10)
 		while(weight_messages.len < 10)
 			weight_messages.Add("")
-
-	// Gurgs ADD: Spawnable Belees
-	if(isnull(latejoin_vore))
-		latejoin_vore = FALSE
-
-	// Gurg ADD: Import Chomp liquid bellies
-	if(isnull(receive_reagents))
-		receive_reagents = FALSE
-	if(isnull(give_reagents))
-		give_reagents = FALSE
 
 	return TRUE
 

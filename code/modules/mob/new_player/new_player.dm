@@ -494,11 +494,6 @@
 			if(imp.handle_implant(character,character.zone_sel.selecting))
 				imp.post_implant(character)
 
-	// Gurgs ADD: Spawnable Belees
-	var/gut = join_props["voreny"]
-	if(gut)
-		character.forceMove(gut)
-
 	qdel(src) // Delete new_player mob
 
 /mob/new_player/proc/AnnounceCyborg(var/mob/living/character, var/rank, var/join_message, var/channel, var/zlevel)

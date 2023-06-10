@@ -298,19 +298,8 @@
 		compensation = 21 //This reads as 20*4.5 due to the calculations afterward, making the backup nutrition value 94.5 per mob. Not op compared to regular prey.
 	if(compensation > 0)
 		if(isrobot(owner))
-// Gurg ADD: Import Chomp liquid bellies - START
-
-//			var/mob/living/silicon/robot/R = owner
-//			R.cell.charge += 25*compensation*(nutrition_percent / 100)
-//		else
-//			owner.adjust_nutrition((nutrition_percent / 100)*4.5*compensation)
-
 			var/mob/living/silicon/robot/R = owner
-			if(reagent_mode_flags & DM_FLAG_REAGENTSDIGEST && reagents.total_volume < reagents.maximum_volume) //CHOMPedit: digestion producing reagents
-				R.cell.charge += 15*compensation
-				GenerateBellyReagents_digested()
-			else
-				R.cell.charge += 25*compensation //CHOMPedit end
+			R.cell.charge += 25*compensation*(nutrition_percent / 100)
 		else
 			if(reagent_mode_flags & DM_FLAG_REAGENTSDIGEST && reagents.total_volume < reagents.maximum_volume) //CHOMP digestion producing reagents
 				owner.adjust_nutrition((nutrition_percent / 100)*25.0*compensation * personal_nutrition_modifier)
@@ -323,12 +312,7 @@
 	if(L.nutrition >= 100)
 		var/oldnutrition = (L.nutrition * 0.05)
 		L.nutrition = (L.nutrition * 0.95)
-		// Gurg ADD: Import Chomp liquid bellies
-		if(reagent_mode_flags & DM_FLAG_REAGENTSDRAIN && reagents.total_volume < reagents.maximum_volume)   //CHOMPedit: draining reagent production //Added to this proc now since it's used for draining
-			owner.adjust_nutrition(oldnutrition * 0.75) //keeping the price static, due to how much nutrition can flunctuate
-			GenerateBellyReagents_absorbing() //Dont need unique proc so far
-		else
-			owner.adjust_nutrition(oldnutrition) //CHOMPedit end
+		owner.adjust_nutrition(oldnutrition)
 
 /obj/belly/proc/updateVRPanels()
 	for(var/mob/living/M in contents)
