@@ -193,13 +193,6 @@ V::::::V           V::::::VO:::::::OOO:::::::ORR:::::R     R:::::REE::::::EEEEEE
 	weight_message_visible = json_from_file["weight_message_visible"]
 	weight_messages = json_from_file["weight_messages"]
 
-	// Gurgs ADD: Spawnable Belees
-	latejoin_vore = json_from_file["latejoin_vore"]
-
-	// Gurg ADD: Import Chomp liquid bellies
-	receive_reagents = json_from_file["receive_reagents"]
-	give_reagents = json_from_file["give_reagents"]
-
 	//Quick sanitize
 	if(isnull(digestable))
 		digestable = TRUE
@@ -315,12 +308,6 @@ V::::::V           V::::::VO:::::::OOO:::::::ORR:::::R     R:::::REE::::::EEEEEE
 			"step_mechanics_pref"	= step_mechanics_pref,
 			"pickup_pref"			= pickup_pref,
 			"belly_prefs"			= belly_prefs,
-			// Gurgs ADD: Spawnable Belees
-			"latejoin_vore"			= latejoin_vore,
-			// Gurg ADD: Import Chomp liquid bellies
-			"receive_reagents"		= receive_reagents,
-			"give_reagents"			= give_reagents,
-
 
 			"drop_vore"				= drop_vore,
 			"slip_vore"				= slip_vore,

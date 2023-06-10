@@ -287,13 +287,6 @@
 	P.throw_vore = src.throw_vore
 	P.stumble_vore = src.stumble_vore
 
-	// Gurgs ADD: Spawnable Belees
-	P.latejoin_vore = src.latejoin_vore
-
-	// Gurg ADD: Import Chomp liquid bellies
-	P.receive_reagents = src.receive_reagents
-	P.give_reagents = src.give_reagents
-
 	P.nutrition_message_visible = src.nutrition_message_visible
 	P.nutrition_messages = src.nutrition_messages
 	P.weight_message_visible = src.weight_message_visible
@@ -342,13 +335,6 @@
 	slip_vore = P.slip_vore
 	throw_vore = P.throw_vore
 	stumble_vore = P.stumble_vore
-
-	// Gurgs ADD: Spawnable Belees
-	latejoin_vore = P.latejoin_vore
-
-	// Gurg ADD: Import Chomp liquid bellies
-	receive_reagents = P.receive_reagents
-	give_reagents = P.give_reagents
 
 	nutrition_message_visible = P.nutrition_message_visible
 	nutrition_messages = P.nutrition_messages

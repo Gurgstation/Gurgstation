@@ -1204,27 +1204,6 @@
 	dupe.is_wet = is_wet
 	dupe.wet_loop = wet_loop
 	dupe.belly_fullscreen_color = belly_fullscreen_color // Gurgs ADD: Colorable bellies!
-	// Gurg ADD: Import Chomp liquid bellies - START
-	dupe.reagent_mode_flags = reagent_mode_flags	//CHOMP start of variables from CHOMP
-	dupe.reagentbellymode = reagentbellymode
-	dupe.vorefootsteps_sounds = vorefootsteps_sounds
-	dupe.liquid_fullness1_messages = liquid_fullness1_messages
-	dupe.liquid_fullness2_messages = liquid_fullness2_messages
-	dupe.liquid_fullness3_messages = liquid_fullness3_messages
-	dupe.liquid_fullness4_messages = liquid_fullness4_messages
-	dupe.liquid_fullness5_messages = liquid_fullness5_messages
-	dupe.reagent_name = reagent_name
-	dupe.reagent_chosen = reagent_chosen
-	dupe.reagentid = reagentid
-	dupe.reagentcolor = reagentcolor
-	dupe.gen_cost = gen_cost
-	dupe.gen_amount = gen_amount
-	dupe.gen_time = gen_time
-	dupe.gen_time_display = gen_time_display
-	dupe.reagent_transfer_verb = reagent_transfer_verb
-	dupe.custom_max_volume = custom_max_volume	//CHOMP end of variables from CHOMP
-	// Gurg ADD: Import Chomp liquid bellies - END
-
 	dupe.belly_fullscreen = belly_fullscreen
 	dupe.disable_hud = disable_hud
 	dupe.belly_fullscreen_color = belly_fullscreen_color
