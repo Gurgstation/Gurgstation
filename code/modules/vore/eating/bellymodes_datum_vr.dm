@@ -84,7 +84,7 @@ GLOBAL_LIST_INIT(digest_modes, list())
 /datum/digest_mode/unabsorb
 	id = DM_UNABSORB
 
-/datum/digest_mode/unabsorb/process_mob(obj/belly/B, mob/living/L) // Gurgs OVERRIDDEN: Shapeshift.dm
+/datum/digest_mode/unabsorb/process_mob(obj/belly/B, mob/living/L)
 	if(L.absorbed && B.owner.nutrition >= 100)
 		B.owner.adjust_nutrition(-100)
 		B.unabsorb_living(L)

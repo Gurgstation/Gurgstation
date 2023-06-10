@@ -317,8 +317,6 @@
 		"liq_giv" = host.give_reagents,
 		// Gurgs ADD: Imports belches, brp~
 		"noisy_full" = host.noisy_full, //Belching while full
-		// Gurg ADD: Shapeshift preds
-		"can_be_transformed" = host.can_be_transformed,
 
 		"drop_vore" = host.drop_vore,
 		"slip_vore" = host.slip_vore,
@@ -475,15 +473,9 @@
 				host.client.prefs_vr.can_be_drop_prey = host.can_be_drop_prey
 			unsaved_changes = TRUE
 			return TRUE
-		// Gurg ADD: Shapeshift preds
-		if("toggle_can_be_transformed")
-			host.can_be_transformed = !host.can_be_transformed
-			if(host.client.prefs_vr)
-				host.client.prefs_vr.can_be_transformed = host.can_be_transformed
-			unsaved_changes = TRUE
-			return TRUE
-		if("toggle_allow_inbelly_spawning")
-			host.allow_inbelly_spawning = !host.allow_inbelly_spawning
+		// Gurgs ADD: Spawnable Belees
+		if("toggle_latejoin_vore")
+			host.latejoin_vore = !host.latejoin_vore
 			if(host.client.prefs_vr)
 				host.client.prefs_vr.allow_inbelly_spawning = host.allow_inbelly_spawning
 			unsaved_changes = TRUE

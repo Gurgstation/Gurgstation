@@ -1068,7 +1068,6 @@ const VoreUserPreferences = (props, context) => {
     noisy_full,
     liq_rec,
     liq_giv,
-    can_be_transformed,
     drop_vore,
     stumble_vore,
     slip_vore,

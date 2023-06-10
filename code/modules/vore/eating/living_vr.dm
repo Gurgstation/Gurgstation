@@ -294,8 +294,6 @@
 	P.receive_reagents = src.receive_reagents
 	P.give_reagents = src.give_reagents
 
-	// Gurg ADD: Shapeshift preds
-	P.can_be_transformed = src.can_be_transformed
 	P.nutrition_message_visible = src.nutrition_message_visible
 	P.nutrition_messages = src.nutrition_messages
 	P.weight_message_visible = src.weight_message_visible
@@ -351,9 +349,6 @@
 	// Gurg ADD: Import Chomp liquid bellies
 	receive_reagents = P.receive_reagents
 	give_reagents = P.give_reagents
-
-	// Gurg ADD: Shapeshift preds
-	can_be_transformed = P.can_be_transformed
 
 	nutrition_message_visible = P.nutrition_message_visible
 	nutrition_messages = P.nutrition_messages
@@ -509,8 +504,7 @@
 		if(confirm != "Okay" || loc != B)
 			return
 		//Actual escaping
-		//absorbed = 0	//Make sure we're not absorbed // Gurgs EDIT: Refactoring absorbtion
-		B.unabsorb_mob(src) // Gurgs EDIT end
+		absorbed = 0	//Make sure we're not absorbed
 		muffled = 0		//Removes Muffling
 		forceMove(get_turf(src)) //Just move me up to the turf, let's not cascade through bellies, there's been a problem, let's just leave.
 		for(var/mob/living/simple_mob/SA in range(10))

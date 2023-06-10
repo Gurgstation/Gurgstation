@@ -200,10 +200,6 @@ V::::::V           V::::::VO:::::::OOO:::::::ORR:::::R     R:::::REE::::::EEEEEE
 	receive_reagents = json_from_file["receive_reagents"]
 	give_reagents = json_from_file["give_reagents"]
 
-	// Gurg ADD: Shapeshift preds
-	can_be_transformed = json_from_file["can_be_transformed"]
-
-
 	//Quick sanitize
 	if(isnull(digestable))
 		digestable = TRUE
@@ -324,8 +320,6 @@ V::::::V           V::::::VO:::::::OOO:::::::ORR:::::R     R:::::REE::::::EEEEEE
 			// Gurg ADD: Import Chomp liquid bellies
 			"receive_reagents"		= receive_reagents,
 			"give_reagents"			= give_reagents,
-			// Gurg ADD: Shapeshift preds
-			"can_be_transformed"	= can_be_transformed,
 
 
 			"drop_vore"				= drop_vore,

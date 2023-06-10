@@ -470,9 +470,7 @@
 		if(ML.forced_psay)
 			ML.forced_psay = FALSE
 		if(ML.absorbed)
-			// ML.absorbed = FALSE // Gurgs EDIT: Refactoring absorbtion
-			unabsorb_mob(ML) // Gurgs EDIT end
-			handle_absorb_langs(ML, owner)
+			ML.absorbed = FALSE
 			if(ishuman(M) && ishuman(OW))
 				var/mob/living/carbon/human/Prey = M
 				var/mob/living/carbon/human/Pred = OW
