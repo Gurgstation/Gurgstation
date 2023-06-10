@@ -636,6 +636,7 @@
 "qS" = (/obj/machinery/light_switch{pixel_x = 25},/turf/simulated/floor/wood,/area/quartermaster/qm)
 "qU" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/structure/catwalk,/turf/simulated/floor/plating,/area/maintenance/cargo)
 "qW" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/white,/area/crew_quarters/toilet)
+"qX" = (/obj/machinery/embedded_controller/radio/airlock/docking_port{cycle_to_external_air = 1; frequency = 1380; id_tag = "mining_docker"; pixel_y = 27; tag_airpump = "civvie_vent"; tag_chamber_sensor = "civvie_sensor"; tag_exterior_door = "civvie_door_Ro"; tag_exterior_sensor = "civvie_exterior_sensor"; tag_interior_door = "civvie_door_Ri"; tag_interior_sensor = "civvie_exp_psg"},/turf/simulated/floor/tiled/steel,/area/shuttle/mining_ship/general)
 "qZ" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor/wood,/area/quartermaster/foyer)
 "ra" = (/turf/simulated/wall,/area/vacant/vacant_office)
 "rd" = (/obj/machinery/computer/timeclock/premade/south,/obj/effect/floor_decal/borderfloor,/obj/effect/floor_decal/corner/beige/border,/turf/simulated/floor/tiled,/area/hallway/primary/port)
@@ -1247,7 +1248,7 @@
 "HG" = (/obj/structure/bed/chair/shuttle{dir = 1},/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/simulated/floor/tiled/steel,/area/shuttle/mining_ship/general)
 "HI" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/door/firedoor,/obj/machinery/door/airlock/glass{name = "Hallway"},/turf/simulated/floor/tiled/steel_grid,/area/station/stairs_two)
 "HJ" = (/turf/simulated/floor/wood,/area/crew_quarters/bar)
-"HK" = (/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/plating,/area/shuttle/mining_ship/general)
+"HK" = (/obj/effect/wingrille_spawn/reinforced,/turf/simulated/floor/tiled/steel/airless,/area/shuttle/mining_ship/general)
 "HL" = (/obj/structure/toilet{pixel_y = 10},/turf/simulated/floor/tiled/white,/area/crew_quarters/sleep/Dorm_1)
 "HN" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/green{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/eris/cafe,/area/crew_quarters/kitchen)
 "HT" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/machinery/embedded_controller/radio/airlock/docking_port{dir = 4; frequency = 1380; id_tag = "triumph_space_mining_port"; pixel_x = -26; req_one_access = list(13)},/turf/simulated/floor/airless,/area/space)
@@ -1959,7 +1960,7 @@ iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiirCkDrCkDHTqMqMqMqMqMqMqMqMqMStKcKcBQRzJNIsSSasVbbHiDecElXdeYKfasxIqkweywweNSkkkkZDdqkkXJiiiiiiiiiiiiiirCiikDiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiivHucvHiiiiiiiiiiiiiiiieiIDhnIxeiRODegvwaIfUYKHwPDaQmliPgOzHXsZTYHsDgTkkkCKXIUxUxFSiiiiiiiiiiiiiirCiiEdiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiRxRxRxRxkGRxRxRxRxRxRxWmiiiieieieieieiXsIspBXHJuZdRQRQRQsLJsPgOzQaqkKPESPbUMkkkkDFdqkkXJiiiiiiiiiiiiiirCiiEdiicsiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
-iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiHKlYLlbPMCwxumtPRxdIrvWAbRiiEdiiiiiiwpNVIsUrXHRRZdJsEGJsJsJsRTasyiqkKPkkPbkkqRqRqRlnTHQZiiiiiiiiiiiiiirCEdkDiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiHKlYLlqXMCwxumtPRxdIrvWAbRiiEdiiiiiiwpNVIsUrXHRRZdJsEGJsJsJsRTasyiqkKPkkPbkkqRqRqRlnTHQZiiiiiiiiiiiiiirCEdkDiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiicsiiiiHKgnHtbPWdLchihivzaWlzgNbRiirCEdEdEdwpuRIsanasOEkwiICpyAyAyADhasMIToqQqQJdkkkkkkNjUxUxFSiiiiiiiiiiiiiirCiiEdiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiicsiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiYfiiiiiiiiiiiiiiiiiiiiiiiiiiiiHKsXTIxRLBGeHGHGgEuxjUEubRiirCiiiiiiqIMWCMlqlqlqCjsblqlqeJeJeJlqxNCuNvUgNfkkKPKPkkUxiiEdiiiiiiiiiiiiiiEdiiEdiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiRxRxRxRxRxRxRxRxRxRxRxRxiiiirCEdEdEdqIIFZLlqehhEkBAkfAHBAkAkAkMcYUlqcxnYNfkkrAiZkkUxiiEdiiiiiiiiiiiiiiEdiikDiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii

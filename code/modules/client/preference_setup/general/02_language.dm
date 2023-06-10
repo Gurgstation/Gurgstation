@@ -13,19 +13,6 @@
 	if(islist(pref.alternate_languages))			// Because aparently it may not be?
 		testing("LANGSANI: Loaded from [pref.client]'s character [pref.real_name || "-name not yet loaded-"] savefile: [english_list(pref.alternate_languages || list())]")
 	S["language_prefixes"]	>> pref.language_prefixes
-	//CHOMPEdit Begin // Verkister's master languist code added in. c:
-	S["species"]			>> pref.species
-	S["pos_traits"]		>> pref.pos_traits
-	var/morelang = 0
-	for(var/trait in pref.pos_traits)
-		if(trait==/datum/trait/positive/linguist)
-			morelang = 1
-	pref.num_languages = morelang * 12
-	//CHOMPEdit End
-	//VORE Edit Begin
-	S["preflang"]			>> pref.preferred_language
-	//VORE Edit End
-	S["language_custom_keys"]	>> pref.language_custom_keys
 
 /datum/category_item/player_setup_item/general/language/save_character(var/savefile/S)
 	S["language"]			<< pref.alternate_languages
@@ -45,10 +32,10 @@
 		if(!istype(S))
 			testing("LANGSANI: Failed sani on [pref.client]'s character [pref.real_name || "-name not yet loaded-"] because their species ([pref.species]) isn't in the global list")
 			return
-
-		if(pref.alternate_languages.len > (S.num_alternate_languages + pref.extra_languages))
+			
+		if(pref.alternate_languages.len > S.num_alternate_languages)
 			testing("LANGSANI: Truncated [pref.client]'s character [pref.real_name || "-name not yet loaded-"] language list because it was too long (len: [pref.alternate_languages.len], allowed: [S.num_alternate_languages])")
-			pref.alternate_languages.len = (S.num_alternate_languages + pref.extra_languages) // Truncate to allowed length
+			pref.alternate_languages.len = S.num_alternate_languages // Truncate to allowed length
 
 		// VOREStation Edit Start
 		if(!(pref.preferred_language in pref.alternate_languages) || !pref.preferred_language) // Safety handling for if our preferred language is ever somehow removed from the character's list of langauges, or they don't have one set
@@ -85,15 +72,15 @@
 	if(S.language)
 		. += "- [S.language] - <a href='?src=\ref[src];set_custom_key=[S.language]'>Set Custom Key</a><br>"
 	if(S.default_language && S.default_language != S.language)
-		. += "- [S.default_language] - <a href='?src=\ref[src];set_custom_key=[S.default_language]'>Set Custom Key</a><br>"
-	if(S.num_alternate_languages + pref.extra_languages)
+		. += "- [S.default_language]<br>"
+	if(S.num_alternate_languages)
 		if(pref.alternate_languages.len)
 			for(var/i = 1 to pref.alternate_languages.len)
 				var/lang = pref.alternate_languages[i]
 				. += "- [lang] - <a href='?src=\ref[src];remove_language=[i]'>remove</a> - <a href='?src=\ref[src];set_custom_key=[lang]'>Set Custom Key</a><br>"
 
-		if(pref.alternate_languages.len < (S.num_alternate_languages + pref.extra_languages))
-			. += "- <a href='?src=\ref[src];add_language=1'>add</a> ([(S.num_alternate_languages + pref.extra_languages) - pref.alternate_languages.len] remaining)<br>"
+		if(pref.alternate_languages.len < S.num_alternate_languages)
+			. += "- <a href='?src=\ref[src];add_language=1'>add</a> ([S.num_alternate_languages - pref.alternate_languages.len] remaining)<br>"
 	else
 		. += "- [pref.species] cannot choose secondary languages.<br>"
 
@@ -108,7 +95,7 @@
 		return TOPIC_REFRESH
 	else if(href_list["add_language"])
 		var/datum/species/S = GLOB.all_species[pref.species]
-		if(pref.alternate_languages.len >= (S.num_alternate_languages + pref.extra_languages))
+		if(pref.alternate_languages.len >= S.num_alternate_languages)
 			tgui_alert_async(user, "You have already selected the maximum number of alternate languages for this species!")
 		else
 			var/list/available_languages = S.secondary_langs.Copy()
@@ -126,12 +113,8 @@
 				tgui_alert_async(user, "There are no additional languages available to select.")
 			else
 				var/new_lang = tgui_input_list(user, "Select an additional language", "Character Generation", available_languages)
-				if(new_lang && pref.alternate_languages.len < (S.num_alternate_languages + pref.extra_languages))
-					var/datum/language/chosen_lang = GLOB.all_languages[new_lang]
-					if(istype(chosen_lang))
-						var/choice = tgui_alert(usr, "[chosen_lang.desc]",chosen_lang.name, list("Take","Cancel"))
-						if(choice != "Cancel" && pref.alternate_languages.len < (S.num_alternate_languages + pref.extra_languages))
-							pref.alternate_languages |= new_lang
+				if(new_lang && pref.alternate_languages.len < S.num_alternate_languages)
+					pref.alternate_languages |= new_lang
 					return TOPIC_REFRESH
 
 	else if(href_list["change_prefix"])
