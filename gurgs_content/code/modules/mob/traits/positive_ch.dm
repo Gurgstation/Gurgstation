@@ -1,9 +1,3 @@
-/datum/trait/positive/linguist
-	name = "Master Linguist"
-	desc = "You are a master of languages! For whatever reason you might have, you are able to learn many more languages than others."
-	cost = 2
-	var_changes = list("num_alternate_languages" = 12)
-
 /datum/trait/positive/densebones
 	name = "Dense bones"
 	desc = "Your bones (or robotic limbs) are more dense or stronger then what is considered normal. It is much harder to fracture your bones, yet pain from fractures is much more intense."
@@ -197,7 +191,7 @@
 	pulse_modifier = 2					//Heart is in overdrive
 	bleeding_rate_percent = 1.25		//Bleed more with higher blood pressure.
 	metabolism_percent = 2.5			//Metabolism in overdrive
-	
+
 	var/original_length
 	var/list/original_values
 
@@ -239,7 +233,7 @@
 	accuracy_dispersion = 25
 	incoming_hal_damage_percent = 1.75
 	incoming_oxy_damage_percent = 1.25
-	
+
 /datum/trait/positive/insect_sting
 	name = "Insect Sting"
 	desc = "Allows you to sting your victim with a smalll amount of poison"
@@ -248,4 +242,3 @@
 /datum/trait/positive/insect_sting/apply(var/datum/species/S,var/mob/living/carbon/human/H)
 	..(S,H)
 	H.verbs |= /mob/living/proc/insect_sting
-	
