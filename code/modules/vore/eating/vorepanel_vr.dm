@@ -1297,13 +1297,6 @@
 		if("b_fullscreen")
 			host.vore_selected.belly_fullscreen = params["val"]
 			. = TRUE
-		// Gurgs ADD: Colorable Bellies!
-		if("b_fullscreen_color")
-			var/newcolor = input(usr, "Choose a color.", "", host.vore_selected.belly_fullscreen_color) as color|null
-			if(newcolor)
-				host.vore_selected.belly_fullscreen_color = newcolor
-			. = TRUE 				//CHOMPEdit End
-
 		if("b_disable_hud")
 			host.vore_selected.disable_hud = !host.vore_selected.disable_hud
 			. = TRUE
