@@ -91,6 +91,9 @@
 
 		handle_heartbeat()
 		handle_nif() 			//VOREStation Addition
+
+		handlebelches()	// Gurgs ADD: Natural belching
+
 		if(!client)
 			species.handle_npc(src)
 
@@ -1180,9 +1183,6 @@
 		var/growlmultiplier = 100 - (nutrition / 250 * 100)
 		playsound(src, growlsound, vol = growlmultiplier, vary = 1, falloff = 0.1, ignore_walls = TRUE, preference = /datum/client_preference/digestion_noises)
 	// VOREStation Edit End
-
-	if(stat != DEAD) //So the dead don't belch
-		handlebelches()	// Gurgs ADD: Natural belching
 
 	// TODO: stomach and bloodstream organ.
 	if(!isSynthetic())
