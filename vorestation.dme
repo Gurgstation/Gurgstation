@@ -4264,7 +4264,6 @@
 #include "gurgs_content\code\modules\projectiles\guns\energy\cell_loaded_gr\ml3m_cells_gr.dm"
 #include "gurgs_content\code\modules\projectiles\guns\energy\cell_loaded_gr\ml3m_gr.dm"
 #include "gurgs_content\code\modules\reagents\medicine_ch.dm"
-#include "gurgs_content\code\modules\vore\vorepanel.dm"
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
 #include "maps\atoll\atoll_decals.dm"

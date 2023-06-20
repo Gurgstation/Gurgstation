@@ -1177,7 +1177,6 @@
 	dupe.fancy_vore = fancy_vore
 	dupe.is_wet = is_wet
 	dupe.wet_loop = wet_loop
-	dupe.belly_fullscreen_color = belly_fullscreen_color // Gurgs ADD: Colorable bellies!
 	dupe.belly_fullscreen = belly_fullscreen
 	dupe.disable_hud = disable_hud
 	dupe.belly_fullscreen_color = belly_fullscreen_color
