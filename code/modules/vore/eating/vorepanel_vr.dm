@@ -434,6 +434,12 @@
 				host.client.prefs_vr.can_be_drop_prey = host.can_be_drop_prey
 			unsaved_changes = TRUE
 			return TRUE
+		if("toggle_allow_inbelly_spawning")
+			host.allow_inbelly_spawning = !host.allow_inbelly_spawning
+			if(host.client.prefs_vr)
+				host.client.prefs_vr.allow_inbelly_spawning = host.allow_inbelly_spawning
+			unsaved_changes = TRUE
+			return TRUE
 		if("toggle_allow_spontaneous_tf")
 			host.allow_spontaneous_tf = !host.allow_spontaneous_tf
 			if(host.client.prefs_vr)
