@@ -873,6 +873,7 @@ const VoreUserPreferences = (props, context) => {
     step_mechanics_active,
     pickup_mechanics_active,
     noisy,
+    noisy_full,
     drop_vore,
     stumble_vore,
     slip_vore,
@@ -1199,6 +1200,19 @@ const VoreUserPreferences = (props, context) => {
         disabled: 'Examine Weight Messages Inactive',
       },
     },
+    noisy_full: {
+      action: 'toggle_noisy_full',
+      test: noisy_full,
+      tooltip: {
+        main: 'Toggle Automatic Belching. ',
+        enable: 'This button toggles "on" automatic belching at high nutrition levels.',
+        disable: 'This button toggles "off" automatic belching at high nutrition levels.',
+      },
+      content: {
+        enabled: 'Automatic Belching Enabled',
+        disabled: 'Automatic Belching Disabled',
+      },
+    },
   };
 
   return (
@@ -1251,6 +1265,9 @@ const VoreUserPreferences = (props, context) => {
         </Flex.Item>
         <Flex.Item basis="32%" grow={1}>
           <VoreUserPreferenceItem spec={preferences.noisy} />
+        </Flex.Item>
+        <Flex.Item basis="32%">
+          <VoreUserPreferenceItem spec={preferences.noisy_full} />
         </Flex.Item>
         <Flex.Item basis="32%">
           <VoreUserPreferenceItem spec={preferences.resize} />

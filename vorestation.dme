@@ -4243,6 +4243,7 @@
 #include "gurgs_content\code\modules\mob\animals\ai_holder\simple_mob_heal_belly.dm"
 #include "gurgs_content\code\modules\mob\living\human_defines_ch.dm"
 #include "gurgs_content\code\modules\mob\living\human_life.dm"
+#include "gurgs_content\code\modules\mob\living\living_gg.dm"
 #include "gurgs_content\code\modules\mob\living\species_ch.dm"
 #include "gurgs_content\code\modules\mob\living\station_special_abilities_ch.dm"
 #include "gurgs_content\code\modules\mob\living\metroid\items.dm"

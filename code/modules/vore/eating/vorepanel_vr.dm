@@ -278,7 +278,7 @@
 		"step_mechanics_active" = host.step_mechanics_pref,
 		"pickup_mechanics_active" = host.pickup_pref,
 		"noisy" = host.noisy,
-
+		"noisy_full" = host.noisy_full,
 		"drop_vore" = host.drop_vore,
 		"slip_vore" = host.slip_vore,
 		"stumble_vore" = host.stumble_vore,
@@ -519,6 +519,10 @@
 			return TRUE
 		if("toggle_noisy")
 			host.noisy = !host.noisy
+			unsaved_changes = TRUE
+			return TRUE
+		if("toggle_noisy_full") //Gurg : For handlebelches()
+			host.noisy_full = !host.noisy_full
 			unsaved_changes = TRUE
 			return TRUE
 		if("toggle_drop_vore")

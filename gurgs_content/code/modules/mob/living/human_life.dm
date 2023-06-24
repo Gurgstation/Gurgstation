@@ -1,7 +1,7 @@
 // This belongs somewhere in human/life(). Good luck if this proc isn't in there. o7
 
 /mob/living/carbon/human/proc/handlebelches()
-	if(nutrition > 500)
+	if(nutrition > 500 && noisy_full == TRUE)
 		var/belch_prob = 5 //Maximum belch prob.
 		if(nutrition < 4075)
 			belch_prob = ((nutrition-500)/3575)*5 //Scale belch prob with fullness if not already at max. If editing make sure the multiplier matches the max prob above.
