@@ -20,4 +20,4 @@
 		kill()		// To prevent fake announcements
 		return
 
-	new /obj/structure/ghost_pod/ghost_activated/maintpred(get_turf(spawnspot))
+	new /obj/structure/ghost_pod/ghost_activated/maintpred/no_announce(get_turf(spawnspot))
