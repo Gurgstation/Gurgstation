@@ -62,7 +62,6 @@
 	name = "Airlock";
 	req_one_access = null
 	},
-/obj/structure/blob/normal,
 /turf/simulated/floor/old_tile/green/frozen_world{
 	color = "#63A83A";
 	icon = 'icons/turf/flooring/tiles_vr.dmi';
@@ -435,7 +434,6 @@
 	})
 "mt" = (
 /obj/structure/barricade,
-/obj/structure/blob/normal,
 /turf/simulated/floor/old_tile/green/frozen_world{
 	color = "#63A83A";
 	icon = 'icons/turf/flooring/tiles_vr.dmi';
