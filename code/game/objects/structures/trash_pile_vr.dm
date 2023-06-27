@@ -293,6 +293,7 @@
 					prob(2);/obj/item/selectable_item/chemistrykit/size,
 					prob(2);/obj/item/selectable_item/chemistrykit/gender,
 					prob(2);/obj/item/clothing/gloves/bluespace/emagged,
+					prob(2);/obj/item/weapon/leash, //gurg edit, allows leash to be found in trash
 					prob(1);/obj/item/clothing/suit/storage/vest/heavy/merc,
 					prob(1);/obj/item/device/nif/bad,
 					prob(1);/obj/item/device/radio_jammer,

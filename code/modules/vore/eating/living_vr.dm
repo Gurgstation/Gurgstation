@@ -287,15 +287,6 @@
 	P.throw_vore = src.throw_vore
 	P.stumble_vore = src.stumble_vore
 
-	// Gurgs ADD: Spawnable Belees
-	P.latejoin_vore = src.latejoin_vore
-
-	// Gurg ADD: Import Chomp liquid bellies
-	P.receive_reagents = src.receive_reagents
-	P.give_reagents = src.give_reagents
-
-	// Gurg ADD: Shapeshift preds
-	P.can_be_transformed = src.can_be_transformed
 	P.nutrition_message_visible = src.nutrition_message_visible
 	P.nutrition_messages = src.nutrition_messages
 	P.weight_message_visible = src.weight_message_visible
@@ -344,16 +335,6 @@
 	slip_vore = P.slip_vore
 	throw_vore = P.throw_vore
 	stumble_vore = P.stumble_vore
-
-	// Gurgs ADD: Spawnable Belees
-	latejoin_vore = P.latejoin_vore
-
-	// Gurg ADD: Import Chomp liquid bellies
-	receive_reagents = P.receive_reagents
-	give_reagents = P.give_reagents
-
-	// Gurg ADD: Shapeshift preds
-	can_be_transformed = P.can_be_transformed
 
 	nutrition_message_visible = P.nutrition_message_visible
 	nutrition_messages = P.nutrition_messages
@@ -509,8 +490,7 @@
 		if(confirm != "Okay" || loc != B)
 			return
 		//Actual escaping
-		//absorbed = 0	//Make sure we're not absorbed // Gurgs EDIT: Refactoring absorbtion
-		B.unabsorb_mob(src) // Gurgs EDIT end
+		absorbed = 0	//Make sure we're not absorbed
 		muffled = 0		//Removes Muffling
 		forceMove(get_turf(src)) //Just move me up to the turf, let's not cascade through bellies, there's been a problem, let's just leave.
 		for(var/mob/living/simple_mob/SA in range(10))
@@ -1097,11 +1077,6 @@
 	dispvoreprefs += "<b>Stumble Vore:</b> [stumble_vore ? "Enabled" : "Disabled"]<br>"
 	dispvoreprefs += "<b>Inbelly Spawning:</b> [allow_inbelly_spawning ? "Allowed" : "Disallowed"]<br>"
 	dispvoreprefs += "<b>Spontaneous transformation:</b> [allow_spontaneous_tf ? "Enabled" : "Disabled"]<br>"
-	// Gurgs ADD: Spawnable Belees
-	dispvoreprefs += "<b>Late join spawn point belly:</b> [latejoin_vore ? "Enabled" : "Disabled"]<br>" //CHOMPstation edit
-	// Gurg ADD: Import Chomp liquid bellies
-	dispvoreprefs += "<b>Receiving liquids:</b> [receive_reagents ? "Enabled" : "Disabled"]<br>" //CHOMPstation edit
-	dispvoreprefs += "<b>Giving liquids:</b> [give_reagents ? "Enabled" : "Disabled"]<br>"	//CHOMPstation edit
 	dispvoreprefs += "<b>Can be stepped on/over:</b> [step_mechanics_pref ? "Allowed" : "Disallowed"]<br>"
 	dispvoreprefs += "<b>Can be picked up:</b> [pickup_pref ? "Allowed" : "Disallowed"]<br>"
 	user << browse("<html><head><title>Vore prefs: [src]</title></head><body><center>[dispvoreprefs]</center></body></html>", "window=[name]mvp;size=300x400;can_resize=1;can_minimize=0")

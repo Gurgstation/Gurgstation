@@ -175,8 +175,6 @@ var/list/_human_default_emotes = list(
 	/decl/emote/audible/dook,
 
 	//VOREStation Add End
-
-	/decl/emote/audible/belch, // Gurgs ADD: On demand belches~
 )
 
 	//VOREStation Add Start

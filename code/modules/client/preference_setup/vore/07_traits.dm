@@ -363,14 +363,9 @@
 		return TOPIC_REFRESH
 
 	else if(href_list["clicked_pos_trait"])
-		var/traitpath = text2path(href_list["clicked_pos_trait"])	//CHOMPEdit
-
 		var/datum/trait/trait = text2path(href_list["clicked_pos_trait"])
 		var/choice = tgui_alert(usr, "Remove [initial(trait.name)] and regain [initial(trait.cost)] points?","Remove Trait",list("Remove","Cancel"))
 		if(choice == "Remove")
-			if(traitpath == /datum/trait/positive/linguist)	//CHOMPEdit
-				pref.num_languages = null					//CHOMPEdit
-
 			pref.pos_traits -= trait
 			var/datum/trait/instance = all_traits[trait]
 			instance.remove_pref(pref)
@@ -610,12 +605,7 @@
 				tgui_alert_async(usr, "You cannot take this trait and [conflict] at the same time. Please remove that trait, or pick another trait to add.", "Error")
 				return TOPIC_REFRESH
 
-			if(path==/datum/trait/positive/linguist)	//CHOMPEdit
-				pref.num_languages = 12					//CHOMPEdit
-
-
-			instance.apply_pref(pref)
-			mylist[path] = instance.get_default_prefs()
+			mylist += path
 			return TOPIC_REFRESH
 
 	return ..()

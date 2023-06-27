@@ -61,7 +61,8 @@
 /area/poi_d/explored)
 "jF" = (
 /obj/structure/table/reinforced,
-/obj/item/weapon/storage/box/shotgunshells/large,
+/obj/item/ammo_magazine/ammo_box/b12g/pellet,
+/obj/item/ammo_magazine/ammo_box/b12g/pellet,
 /turf/simulated/floor/tiled,
 /area/poi_d/Mountain)
 "jG" = (
