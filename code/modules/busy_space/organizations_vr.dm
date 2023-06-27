@@ -609,7 +609,7 @@
 						"a classified location in uncharted space",
 						"an emergency nav bouy",
 						"the USDF Naval Academy on Earth",
-						"Fort Rain on Tal")
+						"Gold Ring on Tal")
 
 /datum/lore/organization/gov/kitsuhana
 	name = "Kitsuhana Heavy Industries"

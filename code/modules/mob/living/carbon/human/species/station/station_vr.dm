@@ -12,26 +12,29 @@
 	//burn_mod =  1.15
 	//gluttonous = 1
 	num_alternate_languages = 3
-	secondary_langs = list(LANGUAGE_SAGARU)
-	name_language = LANGUAGE_SAGARU
-	species_language = LANGUAGE_SAGARU
+	secondary_langs = list(LANGUAGE_GOLDRING, LANGUAGE_SAGARU)
+	name_language = LANGUAGE_GOLDRING
+	species_language = LANGUAGE_GOLDRING
 	color_mult = 1
 	inherent_verbs = list(/mob/living/carbon/human/proc/tie_hair)
 
 	min_age = 18
-	max_age = 80
+	max_age = 60 //60 human years is roughly 95 sergal years.
 
 	male_scream_sound = null
 	female_scream_sound = null
 
-	blurb = "There are two subspecies of Sergal; Southern and Northern. Northern sergals are a highly aggressive race \
-	that lives in the plains and tundra of their homeworld. They are characterized by long, fluffy fur bodies with cold colors; \
-	usually with white abdomens, somewhat short ears, and thick faces. Southern sergals are much more docile and live in the \
-	Gold Ring City and are scattered around the outskirts in rural areas and small towns. They usually have short, brown or yellow \
-	(or other 'earthy' colors) fur, long ears, and a long, thin face. They are smaller than their Northern relatives. Both have strong \
-	racial tensions which has resulted in more than a number of wars and outright attempts at genocide. Sergals have an incredibly long \
-	lifespan, but due to their lust for violence, only a handful have ever survived beyond the age of 80, such as the infamous and \
-	legendary General Rain Silves who is claimed to have lived to 5000."
+	blurb = "There are two subspecies of Sergal; Southern and Northern. Northern sergals are a very territorial race \
+	that use mob mentality and tactics to aggressively defend their land. While aggressive in groups, northern sergals are very cowardly alone, \
+	and will primarily follow a group decision over individual decision. The northern sergal primitively lived in the \
+	plains and tundra of their homeworld in the past. They are characterized by long, fluffy fur bodies with cold colors; \
+	usually with white abdomens, somewhat short ears, and thick faces. Southern sergals are much more civilized, and typically live in \
+	Gold Ring, and the innermost areas where the Bloodstones reside. They can also be found in more rural areas outside of Gold Ring, \
+	often in small to moderate communal towns or farms. They usually have short, brown or yellow (or other 'earthy' colors) fur, \
+	long ears, and a long, thin face. They are smaller than their Northern relatives. Both have had strong \
+	racial tensions in the past, which has resulted in more than a number of wars and outright attempts at genocide. \
+	In the modern age the two subspecies have mostly melded into one species, but the two subspecies can still be found \
+	on the far outskirts of Tal."
 
 	wikilink="https://wiki.vore-station.net/Backstory#Sergal"
 
@@ -134,9 +137,9 @@
 	//gluttonous = 1
 	soft_landing = TRUE
 	num_alternate_languages = 3
-	secondary_langs = list(LANGUAGE_BIRDSONG)
-	name_language = LANGUAGE_BIRDSONG
-	species_language = LANGUAGE_BIRDSONG
+	secondary_langs = list(LANGUAGE_GOLDRING, LANGUAGE_BIRDSONG)
+	name_language = LANGUAGE_GOLDRING
+	species_language = LANGUAGE_GOLDRING
 	color_mult = 1
 	inherent_verbs = list(/mob/living/proc/flying_toggle,
 		/mob/living/proc/flying_vore_toggle,
@@ -148,11 +151,12 @@
 	male_scream_sound = null
 	female_scream_sound = null
 
-	blurb = "Nevreans are a race of avian and dinosaur-like creatures living on Tal. They belong to a group of races that hails from Eltus, \
-	in the Vilous system. Unlike sergals whom they share a star system with, their species is a very peaceful one. They possess remarkable \
-	intelligence and very skillful hands that are put use for constructing precision instruments, but tire-out fast when repeatedly working \
-	over and over again. Consequently, they struggle to make copies of same things. Both genders have a voice that echoes a lot. Their natural \
-	tone oscillates between tenor and soprano. They are excessively noisy when they quarrel in their native language."
+	blurb = "Nevreans are a species of dinosaur-like creatures living on Tal, in the Vilous System. They belong to a race group known as Eltus, of which Sergals and Agudners are also in. \
+	While Nevreans often lack the physical strength and endurance of other Eltus races, they often make up for it with remarkable intelligence and natural skills in precision engineering. \
+	The origin of the Nevrean race can be found in the Nev Mountains, very steep and craggy mountains located on the realm of the Nevrea region, the Western lands of Tal. \
+	Residents in the Nevrea region are their original and Native race, and Nevreans who live in civilized areas such as Gold Ring fall under Urban Nevrean. \
+	There are several highly notable differences in the cultures of both Native Nevreans and Urban Nevreans, due to many historical and cultural reasons. \
+	Native Nevreans are very exclusive and unfriendly against other races and their culture, while Urban Nevreans are comparatively friendly towards other races."
 
 	wikilink="https://wiki.vore-station.net/Backstory#Nevrean"
 
@@ -399,7 +403,7 @@
 	tail_animation = 'icons/mob/species/vox/tail.dmi'
 	deform = 'icons/mob/human_races/r_def_vox_old.dmi'
 	color_mult = 1
-	
+
 	descriptors = list(
 		/datum/mob_descriptor/vox_markings = 0
 		)
@@ -577,7 +581,7 @@
 
 	min_age = 18
 	max_age = 80
-	
+
 	male_scream_sound = null
 	female_scream_sound = null
 
