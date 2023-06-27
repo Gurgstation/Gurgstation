@@ -891,6 +891,9 @@
 					var/obj/belly/B = C.loc
 					to_chat(C.bound_mob, "<span class= 'notice'>Outside of your crystal, you can see; <B>[B.desc]</B></span>")
 					to_chat(src, "<span class='notice'>You can taste the the power of command.</span>")
+		else if(istype(I,/obj/item/slime_extract))
+			visible_message("<span class='warning'>[src] demonstrates their complete lack of safety by swallowing [I] whole!</span>")
+			to_chat(src, "<span class='notice'>You can taste the flavor of tingly gelatin.</span>")
 		else
 			to_chat(src, "<span class='notice'>You can taste the flavor of garbage. Delicious.</span>")
 		return
