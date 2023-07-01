@@ -4204,6 +4204,8 @@
 #include "gurgs_content\code\tgs_commands.dm"
 #include "gurgs_content\code\_helpers\global_lists_ch.dm"
 #include "gurgs_content\code\ATMOSPHERICS\components\unary\heat_source_gu.dm"
+#include "gurgs_content\code\game\mecha\mecha_equipment_gg.dm"
+#include "gurgs_content\code\game\mecha\mechfab_designs_gg.dm"
 #include "gurgs_content\code\game\objects\blob_act_gg.dm"
 #include "gurgs_content\code\modules\client\admin_verbs.dm"
 #include "gurgs_content\code\modules\client\sprite_accessories\sprite_accessories_ear_ch.dm"
