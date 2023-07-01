@@ -49,9 +49,6 @@
 					"Vehicle",
 					"Rigsuit",
 					"Phazon",
-					"Gopher", // VOREStation Add
-					"Polecat", // VOREStation Add
-					"Weasel", // VOREStation Add
 					"Exosuit Equipment",
 					"Exosuit Internals",
 					"Exosuit Ammunition",
