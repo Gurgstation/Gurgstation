@@ -98,7 +98,7 @@
 "aLo" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/tiled/techfloor/grid,/area/hallway/secondary/civilian_hallway_mid)
 "aLG" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/wood,/area/crew_quarters/sleep/CE_quarters)
 "aLN" = (/obj/effect/floor_decal/borderfloor{dir = 4},/obj/effect/floor_decal/corner/beige/border{dir = 4},/obj/structure/closet/hydrant{pixel_x = 32},/turf/simulated/floor/tiled,/area/bridge/hallway)
-"aMe" = (/obj/structure/table/reinforced,/obj/item/mecha_parts/mecha_equipment/weapon/energy/microtaser,/obj/item/mecha_parts/mecha_equipment/weapon/energy/taser,/obj/item/mecha_parts/mecha_equipment/weapon/energy/taser,/turf/simulated/floor/tiled,/area/security/eva)
+"aMe" = (/obj/structure/table/reinforced,/obj/item/mecha_parts/mecha_equipment/weapon/energy/taser,/obj/item/mecha_parts/mecha_equipment/weapon/energy/taser,/turf/simulated/floor/tiled,/area/security/eva)
 "aMF" = (/obj/structure/closet,/obj/random/maintenance/clean,/obj/random/cigarettes,/turf/simulated/floor/plating,/area/maintenance/security/starboard)
 "aNk" = (/obj/structure/closet/crate/bin{anchored = 1},/obj/effect/floor_decal/techfloor{dir = 1},/obj/machinery/ai_status_display{pixel_y = 32},/obj/effect/floor_decal/steeldecal/steel_decals9,/obj/effect/floor_decal/steeldecal/steel_decals9{dir = 8},/turf/simulated/floor/tiled,/area/security/lobby)
 "aNG" = (/obj/effect/floor_decal/techfloor{dir = 1},/obj/effect/landmark/shuttle,/turf/simulated/floor/tiled/techfloor/grid,/area/hallway/primary/aft)
