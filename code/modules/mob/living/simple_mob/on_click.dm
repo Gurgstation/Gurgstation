@@ -30,8 +30,8 @@
 		if(I_GRAB)
 			if(has_hands)
 				A.attack_hand(src)
-			else if(isliving(A) && src.client)
-				animal_nom(A)
+			//else if(isliving(A) && src.client) //Gurg change : this destroys all simple_mob player functionality for grab intent
+			//	animal_nom(A)
 			else
 				attack_target(A)
 
