@@ -37,8 +37,9 @@
 		. += "It appears to have been pacified."
 
 /mob/living/simple_mob/metroid/juvenile/verb/evolve()
-	set category = "metroid"
-	set desc = "This will let you advance to next form."
+	set name = "Evolve"
+	set category = "Abilities"
+	set desc = "Like a beautiful butterfly."
 
 	if(stat)
 		to_chat(src, span("warning", "I must be conscious to do this..."))
@@ -53,7 +54,7 @@
 		adjust_nutrition(-500)
 		paralysis = 0
 		return
-		
+
 	if(nutrition >= evo_point && !buckled && vore_fullness == 0 && !victim)
 		if(next == "/mob/living/simple_mob/metroid/juvenile/queen" && GLOB.queen_amount > 0)
 			to_chat(src, span("warning", "There is already a queen."))
@@ -67,7 +68,7 @@
 		release_vore_contents()
 		prey_excludes.Cut()
 		stop_consumption()
-		
+
 	else
 		to_chat(src, span("warning", "I am not ready to evolve yet..."))
 
@@ -77,7 +78,7 @@
 	if(mind)
 		src.mind.transfer_to(L)
 	visible_message("<span class='warning'>\The [src] suddenly evolves!</span>")
-	qdel(src)	
+	qdel(src)
 
 // Code for metroids attacking other things.
 // metroid attacks change based on intent.
