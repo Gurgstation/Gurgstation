@@ -2,7 +2,7 @@
 
 /mob/living/simple_mob/metroid
 	name = "metroid"
-	desc = "Some sort of person eaty thing! This is the prototype mob and shouldn't be spawned. If you see this, yell at your local dev or event manager who spawned this one >.>"
+	desc = "You shouldn't be using this one"
 	tt_desc = "Headamus Suckumus"
 	icon = 'gurgs_content/icons/mob/metroid/small.dmi'
 	icon_state = "metroid"
@@ -49,8 +49,8 @@
 
 	harm_intent_damage = 5 //When someone uses fists. Default is 3
 
-	vore_active = 1
-	vore_pounce_chance = 25
+	vore_active = 0 //Vore conflicts with latching ability, only those that cannot latch can vore
+	vore_pounce_chance = 0
 	vore_icons = SA_ICON_LIVING
 
 	nutrition = 1000 //This actually gets overridden further down on initialize.
@@ -82,12 +82,15 @@
 
 
 /mob/living/simple_mob/metroid/init_vore()
-	.=..()
-	var/obj/belly/B = vore_selected
+	if(LAZYLEN(vore_organs))
+		return
+
+	var/obj/belly/B = new /obj/belly(src)
+	vore_selected = B
 	B.digest_brute = 1
 	B.digest_burn = 1
 	B.vore_verb = "swallow"
-	B.name = "membrane" //THERE IS A RUNTIME HERE SOMEHOW
+	B.name = "membrane"
 	B.desc	= "The metroid positions itself above you and swoops down, lazily enveloping you through its tight mouth and sending you straight to its bulbous membrane for all to see."
 	B.emote_lists[DM_HOLD] = list(
 	"The metroid's cortex tentacles wriggle over you, violating and teasing you as they sopped you in viscous slime.",
