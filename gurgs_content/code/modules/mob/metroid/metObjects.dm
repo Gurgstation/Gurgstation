@@ -14,7 +14,7 @@
 
 //EGG! Metroid egg and its mechanics. Ripped from spiders.
 /obj/effect/metroid/egg
-	name = "egg cluster"
+	name = "metroid egg cluster"
 	desc = "It seems to pulse slightly with an inner life"
 	icon = 'gurgs_content/icons/mob/metroid/small.dmi'
 	icon_state = "egg"

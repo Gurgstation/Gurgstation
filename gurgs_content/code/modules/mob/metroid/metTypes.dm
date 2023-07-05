@@ -47,9 +47,9 @@ GLOBAL_VAR_INIT(queen_amount, 0) //We only gonna want 1 queen in the world.
 
 
 /mob/living/simple_mob/metroid/mine
-	name = "Mochtroid"
-	desc = "Some sort of person eaty thing! But weak compared to regular Metroids!"
-	tt_desc = "Headamus Suckumus Weakamus"
+	name = "tallon metroid"
+	desc = "A mutant metroid from Tallon. Not as dangerous, but still a threat."
+	tt_desc = "Parasitus Anomalia"
 	icon = 'gurgs_content/icons/mob/metroid/small.dmi'
 	icon_dead = "metroid_dead"
 	icon_living = "mochtroid"
@@ -83,9 +83,9 @@ GLOBAL_VAR_INIT(queen_amount, 0) //We only gonna want 1 queen in the world.
 
 
 /mob/living/simple_mob/metroid/juvenile/baby
-	name = "baby metroid"
-	desc = "The baby the baby the baby the baby the baby the baby the baby the baby."
-	tt_desc = "Minimus Headamus Suckumus"
+	name = "metroid spawn"
+	desc = "A fresh metroid spawn, ready for the world!"
+	tt_desc = "Parasitus Puer"
 	icon = 'gurgs_content/icons/mob/metroid/small.dmi'
 	icon_dead = "baby_dead"
 	icon_living = "baby"
@@ -145,9 +145,9 @@ GLOBAL_VAR_INIT(queen_amount, 0) //We only gonna want 1 queen in the world.
 
 
 /mob/living/simple_mob/metroid/juvenile/super
-	name = "super metroid"
-	desc = "Some kind of head sucky thing!"
-	tt_desc = "Maximus Headamus Suckumus"
+	name = "larva metroid"
+	desc = "A full grown metroid spawn, the first of many."
+	tt_desc = "Parasitus Pariunt"
 	icon = 'gurgs_content/icons/mob/metroid/small.dmi'
 	icon_dead = "metroid_dead"
 	icon_living = "metroid"
@@ -195,15 +195,6 @@ GLOBAL_VAR_INIT(queen_amount, 0) //We only gonna want 1 queen in the world.
 	evo_limit = 1600
 	next = "/mob/living/simple_mob/metroid/juvenile/alpha"
 
-	vore_active = 1
-	vore_bump_chance = 0
-	vore_capacity = 1
-	vore_icons = SA_ICON_LIVING
-	vore_pounce_chance = 25 //Metroids only eat incapacitated targets
-	vore_default_mode = DM_DIGEST
-	swallowTime = 1 SECONDS //Hungry little bastards.
-	vore_escape_chance = 50
-
 	is_juvenile = TRUE
 
 /mob/living/simple_mob/metroid/juvenile/super/Initialize()
@@ -216,8 +207,8 @@ GLOBAL_VAR_INIT(queen_amount, 0) //We only gonna want 1 queen in the world.
 
 /mob/living/simple_mob/metroid/juvenile/alpha
 	name = "alpha metroid"
-	desc = "Some kind of head rammy thing!"
-	tt_desc = "Minimus Headamus Rammamus"
+	desc = "A metroid in it's Fresh Pupa lifecycle stage. It looks fairly dangerous."
+	tt_desc = "Parasiticum Capra"
 	icon = 'gurgs_content/icons/mob/metroid/small.dmi'
 	icon_dead = "alpha_dead"
 	icon_living = "alpha"
@@ -288,8 +279,8 @@ GLOBAL_VAR_INIT(queen_amount, 0) //We only gonna want 1 queen in the world.
 
 /mob/living/simple_mob/metroid/juvenile/gamma
 	name = "gamma metroid"
-	desc = "Some kind of head rammy thing! This one shoots electricity!"
-	tt_desc = "Maximus Headamus Rammamus"
+	desc = "A metroid in it's Pupa lifecycle stage. It looks quite dangerous."
+	tt_desc = "Parasitica Homo Comedentis"
 	icon = 'gurgs_content/icons/mob/metroid/small.dmi'
 	icon_dead = "gamma_dead"
 	icon_living = "gamma"
@@ -378,8 +369,8 @@ GLOBAL_VAR_INIT(queen_amount, 0) //We only gonna want 1 queen in the world.
 
 /mob/living/simple_mob/metroid/juvenile/zeta
 	name = "zeta metroid"
-	desc = "Some kind of feet stompy thing!"
-	tt_desc = "Minimus Feetamus Walkamus"
+	desc = "A metroid in it's Young Adult lifecycle stage. It looks exceptionally dangerous."
+	tt_desc = "Parasitica Gigans Armati"
 	icon = 'gurgs_content/icons/mob/metroid/large.dmi'
 	icon_dead = "zeta_dead"
 	icon_living = "zeta"
@@ -475,8 +466,8 @@ GLOBAL_VAR_INIT(queen_amount, 0) //We only gonna want 1 queen in the world.
 
 /mob/living/simple_mob/metroid/juvenile/omega
 	name = "omega metroid"
-	desc = "Those are some big claws!"
-	tt_desc = "Maximus Feetamus Walkamus"
+	desc = "A fully grown adult metroid. It looks excessively dangerous."
+	tt_desc = "Parasitica Cataphractos Monstrum"
 	icon = 'gurgs_content/icons/mob/metroid/large.dmi'
 	icon_dead = "omega_dead"
 	icon_living = "omega"
@@ -572,8 +563,8 @@ GLOBAL_VAR_INIT(queen_amount, 0) //We only gonna want 1 queen in the world.
 
 /mob/living/simple_mob/metroid/juvenile/queen
 	name = "queen metroid"
-	desc = "The mother of all Metroids - allowed to have grown too far!"
-	tt_desc = "Maximus Queenamus Deathamus"
+	desc = "The mother of all Metroids - the metroid queen. RUN!"
+	tt_desc = "Mater Parasiti Mortis"
 	icon = 'gurgs_content/icons/mob/metroid/queen.dmi'
 	icon_dead = "queen_dead"
 	icon_living = "queen"
